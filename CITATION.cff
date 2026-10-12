@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use EEGBench or the EEG classification archive, please cite the paper below."
+title: "EEGBench: a leaderboard for EEG classification"
+type: software
+authors:
+  - given-names: "Aiden"
+    family-names: "Rushbrooke"
+  - given-names: "Saber"
+    family-names: "Sami"
+  - given-names: "Matthew"
+    family-names: "Middlehurst"
+  - given-names: "Anthony"
+    family-names: "Bagnall"
+year: 2026
+license: "BSD-3-Clause"
+repository-code: "https://github.com/TonyBagnall/EEGBench"
+references:
+  - type: article
+    title: "The Multiverse of Time Series Machine Learning: an Archive for Multivariate Time Series Classification"
+    notes: "EEGBench is part of the Multiverse archive."
+    authors:
+      - given-names: "Matthew"
+        family-names: "Middlehurst"
+      - given-names: "Aiden"
+        family-names: "Rushbrooke"
+      - given-names: "Ali"
+        family-names: "Ismail-Fawaz"
+      - given-names: "Maxime"
+        family-names: "Devanne"
+      - given-names: "Germain"
+        family-names: "Forestier"
+      - given-names: "Angus"
+        family-names: "Dempster"
+      - given-names: "Geoffrey I."
+        family-names: "Webb"
+      - given-names: "Christopher"
+        family-names: "Holder"
+      - given-names: "Anthony"
+        family-names: "Bagnall"
+    year: 2026
+    journal: "arXiv preprint"
+    url: "https://arxiv.org/abs/2603.20352"
+    repository-code: "https://github.com/aeon-toolkit/multiverse"
+preferred-citation:
+  type: article
+  title: "Time Series Machine Learning for Classifying Electroencephalograms"
+  authors:
+    - given-names: "Aiden"
+      family-names: "Rushbrooke"
+    - given-names: "Saber"
+      family-names: "Sami"
+    - given-names: "Matthew"
+      family-names: "Middlehurst"
+    - given-names: "Anthony"
+      family-names: "Bagnall"
+  year: 2026
+  journal: "Journal of Data-centric Machine Learning Research"
+  url: "https://data.mlr.press/assets/pdf/v03-8.pdf"

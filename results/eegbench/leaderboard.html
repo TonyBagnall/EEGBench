@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>EEGBench leaderboard</title><style>
+:root {
+  --bg: #ffffff; --fg: #1a1a1a; --muted: #666666;
+  --line: #e0e0e0; --head: #f5f5f5; --best: #e8f4ec; --accent: #2b6cb0;
+  --stripe: #fafafa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181c; --fg: #e8e8e8; --muted: #9aa0a6;
+    --line: #30343a; --head: #212429; --best: #1e3226; --accent: #7aa7d9;
+    --stripe: #1b1e23;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 2rem 1.25rem 4rem; background: var(--bg); color: var(--fg);
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 1100px; margin: 0 auto; }
+h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+.sub { color: var(--muted); margin: 0 0 2rem; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { padding: .45rem .7rem; text-align: right; white-space: nowrap;
+  border-bottom: 1px solid var(--line); }
+th { background: var(--head); font-weight: 600; position: sticky; top: 0; }
+td.pos { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums;
+  width: 2.5rem; }
+th.pos { text-align: right; color: var(--muted); }
+th:nth-child(-n+2), td:nth-child(-n+2) { position: sticky; background: var(--bg); }
+td:nth-child(2), th:nth-child(2) { text-align: left; }
+th:nth-child(1), td:nth-child(1) { left: 0; }
+th:nth-child(2), td:nth-child(2) { left: 2.5rem; box-shadow: 1px 0 0 var(--line); }
+th:nth-child(-n+2) { background: var(--head); z-index: 1; }
+tbody tr:last-child td { border-bottom: none; }
+td.best { background: var(--best); font-weight: 600; }
+th.grp { text-align: center; border-left: 2px solid var(--line); }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: var(--accent); }
+th.sortable::after { content: "↕"; opacity: .25; margin-left: .35em;
+  font-size: .85em; }
+th.sortable[aria-sort="ascending"]::after { content: "↑"; opacity: 1; }
+th.sortable[aria-sort="descending"]::after { content: "↓"; opacity: 1; }
+th.sortable:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+pre { background: var(--head); border: 1px solid var(--line); border-radius: 6px;
+  padding: .8rem 1rem; overflow-x: auto; font-size: .86rem; line-height: 1.5;
+  margin: 0; }
+pre code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+ul.missing { margin: .5rem 0 0; padding-left: 1.2rem; }
+ul.missing li { margin-bottom: .3rem; }
+th.sep, td.sep { border-left: 2px solid var(--line); }
+tbody td:not(:first-child) { font-variant-numeric: tabular-nums; }
+tbody tr:nth-child(even) td { background: var(--stripe); }
+tbody tr:hover td { background: var(--head); }
+tbody tr:hover td.best { background: var(--best); }
+tbody tr:hover td.best { background: var(--best); }
+figure { margin: 0; }
+figure img { max-width: 100%; height: auto; background: #fff; border-radius: 6px;
+  padding: .5rem; }
+.note { color: var(--muted); font-size: .88rem; margin-top: .6rem; }
+details { margin-top: .6rem; }
+summary { cursor: pointer; color: var(--accent); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+</style></head><body><main><h1>EEGBench leaderboard</h1><p class="sub">15 estimators on 30 datasets &middot; 7 metrics &middot; ordered by average accuracy rank &middot; built 2026-10-12</p><div class="scroll"><table id="leaderboard"><thead><tr><th rowspan="2" class="pos">#</th><th rowspan="2" class="sortable" data-col="1" data-first="asc" data-type="text">Estimator</th><th colspan="2" class="grp">Accuracy</th><th colspan="2" class="grp">Balanced accuracy</th><th colspan="2" class="grp">AUROC</th><th colspan="2" class="grp">F1</th><th colspan="2" class="grp">Log loss &darr;</th><th colspan="2" class="grp">Sensitivity</th><th colspan="2" class="grp">Specificity</th></tr><tr><th class="sep sortable" data-col="2" data-first="desc">Score</th><th class="sortable" data-col="3" data-first="asc">Rank</th><th class="sep sortable" data-col="4" data-first="desc">Score</th><th class="sortable" data-col="5" data-first="asc">Rank</th><th class="sep sortable" data-col="6" data-first="desc">Score</th><th class="sortable" data-col="7" data-first="asc">Rank</th><th class="sep sortable" data-col="8" data-first="desc">Score</th><th class="sortable" data-col="9" data-first="asc">Rank</th><th class="sep sortable" data-col="10" data-first="asc">Score</th><th class="sortable" data-col="11" data-first="asc">Rank</th><th class="sep sortable" data-col="12" data-first="desc">Score</th><th class="sortable" data-col="13" data-first="asc">Rank</th><th class="sep sortable" data-col="14" data-first="desc">Score</th><th class="sortable" data-col="15" data-first="asc">Rank</th></tr></thead><tbody><tr><td class="pos">1</td><td>HC2</td><td class="sep best">0.6049</td><td class="best">3.80</td><td class="sep best">0.5803</td><td class="best">4.23</td><td class="sep best">0.6888</td><td class="best">3.73</td><td class="sep">0.5529</td><td class="best">4.88</td><td class="sep best">0.7550</td><td class="best">3.67</td><td class="sep">0.5631</td><td class="best">5.73</td><td class="sep best">0.6185</td><td class="best">5.05</td></tr><tr><td class="pos">2</td><td>DrCIF</td><td class="sep">0.6004</td><td>5.42</td><td class="sep">0.5765</td><td>5.50</td><td class="sep">0.6863</td><td>5.25</td><td class="sep">0.5476</td><td>5.77</td><td class="sep">0.7576</td><td>4.07</td><td class="sep">0.5653</td><td>6.57</td><td class="sep">0.6065</td><td>6.90</td></tr><tr><td class="pos">3</td><td>Arsenal</td><td class="sep">0.5905</td><td>5.53</td><td class="sep">0.5790</td><td>5.43</td><td class="sep">0.6414</td><td>7.37</td><td class="sep best">0.5778</td><td>5.18</td><td class="sep">14.7597</td><td>13.02</td><td class="sep best">0.6079</td><td>6.03</td><td class="sep">0.5652</td><td>7.50</td></tr><tr><td class="pos">4</td><td>STC</td><td class="sep">0.5903</td><td>5.82</td><td class="sep">0.5729</td><td>5.23</td><td class="sep">0.6778</td><td>5.78</td><td class="sep">0.5475</td><td>5.87</td><td class="sep">0.7803</td><td>4.63</td><td class="sep">0.5644</td><td>6.35</td><td class="sep">0.5954</td><td>6.93</td></tr><tr><td class="pos">5</td><td>MRHydra</td><td class="sep">0.5889</td><td>6.35</td><td class="sep">0.5731</td><td>6.02</td><td class="sep">0.6371</td><td>7.77</td><td class="sep">0.5613</td><td>6.17</td><td class="sep">14.8170</td><td>13.05</td><td class="sep">0.5738</td><td>7.33</td><td class="sep">0.5869</td><td>7.20</td></tr><tr><td class="pos">6</td><td>SVM</td><td class="sep">0.5601</td><td>7.60</td><td class="sep">0.5309</td><td>7.90</td><td class="sep">0.6486</td><td>7.27</td><td class="sep">0.4805</td><td>8.00</td><td class="sep">0.8417</td><td>4.70</td><td class="sep">0.5334</td><td>7.18</td><td class="sep">0.5537</td><td>7.97</td></tr><tr><td class="pos">7</td><td>TDE</td><td class="sep">0.5673</td><td>7.75</td><td class="sep">0.5424</td><td>8.10</td><td class="sep">0.6414</td><td>7.35</td><td class="sep">0.5200</td><td>7.87</td><td class="sep">0.8615</td><td>7.17</td><td class="sep">0.5369</td><td>7.77</td><td class="sep">0.5707</td><td>7.57</td></tr><tr><td class="pos">8</td><td>EEGNet</td><td class="sep">0.4938</td><td>8.57</td><td class="sep">0.5023</td><td>8.08</td><td class="sep">0.6082</td><td>7.57</td><td class="sep">0.4936</td><td>7.75</td><td class="sep">0.8735</td><td>5.30</td><td class="sep">0.5703</td><td>8.53</td><td class="sep">0.4555</td><td>8.98</td></tr><tr><td class="pos">9</td><td>DCN</td><td class="sep">0.5026</td><td>8.72</td><td class="sep">0.5026</td><td>8.35</td><td class="sep">0.6135</td><td>8.30</td><td class="sep">0.4585</td><td>8.00</td><td class="sep">2.0020</td><td>7.87</td><td class="sep">0.5396</td><td>7.97</td><td class="sep">0.4850</td><td>8.83</td></tr><tr><td class="pos">10</td><td>IT</td><td class="sep">0.5421</td><td>8.93</td><td class="sep">0.5422</td><td>8.02</td><td class="sep">0.6522</td><td>6.87</td><td class="sep">0.5148</td><td>8.35</td><td class="sep">2.1187</td><td>10.10</td><td class="sep">0.5732</td><td>8.15</td><td class="sep">0.5198</td><td>9.17</td></tr><tr><td class="pos">11</td><td>CNN</td><td class="sep">0.5282</td><td>9.85</td><td class="sep">0.5013</td><td>10.50</td><td class="sep">0.5915</td><td>9.82</td><td class="sep">0.3576</td><td>10.73</td><td class="sep">2.9422</td><td>9.77</td><td class="sep">0.4133</td><td>10.28</td><td class="sep">0.6053</td><td>7.32</td></tr><tr><td class="pos">12</td><td>CSP-SVM</td><td class="sep">0.5264</td><td>9.98</td><td class="sep">0.4945</td><td>11.02</td><td class="sep">0.5992</td><td>10.02</td><td class="sep">0.4209</td><td>10.63</td><td class="sep">0.8710</td><td>6.43</td><td class="sep">0.4718</td><td>9.70</td><td class="sep">0.5432</td><td>8.98</td></tr><tr><td class="pos">13</td><td>R-KNN</td><td class="sep">0.4979</td><td>10.23</td><td class="sep">0.4871</td><td>9.48</td><td class="sep">0.5543</td><td>10.42</td><td class="sep">0.4628</td><td>9.42</td><td class="sep">18.0963</td><td>14.53</td><td class="sep">0.4998</td><td>9.07</td><td class="sep">0.4848</td><td>10.60</td></tr><tr><td class="pos">14</td><td>Default</td><td class="sep">0.4833</td><td>10.62</td><td class="sep">0.4272</td><td>12.45</td><td class="sep">0.5000</td><td>12.70</td><td class="sep">0.1857</td><td>11.85</td><td class="sep">0.8703</td><td>5.60</td><td class="sep">0.3002</td><td>10.25</td><td class="sep">0.6002</td><td>6.48</td></tr><tr><td class="pos">15</td><td>R-MDM</td><td class="sep">0.4834</td><td>10.83</td><td class="sep">0.4862</td><td>9.68</td><td class="sep">0.5687</td><td>9.80</td><td class="sep">0.4689</td><td>9.53</td><td class="sep">3.2639</td><td>10.10</td><td class="sep">0.5208</td><td>9.08</td><td class="sep">0.4477</td><td>10.52</td></tr></tbody></table></div><p class="note">Average score and average rank over the 30 datasets with results for every estimator on every metric. Best in each column is highlighted. Metrics marked &darr; are better when lower.</p><h2>Reproducing this page</h2><pre><code>from eegbench.datasets import eegbench
+from eegbench.experiments.tables import leaderboard
+
+leaderboard(
+    datasets=sorted(eegbench),
+    estimators=[&quot;HC2&quot;, &quot;DrCIF&quot;, &quot;Arsenal&quot;, &quot;STC&quot;, &quot;MRHydra&quot;, &quot;SVM&quot;, &quot;TDE&quot;, &quot;EEGNet&quot;, &quot;DCN&quot;, &quot;IT&quot;, &quot;CNN&quot;, &quot;CSP-SVM&quot;, &quot;R-KNN&quot;, &quot;Default&quot;, &quot;R-MDM&quot;],
+    metrics=[&quot;accuracy&quot;, &quot;balacc&quot;, &quot;auroc&quot;, &quot;f1&quot;, &quot;logloss&quot;, &quot;sensitivity&quot;, &quot;specificity&quot;],
+    sort_by=&quot;accuracy&quot;,
+)</code></pre><p class="note">Or <code>python -m eegbench.experiments.tables</code> to rebuild it with the defaults.</p></main><script>
+(function () {
+  var table = document.getElementById("leaderboard");
+  if (!table) return;
+  var body = table.tBodies[0];
+  var headers = table.querySelectorAll("th.sortable");
+
+  function value(row, index, text) {
+    var cell = row.cells[index];
+    if (!cell) return text ? "" : 0;
+    var raw = cell.textContent.trim();
+    if (text) return raw.toLowerCase();
+    var number = parseFloat(raw.replace(/,/g, ""));
+    return isNaN(number) ? 0 : number;
+  }
+
+  function sort(header) {
+    var index = parseInt(header.dataset.col, 10);
+    var isText = header.dataset.type === "text";
+    // repeat clicks toggle; a new column starts in its "best first" direction
+    var current = header.getAttribute("aria-sort");
+    var direction;
+    if (current === "ascending") direction = "descending";
+    else if (current === "descending") direction = "ascending";
+    else direction = header.dataset.first === "asc" ? "ascending" : "descending";
+
+    var sign = direction === "ascending" ? 1 : -1;
+    var rows = Array.prototype.slice.call(body.rows);
+    rows.sort(function (a, b) {
+      var x = value(a, index, isText);
+      var y = value(b, index, isText);
+      if (x < y) return -sign;
+      if (x > y) return sign;
+      return 0;
+    });
+    rows.forEach(function (row, i) {
+      body.appendChild(row);
+      // the position column always numbers the order actually on screen
+      if (row.cells[0]) row.cells[0].textContent = i + 1;
+    });
+
+    headers.forEach(function (other) { other.removeAttribute("aria-sort"); });
+    header.setAttribute("aria-sort", direction);
+  }
+
+  headers.forEach(function (header) {
+    header.tabIndex = 0;
+    header.addEventListener("click", function () { sort(header); });
+    header.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        sort(header);
+      }
+    });
+  });
+})();
+</script></body></html>

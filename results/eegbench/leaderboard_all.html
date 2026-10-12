@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>EEGBench leaderboard: all estimators</title><style>
+:root {
+  --bg: #ffffff; --fg: #1a1a1a; --muted: #666666;
+  --line: #e0e0e0; --head: #f5f5f5; --best: #e8f4ec; --accent: #2b6cb0;
+  --stripe: #fafafa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181c; --fg: #e8e8e8; --muted: #9aa0a6;
+    --line: #30343a; --head: #212429; --best: #1e3226; --accent: #7aa7d9;
+    --stripe: #1b1e23;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 2rem 1.25rem 4rem; background: var(--bg); color: var(--fg);
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 1100px; margin: 0 auto; }
+h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+.sub { color: var(--muted); margin: 0 0 2rem; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { padding: .45rem .7rem; text-align: right; white-space: nowrap;
+  border-bottom: 1px solid var(--line); }
+th { background: var(--head); font-weight: 600; position: sticky; top: 0; }
+td.pos { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums;
+  width: 2.5rem; }
+th.pos { text-align: right; color: var(--muted); }
+th:nth-child(-n+2), td:nth-child(-n+2) { position: sticky; background: var(--bg); }
+td:nth-child(2), th:nth-child(2) { text-align: left; }
+th:nth-child(1), td:nth-child(1) { left: 0; }
+th:nth-child(2), td:nth-child(2) { left: 2.5rem; box-shadow: 1px 0 0 var(--line); }
+th:nth-child(-n+2) { background: var(--head); z-index: 1; }
+tbody tr:last-child td { border-bottom: none; }
+td.best { background: var(--best); font-weight: 600; }
+th.grp { text-align: center; border-left: 2px solid var(--line); }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: var(--accent); }
+th.sortable::after { content: "↕"; opacity: .25; margin-left: .35em;
+  font-size: .85em; }
+th.sortable[aria-sort="ascending"]::after { content: "↑"; opacity: 1; }
+th.sortable[aria-sort="descending"]::after { content: "↓"; opacity: 1; }
+th.sortable:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+pre { background: var(--head); border: 1px solid var(--line); border-radius: 6px;
+  padding: .8rem 1rem; overflow-x: auto; font-size: .86rem; line-height: 1.5;
+  margin: 0; }
+pre code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+ul.missing { margin: .5rem 0 0; padding-left: 1.2rem; }
+ul.missing li { margin-bottom: .3rem; }
+th.sep, td.sep { border-left: 2px solid var(--line); }
+tbody td:not(:first-child) { font-variant-numeric: tabular-nums; }
+tbody tr:nth-child(even) td { background: var(--stripe); }
+tbody tr:hover td { background: var(--head); }
+tbody tr:hover td.best { background: var(--best); }
+tbody tr:hover td.best { background: var(--best); }
+figure { margin: 0; }
+figure img { max-width: 100%; height: auto; background: #fff; border-radius: 6px;
+  padding: .5rem; }
+.note { color: var(--muted); font-size: .88rem; margin-top: .6rem; }
+details { margin-top: .6rem; }
+summary { cursor: pointer; color: var(--accent); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+</style></head><body><main><h1>EEGBench leaderboard: all estimators</h1><p class="sub">21 estimators on 23 datasets &middot; 7 metrics &middot; ordered by average accuracy rank &middot; built 2026-10-12</p><div class="scroll"><table id="leaderboard"><thead><tr><th rowspan="2" class="pos">#</th><th rowspan="2" class="sortable" data-col="1" data-first="asc" data-type="text">Estimator</th><th colspan="2" class="grp">Accuracy</th><th colspan="2" class="grp">Balanced accuracy</th><th colspan="2" class="grp">AUROC</th><th colspan="2" class="grp">F1</th><th colspan="2" class="grp">Log loss &darr;</th><th colspan="2" class="grp">Sensitivity</th><th colspan="2" class="grp">Specificity</th></tr><tr><th class="sep sortable" data-col="2" data-first="desc">Score</th><th class="sortable" data-col="3" data-first="asc">Rank</th><th class="sep sortable" data-col="4" data-first="desc">Score</th><th class="sortable" data-col="5" data-first="asc">Rank</th><th class="sep sortable" data-col="6" data-first="desc">Score</th><th class="sortable" data-col="7" data-first="asc">Rank</th><th class="sep sortable" data-col="8" data-first="desc">Score</th><th class="sortable" data-col="9" data-first="asc">Rank</th><th class="sep sortable" data-col="10" data-first="asc">Score</th><th class="sortable" data-col="11" data-first="asc">Rank</th><th class="sep sortable" data-col="12" data-first="desc">Score</th><th class="sortable" data-col="13" data-first="asc">Rank</th><th class="sep sortable" data-col="14" data-first="desc">Score</th><th class="sortable" data-col="15" data-first="asc">Rank</th></tr></thead><tbody><tr><td class="pos">1</td><td>HC2</td><td class="sep best">0.5864</td><td class="best">5.28</td><td class="sep best">0.5725</td><td class="best">5.85</td><td class="sep">0.6726</td><td class="best">5.61</td><td class="sep">0.5509</td><td class="best">6.61</td><td class="sep">0.7864</td><td>5.26</td><td class="sep">0.5701</td><td class="best">7.26</td><td class="sep">0.5855</td><td class="best">6.61</td></tr><tr><td class="pos">2</td><td>STC</td><td class="sep">0.5754</td><td>7.83</td><td class="sep">0.5670</td><td>7.26</td><td class="sep">0.6626</td><td>8.50</td><td class="sep">0.5469</td><td>8.07</td><td class="sep">0.8054</td><td>6.09</td><td class="sep">0.5722</td><td>8.48</td><td class="sep">0.5680</td><td>9.26</td></tr><tr><td class="pos">3</td><td>DrCIF</td><td class="sep">0.5801</td><td>8.13</td><td class="sep">0.5681</td><td>8.04</td><td class="sep">0.6685</td><td>8.30</td><td class="sep">0.5441</td><td>7.67</td><td class="sep">0.7949</td><td>5.87</td><td class="sep">0.5723</td><td>8.63</td><td class="sep">0.5695</td><td>10.09</td></tr><tr><td class="pos">4</td><td>MiniROCKET</td><td class="sep">0.5722</td><td>8.28</td><td class="sep">0.5691</td><td>8.11</td><td class="sep">0.6326</td><td>10.89</td><td class="sep best">0.5720</td><td>7.59</td><td class="sep">15.4197</td><td>18.33</td><td class="sep">0.6118</td><td>8.72</td><td class="sep">0.5313</td><td>10.67</td></tr><tr><td class="pos">5</td><td>QUANT</td><td class="sep">0.5691</td><td>8.33</td><td class="sep">0.5680</td><td>7.30</td><td class="sep best">0.6815</td><td>5.80</td><td class="sep">0.5611</td><td>7.59</td><td class="sep">0.8921</td><td>6.43</td><td class="sep best">0.6121</td><td>8.02</td><td class="sep">0.5264</td><td>10.54</td></tr><tr><td class="pos">6</td><td>Arsenal</td><td class="sep">0.5673</td><td>8.41</td><td class="sep">0.5643</td><td>8.24</td><td class="sep">0.6295</td><td>11.02</td><td class="sep">0.5667</td><td>7.72</td><td class="sep">15.5949</td><td>18.41</td><td class="sep">0.6070</td><td>8.85</td><td class="sep">0.5264</td><td>10.80</td></tr><tr><td class="pos">7</td><td>ROCKET</td><td class="sep">0.5773</td><td>8.67</td><td class="sep">0.5657</td><td>8.85</td><td class="sep">0.6275</td><td>12.04</td><td class="sep">0.5312</td><td>8.93</td><td class="sep">15.2340</td><td>18.02</td><td class="sep">0.5443</td><td>10.33</td><td class="sep best">0.5918</td><td>9.07</td></tr><tr><td class="pos">8</td><td>FreshPRINCE</td><td class="sep">0.5751</td><td>9.50</td><td class="sep">0.5627</td><td>9.43</td><td class="sep">0.6785</td><td>6.15</td><td class="sep">0.5289</td><td>10.22</td><td class="sep best">0.7728</td><td class="best">5.22</td><td class="sep">0.5411</td><td>11.20</td><td class="sep">0.5906</td><td>10.17</td></tr><tr><td class="pos">9</td><td>MRHydra</td><td class="sep">0.5635</td><td>10.09</td><td class="sep">0.5557</td><td>9.35</td><td class="sep">0.6231</td><td>11.80</td><td class="sep">0.5468</td><td>9.35</td><td class="sep">15.7336</td><td>18.74</td><td class="sep">0.5695</td><td>10.70</td><td class="sep">0.5460</td><td>10.78</td></tr><tr><td class="pos">10</td><td>TDE</td><td class="sep">0.5521</td><td>10.35</td><td class="sep">0.5377</td><td>11.02</td><td class="sep">0.6332</td><td>10.33</td><td class="sep">0.5190</td><td>11.11</td><td class="sep">0.8784</td><td>9.43</td><td class="sep">0.5362</td><td>11.13</td><td class="sep">0.5493</td><td>9.96</td></tr><tr><td class="pos">11</td><td>SVM</td><td class="sep">0.5446</td><td>10.76</td><td class="sep">0.5321</td><td>11.00</td><td class="sep">0.6523</td><td>9.78</td><td class="sep">0.5044</td><td>10.70</td><td class="sep">0.8608</td><td>5.78</td><td class="sep">0.5684</td><td>9.02</td><td class="sep">0.5051</td><td>12.20</td></tr><tr><td class="pos">12</td><td>EEGNet</td><td class="sep">0.5068</td><td>11.11</td><td class="sep">0.5176</td><td>10.26</td><td class="sep">0.6230</td><td>10.00</td><td class="sep">0.5009</td><td>10.48</td><td class="sep">0.8706</td><td>6.22</td><td class="sep">0.5513</td><td>11.85</td><td class="sep">0.4842</td><td>11.28</td></tr><tr><td class="pos">13</td><td>DCN</td><td class="sep">0.5081</td><td>11.63</td><td class="sep">0.5105</td><td>11.22</td><td class="sep">0.6280</td><td>11.35</td><td class="sep">0.4740</td><td>11.37</td><td class="sep">1.1245</td><td>9.35</td><td class="sep">0.5333</td><td>11.41</td><td class="sep">0.4854</td><td>12.26</td></tr><tr><td class="pos">14</td><td>LogisticRegression</td><td class="sep">0.5075</td><td>12.70</td><td class="sep">0.4845</td><td>14.17</td><td class="sep">0.5939</td><td>12.37</td><td class="sep">0.3795</td><td>13.98</td><td class="sep">3.4524</td><td>12.61</td><td class="sep">0.4290</td><td>13.26</td><td class="sep">0.5525</td><td>9.80</td></tr><tr><td class="pos">15</td><td>IT</td><td class="sep">0.5118</td><td>13.65</td><td class="sep">0.5214</td><td>12.26</td><td class="sep">0.6332</td><td>10.72</td><td class="sep">0.4922</td><td>13.15</td><td class="sep">2.2534</td><td>13.70</td><td class="sep">0.5671</td><td>12.13</td><td class="sep">0.4745</td><td>12.76</td></tr><tr><td class="pos">16</td><td>RandomForest</td><td class="sep">0.5211</td><td>13.67</td><td class="sep">0.5098</td><td>13.78</td><td class="sep">0.6194</td><td>11.57</td><td class="sep">0.4756</td><td>13.67</td><td class="sep">0.8571</td><td>8.91</td><td class="sep">0.5196</td><td>12.89</td><td class="sep">0.5070</td><td>13.46</td></tr><tr><td class="pos">17</td><td>CNN</td><td class="sep">0.5124</td><td>13.98</td><td class="sep">0.4972</td><td>14.83</td><td class="sep">0.5912</td><td>13.67</td><td class="sep">0.3660</td><td>14.98</td><td class="sep">2.0826</td><td>12.39</td><td class="sep">0.4317</td><td>14.33</td><td class="sep">0.5676</td><td>10.48</td></tr><tr><td class="pos">18</td><td>R-KNN</td><td class="sep">0.4787</td><td>14.00</td><td class="sep">0.4756</td><td>13.30</td><td class="sep">0.5425</td><td>14.78</td><td class="sep">0.4464</td><td>13.59</td><td class="sep">18.7896</td><td>20.02</td><td class="sep">0.4871</td><td>13.54</td><td class="sep">0.4650</td><td>14.17</td></tr><tr><td class="pos">19</td><td>CSP-SVM</td><td class="sep">0.5099</td><td>14.33</td><td class="sep">0.4973</td><td>15.22</td><td class="sep">0.6050</td><td>13.93</td><td class="sep">0.4422</td><td>14.54</td><td class="sep">0.8948</td><td>9.00</td><td class="sep">0.4958</td><td>12.80</td><td class="sep">0.5027</td><td>13.20</td></tr><tr><td class="pos">20</td><td>Default</td><td class="sep">0.4651</td><td>15.04</td><td class="sep">0.4254</td><td>17.24</td><td class="sep">0.5000</td><td>17.70</td><td class="sep">0.1879</td><td>16.17</td><td class="sep">0.8853</td><td>7.48</td><td class="sep">0.3080</td><td>13.87</td><td class="sep">0.5688</td><td>9.07</td></tr><tr><td class="pos">21</td><td>R-MDM</td><td class="sep">0.4601</td><td>15.26</td><td class="sep">0.4647</td><td>14.26</td><td class="sep">0.5478</td><td>14.67</td><td class="sep">0.4566</td><td>13.52</td><td class="sep">3.5437</td><td>13.74</td><td class="sep">0.5194</td><td>12.59</td><td class="sep">0.4096</td><td>14.37</td></tr></tbody></table></div><p class="note">Average score and average rank over the 23 datasets with results for every estimator on every metric. Best in each column is highlighted. Metrics marked &darr; are better when lower.</p><h2>Missing results</h2><ul class="missing"><li><b>MiniROCKET</b> &mdash; Alzheimers, ButtonPress, Sleep (reason not recorded)</li><li><b>QUANT</b> &mdash; Alzheimers, ButtonPress, Sleep (reason not recorded)</li><li><b>ROCKET</b> &mdash; Alzheimers, ButtonPress, Sleep (reason not recorded)</li><li><b>FreshPRINCE</b> &mdash; Alzheimers, FaceDetection, LongIntervalTask, MatchingPennies, ShortIntervalTask, Sleep (reason not recorded)</li><li><b>LogisticRegression</b> &mdash; Alzheimers, ButtonPress, Sleep (reason not recorded)</li><li><b>RandomForest</b> &mdash; Alzheimers, ButtonPress, Sleep (reason not recorded)</li></ul><p class="note">Scoring uses the 23 datasets every estimator completed, so a dataset any one of them is missing is left out for all. Reasons are from the job logs of these runs.</p><h2>Reproducing this page</h2><pre><code>from eegbench.datasets import eegbench
+from eegbench.experiments.tables import leaderboard
+
+leaderboard(
+    datasets=sorted(eegbench),
+    estimators=[&quot;HC2&quot;, &quot;STC&quot;, &quot;DrCIF&quot;, &quot;MiniROCKET&quot;, &quot;QUANT&quot;, &quot;Arsenal&quot;, &quot;ROCKET&quot;, &quot;FreshPRINCE&quot;, &quot;MRHydra&quot;, &quot;TDE&quot;, &quot;SVM&quot;, &quot;EEGNet&quot;, &quot;DCN&quot;, &quot;LogisticRegression&quot;, &quot;IT&quot;, &quot;RandomForest&quot;, &quot;CNN&quot;, &quot;R-KNN&quot;, &quot;CSP-SVM&quot;, &quot;Default&quot;, &quot;R-MDM&quot;],
+    metrics=[&quot;accuracy&quot;, &quot;balacc&quot;, &quot;auroc&quot;, &quot;f1&quot;, &quot;logloss&quot;, &quot;sensitivity&quot;, &quot;specificity&quot;],
+    sort_by=&quot;accuracy&quot;,
+)</code></pre><p class="note">Or <code>python -m eegbench.experiments.tables</code> to rebuild it with the defaults.</p></main><script>
+(function () {
+  var table = document.getElementById("leaderboard");
+  if (!table) return;
+  var body = table.tBodies[0];
+  var headers = table.querySelectorAll("th.sortable");
+
+  function value(row, index, text) {
+    var cell = row.cells[index];
+    if (!cell) return text ? "" : 0;
+    var raw = cell.textContent.trim();
+    if (text) return raw.toLowerCase();
+    var number = parseFloat(raw.replace(/,/g, ""));
+    return isNaN(number) ? 0 : number;
+  }
+
+  function sort(header) {
+    var index = parseInt(header.dataset.col, 10);
+    var isText = header.dataset.type === "text";
+    // repeat clicks toggle; a new column starts in its "best first" direction
+    var current = header.getAttribute("aria-sort");
+    var direction;
+    if (current === "ascending") direction = "descending";
+    else if (current === "descending") direction = "ascending";
+    else direction = header.dataset.first === "asc" ? "ascending" : "descending";
+
+    var sign = direction === "ascending" ? 1 : -1;
+    var rows = Array.prototype.slice.call(body.rows);
+    rows.sort(function (a, b) {
+      var x = value(a, index, isText);
+      var y = value(b, index, isText);
+      if (x < y) return -sign;
+      if (x > y) return sign;
+      return 0;
+    });
+    rows.forEach(function (row, i) {
+      body.appendChild(row);
+      // the position column always numbers the order actually on screen
+      if (row.cells[0]) row.cells[0].textContent = i + 1;
+    });
+
+    headers.forEach(function (other) { other.removeAttribute("aria-sort"); });
+    header.setAttribute("aria-sort", direction);
+  }
+
+  headers.forEach(function (header) {
+    header.tabIndex = 0;
+    header.addEventListener("click", function () { sort(header); });
+    header.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        sort(header);
+      }
+    });
+  });
+})();
+</script></body></html>

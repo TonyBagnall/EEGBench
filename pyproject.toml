@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eegbench"
+authors = [
+    {name = "aeon developers", email = "contact@aeon-toolkit.org"},
+]
+maintainers = [
+    {name = "aeon developers", email = "contact@aeon-toolkit.org"},
+]
+version = "0.0.1"
+description = "A leaderboard for EEG classification, part of the Multiverse archive."
+readme = "README.md"
+keywords = [
+    "aeon-toolkit",
+    "machine-learning",
+    "time-series",
+    "time-series-classification",
+    "eeg",
+    "benchmark",
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering",
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: BSD License",
+]
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=2.0",
+    "aeon>=1.4.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+]
+# Only the experiment drivers and ingest need tsml-eval, not the result tables.
+experiments = [
+    "tsml_eval>=0.6",
+]
+
+[tool.setuptools.packages.find]
+include = ["eegbench*"]
+
+[project.urls]
+Homepage = "https://github.com/TonyBagnall/EEGBench"
+Repository = "https://github.com/TonyBagnall/EEGBench"
+Issues = "https://github.com/TonyBagnall/EEGBench/issues"
+Multiverse = "https://github.com/aeon-toolkit/multiverse"

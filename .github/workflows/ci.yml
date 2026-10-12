@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[test]"
+
+      # Every script under experiments/ is an entry point the README sends
+      # people to, so a syntax error in one is a user-facing break.
+      - name: Compile every module
+        run: |
+          python -m compileall -q eegbench
+
+      - name: Run tests
+        run: |
+          python -m pytest eegbench -v
+
+      # The checked-in results must still build the pages the README links to.
+      - name: Build the leaderboards
+        run: |
+          python -m eegbench.experiments.tables

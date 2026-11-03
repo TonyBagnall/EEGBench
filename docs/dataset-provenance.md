@@ -8,6 +8,9 @@ Sections 2.1-2.3 and Table 1 of Rushbrooke, Sami, Middlehurst and Bagnall (2026)
 [`eegbench/datasets.py`](../eegbench/datasets.py). External sources were checked on
 3 November 2026. This is a source audit, not a verification of downloaded data files.
 
+[Locally prepared additions](#locally-prepared-additions) are documented separately
+below, including their relationship to datasets already present on the local drive.
+
 **Dimensions** below describe the benchmark arrays: `(cases, channels, timepoints)`.
 Train and test counts are separate; labels have one value per case. Sampling rates
 and subject counts are those reported for the benchmark unless explicitly described
@@ -558,3 +561,86 @@ A useful handoff request is:
   Epilepsy, and the SCP source descriptions provide exceptions to the
   simpler recording-day interpretation. No metadata or evaluation code has been
   changed as part of this documentation audit.
+
+## Three additional classification problems
+
+These bring the local collection to 33 problems; the paper's benchmark and its
+30 results remain as published. The additions use pinned OpenEEGBench
+preparations: original training and validation are concatenated in order, and
+the original test partition is retained. Full channel orders, labels, counts,
+preprocessing and sidecar details are in [Additional EEG datasets](additional-datasets.md).
+
+| Local problem | Task and dimensions (train; test) | Original source / paper | Other names and processed source |
+|---|---|---|---|
+| MentalArithmetic | Mental arithmetic vs rest; `(1515, 19, 1000)`; `(192, 19, 1000)` | PhysioNet EEGmat; Zyma et al. (2019), [DOI 10.3390/data4010014](https://doi.org/10.3390/data4010014) | EEGMAT; `braindecode/arithmetic_zyma2019` |
+| ImaginedCommands | Five imagined commands; `(5250, 64, 600)`; `(750, 64, 600)` | 2020 International BCI Competition Track 3; Jeong et al. (2022), [DOI 10.3389/fnhum.2022.898300](https://doi.org/10.3389/fnhum.2022.898300) | `bcic2020-3`, NEMAR `nm000113`; `braindecode/bcic2020-3` |
+| ChildhoodSeizures | Seizure vs background; `(34045, 17, 2000)`; `(2140, 17, 2000)` | CHB-MIT Scalp EEG Database; Guttag (2010), Shoeb (2009) | CHB-MIT, `chbmit`; `braindecode/chbmit` |
+
+All are at 200 Hz. MentalArithmetic uses the same original recordings as the
+existing local EEGMAT preparation, so those two are alternative preparations of
+one source collection. ImaginedCommands uses a within-subject run split. The
+ChildhoodSeizures channels are renamed bipolar derivations; they are not
+monopolar electrode locations. Each relationship and limitation is described
+below.
+
+### MentalArithmetic
+
+- **Original source / other names:** Zyma et al.,
+  [EEG During Mental Arithmetic Tasks](https://physionet.org/content/eegmat/1.0.0/),
+  EEGmat / EEGMAT / OpenEEGBench Arithmetic. Original frequency 500 Hz.
+- **Local dimensions:** train `(1515, 19, 1000)`, test `(192, 19, 1000)`;
+  2 classes, 36 participants, 200 Hz, five-second windows.
+- **Origin relationship:** `D:/Data/EEG/EEGMAT/` uses the same original recordings,
+  but 500 Hz/two-second windows and a different split/selection. These are
+  alternative preparations, not independent source collections. Existing EEGMAT
+  files are unchanged. The new folder is `D:/Data/EEG/MentalArithmetic/`.
+- **Paper / licence:** Zyma et al. (2019), *Electroencephalograms during Mental
+  Arithmetic Task Performance*, Data 4(1), 14
+  ([DOI](https://doi.org/10.3390/data4010014)); source data ODC-By-1.0.
+
+### ImaginedCommands
+
+- **Original source / other names:** [2020 International BCI Competition](https://osf.io/pq7vb/),
+  Track 3 imagined speech; `bcic2020-3`, NEMAR `nm000113`. Source 256 Hz.
+- **Local dimensions:** train `(5250, 64, 600)`, test `(750, 64, 600)`;
+  5 classes, 15 participants, 200 Hz, three-second trials.
+- **Derivation / split:** resampled preprocessed trials; run 00 plus run 01 forms
+  training, run 02 forms test. All subjects intentionally occur on both sides;
+  this is not subject-independent classification. Local folder
+  `D:/Data/EEG/ImaginedCommands/`.
+- **Paper / licence:** Jeong et al. (2022), *2020 International brain-computer
+  interface competition: A review*, Frontiers in Human Neuroscience 16, 898300
+  ([DOI](https://doi.org/10.3389/fnhum.2022.898300)); original OSF data CC BY 4.0.
+
+### ChildhoodSeizures
+
+- **Original source / other names:** [CHB-MIT Scalp EEG Database](https://physionet.org/content/chbmit/1.0.0/),
+  Children's Hospital Boston/MIT; `chbmit`. Source 256 Hz.
+- **Local dimensions:** train `(34045, 17, 2000)`, test `(2140, 17, 2000)`;
+  2 classes, 22 known people represented by 23 case IDs, 200 Hz.
+- **Derivation / split:** ten-second windows of 17 selected bipolar derivations.
+  Distributed electrode-like names are renamings, not monopolar sensor positions;
+  original pairs are retained in sidecars. Train IDs chb01-chb21, test chb22/chb23;
+  chb01/chb21 represent one person, both in training. The fixed protocol omits
+  chb24. Local folder `D:/Data/EEG/ChildhoodSeizures/`.
+- **References / licence:** Guttag (2010), dataset DOI
+  [10.13026/C2K01R](https://doi.org/10.13026/C2K01R); Shoeb (2009), *Application
+  of Machine Learning to Epileptic Seizure Onset Detection and Treatment*, MIT
+  PhD thesis. Source data ODC-By-1.0.
+
+### Excluded: Depression (MDDMumtaz2016)
+
+- **Original source / other names:** Mumtaz (2016), *MDD Patients and Healthy
+  Controls EEG Data (New)*, [Figshare v2](https://doi.org/10.6084/m9.figshare.4244171.v2);
+  `mdd_mumtaz2016`, NEMAR `nm000114`. Source-reported 256 Hz.
+- **Audited source dimensions (removed):** train `(8300, 19, 1000)`, test `(6443, 19, 1000)`;
+  2 classes, 64 subject IDs, 200 Hz, five-second windows.
+- **Quality / location:** 121 distinct P300 windows repeat across different
+  source subject IDs, affecting 726 train and 484 test cases. This was independently
+  verified in the pinned processed source before conversion. The prepared signal arrays and quarantined `.ts` export have been deleted,
+  and this dataset is excluded from download/export choices. Only diagnostic
+  reports remain. See the [upstream issue draft](issues/mdd-duplicate-windows.md).
+- **Paper / licence:** Mumtaz et al. (2017), *Electroencephalogram (EEG)-based
+  computer-aided technique to diagnose major depressive disorder (MDD)*,
+  Biomedical Signal Processing and Control 31, 108-115
+  ([DOI](https://doi.org/10.1016/j.bspc.2016.07.006)); original Figshare data CC BY 4.0.

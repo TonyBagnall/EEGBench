@@ -25,17 +25,17 @@ jobs:
       - name: Install package
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -e ".[test]"
+          python -m pip install -e ".[test,data-import]"
 
       # Every script under experiments/ is an entry point the README sends
       # people to, so a syntax error in one is a user-facing break.
       - name: Compile every module
         run: |
-          python -m compileall -q eegbench
+          python -m compileall -q eegbench tools/openeegbench
 
       - name: Run tests
         run: |
-          python -m pytest eegbench -v
+          python -m pytest eegbench tools/openeegbench -v
 
       # The checked-in results must still build the pages the README links to.
       - name: Build the leaderboards

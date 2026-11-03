@@ -36,3 +36,6 @@ Thumbs.db
 
 # Local data cache (optional)
 .multiverse/
+
+# Downloaded EEG data, inspection metadata, local environments and conversions
+.openeegbench/

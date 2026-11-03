@@ -42,6 +42,11 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+data-import = [
+    "certifi>=2025.1.31",
+    "h5py>=3.11",
+    "pyarrow>=15",
+]
 test = [
     "pytest>=7.0",
 ]

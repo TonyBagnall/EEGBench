@@ -3,6 +3,12 @@
 For original recording sources, alternative names, dimensions, paper references
 and unresolved source discrepancies, see [Dataset provenance](dataset-provenance.md).
 
+Additional candidates are prepared separately using the
+[OpenEEGBench import tools](openeegbench-import.md), before admission to this archive.
+The [additional dataset descriptions](additional-datasets.md) document MentalArithmetic,
+ImaginedCommands and ChildhoodSeizures in `D:/Data/EEG/`, with the same `.ts` and sidecar layout
+as the other local datasets. Depression was excluded following source-duplicate validation.
+
 The archive is the 30 EEG classification problems of Table 1 in
 [Time Series Machine Learning for Classifying Electroencephalograms](https://data.mlr.press/assets/pdf/v03-8.pdf).
 Six come from the UEA multivariate archive, the rest were collated for the paper. The

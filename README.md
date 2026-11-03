@@ -72,6 +72,8 @@ Default is the baseline that always predicts the majority class, see
 <p align="center">
   <a href="docs/datasets.md">Datasets</a>
   ·
+  <a href="docs/dataset-provenance.md">Dataset provenance</a>
+  ·
   <a href="docs/evaluation.md">Evaluation</a>
   ·
   <a href="docs/leaderboard.md">Leaderboard</a>

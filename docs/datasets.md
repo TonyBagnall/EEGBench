@@ -1,5 +1,8 @@
 # Datasets
 
+For original recording sources, alternative names, dimensions, paper references
+and unresolved source discrepancies, see [Dataset provenance](dataset-provenance.md).
+
 The archive is the 30 EEG classification problems of Table 1 in
 [Time Series Machine Learning for Classifying Electroencephalograms](https://data.mlr.press/assets/pdf/v03-8.pdf).
 Six come from the UEA multivariate archive, the rest were collated for the paper. The

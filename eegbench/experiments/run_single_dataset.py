@@ -24,12 +24,14 @@ aeon-neuro and the ports of general multivariate classifiers are in
 multiverse.classification. Neither is kept in this repository.
 """
 
+import os
+
 from tsml_eval.experiments import (
     get_classifier_by_name,
     load_and_run_classification_experiment,
 )
 
-data_path = "C:/Data/EEG"
+data_path = os.environ.get("EEGBENCH_DATA_PATH", "D:/Data/EEG")
 results_path = "./results-raw"
 
 

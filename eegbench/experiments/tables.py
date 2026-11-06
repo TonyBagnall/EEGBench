@@ -1196,8 +1196,9 @@ def dataset_markdown(
 def main() -> None:
     """Build the EEGBench leaderboards.
 
-    The main leaderboard covers all 30 datasets, so it is restricted to the
-    estimators with a result on every one of them. A second page takes every
+    The main leaderboard requests all registered datasets. Prefer estimators
+    complete on the full collection; otherwise report available overlap and
+    missing results. A second page takes every
     estimator, and so scores on the smaller set of datasets they all completed.
     The Default baseline takes a place in both.
     """
@@ -1205,7 +1206,7 @@ def main() -> None:
 
     datasets = sorted(eegbench)
     everything = available_estimators()
-    estimators = complete_estimators(datasets, everything)
+    estimators = complete_estimators(datasets, everything) or everything
     partial = [name for name in everything if name not in estimators]
     print(f"complete: {', '.join(estimators)}")
     print(f"partial:  {', '.join(partial)}")

@@ -4,10 +4,10 @@ This is a draft, we are adding results as we generate them.
 
 **EEGBench** is a leaderboard for EEG classification. It holds benchmark results for
 general purpose time series classifiers, deep learners and methods designed for EEG, on
-an archive of 30 EEG classification problems covering medical diagnosis, brain-computer
+an archive of 66 EEG classification problems covering medical diagnosis, brain-computer
 interfacing and psychology.
 
-The archive and the first set of results are described in
+The original 30 datasets and first set of results are described in
 [Time Series Machine Learning for Classifying Electroencephalograms](https://data.mlr.press/assets/pdf/v03-8.pdf)
 (Rushbrooke, Sami, Middlehurst and Bagnall, Journal of Data-centric Machine Learning
 Research, 2026). If you use the archive or these results, please cite it;
@@ -71,11 +71,11 @@ Default is the baseline that always predicts the majority class, see
 
 <p align="center">
   <a href="docs/datasets.md">Datasets</a>
-  ·
+  Â·
   <a href="docs/dataset-provenance.md">Dataset provenance</a>
-  ·
+  Â·
   <a href="docs/evaluation.md">Evaluation</a>
-  ·
+  Â·
   <a href="docs/leaderboard.md">Leaderboard</a>
 </p>
 
@@ -93,10 +93,12 @@ pip install -e .
 
 ### Load a dataset
 
-28 of the 30 datasets are on Zenodo, in the
+28 of the 66 datasets are registered on Zenodo, in the
 [tsml community](https://zenodo.org/communities/tsml/), and are loaded with `aeon`. The
-two fibromyalgia datasets are not fully open access; contact Tony Bagnall for access for
-research.
+two fibromyalgia datasets require research access through Tony Bagnall. The 36
+newer preparations are available as local `.ts` files, with provenance and source
+terms in their sidecars. All 66 are in `eegbench.datasets.eegbench`; the original
+paper subset is `eegbench_paper`. See [the datasets page](docs/datasets.md).
 
 ```python
 from aeon.datasets import load_classification
@@ -107,8 +109,12 @@ X_train, y_train = load_classification("Blink", split="train")
 X_test, y_test = load_classification("Blink", split="test")
 ```
 
-Use the train and test split as given. No subject appears on both sides of it, which a
-random resample would not respect. More in [`docs/datasets.md`](docs/datasets.md).
+For a local preparation, use `aeon.datasets.load_from_ts_file`, for example
+`load_from_ts_file("D:/Data/EEG/ImaginedLeftRightHand/ImaginedLeftRightHand_TRAIN.ts")`.
+The batch experiment example requests all 66 and uses `D:/Data/EEG` by default;
+set `EEGBENCH_DATA_PATH` to use another location. Use each supplied split:
+some protocols intentionally share subjects across different runs, and older
+subject/session mappings have documented gaps. More in [`docs/datasets.md`](docs/datasets.md).
 
 ### Train and test a classifier
 
@@ -163,10 +169,10 @@ the results here. More in
 
 ```text
 EEGBench/
-├── docs/                    # Documentation
-├── results/eegbench/        # Results, one directory per estimator, and the leaderboards
-└── eegbench/                # Python package
-    ├── datasets.py          # The archive: dataset lists and metadata
-    ├── estimators.py        # The estimators on the leaderboard, as metadata only
-    └── experiments/         # Result generation and leaderboard tables
+â”œâ”€â”€ docs/                    # Documentation
+â”œâ”€â”€ results/eegbench/        # Results, one directory per estimator, and the leaderboards
+â””â”€â”€ eegbench/                # Python package
+    â”œâ”€â”€ datasets.py          # The archive: dataset lists and metadata
+    â”œâ”€â”€ estimators.py        # The estimators on the leaderboard, as metadata only
+    â””â”€â”€ experiments/         # Result generation and leaderboard tables
 ```

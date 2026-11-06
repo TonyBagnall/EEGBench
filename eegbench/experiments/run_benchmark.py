@@ -18,13 +18,13 @@ Edit the settings in main and run it with
     python -m eegbench.experiments.run_benchmark
 """
 
-from eegbench.datasets import eegbench_open
+from eegbench.datasets import eegbench
 from eegbench.experiments.run_single_dataset import single_experiment
 
 
 def main():
     classifiers = ["MRHydra", "HC2"]
-    datasets = sorted(eegbench_open)
+    datasets = sorted(eegbench)
 
     print(f"{len(classifiers)} classifiers x {len(datasets)} datasets")
     for classifier in classifiers:

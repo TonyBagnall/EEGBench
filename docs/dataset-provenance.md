@@ -1,15 +1,82 @@
 # Dataset provenance
 
-This page traces all 30 EEGBench problems to their recording collections, source
-names and publications. Benchmark dimensions and extraction details are taken from
+The three PRED+CT additions are prepared with original data licence evidence,
+pinned source files and native sensor/subject metadata. See
+[PRED+CT preparation](predct-preparation.md) for ParkinsonsPedalling (Singh2020),
+ParkinsonsRest (Cavanagh2018b) and ObsessiveCompulsiveSymptoms (Gruendler2009),
+including catalogue discrepancies, recording exclusions and sensor-removal audits.
+All three passed full conversion checks and are registered.
+
+[ImaginedHandsStroke](imagined-hands-stroke-preparation.md) is Liu2024 /
+Figshare `21679035` v5 / NEMAR `nm000158`, also misleadingly called Liu2022
+by ETH-DISCO. It retains 46 release IDs after the documented derived-product
+and ambiguous-trigger exclusions; the original data licence is CC BY 4.0.
+
+Cross-benchmark source checks are now available for
+[AdaBrain-Bench](../AdaBrain-Bench.md) and
+[ETH-DISCO EEG-Bench](../EEG-Bench.md). In particular, the latter's Singh2021
+mirror shares 116 original recording IDs with OpenNeuro ds004579, the source of
+ShortIntervalTask/LongIntervalTask. This is strong evidence of shared cohort/task
+origin; identical numerical recordings have not been established across its
+BrainVision and OpenNeuro EEGLAB representations. See the
+[ID audit and source revisions](singh2021-source-overlap.json).
+
+The four further [open MOABB conversions](open-moabb-conversions.md) are
+RestingEyeState / Rodrigues2017 (Zenodo 2605110), GameTargets / BrainForm
+(17225966), CodedFlickerTargets / Castillos2023 (8255618), and ImaginedHandTraining /
+Kumar2024 (10694880). Each has a distinct source collection, original CC BY 4.0
+data terms and source IDs on every case. Sensor harmonisation, incomplete-window
+exclusions and label evidence are documented in that report.
+
+[ImaginedGripForce](imagined-grip-force-preparation.md) adds MartinezPeon2024 /
+Figshare `25773342` v1: three imagined right-hand squeezing force levels,
+ten participants, one documented session each, 60 recordings and 300 trials.
+The original data licence is CC BY 4.0. The report distinguishes source-file
+fields from documented channel mapping and protocol-inferred epoch times.
+
+This page traces the original 30 EEGBench problems to their recording collections,
+source names and publications, and links the provenance reports for local additions.
+Original benchmark dimensions and extraction details are taken from
 Sections 2.1-2.3 and Table 1 of Rushbrooke, Sami, Middlehurst and Bagnall (2026),
 [Time Series Machine Learning for Classifying Electroencephalograms](https://data.mlr.press/assets/pdf/v03-8.pdf)
 (the root paper, `v03-8.pdf`), and checked against
 [`eegbench/datasets.py`](../eegbench/datasets.py). External sources were checked on
-3 November 2026. This is a source audit, not a verification of downloaded data files.
+3 November 2026. This is primarily a source audit; subsequent verification of
+selected local files and their corrections is explicitly identified below and
+in [Local data corrections](local-data-corrections.md).
 
 [Locally prepared additions](#locally-prepared-additions) are documented separately
 below, including their relationship to datasets already present on the local drive.
+Further [BCI IV 2a, ISRUC-Sleep and FACED local preparations](openeegbench-local-preparations.md)
+have pinned source revisions, task descriptions and channel/label recovery notes.
+[NBackAudioCondition](nback-location.md) adds Christoph Tremmel's joint N-back/audio
+task, with owner-confirmed participant blocks and further source details to follow.
+[VisualSubjects](moabb-preparations.md) is the BI2014a visual P300 task, with original
+Zenodo licence evidence, pinned loader snapshots and the source F5/F6 channel names.
+[FlickerAttention](kalunga-preparation.md) is Kalunga2016 / SSVEP-exoskeleton,
+with corrected frequency labels and an explicit audit of duplicate recording aliases.
+[WordRelatedness](word-relatedness-preparation.md) is ERP CORE N400 / OpenNeuro
+ds003068, with original CC BY-SA licence evidence and native EEGLAB event metadata.
+[ArmMovements and ImaginedArmMovements](ofner-preparations.md) are the executed
+and imagined right upper-limb tasks of Ofner2017, Zenodo `834976` v1 (also BNCI
+`001-2017`, NEMAR `nm000173`). They share 15 participants but use different session
+recordings. Each has train `(4620, 61, 1536)` and test `(1680, 61, 1536)`, seven
+classes at 512 Hz, with common subject split `01`â€“`11` / `12`â€“`15`. The original
+data licence is CC BY 4.0; the reference is Ofner et al. (2017),
+[*Upper limb movements can be decoded from the time-domain of low-frequency EEG*](https://doi.org/10.1371/journal.pone.0182578).
+The report distinguishes native GDF sensor/event metadata from the original PDF's
+generic-name mapping and acquisition description, and flags ambiguous GDF units.
+[CodedSymbols](coded-symbols-preparation.md) is the 20-target offline experiment of
+Thielen2021, Radboud DOI `10.34973/9txv-z787`, version-3 directory
+`DSC_2018.00122_448_v3`, also identified as NEMAR `nm000214`. It has train
+`(2200, 8, 16128)` and test `(800, 8, 16128)`, 30 participants, 20 classes and
+512 Hz sampling. Original CC0 and publisher SHA256 files are retained. The reference
+is Thielen et al. (2021), [*From full calibration to zero training for a code-modulated
+visual evoked potentials for brainâ€“computer interface*](https://doi.org/10.1088/1741-2552/abecef).
+The source's first sensor conflicts between Fpz/Fp1/Fz; this remains flagged.
+Its original 512 Hz GDF recordings are distinct from the separate 180 Hz MATLAB
+buffers. MOABB's binary bit-state view uses the same recordings and is not added
+as an independent collection.
 
 **Dimensions** below describe the benchmark arrays: `(cases, channels, timepoints)`.
 Train and test counts are separate; labels have one value per case. Sampling rates
@@ -45,7 +112,7 @@ fibromyalgia identifiers are labels for this page only, not public accessions.
 | [FeetHands](#feethands) | PhysioNet `eegmmidb`; OpenNeuro `ds004362` | Executed bilateral fists/feet | Identified |
 | [FibroLiverpool](#fibroliverpool) | Local label: Liverpool FMS study | Eyes-open resting; FMS/control | Institution only |
 | [FibroUEA](#fibrouea) | Local label: UEA FMS/VR study | FMS/control; distinct Liverpool cohort | Institution only |
-| [FingerMovements](#fingermovements) | BCI Competition II `IV` (Berlin) | Upcoming left/right keypress | Identified; dimensions conflict |
+| [FingerMovements](#fingermovements) | BCI Competition II `IV` (Berlin) | Upcoming left/right keypress | Identified; local 50-point, 100 Hz version verified |
 | [HandMovementDirection](#handmovementdirection) | BCI Competition IV `3`, subject 1 | Four wrist/joystick directions; MEG | Identified |
 | [ImaginedFeetHands](#imaginedfeethands) | PhysioNet `eegmmidb`; OpenNeuro `ds004362` | Imagined bilateral fists/feet | Identified; case count query |
 | [ImaginedOpenCloseFist](#imaginedopenclosefist) | PhysioNet `eegmmidb`; OpenNeuro `ds004362` | Imagined left/right fist | Identified |
@@ -108,6 +175,7 @@ A useful handoff request is:
   recordings from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects*.
 - **Benchmark dimensions:** train `(45, 19, 30000)`, test `(43, 19, 30000)`;
   3 classes, 88 subjects, 500 Hz.
+- **Current local files:** train `(45, 19, 15000)`, test `(43, 19, 15000)`, verified from both headers and every case. These are the local `Alzheimers_short` variant. The reported 500 Hz is retained but cannot be verified from the local files; cropping versus resampling is unresolved. No signal data were changed by this metadata correction. See [local corrections](local-data-corrections.md).
 - **Derivation:** one 60 s eyes-closed resting window per subject; Alzheimer's,
   frontotemporal dementia or healthy control (36/23/29 subjects). PhotoStimulation
   uses a related recording collection from the same cohort.
@@ -268,7 +336,7 @@ A useful handoff request is:
   at 1000 Hz (500 points) or 100 Hz (50 points). The
   [UEA description](https://www.timeseriesclassification.com/description.php?Dataset=FingerMovements)
   specifies 50 points at 100 Hz. Neither explains Table 1's 400 points at 128 Hz;
-  verify the benchmark files before assuming these versions are interchangeable.
+  the current local files have now been verified as 50 points at 100 Hz, from every case and the embedded source comments. The registry and sidecars reflect this version; no resampling was performed. Original recording frequency is 1000 Hz. See [local corrections](local-data-corrections.md).
 - **Paper:** Blankertz, Curio and Muller (2002), *Classifying Single Trial EEG:
   Towards Brain Computer Interfacing*, Advances in Neural Information Processing
   Systems 14; cited by the competition source. Also Ruiz et al. (2021).
@@ -553,7 +621,7 @@ A useful handoff request is:
   FeedbackButton, FibroLiverpool and FibroUEA.
 - Pin the exact original release versions and conversion scripts used to produce
   the benchmark files; a link to a current collection alone does not establish this.
-- Reconcile FingerMovements length/frequency, Sleep length, EpilepticSeizures
+- Reconcile Sleep length, EpilepticSeizures
   frequency, FaceDetection channel/window selection, and the subject/trial counts
   flagged above against actual files and subject-index metadata.
 - Audit the inherited splits before applying a blanket subject/session-disjoint
@@ -576,9 +644,10 @@ preprocessing and sidecar details are in [Additional EEG datasets](additional-da
 | ImaginedCommands | Five imagined commands; `(5250, 64, 600)`; `(750, 64, 600)` | 2020 International BCI Competition Track 3; Jeong et al. (2022), [DOI 10.3389/fnhum.2022.898300](https://doi.org/10.3389/fnhum.2022.898300) | `bcic2020-3`, NEMAR `nm000113`; `braindecode/bcic2020-3` |
 | ChildhoodSeizures | Seizure vs background; `(34045, 17, 2000)`; `(2140, 17, 2000)` | CHB-MIT Scalp EEG Database; Guttag (2010), Shoeb (2009) | CHB-MIT, `chbmit`; `braindecode/chbmit` |
 
-All are at 200 Hz. MentalArithmetic uses the same original recordings as the
-existing local EEGMAT preparation, so those two are alternative preparations of
-one source collection. ImaginedCommands uses a within-subject run split. The
+All are at 200 Hz. MentalArithmetic is the retained local preparation of the
+PhysioNet EEGmat collection. A previous local EEGMAT-format export of the same
+recordings was removed to avoid keeping two preparations of one source
+collection. ImaginedCommands uses a within-subject run split. The
 ChildhoodSeizures channels are renamed bipolar derivations; they are not
 monopolar electrode locations. Each relationship and limitation is described
 below.
@@ -590,10 +659,10 @@ below.
   EEGmat / EEGMAT / OpenEEGBench Arithmetic. Original frequency 500 Hz.
 - **Local dimensions:** train `(1515, 19, 1000)`, test `(192, 19, 1000)`;
   2 classes, 36 participants, 200 Hz, five-second windows.
-- **Origin relationship:** `D:/Data/EEG/EEGMAT/` uses the same original recordings,
-  but 500 Hz/two-second windows and a different split/selection. These are
-  alternative preparations, not independent source collections. Existing EEGMAT
-  files are unchanged. The new folder is `D:/Data/EEG/MentalArithmetic/`.
+- **Origin relationship:** This is derived from the same PhysioNet EEGmat
+  recordings as the former local EEGMAT export (500 Hz/two-second windows,
+  different split and selection). That duplicate local export was removed; the
+  retained folder is `D:/Data/EEG/MentalArithmetic/`.
 - **Paper / licence:** Zyma et al. (2019), *Electroencephalograms during Mental
   Arithmetic Task Performance*, Data 4(1), 14
   ([DOI](https://doi.org/10.3390/data4010014)); source data ODC-By-1.0.
@@ -628,6 +697,15 @@ below.
   of Machine Learning to Epileptic Seizure Onset Detection and Treatment*, MIT
   PhD thesis. Source data ODC-By-1.0.
 
+### MatchWords
+
+- **Original source / other names:** [Auditory single word recognition in MEG](https://openneuro.org/datasets/ds004276/versions/1.0.0), OpenNeuro `ds004276` v1.0.0. The archive name `MatchWords` refers to the semantic relatedness judgement task; the cases are MEG epochs, not EEG.
+- **Local dimensions:** train and test each contain 360 cases of 156 channels by 1,500 timepoints (1.5 seconds at 1,000 Hz), with 180 `No` and 180 `Yes` labels per split. The data are in `D:/Data/EEG/MatchWords/`.
+- **Local correction:** Original axis 55 was constant in all 720 cases and has been removed. Retained values were multiplied by 1e15 (T to fT) using float64. Source channel tables retain the original 157 sensors; current sidecars identify the 156 retained axes. See [local corrections](local-data-corrections.md).
+- **Subjects and channels:** The source lists 18 participants (`sub-001`â€“`sub-018`) and provides 157 axial gradiometer channels, `MEG 001`â€“`MEG 157`, in the same order for every participant. `MEG 056` is marked bad for all participants. The source order and count are recorded in the sidecars. The `.ts` files have no per-case participant IDs or sensor names, so participant-to-case mapping and direct proof of the local array channel order are unavailable; the channel order is therefore a source-based correspondence, not independently verified against the exported arrays.
+- **Labels / task:** `Yes` and `No` denote semantic relatedness responses to written probes following auditory words. They do not describe imagined movement or a spoken yes/no response.
+- **Paper / licence:** Gaston, Brodbeck, Phillips & Lau, *Auditory Word Comprehension Is Less Incremental in Isolated Words*, Neurobiology of Language 4(1), 29â€“52 ([DOI](https://doi.org/10.1162/nol_a_00084)). The OpenNeuro v1.0.0 dataset declares CC0.
+
 ### Excluded: Depression (MDDMumtaz2016)
 
 - **Original source / other names:** Mumtaz (2016), *MDD Patients and Healthy
@@ -644,3 +722,69 @@ below.
   computer-aided technique to diagnose major depressive disorder (MDD)*,
   Biomedical Signal Processing and Control 31, 108-115
   ([DOI](https://doi.org/10.1016/j.bspc.2016.07.006)); original Figshare data CC BY 4.0.
+
+### FlickerSymbols
+
+- **Original source / other names:** Wang2016, Tsinghua SSVEP Benchmark, Wang/Chen/Gao/Gao 40-target speller; paper DOI [10.1109/TNSRE.2016.2627556](https://doi.org/10.1109/TNSRE.2016.2627556). Source signals: pinned Zenodo record 14865172 MATLAB files, all 35 participants. NEMAR nm000126 is a 34-participant derivative and is not substituted.
+- **Local dimensions:** train `(6240, 64, 1500)`, test `(2160, 64, 1500)`; 40 classes, 35 subjects, one documented session and six blocks per subject, 250 Hz (1000 Hz acquisition). Subject-disjoint split balances experience groups; no validation split.
+- **Task / processing:** attended visual target identity, original labels 1?40 with source frequency/phase mapping. Full six-second native epochs, microvolt numeric scale, exact float64 decimal export; no added numerical preprocessing. Original source .loc defines array sensor order; CB1/CB2 and polar positions are preserved. Original continuous offsets and within-block chronology remain unavailable.
+- **Licence / report:** CC BY 4.0 declared by the Zenodo data release and NEMAR. Original lab README lacks an explicit grant; redistribution applicability remains a release-review item. See [complete provenance, split and validation](flicker-symbols-preparation.md).
+
+### Compact MOABB source collections
+
+These six new preparations have subject IDs on every case. The
+[complete source/processing report](small-moabb-preparations.md),
+[source lock](small-moabb-source-lock.json) and
+[measured validation results](small-moabb-local-results.json) support source-origin comparisons.
+
+| Archive name | Original source and aliases | Current TRAIN / TEST shapes | Classes; Hz | Original reference |
+|---|---|---|---|---|
+| FlickerTargets | Nakanishi2015; author repository `mnakanishi/12JFPM_SSVEP`, revision `2d4e281a430b4676f75c9270db839e963f172da5` | `(1440,8,1114)` / `(360,8,1114)` | 12; 256 | Nakanishi et al. (2015), [10.1371/journal.pone.0140703](https://doi.org/10.1371/journal.pone.0140703) |
+| ImaginedHandSides | BCI Competition IV 2b; Graz dataset B; BNCI2014_004 / 004-2014 | `(3680,3,1125)` / `(2840,3,1125)` | 2; 250 | Leeb et al. (2007), [10.1109/TNSRE.2007.906956](https://doi.org/10.1109/TNSRE.2007.906956) |
+| SpellerFlashes | BNCI2015_003 / 003-2015; Guger2009 visual P300 speller | `(12600,8,205)` / `(12600,8,205)` | 2; 256 | Guger et al. (2009), [10.1016/j.neulet.2009.06.045](https://doi.org/10.1016/j.neulet.2009.06.045) |
+| ImaginedHandsFeet | Zhou2016; original Figshare `2061654`; actual pinned EDF/BIDS source Zenodo `16534752` | `(1365,13,1250)` / `(435,13,1250)` | 3; 250 | Zhou et al. (2016), [10.1371/journal.pone.0162657](https://doi.org/10.1371/journal.pone.0162657) |
+| ALSAttention | BNCI2014_008 / 008-2014; Riccio2013 ALS P300 speller | `(14400,8,256)` / `(19200,8,256)` | 2; 256 | Riccio et al. (2013), [10.3389/fnhum.2013.00732](https://doi.org/10.3389/fnhum.2013.00732) |
+| WirelessFlicker | MAMEM3; MAMEM EEG SSVEP Dataset III; original Figshare `3413851` version 3 | `(1000,14,640)` / `(375,14,640)` | 5; 128 | Nikolopoulos, original data [10.6084/m9.figshare.3413851.v3](https://doi.org/10.6084/m9.figshare.3413851.v3) |
+
+BCI IV 2b is a separate recording collection from our BCI IV 2a
+ImaginedHandFeetTongue preparation. Its bipolar derivations are not a
+three-channel subset view of our 22-channel IV 2a arrays. Likewise, shared
+left/right imagery labels do not make it a view of Weibo2014. Nakanishi2015 and
+Wang2016 are separately documented 12- and 40-target studies. MAMEM3 is a
+separate experiment from MAMEM1/2, neither of which is prepared here; retain
+the common MAMEM source-family identifier if those are added later.
+
+ImaginedHandsFeet retains all distributed cases but removes original Fp2
+(index 1) globally after three saturated constant test windows; its original
+source has 14 channels. All arrays use microvolt numeric scale and exact
+float64 decimal representation. Original source files, source electrode lists,
+selection mappings and missing-metadata flags accompany the exports.
+
+For source checks, compare original accessions, source-file hashes, participant,
+session/run, event/tensor indices, labels and window bounds. Matching task names
+or dimensions alone are insufficient. Local case hashes refer to the retained,
+unit-documented signal arrays, which can differ from another preparation of
+the same underlying recordings.
+
+
+## WalkingTargets (BCIComp2020WalkingERP)
+
+Original [OSF pq7vb](https://osf.io/pq7vb/), 2020 International BCI Competition Track 5 / Data Set-E, alias BCIComp2020WalkingERP; pinned loader also declares NEMAR mirror nm000184. Classify visual target/non-target during treadmill walking; distinct task from ImaginedCommands (Track 3). Jeong et al. (2022), [review DOI 10.3389/fnhum.2022.898300](https://doi.org/10.3389/fnhum.2022.898300); this is a paper DOI, not an established dataset DOI. Original data CC BY 4.0, verified through original OSF licence API.
+
+TRAIN `(3600,42,100)`, TEST `(900,42,100)`, 100 Hz, two classes, 15 participants shared intentionally under official temporal partitioning. Merge original training and validation; preserve test. Source 56 inputs include 46 EEG; exclude EOG/IMU and remove four globally flat ear sensors L1/L2/R1/R4. Exact ordered sensor names, native indices, source epochs and original partitions accompany arrays. Original physical units are not explicit: microvolt interpretation is inferred and numbers unchanged. Original continuous offsets/session/run IDs and ear reference remain unknown. Repeated standing calibration is not another classification dataset. See [full provenance, labels, source lock and metadata completeness](walking-targets-preparation.md).
+
+
+## SymbolAttention (Chailloux2020)
+
+- **Original source:** OpenNeuro `ds003190` v1.0.1, [data DOI 10.18112/openneuro.ds003190.v1.0.1](https://doi.org/10.18112/openneuro.ds003190.v1.0.1), Git `153d0a1633adbf7d079eeabc866a2ad727bcff46`. Original dataset CC0, verified in its own licence and description.
+- **Aliases:** Chailloux2020; Single-Option P300-BCI; *Assesment of the visual stimuli properties in P300 paradigm*. Pinned loader raw mirror `on003190`; NEMAR `nm000262` is a derivative of this source, not another study.
+- **Task/dimensions:** attended target versus non-target symbols; TRAIN `(521259,8,256)`, TEST `(175180,8,256)`, 256 Hz, 19 participants / 56 available sessions / 381 included recordings. Whole people split 14/5, no shared subjects. Native EEG order FZ,Cz,P3,PZ,P4,PO7,PO8,Oz; Timestamp excluded. Numeric values unchanged; physical microvolt units inferred.
+- **Reference:** Chailloux Peguero, Mendoza-Montoya and Antelis (2020), [paper DOI 10.3390/s20247198](https://doi.org/10.3390/s20247198).
+- **Source caveats:** one exact copied recording excluded after waveform/event verification; two no-flash placeholders and 179 unlabelled flashes excluded. BIDS sensor types/units are incomplete; sample fields are one-based and native timestamps already lose float32 precision. [Full source identity, exclusions, metadata and pinned files](symbol-attention-preparation.md).
+
+## ArmCoordination (Kueper2024)
+
+- **Original source / aliases:** Kueper2024; *EEG dataset of unilateral and bilateral movement executions*, [Zenodo 10229480 / data DOI](https://doi.org/10.5281/zenodo.10229480). Original CC BY 4.0 data grant; publisher file hash pinned. Different source from Ofner2017/ArmMovements.
+- **Task/dimensions:** executed right-arm-only versus both-arm reaching; TRAIN `(1498,64,1500)`, TEST `(505,64,1500)`, 500 Hz, 8 healthy participants / 49 recordings. Subject-disjoint 6/2 split. Native 64 EEG labels/order retained; three accelerometers excluded. Explicit microvolt resolution is applied after float64 casting.
+- **Reference:** Kueper, Kim and Kirchner (2024), Scientific Reports 14:16690, [paper DOI 10.1038/s41598-024-65910-8](https://doi.org/10.1038/s41598-024-65910-8).
+- **Source caveats:** 2,003 native movement onsets exceed nominal trial counts; retain all with source flags rather than invent valid-trial repairs. Marker keys repeat, so line ordinals/sample positions are retained. XP01 set4 continues set3. Hardware/software filter tables differ; both are preserved. This condition task differs from the paper's movement-versus-rest classifiers. [Full provenance, participant metadata, exact sensor order, flags and preprocessing](arm-coordination-preparation.md).

@@ -39,3 +39,6 @@ Thumbs.db
 
 # Downloaded EEG data, inspection metadata, local environments and conversions
 .openeegbench/
+
+# Local PDF source-verification renders
+/tmp/pdfs/

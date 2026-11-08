@@ -1,0 +1,17 @@
+{
+  "evidence": {
+    "direct": "Native sensor names/order/calibration/coordinate triplets, header filter tables, subject/group folders, recording timestamps, all marker/sample indices and exclusions",
+    "documented": "Original licence,26-person cohort,32EEG/auxiliary roles, handedness and one-visit VR protocol",
+    "assigned": "Encoded labels, whole-subject split, date-based session IDs, source trial ordinals and common4997sample crop",
+    "missing": "Original trial IDs, distinct visit IDs, individual demographics, timezone, electrode reference/ground and individually measured geometry"
+  },
+  "missing_or_inconsistent": [
+    "Original individual age/sex/experience mappings not distributed; cohort summaries only",
+    "Reference/ground electrode names and individual measured geometry unknown; native coordinates are an acquisition template",
+    "Original VHDR SUB31 uses pre-rename binary/marker filenames; actual same-stem deposited files used explicitly",
+    "Lost-sample markers inside two imagery windows; those two cases excluded, all source markers retained",
+    "S10 end timing varies4997..5001samples; common4997sample crop documented rather than guessing nominal endpoints",
+    "No original train/test partition; stratified whole-subject archive split assigned",
+    "Same laboratory/hardware as Batista2022 is not proof of shared recordings; future Batista admission must compare native filenames/dates/waveforms"
+  ]
+}

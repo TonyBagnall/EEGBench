@@ -1,0 +1,15 @@
+{
+  "evidence": {
+    "direct": "Native CSV sensor order, trial/class/time axes, subject/file IDs; original questionnaires provide individual demographics/cognitive scores",
+    "documented": "Original licence,250Hz,one visit/four phases, reference/ground and paper processing protocol",
+    "inferred": "Microvolt interpretation only, native numbers unchanged; no guessed XYZ",
+    "assigned": "Encoded1/2labels and whole-subject benchmark split; source calibration/feedback phases retained"
+  },
+  "missing_or_inconsistent": [
+    "CSV physical units and exact supplied filtering history not explicit; inferred microvolt scale, factor1",
+    "No original continuous offsets, visit/date IDs or individual electrode positions",
+    "Original Data Report lists36female+21male=57 while description/release has55EEG subjects; use actual CSV membership and mapped questionnaire records",
+    "README prose electrode list order differs from actual CSV column order; actual CSV is authoritative",
+    "Subject40 feedback filenames irregular; preserve exact filenames and pinned file-ID/run mapping"
+  ]
+}

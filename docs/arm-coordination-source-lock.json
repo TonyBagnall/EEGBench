@@ -1,0 +1,18 @@
+{
+  "dataset": "Kueper2024",
+  "proposed_name": "ArmCoordination",
+  "source_record_id": 10229480,
+  "source_revision": "Zenodo record10229480; publisher checksum pinned",
+  "source_doi": "10.5281/zenodo.10229480",
+  "licence": "CC-BY-4.0",
+  "source_url": "https://zenodo.org/records/10229480",
+  "licence_evidence_sha256": "4222cd885e74963608d30121acf6ba11d12f4e96fe1c5f3c4387906dc582ad7d",
+  "files": [
+    {
+      "name": "EEG_dataset.zip",
+      "bytes": 3101308625,
+      "checksum": "md5:528efd15b4c30d704d57770ee9336b7b",
+      "url": "https://zenodo.org/api/records/10229480/files/EEG_dataset.zip/content"
+    }
+  ]
+}

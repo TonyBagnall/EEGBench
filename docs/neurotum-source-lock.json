@@ -1,0 +1,82 @@
+{
+  "dataset": "NeuroTUMBCI2025",
+  "source_record_id": 18087806,
+  "source_revision": "Zenodo18087806 v1.0.0",
+  "licence": "CC-BY-4.0",
+  "original_source_url": "https://zenodo.org/records/18087806",
+  "original_evidence_sha256": "9f19bdd90f4c39eb67e53e6e31984c5a54a2f6ee5fcd0fb0f154e259fc55ea2e",
+  "files": [
+    {
+      "name": "P1_S1_data.xdf",
+      "url": "https://zenodo.org/api/records/18087806/files/P1_S1_data.xdf/content",
+      "bytes": 8586085,
+      "checksum": "md5:34040ca68c438297d32473c3bd903c29",
+      "sha256": "59faad3b3c1ba6a1cf879f1f9764c5be72bb1598d068ebed354b23d2dda0c76a"
+    },
+    {
+      "name": "P1_S2_data.xdf",
+      "url": "https://zenodo.org/api/records/18087806/files/P1_S2_data.xdf/content",
+      "bytes": 12211159,
+      "checksum": "md5:e3b225845373ef7b25dc1aad31fecbd4",
+      "sha256": "74db33b887e7706a156225cf95092cf99fc13f225416db48a068f8f99e71da76"
+    },
+    {
+      "name": "P1_S3_data.xdf",
+      "url": "https://zenodo.org/api/records/18087806/files/P1_S3_data.xdf/content",
+      "bytes": 14219505,
+      "checksum": "md5:4c884ee0db819ea2dec6a1969bba2270",
+      "sha256": "d40d45f3e91dce9d7891e07dea14f9a22234a00cf63bde8013b281e8204830da"
+    },
+    {
+      "name": "P1_S4_data.xdf",
+      "url": "https://zenodo.org/api/records/18087806/files/P1_S4_data.xdf/content",
+      "bytes": 8743108,
+      "checksum": "md5:056920615564fc65f8dfff339ad165b8",
+      "sha256": "5edbe4def0944969cc7732227ba88bdcc717c01966c708475741fe602818b8a2"
+    },
+    {
+      "name": "P1_S5_data.xdf",
+      "url": "https://zenodo.org/api/records/18087806/files/P1_S5_data.xdf/content",
+      "bytes": 10695028,
+      "checksum": "md5:3df6a9dffcdb88b1c1344a24ff64d746",
+      "sha256": "df5e5bb38be8f2ee1edc416cb07645c86b36c82a12504d90ad315cf9ccfa8976"
+    },
+    {
+      "name": "P1_mapping.yaml",
+      "url": "https://zenodo.org/api/records/18087806/files/P1_mapping.yaml/content",
+      "bytes": 146,
+      "checksum": "md5:f45e31cb97b87a8b3e4f4f6c877f6a8c",
+      "sha256": "52fa2881c73fa33256668d7b45d3647a750acf98d174a087177b1b299840d3de"
+    },
+    {
+      "name": "P2_S1_data.xdf",
+      "url": "https://zenodo.org/api/records/18087806/files/P2_S1_data.xdf/content",
+      "bytes": 69366467,
+      "checksum": "md5:7372646c093578924c8a3d63c536b254",
+      "sha256": "54cb9c3abdbcbd454fa26908817cc67cee62fd6deaa282cee7a842a1560383a5"
+    },
+    {
+      "name": "P2_S2_data.xdf",
+      "url": "https://zenodo.org/api/records/18087806/files/P2_S2_data.xdf/content",
+      "bytes": 75332450,
+      "checksum": "md5:1710a31ac1cbe83746fe4eaa85fec37b",
+      "sha256": "016ec4cb3490d587a6cceb945b02a9040bcebe8e98b788fa1a65b703981d95b2"
+    },
+    {
+      "name": "P2_S3_data.xdf",
+      "url": "https://zenodo.org/api/records/18087806/files/P2_S3_data.xdf/content",
+      "bytes": 94653061,
+      "checksum": "md5:3cb4ca2eb468e335c7e56a152a94c339",
+      "sha256": "7146cb58272485a1958654954fc87a9d4fd39e42268221720206c9e5c2fbc086"
+    },
+    {
+      "name": "P2_mapping.yaml",
+      "url": "https://zenodo.org/api/records/18087806/files/P2_mapping.yaml/content",
+      "bytes": 151,
+      "checksum": "md5:e05afd092a97bc30c633a351258c2794",
+      "sha256": "6f09b82fde72ded532013629fe08ba3a246f7dc2909f223ca1358e70e6e2e926"
+    }
+  ],
+  "pilot": false,
+  "excluded": "Separate ASR calibration files are not labelled task recordings; not downloaded"
+}

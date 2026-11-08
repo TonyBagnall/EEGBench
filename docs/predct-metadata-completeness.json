@@ -1,0 +1,74 @@
+{
+  "ParkinsonsPedalling": {
+    "fields": {
+      "participant_id": "Direct native filename and clinical table",
+      "session_id": "Unavailable: unknown; one distributed recording per participant",
+      "recording_id": "Direct native filename",
+      "original_trial_id": "Not applicable to archive-defined continuous windows; native events preserved",
+      "sample_indices": "Exact distributed continuous recording samples, zero-based half-open",
+      "labels": "Clinical group from filename and clinical table",
+      "channel_names_order": "Direct native labels, verified across every included recording",
+      "channel_types": "Native labels plus original author script; auxiliary exclusions explicit",
+      "sensor_positions": "Available per-record native header/chanlocs; no claim of individual measured geometry",
+      "reference": "Pz documented in paper; native header preserved",
+      "original_partition": "Unavailable; unsplit source, deterministic participant split assigned",
+      "licence": "PDDL original catalogue plus pinned root data licence",
+      "frequency": "Direct native 500 Hz; unchanged",
+      "preprocessing": "Author import script/native headers directly preserved; paper acquisition statements labelled documented"
+    },
+    "missing": [
+      "Visit IDs absent for single-recording sources: unknown, not invented",
+      "Sex code definitions not recovered; original codes retained",
+      "Original BrainVision files for resting MAT derivatives unavailable; sample indices refer to distributed MAT recordings"
+    ]
+  },
+  "ParkinsonsRest": {
+    "fields": {
+      "participant_id": "Direct native filename and clinical table",
+      "session_id": "Direct numbered visit and medication table",
+      "recording_id": "Direct native filename",
+      "original_trial_id": "Not applicable to archive-defined continuous windows; native events preserved",
+      "sample_indices": "Exact distributed continuous recording samples, zero-based half-open",
+      "labels": "Clinical group from filename and clinical table",
+      "channel_names_order": "Direct native labels, verified across every included recording",
+      "channel_types": "Native labels plus original author script; auxiliary exclusions explicit",
+      "sensor_positions": "Available per-record native header/chanlocs; no claim of individual measured geometry",
+      "reference": "CPz documented by author, native common field retained",
+      "original_partition": "Unavailable; unsplit source, deterministic participant split assigned",
+      "licence": "PDDL original catalogue plus pinned root data licence",
+      "frequency": "Direct native 500 Hz; unchanged",
+      "preprocessing": "Author import script/native headers directly preserved; paper acquisition statements labelled documented"
+    },
+    "missing": [
+      "Visit IDs absent for single-recording sources: unknown, not invented",
+      "Sex code definitions not recovered; original codes retained",
+      "Original BrainVision files for resting MAT derivatives unavailable; sample indices refer to distributed MAT recordings"
+    ]
+  },
+  "ObsessiveCompulsiveSymptoms": {
+    "fields": {
+      "participant_id": "Direct native filename and clinical table",
+      "session_id": "Unavailable: unknown; one distributed recording per participant",
+      "recording_id": "Direct native filename",
+      "original_trial_id": "Not applicable to archive-defined continuous windows; native events preserved",
+      "sample_indices": "Exact distributed continuous recording samples, zero-based half-open",
+      "labels": "Assigned high/low by OCI column B >=21; score directly recovered",
+      "channel_names_order": "Direct native labels, verified across every included recording",
+      "channel_types": "Native labels plus original author script; auxiliary exclusions explicit",
+      "sensor_positions": "Available per-record native header/chanlocs; no claim of individual measured geometry",
+      "reference": "Author README: online between Cz/CPz; stored _ready file references uncertain",
+      "original_partition": "Unavailable; unsplit source, deterministic participant split assigned",
+      "licence": "PDDL original catalogue plus pinned root data licence",
+      "frequency": "Direct native 500 Hz; unchanged",
+      "preprocessing": "Author import script/native headers directly preserved; paper acquisition statements labelled documented"
+    },
+    "missing": [
+      "Visit IDs absent for single-recording sources: unknown, not invented",
+      "Sex code definitions not recovered; original codes retained",
+      "Original BrainVision files for resting MAT derivatives unavailable; sample indices refer to distributed MAT recordings",
+      "Exact pre-distribution interpolation/reference history unavailable for _ready files",
+      "Possible native Neuroscan bad-section markers are not independently audited for complete MNE decoding",
+      "Original study60 participants, distributed46 and publication analyses36 (author README); exact original selection not reconstructible"
+    ]
+  }
+}

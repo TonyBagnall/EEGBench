@@ -1,0 +1,254 @@
+{
+  "created": "2025-01-17T08:59:03.821918+00:00",
+  "modified": "2025-03-06T11:56:20.818829+00:00",
+  "id": 14672334,
+  "conceptrecid": "14672333",
+  "doi": "10.5281/zenodo.14672334",
+  "conceptdoi": "10.5281/zenodo.14672333",
+  "doi_url": "https://doi.org/10.5281/zenodo.14672334",
+  "metadata": {
+    "title": "EEG Signal Dataset During Dorsiflexion and Plantar Flexion Movements",
+    "doi": "10.5281/zenodo.14672334",
+    "publication_date": "2025-01-16",
+    "description": "<h2><strong>Description</strong></h2>\n<p>The dataset documents electroencephalographic (EEG) recordings obtained from experiments conducted with six participants, each in a single session. The protocol for open-loop EEG signal acquisition aims to develop a paradigm for controlling an low-cost ankle exoskeleton using motor imagery and a state machine. Two experimental models were established: one in a static state and another in motion, combined with two mental tasks: relaxation and motor imagery.</p>\n<p>In the static model, the exoskeleton remains stationary during all repetitions, whereas in the motion model, the exoskeleton assists the participant by performing plantar flexion and dorsal flexion movements of the ankle.</p>\n<p>Each repetition begins with a 15-second period during which the participant performs no mental activity, allowing a filter to converge and eliminate ocular artifacts. Then, an auditory indicator with a voice signal announces the preparation for the \"relaxation\" task, which involves maintaining a relaxed mental state for 15 seconds. At the end of this period, another auditory indicator with the word \"imagine\" signals the start of the motor imagery activity, which involves repeatedly imagining dorsal and plantar flexion movements of the dominant foot for 28 seconds. Following this task, another 15-second relaxation period is performed with the corresponding auditory signal. Finally, an additional 5 seconds are included for the exoskeleton to return to its initial position, avoiding ending the repetition in an uncomfortable posture. This time adjustment is present in both models (static and motion) to balance the total duration of repetitions.</p>\n<p>In total, 11 alternate repetitions are performed for each model (static and motion). The data is organized into folders with identifying codes such as B0_a, where \"a\" represents the participant's number. \"S1\" indicates the session, and the experiment type is specified as \"motion\" or \"static.\"</p>\n<p>&nbsp;</p>\n<h2>Data information</h2>\n<p>A trial consists of a Matlab structure that stores all information related to the trial experiment.</p>\n<ul>\n<li><strong>data_EEG:</strong> Original EEG signals recorded with a sampling rate of 250Hz, where each row is a channel (1-28 EEG, 29-32 EOG, 33-35 inertial electrodes).</li>\n<li><strong>data_preprocessed_EEG:</strong> Matrix that contains the preprocessed signals for each channel. Rows 1-35 are the original signals and then, the preprocessed signals in blocks of 35. Find the indexes of each filter in session.conf.info.preprocessingSteps.ListPreprocessingSteps.</li>\n<li><strong>trigger_EEG:</strong> Information related to signal quality and missing data while recording.</li>\n<li><strong>data_EXO:</strong> Exoskeleton recorded data with a sampling rate of 250Hz.</li>\n<li><strong>data_preprocessed_EXO</strong>: The same data recorded by the exoskeleton in data_EXO, since it does not require the application of any filter.</li>\n<li><strong>trigger_EXO</strong>: Empty vector.</li>\n<li><strong>task_EEG: </strong>Vector that associates a task to each signal sample.</li>\n<li><strong>task_index_EEG:</strong> Zero vector with negative peaks at the samples indicating the start of a task. Each peak decrements by one unit with each task.&nbsp;</li>\n<li><strong>task_order_EEG:</strong> Vector that increments a unit with each task change.</li>\n<li><strong>event_EEG:</strong> Vector of commands to activate (1) and deactivate (-1) the feedback in Arduino.</li>\n<li><strong>conf:</strong> Configuration employed for data acquisition and preprocessing.\n<ul>\n<li>acquisition: User and signals acquisition information.\n<ul>\n<li>user_code: User code name.</li>\n<li>feedback: Trial in openloop (User do not have control of the system).</li>\n<li>readfile: Path to read files after its acquisition.</li>\n<li>saveSession_Script: Script used to save the recorded data.</li>\n<li>writeResults: Path to save the recorded data.</li>\n<li>device: List of connected devices during the trial and their related information, such as name, sampling rate, connection order, etc.&nbsp;</li>\n<li>task: Information about tasks occurring during the trial.\n<ul>\n<li>task_list: Decodes tasks numbers. The first number is the global task/mental activity, the second one is the physiological state of the user, and the third one indicates the task version (preparation or basic task).</li>\n<li>sequence_tasks: List of tasks in order of execution.</li>\n<li>sequence_times: List with the duration of each task in the sequence.</li>\n</ul>\n</li>\n<li>deviceOutput: List of devices that receive commands to execute orders, such as the exoskeleton for walking and stopping and the VibroLed for turning feeedback on and off.</li>\n<li>eye_index: Indexes of EOG electrodes.</li>\n<li>EEG_index: Indexes of EEG electrodes.</li>\n<li>inertial_index: Indexes of inertial electrodes.</li>\n<li>file_name: Trial name.</li>\n<li>num_epochs: Number of epochs within a trial. An epoch is the half of sampling rate (250Hz), this means that an epoch has a duration of 0.5s and 125 samples.&nbsp;</li>\n</ul>\n</li>\n<li>preadjustment: Empty list.</li>\n<li>preprocessing: Information of the preprocessing filters, parameters and order of application.</li>\n<li>processing: Not necessary for this analysis.</li>\n<li>static: Information used internally by the architecture for its correct operation.</li>\n<li>info: Important information about filters, their order and indexes in data_processed_EEG.</li>\n</ul>\n</li>\n<li><strong>times</strong>: Struct with information of the devices synchronization and preprocessing times.</li>\n<li><strong>times_processing:</strong> Processing duration times.</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Polo-Hortig\u00fcela, Cristina",
+        "affiliation": "Universitat de Miguel Hern\u00e1ndez d'Elx",
+        "orcid": "0009-0008-1841-8209"
+      },
+      {
+        "name": "Ortiz, Mario",
+        "affiliation": "Universitat de Miguel Hern\u00e1ndez d'Elx",
+        "orcid": "0000-0002-4269-1554"
+      },
+      {
+        "name": "I\u00e1\u00f1ez, Eduardo",
+        "affiliation": "Universitat de Miguel Hern\u00e1ndez d'Elx",
+        "orcid": "0000-0001-8057-5952"
+      },
+      {
+        "name": "Azorin, Jose M.",
+        "affiliation": "Universitat de Miguel Hern\u00e1ndez d'Elx",
+        "orcid": "0000-0001-5548-9657"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Polo-Hortig\u00fcela, Cristina",
+        "affiliation": "Universitat de Miguel Hern\u00e1ndez d'Elx",
+        "type": "DataCollector",
+        "orcid": "0009-0008-1841-8209"
+      },
+      {
+        "name": "Ortiz, Mario",
+        "affiliation": "Universitat de Miguel Hern\u00e1ndez d'Elx",
+        "type": "DataCurator",
+        "orcid": "0000-0002-4269-1554"
+      },
+      {
+        "name": "I\u00e1\u00f1ez, Eduardo",
+        "affiliation": "Universitat de Miguel Hern\u00e1ndez d'Elx",
+        "type": "DataCurator",
+        "orcid": "0000-0001-8057-5952"
+      },
+      {
+        "name": "Azorin, Jose M.",
+        "affiliation": "Universitat de Miguel Hern\u00e1ndez d'Elx",
+        "type": "DataManager",
+        "orcid": "0000-0001-5548-9657"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "regait"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14672333"
+          }
+        }
+      ]
+    },
+    "notes": "<h2>FUNDING</h2>\n<p>This publication is part of grant PID2021-124111OB-C31, funded by MICIU/AEI/10.13039/501100011033 and by ERDF, EU. This research has also been supported by grant PRE2022-103336 funded by MICIU/AEI/10.13039/501100011033, and by the Valencian Graduate School and Research Network of Artificial Intelligence (ValgrAI), Generalitat Valenciana and European Union. Furthermore, this research has also been supported by project &ldquo;Neurokit&rdquo; funded by Centro Internacional para la Investigaci&oacute;n del Envejecimiento de la Fundaci&oacute;n de la Comunitat Valenciana (ICAR).</p>"
+  },
+  "title": "EEG Signal Dataset During Dorsiflexion and Plantar Flexion Movements",
+  "links": {
+    "self": "https://zenodo.org/api/records/14672334",
+    "self_html": "https://zenodo.org/records/14672334",
+    "preview_html": "https://zenodo.org/records/14672334?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14672334",
+    "self_doi": "https://doi.org/10.5281/zenodo.14672334",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14672334",
+    "reserve_doi": "https://zenodo.org/api/records/14672334/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14672333",
+    "parent_html": "https://zenodo.org/records/14672333",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14672333",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14672333",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14672334/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14672334/sequence/default",
+    "files": "https://zenodo.org/api/records/14672334/files",
+    "media_files": "https://zenodo.org/api/records/14672334/media-files",
+    "latest": "https://zenodo.org/api/records/14672334/versions/latest",
+    "latest_html": "https://zenodo.org/records/14672334/latest",
+    "versions": "https://zenodo.org/api/records/14672334/versions",
+    "draft": "https://zenodo.org/api/records/14672334/draft",
+    "access_links": "https://zenodo.org/api/records/14672334/access/links",
+    "access_grants": "https://zenodo.org/api/records/14672334/access/grants",
+    "access_users": "https://zenodo.org/api/records/14672334/access/users",
+    "access_request": "https://zenodo.org/api/records/14672334/access/request",
+    "access": "https://zenodo.org/api/records/14672334/access",
+    "communities": "https://zenodo.org/api/records/14672334/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14672334/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14672334/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14672334/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/14672334/quota-increase",
+    "requests": "https://zenodo.org/api/records/14672334/requests"
+  },
+  "updated": "2025-03-06T11:56:20.818829+00:00",
+  "recid": "14672334",
+  "revision": 6,
+  "files": [
+    {
+      "id": "85cd0925-df04-4f05-b3e4-f9d71cb4dfe3",
+      "key": "B03_S1_STATIC.zip",
+      "size": 244592377,
+      "checksum": "md5:f2b0f459e5979e1a52ea452199f234b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B03_S1_STATIC.zip/content"
+      }
+    },
+    {
+      "id": "6e4b1866-b4cb-43d8-8841-b456fc5ada37",
+      "key": "B04_S1_STATIC.zip",
+      "size": 244560808,
+      "checksum": "md5:722e48726c163b16300d9d96f565ad0a",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B04_S1_STATIC.zip/content"
+      }
+    },
+    {
+      "id": "1540d859-b29d-4359-b768-211d05a8b7db",
+      "key": "B05_S1_MOTION.zip",
+      "size": 245117299,
+      "checksum": "md5:b128214195e0033dc7efc45d47372eea",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B05_S1_MOTION.zip/content"
+      }
+    },
+    {
+      "id": "b93d7555-ab4d-47c9-91ff-7617bdcc3096",
+      "key": "B06_S1_STATIC.zip",
+      "size": 244197340,
+      "checksum": "md5:24d809f609704cda4a78b7fb7ba1a071",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B06_S1_STATIC.zip/content"
+      }
+    },
+    {
+      "id": "00ce481f-7b66-46a6-adda-de3023ab01a1",
+      "key": "B04_S1_MOTION.zip",
+      "size": 244690240,
+      "checksum": "md5:63050572de03feb517df5268142c9ade",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B04_S1_MOTION.zip/content"
+      }
+    },
+    {
+      "id": "d8b32d34-b3b1-4bf3-bd4a-c5e325aa8581",
+      "key": "B01_S1_MOTION.zip",
+      "size": 244349947,
+      "checksum": "md5:1562e23b68e10861152c1f87d1eb60c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B01_S1_MOTION.zip/content"
+      }
+    },
+    {
+      "id": "e849bde0-d69f-4310-bfcd-c6e46fca7e51",
+      "key": "B01_S1_STATIC.zip",
+      "size": 244438755,
+      "checksum": "md5:c888adc00960a2670f82bc8a72e5a5a1",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B01_S1_STATIC.zip/content"
+      }
+    },
+    {
+      "id": "c100018e-90db-4c45-b85a-af687c565c88",
+      "key": "B02_S1_STATIC.zip",
+      "size": 244936902,
+      "checksum": "md5:92d7612b05f4bc55d6a02ca685fef181",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B02_S1_STATIC.zip/content"
+      }
+    },
+    {
+      "id": "a727aac1-02a0-4544-a030-e90d90bd95ef",
+      "key": "B06_S1_MOTION.zip",
+      "size": 244299064,
+      "checksum": "md5:4c80855be19bbea1700809cb8858fbc5",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B06_S1_MOTION.zip/content"
+      }
+    },
+    {
+      "id": "374727d1-d192-41bf-b6c0-e24aa3bbba54",
+      "key": "B02_S1_MOTION.zip",
+      "size": 245021848,
+      "checksum": "md5:88442f93bbb6f031d498e729c2f78179",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B02_S1_MOTION.zip/content"
+      }
+    },
+    {
+      "id": "e849a24c-62d6-45f3-b59b-f7393e0c0169",
+      "key": "B05_S1_STATIC.zip",
+      "size": 245255432,
+      "checksum": "md5:716a1e1114e87aff89fdf4882df5c603",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B05_S1_STATIC.zip/content"
+      }
+    },
+    {
+      "id": "c48362d8-fa9e-45fd-9a6a-78ae8e04809a",
+      "key": "B03_S1_MOTION.zip",
+      "size": 244633760,
+      "checksum": "md5:7efc5a90f5465d86ef770867b45ffa1f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14672334/files/B03_S1_MOTION.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1082026"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1265,
+    "unique_downloads": 1163,
+    "views": 373,
+    "unique_views": 312,
+    "version_downloads": 1265,
+    "version_unique_downloads": 1163,
+    "version_unique_views": 312,
+    "version_views": 373
+  },
+  "state": "done",
+  "submitted": true
+}

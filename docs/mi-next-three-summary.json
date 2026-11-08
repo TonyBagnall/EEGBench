@@ -1,0 +1,53 @@
+{
+  "updated": "2026-11-08",
+  "registered": 77,
+  "selected": 73,
+  "motor_imagery_problems": 25,
+  "scalp_eeg_motor_imagery_problems": 24,
+  "datasets": [
+    {
+      "dataset": "ImaginedHandsHaptics",
+      "train_cases": 3083,
+      "test_cases": 1034,
+      "subjects": 20,
+      "channels": 32,
+      "timepoints": 2495,
+      "classes": 2,
+      "frequency": 500,
+      "size_GB": 4.604559099,
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "dataset": "ImaginedAnkleRest",
+      "train_cases": 264,
+      "test_cases": 132,
+      "subjects": 6,
+      "channels": 28,
+      "timepoints": 1000,
+      "classes": 2,
+      "frequency": 250,
+      "size_GB": 0.211664567,
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "dataset": "ImaginedHandsFeedback",
+      "train_cases": 6560,
+      "test_cases": 2240,
+      "subjects": 55,
+      "channels": 16,
+      "timepoints": 1250,
+      "classes": 2,
+      "frequency": 250,
+      "size_GB": 3.100185045,
+      "licence": "CC-BY-4.0"
+    }
+  ],
+  "source_sizes_GB": {
+    "batista": 2.862715819,
+    "polo": 2.936093772,
+    "leeuwis": 5.134871789
+  },
+  "all_final_manifest_artifacts_verified": true,
+  "validation": "Full exact float64 .ts readback and ordered case/label/hash alignment; channel identities/order checked; no within-/cross-split duplicates or shared native subjects; aeon compatibility passed",
+  "no_uploads": true
+}

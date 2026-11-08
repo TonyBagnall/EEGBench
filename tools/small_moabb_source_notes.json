@@ -1,0 +1,49 @@
+{
+  "nakanishi": {
+    "original_frequency_hz": 2048,
+    "preprocessing": "Documented acquisition at 2048 Hz, downsampling to 256 Hz and 6–80 Hz filtering. The distributed eeg tensor is used without additional demeaning, filtering or crop. Source README places stimulation onset at one-based sample 39; full 1114-point epochs retained.",
+    "reference": "CMS/DRL documented for the Biosemi acquisition; not an embedded MATLAB reference field.",
+    "sensor_geometry": "Eight occipital channel identities/order follow the documented pinned loader; no individual coordinates embedded in the MATLAB eeg tensor.",
+    "evidence": "Author README, pinned ssvep_nakanishi.py and paper DOI 10.1371/journal.pone.0140703. Documented properties are distinct from recovered array fields."
+  },
+  "bci2b": {
+    "original_frequency_hz": 250,
+    "preprocessing": "Original acquisition bandpass 0.5–100 Hz and 50 Hz notch. Screening dynamic range ±100 microvolts; feedback ±50 microvolts. Trial artifact flags retained without automatic rejection. Local windows use [3,7.5) seconds relative to native trial markers, following the pinned loader.",
+    "reference": "Three bipolar EEG derivations, nominally C3/Cz/C4; Fz ground. Left-mastoid reference describes the three auxiliary EOG signals, not a monopolar EEG montage.",
+    "sensor_geometry": "The original description states bipolar placements differ slightly between participants. Exact electrode-pair endpoints/individual positions unavailable; do not treat labels as identical monopolar electrodes.",
+    "evidence": "Original BCI IV 2b description.pdf, native fs/trial/classes/artifacts fields and pinned BNCI loader."
+  },
+  "speller": {
+    "original_frequency_hz": 256,
+    "preprocessing": "Native continuous time/EEG/Flash/Target matrices at 256 Hz. No added filtering, baseline correction, reference change or resampling. Original filter settings are not independently established by these matrices. A 205-sample half-open window approximates the documented 0.8-second epoch.",
+    "reference": "Not independently established from the distributed MATLAB signal matrix; no reference is invented.",
+    "sensor_geometry": "Eight EEG names/order from the source loader; individual positions not available. Time, Flash and Target rows are not EEG channels.",
+    "evidence": "Native time column and trigger rows; pinned BNCI2015_003 loading code; paper DOI 10.1016/j.neulet.2009.06.045.",
+    "protocol_variation": "Participants 01–02 have 36 individual-character stimulus codes; 03–10 have 12 row/column codes. Target/non-target classification is retained for both. Actual event counts take precedence over the catalogue estimate."
+  },
+  "zhou": {
+    "original_frequency_hz": 250,
+    "preprocessing": "The pinned Zenodo source is an EDF/BIDS derivative. Source publication/loader document acquisition filtering 0.1–100 Hz and 50 Hz notch; distributed sidecars do not independently verify that history. Local processing is MNE volts ×1e6, five-second event windows and global Fp2 removal. No added filtering or resampling.",
+    "reference": "Left mastoid reference/right mastoid ground are documented by the source literature/loader. Distributed EEG JSON reports n/a; preserve that distinction.",
+    "sensor_geometry": "Native channels.tsv order is checked against EDF headers. Supplied electrodes.tsv/coordsystem.json are preserved; coordinates may be template-derived and are not asserted as individual measurements. Original 14-channel geometry includes removed Fp2.",
+    "evidence": "Zenodo 16534752, native EDF headers, BIDS channels/events/electrodes/coordinate sidecars and pinned Zhou loader. Scan dates can describe conversion, not original acquisition.",
+    "channel_cleanup": "Fp2, original zero-based axis 1, is constant at EDF physical bounds in three subject-04 test epochs. Removed globally from both partitions under the authorised constant-channel cleanup; all 1800 cases retained.",
+    "original_archive": "Figshare 2061654 version 2, three-class motor imagery EEG data.zip, declares CC0. Actual converted signals here remain the separate pinned Zenodo 16534752 EDF/BIDS release (CC BY 4.0)."
+  },
+  "mamem3": {
+    "original_frequency_hz": 128,
+    "preprocessing": "Full five-second native trial windows bounded by exact 32779/32780 event markers; no additional filtering, reference change, demeaning, gain or resampling. Original MAT info.units directly specifies microvolts for all 14 EEG channels. Prefilter fields contain unspecified/NaN strings, not verified filter settings. Status is an event channel and is excluded.",
+    "reference": "Not specified in native header; no reference electrode is invented.",
+    "sensor_geometry": "Exact 14-channel names/order are recovered from info.label in every recording. No individual electrode coordinates recovered. The wireless device is documented as Emotiv EPOC.",
+    "evidence": "Original Figshare 3413851 version 3, original acquisition PDF and native eeg/info/events fields. MATLAB event rows are checked directly against rounded Status codes at one-based event positions.",
+    "session_definition": "Source blocks/subsessions a–e, each divided into i and ii halves. MOABB groups all into one session; do not interpret a–e as five independently verified acquisition visits. Adaptation x is excluded, matching the main-experiment task."
+  },
+  "als": {
+    "original_frequency_hz": 256,
+    "preprocessing": "Original publisher PDF documents 0.1–30 Hz acquisition filtering at 256 Hz. Some generated catalogue metadata instead describe 0.1–10 Hz/additional preprocessing; that history is not established by native X fields. No local filtering, baseline correction, reference change or resampling.",
+    "reference": "Right earlobe reference and left mastoid ground, documented by the original publisher PDF; not a native MATLAB reference attribute.",
+    "sensor_geometry": "Eight channel names/order are recovered from the native MAT channels field. Individual coordinates unavailable.",
+    "evidence": "Original ALS P300 description.pdf and native X/y/y_stim/trial/classes/channels/demographic fields. Source MAT ages can differ from the publication; preserve both as evidence rather than overwriting.",
+    "protocol": "Seven five-character words; first three words (15 character selections) are calibration, last four (20 selections) have feedback. Each selection has 120 flashes. Task predicts attention, not ALS diagnosis."
+  }
+}

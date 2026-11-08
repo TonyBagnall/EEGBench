@@ -1,0 +1,457 @@
+{
+  "date": "2026-11-08",
+  "scope": "Metadata only; no EEG download",
+  "records": [
+    {
+      "source": "Kodera2023",
+      "url": "https://zenodo.org/api/records/7893846",
+      "title": "EEG motor imagery",
+      "licence": {
+        "id": "cc-by-4.0"
+      },
+      "bytes": 1774088549,
+      "files": [
+        {
+          "name": "data.zip",
+          "bytes": 1774088549,
+          "checksum": "md5:eeaa810229d7979c8771e01cb8bf3e69"
+        }
+      ]
+    },
+    {
+      "source": "PoloHortiguela2025",
+      "url": "https://zenodo.org/api/records/14672334",
+      "title": "EEG Signal Dataset During Dorsiflexion and Plantar Flexion Movements",
+      "licence": {
+        "id": "cc-by-4.0"
+      },
+      "bytes": 2936093772,
+      "files": [
+        {
+          "name": "B03_S1_STATIC.zip",
+          "bytes": 244592377,
+          "checksum": "md5:f2b0f459e5979e1a52ea452199f234b3"
+        },
+        {
+          "name": "B04_S1_STATIC.zip",
+          "bytes": 244560808,
+          "checksum": "md5:722e48726c163b16300d9d96f565ad0a"
+        },
+        {
+          "name": "B05_S1_MOTION.zip",
+          "bytes": 245117299,
+          "checksum": "md5:b128214195e0033dc7efc45d47372eea"
+        },
+        {
+          "name": "B06_S1_STATIC.zip",
+          "bytes": 244197340,
+          "checksum": "md5:24d809f609704cda4a78b7fb7ba1a071"
+        },
+        {
+          "name": "B04_S1_MOTION.zip",
+          "bytes": 244690240,
+          "checksum": "md5:63050572de03feb517df5268142c9ade"
+        },
+        {
+          "name": "B01_S1_MOTION.zip",
+          "bytes": 244349947,
+          "checksum": "md5:1562e23b68e10861152c1f87d1eb60c7"
+        },
+        {
+          "name": "B01_S1_STATIC.zip",
+          "bytes": 244438755,
+          "checksum": "md5:c888adc00960a2670f82bc8a72e5a5a1"
+        },
+        {
+          "name": "B02_S1_STATIC.zip",
+          "bytes": 244936902,
+          "checksum": "md5:92d7612b05f4bc55d6a02ca685fef181"
+        },
+        {
+          "name": "B06_S1_MOTION.zip",
+          "bytes": 244299064,
+          "checksum": "md5:4c80855be19bbea1700809cb8858fbc5"
+        },
+        {
+          "name": "B02_S1_MOTION.zip",
+          "bytes": 245021848,
+          "checksum": "md5:88442f93bbb6f031d498e729c2f78179"
+        },
+        {
+          "name": "B05_S1_STATIC.zip",
+          "bytes": 245255432,
+          "checksum": "md5:716a1e1114e87aff89fdf4882df5c603"
+        },
+        {
+          "name": "B03_S1_MOTION.zip",
+          "bytes": 244633760,
+          "checksum": "md5:7efc5a90f5465d86ef770867b45ffa1f"
+        }
+      ]
+    },
+    {
+      "source": "Perdikis2018",
+      "url": "https://zenodo.org/api/records/841764",
+      "title": "CNBI EPFL Brain Tweakers Cybathlon BCI race dataset",
+      "licence": {
+        "id": "cc-by-4.0"
+      },
+      "bytes": 4681069998,
+      "files": [
+        {
+          "name": "MA25VE.tar.gz",
+          "bytes": 1661504878,
+          "checksum": "md5:4134d9b4f85d85e7f5cd4d6d2061160f"
+        },
+        {
+          "name": "AN14VE.tar.gz",
+          "bytes": 3019565120,
+          "checksum": "md5:9c3fd463aba6ecc059b99af037302c26"
+        }
+      ]
+    },
+    {
+      "source": "NeuroTUMBCI2025",
+      "url": "https://zenodo.org/api/records/18087806",
+      "title": "neuroTUM-BCI: Cybathlon Dataset",
+      "licence": {
+        "id": "cc-by-4.0"
+      },
+      "bytes": 306528043,
+      "files": [
+        {
+          "name": "P1_S1_data.xdf",
+          "bytes": 8586085,
+          "checksum": "md5:34040ca68c438297d32473c3bd903c29"
+        },
+        {
+          "name": "P2_S3_data.xdf",
+          "bytes": 94653061,
+          "checksum": "md5:3cb4ca2eb468e335c7e56a152a94c339"
+        },
+        {
+          "name": "P1_S3_calibration.xdf",
+          "bytes": 1740548,
+          "checksum": "md5:ef5b49197e91a6c764b675a6577c5029"
+        },
+        {
+          "name": "P2_S2_data.xdf",
+          "bytes": 75332450,
+          "checksum": "md5:1710a31ac1cbe83746fe4eaa85fec37b"
+        },
+        {
+          "name": "P1_S4_data.xdf",
+          "bytes": 8743108,
+          "checksum": "md5:056920615564fc65f8dfff339ad165b8"
+        },
+        {
+          "name": "P1_S2_calibration.xdf",
+          "bytes": 1634875,
+          "checksum": "md5:547e4843eee4f3720598c71febcd60c9"
+        },
+        {
+          "name": "P1_S4_calibration.xdf",
+          "bytes": 1740548,
+          "checksum": "md5:ef5b49197e91a6c764b675a6577c5029"
+        },
+        {
+          "name": "P1_S2_data.xdf",
+          "bytes": 12211159,
+          "checksum": "md5:e3b225845373ef7b25dc1aad31fecbd4"
+        },
+        {
+          "name": "P1_S5_data.xdf",
+          "bytes": 10695028,
+          "checksum": "md5:3df6a9dffcdb88b1c1344a24ff64d746"
+        },
+        {
+          "name": "P1_mapping.yaml",
+          "bytes": 146,
+          "checksum": "md5:f45e31cb97b87a8b3e4f4f6c877f6a8c"
+        },
+        {
+          "name": "P1_S3_data.xdf",
+          "bytes": 14219505,
+          "checksum": "md5:4c884ee0db819ea2dec6a1969bba2270"
+        },
+        {
+          "name": "P1_S5_calibration.xdf",
+          "bytes": 1583210,
+          "checksum": "md5:581f66ef8635033073bb02727cf87f77"
+        },
+        {
+          "name": "P2_S2_calibration.xdf",
+          "bytes": 1742401,
+          "checksum": "md5:de2a888f6e8bdc1226b516e050f262a4"
+        },
+        {
+          "name": "P1_S1_calibration.xdf",
+          "bytes": 1634467,
+          "checksum": "md5:4001b5b6fe1685d32cface8daf1cfeec"
+        },
+        {
+          "name": "P2_mapping.yaml",
+          "bytes": 151,
+          "checksum": "md5:e05afd092a97bc30c633a351258c2794"
+        },
+        {
+          "name": "P2_S1_data.xdf",
+          "bytes": 69366467,
+          "checksum": "md5:7372646c093578924c8a3d63c536b254"
+        },
+        {
+          "name": "P2_S1_calibration.xdf",
+          "bytes": 1585929,
+          "checksum": "md5:dd9dcfce273172e0c1b6bd66d46a4d0d"
+        },
+        {
+          "name": "P2_S3_calibration.xdf",
+          "bytes": 1058905,
+          "checksum": "md5:6d289d272444afd83ee9b8bf26c1b592"
+        }
+      ]
+    },
+    {
+      "source": "Alawieh2025",
+      "url": "https://zenodo.org/api/records/15454354",
+      "title": "A Multi-Session EEG Dataset of Longitudinal Motor Imagery BCI Training with Transcutaneous Spinal Stimulation in Able-Bodied and Spinal Cord Injury Participants",
+      "licence": {
+        "id": "cc-by-4.0"
+      },
+      "bytes": 18287887800,
+      "files": [
+        {
+          "name": "d5_mri.zip",
+          "bytes": 77634252,
+          "checksum": "md5:19aa2ff1541e6e60220d8d31884ff4b8"
+        },
+        {
+          "name": "d1_Main_Group_n20.zip",
+          "bytes": 5300238461,
+          "checksum": "md5:2e9168e2fc36d25d576138450e333363"
+        },
+        {
+          "name": "d3_SinglePulse_n5.zip",
+          "bytes": 5359572741,
+          "checksum": "md5:b85ac32ecf8be018fa82322029305cde"
+        },
+        {
+          "name": "d4_SCI_patients.zip",
+          "bytes": 3402925696,
+          "checksum": "md5:5257af4124d53d8303a18ac81d572019"
+        },
+        {
+          "name": "d2_SlowLearners_n4.zip",
+          "bytes": 4147516650,
+          "checksum": "md5:efe7140ca3890be011a54cd24114be06"
+        }
+      ]
+    },
+    {
+      "source": "MOVING2024",
+      "url": "https://zenodo.org/api/records/12804784",
+      "title": "MOVING: a Multi-MOdal dataset of EEG signals and VIrtual Glove hand trackING",
+      "licence": {
+        "id": "cc-by-4.0"
+      },
+      "bytes": 2446904913,
+      "files": [
+        {
+          "name": "edf.rar",
+          "bytes": 98203839,
+          "checksum": "md5:f875a20e1aecbd96c555c9793ae6c714"
+        },
+        {
+          "name": "virtual_glove.rar",
+          "bytes": 2348701074,
+          "checksum": "md5:5b8de152cc17ea6068f4d8deda2870e9"
+        }
+      ]
+    },
+    {
+      "source": "Batista2022",
+      "url": "https://zenodo.org/api/records/7664069",
+      "title": "Physiological Signals During Motor Imagery Brain-Computer Interface Training Using Virtual Reality and Haptics",
+      "licence": {
+        "id": "cc-by-4.0"
+      },
+      "bytes": 2862715819,
+      "files": [
+        {
+          "name": "sub-16.zip",
+          "bytes": 151815006,
+          "checksum": "md5:1df4a49c5b3ab676bc27161191dc1dd3"
+        },
+        {
+          "name": "sub-15.zip",
+          "bytes": 150891753,
+          "checksum": "md5:650a9c79d8efd72bbd06b4393a04c31a"
+        },
+        {
+          "name": "sub-05.zip",
+          "bytes": 138060094,
+          "checksum": "md5:82b9c73d1f5465d20603fd0829d10f0a"
+        },
+        {
+          "name": "sub-03.zip",
+          "bytes": 136956977,
+          "checksum": "md5:02b75f15710b41734bf2e748fa562574"
+        },
+        {
+          "name": "sub-04.zip",
+          "bytes": 138176128,
+          "checksum": "md5:bceef36338eb9dc053bc28e4e8366954"
+        },
+        {
+          "name": "sub-19.zip",
+          "bytes": 151342365,
+          "checksum": "md5:d5c1d54559c0fc424ecc0957fe915614"
+        },
+        {
+          "name": "sub-p01.zip",
+          "bytes": 142731293,
+          "checksum": "md5:196bb0e35d223531546c214cddef84ff"
+        },
+        {
+          "name": "sub-p02.zip",
+          "bytes": 141319349,
+          "checksum": "md5:f770e81f3cb9200d4b13fed80365510e"
+        },
+        {
+          "name": "sub-p03.zip",
+          "bytes": 126857771,
+          "checksum": "md5:fb727a43bc755133e19d34d0a3ab8070"
+        },
+        {
+          "name": "sub-13.zip",
+          "bytes": 122205913,
+          "checksum": "md5:021d6b5e0e93cd4b3d9facfecc23e268"
+        },
+        {
+          "name": "sub-14.zip",
+          "bytes": 150851595,
+          "checksum": "md5:d6a2eb2a53ae10ac4fd2b0d0420f05b5"
+        },
+        {
+          "name": "sub-01.zip",
+          "bytes": 120052339,
+          "checksum": "md5:0f94741d86cea15009bbeb43ed55e850"
+        },
+        {
+          "name": "sub-18.zip",
+          "bytes": 147134260,
+          "checksum": "md5:bbbd10800eb1d13de15292b1893ea409"
+        },
+        {
+          "name": "sub-08.zip",
+          "bytes": 151651992,
+          "checksum": "md5:cb3a117f2e6911959ad763c6af5a0b44"
+        },
+        {
+          "name": "sub-07.zip",
+          "bytes": 155667559,
+          "checksum": "md5:eb59d70ffbb754a40aefee37285c4094"
+        },
+        {
+          "name": "sub-17.zip",
+          "bytes": 149955988,
+          "checksum": "md5:c05123ba792de4df68f0f566816f1432"
+        },
+        {
+          "name": "sub-02.zip",
+          "bytes": 141480533,
+          "checksum": "md5:fa88b5237799ac9d82005b0364afbcc7"
+        },
+        {
+          "name": "sub-06.zip",
+          "bytes": 143136883,
+          "checksum": "md5:f161a384e7ecad79e18abb438eb82dd7"
+        },
+        {
+          "name": "sub-12.zip",
+          "bytes": 153847139,
+          "checksum": "md5:3a2ffb16c84d8b5fbbd97a68bf0aafd6"
+        },
+        {
+          "name": "sub-09.zip",
+          "bytes": 148580882,
+          "checksum": "md5:537a24c670ea0fc62ae02dea78d47933"
+        }
+      ]
+    },
+    {
+      "source": "Shin2022",
+      "url": "https://api.figshare.com/v2/articles/20383716",
+      "title": "Data from: Closed-loop motor imagery EEG simulation for brain-computer interfaces",
+      "licence": {
+        "value": 1,
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "bytes": 353216377,
+      "files": [
+        {
+          "name": "bci-simuator-data-README.md",
+          "bytes": 1116,
+          "checksum": "d30f2ae606e5fc8429869ba01b7482f8"
+        },
+        {
+          "name": "study-2022-data-anonymized.zip",
+          "bytes": 353215261,
+          "checksum": "c59c1f1a07256d06a2d9feb649409072"
+        }
+      ]
+    },
+    {
+      "source": "Zhang2017",
+      "url": "https://api.figshare.com/v2/articles/5579461",
+      "title": "Evaluating the versatility of EEG models generated from motor imagery tasks: an exploratory investigation on upper-limb elbow-centered motor imagery tasks",
+      "licence": {
+        "value": 1,
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "bytes": 1755269242,
+      "files": [
+        {
+          "name": "KI.rar",
+          "bytes": 1755269242,
+          "checksum": "1d349c194f98ccdfab4f7328e1908704"
+        }
+      ]
+    }
+  ],
+  "mimed": {
+    "original_release": "https://data.mendeley.com/datasets/zs25xxjkm9/3",
+    "data_doi": "10.17632/zs25xxjkm9.3",
+    "licence": "CC-BY-4.0 original release page",
+    "selected_file": "Motor Imagery.zip",
+    "url": "https://data.mendeley.com/public-files/datasets/zs25xxjkm9/files/3dc41eb1-8999-4e0d-a77a-0394b53ba04e/file_downloaded",
+    "bytes": 19526072,
+    "etag": "\"82726a38955c7ca8041018010fd33a30\"",
+    "object_version": "cZvz73BnHgnl2VH81tQm6WDgyOy0O3uA",
+    "inspection": "HEAD only; no EEG downloaded",
+    "planning_cases": 360,
+    "planning_float64_GB": 0.02064384,
+    "case_count_status": "loader-derived nominal; native source inspection pending"
+  },
+  "recommended_order": [
+    "MIMED2024",
+    "MOVING2024",
+    "Zhang2017",
+    "Kodera2023"
+  ],
+  "flagged": {
+    "NeuroTUMBCI2025": "Different three-class vocabularies per participant: a four-class subject-disjoint split cannot cover all labels. Needs explicit task/split decision.",
+    "Shin2022": "Small original live EEG but native BCI2000 headers lack anatomical channel names; recover source mapping before acceptance. Check duplicate runs and feedback-interval duration."
+  },
+  "loader_commit": "bed9f0fa1b9c4d3f71c7f2ddb22e4e44383211b5",
+  "loader_sha256": {
+    "mimed2024": "f887ca0db89a2271e0c068f2f33f3635aea73a6332b27232b404989a5012d3b6",
+    "milimbeeg": "ba56373a1926583782536ae517b5de128d6c98cecba8192eeaaf091d8b304aec",
+    "neurotumbci2025": "28b4b27af3ee4bb6ab24e8d4b0e3c40617799cb043d7c9bb7a7a3b2a4ee1acf6",
+    "shin2022": "d6c86910585f6722ddfa41335730a44e6e037d0c112d1a9af75211e941d261df",
+    "moving2024": "21ff50b80d0e25ecc91f34c8c6ab6884c20e10e108c350668b89292b01a9390d",
+    "kodera2023": "281f8e62e2b28134fef20e589751625b7f52f9e4131b77c52821ed2d9376239d"
+  }
+}

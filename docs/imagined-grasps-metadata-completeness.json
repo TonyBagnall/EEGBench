@@ -1,0 +1,17 @@
+{
+  "evidence": {
+    "direct": "Native epo.x/y/clab/fs/t/file,mnt and true-label workbook cells; test resolution/cue mask retained as evidence",
+    "documented": "Original participant/session protocol,60EEG identity,FCz reference/Fpz ground,250Hz and60Hz notch from organiserPDF",
+    "assigned": "Encoded1-3 labels and day labels linked to official folders; unknown calendar/run IDs stay unknown",
+    "inferred": "Presumed microvolt scale only, factor1; coordinate units and original continuous offsets not invented"
+  },
+  "missing_or_inconsistent": [
+    "Original continuous offsets, actual calendar dates and native run IDs unavailable; session days come from organiser phase mapping",
+    "Physical units not explicit; test resolution vector length does not match60 selected EEG, so it is retained but not used as a guessed calibration",
+    "Native montage coordinate units/frame and individual measurement status unknown",
+    "Original PDF says15 subjects in introduction/file list but10 in one recording paragraph; actual full source lists15 per split",
+    "Original handedness sentence is internally awkward; no individual handedness/age/sex is invented",
+    "Narrative electrode paragraph differs from actual channel table; embedded clab and numbered table agree and determine order",
+    "Test visual-cue interval deliberately zeroed; archive uses only actual motor imagery segment, not zero-padded cue samples"
+  ]
+}

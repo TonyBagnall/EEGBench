@@ -1,0 +1,90 @@
+{
+  "dataset": "Farabbi2020",
+  "name": "ImaginedHandsRobot",
+  "source_record_id": 5882500,
+  "source_revision": "Zenodo record5882500 v1; publisher file checksums",
+  "source_doi": "10.5281/zenodo.5882500",
+  "licence": "CC-BY-4.0",
+  "original_source_url": "https://zenodo.org/records/5882500",
+  "evidence_sha256": "8d8c43339d864653c03097396ceea733529ca3016d14996286d0fb2406ae6049",
+  "files": [
+    {
+      "name": "05.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/05.zip/content",
+      "bytes": 214425565,
+      "checksum": "md5:a95c7607c0f7fb09052e22ae61e8d0a7"
+    },
+    {
+      "name": "07.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/07.zip/content",
+      "bytes": 209491845,
+      "checksum": "md5:711aa5a8678d151124eeb1b3151a748f"
+    },
+    {
+      "name": "06.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/06.zip/content",
+      "bytes": 212114969,
+      "checksum": "md5:d36d6a8b76d1159cffb4bbe70ff268f6"
+    },
+    {
+      "name": "04.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/04.zip/content",
+      "bytes": 206218758,
+      "checksum": "md5:c2b09f0fc9cce41461142952c9498edd"
+    },
+    {
+      "name": "chanlocs.locs",
+      "url": "https://zenodo.org/api/records/5882500/files/chanlocs.locs/content",
+      "bytes": 1050,
+      "checksum": "md5:3d6ff0318790b54fde3d8d54be2fdb40"
+    },
+    {
+      "name": "10.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/10.zip/content",
+      "bytes": 217375136,
+      "checksum": "md5:6b507988f19e211c49c218b740dd0e0c"
+    },
+    {
+      "name": "09.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/09.zip/content",
+      "bytes": 204814821,
+      "checksum": "md5:f5cb7ab29253330ef52524f16c00d6c0"
+    },
+    {
+      "name": "03.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/03.zip/content",
+      "bytes": 214443292,
+      "checksum": "md5:7cf99f8543035be267fe145a46fe10a9"
+    },
+    {
+      "name": "02.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/02.zip/content",
+      "bytes": 212452109,
+      "checksum": "md5:dfc8fef61262584918b977ee2db2c9f1"
+    },
+    {
+      "name": "01.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/01.zip/content",
+      "bytes": 208809513,
+      "checksum": "md5:7d21e407c2cdd21098752410ec4f01cb"
+    },
+    {
+      "name": "08.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/08.zip/content",
+      "bytes": 215319045,
+      "checksum": "md5:c1b4a72ea3c6817a433f9ad08b8aacba"
+    },
+    {
+      "name": "12.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/12.zip/content",
+      "bytes": 207657158,
+      "checksum": "md5:ffb15792379b081ebf06dd50afb3a0b2"
+    },
+    {
+      "name": "11.zip",
+      "url": "https://zenodo.org/api/records/5882500/files/11.zip/content",
+      "bytes": 209242983,
+      "checksum": "md5:2c12ff230a8cee988a894245e5193141"
+    }
+  ]
+}

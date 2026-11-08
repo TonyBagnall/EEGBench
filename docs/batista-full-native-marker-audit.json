@@ -1,0 +1,2950 @@
+{
+  "status": "complete",
+  "recordings": [
+    {
+      "archive": "sub-01.zip",
+      "file": "sub-01/ses-lab1/task/MI/sub-01_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 262000,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 34,
+        "2501": 4,
+        "2499": 4
+      },
+      "timestamp": "20220224204008183337"
+    },
+    {
+      "archive": "sub-01.zip",
+      "file": "sub-01/ses-lab1/task/MIMO/sub-01_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 265020,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 41,
+      "excluded": [
+        {
+          "trial_index": 29,
+          "event": {
+            "marker_key": "Mk170",
+            "marker_line_number_1based": 181,
+            "marker_ordinal": 169,
+            "type": "Stimulus",
+            "description": "S  8",
+            "code": "S8",
+            "position_1based": 188224,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 188223,
+          "native_end": 190722,
+          "native_duration": 2499,
+          "end_event": {
+            "marker_key": "Mk173",
+            "marker_line_number_1based": 184,
+            "marker_ordinal": 172,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 190723,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk171",
+              "marker_line_number_1based": 182,
+              "marker_ordinal": 170,
+              "type": "New Segment",
+              "description": "LostSamples: 2",
+              "code": "LostSamples:2",
+              "position_1based": 188786,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20220224205612152287"
+            }
+          ]
+        }
+      ],
+      "native_duration_counts": {
+        "2499": 7,
+        "2500": 26,
+        "2501": 7,
+        "2498": 1
+      },
+      "timestamp": "20220224204954571215"
+    },
+    {
+      "archive": "sub-01.zip",
+      "file": "sub-01/ses-lab1/task/MIMOHP/sub-01_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 253980,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 28,
+        "2501": 8,
+        "2499": 6
+      },
+      "timestamp": "20220224195104223784"
+    },
+    {
+      "archive": "sub-01.zip",
+      "file": "sub-01/ses-lab1/task/MIMOHPVR/sub-01_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 257030,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 33,
+        "2499": 4,
+        "2501": 5
+      },
+      "timestamp": "20220224201534743541"
+    },
+    {
+      "archive": "sub-01.zip",
+      "file": "sub-01/ses-lab1/task/MIMOVR/sub-01_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 252260,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2499": 7,
+        "2501": 3,
+        "2497": 1
+      },
+      "timestamp": "20220224200503115055"
+    },
+    {
+      "archive": "sub-02.zip",
+      "file": "sub-02/ses-lab1/task/MI/sub-02_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 254550,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 30,
+        "2501": 5,
+        "2499": 7
+      },
+      "timestamp": "20211129111337822265"
+    },
+    {
+      "archive": "sub-02.zip",
+      "file": "sub-02/ses-lab1/task/MIMO/sub-02_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 281770,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 34,
+        "2499": 6,
+        "2498": 1,
+        "2501": 1
+      },
+      "timestamp": "20211129112437711131"
+    },
+    {
+      "archive": "sub-02.zip",
+      "file": "sub-02/ses-lab1/task/MIMOHP/sub-02_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 268080,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 32,
+        "2499": 7,
+        "2501": 3
+      },
+      "timestamp": "20211129113559820295"
+    },
+    {
+      "archive": "sub-02.zip",
+      "file": "sub-02/ses-lab1/task/MIMOHPVR/sub-02_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 292940,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 40,
+      "excluded": [
+        {
+          "trial_index": 4,
+          "event": {
+            "marker_key": "Mk29",
+            "marker_line_number_1based": 40,
+            "marker_ordinal": 28,
+            "type": "Stimulus",
+            "description": "S  8",
+            "code": "S8",
+            "position_1based": 70705,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 70704,
+          "native_end": 73203,
+          "native_duration": 2499,
+          "end_event": {
+            "marker_key": "Mk34",
+            "marker_line_number_1based": 45,
+            "marker_ordinal": 33,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 73204,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk32",
+              "marker_line_number_1based": 43,
+              "marker_ordinal": 31,
+              "type": "New Segment",
+              "description": "LostSamples: 32512",
+              "code": "LostSamples:32512",
+              "position_1based": 71986,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20211129115146004126"
+            }
+          ]
+        },
+        {
+          "trial_index": 6,
+          "event": {
+            "marker_key": "Mk44",
+            "marker_line_number_1based": 55,
+            "marker_ordinal": 43,
+            "type": "Stimulus",
+            "description": "S  7",
+            "code": "S7",
+            "position_1based": 82027,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 82026,
+          "native_end": 84524,
+          "native_duration": 2498,
+          "end_event": {
+            "marker_key": "Mk47",
+            "marker_line_number_1based": 58,
+            "marker_ordinal": 46,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 84525,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk46",
+              "marker_line_number_1based": 57,
+              "marker_ordinal": 45,
+              "type": "New Segment",
+              "description": "LostSamples: 2",
+              "code": "LostSamples:2",
+              "position_1based": 82858,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20211129115207772419"
+            }
+          ]
+        }
+      ],
+      "native_duration_counts": {
+        "2499": 7,
+        "2500": 28,
+        "2498": 1,
+        "2501": 4
+      },
+      "timestamp": "20211129114817006193"
+    },
+    {
+      "archive": "sub-02.zip",
+      "file": "sub-02/ses-lab1/task/MIMOVR/sub-02_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 258650,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 5,
+        "2500": 31,
+        "2501": 6
+      },
+      "timestamp": "20211129110324934030"
+    },
+    {
+      "archive": "sub-03.zip",
+      "file": "sub-03/ses-lab1/task/MI/sub-03_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 270680,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2501": 7,
+        "2498": 7,
+        "2499": 9,
+        "2500": 13,
+        "2497": 4,
+        "2502": 1,
+        "2504": 1
+      },
+      "timestamp": "20211129171704295499"
+    },
+    {
+      "archive": "sub-03.zip",
+      "file": "sub-03/ses-lab1/task/MIMO/sub-03_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 255900,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2498": 7,
+        "2497": 2,
+        "2501": 9,
+        "2499": 9,
+        "2503": 2,
+        "2500": 11,
+        "2495": 1,
+        "2502": 1
+      },
+      "timestamp": "20211129161928189066"
+    },
+    {
+      "archive": "sub-03.zip",
+      "file": "sub-03/ses-lab1/task/MIMOHP/sub-03_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 266980,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2498": 6,
+        "2500": 14,
+        "2501": 7,
+        "2499": 5,
+        "2497": 2,
+        "2504": 1,
+        "2502": 4,
+        "2503": 3
+      },
+      "timestamp": "20211129164450769522"
+    },
+    {
+      "archive": "sub-03.zip",
+      "file": "sub-03/ses-lab1/task/MIMOHPVR/sub-03_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 257080,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2503": 5,
+        "2499": 8,
+        "2500": 11,
+        "2501": 7,
+        "2498": 1,
+        "2496": 1,
+        "2504": 2,
+        "2502": 4,
+        "2497": 3
+      },
+      "timestamp": "20211129160806479906"
+    },
+    {
+      "archive": "sub-03.zip",
+      "file": "sub-03/ses-lab1/task/MIMOVR/sub-03_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 257750,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2502": 6,
+        "2501": 8,
+        "2499": 8,
+        "2498": 4,
+        "2500": 12,
+        "2497": 2,
+        "2505": 1,
+        "2504": 1
+      },
+      "timestamp": "20211129154232631300"
+    },
+    {
+      "archive": "sub-04.zip",
+      "file": "sub-04/ses-lab1/task/MI/sub-04_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 261900,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2502": 7,
+        "2500": 11,
+        "2501": 9,
+        "2499": 7,
+        "2503": 2,
+        "2498": 5,
+        "2497": 1
+      },
+      "timestamp": "20211129183724063352"
+    },
+    {
+      "archive": "sub-04.zip",
+      "file": "sub-04/ses-lab1/task/MIMO/sub-04_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 259100,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2497": 2,
+        "2498": 9,
+        "2500": 9,
+        "2499": 11,
+        "2503": 3,
+        "2501": 5,
+        "2502": 3
+      },
+      "timestamp": "20211129190805588093"
+    },
+    {
+      "archive": "sub-04.zip",
+      "file": "sub-04/ses-lab1/task/MIMOHP/sub-04_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 260910,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2502": 3,
+        "2503": 2,
+        "2499": 10,
+        "2500": 16,
+        "2498": 2,
+        "2497": 3,
+        "2496": 1,
+        "2501": 5
+      },
+      "timestamp": "20211129182659154957"
+    },
+    {
+      "archive": "sub-04.zip",
+      "file": "sub-04/ses-lab1/task/MIMOHPVR/sub-04_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 260860,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2504": 4,
+        "2501": 8,
+        "2502": 4,
+        "2499": 10,
+        "2500": 8,
+        "2497": 1,
+        "2498": 4,
+        "2505": 1,
+        "2503": 1,
+        "2496": 1
+      },
+      "timestamp": "20211129181336522173"
+    },
+    {
+      "archive": "sub-04.zip",
+      "file": "sub-04/ses-lab1/task/MIMOVR/sub-04_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 265270,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2497": 2,
+        "2499": 7,
+        "2505": 2,
+        "2500": 16,
+        "2498": 5,
+        "2503": 1,
+        "2501": 5,
+        "2502": 3,
+        "2496": 1
+      },
+      "timestamp": "20211129184810572038"
+    },
+    {
+      "archive": "sub-05.zip",
+      "file": "sub-05/ses-lab1/task/MI/sub-05_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 254930,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 17,
+        "2498": 4,
+        "2496": 1,
+        "2499": 10,
+        "2502": 2,
+        "2501": 7,
+        "2497": 1
+      },
+      "timestamp": "20211130200819838376"
+    },
+    {
+      "archive": "sub-05.zip",
+      "file": "sub-05/ses-lab1/task/MIMO/sub-05_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 258820,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2502": 5,
+        "2498": 6,
+        "2499": 6,
+        "2501": 7,
+        "2500": 11,
+        "2496": 2,
+        "2503": 3,
+        "2504": 1,
+        "2497": 1
+      },
+      "timestamp": "20211130193135908766"
+    },
+    {
+      "archive": "sub-05.zip",
+      "file": "sub-05/ses-lab1/task/MIMOHP/sub-05_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 293930,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 12,
+        "2502": 7,
+        "2499": 8,
+        "2501": 10,
+        "2504": 1,
+        "2498": 1,
+        "2503": 2,
+        "2497": 1
+      },
+      "timestamp": "20211130201846006789"
+    },
+    {
+      "archive": "sub-05.zip",
+      "file": "sub-05/ses-lab1/task/MIMOHPVR/sub-05_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 257030,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 9,
+        "2498": 5,
+        "2501": 8,
+        "2499": 12,
+        "2502": 5,
+        "2503": 1,
+        "2497": 2
+      },
+      "timestamp": "20211130192016179634"
+    },
+    {
+      "archive": "sub-05.zip",
+      "file": "sub-05/ses-lab1/task/MIMOVR/sub-05_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 257590,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2496": 2,
+        "2501": 10,
+        "2499": 12,
+        "2500": 8,
+        "2497": 1,
+        "2503": 3,
+        "2502": 4,
+        "2498": 2
+      },
+      "timestamp": "20211130195843210629"
+    },
+    {
+      "archive": "sub-06.zip",
+      "file": "sub-06/ses-lab1/task/MI/sub-06_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 302460,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 35,
+        "2501": 5,
+        "2499": 2
+      },
+      "timestamp": "20220509112631801444"
+    },
+    {
+      "archive": "sub-06.zip",
+      "file": "sub-06/ses-lab1/task/MIMO/sub-06_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 274140,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 28,
+        "2499": 9,
+        "2501": 4,
+        "2498": 1
+      },
+      "timestamp": "20220509121613559813"
+    },
+    {
+      "archive": "sub-06.zip",
+      "file": "sub-06/ses-lab1/task/MIMOHP/sub-06_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 274600,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 6,
+        "2500": 32,
+        "2501": 4
+      },
+      "timestamp": "20220509114329355115"
+    },
+    {
+      "archive": "sub-06.zip",
+      "file": "sub-06/ses-lab1/task/MIMOHPVR/sub-06_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 272640,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 26,
+        "2501": 7,
+        "2499": 8,
+        "2498": 1
+      },
+      "timestamp": "20220509115929927116"
+    },
+    {
+      "archive": "sub-06.zip",
+      "file": "sub-06/ses-lab1/task/MIMOVR/sub-06_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 266690,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 8,
+        "2500": 30,
+        "2501": 3,
+        "2498": 1
+      },
+      "timestamp": "20220509123139778553"
+    },
+    {
+      "archive": "sub-07.zip",
+      "file": "sub-07/ses-lab1/task/MI/sub-07_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 278070,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 29,
+        "2499": 7,
+        "2501": 6
+      },
+      "timestamp": "20220510120418217669"
+    },
+    {
+      "archive": "sub-07.zip",
+      "file": "sub-07/ses-lab1/task/MIMO/sub-07_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 266220,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 30,
+        "2499": 9,
+        "2501": 2,
+        "2498": 1
+      },
+      "timestamp": "20220510113748875809"
+    },
+    {
+      "archive": "sub-07.zip",
+      "file": "sub-07/ses-lab1/task/MIMOHP/sub-07_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 266470,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 30,
+        "2499": 9,
+        "2501": 2,
+        "2502": 1
+      },
+      "timestamp": "20220510122056871688"
+    },
+    {
+      "archive": "sub-07.zip",
+      "file": "sub-07/ses-lab1/task/MIMOHPVR/sub-07_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 273190,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2501": 5,
+        "2500": 30,
+        "2499": 6,
+        "2498": 1
+      },
+      "timestamp": "20220510115216319719"
+    },
+    {
+      "archive": "sub-07.zip",
+      "file": "sub-07/ses-lab1/task/MIMOVR/sub-07_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 265570,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2499": 5,
+        "2501": 6
+      },
+      "timestamp": "20220510123858680814"
+    },
+    {
+      "archive": "sub-08.zip",
+      "file": "sub-08/ses-lab1/task/MI/sub-08_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 257150,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 35,
+        "2499": 7
+      },
+      "timestamp": "20220511122057097693"
+    },
+    {
+      "archive": "sub-08.zip",
+      "file": "sub-08/ses-lab1/task/MIMO/sub-08_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 264000,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 41,
+      "excluded": [
+        {
+          "trial_index": 31,
+          "event": {
+            "marker_key": "Mk182",
+            "marker_line_number_1based": 193,
+            "marker_ordinal": 181,
+            "type": "Stimulus",
+            "description": "S  7",
+            "code": "S7",
+            "position_1based": 201576,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Missing or ambiguous native S10 end"
+        }
+      ],
+      "native_duration_counts": {
+        "2499": 6,
+        "2500": 31,
+        "2501": 4
+      },
+      "timestamp": "20220511121125856032"
+    },
+    {
+      "archive": "sub-08.zip",
+      "file": "sub-08/ses-lab1/task/MIMOHP/sub-08_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 265800,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2501": 7,
+        "2499": 8,
+        "2500": 27
+      },
+      "timestamp": "20220511115307794216"
+    },
+    {
+      "archive": "sub-08.zip",
+      "file": "sub-08/ses-lab1/task/MIMOHPVR/sub-08_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 264240,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 33,
+        "2499": 5,
+        "2501": 3,
+        "2498": 1
+      },
+      "timestamp": "20220511125207928828"
+    },
+    {
+      "archive": "sub-08.zip",
+      "file": "sub-08/ses-lab1/task/MIMOVR/sub-08_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 304340,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2501": 4,
+        "2500": 31,
+        "2499": 7
+      },
+      "timestamp": "20220511123319227664"
+    },
+    {
+      "archive": "sub-09.zip",
+      "file": "sub-09/ses-lab1/task/MI/sub-09_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 257820,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 35,
+        "2499": 4,
+        "2501": 3
+      },
+      "timestamp": "20220520122559324695"
+    },
+    {
+      "archive": "sub-09.zip",
+      "file": "sub-09/ses-lab1/task/MIMO/sub-09_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 268420,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 29,
+        "2499": 8,
+        "2498": 1,
+        "2501": 4
+      },
+      "timestamp": "20220520111549309274"
+    },
+    {
+      "archive": "sub-09.zip",
+      "file": "sub-09/ses-lab1/task/MIMOHP/sub-09_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 267170,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 41,
+      "excluded": [
+        {
+          "trial_index": 8,
+          "event": {
+            "marker_key": "Mk51",
+            "marker_line_number_1based": 62,
+            "marker_ordinal": 50,
+            "type": "Stimulus",
+            "description": "S  7",
+            "code": "S7",
+            "position_1based": 73446,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 73445,
+          "native_end": 75943,
+          "native_duration": 2498,
+          "end_event": {
+            "marker_key": "Mk54",
+            "marker_line_number_1based": 65,
+            "marker_ordinal": 53,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 75944,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk53",
+              "marker_line_number_1based": 64,
+              "marker_ordinal": 52,
+              "type": "New Segment",
+              "description": "LostSamples: 3",
+              "code": "LostSamples:3",
+              "position_1based": 75818,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20220520115820622119"
+            }
+          ]
+        }
+      ],
+      "native_duration_counts": {
+        "2499": 5,
+        "2500": 32,
+        "2501": 4
+      },
+      "timestamp": "20220520115548978082"
+    },
+    {
+      "archive": "sub-09.zip",
+      "file": "sub-09/ses-lab1/task/MIMOHPVR/sub-09_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 263360,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 7,
+        "2501": 4,
+        "2500": 31
+      },
+      "timestamp": "20220520123756014324"
+    },
+    {
+      "archive": "sub-09.zip",
+      "file": "sub-09/ses-lab1/task/MIMOVR/sub-09_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 264760,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 32,
+        "2501": 6,
+        "2499": 4
+      },
+      "timestamp": "20220520120953372479"
+    },
+    {
+      "archive": "sub-12.zip",
+      "file": "sub-12/ses-lab1/task/MI/sub-12_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 258190,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 32,
+        "2501": 4,
+        "2499": 6
+      },
+      "timestamp": "20220525121440695442"
+    },
+    {
+      "archive": "sub-12.zip",
+      "file": "sub-12/ses-lab1/task/MIMO/sub-12_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 272710,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2501": 5,
+        "2499": 5,
+        "2498": 1
+      },
+      "timestamp": "20220525114544372114"
+    },
+    {
+      "archive": "sub-12.zip",
+      "file": "sub-12/ses-lab1/task/MIMOHP/sub-12_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 277720,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 9,
+        "2501": 8,
+        "2500": 25
+      },
+      "timestamp": "20220525122457383727"
+    },
+    {
+      "archive": "sub-12.zip",
+      "file": "sub-12/ses-lab1/task/MIMOHPVR/sub-12_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 263940,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2501": 6,
+        "2499": 5
+      },
+      "timestamp": "20220525120151505108"
+    },
+    {
+      "archive": "sub-12.zip",
+      "file": "sub-12/ses-lab1/task/MIMOVR/sub-12_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 262940,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 33,
+        "2499": 4,
+        "2501": 4,
+        "2498": 1
+      },
+      "timestamp": "20220525113100176581"
+    },
+    {
+      "archive": "sub-13.zip",
+      "file": "sub-13/ses-lab1/task/MI/sub-13_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 258080,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 36,
+        "2499": 3,
+        "2501": 3
+      },
+      "timestamp": "20220527165610661132"
+    },
+    {
+      "archive": "sub-13.zip",
+      "file": "sub-13/ses-lab1/task/MIMO/sub-13_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 262160,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 28,
+        "2501": 8,
+        "2499": 4,
+        "2498": 1,
+        "2495": 1
+      },
+      "timestamp": "20220527170732172287"
+    },
+    {
+      "archive": "sub-13.zip",
+      "file": "sub-13/ses-lab1/task/MIMOHP/sub-13_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 265680,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 25,
+        "2499": 11,
+        "2501": 6
+      },
+      "timestamp": "20220527164123709216"
+    },
+    {
+      "archive": "sub-13.zip",
+      "file": "sub-13/ses-lab1/task/MIMOVR/sub-13_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 264120,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2499": 6,
+        "2498": 1,
+        "2501": 4
+      },
+      "timestamp": "20220527173338873336"
+    },
+    {
+      "archive": "sub-14.zip",
+      "file": "sub-14/ses-lab1/task/MI/sub-14_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 258460,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 22,
+        "2499": 10,
+        "2501": 10
+      },
+      "timestamp": "20220609165840981419"
+    },
+    {
+      "archive": "sub-14.zip",
+      "file": "sub-14/ses-lab1/task/MIMO/sub-14_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 274480,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2499": 5,
+        "2501": 6
+      },
+      "timestamp": "20220609162602775110"
+    },
+    {
+      "archive": "sub-14.zip",
+      "file": "sub-14/ses-lab1/task/MIMOHP/sub-14_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 265410,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2501": 6,
+        "2499": 5,
+        "2500": 30,
+        "2498": 1
+      },
+      "timestamp": "20220609174201100351"
+    },
+    {
+      "archive": "sub-14.zip",
+      "file": "sub-14/ses-lab1/task/MIMOHPVR/sub-14_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 264490,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 36,
+        "2499": 5,
+        "2501": 1
+      },
+      "timestamp": "20220609172443702414"
+    },
+    {
+      "archive": "sub-14.zip",
+      "file": "sub-14/ses-lab1/task/MIMOVR/sub-14_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 271510,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2498": 2,
+        "2500": 30,
+        "2499": 6,
+        "2501": 4
+      },
+      "timestamp": "20220609171223112464"
+    },
+    {
+      "archive": "sub-15.zip",
+      "file": "sub-15/ses-lab1/task/MI/sub-15_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 257160,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 34,
+        "2499": 5,
+        "2501": 3
+      },
+      "timestamp": "20220618112544949717"
+    },
+    {
+      "archive": "sub-15.zip",
+      "file": "sub-15/ses-lab1/task/MIMO/sub-15_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 264060,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 28,
+        "2501": 3,
+        "2499": 11
+      },
+      "timestamp": "20220618111240253175"
+    },
+    {
+      "archive": "sub-15.zip",
+      "file": "sub-15/ses-lab1/task/MIMOHP/sub-15_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 269990,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 5,
+        "2500": 30,
+        "2501": 6,
+        "2502": 1
+      },
+      "timestamp": "20220618113840180133"
+    },
+    {
+      "archive": "sub-15.zip",
+      "file": "sub-15/ses-lab1/task/MIMOHPVR/sub-15_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 263670,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2499": 9,
+        "2501": 2
+      },
+      "timestamp": "20220618115518616001"
+    },
+    {
+      "archive": "sub-15.zip",
+      "file": "sub-15/ses-lab1/task/MIMOVR/sub-15_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 262370,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 29,
+        "2499": 8,
+        "2501": 5
+      },
+      "timestamp": "20220618120801842254"
+    },
+    {
+      "archive": "sub-16.zip",
+      "file": "sub-16/ses-lab1/task/MI/sub-16_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 257960,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 4,
+        "2500": 34,
+        "2501": 4
+      },
+      "timestamp": "20220705152633600539"
+    },
+    {
+      "archive": "sub-16.zip",
+      "file": "sub-16/ses-lab1/task/MIMO/sub-16_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 265920,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 3,
+        "2501": 10,
+        "2500": 28,
+        "2498": 1
+      },
+      "timestamp": "20220705155010496210"
+    },
+    {
+      "archive": "sub-16.zip",
+      "file": "sub-16/ses-lab1/task/MIMOHP/sub-16_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 253720,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 33,
+        "2502": 1,
+        "2501": 4,
+        "2499": 4
+      },
+      "timestamp": "20220705160508588276"
+    },
+    {
+      "archive": "sub-16.zip",
+      "file": "sub-16/ses-lab1/task/MIMOHPVR/sub-16_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 266280,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 9,
+        "2500": 32,
+        "2501": 1
+      },
+      "timestamp": "20220705151418670665"
+    },
+    {
+      "archive": "sub-16.zip",
+      "file": "sub-16/ses-lab1/task/MIMOVR/sub-16_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 261860,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2501": 4,
+        "2500": 26,
+        "2499": 12
+      },
+      "timestamp": "20220705153817509996"
+    },
+    {
+      "archive": "sub-17.zip",
+      "file": "sub-17/ses-lab1/task/MI/sub-17_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 260030,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 35,
+        "2499": 4,
+        "2501": 3
+      },
+      "timestamp": "20220711153006683704"
+    },
+    {
+      "archive": "sub-17.zip",
+      "file": "sub-17/ses-lab1/task/MIMO/sub-17_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 269310,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 28,
+        "2501": 4,
+        "2499": 10
+      },
+      "timestamp": "20220711153921311155"
+    },
+    {
+      "archive": "sub-17.zip",
+      "file": "sub-17/ses-lab1/task/MIMOHP/sub-17_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 263150,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 5,
+        "2500": 32,
+        "2501": 5
+      },
+      "timestamp": "20220711150516877689"
+    },
+    {
+      "archive": "sub-17.zip",
+      "file": "sub-17/ses-lab1/task/MIMOHPVR/sub-17_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 265520,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 41,
+      "excluded": [
+        {
+          "trial_index": 7,
+          "event": {
+            "marker_key": "Mk46",
+            "marker_line_number_1based": 57,
+            "marker_ordinal": 45,
+            "type": "Stimulus",
+            "description": "S  7",
+            "code": "S7",
+            "position_1based": 65691,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 65690,
+          "native_end": 68186,
+          "native_duration": 2496,
+          "end_event": {
+            "marker_key": "Mk49",
+            "marker_line_number_1based": 60,
+            "marker_ordinal": 48,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 68187,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk48",
+              "marker_line_number_1based": 59,
+              "marker_ordinal": 47,
+              "type": "New Segment",
+              "description": "LostSamples: 3",
+              "code": "LostSamples:3",
+              "position_1based": 68177,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20220711152138010870"
+            }
+          ]
+        }
+      ],
+      "native_duration_counts": {
+        "2500": 32,
+        "2499": 4,
+        "2501": 5
+      },
+      "timestamp": "20220711151921649038"
+    },
+    {
+      "archive": "sub-17.zip",
+      "file": "sub-17/ses-lab1/task/MIMOVR/sub-17_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 268630,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 35,
+        "2499": 2,
+        "2501": 5
+      },
+      "timestamp": "20220711141211075917"
+    },
+    {
+      "archive": "sub-18.zip",
+      "file": "sub-18/ses-lab1/task/MI/sub-18_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 256950,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 34,
+        "2501": 5,
+        "2499": 3
+      },
+      "timestamp": "20220712113418502741"
+    },
+    {
+      "archive": "sub-18.zip",
+      "file": "sub-18/ses-lab1/task/MIMO/sub-18_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 261610,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 37,
+        "2499": 4,
+        "2501": 1
+      },
+      "timestamp": "20220712121008831631"
+    },
+    {
+      "archive": "sub-18.zip",
+      "file": "sub-18/ses-lab1/task/MIMOHP/sub-18_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 268590,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 35,
+        "2499": 7
+      },
+      "timestamp": "20220712112234353281"
+    },
+    {
+      "archive": "sub-18.zip",
+      "file": "sub-18/ses-lab1/task/MIMOHPVR/sub-18_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 264550,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 35,
+        "2501": 1,
+        "2499": 6
+      },
+      "timestamp": "20220712115919382906"
+    },
+    {
+      "archive": "sub-18.zip",
+      "file": "sub-18/ses-lab1/task/MIMOVR/sub-18_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 265590,
+      "coordinate_rows": 0,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2501": 4,
+        "2499": 7
+      },
+      "timestamp": "20220712114905094652"
+    },
+    {
+      "archive": "sub-19.zip",
+      "file": "sub-19/ses-lab1/task/MI/sub-19_ses-lab1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 259030,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 31,
+        "2501": 2,
+        "2499": 9
+      },
+      "timestamp": "20220930115459223981"
+    },
+    {
+      "archive": "sub-19.zip",
+      "file": "sub-19/ses-lab1/task/MIMO/sub-19_ses-lab1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 266410,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 41,
+      "excluded": [
+        {
+          "trial_index": 22,
+          "event": {
+            "marker_key": "Mk131",
+            "marker_line_number_1based": 142,
+            "marker_ordinal": 130,
+            "type": "Stimulus",
+            "description": "S  8",
+            "code": "S8",
+            "position_1based": 149424,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 149423,
+          "native_end": 151919,
+          "native_duration": 2496,
+          "end_event": {
+            "marker_key": "Mk134",
+            "marker_line_number_1based": 145,
+            "marker_ordinal": 133,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 151920,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk133",
+              "marker_line_number_1based": 144,
+              "marker_ordinal": 132,
+              "type": "New Segment",
+              "description": "LostSamples: 3",
+              "code": "LostSamples:3",
+              "position_1based": 151433,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20220930120948811932"
+            }
+          ]
+        }
+      ],
+      "native_duration_counts": {
+        "2500": 34,
+        "2499": 6,
+        "2501": 1
+      },
+      "timestamp": "20220930120445935863"
+    },
+    {
+      "archive": "sub-19.zip",
+      "file": "sub-19/ses-lab1/task/MIMOHP/sub-19_ses-lab1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 269100,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2499": 5,
+        "2500": 32,
+        "2501": 5
+      },
+      "timestamp": "20220930112735981904"
+    },
+    {
+      "archive": "sub-19.zip",
+      "file": "sub-19/ses-lab1/task/MIMOHPVR/sub-19_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 280800,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 36,
+        "2501": 1,
+        "2499": 5
+      },
+      "timestamp": "20220930121635471395"
+    },
+    {
+      "archive": "sub-19.zip",
+      "file": "sub-19/ses-lab1/task/MIMOVR/sub-19_ses-lab1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 263870,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "PPG",
+        "ECG",
+        "Resp",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 42,
+      "retained": 42,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 26,
+        "2501": 8,
+        "2499": 8
+      },
+      "timestamp": "20220930114331834746"
+    },
+    {
+      "archive": "sub-p01.zip",
+      "file": "sub-p01/ses-pilot1/task/MI/sub-01_ses-pilot1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 265310,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2497": 4,
+        "2499": 10,
+        "2502": 2,
+        "2500": 12,
+        "2503": 5,
+        "2501": 3,
+        "2496": 1,
+        "2504": 1,
+        "2498": 2
+      },
+      "timestamp": "20211015154053230795"
+    },
+    {
+      "archive": "sub-p01.zip",
+      "file": "sub-p01/ses-pilot1/task/MIMO/sub-01_ses-pilot1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 289880,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 10,
+        "2502": 5,
+        "2498": 8,
+        "2501": 5,
+        "2499": 10,
+        "2496": 2
+      },
+      "timestamp": "20211015155350257226"
+    },
+    {
+      "archive": "sub-p01.zip",
+      "file": "sub-p01/ses-pilot1/task/MIMOHP/sub-01_ses-pilot1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 271250,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 14,
+        "2499": 7,
+        "2498": 4,
+        "2501": 3,
+        "2503": 1,
+        "2504": 1,
+        "2496": 1,
+        "2502": 7,
+        "2505": 1,
+        "2497": 1
+      },
+      "timestamp": "20211015160619749289"
+    },
+    {
+      "archive": "sub-p01.zip",
+      "file": "sub-p01/ses-pilot1/task/MIMOHPVR/sub-01_ses-pilot1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 295750,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2502": 5,
+        "2501": 5,
+        "2500": 10,
+        "2498": 7,
+        "2499": 5,
+        "2505": 1,
+        "2497": 3,
+        "2503": 4
+      },
+      "timestamp": "20211015161832119128"
+    },
+    {
+      "archive": "sub-p01.zip",
+      "file": "sub-p01/ses-pilot1/task/MIMOVR/sub-01_ses-pilot1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 252820,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2503": 5,
+        "2499": 12,
+        "2501": 8,
+        "2497": 1,
+        "2504": 1,
+        "2502": 4,
+        "2500": 7,
+        "2496": 1,
+        "2498": 1
+      },
+      "timestamp": "20211015163014928571"
+    },
+    {
+      "archive": "sub-p02.zip",
+      "file": "sub-p02/ses-pilot1/task/MI/sub-02_ses-pilot1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 256680,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2509": 10,
+        "2508": 27,
+        "2507": 3
+      },
+      "timestamp": "20211015173128004801"
+    },
+    {
+      "archive": "sub-p02.zip",
+      "file": "sub-p02/ses-pilot1/task/MIMO/sub-02_ses-pilot1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 251210,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 30,
+        "2501": 3,
+        "2499": 7
+      },
+      "timestamp": "20211015174255414037"
+    },
+    {
+      "archive": "sub-p02.zip",
+      "file": "sub-p02/ses-pilot1/task/MIMOHP/sub-02_ses-pilot1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 266380,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 34,
+        "2501": 1,
+        "2499": 4,
+        "2498": 1
+      },
+      "timestamp": "20211015175624464906"
+    },
+    {
+      "archive": "sub-p02.zip",
+      "file": "sub-p02/ses-pilot1/task/MIMOHPVR/sub-02_ses-pilot1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 270400,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2498": 1,
+        "2500": 27,
+        "2501": 6,
+        "2499": 6
+      },
+      "timestamp": "20211015181237537979"
+    },
+    {
+      "archive": "sub-p02.zip",
+      "file": "sub-p02/ses-pilot1/task/MIMOVR/sub-02_ses-pilot1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 283100,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 28,
+        "2499": 7,
+        "2501": 5
+      },
+      "timestamp": "20211015182342486913"
+    },
+    {
+      "archive": "sub-p03.zip",
+      "file": "sub-p03/ses-pilot1/task/MI/sub-03_ses-pilot1_task-grazMI.vhdr",
+      "condition": "MI",
+      "samples": 237810,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2508": 34,
+        "2509": 4,
+        "2507": 2
+      },
+      "timestamp": "20211025153529026624"
+    },
+    {
+      "archive": "sub-p03.zip",
+      "file": "sub-p03/ses-pilot1/task/MIMO/sub-03_ses-pilot1_task-neurowMIMO.vhdr",
+      "condition": "MIMO",
+      "samples": 243890,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 39,
+      "excluded": [
+        {
+          "trial_index": 3,
+          "event": {
+            "marker_key": "Mk22",
+            "marker_line_number_1based": 33,
+            "marker_ordinal": 21,
+            "type": "Stimulus",
+            "description": "S  8",
+            "code": "S8",
+            "position_1based": 29509,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 29508,
+          "native_end": 32004,
+          "native_duration": 2496,
+          "end_event": {
+            "marker_key": "Mk25",
+            "marker_line_number_1based": 36,
+            "marker_ordinal": 24,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 32005,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk24",
+              "marker_line_number_1based": 35,
+              "marker_ordinal": 23,
+              "type": "New Segment",
+              "description": "LostSamples: 3",
+              "code": "LostSamples:3",
+              "position_1based": 30583,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20211025154838909235"
+            }
+          ]
+        }
+      ],
+      "native_duration_counts": {
+        "2500": 32,
+        "2499": 5,
+        "2501": 2
+      },
+      "timestamp": "20211025154737736413"
+    },
+    {
+      "archive": "sub-p03.zip",
+      "file": "sub-p03/ses-pilot1/task/MIMOHP/sub-03_ses-pilot1_task-neurowMIMOHP.vhdr",
+      "condition": "MIMOHP",
+      "samples": 241220,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 39,
+      "excluded": [
+        {
+          "trial_index": 26,
+          "event": {
+            "marker_key": "Mk137",
+            "marker_line_number_1based": 148,
+            "marker_ordinal": 136,
+            "type": "Stimulus",
+            "description": "S  8",
+            "code": "S8",
+            "position_1based": 159622,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 159621,
+          "native_end": 162118,
+          "native_duration": 2497,
+          "end_event": {
+            "marker_key": "Mk140",
+            "marker_line_number_1based": 151,
+            "marker_ordinal": 139,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 162119,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk138",
+              "marker_line_number_1based": 149,
+              "marker_ordinal": 137,
+              "type": "New Segment",
+              "description": "LostSamples: 2",
+              "code": "LostSamples:2",
+              "position_1based": 160204,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20211025160204206054"
+            }
+          ]
+        }
+      ],
+      "native_duration_counts": {
+        "2500": 26,
+        "2499": 5,
+        "2501": 8
+      },
+      "timestamp": "20211025155643789749"
+    },
+    {
+      "archive": "sub-p03.zip",
+      "file": "sub-p03/ses-pilot1/task/MIMOHPVR/sub-03_ses-pilot1_task-neurowMIMOVRHP.vhdr",
+      "condition": "MIMOVRHP",
+      "samples": 238580,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 39,
+      "retained": 38,
+      "excluded": [
+        {
+          "trial_index": 24,
+          "event": {
+            "marker_key": "Mk127",
+            "marker_line_number_1based": 138,
+            "marker_ordinal": 126,
+            "type": "Stimulus",
+            "description": "S  7",
+            "code": "S7",
+            "position_1based": 148564,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "start": 148563,
+          "native_end": 150774,
+          "native_duration": 2211,
+          "end_event": {
+            "marker_key": "Mk131",
+            "marker_line_number_1based": 142,
+            "marker_ordinal": 130,
+            "type": "Stimulus",
+            "description": "S 10",
+            "code": "S10",
+            "position_1based": 150775,
+            "duration_samples": 1,
+            "channel": "0",
+            "timestamp": ""
+          },
+          "reason": "Native lost samples/discontinuity or incomplete source interval",
+          "segment_markers": [
+            {
+              "marker_key": "Mk129",
+              "marker_line_number_1based": 140,
+              "marker_ordinal": 128,
+              "type": "New Segment",
+              "description": "LostSamples: 10",
+              "code": "LostSamples:10",
+              "position_1based": 150400,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20211025162020476782"
+            },
+            {
+              "marker_key": "Mk130",
+              "marker_line_number_1based": 141,
+              "marker_ordinal": 129,
+              "type": "New Segment",
+              "description": "LostSamples: 5965",
+              "code": "LostSamples:5965",
+              "position_1based": 150401,
+              "duration_samples": 1,
+              "channel": "0",
+              "timestamp": "20211025162032428783"
+            }
+          ]
+        }
+      ],
+      "native_duration_counts": {
+        "2501": 5,
+        "2500": 26,
+        "2499": 7
+      },
+      "timestamp": "20211025161519652740"
+    },
+    {
+      "archive": "sub-p03.zip",
+      "file": "sub-p03/ses-pilot1/task/MIMOVR/sub-03_ses-pilot1_task-neurowMIMOVR.vhdr",
+      "condition": "MIMOVR",
+      "samples": 244460,
+      "coordinate_rows": 38,
+      "native_auxiliary_names": [
+        "Aux1",
+        "Aux2",
+        "Aux3",
+        "x_dir",
+        "y_dir",
+        "z_dir"
+      ],
+      "original_cues": 40,
+      "retained": 40,
+      "excluded": [],
+      "native_duration_counts": {
+        "2500": 35,
+        "2501": 2,
+        "2499": 3
+      },
+      "timestamp": "20211025162449110231"
+    }
+  ],
+  "source_cues": 4127,
+  "retained": 4117,
+  "common_window_samples": 2495
+}

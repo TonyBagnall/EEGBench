@@ -1,0 +1,163 @@
+{
+  "dataset": "ImaginedLeftRightHandRestPilot",
+  "source_key": "neurotum-p2",
+  "path": "D:/Data/EEGSources/NeuroTUMBCI2025/pilot-output/ImaginedLeftRightHandRestPilot",
+  "train_cases": 240,
+  "test_cases": 240,
+  "subjects": 1,
+  "channels": 24,
+  "timepoints": 750,
+  "classes": 3,
+  "frequency": 250,
+  "size_GB": 0.149566335,
+  "licence": "CC-BY-4.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 240,
+        "shape": [
+          240,
+          24,
+          750
+        ],
+        "class_counts": {
+          "3": 77,
+          "2": 86,
+          "1": 77
+        },
+        "subjects": [
+          "P2"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 240,
+        "shape": [
+          240,
+          24,
+          750
+        ],
+        "class_counts": {
+          "1": 94,
+          "2": 66,
+          "3": 80
+        },
+        "subjects": [
+          "P2"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [
+      "P2"
+    ],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": 0,
+    "aeon": {
+      "load_fit_predict": true,
+      "train_cases": 9,
+      "test_cases": 9
+    },
+    "aeon_scope": "All cases exact .ts readback; aeon load/variance/fit/predict on 3 cases per class per partition",
+    "channel_order_verified_all_recordings": true,
+    "source_sensor_identity": "Every native XDF EEG descriptor supplies24names/order/types; exact native spelling retained",
+    "distinct_recording_sessions_train_test": true,
+    "subject_overlap_reason": "Intentional single-participant session-transfer problem. Last native session TEST, earlier sessions TRAIN; participant shared, recording sessions disjoint. Not unseen-person evaluation."
+  },
+  "channel_quality": {
+    "threshold_std_uV": 1e-07,
+    "constant_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_channel_names": [
+      "FP1",
+      "FP2",
+      "FZ",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "FC1",
+      "FC2",
+      "FC3",
+      "FC4",
+      "Cz",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "CPZ",
+      "CP1",
+      "CP2",
+      "PZ",
+      "P3",
+      "P4",
+      "M1",
+      "M2"
+    ],
+    "removed_indices": [],
+    "policy": "Remove sensor globally if any retained trial has std <= 1e-7 uV"
+  },
+  "source_cache": "D:/Data/EEGSources/NeuroTUMBCI2025",
+  "relocated_from": "C:\\Temp\\EEGPilot\\ImaginedLeftRightHandRestPilot",
+  "relocated_utc": "2026-11-08T12:14:39.753508+00:00"
+}

@@ -1,0 +1,2026 @@
+{
+  "source_record_id": "doi:10.34894/Z7ZVOD",
+  "source_revision": "DataverseNL10.34894/Z7ZVOD v1.0; versionID3733",
+  "licence": "CC-BY-4.0",
+  "pilot": false,
+  "evidence_sha256": "c86b302645d417ac5109ecb4aeb27348a5556a21bfc313997e60caf6c84456c2",
+  "files": [
+    {
+      "name": "BCI_OnlineClassificationErrors.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100013",
+      "bytes": 10276524,
+      "checksum": "sha1:3347987defaebf74557a469ff2969874fa8938ae",
+      "datafile_id": 100013,
+      "is_eeg": false,
+      "sha256": "b9d238fa1f5082fe4a924ad87106c9e3996692d150e6a053256740430dc07aa9"
+    },
+    {
+      "name": "Data Report.pdf",
+      "url": "https://dataverse.nl/api/access/datafile/103984",
+      "bytes": 213294,
+      "checksum": "sha1:4ad4c171a76aca4288e23be8ff8870660b22e1da",
+      "datafile_id": 103984,
+      "is_eeg": false,
+      "sha256": "5eb4af657348f3b54715cd83520a223c41609e2d8244d4458aef60357f92f647"
+    },
+    {
+      "name": "Questionnaires.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99933",
+      "bytes": 17503,
+      "checksum": "sha1:655acc6e4c83f5c56f889f519211e51b256ea07b",
+      "datafile_id": 99933,
+      "is_eeg": false,
+      "sha256": "bc868ac7922495cc761554eb66c9da2155e90766fa717c993c02184b5bf18f88"
+    },
+    {
+      "name": "readme.txt",
+      "url": "https://dataverse.nl/api/access/datafile/103983",
+      "bytes": 1232,
+      "checksum": "sha1:818f838c005fe7559c6e9b76f1810ad27eb66d31",
+      "datafile_id": 103983,
+      "is_eeg": false,
+      "sha256": "9c311b90c1756ebd96b917cee49981d2c76c8369c93aa21ce4dd98d1aff3c1a4"
+    },
+    {
+      "name": "Raw eeg 2/S10_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99926",
+      "bytes": 23295844,
+      "checksum": "sha1:93d95e5a58b276563c81e6e40ab76421ca42ce46",
+      "datafile_id": 99926,
+      "is_eeg": true,
+      "sha256": "e1b2424656024863dc91490f43023ccfa652e84bb909876efe8c56769ee304bc"
+    },
+    {
+      "name": "Raw eeg 2/S11_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99960",
+      "bytes": 23257652,
+      "checksum": "sha1:52d0f609e5a455c5c0823b957533fe45eb947d23",
+      "datafile_id": 99960,
+      "is_eeg": true,
+      "sha256": "12a4ded78effafc88de72cc63698132761a3bf160ac6465c1b298f9eb714b037"
+    },
+    {
+      "name": "Raw eeg 2/S12_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99987",
+      "bytes": 23254268,
+      "checksum": "sha1:d94506f7f1cef84249ffc8600a4f2241d6ce8eea",
+      "datafile_id": 99987,
+      "is_eeg": true,
+      "sha256": "784127d2bfd2bd4fa5ee007a4f3faae4bf3f64c4c4346cb42f39c7ff33fc7893"
+    },
+    {
+      "name": "Raw eeg 2/S13_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99850",
+      "bytes": 23355794,
+      "checksum": "sha1:af237c115612af13b1efcd841b049321cdf9f15b",
+      "datafile_id": 99850,
+      "is_eeg": true,
+      "sha256": "36229e1359beb1be43d7eaa6cc99fe87a32586d5f5935e5189db9318f833ff22"
+    },
+    {
+      "name": "Raw eeg 2/S14_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100021",
+      "bytes": 23320985,
+      "checksum": "sha1:a1577687295e109624ade9ef94938226ee5a0734",
+      "datafile_id": 100021,
+      "is_eeg": true,
+      "sha256": "bf87f4a932f319d526a530e73053ce82188deab6b92e287e59af317ae8cdd1f5"
+    },
+    {
+      "name": "Raw eeg 2/S15_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99972",
+      "bytes": 23327557,
+      "checksum": "sha1:7a645439fdc5f327707e8a79486130751237945a",
+      "datafile_id": 99972,
+      "is_eeg": true,
+      "sha256": "01e93eb3ecc04617edf19b3c0882861b9b4571566bddee45e26515192ecd0ed2"
+    },
+    {
+      "name": "Raw eeg 2/S16_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100039",
+      "bytes": 23271655,
+      "checksum": "sha1:b028b5ea5705e1e7add49b530a4ed603e739af8c",
+      "datafile_id": 100039,
+      "is_eeg": true,
+      "sha256": "32d06d28203a1709859263c88cc65562e7d934583e8373d32d36d08697774c7a"
+    },
+    {
+      "name": "Raw eeg 2/S17_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99882",
+      "bytes": 23317603,
+      "checksum": "sha1:48b7f5b63ba142751b6b147952d2f44342adf73b",
+      "datafile_id": 99882,
+      "is_eeg": true,
+      "sha256": "4cbc86078458ce4f064758317df107851b2315f41ff6dfba6309e3181bc06471"
+    },
+    {
+      "name": "Raw eeg 2/S18_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99944",
+      "bytes": 23328220,
+      "checksum": "sha1:aff9499a6b79570a29be1755dcb85ceb89a6b515",
+      "datafile_id": 99944,
+      "is_eeg": true,
+      "sha256": "f4a0b156beb885755663193ec0b5d2161a1e794a93ad01e739e3f069fb9efd7e"
+    },
+    {
+      "name": "Raw eeg 2/S19_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100053",
+      "bytes": 23277585,
+      "checksum": "sha1:42b2fedcd7f91e5be426f5ff528781b89d2a45a6",
+      "datafile_id": 100053,
+      "is_eeg": true,
+      "sha256": "60175bb0a1a34ab42dac537bc28271206b8956e42ffca2c3a5dcd1551fb506c8"
+    },
+    {
+      "name": "Raw eeg 2/S21_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99984",
+      "bytes": 23292395,
+      "checksum": "sha1:6498069929350c4e322f933a62d736a1920df026",
+      "datafile_id": 99984,
+      "is_eeg": true,
+      "sha256": "be52103ed130f8d6f8f2b256dc773189f7c6a0ad20ee090ecd7004590da5b8d5"
+    },
+    {
+      "name": "Raw eeg 2/S22_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99902",
+      "bytes": 23297724,
+      "checksum": "sha1:eca47a5399d349417a44ef093abb882dc23b459f",
+      "datafile_id": 99902,
+      "is_eeg": true,
+      "sha256": "d9108cf54a3e0eaca71aa7e864a1401c5d5a6d15c3ded1e40e6e1c693dc99ee3"
+    },
+    {
+      "name": "Raw eeg 2/S23_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100035",
+      "bytes": 23292003,
+      "checksum": "sha1:afb309cee66637df39051cad3b472568832dbe21",
+      "datafile_id": 100035,
+      "is_eeg": true,
+      "sha256": "e9656574682b8ae3a22ed55cc7633dd7a4f8907e8e9f4945ecd7f22d7f7e677b"
+    },
+    {
+      "name": "Raw eeg 2/S24_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99949",
+      "bytes": 23317459,
+      "checksum": "sha1:df1c2e10d7ad0a0124d30354412ec04690b38448",
+      "datafile_id": 99949,
+      "is_eeg": true,
+      "sha256": "d0339d57419cf1eb9f2cdd414d85bf297ad7033e5110c87242b5a237867f39b9"
+    },
+    {
+      "name": "Raw eeg 2/S25_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99900",
+      "bytes": 23266532,
+      "checksum": "sha1:250c6015d2d6736856144751f0fcc76494e01612",
+      "datafile_id": 99900,
+      "is_eeg": true,
+      "sha256": "4240e611267cb10c5fa6d0967071aa73bfd1da9351b1d709f490cef13da8522c"
+    },
+    {
+      "name": "Raw eeg 2/S26_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99851",
+      "bytes": 23298116,
+      "checksum": "sha1:bbc4e085bacc06c8f808b18359d97a66214c2f41",
+      "datafile_id": 99851,
+      "is_eeg": true,
+      "sha256": "e5dacf02ae5dc8eb9a51f166a557544dc8e25a6e9c9d1eb2207bd64327d5f62c"
+    },
+    {
+      "name": "Raw eeg 2/S27_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99912",
+      "bytes": 23273802,
+      "checksum": "sha1:c4deb00f5a30c1667e536fd5a3e4413ab0bac524",
+      "datafile_id": 99912,
+      "is_eeg": true,
+      "sha256": "5c3051fbc69d2385eff38a8c53be047641d2b9786f5a25ffc8efe97d3d259164"
+    },
+    {
+      "name": "Raw eeg 2/S28_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99854",
+      "bytes": 23270132,
+      "checksum": "sha1:f76633b87facaddeea9f7d768b6bbf54ae7b2901",
+      "datafile_id": 99854,
+      "is_eeg": true,
+      "sha256": "3f4d05c1e00a941334e84b8f6381210e0cccb52fd05d1e7321b98af7d826e93a"
+    },
+    {
+      "name": "Raw eeg 2/S29_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100036",
+      "bytes": 23296101,
+      "checksum": "sha1:9dce8fd954ec657035f270d249dbcdb44f8807b4",
+      "datafile_id": 100036,
+      "is_eeg": true,
+      "sha256": "54f6e141c98cde50b1142b922adc6b43c5c24bba05ef1ce7ac890cb43687e4e6"
+    },
+    {
+      "name": "Raw eeg 2/S30_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99916",
+      "bytes": 23252343,
+      "checksum": "sha1:4b347c0b34d3d644411b5e6b8bc8eb8e70048d25",
+      "datafile_id": 99916,
+      "is_eeg": true,
+      "sha256": "b2a7e8bd5ffbed98f986cf08acbaa4ea89ef074a7c2672ef907de2fed4eb95f2"
+    },
+    {
+      "name": "Raw eeg 2/S31_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100016",
+      "bytes": 23433462,
+      "checksum": "sha1:ffdb8505e8123593a38121eced573002ae8e39d6",
+      "datafile_id": 100016,
+      "is_eeg": true,
+      "sha256": "3c1b121f2f199c3aa5309b394778ef8de789d1d6bc81237f20ec406353503b49"
+    },
+    {
+      "name": "Raw eeg 2/S32_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99924",
+      "bytes": 23330929,
+      "checksum": "sha1:c52844d9098f6f33a69c839151b9721bc48bcfd3",
+      "datafile_id": 99924,
+      "is_eeg": true,
+      "sha256": "5d6e066e46928d0e795888f1ef7dec7bf63209d9ad2e26f0bb644bced662d598"
+    },
+    {
+      "name": "Raw eeg 2/S33_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99869",
+      "bytes": 23297003,
+      "checksum": "sha1:43aac6156125bc36593c9103a8cee3a47e378ecc",
+      "datafile_id": 99869,
+      "is_eeg": true,
+      "sha256": "c7a041b6527e65470cbd16da00e1eeb8f8d8251ce54a7c3906a8bc118aac763e"
+    },
+    {
+      "name": "Raw eeg 2/S34_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100067",
+      "bytes": 23280865,
+      "checksum": "sha1:5b19f826f87442cbff455e9fe15c7932920f194c",
+      "datafile_id": 100067,
+      "is_eeg": true,
+      "sha256": "c3e36e71a6939996e827da8152615c645cb83a9b53a9069134e57d0936f6d270"
+    },
+    {
+      "name": "Raw eeg 2/S36_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99936",
+      "bytes": 23307455,
+      "checksum": "sha1:cf33b628652498867e0840ca825ebbe2e90c30f7",
+      "datafile_id": 99936,
+      "is_eeg": true,
+      "sha256": "cc37cdfb8ba6c491f145cb7e4a3802e46a50da512b597d32158eb61d93720df8"
+    },
+    {
+      "name": "Raw eeg 2/S37_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100050",
+      "bytes": 23292292,
+      "checksum": "sha1:f6b20fe918ccbdc9299931ee8b85f4593d7658f8",
+      "datafile_id": 100050,
+      "is_eeg": true,
+      "sha256": "12d5c9cb8a8a118ff00c5284aa640b3d2420c56aa0b3808c40d67781db6400b7"
+    },
+    {
+      "name": "Raw eeg 2/S38_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99881",
+      "bytes": 23343546,
+      "checksum": "sha1:0f1fd29a54446ab41cbb4b5e84313af9e5487cdd",
+      "datafile_id": 99881,
+      "is_eeg": true,
+      "sha256": "8f72f8c5e5a94e067820ad2224e034589d67449fc2435d471d506d5f18f45ea3"
+    },
+    {
+      "name": "Raw eeg 2/S40_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99904",
+      "bytes": 23314167,
+      "checksum": "sha1:2ec77421e2c123fbe7357b5b20626e8fa8c1eeab",
+      "datafile_id": 99904,
+      "is_eeg": true,
+      "sha256": "f70badf53fdc3221a65b8c1f4c3ce0bd7478bf965754c4790bd180150e04690f"
+    },
+    {
+      "name": "Raw eeg 2/S41_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99906",
+      "bytes": 23290704,
+      "checksum": "sha1:1ca60540bacd3c4b42090203cc7e89808f926b07",
+      "datafile_id": 99906,
+      "is_eeg": true,
+      "sha256": "65d63b311d293c754a472aea29ea60505fcc47c1fb61301a17f3821070bdc3e0"
+    },
+    {
+      "name": "Raw eeg 2/S42_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99961",
+      "bytes": 23267093,
+      "checksum": "sha1:70e3789dc72e4551635b6eae156e2922a59d081a",
+      "datafile_id": 99961,
+      "is_eeg": true,
+      "sha256": "d8a139e8ace6167cead2139f76b676f4eee2d7b00122c99fa63d81cd9337d126"
+    },
+    {
+      "name": "Raw eeg 2/S43_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100057",
+      "bytes": 23252061,
+      "checksum": "sha1:f6bff7f6addd6398ed2ab5c0ed17694bc58c49ae",
+      "datafile_id": 100057,
+      "is_eeg": true,
+      "sha256": "f0233228663ebe1da98cebecd97a0bc24ae1ed73dc03fd31185aa5e38dbeff6f"
+    },
+    {
+      "name": "Raw eeg 2/S44_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99943",
+      "bytes": 23279599,
+      "checksum": "sha1:36ee8ba5df8f3828598c39f13c4d1a6e6a9721a0",
+      "datafile_id": 99943,
+      "is_eeg": true,
+      "sha256": "d7a0806298d98cc193dc1a300417d93f3d437b02c70870772306d13f3a4fa765"
+    },
+    {
+      "name": "Raw eeg 2/S45_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99993",
+      "bytes": 23264100,
+      "checksum": "sha1:38861332728019d12555f511f9bb1c4919558275",
+      "datafile_id": 99993,
+      "is_eeg": true,
+      "sha256": "ad8b18b6b259caa6508853b8b31be9f58e3f6100332811d27f48e4ebb6fbd4dd"
+    },
+    {
+      "name": "Raw eeg 2/S46_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99948",
+      "bytes": 23293823,
+      "checksum": "sha1:210af218653d426127eeaf77e4c6c2ef6851d0c6",
+      "datafile_id": 99948,
+      "is_eeg": true,
+      "sha256": "07a3535408643d13958985fd86ba84dbed57ee506a5af8d74d98a93c54fdf1cf"
+    },
+    {
+      "name": "Raw eeg 2/S47_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100004",
+      "bytes": 23305401,
+      "checksum": "sha1:f19890e4daa06a6bc8b1fa4bb04e4bcd3ff30b03",
+      "datafile_id": 100004,
+      "is_eeg": true,
+      "sha256": "991661647d87aff4f76c47874eeafbeb28f547ce62f5dc6a82ec5c94fa34e104"
+    },
+    {
+      "name": "Raw eeg 2/S48_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99996",
+      "bytes": 23265614,
+      "checksum": "sha1:0d79baae8c1afbaf5c47246f209726574597b36e",
+      "datafile_id": 99996,
+      "is_eeg": true,
+      "sha256": "f04eff4c0527029f820ca0f877447b8a834db1465988d389c131b07f5f65f1df"
+    },
+    {
+      "name": "Raw eeg 2/S49_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99889",
+      "bytes": 23310275,
+      "checksum": "sha1:8ca3d62e123a07f95346d83e03d592b5ec621e50",
+      "datafile_id": 99889,
+      "is_eeg": true,
+      "sha256": "183892e5dcb28b3ba6e8cc285b2afc590c4833e1128c98a05798409e642fb32f"
+    },
+    {
+      "name": "Raw eeg 2/S50_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99875",
+      "bytes": 23307347,
+      "checksum": "sha1:9279a42f016a3496de0761e4eeeedde7b29f5d80",
+      "datafile_id": 99875,
+      "is_eeg": true,
+      "sha256": "712448916517a7629f702edf07176d533893e111a336dc7c362fbb79b89795f0"
+    },
+    {
+      "name": "Raw eeg 2/S51_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100014",
+      "bytes": 23302451,
+      "checksum": "sha1:f8cfe96de3773f6c1d9a78233fcfe2ec3f708cc8",
+      "datafile_id": 100014,
+      "is_eeg": true,
+      "sha256": "cb61cd379aad8c71cefaf4aa0a97bd860b4e74b2480714b8eb80e671275ffb9c"
+    },
+    {
+      "name": "Raw eeg 2/S52_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99988",
+      "bytes": 23303323,
+      "checksum": "sha1:65f6c500cdc064f520a2b2f20aee998438ec7d46",
+      "datafile_id": 99988,
+      "is_eeg": true,
+      "sha256": "77ad2d3df1f948019b2db89fa53f52893649c4c284eabba7c921a76f773be1f8"
+    },
+    {
+      "name": "Raw eeg 2/S54_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99896",
+      "bytes": 23264912,
+      "checksum": "sha1:254c8cc0fbb3aaff86b7eab2d35404c9d3a544bd",
+      "datafile_id": 99896,
+      "is_eeg": true,
+      "sha256": "7953af35a8bf12b41e6ac0b94b6bc7818ab05e11d570d0def922e2ef31e2636e"
+    },
+    {
+      "name": "Raw eeg 2/S55_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99898",
+      "bytes": 23271687,
+      "checksum": "sha1:9aebc2669473762ad9710898becc2e0bc392c30a",
+      "datafile_id": 99898,
+      "is_eeg": true,
+      "sha256": "5d1130fcd518a81e39ebcad9146c3f8a85ef32b3d43de8ed4e83a5d9e66e7343"
+    },
+    {
+      "name": "Raw eeg 2/S56_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99886",
+      "bytes": 23351389,
+      "checksum": "sha1:9a2d76bc7c3f3689ba40c9ee1b79a72debecbd1c",
+      "datafile_id": 99886,
+      "is_eeg": true,
+      "sha256": "da8ce4b0d7a16792ff0bb0ca3cae291fc3cc0ca71bd92fcad94dbb27c53a61ea"
+    },
+    {
+      "name": "Raw eeg 2/S57_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99864",
+      "bytes": 23296550,
+      "checksum": "sha1:bb2c8a2a27e94a6cefcf1eccfa6f690c97cc5732",
+      "datafile_id": 99864,
+      "is_eeg": true,
+      "sha256": "661f9202460be2c3a0e40fb044609ffecb5ecdef391fce75c699688afb4ac8d4"
+    },
+    {
+      "name": "Raw eeg 2/S58_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99980",
+      "bytes": 23294684,
+      "checksum": "sha1:3422aab822a32367f9ee6566d3d40541f38c84a0",
+      "datafile_id": 99980,
+      "is_eeg": true,
+      "sha256": "a983d124e1c961e9bde78bd870a40251e58a9e873cc7e177d3df955aceb97e57"
+    },
+    {
+      "name": "Raw eeg 2/S59_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99928",
+      "bytes": 23273532,
+      "checksum": "sha1:f6d50e1e19e1a295d465d5b47ed5075188717242",
+      "datafile_id": 99928,
+      "is_eeg": true,
+      "sha256": "981fc79871ea81d1b870376a63480d2d995edb83f64d8d3d42e7ff9ec28e2d72"
+    },
+    {
+      "name": "Raw eeg 2/S60_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99885",
+      "bytes": 23287981,
+      "checksum": "sha1:15af7014cf8c4288da55512627a23ccda5f1684c",
+      "datafile_id": 99885,
+      "is_eeg": true,
+      "sha256": "435ca0bce94b76bfcafb308184c74cb015485911bf61daa51447991cf76787d6"
+    },
+    {
+      "name": "Raw eeg 2/S61_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99905",
+      "bytes": 23272866,
+      "checksum": "sha1:aabb86d4cad0ad8acfe0dce6b7d83b964b6e3ff4",
+      "datafile_id": 99905,
+      "is_eeg": true,
+      "sha256": "f29d7166412e4dca07a9656040ed30fea15752766ad68731d024417242361300"
+    },
+    {
+      "name": "Raw eeg 2/S63_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99848",
+      "bytes": 23311012,
+      "checksum": "sha1:5d3db82d5887a2f8fe0a5f9e54b69ed3d0e28d37",
+      "datafile_id": 99848,
+      "is_eeg": true,
+      "sha256": "8ef70cf887ba9ed0102f698938104ce11024a8d3a49c169997cb27251dc0d972"
+    },
+    {
+      "name": "Raw eeg 2/S65_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100011",
+      "bytes": 23326929,
+      "checksum": "sha1:e2e5a2c4f9b540d69c413b4e05757c2917811b1c",
+      "datafile_id": 100011,
+      "is_eeg": true,
+      "sha256": "471721ec6a3caca91528813a36156632758aaceb2d8e094a8cc3c7009e82b329"
+    },
+    {
+      "name": "Raw eeg 2/S66_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99853",
+      "bytes": 23278107,
+      "checksum": "sha1:4165f7388c480eeeae01e80c14a49cd9c83e5d79",
+      "datafile_id": 99853,
+      "is_eeg": true,
+      "sha256": "0b853b08990a72cbf2489367c36a52d1a1e0a486eb3c0cd1d848a8f7830fb6ca"
+    },
+    {
+      "name": "Raw eeg 2/S67_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100007",
+      "bytes": 23278341,
+      "checksum": "sha1:ef30d28cc15f9b0e54fa39f067d79913dd7d4a64",
+      "datafile_id": 100007,
+      "is_eeg": true,
+      "sha256": "72e02fa8d7acb3e4ba816c006c00841ed78c14455587df8ba362e06d460f53e7"
+    },
+    {
+      "name": "Raw eeg 2/S7_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100063",
+      "bytes": 23301657,
+      "checksum": "sha1:a4f37eb3e3bcb792aa8f4e98e63ddecbba51cc62",
+      "datafile_id": 100063,
+      "is_eeg": true,
+      "sha256": "7ae641d1bf3ae5f46372b76173a6cf70f8e9ace2088ade3cc6a7a362e9dd382a"
+    },
+    {
+      "name": "Raw eeg 2/S8_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99895",
+      "bytes": 23309905,
+      "checksum": "sha1:bea7d9091edd35ffd4d448275ac27d85fc509769",
+      "datafile_id": 99895,
+      "is_eeg": true,
+      "sha256": "f5c517b615ec5b40255874855560b01471582cdc153e812e63d9db090ce537bc"
+    },
+    {
+      "name": "Raw eeg 2/S9_eeg_Calibration.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99897",
+      "bytes": 23262133,
+      "checksum": "sha1:3c6d52778b419a0656080d722d75c29826de3c9e",
+      "datafile_id": 99897,
+      "is_eeg": true,
+      "sha256": "15d9dcf2cafa9040e9282ede2a4d783efb73129403474e73e0ca8537813a3616"
+    },
+    {
+      "name": "Raw eeg 2/Subject10_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99939",
+      "bytes": 23289310,
+      "checksum": "sha1:82d52f1ce6e0a79b9555d851744514e69baafb32",
+      "datafile_id": 99939,
+      "is_eeg": true,
+      "sha256": "a339f71be43d3cc3e7f3a21b8b290cf086867c95066804b00bd527f89eaf3cd3"
+    },
+    {
+      "name": "Raw eeg 2/Subject10_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99981",
+      "bytes": 23293508,
+      "checksum": "sha1:ddb584ab25f8798e0a63967a538de0bade97bf64",
+      "datafile_id": 99981,
+      "is_eeg": true,
+      "sha256": "fbcbe4da9fda12aac5be0bad0cc3977a44e64eb9c8ae83e8173b19b8b6ea3675"
+    },
+    {
+      "name": "Raw eeg 2/Subject10_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99950",
+      "bytes": 23290158,
+      "checksum": "sha1:a6c8d5ca629d4a8c604b3f1f9f75795f71756303",
+      "datafile_id": 99950,
+      "is_eeg": true,
+      "sha256": "6469922470b5e23f50cb934a4e92e75e8f295a4a0f23db6b86cb24f8628666cc"
+    },
+    {
+      "name": "Raw eeg 2/Subject11_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99921",
+      "bytes": 23265019,
+      "checksum": "sha1:02d416c5b40ab5d889f3fae6bb75c855c09c51f6",
+      "datafile_id": 99921,
+      "is_eeg": true,
+      "sha256": "0963a596befeccf82adf9aefebc730a3362960d0be54b8f1c1a98067b33f2125"
+    },
+    {
+      "name": "Raw eeg 2/Subject11_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99872",
+      "bytes": 23262719,
+      "checksum": "sha1:ddea7110808e07de057c549b34f1dce2bd3689b3",
+      "datafile_id": 99872,
+      "is_eeg": true,
+      "sha256": "424a3e424a41e480371e40c28b41cad7105c5f7df395695fe6358d14324ed1fb"
+    },
+    {
+      "name": "Raw eeg 2/Subject11_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100009",
+      "bytes": 23262686,
+      "checksum": "sha1:43d869200454bb05c51980aa70e46950d9031d67",
+      "datafile_id": 100009,
+      "is_eeg": true,
+      "sha256": "35619d7436f5f8ac222ebb693a1d1f613951eafa487a24184f18a01904c248c5"
+    },
+    {
+      "name": "Raw eeg 2/Subject12_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100022",
+      "bytes": 23245825,
+      "checksum": "sha1:78a1a427d5278fbf5ca0de5993215d68804fd767",
+      "datafile_id": 100022,
+      "is_eeg": true,
+      "sha256": "7733cd69fbf5822c3ade29a11278d9d6d604622881274f8748034cd3c4761d65"
+    },
+    {
+      "name": "Raw eeg 2/Subject12_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99935",
+      "bytes": 23239515,
+      "checksum": "sha1:4e9a15f779a564ae2f154dede70de9119c4e396d",
+      "datafile_id": 99935,
+      "is_eeg": true,
+      "sha256": "7d072334c463d9a42397a5f215cd10fd96e3bf0804a653979fc591d7a1e72467"
+    },
+    {
+      "name": "Raw eeg 2/Subject12_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99879",
+      "bytes": 23241161,
+      "checksum": "sha1:90dd200e7857148dbb40ca2ce41fb54b7e4cd481",
+      "datafile_id": 99879,
+      "is_eeg": true,
+      "sha256": "a38e8694ef466cbabd5ee955556186b80436457a6d135f6359cf1b288a422e4c"
+    },
+    {
+      "name": "Raw eeg 2/Subject13_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100042",
+      "bytes": 23335049,
+      "checksum": "sha1:e566c3d22afc67fca77f7b83ba1de733e1eec7c5",
+      "datafile_id": 100042,
+      "is_eeg": true,
+      "sha256": "539ae8a8d13137ffd381433496ad1d982fa3b8cdbed14548ff274f5b6425d5cf"
+    },
+    {
+      "name": "Raw eeg 2/Subject13_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99868",
+      "bytes": 23353488,
+      "checksum": "sha1:79a894d294e29e2e254669394440106bd02aa917",
+      "datafile_id": 99868,
+      "is_eeg": true,
+      "sha256": "2464b8c2dacb38cc086d8003ffd32206b7c92b74d2fe1e169234447aec37285a"
+    },
+    {
+      "name": "Raw eeg 2/Subject13_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100028",
+      "bytes": 23374859,
+      "checksum": "sha1:fda918ab78b727560d8be47b0c4acfb0f092b5d1",
+      "datafile_id": 100028,
+      "is_eeg": true,
+      "sha256": "877382a2ba65d62e7770d6f97c7a4eabe7670b8c1e42e75f526c7de0baf63845"
+    },
+    {
+      "name": "Raw eeg 2/Subject14_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100034",
+      "bytes": 23317573,
+      "checksum": "sha1:57930ab1884346b289d6767991d0293871d93b51",
+      "datafile_id": 100034,
+      "is_eeg": true,
+      "sha256": "8791a8895404fc02646b49eb430bb7b2e4cc0b6c0c8b99572c8bf56d21f9dbc7"
+    },
+    {
+      "name": "Raw eeg 2/Subject14_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100006",
+      "bytes": 23316695,
+      "checksum": "sha1:bbe091298c824a120313be21b3d17f8c1c4e18b8",
+      "datafile_id": 100006,
+      "is_eeg": true,
+      "sha256": "40fa8df1ac1e0b277604d9c9ad2214a67a8724d0d8ca2ccd111b787d63ad4834"
+    },
+    {
+      "name": "Raw eeg 2/Subject14_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99964",
+      "bytes": 23317368,
+      "checksum": "sha1:4464c56f99f4ca8377da790add682c24ea17e2f4",
+      "datafile_id": 99964,
+      "is_eeg": true,
+      "sha256": "bed1b7a2eb8cd659690720999ea55ab08cf0fbe1f3505f0aabfc5271819e75bc"
+    },
+    {
+      "name": "Raw eeg 2/Subject15_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99978",
+      "bytes": 23322609,
+      "checksum": "sha1:05fab93160417af116428148015a5f8c2ae2e788",
+      "datafile_id": 99978,
+      "is_eeg": true,
+      "sha256": "717ba1f06b9e30fac5f74c171faed82075ad8bccdb268e7ad550e46ef7fe3481"
+    },
+    {
+      "name": "Raw eeg 2/Subject15_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100025",
+      "bytes": 23318812,
+      "checksum": "sha1:c1d1dc9fa6fd75bfe64e5e7244eef33bd93ff955",
+      "datafile_id": 100025,
+      "is_eeg": true,
+      "sha256": "ee6144fe9105d8859a72bd59979cf132666fc30892e457de4e090f73fed2d99e"
+    },
+    {
+      "name": "Raw eeg 2/Subject15_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99965",
+      "bytes": 23311445,
+      "checksum": "sha1:fe0d8adef952939fa02a91c4b6c368e284bd4022",
+      "datafile_id": 99965,
+      "is_eeg": true,
+      "sha256": "3a31049b4bed20005949b3f2246f77d9a85a0ce932e7a872dea178850e892a89"
+    },
+    {
+      "name": "Raw eeg 2/Subject16_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99994",
+      "bytes": 23271725,
+      "checksum": "sha1:b20305c87813dd5b0e80cdaa1ad0f9550dd49942",
+      "datafile_id": 99994,
+      "is_eeg": true,
+      "sha256": "6c5f8e9f0f11ba1b09d9daa1318926a91b5a9a7b35668f7aadf782cf972e8374"
+    },
+    {
+      "name": "Raw eeg 2/Subject16_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100010",
+      "bytes": 23269792,
+      "checksum": "sha1:f5d2ba32d7ad30fda7aef518502c78b2f19b271c",
+      "datafile_id": 100010,
+      "is_eeg": true,
+      "sha256": "1cc3485777af89d8a0c2e12acaf48b22e71405620396fc3f98383761eca2dd79"
+    },
+    {
+      "name": "Raw eeg 2/Subject16_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99963",
+      "bytes": 23256435,
+      "checksum": "sha1:d6895a05baf880ce40222e130181d3a6415487f6",
+      "datafile_id": 99963,
+      "is_eeg": true,
+      "sha256": "299b39e3dc87c08d16f03ac0c67e5c2d736357b5d129a690ea5d791c0ec3e7c8"
+    },
+    {
+      "name": "Raw eeg 2/Subject17_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100040",
+      "bytes": 23306906,
+      "checksum": "sha1:c2bec5508e425fb85ee215c832d9fd8e4786d403",
+      "datafile_id": 100040,
+      "is_eeg": true,
+      "sha256": "293229ce7f8eb21122c812310cf3cf80c47d8f3fc473762c47b405779d7c211f"
+    },
+    {
+      "name": "Raw eeg 2/Subject17_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100046",
+      "bytes": 23317731,
+      "checksum": "sha1:23250d7c51f68219aaab105dc9d5c45ea649891a",
+      "datafile_id": 100046,
+      "is_eeg": true,
+      "sha256": "cc4f1f6229270bcf5462e8d75ab15db597ece7aac7426f7602d3f6e4ea2a9828"
+    },
+    {
+      "name": "Raw eeg 2/Subject17_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100047",
+      "bytes": 23318876,
+      "checksum": "sha1:e75ccfd43fddd37cd4568a08900b591cfb0d0371",
+      "datafile_id": 100047,
+      "is_eeg": true,
+      "sha256": "2278d23fdd736415d1f7adf0477f04ebaf8a0a415c9d9cbf05a6ad8e56b67f42"
+    },
+    {
+      "name": "Raw eeg 2/Subject18_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99871",
+      "bytes": 23313075,
+      "checksum": "sha1:9e39a98d454068be826225be91da7f4f3219e097",
+      "datafile_id": 99871,
+      "is_eeg": true,
+      "sha256": "a559aae1d8a2f949979ce0023236f8b2a032045bda7067e22a62782c127b59fb"
+    },
+    {
+      "name": "Raw eeg 2/Subject18_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99901",
+      "bytes": 23316540,
+      "checksum": "sha1:3eca59905e71db97c176fbca3ec7834600447e6b",
+      "datafile_id": 99901,
+      "is_eeg": true,
+      "sha256": "da18b04228503c07e92c2fd45cd7335d16fadf9bbc7e4a454ec43500ff353ed6"
+    },
+    {
+      "name": "Raw eeg 2/Subject18_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100032",
+      "bytes": 23305912,
+      "checksum": "sha1:038e7e89ecb3bbc9f577f78ea806249483d02ace",
+      "datafile_id": 100032,
+      "is_eeg": true,
+      "sha256": "74b2f2093e23dfe5bb18542e347c4c97c3fef0066ef39c25b0c3c8b19218832e"
+    },
+    {
+      "name": "Raw eeg 2/Subject19_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99849",
+      "bytes": 23260182,
+      "checksum": "sha1:094555b50a959e236997d468e9d94702d7502ca1",
+      "datafile_id": 99849,
+      "is_eeg": true,
+      "sha256": "005f10a8650fd7172e939d8e21803d7b76b58932c0dc3fca176454d1f9f86edd"
+    },
+    {
+      "name": "Raw eeg 2/Subject19_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100003",
+      "bytes": 23255520,
+      "checksum": "sha1:c9dd7e852b6e67070e8f316a545db51d0a86c1eb",
+      "datafile_id": 100003,
+      "is_eeg": true,
+      "sha256": "8b890975a061e3fe1065ce2c30a470c522810b0c3eade244e8d3306384db8309"
+    },
+    {
+      "name": "Raw eeg 2/Subject19_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99855",
+      "bytes": 23250636,
+      "checksum": "sha1:60bb57d0f7bd7b7a2a89036082a51adb628aecd0",
+      "datafile_id": 99855,
+      "is_eeg": true,
+      "sha256": "786fc7e2428fccad6ed2153a77527a52883c9647e49eed05bc41d1da9236553c"
+    },
+    {
+      "name": "Raw eeg 2/Subject21_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99998",
+      "bytes": 23268988,
+      "checksum": "sha1:ad72dfbcc9e6208f02d906cee4f662784c026bd5",
+      "datafile_id": 99998,
+      "is_eeg": true,
+      "sha256": "91cb182d004d8cba43ed9fc86d1723776dc4a7129fc5fd8d2dfd124b7c57e972"
+    },
+    {
+      "name": "Raw eeg 2/Subject21_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99888",
+      "bytes": 23347691,
+      "checksum": "sha1:f2b70e20354708bcbcaa446b11c756eff01dbb16",
+      "datafile_id": 99888,
+      "is_eeg": true,
+      "sha256": "d8adcbfb0189a3cf29bc9d083f25ed712340bd7e7604e8f081d0cc82b03e0684"
+    },
+    {
+      "name": "Raw eeg 2/Subject21_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99934",
+      "bytes": 23264977,
+      "checksum": "sha1:7581f8f429266944be9a6d3d9cd91db6bfc043f0",
+      "datafile_id": 99934,
+      "is_eeg": true,
+      "sha256": "e1617e9edf1656c0408956797300d7d6c71cf265a7076b92414e20bd4f004ff2"
+    },
+    {
+      "name": "Raw eeg 2/Subject22_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100045",
+      "bytes": 23294507,
+      "checksum": "sha1:1d31b3b82b50ddcc4f43476945a47bba87d77bb9",
+      "datafile_id": 100045,
+      "is_eeg": true,
+      "sha256": "da64027bdbb714a0573afbb83acf8b2a062dd6af576744df93d82ec8cf0a6ff1"
+    },
+    {
+      "name": "Raw eeg 2/Subject22_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99867",
+      "bytes": 23293757,
+      "checksum": "sha1:8dbd0ae2eb5add9f050f744bd76e7fabc22f2709",
+      "datafile_id": 99867,
+      "is_eeg": true,
+      "sha256": "d36580a2949cfefe5f9dfb0dfd90b7e017c999e5d4a718f559ffa68213cec32e"
+    },
+    {
+      "name": "Raw eeg 2/Subject22_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99923",
+      "bytes": 23288395,
+      "checksum": "sha1:3396b338863b48b66418e55b6b8c6151803ffcd7",
+      "datafile_id": 99923,
+      "is_eeg": true,
+      "sha256": "b19742f110ad443f631852b26bf20ab810a2cc3f4fa77bb46067d55a241dc228"
+    },
+    {
+      "name": "Raw eeg 2/Subject23_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100055",
+      "bytes": 23271417,
+      "checksum": "sha1:fa7451caf5465533dc0499de67bf61bfb65238ef",
+      "datafile_id": 100055,
+      "is_eeg": true,
+      "sha256": "373fd3d4597b6bd7378e790d093a361ce5af0bbaa273b3e093b26f569c450623"
+    },
+    {
+      "name": "Raw eeg 2/Subject23_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100062",
+      "bytes": 23266270,
+      "checksum": "sha1:2fa9b5670a06a778547ee127d446da8126c892ce",
+      "datafile_id": 100062,
+      "is_eeg": true,
+      "sha256": "09eee52ebeeaf82c36d576f058eeecab66ed807d04a3e53a1f29aa9858df3fa0"
+    },
+    {
+      "name": "Raw eeg 2/Subject23_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99967",
+      "bytes": 23252543,
+      "checksum": "sha1:ea9e71a0025dcb5f3ea855d9c9adf649d62bd414",
+      "datafile_id": 99967,
+      "is_eeg": true,
+      "sha256": "b7575d5af9e97f821874c42ec8bb52cd6ee95a6814f05390c2ec5cbf2256c1bc"
+    },
+    {
+      "name": "Raw eeg 2/Subject24_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99915",
+      "bytes": 23314901,
+      "checksum": "sha1:6fdea05a737e23ed358d370594aaf63fdb5f627b",
+      "datafile_id": 99915,
+      "is_eeg": true,
+      "sha256": "7c85168a6b1e23beff79ad2dd42ab43cd58e0318271c70714cb2c2f46b3ebc54"
+    },
+    {
+      "name": "Raw eeg 2/Subject24_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99880",
+      "bytes": 23312371,
+      "checksum": "sha1:355c4019c01a8660c30243a20a5407060a4ff4c2",
+      "datafile_id": 99880,
+      "is_eeg": true,
+      "sha256": "fa1608de0277e066496062aa0f93deb16aefaf6bc56a0cfc4c17d8b9c42ee657"
+    },
+    {
+      "name": "Raw eeg 2/Subject24_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100061",
+      "bytes": 23307007,
+      "checksum": "sha1:10a4766fb160519da6d9d1e7199eae3898bd6669",
+      "datafile_id": 100061,
+      "is_eeg": true,
+      "sha256": "af50c3cbc372191d6814f08b51ab8b80632fb00be24074fbb2d3dea55ad0038a"
+    },
+    {
+      "name": "Raw eeg 2/Subject25_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100038",
+      "bytes": 23250511,
+      "checksum": "sha1:b50d25c3bb0fbbc3a2052e463aad66641a826a2c",
+      "datafile_id": 100038,
+      "is_eeg": true,
+      "sha256": "ad6f4266f8c7c9ae580024dd8b82d2989fc0d95dc9c37a02939008deb8908142"
+    },
+    {
+      "name": "Raw eeg 2/Subject25_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99917",
+      "bytes": 23243220,
+      "checksum": "sha1:4b21e84c18c08893c08b2a4ec86515fc4fd0bb3b",
+      "datafile_id": 99917,
+      "is_eeg": true,
+      "sha256": "ffafaf2f74629f87e0919547c520f83d528cf8ed00bca994e08cc652e8121c0e"
+    },
+    {
+      "name": "Raw eeg 2/Subject25_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99995",
+      "bytes": 23249210,
+      "checksum": "sha1:949d1b556e2369b59a62328b0a95740fb2ceabb4",
+      "datafile_id": 99995,
+      "is_eeg": true,
+      "sha256": "9e1b84515caf5b4b0375f638444ff2ec61166288130a92d36c6a550bc0a14751"
+    },
+    {
+      "name": "Raw eeg 2/Subject26_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99982",
+      "bytes": 23298737,
+      "checksum": "sha1:6bc72041600f0a43cdd2a75733193ef1bc4aab4b",
+      "datafile_id": 99982,
+      "is_eeg": true,
+      "sha256": "ceb45797e0eb941b2d3a3b298b6108a8ee0425deed56d793b98a41dd640d512d"
+    },
+    {
+      "name": "Raw eeg 2/Subject26_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99974",
+      "bytes": 23291035,
+      "checksum": "sha1:539aedaa6268c4ebfb02d89873b3e93b5caa7a88",
+      "datafile_id": 99974,
+      "is_eeg": true,
+      "sha256": "d8d27c94be07a487defbb769d600cace4c896a277080644281de92b802c7cbdc"
+    },
+    {
+      "name": "Raw eeg 2/Subject26_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99878",
+      "bytes": 23300514,
+      "checksum": "sha1:9f74a3bc13be950e6aad64b72cff1461a8af6e80",
+      "datafile_id": 99878,
+      "is_eeg": true,
+      "sha256": "1ed3c58cfe22fd4b541dfbee031d3c5f5da00fe91795c9fd2d56fc98b3a94761"
+    },
+    {
+      "name": "Raw eeg 2/Subject27_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100064",
+      "bytes": 23280345,
+      "checksum": "sha1:aec9dcec1c6cb16b4f987fee9655cfdf5bb4c911",
+      "datafile_id": 100064,
+      "is_eeg": true,
+      "sha256": "e61349050d1bde40c12893d3f274aae11c4bf99d390f415dde4fbfdd0f9a315b"
+    },
+    {
+      "name": "Raw eeg 2/Subject27_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99932",
+      "bytes": 23277588,
+      "checksum": "sha1:4f8d2ee075c1a23fa37cff769caeaf787f5239a9",
+      "datafile_id": 99932,
+      "is_eeg": true,
+      "sha256": "1c8a70c10868c5b1cc3e42f206c32ff0682621065bf40c7f2d40b91754235820"
+    },
+    {
+      "name": "Raw eeg 2/Subject27_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99985",
+      "bytes": 23270331,
+      "checksum": "sha1:b35d15f77d239e53a3b52eb76cea0d2d20c99630",
+      "datafile_id": 99985,
+      "is_eeg": true,
+      "sha256": "24ceb482af4c4b1b2266407626364b3c1743efe98520a55c3e23888b1f9639b4"
+    },
+    {
+      "name": "Raw eeg 2/Subject28_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100002",
+      "bytes": 23777062,
+      "checksum": "sha1:b4f85ff0676f4792a6f7b1633c50574d7a9ae71e",
+      "datafile_id": 100002,
+      "is_eeg": true,
+      "sha256": "e8c4bb7fde7f1bea73b9e032a6eb1768f98074bbde4ebbe18b5468abed20987d"
+    },
+    {
+      "name": "Raw eeg 2/Subject28_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100044",
+      "bytes": 23282834,
+      "checksum": "sha1:1212e9026322103513f2fdf767cd1ec0a2a2d75c",
+      "datafile_id": 100044,
+      "is_eeg": true,
+      "sha256": "40f30e5ae090caa33d0e5211783ee3847b9a13b2f8f16e045939d749ca8e4fbf"
+    },
+    {
+      "name": "Raw eeg 2/Subject28_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99874",
+      "bytes": 23286117,
+      "checksum": "sha1:7f1ce7871314643c257e844b762c6e2a4b1fd9fa",
+      "datafile_id": 99874,
+      "is_eeg": true,
+      "sha256": "4605fa614f13301df0d1e8eb5e542ea885987c3547b5c288f70366793f5fdf9d"
+    },
+    {
+      "name": "Raw eeg 2/Subject29_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99920",
+      "bytes": 23294617,
+      "checksum": "sha1:d18929de702ad9f4a4eca3d2eb86692062e5f9fd",
+      "datafile_id": 99920,
+      "is_eeg": true,
+      "sha256": "1f6dd3568c567524dde8b7c6f275f3b1a1ea5f0b0e812fbf6198b794641da9dd"
+    },
+    {
+      "name": "Raw eeg 2/Subject29_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99991",
+      "bytes": 23274428,
+      "checksum": "sha1:9f1e305d56d5865fd726f3b4d8b57d6ea683a1e6",
+      "datafile_id": 99991,
+      "is_eeg": true,
+      "sha256": "261931ad817eabd2c1c78c96f9783ba45168389d78c699472aae917418700cb8"
+    },
+    {
+      "name": "Raw eeg 2/Subject29_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99940",
+      "bytes": 23291328,
+      "checksum": "sha1:b8d78cbc194e567b6348c77db5a3f5412873fee2",
+      "datafile_id": 99940,
+      "is_eeg": true,
+      "sha256": "b68888dddcb7fcc82b03c4b81e35d01783fe46951d56d84936439bfc6bba8201"
+    },
+    {
+      "name": "Raw eeg 2/Subject30_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99910",
+      "bytes": 23244437,
+      "checksum": "sha1:ee8e3d4219f0141c7d49d9c82143234a511916af",
+      "datafile_id": 99910,
+      "is_eeg": true,
+      "sha256": "1ce5f990acb22ee77ee63a173b7efb5437a4a0cfb3b7831a4807eb011e7a994e"
+    },
+    {
+      "name": "Raw eeg 2/Subject30_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99865",
+      "bytes": 23257337,
+      "checksum": "sha1:3af854bab0f259623a3d94d5a1ab6e5e38dfd33c",
+      "datafile_id": 99865,
+      "is_eeg": true,
+      "sha256": "c3ff607a83a933f95a50d7b5993c6cc2e86aa9a294774b740b29758ffe3130c4"
+    },
+    {
+      "name": "Raw eeg 2/Subject30_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99999",
+      "bytes": 23252193,
+      "checksum": "sha1:d96308a36e92526d3b900fc22d1504b9a24dc32f",
+      "datafile_id": 99999,
+      "is_eeg": true,
+      "sha256": "9a237083376ee238794dee064839461d822b0f706199ec94372015767a9a58fd"
+    },
+    {
+      "name": "Raw eeg 2/Subject31_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100017",
+      "bytes": 23305048,
+      "checksum": "sha1:ec0867fee10913421ac47623a12c1d42d757394c",
+      "datafile_id": 100017,
+      "is_eeg": true,
+      "sha256": "54b2f7673123a9966c022615cd167b7ffdd7613dd520da9b07b9d70992845934"
+    },
+    {
+      "name": "Raw eeg 2/Subject31_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100066",
+      "bytes": 23286303,
+      "checksum": "sha1:f300ec8921a8dfa6e1036d476ff1ac3275ba1f79",
+      "datafile_id": 100066,
+      "is_eeg": true,
+      "sha256": "cee83c49d7f06c9b7d205a5d4fdaaac720ec1d0399e8cf8802b212c8d19af027"
+    },
+    {
+      "name": "Raw eeg 2/Subject31_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99876",
+      "bytes": 23303701,
+      "checksum": "sha1:93b50011c0316b50eee74f8bab574d805e9698db",
+      "datafile_id": 99876,
+      "is_eeg": true,
+      "sha256": "bd8f203449fada927d86269e34da17408d7acb4a01e3856c84703e4fe651f9f5"
+    },
+    {
+      "name": "Raw eeg 2/Subject32_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99979",
+      "bytes": 23329448,
+      "checksum": "sha1:d9a98ef687cad18f6b3f299da4f19cc7db9301c5",
+      "datafile_id": 99979,
+      "is_eeg": true,
+      "sha256": "7b2629c3648a11ee91ed3addc534a12a24dc0aea63066fc4946e330e6f298eaa"
+    },
+    {
+      "name": "Raw eeg 2/Subject32_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100027",
+      "bytes": 23326412,
+      "checksum": "sha1:d283179565481144b88c0b0676ff27424cd45a42",
+      "datafile_id": 100027,
+      "is_eeg": true,
+      "sha256": "b2247a0903b18ffe37bb9e655f6fe04b076f9f1447ec5c4bee369f31358cfd7c"
+    },
+    {
+      "name": "Raw eeg 2/Subject32_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99857",
+      "bytes": 23329511,
+      "checksum": "sha1:3110328d29dfb2619223530579e5ab9777251e36",
+      "datafile_id": 99857,
+      "is_eeg": true,
+      "sha256": "cc5391f0d262b42f3a77e1aa595b3ade4cb4a16093d7c21491a015623d5bfea3"
+    },
+    {
+      "name": "Raw eeg 2/Subject33_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99989",
+      "bytes": 23289268,
+      "checksum": "sha1:e8bfbd8c0e97e7e5065ed68d02dc7ee92b9fa0c6",
+      "datafile_id": 99989,
+      "is_eeg": true,
+      "sha256": "d1de338694be01f1f9cdfe111ecb98e46cfc19fb1ea27a3c782370e2cb4593fa"
+    },
+    {
+      "name": "Raw eeg 2/Subject33_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99957",
+      "bytes": 23291636,
+      "checksum": "sha1:aee3e3642e670b439fc1c46d2cd4d49285a0efa8",
+      "datafile_id": 99957,
+      "is_eeg": true,
+      "sha256": "12c49dfe8909fc2307e39a4aaaeb0b11a6f6549ebf12620e4a4444260c08e0e6"
+    },
+    {
+      "name": "Raw eeg 2/Subject33_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99929",
+      "bytes": 23275247,
+      "checksum": "sha1:1b9ed253887ab4dfe5c532eb1420d064390bbba1",
+      "datafile_id": 99929,
+      "is_eeg": true,
+      "sha256": "2c0d47b2818a7ef55238d7adb53a1fcd7fa95ebf3d4d6039b384ce9b96982646"
+    },
+    {
+      "name": "Raw eeg 2/Subject34_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99870",
+      "bytes": 23256896,
+      "checksum": "sha1:d9fcd8fd27bc54b164d053148f9a18437a5f947a",
+      "datafile_id": 99870,
+      "is_eeg": true,
+      "sha256": "de30c73632a2c94ad1a9296624693ae5e85a8ac9b314811b845aafdd1771d0c8"
+    },
+    {
+      "name": "Raw eeg 2/Subject34_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99873",
+      "bytes": 23254803,
+      "checksum": "sha1:ec135c9ce874588542fe965ebb63d6727ce6e40f",
+      "datafile_id": 99873,
+      "is_eeg": true,
+      "sha256": "29499df60b3798e4f792357c4247b41200e2733a1f7757f11d0eb2276ed3691f"
+    },
+    {
+      "name": "Raw eeg 2/Subject34_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100024",
+      "bytes": 23256952,
+      "checksum": "sha1:27796f92be24b114aeaf94b925d31f1582f45296",
+      "datafile_id": 100024,
+      "is_eeg": true,
+      "sha256": "7583e678a7cb677fd45df22dc2d3ba64ce3285e8cd1ddd3af52127899eae751b"
+    },
+    {
+      "name": "Raw eeg 2/Subject36_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99858",
+      "bytes": 23314935,
+      "checksum": "sha1:690a5877760b85446751b1367318f240b1c2ec8c",
+      "datafile_id": 99858,
+      "is_eeg": true,
+      "sha256": "cbb3cc896a74da0fca9a15f2c35f01ee5e50c2ddc49703e892f3765b92bc7586"
+    },
+    {
+      "name": "Raw eeg 2/Subject36_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100068",
+      "bytes": 23296080,
+      "checksum": "sha1:cdb318bf5776f3bfae9bc2cf69eaae2948f830d0",
+      "datafile_id": 100068,
+      "is_eeg": true,
+      "sha256": "01d61b2b94f995861a21f8ca08d1267bb074724821804e1d2d7eb47077d20fd4"
+    },
+    {
+      "name": "Raw eeg 2/Subject36_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99914",
+      "bytes": 23290150,
+      "checksum": "sha1:b84fd0bf8f32d043d0e6b3151e6afc155baa384f",
+      "datafile_id": 99914,
+      "is_eeg": true,
+      "sha256": "ae459893ebae835a06e58330f9e156f9ad61f07290fc7787195a8eca7885c7c3"
+    },
+    {
+      "name": "Raw eeg 2/Subject37_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99861",
+      "bytes": 23295167,
+      "checksum": "sha1:ea3e778e168c1affc7ffbff6ca1313351905fe24",
+      "datafile_id": 99861,
+      "is_eeg": true,
+      "sha256": "3a84e6cac9ba737963e88996aa11f350191fe7ae34ceaf54bce5e9b728a16599"
+    },
+    {
+      "name": "Raw eeg 2/Subject37_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99975",
+      "bytes": 23297332,
+      "checksum": "sha1:67dc0a496d77b776092a8325a791d1931a037fc9",
+      "datafile_id": 99975,
+      "is_eeg": true,
+      "sha256": "4ba54565adc532dc9a84f9aa2ddb5acfe0893d9529a69afb3b0397b50d6e0417"
+    },
+    {
+      "name": "Raw eeg 2/Subject37_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99962",
+      "bytes": 23291312,
+      "checksum": "sha1:f2e1eb233fd9b3258b1b97a1737cf80ba87bb200",
+      "datafile_id": 99962,
+      "is_eeg": true,
+      "sha256": "caf16d84ae9bf678ffbbeb769edd0a88e5c7d113f3cf5b9535fea1626dcb4d7e"
+    },
+    {
+      "name": "Raw eeg 2/Subject38_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100029",
+      "bytes": 23341631,
+      "checksum": "sha1:71b2847830d4b846f63caf16c12bc9319dcd7488",
+      "datafile_id": 100029,
+      "is_eeg": true,
+      "sha256": "9bdc3dd7088bc478c2997cd92949d9b288fcb309c19b48d4244548807754a3eb"
+    },
+    {
+      "name": "Raw eeg 2/Subject38_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99959",
+      "bytes": 23330982,
+      "checksum": "sha1:3700c3ae34bbcf1c1b37e56538ab269aec3c1185",
+      "datafile_id": 99959,
+      "is_eeg": true,
+      "sha256": "6458b134ef21ba0ebd0dd74caccf949b950169bfe9f530e2732c297f9a1ebc9e"
+    },
+    {
+      "name": "Raw eeg 2/Subject38_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99973",
+      "bytes": 23325417,
+      "checksum": "sha1:997f647b3cf0fd2f1c7fc47b11caaef050cc7e73",
+      "datafile_id": 99973,
+      "is_eeg": true,
+      "sha256": "e107e5e3da4b133b6485168a044266bd8ce407e20d39700e3e230a2a7bb57f0f"
+    },
+    {
+      "name": "Raw eeg 2/Subject40_eeg_1 (seq of run2).csv",
+      "url": "https://dataverse.nl/api/access/datafile/100043",
+      "bytes": 23301771,
+      "checksum": "sha1:8779a0c6fbf1ecd30a501dba7cb6638593d61776",
+      "datafile_id": 100043,
+      "is_eeg": true,
+      "sha256": "ddc9bb9355aa4b0d5844d20c025744e70adf5c94cb9d4397868463b5608a7671"
+    },
+    {
+      "name": "Raw eeg 2/Subject40_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99925",
+      "bytes": 23314285,
+      "checksum": "sha1:de648e6c6cdc1034d8bcb4d367726bee86a1a6ab",
+      "datafile_id": 99925,
+      "is_eeg": true,
+      "sha256": "db59178426c150044680deaec05486ae789e2df2ca32314bbe879d7bcdcff4ae"
+    },
+    {
+      "name": "Raw eeg 2/Subject40_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100051",
+      "bytes": 23323036,
+      "checksum": "sha1:d625524e0bfa53e97ab79ce8f8389c8b665f800f",
+      "datafile_id": 100051,
+      "is_eeg": true,
+      "sha256": "de8dcf63bfe776fb450b6905ec461c344bd255bb6ddce20f07cc24fc0173f497"
+    },
+    {
+      "name": "Raw eeg 2/Subject41_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99891",
+      "bytes": 23288490,
+      "checksum": "sha1:d21f326e29bb2b36c8e9ad29ff5c4e75d3e122ee",
+      "datafile_id": 99891,
+      "is_eeg": true,
+      "sha256": "ee1539bd1f01ccbfc8ab29eb44eb15ee54632416d1c93e94a1cae8b317d7b719"
+    },
+    {
+      "name": "Raw eeg 2/Subject41_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99866",
+      "bytes": 23281669,
+      "checksum": "sha1:d10eebe90e7dd8f40c8f332d7d18107b2d0c8f46",
+      "datafile_id": 99866,
+      "is_eeg": true,
+      "sha256": "f629d6610124eadb40715e86fd6572b5409bf9057d54db970d67a03e228640cb"
+    },
+    {
+      "name": "Raw eeg 2/Subject41_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99952",
+      "bytes": 23285612,
+      "checksum": "sha1:6f44a88d95c95355e20483b092b04a2fc38c4c13",
+      "datafile_id": 99952,
+      "is_eeg": true,
+      "sha256": "6ab6050576872c83211c94e6203e4aa6f5dc1c089f6db6227a5f15b13de1a331"
+    },
+    {
+      "name": "Raw eeg 2/Subject42_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99892",
+      "bytes": 23265288,
+      "checksum": "sha1:7bacecbac439482745d7f424a492567ab741e313",
+      "datafile_id": 99892,
+      "is_eeg": true,
+      "sha256": "7514db6ffefbbb623ded70149cb9f9d23a2e77e7bb4d27f9d4c92aadbaa72ccc"
+    },
+    {
+      "name": "Raw eeg 2/Subject42_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100026",
+      "bytes": 23261792,
+      "checksum": "sha1:b0aa8149a4a98b3e34809b2a1e565593de1a71c1",
+      "datafile_id": 100026,
+      "is_eeg": true,
+      "sha256": "fc48d77fc9b7ff73e2bb64bbfa26cb27b14e6cf4be3ccc06b7402cb4dec5af69"
+    },
+    {
+      "name": "Raw eeg 2/Subject42_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99966",
+      "bytes": 23263045,
+      "checksum": "sha1:1b859c196c6c5d38c6d26c78347af0b5f8cf0cb2",
+      "datafile_id": 99966,
+      "is_eeg": true,
+      "sha256": "e9f8324766c9dd850d305001ebbd0e5c5d3965d647062c9e3e53656c9b1f4838"
+    },
+    {
+      "name": "Raw eeg 2/Subject43_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99883",
+      "bytes": 23239185,
+      "checksum": "sha1:6e5faabba369226fb79f49e7d67825aef229b8c6",
+      "datafile_id": 99883,
+      "is_eeg": true,
+      "sha256": "3d8d727f60ee20b709b5621114a063763b2ae974a93988bed2364d13e149e306"
+    },
+    {
+      "name": "Raw eeg 2/Subject43_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99953",
+      "bytes": 23251213,
+      "checksum": "sha1:8c8fcddc45a1428bacae86faf4aa8c9f3878a907",
+      "datafile_id": 99953,
+      "is_eeg": true,
+      "sha256": "21c15aad01f970f3b39871a5052f57580dc5eb0039fbad1a09ff379b2549d760"
+    },
+    {
+      "name": "Raw eeg 2/Subject43_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100020",
+      "bytes": 23257098,
+      "checksum": "sha1:5845b339ba3d6c85b557a27da8d21365ecafd8cd",
+      "datafile_id": 100020,
+      "is_eeg": true,
+      "sha256": "d9f146079728e9feab4c2d3f135909b8eb39549c6a72c0256689812b1741c243"
+    },
+    {
+      "name": "Raw eeg 2/Subject44_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99976",
+      "bytes": 23266856,
+      "checksum": "sha1:67fbe4dea53c33fb26f4439dbeeae70213c540e1",
+      "datafile_id": 99976,
+      "is_eeg": true,
+      "sha256": "d4c60579eaa4e948c388cd91350342e15fcb220d345b229c707cc4ff48e76ff6"
+    },
+    {
+      "name": "Raw eeg 2/Subject44_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100030",
+      "bytes": 23257000,
+      "checksum": "sha1:33fcf1664e760e8314a62ddf37f11274bb5b449b",
+      "datafile_id": 100030,
+      "is_eeg": true,
+      "sha256": "2856473973b87489f656b0d0794b537ae4e99c18e175bfdab7c677f09b594d54"
+    },
+    {
+      "name": "Raw eeg 2/Subject44_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99894",
+      "bytes": 23259474,
+      "checksum": "sha1:d1d5181c05f54f277558bec7cc291f1171457ac8",
+      "datafile_id": 99894,
+      "is_eeg": true,
+      "sha256": "5ffc845030eb03d3319addd58bcb9aba4289fb97502420374cab9cd4b31de6fa"
+    },
+    {
+      "name": "Raw eeg 2/Subject45_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100058",
+      "bytes": 23266302,
+      "checksum": "sha1:c89bd23aa16414fcfac3d53ce0d3a9ecc88669c5",
+      "datafile_id": 100058,
+      "is_eeg": true,
+      "sha256": "4979bd69d510ccf1a448366e61dd893bede090c68e56b23d8d5801a673076c1b"
+    },
+    {
+      "name": "Raw eeg 2/Subject45_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99992",
+      "bytes": 23254256,
+      "checksum": "sha1:faef55c1b177c26fecccd070c4c77d6caeaea9b5",
+      "datafile_id": 99992,
+      "is_eeg": true,
+      "sha256": "ba41079b6e1f90f87c5a78c7f2db8a6b7c2f315f64792e7a3365e2fe321b16b8"
+    },
+    {
+      "name": "Raw eeg 2/Subject45_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100041",
+      "bytes": 23279462,
+      "checksum": "sha1:5cc6118fbaf1105b1d69f4f9798c3720d4b0e5fd",
+      "datafile_id": 100041,
+      "is_eeg": true,
+      "sha256": "c12862a8b98ab72e27624cc65189b85276add8614fd400e74d8168cd8c05f5ce"
+    },
+    {
+      "name": "Raw eeg 2/Subject46_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100018",
+      "bytes": 23292131,
+      "checksum": "sha1:e3fb76c9e6d6bc74a5d19fa420cb7886e54c5f8c",
+      "datafile_id": 100018,
+      "is_eeg": true,
+      "sha256": "1213ee5fbd4f257fadb4766e35ee2448af8244c46ad43a27920427a08bc3eab3"
+    },
+    {
+      "name": "Raw eeg 2/Subject46_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99852",
+      "bytes": 23287016,
+      "checksum": "sha1:4d28701726652ff3d90017becde988687cf109d9",
+      "datafile_id": 99852,
+      "is_eeg": true,
+      "sha256": "1813f954f6873551816f8c631976f2a2e613357264047ba9c5e1a567f60e0871"
+    },
+    {
+      "name": "Raw eeg 2/Subject46_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99968",
+      "bytes": 23275879,
+      "checksum": "sha1:0b0d643e1c9b55a6e1f5da52471bb35da7611b54",
+      "datafile_id": 99968,
+      "is_eeg": true,
+      "sha256": "38c3410a342c155c8303da33127d114b91af8c35254d6d7078f67b2448bcd575"
+    },
+    {
+      "name": "Raw eeg 2/Subject47_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99911",
+      "bytes": 23291776,
+      "checksum": "sha1:e3215153b6cb4c708edef05dc0b9966e9f7032c9",
+      "datafile_id": 99911,
+      "is_eeg": true,
+      "sha256": "7c80f96b9a697bd086683952ebadc4ab06ef0f16115f71b486a2b25243dce463"
+    },
+    {
+      "name": "Raw eeg 2/Subject47_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99919",
+      "bytes": 23300305,
+      "checksum": "sha1:ef39ffc96541dbc55995de87c48e69d6542696f6",
+      "datafile_id": 99919,
+      "is_eeg": true,
+      "sha256": "0f8fb256a812d103e4bdca9a3f096c92269f62784e5061edcf8b4acc9336af3d"
+    },
+    {
+      "name": "Raw eeg 2/Subject47_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99903",
+      "bytes": 23304728,
+      "checksum": "sha1:05cbd047a63eb505334c33fd18563221ba8e377d",
+      "datafile_id": 99903,
+      "is_eeg": true,
+      "sha256": "8ab67253e7754bfd2e5dbaafd8b56f3f809918b35a6d96b032a816ea9f0b82a3"
+    },
+    {
+      "name": "Raw eeg 2/Subject48_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99951",
+      "bytes": 23257553,
+      "checksum": "sha1:711aac78865225a064c51cdf99ea77acbcf05560",
+      "datafile_id": 99951,
+      "is_eeg": true,
+      "sha256": "eea768a67ae3e4fec1f82bb74bb64ccec9ddae833cbf0141d7ce6b0202079fcf"
+    },
+    {
+      "name": "Raw eeg 2/Subject48_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99958",
+      "bytes": 23260277,
+      "checksum": "sha1:da5e3a40da841d5c928b791766a27bd75ac0bc7c",
+      "datafile_id": 99958,
+      "is_eeg": true,
+      "sha256": "49e67b7bdbec2ccafce75f0393f901c7de4ba72b4876c92b48cb74c18827184a"
+    },
+    {
+      "name": "Raw eeg 2/Subject48_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99890",
+      "bytes": 23264640,
+      "checksum": "sha1:a58ae7fba5f5760a70052a628532aed35c707d3c",
+      "datafile_id": 99890,
+      "is_eeg": true,
+      "sha256": "fc015cc81140abbee9422b2fc0c7af4b971ddd30ccc5ecfccf04707d9ec7e427"
+    },
+    {
+      "name": "Raw eeg 2/Subject49_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100060",
+      "bytes": 23304530,
+      "checksum": "sha1:05959f9fe625d99ec5f3e3ca519b6ca5af21482d",
+      "datafile_id": 100060,
+      "is_eeg": true,
+      "sha256": "646480250e1b633f514e886442edc646950b917e40cd7f9012b140e32a5f9103"
+    },
+    {
+      "name": "Raw eeg 2/Subject49_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99877",
+      "bytes": 23288507,
+      "checksum": "sha1:3c419ffc8bdd3a83ce576e4c3a6ab2147727bdf5",
+      "datafile_id": 99877,
+      "is_eeg": true,
+      "sha256": "4840b7f38e98296cff2402b05c075abdcbbec52db07f96eefc936cddd5f7c21d"
+    },
+    {
+      "name": "Raw eeg 2/Subject49_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100052",
+      "bytes": 23286468,
+      "checksum": "sha1:fa332c2ba5f5a771df0260a070b04029ef8031ce",
+      "datafile_id": 100052,
+      "is_eeg": true,
+      "sha256": "5f92d3a1d544e23c01b96a95f9783f131e864b45e1eaa15ce72b4078b030102a"
+    },
+    {
+      "name": "Raw eeg 2/Subject50_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99955",
+      "bytes": 23312466,
+      "checksum": "sha1:0037bb1f9d129e9aee1780d2f4597efc912b5d99",
+      "datafile_id": 99955,
+      "is_eeg": true,
+      "sha256": "493fc4ad7f7ada9e85a29ec66f1a14de4b4f9d73ac696c07416132d2fe16085c"
+    },
+    {
+      "name": "Raw eeg 2/Subject50_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99908",
+      "bytes": 23308756,
+      "checksum": "sha1:6c6fd5f36563a9126517bfc703b028f927d0f177",
+      "datafile_id": 99908,
+      "is_eeg": true,
+      "sha256": "0d44b37e585e95b2da557825da5a8c12e48a09be6981ba16f8e36b2770f50d1b"
+    },
+    {
+      "name": "Raw eeg 2/Subject50_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99942",
+      "bytes": 23307509,
+      "checksum": "sha1:ad5375daf011e1b1ab396d2815d616ad59fc4eb1",
+      "datafile_id": 99942,
+      "is_eeg": true,
+      "sha256": "ddd6df8e280820f8ab58031e831044be465237c1c8205829e959a1b22ea081db"
+    },
+    {
+      "name": "Raw eeg 2/Subject51_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99907",
+      "bytes": 23315731,
+      "checksum": "sha1:5c0fd614331b0b953248bf1d4907f368dfc65e00",
+      "datafile_id": 99907,
+      "is_eeg": true,
+      "sha256": "b33a3f609fdb5a6c1b96a3da7aa295927f3d9b24c3b18b6ee23cae5e2038e33e"
+    },
+    {
+      "name": "Raw eeg 2/Subject51_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99913",
+      "bytes": 23310322,
+      "checksum": "sha1:7423f04f79fd2920bd8f12c72a9f6d9ab5ac99b6",
+      "datafile_id": 99913,
+      "is_eeg": true,
+      "sha256": "1985860ab0391822caf2008dcb053814a6e2b47196814bc5e5b06d3820fa2d60"
+    },
+    {
+      "name": "Raw eeg 2/Subject51_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99860",
+      "bytes": 23313506,
+      "checksum": "sha1:62e7c3b4581dce093fd5e2297a8e6c05c5c97371",
+      "datafile_id": 99860,
+      "is_eeg": true,
+      "sha256": "851d0e68dcd9c973126fcc95f14d6e6bbe0cd8757962aae8a3edcff8874d0ddd"
+    },
+    {
+      "name": "Raw eeg 2/Subject52_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99946",
+      "bytes": 23293809,
+      "checksum": "sha1:3e1a8c4235ef7c3fea4d61bc36fd337729ad9029",
+      "datafile_id": 99946,
+      "is_eeg": true,
+      "sha256": "95df7ed0523447bdb5d8d6ad4e22908d589b9b2d7436f2a4491c8b868712bfa0"
+    },
+    {
+      "name": "Raw eeg 2/Subject52_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100048",
+      "bytes": 23286981,
+      "checksum": "sha1:715efd790f95843cab8f9448597541363424e352",
+      "datafile_id": 100048,
+      "is_eeg": true,
+      "sha256": "321f04ac01a741091da216e4a3f516e69844ce9149f1bc67cb5703aab28700e3"
+    },
+    {
+      "name": "Raw eeg 2/Subject52_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99918",
+      "bytes": 23307580,
+      "checksum": "sha1:2995b3af651001318ec48fb58d0b9bd7868b83ce",
+      "datafile_id": 99918,
+      "is_eeg": true,
+      "sha256": "78fd8d4afd6edeee599f17e6fb495f2d2a5b3b7358891b7bd4a0a474212af811"
+    },
+    {
+      "name": "Raw eeg 2/Subject54_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100031",
+      "bytes": 23254969,
+      "checksum": "sha1:f10220b12fbafd3af76b9bfdd260cc723fe9da6c",
+      "datafile_id": 100031,
+      "is_eeg": true,
+      "sha256": "3b1ca42bf6b0554f5e0c13b72bd4124ab907b8eeaba990e90adaec6cca5cfe69"
+    },
+    {
+      "name": "Raw eeg 2/Subject54_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100037",
+      "bytes": 23248955,
+      "checksum": "sha1:79ea2d2734be0aa001566912799b97bba477caca",
+      "datafile_id": 100037,
+      "is_eeg": true,
+      "sha256": "da15421fbcb9cfa08e5c4048216d25f820d74c40073f314885d3d73fdd20c34e"
+    },
+    {
+      "name": "Raw eeg 2/Subject54_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100023",
+      "bytes": 23255464,
+      "checksum": "sha1:1b8a2fb58243ae4af3a780931c27197d8e3ff1ed",
+      "datafile_id": 100023,
+      "is_eeg": true,
+      "sha256": "1369008e31e39bf27a06d039cfb7a576ef05f0e169e639220eca00fe560cf2f3"
+    },
+    {
+      "name": "Raw eeg 2/Subject55_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100019",
+      "bytes": 23265367,
+      "checksum": "sha1:1d779cea5f3f4f7788e91397ddf036e247cbdccd",
+      "datafile_id": 100019,
+      "is_eeg": true,
+      "sha256": "3a899c574ee66c6f9d5b12b10173b6972d7cbf69dcaf2f68a9fc81472b7001d5"
+    },
+    {
+      "name": "Raw eeg 2/Subject55_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99862",
+      "bytes": 23275805,
+      "checksum": "sha1:bf282fbd08494687da9610d01cbef98386485ed0",
+      "datafile_id": 99862,
+      "is_eeg": true,
+      "sha256": "a7a0dc44584a299a4bf45892b15786bae86f57ba90ad9f12206c396d28db850b"
+    },
+    {
+      "name": "Raw eeg 2/Subject55_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99937",
+      "bytes": 23264880,
+      "checksum": "sha1:586ae485c9ebec3533023251ed12ad3e15768d51",
+      "datafile_id": 99937,
+      "is_eeg": true,
+      "sha256": "6f66ecaca7f5065ac6d4a5d017b4c1e27e503ca4272fae1c4025899579736862"
+    },
+    {
+      "name": "Raw eeg 2/Subject56_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99893",
+      "bytes": 23341542,
+      "checksum": "sha1:84599a1c18ce1fc34bf67073848aa8445cb8ed84",
+      "datafile_id": 99893,
+      "is_eeg": true,
+      "sha256": "98a91104ed74ecc0147b987db38acef1b79d4f3cb8a24f29fa3d3a2c4cf7383c"
+    },
+    {
+      "name": "Raw eeg 2/Subject56_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99990",
+      "bytes": 23353907,
+      "checksum": "sha1:85b01206a5a2edb9c2c71968f2cd3cd62a02136c",
+      "datafile_id": 99990,
+      "is_eeg": true,
+      "sha256": "ecc7623a2b8ccf1b478de924260d3756dbfac39a00b2dba2dfe6d7210bbe09df"
+    },
+    {
+      "name": "Raw eeg 2/Subject56_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100015",
+      "bytes": 23359301,
+      "checksum": "sha1:7ffa66581f2d4b61f5ff28b393dfb66a7efd4ada",
+      "datafile_id": 100015,
+      "is_eeg": true,
+      "sha256": "597489c10829aedb27b489e81674e4909ea7ebad04058503a892fcac48b91b9a"
+    },
+    {
+      "name": "Raw eeg 2/Subject57_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99938",
+      "bytes": 23296958,
+      "checksum": "sha1:cc8b1b502dd9db90f426249e03263f8b8ac76c0c",
+      "datafile_id": 99938,
+      "is_eeg": true,
+      "sha256": "560d32983afbf27bdc66b9ad7791cb68d8c5be5e4e04a6f6eced6010db6bfb3d"
+    },
+    {
+      "name": "Raw eeg 2/Subject57_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99997",
+      "bytes": 23290507,
+      "checksum": "sha1:8e5d1ea62d73f20f64df6da9f5086b9a81a5f7e8",
+      "datafile_id": 99997,
+      "is_eeg": true,
+      "sha256": "ce4e8cb9035c3e544fa92d39a7d12fd372cd8254cbb003fc9742bf59df77e173"
+    },
+    {
+      "name": "Raw eeg 2/Subject57_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99927",
+      "bytes": 23280684,
+      "checksum": "sha1:e88f72e3bd0a51bfc4aada86a042dbb2d89505dc",
+      "datafile_id": 99927,
+      "is_eeg": true,
+      "sha256": "8c1b9bb4c1757ffbf48f7136475bb3fb41ed1657efb77e6bd9ff4fc1b6134976"
+    },
+    {
+      "name": "Raw eeg 2/Subject58_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99941",
+      "bytes": 23288780,
+      "checksum": "sha1:c351ee366522f95a277ee1e567924a40d1e137d1",
+      "datafile_id": 99941,
+      "is_eeg": true,
+      "sha256": "6606a419015605ad910ae5e2d301104928ddb4a440d6d98df809ba0fff60356d"
+    },
+    {
+      "name": "Raw eeg 2/Subject58_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99863",
+      "bytes": 23280714,
+      "checksum": "sha1:98070f0605d51fd87f42085e4020f2bed85242b4",
+      "datafile_id": 99863,
+      "is_eeg": true,
+      "sha256": "395bbaff9bdb58fea03ce749777c22442489283c84158bd34e964bf4906539f9"
+    },
+    {
+      "name": "Raw eeg 2/Subject58_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99930",
+      "bytes": 23282218,
+      "checksum": "sha1:f7eece344a8dab6f737156d876144625a193f08f",
+      "datafile_id": 99930,
+      "is_eeg": true,
+      "sha256": "2007ee7cb47045d75f5210795f2d8bcabb8fd9fd888a88f91401d824fc29c53b"
+    },
+    {
+      "name": "Raw eeg 2/Subject59_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99856",
+      "bytes": 23275319,
+      "checksum": "sha1:adf89e0af6849feb76275af6e241085e9452a64f",
+      "datafile_id": 99856,
+      "is_eeg": true,
+      "sha256": "e4d7b548fea9a8752b2ac7065ad8e2f9d4fd453848a989ff3f1f9c1fb1ba4612"
+    },
+    {
+      "name": "Raw eeg 2/Subject59_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99859",
+      "bytes": 23278075,
+      "checksum": "sha1:cff8b351a270d8419d2ff39f4ec118287c2f9598",
+      "datafile_id": 99859,
+      "is_eeg": true,
+      "sha256": "fe12beaa23458559f65012405527d31298f54a3244ea4a30230b842a52c57530"
+    },
+    {
+      "name": "Raw eeg 2/Subject59_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99922",
+      "bytes": 23285424,
+      "checksum": "sha1:0dea58925017a8fb5cce82a550905c63b831afd0",
+      "datafile_id": 99922,
+      "is_eeg": true,
+      "sha256": "69e34e6d460b9df85cb65db70a3162ea4d16faa67ca268a7e5fe8f565e1b0cea"
+    },
+    {
+      "name": "Raw eeg 2/Subject60_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99969",
+      "bytes": 23287730,
+      "checksum": "sha1:a0e956140b6accfdd2188356f8acf1be709a2c7a",
+      "datafile_id": 99969,
+      "is_eeg": true,
+      "sha256": "66ba9eed866878c92cb4ba349e2162b2d8e427cc76ff310a92952a02ad8755f8"
+    },
+    {
+      "name": "Raw eeg 2/Subject60_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99909",
+      "bytes": 23283053,
+      "checksum": "sha1:ce46782ae6663a727e0dffcc2d2122e8776bf960",
+      "datafile_id": 99909,
+      "is_eeg": true,
+      "sha256": "1f6f60288317404e407b0ba29ed3c916a6754a0948dffc971680c90e5a9e2234"
+    },
+    {
+      "name": "Raw eeg 2/Subject60_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99983",
+      "bytes": 23285964,
+      "checksum": "sha1:fdb999d97ab264021ed45cd2c78e9a6ede197381",
+      "datafile_id": 99983,
+      "is_eeg": true,
+      "sha256": "3ab620352ea4e3f3d35554415ef36df9ab2ca219dd4f7728360018d8889c10a7"
+    },
+    {
+      "name": "Raw eeg 2/Subject61_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99956",
+      "bytes": 23285689,
+      "checksum": "sha1:fbc5de2e7611973d49c3a78c8ff9713bbc74c8bc",
+      "datafile_id": 99956,
+      "is_eeg": true,
+      "sha256": "26d98d7f71e73d4c8563ef86a58a2591e137e1c559438b56143375d69d958845"
+    },
+    {
+      "name": "Raw eeg 2/Subject61_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99970",
+      "bytes": 23274211,
+      "checksum": "sha1:b5aeb7c9c9655fd00ea232ef2c59f5e3e38aed21",
+      "datafile_id": 99970,
+      "is_eeg": true,
+      "sha256": "0e8c946f778552d3f1642b3c467c9be977c4f373b5842d6078ad98d64fafc19b"
+    },
+    {
+      "name": "Raw eeg 2/Subject61_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100012",
+      "bytes": 23279189,
+      "checksum": "sha1:a2cd9fc698de619aae47e99e0e4429b221766870",
+      "datafile_id": 100012,
+      "is_eeg": true,
+      "sha256": "53b62b64727cf525350bd90ce82dde8590c1ba4deda77f5f269001969757f911"
+    },
+    {
+      "name": "Raw eeg 2/Subject63_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100005",
+      "bytes": 23387133,
+      "checksum": "sha1:da2bb51ef0f083f370ffebd614288e356b5fd9e5",
+      "datafile_id": 100005,
+      "is_eeg": true,
+      "sha256": "54e5224924ebf31b582efcd4b5e7c4ed605f4cd8a16ded374f5c787f54f1d704"
+    },
+    {
+      "name": "Raw eeg 2/Subject63_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100059",
+      "bytes": 23303191,
+      "checksum": "sha1:beef30c664a4bfbed7f33e27cccd3da2f075bcee",
+      "datafile_id": 100059,
+      "is_eeg": true,
+      "sha256": "a828bf37d1d265b806c90e97401d67f8ec8519cd408ca28e88959e86f45a5f85"
+    },
+    {
+      "name": "Raw eeg 2/Subject63_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100056",
+      "bytes": 23297159,
+      "checksum": "sha1:a7fa0cd1f869bc76fee7cb2794a07e67661f45cc",
+      "datafile_id": 100056,
+      "is_eeg": true,
+      "sha256": "bafda2865817d79d489fd0517f10d46a0a20676b3bc0b84f16419b5d6b652583"
+    },
+    {
+      "name": "Raw eeg 2/Subject65_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99986",
+      "bytes": 23313442,
+      "checksum": "sha1:eec98fb11d5ddda1c98984f5b552c3d19348d146",
+      "datafile_id": 99986,
+      "is_eeg": true,
+      "sha256": "25fab8f5d173d4e7b28df06050b91e12fb54145eee4bba4addcdf2cd14cfd28a"
+    },
+    {
+      "name": "Raw eeg 2/Subject65_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100069",
+      "bytes": 23300320,
+      "checksum": "sha1:4c8e6e140c98cd44b5fbf39642c2bbde62cc15dc",
+      "datafile_id": 100069,
+      "is_eeg": true,
+      "sha256": "2bc36e7855769ab6da498a4b7fca93e89fb2d6a14079f2a1b55cc855455d31c7"
+    },
+    {
+      "name": "Raw eeg 2/Subject65_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100001",
+      "bytes": 23320175,
+      "checksum": "sha1:9db829ec94c921228e0c58ddfb98214ebdd1f0e3",
+      "datafile_id": 100001,
+      "is_eeg": true,
+      "sha256": "600716d0ef6988c5ff6630e74dc4dfb5dd8fbd4e595b9ec5829fe6d30fdd40ae"
+    },
+    {
+      "name": "Raw eeg 2/Subject66_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99954",
+      "bytes": 23261293,
+      "checksum": "sha1:32899495538f705c305280d77d2e7e0f1af125f6",
+      "datafile_id": 99954,
+      "is_eeg": true,
+      "sha256": "0e0b7036cdcd23731c63ed2eda8e59dfc66ac630361af483e9dd15586171dce3"
+    },
+    {
+      "name": "Raw eeg 2/Subject66_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99947",
+      "bytes": 23259801,
+      "checksum": "sha1:17ea4dbb8619503531f99eaa10c5c365db68e00f",
+      "datafile_id": 99947,
+      "is_eeg": true,
+      "sha256": "1093851be2cfa0d83ef4b4be173b73199bd3f9a8b73279c41b26c2745d5a6ce3"
+    },
+    {
+      "name": "Raw eeg 2/Subject66_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100049",
+      "bytes": 23262470,
+      "checksum": "sha1:8ab4fca03be3f43273c96241f96207885f8827ad",
+      "datafile_id": 100049,
+      "is_eeg": true,
+      "sha256": "0763892522a2d29d10b54572894d2d5fcdb79bed8ab6a570c4ca686a0dcc6ddb"
+    },
+    {
+      "name": "Raw eeg 2/Subject67_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100054",
+      "bytes": 23267967,
+      "checksum": "sha1:dbd5e714acf1afd8afa30144fc1dbddd594610c7",
+      "datafile_id": 100054,
+      "is_eeg": true,
+      "sha256": "273494b9d072803cdb37f9f74a9503c7e738b3baa7529c52ffee67113423d56c"
+    },
+    {
+      "name": "Raw eeg 2/Subject67_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99945",
+      "bytes": 23279564,
+      "checksum": "sha1:437f774a9635bb0b91f0a61b235fb2b5e8ce53a9",
+      "datafile_id": 99945,
+      "is_eeg": true,
+      "sha256": "81f9cff3a17a1740787f3cb3fd8f95fc0c829d9b2d94f3019209cc8a89365685"
+    },
+    {
+      "name": "Raw eeg 2/Subject67_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99931",
+      "bytes": 23271585,
+      "checksum": "sha1:1395c2ddc945496bbcb7bcb9ba36d35758435530",
+      "datafile_id": 99931,
+      "is_eeg": true,
+      "sha256": "b8c45a320fef2b1097a8ae4783d2937632c8dcb98a36ee17e2479cfdeef4f061"
+    },
+    {
+      "name": "Raw eeg 2/Subject7_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100065",
+      "bytes": 23294192,
+      "checksum": "sha1:432c1a92685b507c57431e64e642bf7a43f80e2b",
+      "datafile_id": 100065,
+      "is_eeg": true,
+      "sha256": "ac7f36ecd9a28b450b16da07f08f2a3451fbe0719fed6872a8375e803b4675c1"
+    },
+    {
+      "name": "Raw eeg 2/Subject7_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100033",
+      "bytes": 23299236,
+      "checksum": "sha1:4efc572570beaa180edb2ca4139d2861aeae1a02",
+      "datafile_id": 100033,
+      "is_eeg": true,
+      "sha256": "e695298828b7d005f402961d4158dd7b75281470bc7166f066d2c35e6c96ea1f"
+    },
+    {
+      "name": "Raw eeg 2/Subject7_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100008",
+      "bytes": 23292616,
+      "checksum": "sha1:887816d696180af68f3249ed711e3c0d3ec04466",
+      "datafile_id": 100008,
+      "is_eeg": true,
+      "sha256": "cec4762091330687bd1e56f5f3c359893e73552438844b69366ec2de3a6301b0"
+    },
+    {
+      "name": "Raw eeg 2/Subject8_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99887",
+      "bytes": 23293493,
+      "checksum": "sha1:21b2afb7ecc10f11d26406af1aa6434cb0d205d4",
+      "datafile_id": 99887,
+      "is_eeg": true,
+      "sha256": "e9f7df6e3599388b0b762701d6789f95409eb6e99f5d41889115736a325d6278"
+    },
+    {
+      "name": "Raw eeg 2/Subject8_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99971",
+      "bytes": 23306102,
+      "checksum": "sha1:b946fd653ac546da9e3457f7fc052ccc91ac7d99",
+      "datafile_id": 99971,
+      "is_eeg": true,
+      "sha256": "fec7d0c7bd69c92aea135f86e460ac383637d7c8fdd487a2c8b71b5be10bbb40"
+    },
+    {
+      "name": "Raw eeg 2/Subject8_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/100000",
+      "bytes": 23306773,
+      "checksum": "sha1:161f62699d99829ccada21980d332fe67e91da43",
+      "datafile_id": 100000,
+      "is_eeg": true,
+      "sha256": "41f880775327bf539479378bbc373c451302c0725b8e042050c668c73f00f99d"
+    },
+    {
+      "name": "Raw eeg 2/Subject9_eeg_2.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99884",
+      "bytes": 23265114,
+      "checksum": "sha1:aa0cd731cbc1f548d3ac6236dec231be0b878bbc",
+      "datafile_id": 99884,
+      "is_eeg": true,
+      "sha256": "10bcf02b71e84f59e3721c023327408cd779ca3a52306380aeab7940f9f1ec3c"
+    },
+    {
+      "name": "Raw eeg 2/Subject9_eeg_3.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99977",
+      "bytes": 23264409,
+      "checksum": "sha1:6af12ce529fb190d137c291e1383de5593476d53",
+      "datafile_id": 99977,
+      "is_eeg": true,
+      "sha256": "2ae02c15c5e63bff704032a304711b173a648ac831ccbb653705c1826eb038c6"
+    },
+    {
+      "name": "Raw eeg 2/Subject9_eeg_4.csv",
+      "url": "https://dataverse.nl/api/access/datafile/99899",
+      "bytes": 23275199,
+      "checksum": "sha1:3ccaa9f4c9a49bd6ccbb34b3ec588261a6c36da3",
+      "datafile_id": 99899,
+      "is_eeg": true,
+      "sha256": "957fce66d7bc0e937b05029d7493e043c57eb0dd7995b9c51be682dc0cc82c01"
+    }
+  ],
+  "moabb_revision": "bed9f0fa1b9c4d3f71c7f2ddb22e4e44383211b5"
+}

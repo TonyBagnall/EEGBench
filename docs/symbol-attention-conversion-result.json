@@ -1,0 +1,123 @@
+{
+  "dataset": "SymbolAttention",
+  "source_key": "chailloux",
+  "path": "D:\\Data\\EEG\\SymbolAttention",
+  "train_cases": 521259,
+  "test_cases": 175180,
+  "subjects": 19,
+  "channels": 8,
+  "timepoints": 256,
+  "classes": 2,
+  "frequency": 256,
+  "size_GB": 27.831751327,
+  "licence": "CC0-1.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 521259,
+        "shape": [
+          521259,
+          8,
+          256
+        ],
+        "class_counts": {
+          "1": 438917,
+          "2": 82342
+        },
+        "subjects": [
+          "01",
+          "010",
+          "011",
+          "012",
+          "013",
+          "014",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 175180,
+        "shape": [
+          175180,
+          8,
+          256
+        ],
+        "class_counts": {
+          "2": 27695,
+          "1": 147485
+        },
+        "subjects": [
+          "015",
+          "016",
+          "017",
+          "018",
+          "019"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": 0,
+    "aeon": {
+      "load_fit_predict": true,
+      "train_cases": 6,
+      "test_cases": 6
+    },
+    "aeon_scope": "All cases exact .ts readback; aeon load/variance/fit/predict on 3 cases per class per partition",
+    "channel_order_verified_all_recordings": true,
+    "source_sensor_identity": "Every included VHDR and BIDS sensor table checked against native arrays; FZ/PZ spelling/order preserved; no-event placeholder files excluded explicitly"
+  },
+  "channel_quality": {
+    "threshold_std_uV": 1e-07,
+    "constant_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_channel_names": [
+      "FZ",
+      "Cz",
+      "P3",
+      "PZ",
+      "P4",
+      "PO7",
+      "PO8",
+      "Oz"
+    ],
+    "removed_indices": [],
+    "policy": "Remove sensor globally if any retained trial has std <= 1e-7 uV"
+  }
+}

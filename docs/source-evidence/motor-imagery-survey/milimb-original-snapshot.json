@@ -1,0 +1,176 @@
+{
+  "id": "x8psbz3f6x",
+  "version": 2,
+  "name": "MILimbEEG: An EEG Signals Dataset based on Upper and Lower Limb Task During the Execution of Motor and Motorimagery Tasks",
+  "description": "In this work, an experimental methodology for the acquisition of EEG signals from volunteer subjects was developed. The volunteers are colleagues and research fellows from ESPOL and patients of the Hospital Luis Vernaza for participating as test subjects. This dataset consists of over 8680 four-second EEG recordings obtained from 60 volunteers.\n\nEquipment:\nWe use the OpenBCI Cyton + Daisy (www.openbci.com) Biosensing Board for EEG signal recording. The OpenBCI equipment has an active bandpass filter in the 5 to 50Hz range, additionally, a notch filter at 60Hz. This non-invasive device operates within a sampling frequency of 125Hz and has 16 dry electrodes with two ground references, distributed in the international 10-10 system. All 16 EEG electrodes were recorded in monopolar configuration, in which the potential of each electrode is compared with a neutral electrode located in both lobes of the ears.\n\nData Description:\nEach recording was recorded in a CSV file format, the values of each electrode are in microvolts (uV). In total, each subject generates 124 CSV files in each experiment (run). Some subjects perform two experiments, one executing the motor tasks and the other imagining doing them. The tasks are described below:\n- Recording a Baseline with Eyes Open (BEO) without any task command: only once at the beginning of each run.\n- Closing Left Hand (CLH): five times per run.\n- Closing Right Hand (CRH): five times per run.\n- Dorsal flexion of Left Foot (DLF): five times per run.\n- Plantar flexion of Left Foot (PLF): five times per run.\n- Dorsal flexion of Right Foot (DRF): five times per run.\n- Plantar flexion of Right Foot (PRF): five times per run.\n- Resting in between tasks (Rest): after each task, in total 31 files.\n\nCSV file encoding:\n- Subject ID: Assigned ID to each test subject in order to hide their identity. e.g. Sx, such that x can be any number from 1 to 60.\n- Repetition number: The participants may perform more than one repetition of the experiment. ExaOnly one subject volunteered to perform up to 4 repetitions. e.g. Rx, such that x can be any repetition number between 1 and 4.\n- Motor or Motor Imagery Activity: For each repetition, participants are asked to perform first the motor tasks (M) and then the motor imagery tasks (I). & Mx and Ix, where x is the Label of the task performed.\n- Label: Identifier of the performed task, where 1 is for BEO, 2 for CLH, 3 for CRH, 4 for DLF, 5 for PLF, 6 for DRF, 7 for PRF and finally 8 for Rest. e.g. M2 represents the CLH Motor task.\n- Task repetition number: Ordinal number of the task repetition. Tasks are presented randomly up to 5 times per run. e.g. S24R1I6_5 is from subject 24, repetition 1, DRF Imagery task. Finally, the number five at the end represents the fifth task repetition in the record.\n\nAdditionally, this dataset includes the file \"Test_Subject_Annotations.csv\", with the demographic information of each of the 60 volunteers, respecting the confidentiality of each individual.",
+  "method": "Raw dataset preparation:\nFirst we set the folder where the functions are located, using the function addpath(genpath('./src')). The data will be located in the data folder, using the function addpath(path=fullfile('./data/')). Finally, the function folders = FindFolders(path) is used to generate a vector with the names of all the folders inside data. Since inside the data folder are the folders of all subjects, the generated vector has the names from S1 to S24. The data can be visualized using the function plot(dataNew).\n\nRaw dataset preprocessing:\nBefore preprocessing the csv files you have to load them using the function readtable which returns the file as a table. Then with the function dataNew=table2array(data) the table file is converted into an array with double values. In the preprocessing the data can be normalized using the function DataNorm = fNormalization(dataNew), this function receives the raw data and returns the normalized data. The data can be visualized using the function plot(DataNorm).\nIn this pre-processing stage, a band pass filter was also created in the frequency range of 7 to 31 Hz. To include the bands mu (7.5 and 12.5) Hz and beta (16 and 31) Hz, frequency bands related to the execution or thought of motor activities.\n\nFeature extraction:\nEach of the 124 files belonging to each of the 24 subjects represents one of the 8 possible tasks. The function Label = fLabelEEG(filenames(j).name) allows to know the task to which each file belongs, this number is known as label. For feature extraction many sophisticated methods can be used, in this example code we have decided to use the RMS value of each electrode per file. In this way, using the function DataRMS = [rms(DataNorm) Label] to convert each file into a vector of 16 values and at the end we add the Label corresponding to the task that represents that file. Finally, we obtain a data matrix called allData containing 2976 rows x 17 columns.\n\nStatistical information of rms in EEG dataset:\nStatistical information can be extracted from each electrode using the function datastats. The electrodes show mean values close to zero and low standard deviation values. These results show which electrodes have the lowest low frequency noise (Offset Voltage).\n\nFeature Selection:\nFor feature selection, the correlation matrix can be used to identify electrodes that have a high correlation. The function corrcoef(allData(:,1:16)) allows to calculate the correlation matrix of each electrode with the other electrodes. The results indicate that there are no electrodes that are highly correlated and therefore do not have redundant information. Finally, the file was stored in csv format using the function csvwrite('AllDataRMS.csv',allData).",
+  "doi": "10.17632/x8psbz3f6x.2",
+  "publish_date": "2023-07-08T17:08:36.166Z",
+  "last_modification_date": "2023-07-07T02:52:22.376Z",
+  "is_confidential": false,
+  "customer": {
+    "id": "7377952c-6404-4428-bbfc-77242cfc301e",
+    "name": "Mendeley Guests",
+    "chief_id": 810289,
+    "config": {
+      "repository_id": "MENDELEY_DATA",
+      "dataset_size_limit": 10737418240,
+      "doi_prefix": "10.17632"
+    },
+    "is_user_mendeley_admin": false,
+    "customer_roles": [],
+    "is_guest": true,
+    "is_user_customer_moderator": false
+  },
+  "owner": {
+    "id": "c99d3bc1-324d-3ff5-8ffb-6b450a0a47ad",
+    "first_name": "Victor",
+    "last_name": "Asanza",
+    "display_name": "Victor Asanza",
+    "$ref": "/profiles/c99d3bc1-324d-3ff5-8ffb-6b450a0a47ad"
+  },
+  "categories": [
+    {
+      "id": "data.elsevier.com/vocabulary/OmniScience/Concept-248827212",
+      "label": "Human-Machine Interface"
+    },
+    {
+      "id": "data.elsevier.com/vocabulary/OmniScience/Concept-249563453",
+      "label": "Brain"
+    },
+    {
+      "id": "data.elsevier.com/vocabulary/OmniScience/Concept-252578331",
+      "label": "Electroencephalography"
+    },
+    {
+      "id": "data.elsevier.com/vocabulary/OmniScience/Concept-328555896",
+      "label": "Brain-Computer Interface"
+    }
+  ],
+  "licence": {
+    "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+    "short_name": "CC BY 4.0",
+    "full_name": "Creative Commons Attribution 4.0 International",
+    "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+    "url": "http://creativecommons.org/licenses/by/4.0",
+    "category": "Creative",
+    "customer_id": null
+  },
+  "institutions": [
+    {
+      "id": "b559ca27-40d3-5f59-a223-607ba68e1cae",
+      "name": "Escuela Superior Politecnica del Litoral"
+    }
+  ],
+  "funders": [],
+  "organisational_unit_names": [],
+  "contributors": [
+    {
+      "id": "c99d3bc1-324d-3ff5-8ffb-6b450a0a47ad",
+      "first_name": "Victor",
+      "last_name": "Asanza",
+      "$ref": "/profiles/c99d3bc1-324d-3ff5-8ffb-6b450a0a47ad",
+      "institution": "Escuela Superior Politecnica del Litoral"
+    },
+    {
+      "id": "a4d20208-df08-3804-a5ea-eafeb3fdbf6d",
+      "first_name": "Daniel",
+      "last_name": "Montoya",
+      "$ref": "/profiles/a4d20208-df08-3804-a5ea-eafeb3fdbf6d",
+      "institution": "Escuela Superior Politecnica del Litoral"
+    },
+    {
+      "id": "f4bee9c8-c485-33cf-b9d4-7424ce07c46d",
+      "first_name": "Leandro Leonardo",
+      "last_name": "Lorente-Leyva",
+      "$ref": "/profiles/f4bee9c8-c485-33cf-b9d4-7424ce07c46d",
+      "institution": "SDAS Research Grupo"
+    },
+    {
+      "id": "aba9653c-d139-3f95-aad8-969c487ed2f3",
+      "first_name": "Diego Hern\u00e1n",
+      "last_name": "Peluffo-Ord\u00f3\u00f1ez",
+      "$ref": "/profiles/aba9653c-d139-3f95-aad8-969c487ed2f3",
+      "institution": "SDAS Research Group"
+    },
+    {
+      "first_name": "Kl\u00e9ber",
+      "last_name": "Gonz\u00e1lez",
+      "institution": "Hospital General Luis Vernaza"
+    }
+  ],
+  "related_links": [
+    {
+      "relation_type": "cited_by",
+      "href": "https://doi.org/10.3390/s22052028",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "cited_by",
+      "href": "https://ieeexplore.ieee.org/abstract/document/9399035",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "cited_by",
+      "href": "https://ieeexplore.ieee.org/document/9096752",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "cited_by",
+      "href": "https://ieeexplore.ieee.org/abstract/document/8247452",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "cited_by",
+      "href": "https://ieeexplore.ieee.org/abstract/document/8247451",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "cited_by",
+      "href": "https://ieeexplore.ieee.org/abstract/document/7750874",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "cited_by",
+      "href": "https://doi.org/10.1016/j.ifacol.2021.10.287",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "cited_by",
+      "href": "https://doi.org/10.1016/j.ifacol.2021.10.283",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "source_of",
+      "href": "https://github.com/Human-Machine-Interface",
+      "source_type": "software"
+    },
+    {
+      "relation_type": "source_of",
+      "href": "https://github.com/Human-Machine-Interface/OpenBCI_Data_Acquisition",
+      "source_type": "software"
+    },
+    {
+      "relation_type": "source_of",
+      "href": "https://github.com/vasanza/BCI_Motor_Imagery_Task_OpenBCI",
+      "source_type": "software"
+    },
+    {
+      "relation_type": "source_of",
+      "href": "https://github.com/Human-Machine-Interface/OpenBCI_Classification_Example",
+      "source_type": "software"
+    },
+    {
+      "relation_type": "source_of",
+      "href": "https://ieeexplore.ieee.org/author/37086202131",
+      "source_type": "article"
+    },
+    {
+      "relation_type": "source_of",
+      "href": "https://orcid.org/0000-0002-2786-4162",
+      "source_type": "article"
+    }
+  ],
+  "custom_metadata": {},
+  "is_metadata_only": false
+}

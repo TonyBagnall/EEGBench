@@ -1,0 +1,15 @@
+{
+  "evidence": {
+    "direct": "Native GDF generic names/fs/calibration/events/source session/run/file IDs and decoded samples",
+    "documented": "Original indexed chanlocs names/polar positions, EEG/ACC roles, phase protocol and participant05 handedness",
+    "assigned": "Encoded labels, pooled phase archive split, new epoch ordinals; original native event indices retained",
+    "missing": "Individual demographics, measured sensor3D positions, reference/ground and original timezone"
+  },
+  "missing_or_inconsistent": [
+    "GDF sensor names generic; author numbered chanlocs.locs supplies anatomical mapping, not native embedded names",
+    "Reference/ground, individual measured3D geometry, age/sex and original timezone not established",
+    "Native class-cue timing differs from nominal two-second baseline; use recorded769/770 onset, not reconstructed schedule",
+    "Auxiliary GDF voltage prefixes do not establish real accelerometer units; three ACC inputs excluded",
+    "Training/online phases pooled across days; intentional subject/session overlap, not a chronological or independent-person split"
+  ]
+}

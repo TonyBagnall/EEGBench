@@ -1,0 +1,20 @@
+{
+  "updated": "2026-11-08",
+  "sources_downloaded": [
+    "MIMED2024",
+    "MOVING2024",
+    "Zhang2017"
+  ],
+  "mimed": "Full export stopped,85cross-ID duplicate pairs incl1conflicting class; user choice pending",
+  "moving": "Complete:382TRAIN/143TEST,11people,17EEG",
+  "zhang": "Complete:3240TRAIN/1080TEST,12people,17source columns,3960samples; anatomical identity flag",
+  "worker": ".openeegbench/compact-imagery/zhang-worker.json",
+  "guide": "DATASET_CONVERSION_HANDOVER.md",
+  "tests": "65 relevant tests passed; git diff --check passed",
+  "status": "MOVING and Zhang prepared; MIMED full release stopped on source duplicates",
+  "registered": 68,
+  "selected": 64,
+  "d_free_GB_at_finish": 17.645699072,
+  "summary": "docs/compact-imagery-summary.json",
+  "metadata_completeness": "docs/compact-imagery-metadata-completeness.json"
+}

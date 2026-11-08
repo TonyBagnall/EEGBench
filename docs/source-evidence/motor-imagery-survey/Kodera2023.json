@@ -1,0 +1,139 @@
+{
+  "created": "2023-05-03T20:58:23.504957+00:00",
+  "modified": "2024-04-14T10:10:22.322163+00:00",
+  "id": 7893847,
+  "conceptrecid": "7893846",
+  "doi": "10.5281/zenodo.7893847",
+  "conceptdoi": "10.5281/zenodo.7893846",
+  "doi_url": "https://doi.org/10.5281/zenodo.7893847",
+  "metadata": {
+    "title": "EEG motor imagery",
+    "doi": "10.5281/zenodo.7893847",
+    "publication_date": "2023-05-03",
+    "description": "<p>EEG dataset used for automatic motor imagery detection.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Jakub Kodera",
+        "affiliation": "University of West Bohemia"
+      },
+      {
+        "name": "Roman Mou\u010dek",
+        "affiliation": "University of West Bohemia"
+      },
+      {
+        "name": "Pavel Moutner",
+        "affiliation": "University of West Bohemia"
+      },
+      {
+        "name": "Pavel Mochura",
+        "affiliation": "University of West Bohemia"
+      },
+      {
+        "name": "Josef Yassin Saleh",
+        "affiliation": "University of West Bohemia"
+      },
+      {
+        "name": "Petr Br\u016fha",
+        "affiliation": "University of West Bohemia in Pilsen"
+      },
+      {
+        "name": "Jana \u0160olcov\u00e1",
+        "affiliation": "University of West Bohemia in Pilsen"
+      },
+      {
+        "name": "Luk\u00e1\u0161 Va\u0159eka",
+        "affiliation": "University of West Bohemia in Pilsen"
+      },
+      {
+        "name": "Pavel \u0160nejdar",
+        "affiliation": "University of West Bohemia in Pilsen"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7893846"
+          }
+        }
+      ]
+    }
+  },
+  "title": "EEG motor imagery",
+  "links": {
+    "self": "https://zenodo.org/api/records/7893847",
+    "self_html": "https://zenodo.org/records/7893847",
+    "preview_html": "https://zenodo.org/records/7893847?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7893847",
+    "self_doi": "https://doi.org/10.5281/zenodo.7893847",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7893847",
+    "reserve_doi": "https://zenodo.org/api/records/7893847/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7893846",
+    "parent_html": "https://zenodo.org/records/7893846",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7893846",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7893846",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7893847/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7893847/sequence/default",
+    "files": "https://zenodo.org/api/records/7893847/files",
+    "media_files": "https://zenodo.org/api/records/7893847/media-files",
+    "latest": "https://zenodo.org/api/records/7893847/versions/latest",
+    "latest_html": "https://zenodo.org/records/7893847/latest",
+    "versions": "https://zenodo.org/api/records/7893847/versions",
+    "draft": "https://zenodo.org/api/records/7893847/draft",
+    "access_links": "https://zenodo.org/api/records/7893847/access/links",
+    "access_grants": "https://zenodo.org/api/records/7893847/access/grants",
+    "access_users": "https://zenodo.org/api/records/7893847/access/users",
+    "access_request": "https://zenodo.org/api/records/7893847/access/request",
+    "access": "https://zenodo.org/api/records/7893847/access",
+    "communities": "https://zenodo.org/api/records/7893847/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7893847/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7893847/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7893847/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/7893847/quota-increase",
+    "requests": "https://zenodo.org/api/records/7893847/requests"
+  },
+  "updated": "2024-04-14T10:10:22.322163+00:00",
+  "recid": "7893847",
+  "revision": 8,
+  "files": [
+    {
+      "id": "bac90c59-59cd-4ea1-b90f-b261f1fdd597",
+      "key": "data.zip",
+      "size": 1774088549,
+      "checksum": "md5:eeaa810229d7979c8771e01cb8bf3e69",
+      "links": {
+        "self": "https://zenodo.org/api/records/7893847/files/data.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "541604"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 483,
+    "unique_downloads": 223,
+    "views": 735,
+    "unique_views": 668,
+    "version_downloads": 480,
+    "version_unique_downloads": 220,
+    "version_unique_views": 663,
+    "version_views": 729
+  },
+  "state": "done",
+  "submitted": true
+}

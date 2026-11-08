@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "ImaginedHandGestures",
+    "train_cases": 382,
+    "test_cases": 143,
+    "subjects": 11,
+    "channels": 17,
+    "timepoints": 3000,
+    "classes": 4,
+    "frequency": 500,
+    "size_GB": 0.511468779,
+    "licence": "CC-BY-4.0"
+  },
+  {
+    "dataset": "ImaginedArmTasks",
+    "train_cases": 3240,
+    "test_cases": 1080,
+    "subjects": 12,
+    "channels": 17,
+    "timepoints": 3960,
+    "classes": 10,
+    "frequency": 1000,
+    "size_GB": 5.027820908,
+    "licence": "CC-BY-4.0"
+  }
+]

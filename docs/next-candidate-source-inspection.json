@@ -1,0 +1,163 @@
+{
+  "kaneshiro": {
+    "dataset": "Kaneshiro2015",
+    "proposed_name": "VisualCategories",
+    "source_url": "https://purl.stanford.edu/bq914sc3730",
+    "source_published": "2026-07-27T20:11:39Z",
+    "data_licence": "CC-BY-3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/legalcode",
+    "files": [
+      {
+        "name": "Kaneshiro_etAl_objectCategoryEEG_README.pdf",
+        "bytes": 76591,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/Kaneshiro_etAl_objectCategoryEEG_README.pdf",
+        "checksums": {
+          "md5": "420e95c8d98cded282e59ec13510bd05",
+          "sha1": "927c17ab4d7de95939c0dccdee9ebac135a7cb72"
+        }
+      },
+      {
+        "name": "S1.mat",
+        "bytes": 315986819,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S1.mat",
+        "checksums": {
+          "md5": "228e34461abcb3b1631671742fc142e5",
+          "sha1": "e31c528f1b8d690bcafedfc94e6b9173ae7e1080"
+        }
+      },
+      {
+        "name": "S10.mat",
+        "bytes": 315823290,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S10.mat",
+        "checksums": {
+          "md5": "d935f75f90c49f5ec79bfd6772dca8a4",
+          "sha1": "07980e52923fc090e563b763a1a6f32f5801e7bf"
+        }
+      },
+      {
+        "name": "S2.mat",
+        "bytes": 315834238,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S2.mat",
+        "checksums": {
+          "md5": "9f0b0f99a66d934c809ab3583484912c",
+          "sha1": "cc7f009649e526c13af68dea5eec4a922a56f51d"
+        }
+      },
+      {
+        "name": "S3.mat",
+        "bytes": 315913011,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S3.mat",
+        "checksums": {
+          "md5": "1e36ea78b02246292ee0f04c03f03a65",
+          "sha1": "2421a28dccd623db9c43f3ee148948bd6953c0b3"
+        }
+      },
+      {
+        "name": "S4.mat",
+        "bytes": 315924536,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S4.mat",
+        "checksums": {
+          "md5": "40646bc24c00a117fee964f28890d8c9",
+          "sha1": "478cdbc5f0783f7305319d28065060acd28d97eb"
+        }
+      },
+      {
+        "name": "S5.mat",
+        "bytes": 315865524,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S5.mat",
+        "checksums": {
+          "md5": "32783a42c44bcbaf009d65b175cf707d",
+          "sha1": "89b508709255d791d574240cdae398e5e1ed1a5b"
+        }
+      },
+      {
+        "name": "S6.mat",
+        "bytes": 315811204,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S6.mat",
+        "checksums": {
+          "md5": "44912f8a41010150dfa327eec93ede00",
+          "sha1": "d90c75d41402b9b9c635577e8e90e69f53992048"
+        }
+      },
+      {
+        "name": "S7.mat",
+        "bytes": 315951880,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S7.mat",
+        "checksums": {
+          "md5": "22d9f79edfba9e71554b77328b7da71b",
+          "sha1": "b12d0e37cb620734c82711033220ff5c07d5266c"
+        }
+      },
+      {
+        "name": "S8.mat",
+        "bytes": 315934371,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S8.mat",
+        "checksums": {
+          "md5": "d53fda863f0cb7ba6a4e4b6d17b9d0fe",
+          "sha1": "0c6f31f01f0554711a66e2f71e6c776166e9f4d7"
+        }
+      },
+      {
+        "name": "S9.mat",
+        "bytes": 315975004,
+        "url": "https://stacks.stanford.edu/file/bq914sc3730/S9.mat",
+        "checksums": {
+          "md5": "d0fc47af8b633a462bc8a1e919d779c2",
+          "sha1": "192368d57e224aea8226cf4c8188bcd689f4088e"
+        }
+      }
+    ],
+    "sensor_identity_evidence": "Original dataset README v2.0.0 explicitly maps both X_2D blocks and X_3D electrode dimension to EGI HydroCel128 electrodes1-124, in order; not merely loader-generated labels.",
+    "source_sampling_frequency_hz": 62.5,
+    "source_epoch_samples": 32,
+    "prior_acquisition_frequency_hz": 1000,
+    "cohort": "10 participants,6 recording blocks over2 sessions/person, pooled within MAT; per-case session mapping not yet recovered",
+    "scope": "Initial metadata-only review, followed by two-participant native audit",
+    "note": "Source CC-BY3.0; paper CC-BY is a separate grant. Stanford XML includes general privacy terms; do not infer individual identities. Source files3.159GB include duplicate2D/3D forms of the same epochs.",
+    "repository_metadata_schema_version": "cocina-models/0.130.0",
+    "status": "deferred: S1 duplicate epochs include conflicting category labels; S10 clean; other8 subjects not downloaded",
+    "native_audit_files": [
+      "visual-categories-pilot-inspection.json",
+      "visual-categories-s1-duplicates.json",
+      "visual-categories-s10-inspection.json"
+    ]
+  },
+  "kueper": {
+    "dataset": "Kueper2024",
+    "source_record": 10229480,
+    "source_doi": "10.5281/zenodo.10229480",
+    "data_licence": "CC-BY-4.0",
+    "source_bytes": 3101308625,
+    "publisher_checksum": "md5:528efd15b4c30d704d57770ee9336b7b",
+    "classes": [
+      "right_arm_unilateral",
+      "both_arms_bilateral"
+    ],
+    "subjects": 8,
+    "eeg_channels": 64,
+    "frequency_hz": 500,
+    "epoch_interval_seconds": [
+      -2,
+      1
+    ],
+    "scope": "Original source downloaded, all8 participants prepared and validated",
+    "archive_name": "ArmCoordination",
+    "native_recordings": 49,
+    "train_cases": 1498,
+    "test_cases": 505,
+    "result": "arm-coordination-conversion-result.json"
+  },
+  "bnci2003_004": {
+    "dataset": "BCI Competition III IVa",
+    "source": "https://www.bbci.de/competition/iii/desc_IVa.html",
+    "classes": [
+      "imagined_right_hand",
+      "imagined_right_foot"
+    ],
+    "subjects": 5,
+    "channels": 118,
+    "frequency_hz": 100,
+    "native_frequency_hz": 1000,
+    "caution": "MOABB CC-BY4.0 declaration not yet verified against original-host redistribution terms; original pages inspected do not state that grant. Defer fully-open classification until resolved."
+  }
+}

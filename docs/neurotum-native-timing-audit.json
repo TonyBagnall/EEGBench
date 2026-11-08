@@ -1,0 +1,252 @@
+[
+  {
+    "file": "P1_S1_data.xdf",
+    "streams": [
+      {
+        "type": "Markers",
+        "shape": [
+          97,
+          1
+        ],
+        "dtype": "<U23",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.9996854999990319,
+        "time_steps_max": 4.99623309999879,
+        "bad_examples": []
+      },
+      {
+        "type": "EEG",
+        "shape": [
+          81546,
+          24
+        ],
+        "dtype": "float32",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.003999813270638697,
+        "time_steps_max": 0.003999862077762373,
+        "bad_examples": []
+      }
+    ]
+  },
+  {
+    "file": "P1_S2_data.xdf",
+    "streams": [
+      {
+        "type": "Markers",
+        "shape": [
+          126,
+          1
+        ],
+        "dtype": "<U23",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.9989069999937783,
+        "time_steps_max": 9.320878500002436,
+        "bad_examples": []
+      },
+      {
+        "type": "EEG",
+        "shape": [
+          116003,
+          24
+        ],
+        "dtype": "float32",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.00399981252849102,
+        "time_steps_max": 0.003999863562057726,
+        "bad_examples": []
+      }
+    ]
+  },
+  {
+    "file": "P1_S3_data.xdf",
+    "streams": [
+      {
+        "type": "EEG",
+        "shape": [
+          135085,
+          24
+        ],
+        "dtype": "float32",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.003999827051302418,
+        "time_steps_max": 0.003999863925855607,
+        "bad_examples": []
+      },
+      {
+        "type": "Markers",
+        "shape": [
+          159,
+          1
+        ],
+        "dtype": "<U23",
+        "nonincreasing_indices": [
+          62
+        ],
+        "time_steps_min": 0.0,
+        "time_steps_max": 34.25158929999452,
+        "bad_examples": [
+          {
+            "index": 62,
+            "timestamps": [
+              143615.5232896,
+              143615.5232896
+            ],
+            "values": [
+              [
+                ""
+              ],
+              [
+                ""
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "P1_S4_data.xdf",
+    "streams": [
+      {
+        "type": "EEG",
+        "shape": [
+          83038,
+          24
+        ],
+        "dtype": "float32",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.0039998240827117115,
+        "time_steps_max": 0.0039998553693294525,
+        "bad_examples": []
+      },
+      {
+        "type": "Markers",
+        "shape": [
+          96,
+          1
+        ],
+        "dtype": "<U23",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.9997258000075817,
+        "time_steps_max": 6.662745400011772,
+        "bad_examples": []
+      }
+    ]
+  },
+  {
+    "file": "P1_S5_data.xdf",
+    "streams": [
+      {
+        "type": "EEG",
+        "shape": [
+          101587,
+          24
+        ],
+        "dtype": "float32",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.003999816624855157,
+        "time_steps_max": 0.003999861699412577,
+        "bad_examples": []
+      },
+      {
+        "type": "Markers",
+        "shape": [
+          129,
+          1
+        ],
+        "dtype": "<U23",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.9936610000004293,
+        "time_steps_max": 10.117635299997346,
+        "bad_examples": []
+      }
+    ]
+  },
+  {
+    "file": "P2_S1_data.xdf",
+    "streams": [
+      {
+        "type": "EEG",
+        "shape": [
+          659201,
+          24
+        ],
+        "dtype": "float32",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.003999801352620125,
+        "time_steps_max": 0.004000063240710006,
+        "bad_examples": []
+      },
+      {
+        "type": "Markers",
+        "shape": [
+          732,
+          1
+        ],
+        "dtype": "<U23",
+        "nonincreasing_indices": [],
+        "time_steps_min": 1.0000942000006035,
+        "time_steps_max": 342.16548389999934,
+        "bad_examples": []
+      }
+    ]
+  },
+  {
+    "file": "P2_S2_data.xdf",
+    "streams": [
+      {
+        "type": "Markers",
+        "shape": [
+          733,
+          1
+        ],
+        "dtype": "<U23",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.9997969000005469,
+        "time_steps_max": 446.32965160000003,
+        "bad_examples": []
+      },
+      {
+        "type": "EEG",
+        "shape": [
+          715920,
+          24
+        ],
+        "dtype": "float32",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.003999840095275431,
+        "time_steps_max": 0.00400002524293086,
+        "bad_examples": []
+      }
+    ]
+  },
+  {
+    "file": "P2_S3_data.xdf",
+    "streams": [
+      {
+        "type": "EEG",
+        "shape": [
+          899611,
+          24
+        ],
+        "dtype": "float32",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.0039998117863433436,
+        "time_steps_max": 0.004000123968580738,
+        "bad_examples": []
+      },
+      {
+        "type": "Markers",
+        "shape": [
+          734,
+          1
+        ],
+        "dtype": "<U23",
+        "nonincreasing_indices": [],
+        "time_steps_min": 0.9940288999932818,
+        "time_steps_max": 573.038512900006,
+        "bad_examples": []
+      }
+    ]
+  }
+]

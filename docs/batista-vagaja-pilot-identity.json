@@ -1,0 +1,200 @@
+{
+  "batista_recordings": [
+    {
+      "source_file": "sub-01/ses-lab1/task/MIMOHP/sub-01_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "a7bb7b159b8bc3f982b2184e366938aa7234fb0b572ff57d642627259ad8885e",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-01/ses-lab1/task/MIMOVR/sub-01_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "b44e9086e7dbeb67ce21d88ec6d226bbee404d4855d00a53fa90b002179386fc",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-01/ses-lab1/task/MIMOHPVR/sub-01_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "fa2e62e6a5eb1dfb206ef978efc8e3c460463578d71b6296e5ad865c98a08f46",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-01/ses-lab1/task/MI/sub-01_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "bb66a13ad466ecf48804ede5342ca3c1134dbb72def8f7a9c6b00c61abe7a0bb",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-01/ses-lab1/task/MIMO/sub-01_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "0ba67b3ed459676197c0a62fe48543c063381769770185397861fe88f9bb4850",
+      "cue_segments_compared": 41
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MI/sub-03_ses-pilot1_task-grazMI.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "3e1012e45b03c16423d6de941f58edf0f79ddf51089ea398bdbc5cb4d8108390",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MIMO/sub-03_ses-pilot1_task-neurowMIMO.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "9802560315070da35fdb97f8b802ffe163aa8f5a714a0ae72245d7ba2f91aacc",
+      "cue_segments_compared": 39
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MIMOHP/sub-03_ses-pilot1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "4f75e2c3ef0276d9314b448094919418d5add50654ca152e7529efa2f205e582",
+      "cue_segments_compared": 39
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MIMOHPVR/sub-03_ses-pilot1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "9731b4541a94be7963d011efa890b6309d5ed69dad5a6e2bcb0e68facd9986e9",
+      "cue_segments_compared": 38
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MIMOVR/sub-03_ses-pilot1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "a1caf0a379c9e33271e6c7df4acc2f993ac6a79c4f6d8f1d9839962058810509",
+      "cue_segments_compared": 40
+    }
+  ],
+  "vagaja_recordings": [
+    {
+      "source_file": "Embodied/SUB03/SUB03_MI.vhdr",
+      "recording_date": "20230302",
+      "eeg_only_sha256": "279bb2cccd6c78ed8747ff241c00e251144bd92c4a0330e8ab56e98c015b21d6"
+    },
+    {
+      "source_file": "Embodied/SUB05/SUB05_MI.vhdr",
+      "recording_date": "20230306",
+      "eeg_only_sha256": "0a47442c0802a80bfa669923f61ce33500c530625a9225dcf1ee6d96e001680b"
+    },
+    {
+      "source_file": "Embodied/SUB06/SUB06_MI.vhdr",
+      "recording_date": "20230307",
+      "eeg_only_sha256": "175a47e7dc84dd3155b025b86c1b9437cc14a33deb921b085ae82a910cd4a05f"
+    },
+    {
+      "source_file": "Embodied/SUB07/SUB07_MI.vhdr",
+      "recording_date": "20230307",
+      "eeg_only_sha256": "7bc018a5fd2858fd7a8e650c231a5a14a6ffaff7b863fbc8301879ee19371957"
+    },
+    {
+      "source_file": "Embodied/SUB08/SUB08_MI.vhdr",
+      "recording_date": "20230308",
+      "eeg_only_sha256": "f9653c6efe6428553fa2a643fb4fe1ab94f68a83e20749a2565394bb7380c09c"
+    },
+    {
+      "source_file": "Embodied/SUB09/SUB09_MI.vhdr",
+      "recording_date": "20230309",
+      "eeg_only_sha256": "b1d740ba45e0ce7d01b93fe4a6b3b632af58c74eb707e47b17aee664e9a0df2f"
+    },
+    {
+      "source_file": "Embodied/SUB10/SUB10_MI.vhdr",
+      "recording_date": "20230309",
+      "eeg_only_sha256": "de6cfac7d641fee7beb0f6e7f5a41a58543acd7f1489257df6013e134609b14e"
+    },
+    {
+      "source_file": "Embodied/SUB12/SUB12_MI.vhdr",
+      "recording_date": "20230310",
+      "eeg_only_sha256": "91b1795e8b31715c9bc89c6a38058596919a8a98af4042c751cd75be52b95932"
+    },
+    {
+      "source_file": "Embodied/SUB14/SUB14_MI.vhdr",
+      "recording_date": "20230313",
+      "eeg_only_sha256": "36c4b9fe1a29c813cf06fe6adf9176a55e84dfa584f7f1b67f8cf2f56e5d02dc"
+    },
+    {
+      "source_file": "Embodied/SUB15/SUB15_MI.vhdr",
+      "recording_date": "20230322",
+      "eeg_only_sha256": "0babd1c4aa3fe04563b170244ec730adab9ec64f342392771dc6b819cb0b4cb8"
+    },
+    {
+      "source_file": "Embodied/SUB16/SUB16_MI.vhdr",
+      "recording_date": "20230323",
+      "eeg_only_sha256": "16d427208964e12a6677454fa7b319226f30eaf56c8f023283f971ec85761c4e"
+    },
+    {
+      "source_file": "Control/SUB17/SUB17_MI.vhdr",
+      "recording_date": "20230327",
+      "eeg_only_sha256": "6d9aa51f205ca0488a1ab8365faf1b31b80fd41cc72944ec560670deb02f283e"
+    },
+    {
+      "source_file": "Control/SUB18/SUB18_MI.vhdr",
+      "recording_date": "20230327",
+      "eeg_only_sha256": "11e6a9a563ecc0bfd6a3a0e567cd4f3f6ae9fc84e0e5c57b87cdb87227c6712f"
+    },
+    {
+      "source_file": "Control/SUB19/SUB19_MI.vhdr",
+      "recording_date": "20230329",
+      "eeg_only_sha256": "dd1bd11e2a6a1127ca25e7056971e6d30054d8ef51c8053eb0afb6be1f46a4fb"
+    },
+    {
+      "source_file": "Control/SUB20/SUB20_MI.vhdr",
+      "recording_date": "20230330",
+      "eeg_only_sha256": "80472a2604be7cffa5ea90ce2b81363c77477197e4cff24ea5bbadea0b0382e8"
+    },
+    {
+      "source_file": "Control/SUB21/SUB21_MI.vhdr",
+      "recording_date": "20230330",
+      "eeg_only_sha256": "16c083e5a8eab1553e4c2a33066a093eccb2dc6f3765be092d49c48d0f864c9e"
+    },
+    {
+      "source_file": "Control/SUB22/SUB22_MI.vhdr",
+      "recording_date": "20230331",
+      "eeg_only_sha256": "bdb73759af6f1b0128e5218af24204cbbb7b57c47bb7844ead8519d179f3b422"
+    },
+    {
+      "source_file": "Control/SUB23/SUB23_MI.vhdr",
+      "recording_date": "20230331",
+      "eeg_only_sha256": "1d407595ae0c090d409f806c75c1e870bb88d10271a5b891f44bc0b2e0dde89d"
+    },
+    {
+      "source_file": "Control/SUB24/SUB24_MI.vhdr",
+      "recording_date": "20230403",
+      "eeg_only_sha256": "dd7bb38f2126de550d8a02ab3ea72ef34eeadd4cf8dbf46cdfe616bfaf3ceb95"
+    },
+    {
+      "source_file": "Control/SUB25/SUB25_MI.vhdr",
+      "recording_date": "20230403",
+      "eeg_only_sha256": "bf3300671b894f5eae540c28fb2bd5357403e53bb5473f38c454761dc19b1f71"
+    },
+    {
+      "source_file": "Control/SUB26/SUB26_MI.vhdr",
+      "recording_date": "20230404",
+      "eeg_only_sha256": "1b64eb96b6e48c5f8ab28c136be3132ccb6ea07cbfc2bef845ce793e793baf51"
+    },
+    {
+      "source_file": "Control/SUB27/SUB27_MI.vhdr",
+      "recording_date": "20230404",
+      "eeg_only_sha256": "69e08ee1d7318ab4d632c2598443c82c5e6fc1663f1f2583330d34bcaeaa63e0"
+    },
+    {
+      "source_file": "Control/SUB28/SUB28_MI.vhdr",
+      "recording_date": "20230404",
+      "eeg_only_sha256": "92670599b658dfd4354ea19ede50a7910794aabc076c544e3a0bb89a33382294"
+    },
+    {
+      "source_file": "Embodied/SUB29/SUB29_MI.vhdr",
+      "recording_date": "20230405",
+      "eeg_only_sha256": "96e6d62ff2d859819d19930f45a4a51c8b5c58a8f6ce5c0d0411c1cbab659c0f"
+    },
+    {
+      "source_file": "Control/SUB30/SUB30_MI.vhdr",
+      "recording_date": "20230406",
+      "eeg_only_sha256": "3ab7a09c367c8ea11850293502c5fca6cd03d144d93a657cde61c247fbd5591c"
+    },
+    {
+      "source_file": "Embodied/SUB31/SUB31_MI.vhdr",
+      "recording_date": "20230412",
+      "eeg_only_sha256": "0b786005f5e50a3228f60a3b053c69d029cb1370e68d0b0edc0616d4bfd49d81"
+    }
+  ],
+  "exact_eeg_recording_matches": 0,
+  "exact_cue_first_two_second_matches": 0,
+  "scope": "All selected Batista recording EEG-only hashes and retained cue-locked2second32EEG fingerprints compared against26VagajaMIrecordings and all source cue prefixes. Different timestamps support distinct acquisition. Does not establish participant identity across studies.",
+  "overlapping_recording_dates": []
+}

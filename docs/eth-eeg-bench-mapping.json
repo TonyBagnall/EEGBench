@@ -1,0 +1,291 @@
+{
+  "review_date": "2026-11-05",
+  "repo": "https://github.com/ETH-DISCO/EEG-Bench",
+  "revision": "db78d893ead8d7ca847f6ae172c0f83d93e4fa2f",
+  "readme_claimed_datasets": 25,
+  "task_referenced_adapters": 26,
+  "relation_counts": {
+    "covered-source": 11,
+    "no-identified-match": 12,
+    "probable-overlap": 2,
+    "parent-family-overlap-unresolved": 1
+  },
+  "limitations": "Counts are adapters, not independent studies or verified non-overlapping recordings. Shared cohorts/TUH parent and uncertain old archive provenance require further source checks.",
+  "datasets": [
+    {
+      "adapter": "barachant2012_m",
+      "source": "AlexMI / Zenodo 806023",
+      "relation": "covered-source",
+      "our_problems": [
+        "ImaginedRightHandFeet"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/barachant2012_m.py",
+      "code_sha256": "ec3cdb383a219325878eb6c100c696c8b0c636cf34661ce0966cd4ea1c07724d"
+    },
+    {
+      "adapter": "bcicomp_iv_2a_m",
+      "source": "BCI Competition IV 2a / BNCI2014_001",
+      "relation": "covered-source",
+      "our_problems": [
+        "ImaginedHandFeetTongue"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/bcicomp_iv_2a_m.py",
+      "code_sha256": "91363df82c42558463dfbc8c91f238738bb80f7d70842a66c5768d8937551001"
+    },
+    {
+      "adapter": "bcicomp_iv_2b_m",
+      "source": "BCI Competition IV 2b / BNCI2014_004",
+      "relation": "covered-source",
+      "our_problems": [
+        "ImaginedHandSides"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/bcicomp_iv_2b_m.py",
+      "code_sha256": "a8c7706d6d07ca65aafda9d1fd5878cabca0ce77246b63dc4738c33b34a2dcc0"
+    },
+    {
+      "adapter": "cho2017_m",
+      "source": "Cho2017 / GigaDB 100295",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/cho2017_m.py",
+      "code_sha256": "5a21bfa3ea51beaac23a8ac4d959cdb334369b1f81b4769738b4456632133a49"
+    },
+    {
+      "adapter": "faller2012_m",
+      "source": "BNCI2015_001",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/faller2012_m.py",
+      "code_sha256": "a5c1eca75235cc30f964d87bff5b6f608c13c374028a444838d85b290024f7c6"
+    },
+    {
+      "adapter": "kaya2018",
+      "source": "Figshare collection 3917698",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/kaya2018.py",
+      "code_sha256": "0d974da68bbcb4cff0115692384e497f8e7ffb0ef60450ce5bae2f4cc6ab93e6"
+    },
+    {
+      "adapter": "liu2022_m",
+      "source": "Liu2024 / Figshare 21679035 v5; adapter name is misleading",
+      "relation": "covered-source",
+      "our_problems": [
+        "ImaginedHandsStroke"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/liu2022_m.py",
+      "code_sha256": "7d94a0d4eee05b46266c96ae158f7a4e0617953e418baf15db235c183a5554dd",
+      "task_view_notes": "Our curated view excludes 05/15/49/43 and uses native imagery-stage start; benchmark window/split differs"
+    },
+    {
+      "adapter": "physionetmi_m",
+      "source": "PhysioNet eegmmidb",
+      "relation": "covered-source",
+      "our_problems": [
+        "FeetHands",
+        "ImaginedFeetHands",
+        "OpenCloseFist",
+        "ImaginedOpenCloseFist"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/physionetmi_m.py",
+      "code_sha256": "5b42ea7ec6b378b94a8f50ebeeb3867710d3bece3d6df7380c8c909a91996e6e"
+    },
+    {
+      "adapter": "scherer2015_m",
+      "source": "BNCI2015_004",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/scherer2015_m.py",
+      "code_sha256": "feb3ba06253db58a60a57c80112da7655d439e8622f71d2f70d51c7a8444f963"
+    },
+    {
+      "adapter": "schirrmeister2017_m",
+      "source": "High-Gamma Dataset / Schirrmeister2017; executed motion",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/schirrmeister2017_m.py",
+      "code_sha256": "5f07bb88f1fbf14892fd6e8369aeed71cf7152a0a4808648749a93c49298aac1"
+    },
+    {
+      "adapter": "weibo2014_m",
+      "source": "Weibo2014 / Harvard Dataverse 27306",
+      "relation": "covered-source",
+      "our_problems": [
+        "ImaginedLeftRightHand"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/weibo2014_m.py",
+      "code_sha256": "da89ca0a406f8d75c6b42765165bd365877636cb6896bf147a6a4e3a6d2a2a0b"
+    },
+    {
+      "adapter": "zhou2016_m",
+      "source": "Zhou2016",
+      "relation": "covered-source",
+      "our_problems": [
+        "ImaginedHandsFeet"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/bci/zhou2016_m.py",
+      "code_sha256": "20c33fe5f0ec3e43f8c2db097f3694f9e936ba985e7ff8c10f4b69739bcf71f8"
+    },
+    {
+      "adapter": "chb_mit",
+      "source": "PhysioNet chbmit 1.0.0",
+      "relation": "covered-source",
+      "our_problems": [
+        "ChildhoodSeizures"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/chb_mit.py",
+      "code_sha256": "70175ec35fdffa4ef474fc72b18a527e347ef3dddbde564eec72867c4250e43d"
+    },
+    {
+      "adapter": "d001_cavanagh2018a",
+      "source": "jalauer/Cavanagh2018a",
+      "relation": "probable-overlap",
+      "our_problems": [
+        "ParkinsonsRest"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d001_cavanagh2018a.py",
+      "code_sha256": "a086bd423a2023d0e25cd55c7e62e715f35a0015d1c8d4a9f4ac84c698965119",
+      "hf_repo": "jalauer/Cavanagh2018a",
+      "hf_revision": "c00e673a7a142dfaf9884a95cb4d4c4fc5589958",
+      "declared_data_license": "pddl",
+      "overlap_scope": "Rest author import script loads subject_visit_ODDBALL.vhdr and crops initial rest. Likely shared original acquisitions with oddball derivatives, not established overlapping exported samples.",
+      "evidence": "D:/Data/EEGSources/PREDCT/Cavanagh2018b/PD_Rest_from_BV.m; archived in ParkinsonsRest source_metadata"
+    },
+    {
+      "adapter": "d002_cavanagh2018b",
+      "source": "jalauer/Cavanagh2018b",
+      "relation": "covered-source",
+      "our_problems": [
+        "ParkinsonsRest"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d002_cavanagh2018b.py",
+      "code_sha256": "d3837edce4b34e5c3779831c8bc15455c3ab8e8f3da784a2533388fcd748db12",
+      "hf_repo": "jalauer/Cavanagh2018b",
+      "hf_revision": "3859849d895520fb782eb2de70be0855231e9410",
+      "declared_data_license": "pddl",
+      "our_preparation": "docs/predct-preparation.md"
+    },
+    {
+      "adapter": "d004_albrecht2019",
+      "source": "jalauer/Albrecht2019",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d004_albrecht2019.py",
+      "code_sha256": "fa0b3db6c9cfcd54ac590965c42428f2046f506342400fc121f482f46868ecc9",
+      "hf_repo": "jalauer/Albrecht2019",
+      "hf_revision": "53b7c8732740f56325687eca673ae2eed8a2c5f6",
+      "declared_data_license": "pddl"
+    },
+    {
+      "adapter": "d005_singh2018",
+      "source": "jalauer/Singh2018",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d005_singh2018.py",
+      "code_sha256": "4df10ab32cf55029d53c6364ba18e82e0636a60627a363d955c7794c641b01c1",
+      "hf_repo": "jalauer/Singh2018",
+      "hf_revision": "5e427d47860a0ac02b89789fe3a980b8b0a984d1",
+      "declared_data_license": "pddl"
+    },
+    {
+      "adapter": "d007_brown2020",
+      "source": "jalauer/Brown2020",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d007_brown2020.py",
+      "code_sha256": "56d48d9ece191b0a8a1f9dd58ab38ec644fee2cdabd7da59c8d8550cd3fb3d42",
+      "hf_repo": "jalauer/Brown2020",
+      "hf_revision": "b33cb61164ed883a9d299b310df513d37f1c2b6c",
+      "declared_data_license": "pddl"
+    },
+    {
+      "adapter": "d008_gruendler2009",
+      "source": "jalauer/Gruendler2009",
+      "relation": "covered-source",
+      "our_problems": [
+        "ObsessiveCompulsiveSymptoms"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d008_gruendler2009.py",
+      "code_sha256": "7ef46b5c96c208586f86226eda9310660e5281313cf0e5b83e7a9bcab56566ba",
+      "hf_repo": "jalauer/Gruendler2009",
+      "hf_revision": "a2fa8aa7a39f668058b715d58b049353eea4f9e7",
+      "declared_data_license": "pddl",
+      "our_preparation": "docs/predct-preparation.md"
+    },
+    {
+      "adapter": "d009_cavanagh2019",
+      "source": "jalauer/Cavanagh2019",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d009_cavanagh2019.py",
+      "code_sha256": "91312b392423af2508bc0aae2f56c2b998fa91a394a5527ec8cac90703976b08",
+      "hf_repo": "jalauer/Cavanagh2019",
+      "hf_revision": "2b799ac8c319a79838fe64bfe1aea0598c16589e",
+      "declared_data_license": "pddl"
+    },
+    {
+      "adapter": "d011_singh2020",
+      "source": "jalauer/Singh2020",
+      "relation": "covered-source",
+      "our_problems": [
+        "ParkinsonsPedalling"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d011_singh2020.py",
+      "code_sha256": "f2f846318ca11553a2863a1c9255be8387e8601be76f9477a26a92de03909eef",
+      "hf_repo": "jalauer/Singh2020",
+      "hf_revision": "7a78668238998fadcb6520d3ceda1e60dbaf7fd1",
+      "declared_data_license": "pddl",
+      "our_preparation": "docs/predct-preparation.md"
+    },
+    {
+      "adapter": "d014_singh2021",
+      "source": "jalauer/Singh2021",
+      "relation": "probable-overlap",
+      "our_problems": [
+        "ShortIntervalTask",
+        "LongIntervalTask"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/d014_singh2021.py",
+      "code_sha256": "32d580de580213cc6d07f8e5dfe9715f51497ec37666c6437632bf01a5f5d001",
+      "hf_repo": "jalauer/Singh2021",
+      "hf_revision": "85a6b39f9cd474925e354f2e0d7494ae28db613a",
+      "declared_data_license": "pddl"
+    },
+    {
+      "adapter": "sleep_telemetry",
+      "source": "PhysioNet sleep-edfx 1.0.0 sleep-telemetry",
+      "relation": "parent-family-overlap-unresolved",
+      "our_problems": [
+        "Sleep"
+      ],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/sleep_telemetry.py",
+      "code_sha256": "d6533524b228da463ce81baa00d9c2828a8295f7828f7f7617f4e0a49254836a"
+    },
+    {
+      "adapter": "tueg_abnormal",
+      "source": "TUAB v3.0.1",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/tueg_abnormal.py",
+      "code_sha256": "490b9b386cea01ce4c3e8fcafe53e112c57d24325ebd5af7467a3f4fc0cd1f80"
+    },
+    {
+      "adapter": "tueg_artifact",
+      "source": "TUAR v3.0.1",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/tueg_artifact.py",
+      "code_sha256": "04890f974f9188288a48c69389503b40c3ac0bcd538b2ccc7677896a05ca9e2e"
+    },
+    {
+      "adapter": "tueg_epilepsy",
+      "source": "TUEP v2.0.1",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "code_url": "https://github.com/ETH-DISCO/EEG-Bench/blob/db78d893ead8d7ca847f6ae172c0f83d93e4fa2f/eeg_bench/datasets/clinical/tueg_epilepsy.py",
+      "code_sha256": "40e1fdbe42a88fe9ccca860a2dbd79b9e41a0a0fc6a2d38f9c9bc657e5cedd2a"
+    }
+  ],
+  "archive_registry_count": 60,
+  "archive_selected_count": 56
+}

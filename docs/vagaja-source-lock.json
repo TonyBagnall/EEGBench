@@ -1,0 +1,17 @@
+{
+  "source_record_id": 8086086,
+  "source_revision": "Zenodo 8086086 v1",
+  "licence": "CC-BY-4.0",
+  "original_source_url": "https://zenodo.org/records/8086086",
+  "doi": "10.5281/zenodo.8086086",
+  "evidence_sha256": "1dbcbb10a8ec173f4f0505fa4935812000b36362009b1aa88e4baa53a96cf046",
+  "files": [
+    {
+      "name": "GROUPS.zip",
+      "url": "https://zenodo.org/api/records/8086086/files/GROUPS.zip/content",
+      "bytes": 2177915815,
+      "checksum": "md5:e89017e33a730ffa37f5a1a02acfc74f",
+      "sha256": "ad0b67edcadef2949c18d0e550afef26d2b362f9bec5ad473a72d49c7b151ac7"
+    }
+  ]
+}

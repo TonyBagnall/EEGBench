@@ -1,0 +1,151 @@
+{
+  "dataset": "ImaginedArmTasksPilot",
+  "source_key": "zhang",
+  "path": "D:\\Data\\EEGSources\\CompactImageryPilot\\ImaginedArmTasksPilot",
+  "train_cases": 360,
+  "test_cases": 360,
+  "subjects": 2,
+  "channels": 17,
+  "timepoints": 3960,
+  "classes": 10,
+  "frequency": 1000,
+  "size_GB": 0.838677582,
+  "licence": "CC-BY-4.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 360,
+        "shape": [
+          360,
+          17,
+          3960
+        ],
+        "class_counts": {
+          "2": 60,
+          "8": 30,
+          "9": 30,
+          "4": 30,
+          "10": 30,
+          "5": 30,
+          "1": 60,
+          "3": 30,
+          "6": 30,
+          "7": 30
+        },
+        "subjects": [
+          "H1"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 360,
+        "shape": [
+          360,
+          17,
+          3960
+        ],
+        "class_counts": {
+          "2": 60,
+          "8": 30,
+          "9": 30,
+          "4": 30,
+          "10": 30,
+          "5": 30,
+          "1": 60,
+          "3": 30,
+          "6": 30,
+          "7": 30
+        },
+        "subjects": [
+          "H12"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": 0,
+    "aeon": {
+      "load_fit_predict": true,
+      "train_cases": 30,
+      "test_cases": 30
+    },
+    "aeon_scope": "All cases exact .ts readback; aeon load/variance/fit/predict on 3 cases per class per partition",
+    "channel_order_verified_all_recordings": false,
+    "source_sensor_identity": "Unresolved: native ChannelNames empty. Every file has17 source columns, preserved as ordinals; no anatomical order verified",
+    "source_column_order_preserved_all_recordings": true,
+    "anatomical_channel_order_consistency": null
+  },
+  "channel_quality": {
+    "threshold_std_uV": 1e-07,
+    "constant_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_channel_names": [
+      "source_column_00",
+      "source_column_01",
+      "source_column_02",
+      "source_column_03",
+      "source_column_04",
+      "source_column_05",
+      "source_column_06",
+      "source_column_07",
+      "source_column_08",
+      "source_column_09",
+      "source_column_10",
+      "source_column_11",
+      "source_column_12",
+      "source_column_13",
+      "source_column_14",
+      "source_column_15",
+      "source_column_16"
+    ],
+    "removed_indices": [],
+    "policy": "Remove sensor globally if any retained trial has std <= 1e-7 uV"
+  }
+}

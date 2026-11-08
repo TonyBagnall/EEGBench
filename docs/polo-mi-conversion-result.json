@@ -1,0 +1,170 @@
+{
+  "dataset": "ImaginedAnkleRest",
+  "source_key": "polo",
+  "path": "D:\\Data\\EEG\\ImaginedAnkleRest",
+  "train_cases": 264,
+  "test_cases": 132,
+  "subjects": 6,
+  "channels": 28,
+  "timepoints": 1000,
+  "classes": 2,
+  "frequency": 250,
+  "size_GB": 0.211664567,
+  "licence": "CC-BY-4.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 264,
+        "shape": [
+          264,
+          28,
+          1000
+        ],
+        "class_counts": {
+          "1": 176,
+          "2": 88
+        },
+        "subjects": [
+          "B01",
+          "B02",
+          "B03",
+          "B04"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 132,
+        "shape": [
+          132,
+          28,
+          1000
+        ],
+        "class_counts": {
+          "1": 88,
+          "2": 44
+        },
+        "subjects": [
+          "B05",
+          "B06"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": 0,
+    "aeon": {
+      "load_fit_predict": true,
+      "train_cases": 6,
+      "test_cases": 6
+    },
+    "aeon_scope": "All cases exact .ts readback; aeon load/variance/fit/predict on 3 cases per class per partition",
+    "channel_order_verified_all_recordings": true,
+    "source_sensor_identity": "Native MAT header, BIDS/EDF or SET/GDF labels; Castillos explicit named intersection"
+  },
+  "channel_quality": {
+    "threshold_std_uV": 1e-07,
+    "constant_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_channel_names": [
+      "AF3",
+      "F3",
+      "FZ",
+      "FC3",
+      "FC1",
+      "FCZ",
+      "C5",
+      "C3",
+      "C1",
+      "CZ",
+      "CP3",
+      "CP1",
+      "CPZ",
+      "P3",
+      "PZ",
+      "PO3",
+      "AF4",
+      "F4",
+      "FC2",
+      "FC4",
+      "C2",
+      "C4",
+      "C6",
+      "CP2",
+      "CP4",
+      "P4",
+      "POZ",
+      "PO4"
+    ],
+    "removed_indices": [],
+    "policy": "Remove sensor globally if any retained trial has std <= 1e-7 uV"
+  }
+}

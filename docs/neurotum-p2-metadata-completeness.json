@@ -1,0 +1,29 @@
+{
+  "evidence": {
+    "direct": "Native XDF sensor names/order/type/XYZ, sample values, marker labels/timestamps, stream descriptors and clock offsets; original YAML label map",
+    "documented": "Participant clinical/healthy status and motor-imagination paradigm from source description/loader",
+    "assigned": "Encoded classes, last-session split, nearest-sample alignment and three-second crop; run=data assigned",
+    "inferred": "Presumed microvolt scale only; no standard sensor names or physical XYZ units invented",
+    "availability": {
+      "subject_id": true,
+      "session_id": true,
+      "run_id": "assigned",
+      "trial_id": "native marker ordinal",
+      "native_sample_indices": true,
+      "native_channel_names": true,
+      "native_channel_types": true,
+      "native_positions": "present but coordinate units/frame/measurement status unknown",
+      "physical_units": "inferred",
+      "reference": false,
+      "original_partition": false,
+      "calendar_date": false
+    }
+  },
+  "missing_or_inconsistent": [
+    "One participant per problem; shared participant is intentional, not a cross-subject benchmark",
+    "Physical unit field, original reference/ground, individual measured geometry and calendar dates/timezone not recovered",
+    "Native positions appear cap geometry, but physical units/frame and individual measurement status unspecified",
+    "LSL timestamps are monotonic clock values, not calendar times; same source hostname checked, no clock/dejitter transformations applied",
+    "Original source has no fixed train/test split; native session-number split assigned by archive"
+  ]
+}

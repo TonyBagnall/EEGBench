@@ -1,0 +1,70 @@
+{
+  "updated": "2026-11-08",
+  "registered": 74,
+  "selected": 70,
+  "completed_latest": [
+    "ImaginedHandsRobot",
+    "ImaginedGrasps",
+    "ImaginedHandsEmbodiment"
+  ],
+  "in_progress": {
+    "ImaginedHandsHaptics": {
+      "source": "Batista2022",
+      "stage": "Full conversion running after tested pre-export correction; native99recordings/4127cues/4117eligible cases audit complete",
+      "worker_directory": ".openeegbench/mi-next",
+      "progress": "docs/mi-next-three-progress.json"
+    },
+    "ImaginedAnkleRest": {
+      "source": "PoloHortiguela2025",
+      "stage": "Full conversion and validation complete on D; repository registration pending batch completion",
+      "worker_directory": ".openeegbench/mi-next",
+      "progress": "docs/mi-next-three-progress.json"
+    },
+    "ImaginedHandsFeedback": {
+      "source": "Leeuwis2021",
+      "stage": "Full conversion and validation complete on D; repository registration pending batch completion",
+      "worker_directory": ".openeegbench/mi-next",
+      "progress": "docs/mi-next-three-progress.json"
+    }
+  },
+  "deferred": {
+    "VisualCategories": {
+      "source": "Kaneshiro2015",
+      "reason": "S1 exact duplicate waveforms with conflicting exemplar labels, one conflicting category pair; S10 clean; other8 subjects not downloaded",
+      "evidence": "docs/visual-categories-s1-duplicates.json"
+    },
+    "ImaginedHandsTrunk": {
+      "source": "MIMED2024",
+      "reason": "85 cross-ID duplicate pairs, one conflicting class; full export stopped, not registered. User subset/defer choice pending.",
+      "evidence": "docs/mimed-native-quality-audit.json"
+    }
+  },
+  "no_uploads": true,
+  "original_30_results_unchanged": true,
+  "flags": {
+    "ImaginedArmTasks": "Anatomical channel names/order correspondence unknown; only native source-column ordinals preserved, no guessed montage"
+  },
+  "d_drive_access": "Resumed by user; temporary batch checksum-verified and restored to D",
+  "preparation_root": "D:/Data/EEG",
+  "last_storage_update": {
+    "problems": [
+      "ImaginedRightHandFeetRest",
+      "ImaginedLeftRightHandRest",
+      "ImaginedHandFootActions"
+    ],
+    "locations": {
+      "ImaginedRightHandFeetRest": "D:/Data/EEG/ImaginedRightHandFeetRest",
+      "ImaginedLeftRightHandRest": "D:/Data/EEG/ImaginedLeftRightHandRest",
+      "ImaginedHandFootActions": "D:/Data/EEG/ImaginedHandFootActions"
+    },
+    "transfer_report": "docs/c-temp-to-d-transfer.json",
+    "temporary_copies_removed": true
+  },
+  "motor_imagery_problems": 22,
+  "scalp_eeg_motor_imagery_problems": 21,
+  "completion_report": "docs/mi-completion-batch.md",
+  "next_candidate": {
+    "source": "Batista2022",
+    "stage": "Current authorised three-dataset batch in progress"
+  }
+}

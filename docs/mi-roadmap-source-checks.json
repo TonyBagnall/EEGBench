@@ -1,0 +1,24 @@
+[
+  {
+    "source": "Vagaja2023",
+    "licence": {
+      "id": "cc-by-4.0"
+    },
+    "bytes": 2177915815,
+    "files": 1
+  },
+  {
+    "source": "Leeuwis2021",
+    "licence": "This work is licensed under a CC BY license. For more information see https://creativecommons.org/licenses/by/4.0/",
+    "bytes": 5134871789,
+    "files": 224
+  },
+  {
+    "source": "Pan2023",
+    "error": "403 Client Error: Forbidden for url: https://dataverse.harvard.edu/api/datasets/:persistentId?persistentId=doi:10.7910/DVN/251NOW"
+  },
+  {
+    "source": "Pan2025",
+    "error": "403 Client Error: Forbidden for url: https://dataverse.harvard.edu/api/datasets/:persistentId?persistentId=doi:10.7910/DVN/GH74ZG"
+  }
+]

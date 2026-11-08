@@ -1,0 +1,16 @@
+{
+  "dataset": "Zhang2017",
+  "source_record_id": "Zhang2017",
+  "source_url": "https://doi.org/10.6084/m9.figshare.5579461.v1",
+  "source_revision": "Figshare 5579461 v1",
+  "licence": "CC-BY-4.0",
+  "files": [
+    {
+      "name": "KI.rar",
+      "url": "https://ndownloader.figshare.com/files/9700792",
+      "bytes": 1755269242,
+      "md5": "1d349c194f98ccdfab4f7328e1908704",
+      "sha256": "3183964922d822263914cf8e5cd13909857e64c31e4fd7a53f6dcc818125e41b"
+    }
+  ]
+}

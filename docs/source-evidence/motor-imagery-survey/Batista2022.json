@@ -1,0 +1,383 @@
+{
+  "created": "2023-05-23T08:33:07.156686+00:00",
+  "modified": "2026-04-22T21:40:17.204564+00:00",
+  "id": 7664069,
+  "conceptrecid": "7664068",
+  "doi": "10.5281/zenodo.7664069",
+  "conceptdoi": "10.5281/zenodo.7664068",
+  "doi_url": "https://doi.org/10.5281/zenodo.7664069",
+  "metadata": {
+    "title": "Physiological Signals During Motor Imagery Brain-Computer Interface Training Using Virtual Reality and Haptics",
+    "doi": "10.5281/zenodo.7664069",
+    "publication_date": "2022-11-17",
+    "description": "<p><strong>Participant demographics:</strong></p>\n\n<p>The sample is consisted by 20 healthy volunteers with a mean age of 24.79 years (SD = 3.54 years).&nbsp; The cohort was 68% male and 32% female.&nbsp; In terms of education, 16% had attended only high school, while 32% had a bachelor&#39;s degree, 42% a master&#39;s degree, and 11% a doctorate. All participants signed an informed consent before participating in the study in accordance with the 1964 Declaration of Helsinki.</p>\n\n<p><strong>Experiment Description:</strong></p>\n\n<p>The experiment consisted in having the subjects perform motor imagery of a bimanual rowing task with two individual paddles, one in each hand, under five experimental conditions. Four of these conditions used NeuRow (<a href=\"https://link.springer.com/chapter/10.1007/978-3-030-27950-9_1\"><strong>Vourvopoulos et al. (2016-2019</strong>))</a>&mdash;a VR environment that renders virtual arms from a first-person perspective&mdash;while the other conditions used abstract feedback based on the BCI-Graz paradigm<a href=\"https://ieeexplore.ieee.org/abstract/document/1214714\"> (<strong>Pfurtscheller et al. (2003))</strong></a>. All six conditions and their acronyms are described below:</p>\n\n<ol>\n\t<li><strong>Motor Imagery(MI)</strong>: The standard motor imagery training, with a fixation cross and directional arrows on a black background guiding the subjects through the experiment.</li>\n\t<li><strong>Motor Imagery/Motor Observation (MIMO):</strong> A motor imagery training paradigm using NeuRow, with a fixation cross and directional arrows overlaid on the VR environment, which was displayed through a monitor.</li>\n\t<li><strong>Motor Imagery/Motor Observation with Haptics (MIMOHP): </strong>A motor imagery training paradigm using NeuRow, with a fixation cross and directional arrows overlaid on the VR environment, which was displayed through a monitor. Hand controllers also provided haptic feedback through vibrotactile stimulation.</li>\n\t<li><strong>Motor Imagery/Motor Observation with VR HMD (MIMOVR):</strong> A motor imagery training paradigm using NeuRow, with a fixation cross and directional arrows overlaid on the VR environment, which was displayed through a VR HMD.</li>\n\t<li><strong>Motor Imagery/Motor Observation with VR HMD and Haptics (MIMOVRHP):</strong> A motor imagery training paradigm using NeuRow, with a fixation cross and directional arrows overlaid on the VR environment, which was displayed through a VR HMD. Hand controllers also provided haptic feedback through vibrotactile stimulation.</li>\n\t<li><strong>Motor Execution (ME):</strong> A fixation cross and directional arrows were displayed on a black background through a monitor (same as in MI), and guided the subjects through the experiment by having them tap their fingers accordingly. Data from this condition was available only after S07, so only 10 subjects<br>\n\thave performed ME.</li>\n</ol>\n\n<p>Finally, this experiment followed a within-subject design, in a randomized order of the conditions to minimize any order effects, while MI and ME conditions acted as control.</p>\n\n<p><strong>Equipment:</strong></p>\n\n<p>A wireless EEG amplifier (LiveAmp; Brain Products GmbH, Gilching, Germany) was used, with 32 active electrodes(+3 ACC) with a sampling rate of 500Hz. In addition, <strong>ECG, PPG</strong> and <strong>Respiration</strong> signals have been recorded synchronously in a bipolar montage, and connected to the EEG amplifier&rsquo;s AUX input through the Brain Products BIP2AUX adapter.</p>\n\n<p>Visual feedback was provided through a monitor in all conditions except in MIMOVR and MIMOVRHP, in which an Oculus Rift CV1 headset (Reality Labs, formerly Facebook, Inc., CA, USA) was used instead. Haptic feedback was provided through the Oculus Rift hand controllers.<br>\n&nbsp;</p>\n\n<p><strong>Channel Indices:</strong></p>\n\n<p><strong>EEG</strong>: 1-32<br>\n<strong>PPG</strong> (AUX1): 33<br>\n<strong>Resp</strong>. (AUX2): 34<br>\n<strong>ECG</strong> (AUX3): 35<br>\n<strong>ACC</strong>: 36-38</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Event codes:</strong></p>\n\n<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><strong>Code</strong></td>\n\t\t\t<td><strong>Description</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S01</td>\n\t\t\t<td>Experiment Start</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S02</td>\n\t\t\t<td>Baseline Start</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S03</td>\n\t\t\t<td>Baseline Stop</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S04</td>\n\t\t\t<td>Start Of Trial</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S05</td>\n\t\t\t<td>Cross On Screen</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S07</td>\n\t\t\t<td>class1, Left hand&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S08</td>\n\t\t\t<td>class2, Right hand&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S09</td>\n\t\t\t<td>Feedback Continuous</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S10</td>\n\t\t\t<td>End of Trial</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S11</td>\n\t\t\t<td>End Of Session</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S12</td>\n\t\t\t<td>Experiment Stop</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p><strong>Directory tree:</strong></p>\n\n<p>ROOT<br>\n|<br>\n+--- USER #<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---SESSION #<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---TASK #<br>\n|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; +---MI<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---MIMO<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---MIMOHP<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---MIMOVR<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---MIMOHPVR<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk<br>\n|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; +---ME<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Note: </strong>The first three datasets are from pilot sessions: sub-p01 to p03. From sub-01 to 19, subjects 10 and 11 have been removed due to the lack of markers. Subject sub-13, task MIMOVRHP is missing.</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Diogo Batista",
+        "affiliation": "Instituto Superior Tecnico (IST), Universidade de Lisboa"
+      },
+      {
+        "name": "Gustavo Caetano",
+        "affiliation": "Instituto Superior Tecnico (IST), Universidade de Lisboa"
+      },
+      {
+        "name": "Mathis Fleury",
+        "affiliation": "Instituto Superior Tecnico (IST), Universidade de Lisboa",
+        "orcid": "0000-0002-8308-2640"
+      },
+      {
+        "name": "Patr\u00edcia Figueiredo",
+        "affiliation": "Instituto Superior Tecnico (IST), Universidade de Lisboa",
+        "orcid": "0000-0002-0743-0869"
+      },
+      {
+        "name": "Athanasios Vourvopoulos",
+        "affiliation": "Instituto Superior Tecnico (IST), Universidade de Lisboa",
+        "orcid": "0000-0001-9676-8599"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Athanasios Vourvopoulos",
+        "affiliation": "Instituto Superior Tecnico (IST) / Universidade de Lisboa",
+        "type": "Supervisor",
+        "orcid": "0000-0001-9676-8599"
+      },
+      {
+        "name": "Patr\u00edcia Figueiredo",
+        "affiliation": "Instituto Superior Tecnico (IST) / Universidade de Lisboa",
+        "type": "Supervisor",
+        "orcid": "0000-0002-0743-0869"
+      }
+    ],
+    "keywords": [
+      "Brain-Computer Interfaces",
+      "Motor Imagery",
+      "Virtual Reality",
+      "EEG",
+      "ECG",
+      "PPG",
+      "Respiration",
+      "Haptics"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://fenix.tecnico.ulisboa.pt/cursos/mebiom21/dissertacao/565303595503004",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-dissertation",
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "thesis": {
+      "university": "Instituto Superior Tecnico (IST) / Universidade de Lisboa"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "2022.02283.PTDC",
+        "internal_id": "10.13039/501100001871::2022.02283.PTDC",
+        "funder": {
+          "name": "Funda\u00e7\u00e3o para a Ci\u00eancia e Tecnologia",
+          "doi": "10.13039/501100001871",
+          "acronym": "FCT"
+        },
+        "title": "Neuroadaptive Systems for Brain Restoration based on Virtual-Reality and Brain-Computer-Interfaces",
+        "program": "3599-PPCDT"
+      },
+      {
+        "code": "CEECIND/01073/2018/CP1572/CT0013",
+        "internal_id": "10.13039/501100001871::CEECIND/01073/2018/CP1572/CT0013",
+        "funder": {
+          "name": "Funda\u00e7\u00e3o para a Ci\u00eancia e Tecnologia",
+          "doi": "10.13039/501100001871",
+          "acronym": "FCT"
+        },
+        "title": "Not available",
+        "acronym": "CEECIND/01073/2018/CP1572/CT0013",
+        "program": "CEEC IND 2018"
+      },
+      {
+        "code": "PTDC/CCI-COM/31485/2017",
+        "internal_id": "10.13039/501100001871::PTDC/CCI-COM/31485/2017",
+        "funder": {
+          "name": "Funda\u00e7\u00e3o para a Ci\u00eancia e Tecnologia",
+          "doi": "10.13039/501100001871",
+          "acronym": "FCT"
+        },
+        "title": "Stroke Neurorehabilitation Augmented by Virtual Reality and EEG-neurofeedback: Neuroimaging-based Validation and Optimization",
+        "acronym": "PTDC/CCI-COM/31485/2017",
+        "program": "3599-PPCDT",
+        "url": "http://www.fct.pt/apoios/projectos/consulta/vglobal_projecto.phtml.en?idProjecto=152715&idElemConcurso=11767"
+      },
+      {
+        "code": "UIDB/50009/2020",
+        "internal_id": "10.13039/501100001871::UIDB/50009/2020",
+        "funder": {
+          "name": "Funda\u00e7\u00e3o para a Ci\u00eancia e Tecnologia",
+          "doi": "10.13039/501100001871",
+          "acronym": "FCT"
+        },
+        "title": "Laboratory of Robotics and Engineering Systems",
+        "acronym": "UIDB/50009/2020",
+        "program": "6817 - DCRRNI ID",
+        "url": "http://www.fct.pt/apoios/projectos/consulta/vglobal_projecto.phtml.en?idProjecto=157672&idElemConcurso=14251"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7664068"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Physiological Signals During Motor Imagery Brain-Computer Interface Training Using Virtual Reality and Haptics",
+  "links": {
+    "self": "https://zenodo.org/api/records/7664069",
+    "self_html": "https://zenodo.org/records/7664069",
+    "preview_html": "https://zenodo.org/records/7664069?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7664069",
+    "self_doi": "https://doi.org/10.5281/zenodo.7664069",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7664069",
+    "reserve_doi": "https://zenodo.org/api/records/7664069/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7664068",
+    "parent_html": "https://zenodo.org/records/7664068",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7664068",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7664068",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7664069/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7664069/sequence/default",
+    "files": "https://zenodo.org/api/records/7664069/files",
+    "media_files": "https://zenodo.org/api/records/7664069/media-files",
+    "latest": "https://zenodo.org/api/records/7664069/versions/latest",
+    "latest_html": "https://zenodo.org/records/7664069/latest",
+    "versions": "https://zenodo.org/api/records/7664069/versions",
+    "draft": "https://zenodo.org/api/records/7664069/draft",
+    "access_links": "https://zenodo.org/api/records/7664069/access/links",
+    "access_grants": "https://zenodo.org/api/records/7664069/access/grants",
+    "access_users": "https://zenodo.org/api/records/7664069/access/users",
+    "access_request": "https://zenodo.org/api/records/7664069/access/request",
+    "access": "https://zenodo.org/api/records/7664069/access",
+    "communities": "https://zenodo.org/api/records/7664069/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7664069/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7664069/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7664069/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/7664069/quota-increase",
+    "requests": "https://zenodo.org/api/records/7664069/requests"
+  },
+  "updated": "2026-04-22T21:40:17.204564+00:00",
+  "recid": "7664069",
+  "revision": 8,
+  "files": [
+    {
+      "id": "9a58702c-373f-4ed3-9e68-5bd720ed245c",
+      "key": "sub-16.zip",
+      "size": 151815006,
+      "checksum": "md5:1df4a49c5b3ab676bc27161191dc1dd3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-16.zip/content"
+      }
+    },
+    {
+      "id": "8cd7e809-2bcf-4a2d-8ad3-aedf76d8c4dd",
+      "key": "sub-15.zip",
+      "size": 150891753,
+      "checksum": "md5:650a9c79d8efd72bbd06b4393a04c31a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-15.zip/content"
+      }
+    },
+    {
+      "id": "4f53bd4c-fa14-4fef-8334-266a5299a393",
+      "key": "sub-05.zip",
+      "size": 138060094,
+      "checksum": "md5:82b9c73d1f5465d20603fd0829d10f0a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-05.zip/content"
+      }
+    },
+    {
+      "id": "162e9cba-7bdd-4a8d-b104-726edd7b3d39",
+      "key": "sub-03.zip",
+      "size": 136956977,
+      "checksum": "md5:02b75f15710b41734bf2e748fa562574",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-03.zip/content"
+      }
+    },
+    {
+      "id": "7e8e30f9-7af8-466c-8ba7-c5014f053e0d",
+      "key": "sub-04.zip",
+      "size": 138176128,
+      "checksum": "md5:bceef36338eb9dc053bc28e4e8366954",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-04.zip/content"
+      }
+    },
+    {
+      "id": "a42852dd-13f2-4bfd-a964-3e26d6a4bf40",
+      "key": "sub-19.zip",
+      "size": 151342365,
+      "checksum": "md5:d5c1d54559c0fc424ecc0957fe915614",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-19.zip/content"
+      }
+    },
+    {
+      "id": "cd8767dd-1aa1-4570-81e2-99ca715f1e12",
+      "key": "sub-p01.zip",
+      "size": 142731293,
+      "checksum": "md5:196bb0e35d223531546c214cddef84ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-p01.zip/content"
+      }
+    },
+    {
+      "id": "1a321318-e4ba-458c-a360-50546763af6b",
+      "key": "sub-p02.zip",
+      "size": 141319349,
+      "checksum": "md5:f770e81f3cb9200d4b13fed80365510e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-p02.zip/content"
+      }
+    },
+    {
+      "id": "37b08ad6-bf17-4f1d-845b-6bdffb04cdd1",
+      "key": "sub-p03.zip",
+      "size": 126857771,
+      "checksum": "md5:fb727a43bc755133e19d34d0a3ab8070",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-p03.zip/content"
+      }
+    },
+    {
+      "id": "bc6ba9f4-54cc-4db4-9252-510c9cfd86aa",
+      "key": "sub-13.zip",
+      "size": 122205913,
+      "checksum": "md5:021d6b5e0e93cd4b3d9facfecc23e268",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-13.zip/content"
+      }
+    },
+    {
+      "id": "ccaeb09b-a1ff-4d2c-aea9-7f125f7733d2",
+      "key": "sub-14.zip",
+      "size": 150851595,
+      "checksum": "md5:d6a2eb2a53ae10ac4fd2b0d0420f05b5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-14.zip/content"
+      }
+    },
+    {
+      "id": "ff880191-56d9-4584-9041-25a9bb2b1f68",
+      "key": "sub-01.zip",
+      "size": 120052339,
+      "checksum": "md5:0f94741d86cea15009bbeb43ed55e850",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-01.zip/content"
+      }
+    },
+    {
+      "id": "56d26c2f-f426-4d0f-a76e-21220b8a0bb7",
+      "key": "sub-18.zip",
+      "size": 147134260,
+      "checksum": "md5:bbbd10800eb1d13de15292b1893ea409",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-18.zip/content"
+      }
+    },
+    {
+      "id": "584cb7c9-4d11-4e53-9a3b-6af6c8d05f9c",
+      "key": "sub-08.zip",
+      "size": 151651992,
+      "checksum": "md5:cb3a117f2e6911959ad763c6af5a0b44",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-08.zip/content"
+      }
+    },
+    {
+      "id": "f32a2c8c-e442-4e06-98b1-e2b74faaf8a0",
+      "key": "sub-07.zip",
+      "size": 155667559,
+      "checksum": "md5:eb59d70ffbb754a40aefee37285c4094",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-07.zip/content"
+      }
+    },
+    {
+      "id": "a932f2ba-875f-4d9d-83c2-d0d26feff57a",
+      "key": "sub-17.zip",
+      "size": 149955988,
+      "checksum": "md5:c05123ba792de4df68f0f566816f1432",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-17.zip/content"
+      }
+    },
+    {
+      "id": "8edbc402-6a77-4269-8d5d-6fe9889b5d5b",
+      "key": "sub-02.zip",
+      "size": 141480533,
+      "checksum": "md5:fa88b5237799ac9d82005b0364afbcc7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-02.zip/content"
+      }
+    },
+    {
+      "id": "9ce17dfc-0033-4893-bce8-2903f31d53c6",
+      "key": "sub-06.zip",
+      "size": 143136883,
+      "checksum": "md5:f161a384e7ecad79e18abb438eb82dd7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-06.zip/content"
+      }
+    },
+    {
+      "id": "448906f9-bf40-4d9a-aa80-8d89dd512b7d",
+      "key": "sub-12.zip",
+      "size": 153847139,
+      "checksum": "md5:3a2ffb16c84d8b5fbbd97a68bf0aafd6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-12.zip/content"
+      }
+    },
+    {
+      "id": "5a9a5a29-f843-4f6f-9ad3-85adcb122ac2",
+      "key": "sub-09.zip",
+      "size": 148580882,
+      "checksum": "md5:537a24c670ea0fc62ae02dea78d47933",
+      "links": {
+        "self": "https://zenodo.org/api/records/7664069/files/sub-09.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "189346"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1325,
+    "unique_downloads": 1185,
+    "views": 700,
+    "unique_views": 659,
+    "version_downloads": 1324,
+    "version_unique_downloads": 1184,
+    "version_unique_views": 656,
+    "version_views": 697
+  },
+  "state": "done",
+  "submitted": true
+}

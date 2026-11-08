@@ -1,0 +1,317 @@
+{
+  "Rodrigues2017": {
+    "source_subjects": 20,
+    "recordings": [
+      {
+        "file": "subject_01.mat",
+        "shape": [
+          119808,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_02.mat",
+        "shape": [
+          183648,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_03.mat",
+        "shape": [
+          91072,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_04.mat",
+        "shape": [
+          97696,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_05.mat",
+        "shape": [
+          95136,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_06.mat",
+        "shape": [
+          97120,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_07.mat",
+        "shape": [
+          63104,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_08.mat",
+        "shape": [
+          78816,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_09.mat",
+        "shape": [
+          74112,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_10.mat",
+        "shape": [
+          79264,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_11.mat",
+        "shape": [
+          89440,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_12.mat",
+        "shape": [
+          87520,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_13.mat",
+        "shape": [
+          85536,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_14.mat",
+        "shape": [
+          77504,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_15.mat",
+        "shape": [
+          77728,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_16.mat",
+        "shape": [
+          91424,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_17.mat",
+        "shape": [
+          84640,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_18.mat",
+        "shape": [
+          89824,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_19.mat",
+        "shape": [
+          90912,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      },
+      {
+        "file": "subject_20.mat",
+        "shape": [
+          81760,
+          19
+        ],
+        "cues": 10,
+        "complete_10s": 10,
+        "classes": [
+          1,
+          2
+        ]
+      }
+    ],
+    "embedded_header": [
+      "Time",
+      "Fp1",
+      "Fp2",
+      "Fc5",
+      "Fz",
+      "Fc6",
+      "T7",
+      "Cz",
+      "T8",
+      "P7",
+      "P3",
+      "Pz",
+      "P4",
+      "P8",
+      "O1",
+      "Oz",
+      "O2",
+      "EyesClosed",
+      "EyesOpened"
+    ],
+    "note": "Subject 7 has ten complete 10-second marker windows despite MOABB exclusion; quality and independence still need review"
+  },
+  "BrainForm": {
+    "subjects_in_BIDS_archive": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24"
+    ]
+  },
+  "scope": "Native metadata inspection; not completed classification conversions"
+}

@@ -1,0 +1,214 @@
+[
+  {
+    "dataset": "RomaniBF2025ERP",
+    "record_id": 17225966,
+    "doi": "10.5281/zenodo.17225966",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "metadata_url": "https://zenodo.org/api/records/17225966",
+    "files": [
+      {
+        "name": "BIDS.zip",
+        "bytes": 63636817,
+        "checksum": "md5:3aa8015fae4fb0de4ce08c6366518608",
+        "url": "https://zenodo.org/api/records/17225966/files/BIDS.zip/content"
+      }
+    ]
+  },
+  {
+    "dataset": "Rodrigues2017",
+    "record_id": 2605110,
+    "doi": "10.5281/zenodo.2605110",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "metadata_url": "https://zenodo.org/api/records/2605110",
+    "files": [
+      {
+        "name": "header.csv",
+        "bytes": 79,
+        "checksum": "md5:2b039ba5523ccf156e852a19fb9edec5",
+        "url": "https://zenodo.org/api/records/2605110/files/header.csv/content"
+      },
+      {
+        "name": "subject_12.mat",
+        "bytes": 4841124,
+        "checksum": "md5:591976e7f78b156ada4ee94355a49d20",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_12.mat/content"
+      },
+      {
+        "name": "subject_09.mat",
+        "bytes": 4330459,
+        "checksum": "md5:d18ccb296f88a22374472a54c25c3945",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_09.mat/content"
+      },
+      {
+        "name": "subject_08.mat",
+        "bytes": 4642383,
+        "checksum": "md5:a4ef3ff942903157b62b37bbd5ef4791",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_08.mat/content"
+      },
+      {
+        "name": "header.mat",
+        "bytes": 308,
+        "checksum": "md5:cd5dd4f0160c41d09582237b0f4042cf",
+        "url": "https://zenodo.org/api/records/2605110/files/header.mat/content"
+      },
+      {
+        "name": "subject_14.mat",
+        "bytes": 4517057,
+        "checksum": "md5:91051f534126b3cff668604ed34a0ee4",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_14.mat/content"
+      },
+      {
+        "name": "subject_13.mat",
+        "bytes": 4776328,
+        "checksum": "md5:4f534b96e0d56fc53dbee8566d36a6ff",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_13.mat/content"
+      },
+      {
+        "name": "subject_07.mat",
+        "bytes": 3974794,
+        "checksum": "md5:e5cac3da3085c9e08c32b83b7f80e0ec",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_07.mat/content"
+      },
+      {
+        "name": "subject_03.mat",
+        "bytes": 4938563,
+        "checksum": "md5:6c2f39092f872b98b77310d56a8df4b5",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_03.mat/content"
+      },
+      {
+        "name": "subject_06.mat",
+        "bytes": 5312449,
+        "checksum": "md5:a6fda66d9c082d225dd931fa635c27fb",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_06.mat/content"
+      },
+      {
+        "name": "subject_04.mat",
+        "bytes": 6140547,
+        "checksum": "md5:7f6193a6ddc18bcc6606f3d51d8a7070",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_04.mat/content"
+      },
+      {
+        "name": "subject_02.mat",
+        "bytes": 10171861,
+        "checksum": "md5:21ec549e184c6a89bfb85494c5ca9cd4",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_02.mat/content"
+      },
+      {
+        "name": "subject_01.mat",
+        "bytes": 7145990,
+        "checksum": "md5:73e962e2818450cf9235405313f1bd71",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_01.mat/content"
+      },
+      {
+        "name": "subject_20.mat",
+        "bytes": 5052300,
+        "checksum": "md5:c9fa6da5c993b6d9033cd1a5fc01264e",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_20.mat/content"
+      },
+      {
+        "name": "subject_19.mat",
+        "bytes": 4188911,
+        "checksum": "md5:e44b9dea51cd8a47eeaea97e4e9ec55f",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_19.mat/content"
+      },
+      {
+        "name": "subject_05.mat",
+        "bytes": 5121218,
+        "checksum": "md5:8f8e04099eac28304123d9c7a09d3bda",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_05.mat/content"
+      },
+      {
+        "name": "subject_18.mat",
+        "bytes": 5592100,
+        "checksum": "md5:2438cba9b070cf3e0041e7544b89979b",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_18.mat/content"
+      },
+      {
+        "name": "subject_17.mat",
+        "bytes": 5149333,
+        "checksum": "md5:d4021a380664332485f91f76a50fbaf3",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_17.mat/content"
+      },
+      {
+        "name": "subject_16.mat",
+        "bytes": 5330619,
+        "checksum": "md5:462bdd5f3dbd324e66cfb512da727dad",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_16.mat/content"
+      },
+      {
+        "name": "subject_15.mat",
+        "bytes": 4380724,
+        "checksum": "md5:71faeb50dcc301ab8401b6f38ea927bd",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_15.mat/content"
+      },
+      {
+        "name": "subject_11.mat",
+        "bytes": 4809101,
+        "checksum": "md5:eee92082bf0afbe259deff140bc618ec",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_11.mat/content"
+      },
+      {
+        "name": "demographic.mat",
+        "bytes": 254,
+        "checksum": "md5:a1157d771bee4519672accf925d7a544",
+        "url": "https://zenodo.org/api/records/2605110/files/demographic.mat/content"
+      },
+      {
+        "name": "demographic_header.mat",
+        "bytes": 246,
+        "checksum": "md5:b0d9716f1b70a5885b3918fca59cc360",
+        "url": "https://zenodo.org/api/records/2605110/files/demographic_header.mat/content"
+      },
+      {
+        "name": "demographic_header.csv",
+        "bytes": 25,
+        "checksum": "md5:08b594b33fa302da9c1472f32e9278db",
+        "url": "https://zenodo.org/api/records/2605110/files/demographic_header.csv/content"
+      },
+      {
+        "name": "subject_10.mat",
+        "bytes": 4849197,
+        "checksum": "md5:61bf74387325ef7320d93d3eab03bffa",
+        "url": "https://zenodo.org/api/records/2605110/files/subject_10.mat/content"
+      }
+    ]
+  },
+  {
+    "dataset": "Castillos2023",
+    "record_id": 8255618,
+    "doi": "10.5281/zenodo.8255618",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "metadata_url": "https://zenodo.org/api/records/8255618",
+    "files": [
+      {
+        "name": "4Class-CVEP.zip",
+        "bytes": 587883503,
+        "checksum": "md5:51aafc3d0a0a7e91244e2743043c5950",
+        "url": "https://zenodo.org/api/records/8255618/files/4Class-CVEP.zip/content"
+      }
+    ]
+  },
+  {
+    "dataset": "Kumar2024",
+    "record_id": 10694880,
+    "doi": "10.5281/zenodo.10694880",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "metadata_url": "https://zenodo.org/api/records/10694880",
+    "files": [
+      {
+        "name": "Online_Offline_Race.zip",
+        "bytes": 4470654230,
+        "checksum": "md5:89f4befec61d2bb82d09c1b6b2f43f01",
+        "url": "https://zenodo.org/api/records/10694880/files/Online_Offline_Race.zip/content"
+      }
+    ]
+  }
+]

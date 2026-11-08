@@ -1,0 +1,48 @@
+{
+  "batista": {
+    "evidence": {
+      "direct": "Native subject/session folders, filenames/timestamps, class/end/segment markers, sensor order/calibration/template coordinates and filter tables",
+      "documented": "Original data licence, modality roles, single-session NeuRow protocol and cohort summary",
+      "assigned": "Encoded labels, whole-subject split, cue ordinal and common safe crop; no invented individual demographics"
+    },
+    "missing_or_inconsistent": [
+      "Pilot foldersp01-p03 use filename subject01-03 tokens; folder IDs remain primary, both kept",
+      "Reference/ground, individual demographics/timezone and measured geometry unavailable",
+      "Some source trials have lost-sample gaps; exclude complete affected trials, preserve markers",
+      "Different imagery cue counts are retained, not forced to nominal40",
+      "ME executed-movement recordings excluded; feedback conditions pooled as one problem",
+      "Excluded auxiliary labels differ across source recordings; generic Aux1-Aux3 physiological identities cannot be assigned from the named schema without evidence",
+      "Some source headers omit coordinates and/or hardware filter tables; retain unknowns, no generated montage or assumed filter history substituted"
+    ]
+  },
+  "polo": {
+    "evidence": {
+      "direct": "Native configured channel labels/order/indexes/frequency/2Dpositions, release/native IDs/date/repetition, sample task codes/phase bounds and preprocessing-step table",
+      "documented": "Original licence,28EEG/4EOG/3inertial roles, single-visit ankle imagery/exoskeleton protocol",
+      "inferred": "Microvolt scale only, factor1; coordinate units and missing reference not invented",
+      "assigned": "Whole-subject split and encoded classes; release IDs linked explicitly to native aliases"
+    },
+    "missing_or_inconsistent": [
+      "Release folder IDs may differ from native user_code/filename; one-to-one mapping must hold across all files/conditions",
+      "Some MATLAB string objects opaque to SciPy; originals retained rather than guessed",
+      "Physical units, reference/ground and individual demographics not explicitly recovered",
+      "Native configured2D positions retained, coordinate units/frame/measurement status unknown",
+      "Trigger quality vectors retained by source bounds/hash/ranges; semantics not guessed or used for undocumented rejection"
+    ]
+  },
+  "leeuwis": {
+    "evidence": {
+      "direct": "Native CSV sensor order, trial/class/time axes, subject/file IDs; original questionnaires provide individual demographics/cognitive scores",
+      "documented": "Original licence,250Hz,one visit/four phases, reference/ground and paper processing protocol",
+      "inferred": "Microvolt interpretation only, native numbers unchanged; no guessed XYZ",
+      "assigned": "Encoded1/2labels and whole-subject benchmark split; source calibration/feedback phases retained"
+    },
+    "missing_or_inconsistent": [
+      "CSV physical units and exact supplied filtering history not explicit; inferred microvolt scale, factor1",
+      "No original continuous offsets, visit/date IDs or individual electrode positions",
+      "Original Data Report lists36female+21male=57 while description/release has55EEG subjects; use actual CSV membership and mapped questionnaire records",
+      "README prose electrode list order differs from actual CSV column order; actual CSV is authoritative",
+      "Subject40 feedback filenames irregular; preserve exact filenames and pinned file-ID/run mapping"
+    ]
+  }
+}

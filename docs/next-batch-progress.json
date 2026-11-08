@@ -1,0 +1,42 @@
+{
+  "updated": "2026-11-08",
+  "handover": "DATASET_CONVERSION_HANDOVER.md",
+  "registered_before": 66,
+  "selected_before": 62,
+  "candidates": [
+    {
+      "source": "Farabbi2020",
+      "name": "ImaginedHandsRobot",
+      "licence": "CC-BY-4.0",
+      "source_GB": 2.532366244,
+      "status": "Complete, fully validated, registered and sidecar artifact hashes verified on D"
+    },
+    {
+      "source": "BCIComp2020UpperLimb",
+      "name": "ImaginedGrasps",
+      "licence": "CC-BY-4.0 original OSF project; recheck current evidence",
+      "source_GB": 5.811008369,
+      "status": "Complete, fully validated, registered and sidecar artifact hashes verified on D"
+    },
+    {
+      "source": "Kodera2023",
+      "licence": "CC-BY-4.0",
+      "source_GB": 1.774088549,
+      "status": "reserve: two sensor/rate cohorts require identity and safe harmonisation review; no EEG download"
+    }
+  ],
+  "adapter_tests": "79passed",
+  "registered_current": 74,
+  "selected_current": 70,
+  "next_candidate": {
+    "source": "Vagaja2023",
+    "name": "ImaginedHandsEmbodiment",
+    "stage": "Complete, fully validated and registered798/240cases32x4997at500Hz"
+  },
+  "motor_imagery_current": 22,
+  "completion_report": "docs/mi-completion-batch.md",
+  "following_candidate": {
+    "source": "Batista2022",
+    "stage": "Not downloaded; original identity/quality checks before admission"
+  }
+}

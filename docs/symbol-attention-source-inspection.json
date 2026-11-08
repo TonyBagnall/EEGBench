@@ -1,0 +1,8600 @@
+{
+  "recordings": [
+    {
+      "source_file": "sub-01/ses-01/eeg/sub-01_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "01",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 891,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-01/ses-01/eeg/sub-01_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "01",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1489,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-01/ses-01/eeg/sub-01_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "01",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1983,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1698,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-01/ses-01/eeg/sub-01_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "01",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2379,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2080,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-01/ses-01/eeg/sub-01_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "01",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-01/ses-01/eeg/sub-01_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "01",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1116,
+        "2": 275
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-01/ses-02/eeg/sub-01_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "01",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 894,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-01/ses-02/eeg/sub-01_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "01",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1791,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1493,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-01/ses-02/eeg/sub-01_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "01",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1705,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-01/ses-02/eeg/sub-01_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "01",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2089,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-01/ses-02/eeg/sub-01_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "01",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2583,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-01/ses-02/eeg/sub-01_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "01",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 277,
+        "1": 1116
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-01/ses-02/eeg/sub-01_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "01",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 280,
+        "1": 1113
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-01/ses-03/eeg/sub-01_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "01",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 895,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-01/ses-03/eeg/sub-01_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "01",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1787,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1489,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-01/ses-03/eeg/sub-01_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "01",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1969,
+      "missing_target_flashes": 179,
+      "label_counts": {
+        "1": 1535,
+        "2": 255
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-01/ses-03/eeg/sub-01_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "01",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2383,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 295
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-01/ses-03/eeg/sub-01_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "01",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2582,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-01/ses-03/eeg/sub-01_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "01",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-01/ses-03/eeg/sub-01_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "01",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-010/ses-01/eeg/sub-010_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "010",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 894,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-010/ses-01/eeg/sub-010_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "010",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 298,
+        "1": 1491
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-010/ses-01/eeg/sub-010_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "010",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1986,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1704,
+        "2": 282
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-010/ses-01/eeg/sub-010_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "010",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2384,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-010/ses-01/eeg/sub-010_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "010",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2582,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-010/ses-01/eeg/sub-010_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "010",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 277,
+        "1": 1113
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-010/ses-01/eeg/sub-010_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "010",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-010/ses-02/eeg/sub-010_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "010",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 894,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-010/ses-02/eeg/sub-010_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "010",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-010/ses-02/eeg/sub-010_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "010",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1983,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1699,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-010/ses-02/eeg/sub-010_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "010",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2385,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-010/ses-02/eeg/sub-010_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "010",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2582,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-010/ses-02/eeg/sub-010_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "010",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1354,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1083,
+        "2": 271
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-010/ses-02/eeg/sub-010_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "010",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-010/ses-03/eeg/sub-010_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "010",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-010/ses-03/eeg/sub-010_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "010",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1488,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-010/ses-03/eeg/sub-010_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "010",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1703,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-010/ses-03/eeg/sub-010_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "010",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2380,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2082,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-010/ses-03/eeg/sub-010_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "010",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2585,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2299,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-010/ses-03/eeg/sub-010_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "010",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-010/ses-03/eeg/sub-010_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "010",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-011/ses-01/eeg/sub-011_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "011",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 299,
+        "1": 894
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-011/ses-01/eeg/sub-011_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "011",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-011/ses-01/eeg/sub-011_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "011",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1990,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 283,
+        "1": 1707
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-011/ses-01/eeg/sub-011_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "011",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2089,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-011/ses-01/eeg/sub-011_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "011",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2581,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2295,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-011/ses-01/eeg/sub-011_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "011",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 276
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-011/ses-01/eeg/sub-011_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "011",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 278,
+        "1": 1111
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "011",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 894,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "011",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1491,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "011",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1986,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "011",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2385,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 298,
+        "1": 2087
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "011",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2581,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2294,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "011",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1110,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "011",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "011",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1190,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 894,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "011",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1786,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 298,
+        "1": 1488
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "011",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 282,
+        "1": 1706
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "011",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2385,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2089,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "011",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2583,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "011",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "011",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-012/ses-01/eeg/sub-012_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "012",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-012/ses-01/eeg/sub-012_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "012",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-012/ses-01/eeg/sub-012_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "012",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-012/ses-01/eeg/sub-012_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "012",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2384,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-012/ses-01/eeg/sub-012_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "012",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2586,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2300,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-012/ses-01/eeg/sub-012_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "012",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1117,
+        "2": 276
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-012/ses-01/eeg/sub-012_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "012",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 279,
+        "1": 1112
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-012/ses-02/eeg/sub-012_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "012",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-012/ses-02/eeg/sub-012_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "012",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1786,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1488,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-012/ses-02/eeg/sub-012_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "012",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1991,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1707,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-012/ses-02/eeg/sub-012_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "012",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-012/ses-02/eeg/sub-012_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "012",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2587,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2299,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-012/ses-02/eeg/sub-012_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "012",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-012/ses-02/eeg/sub-012_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "012",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 278,
+        "1": 1114
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-012/ses-03/eeg/sub-012_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "012",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 299,
+        "1": 890
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-012/ses-03/eeg/sub-012_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "012",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1492,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-012/ses-03/eeg/sub-012_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "012",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-012/ses-03/eeg/sub-012_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "012",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-012/ses-03/eeg/sub-012_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "012",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 287,
+        "1": 2297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-012/ses-03/eeg/sub-012_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "012",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-012/ses-03/eeg/sub-012_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "012",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 277,
+        "1": 1112
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-013/ses-01/eeg/sub-013_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "013",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 895,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-013/ses-01/eeg/sub-013_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "013",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1785,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1487,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-013/ses-01/eeg/sub-013_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "013",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1986,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-013/ses-01/eeg/sub-013_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "013",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2089,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-013/ses-01/eeg/sub-013_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "013",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2586,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2300,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-013/ses-01/eeg/sub-013_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "013",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-013/ses-01/eeg/sub-013_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "013",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 280,
+        "1": 1110
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-013/ses-02/eeg/sub-013_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "013",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1194,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 896,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-013/ses-02/eeg/sub-013_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "013",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1492,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-013/ses-02/eeg/sub-013_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "013",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1997,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1714,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-013/ses-02/eeg/sub-013_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "013",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 298,
+        "1": 2088
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-013/ses-02/eeg/sub-013_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "013",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-013/ses-02/eeg/sub-013_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "013",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-013/ses-02/eeg/sub-013_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "013",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-013/ses-03/eeg/sub-013_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "013",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1190,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-013/ses-03/eeg/sub-013_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "013",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1784,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1487,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-013/ses-03/eeg/sub-013_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "013",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1983,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 285,
+        "1": 1698
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-013/ses-03/eeg/sub-013_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "013",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2378,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2080,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-013/ses-03/eeg/sub-013_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "013",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2576,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2290,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-013/ses-03/eeg/sub-013_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "013",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-013/ses-03/eeg/sub-013_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "013",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 278,
+        "1": 1113
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-014/ses-01/eeg/sub-014_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "014",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 895,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-014/ses-01/eeg/sub-014_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "014",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1489,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-014/ses-01/eeg/sub-014_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "014",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1987,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1699,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-014/ses-01/eeg/sub-014_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "014",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-014/ses-01/eeg/sub-014_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "014",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2586,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-014/ses-01/eeg/sub-014_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "014",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 279,
+        "1": 1113
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-014/ses-01/eeg/sub-014_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "014",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-014/ses-02/eeg/sub-014_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "014",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1194,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 299,
+        "1": 895
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-014/ses-02/eeg/sub-014_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "014",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1792,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1493,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-014/ses-02/eeg/sub-014_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "014",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1989,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 283,
+        "1": 1706
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-014/ses-02/eeg/sub-014_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "014",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2092,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-014/ses-02/eeg/sub-014_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "014",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2588,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 290
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-014/ses-02/eeg/sub-014_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "014",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1115,
+        "2": 275
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-014/ses-02/eeg/sub-014_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "014",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-014/ses-03/eeg/sub-014_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "014",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-014/ses-03/eeg/sub-014_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "014",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1795,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1497,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-014/ses-03/eeg/sub-014_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "014",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1995,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1711,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-014/ses-03/eeg/sub-014_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "014",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-014/ses-03/eeg/sub-014_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "014",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2585,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2297,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-014/ses-03/eeg/sub-014_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "014",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-014/ses-03/eeg/sub-014_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "014",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-015/ses-01/eeg/sub-015_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "015",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 299,
+        "1": 892
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-015/ses-01/eeg/sub-015_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "015",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-015/ses-01/eeg/sub-015_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "015",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1986,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1703,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-015/ses-01/eeg/sub-015_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "015",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2385,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2086,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-015/ses-01/eeg/sub-015_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "015",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2585,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2299,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-015/ses-01/eeg/sub-015_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "015",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-015/ses-01/eeg/sub-015_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "015",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-015/ses-02/eeg/sub-015_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "015",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 297,
+        "1": 895
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-015/ses-02/eeg/sub-015_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "015",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1491,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-015/ses-02/eeg/sub-015_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "015",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1989,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1705,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-015/ses-02/eeg/sub-015_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "015",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-015/ses-02/eeg/sub-015_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "015",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-015/ses-02/eeg/sub-015_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "015",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 279,
+        "1": 1109
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-015/ses-02/eeg/sub-015_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "015",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 277,
+        "1": 1111
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-015/ses-03/eeg/sub-015_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "015",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 896,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-015/ses-03/eeg/sub-015_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "015",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-015/ses-03/eeg/sub-015_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "015",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1983,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1698,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-015/ses-03/eeg/sub-015_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "015",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2383,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2085,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-015/ses-03/eeg/sub-015_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "015",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2583,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-015/ses-03/eeg/sub-015_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "015",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-015/ses-03/eeg/sub-015_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "015",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 279,
+        "1": 1111
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-016/ses-01/eeg/sub-016_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "016",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1190,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-016/ses-01/eeg/sub-016_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "016",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1785,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1489,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-016/ses-01/eeg/sub-016_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "016",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1982,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1699,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-016/ses-01/eeg/sub-016_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "016",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2382,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2083,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-016/ses-01/eeg/sub-016_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "016",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2579,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2295,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-016/ses-01/eeg/sub-016_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "016",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1107,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-016/ses-01/eeg/sub-016_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "016",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-016/ses-02/eeg/sub-016_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "016",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-016/ses-02/eeg/sub-016_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "016",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1700,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-016/ses-02/eeg/sub-016_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "016",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 284,
+        "1": 1700
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-016/ses-02/eeg/sub-016_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "016",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2383,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2086,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-016/ses-02/eeg/sub-016_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "016",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2578,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2291,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-016/ses-02/eeg/sub-016_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "016",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 279,
+        "1": 1110
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-016/ses-02/eeg/sub-016_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "016",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1108,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-016/ses-03/eeg/sub-016_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "016",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1188,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 890,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-016/ses-03/eeg/sub-016_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "016",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1492,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-016/ses-03/eeg/sub-016_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "016",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1980,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1695,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-016/ses-03/eeg/sub-016_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "016",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2377,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2077,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-016/ses-03/eeg/sub-016_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "016",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2577,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2288,
+        "2": 289
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-016/ses-03/eeg/sub-016_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "016",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 278,
+        "1": 1110
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-016/ses-03/eeg/sub-016_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "016",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 277,
+        "1": 1110
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-017/ses-01/eeg/sub-017_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "017",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-017/ses-01/eeg/sub-017_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "017",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1782,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1483,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-017/ses-01/eeg/sub-017_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "017",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1982,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1698,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-017/ses-01/eeg/sub-017_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "017",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2379,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 299,
+        "1": 2080
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-017/ses-01/eeg/sub-017_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "017",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2577,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2291,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-017/ses-01/eeg/sub-017_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "017",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 278,
+        "1": 1108
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-017/ses-01/eeg/sub-017_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "017",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 273
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-017/ses-02/eeg/sub-017_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "017",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1188,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-017/ses-02/eeg/sub-017_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "017",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1492,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-017/ses-02/eeg/sub-017_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "017",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1983,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1704,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-017/ses-02/eeg/sub-017_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "017",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2381,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2085,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-017/ses-02/eeg/sub-017_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "017",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2582,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2297,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-017/ses-02/eeg/sub-017_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "017",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 276
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-017/ses-02/eeg/sub-017_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "017",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1108,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-017/ses-03/eeg/sub-017_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "017",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1190,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 297,
+        "1": 893
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-017/ses-03/eeg/sub-017_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "017",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1786,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-017/ses-03/eeg/sub-017_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "017",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1980,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 283,
+        "1": 1697
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-017/ses-03/eeg/sub-017_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "017",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2377,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2077,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-017/ses-03/eeg/sub-017_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "017",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2581,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2294,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-017/ses-03/eeg/sub-017_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "017",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1109,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-017/ses-03/eeg/sub-017_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "017",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1108,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-018/ses-01/eeg/sub-018_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "018",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 894,
+        "2": 295
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-018/ses-01/eeg/sub-018_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "018",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1775,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 296,
+        "1": 1479
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-018/ses-01/eeg/sub-018_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "018",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1977,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1695,
+        "2": 282
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-018/ses-01/eeg/sub-018_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "018",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2376,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2079,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-018/ses-01/eeg/sub-018_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "018",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2573,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2289,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-018/ses-01/eeg/sub-018_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "018",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-018/ses-01/eeg/sub-018_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "018",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1109,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-018/ses-02/eeg/sub-018_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "018",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-018/ses-02/eeg/sub-018_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "018",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1786,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1487,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-018/ses-02/eeg/sub-018_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "018",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1981,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1694,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-018/ses-02/eeg/sub-018_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "018",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2381,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 296,
+        "1": 2085
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-018/ses-02/eeg/sub-018_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "018",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2579,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2292,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-018/ses-02/eeg/sub-018_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "018",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-018/ses-02/eeg/sub-018_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "018",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-018/ses-03/eeg/sub-018_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "018",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 890,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-018/ses-03/eeg/sub-018_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "018",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1493,
+        "2": 295
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-018/ses-03/eeg/sub-018_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "018",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 285,
+        "1": 1699
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-018/ses-03/eeg/sub-018_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "018",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2384,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 296,
+        "1": 2088
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-018/ses-03/eeg/sub-018_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "018",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2580,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2293,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-018/ses-03/eeg/sub-018_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "018",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1110,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-018/ses-03/eeg/sub-018_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "018",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1110,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-019/ses-01/eeg/sub-019_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "019",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1190,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 298,
+        "1": 892
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-019/ses-01/eeg/sub-019_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "019",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1787,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-019/ses-01/eeg/sub-019_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "019",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1699,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-019/ses-01/eeg/sub-019_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "019",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2381,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2083,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-019/ses-01/eeg/sub-019_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "019",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2583,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-019/ses-01/eeg/sub-019_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "019",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-019/ses-03/eeg/sub-019_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "019",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1188,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 891,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-019/ses-03/eeg/sub-019_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "019",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1491,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-019/ses-03/eeg/sub-019_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "019",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1699,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-019/ses-03/eeg/sub-019_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "019",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-019/ses-03/eeg/sub-019_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "019",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2576,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2288,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-019/ses-03/eeg/sub-019_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "019",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 276,
+        "1": 1111
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-02/ses-01/eeg/sub-02_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "02",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-02/ses-01/eeg/sub-02_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "02",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1491,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-02/ses-01/eeg/sub-02_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "02",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1986,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1701,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-02/ses-01/eeg/sub-02_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "02",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2087,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-02/ses-01/eeg/sub-02_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "02",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2585,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2297,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-02/ses-01/eeg/sub-02_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "02",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-02/ses-02/eeg/sub-02_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "02",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-02/ses-02/eeg/sub-02_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "02",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1488,
+        "2": 301
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-02/ses-02/eeg/sub-02_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "02",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1707,
+        "2": 281
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-02/ses-02/eeg/sub-02_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "02",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2382,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2084,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-02/ses-02/eeg/sub-02_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "02",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2585,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2293,
+        "2": 292
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-02/ses-02/eeg/sub-02_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "02",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 280,
+        "1": 1110
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-02/ses-02/eeg/sub-02_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "02",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1107,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-02/ses-03/eeg/sub-02_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "02",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1190,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-02/ses-03/eeg/sub-02_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "02",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1491,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-02/ses-03/eeg/sub-02_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "02",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1986,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1706,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-02/ses-03/eeg/sub-02_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "02",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2088,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-02/ses-03/eeg/sub-02_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "02",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2581,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 288,
+        "1": 2293
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-02/ses-03/eeg/sub-02_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "02",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1115,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-02/ses-03/eeg/sub-02_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "02",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-03/ses-01/eeg/sub-03_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "03",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 896,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-03/ses-01/eeg/sub-03_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "03",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-03/ses-01/eeg/sub-03_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "03",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1701,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-03/ses-01/eeg/sub-03_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "03",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2090,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-03/ses-01/eeg/sub-03_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "03",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2586,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2299,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-03/ses-01/eeg/sub-03_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "03",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 278,
+        "1": 1114
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-03/ses-02/eeg/sub-03_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "03",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1183,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 887,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-03/ses-02/eeg/sub-03_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "03",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1777,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1480,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-03/ses-02/eeg/sub-03_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "03",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1969,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1685,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-03/ses-02/eeg/sub-03_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "03",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2361,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2065,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-03/ses-02/eeg/sub-03_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "03",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2560,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2275,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-03/ses-02/eeg/sub-03_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "03",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1381,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1103,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-03/ses-03/eeg/sub-03_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "03",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-03/ses-03/eeg/sub-03_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "03",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1494,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-03/ses-03/eeg/sub-03_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "03",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1987,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1703,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-03/ses-03/eeg/sub-03_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "03",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2385,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2089,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-03/ses-03/eeg/sub-03_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "03",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-03/ses-03/eeg/sub-03_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "03",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-03/ses-03/eeg/sub-03_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "03",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 280,
+        "1": 1109
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-04/ses-01/eeg/sub-04_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "04",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 895,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-04/ses-01/eeg/sub-04_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "04",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1788,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-04/ses-01/eeg/sub-04_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "04",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1989,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1705,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-04/ses-01/eeg/sub-04_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "04",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2090,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-04/ses-01/eeg/sub-04_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "04",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-04/ses-01/eeg/sub-04_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "04",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 279,
+        "1": 1113
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-04/ses-02/eeg/sub-04_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "04",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-04/ses-02/eeg/sub-04_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "04",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1785,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 295
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-04/ses-02/eeg/sub-04_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "04",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1986,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-04/ses-02/eeg/sub-04_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "04",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2385,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2086,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-04/ses-02/eeg/sub-04_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "04",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2295,
+        "2": 289
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-04/ses-02/eeg/sub-04_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "04",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-04/ses-02/eeg/sub-04_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "04",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 280,
+        "1": 1113
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-04/ses-03/eeg/sub-04_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "04",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 891,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-04/ses-03/eeg/sub-04_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "04",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1787,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-04/ses-03/eeg/sub-04_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "04",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1989,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 282,
+        "1": 1707
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-04/ses-03/eeg/sub-04_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "04",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2385,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2089,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-04/ses-03/eeg/sub-04_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "04",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2585,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 289
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-04/ses-03/eeg/sub-04_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "04",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1109,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-04/ses-03/eeg/sub-04_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "04",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-05/ses-01/eeg/sub-05_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "05",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1188,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 889,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-05/ses-01/eeg/sub-05_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "05",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1785,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1487,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-05/ses-01/eeg/sub-05_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "05",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1987,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-05/ses-01/eeg/sub-05_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "05",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2089,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-05/ses-01/eeg/sub-05_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "05",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-05/ses-01/eeg/sub-05_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "05",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 280,
+        "1": 1109
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-05/ses-02/eeg/sub-05_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "05",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 895,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-05/ses-02/eeg/sub-05_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "05",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 299,
+        "1": 1491
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-05/ses-02/eeg/sub-05_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "05",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1703,
+        "2": 285
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-05/ses-02/eeg/sub-05_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "05",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2384,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2087,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-05/ses-02/eeg/sub-05_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "05",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2581,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2295,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-05/ses-02/eeg/sub-05_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "05",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-05/ses-02/eeg/sub-05_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "05",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 280,
+        "1": 1113
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-05/ses-03/eeg/sub-05_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "05",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-05/ses-03/eeg/sub-05_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "05",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1787,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1488,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-05/ses-03/eeg/sub-05_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "05",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1985,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-05/ses-03/eeg/sub-05_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "05",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 299,
+        "1": 2088
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-05/ses-03/eeg/sub-05_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "05",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2581,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2295,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-05/ses-03/eeg/sub-05_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "05",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-05/ses-03/eeg/sub-05_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "05",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1109,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-06/ses-01/eeg/sub-06_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "06",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-06/ses-01/eeg/sub-06_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "06",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1785,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1489,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-06/ses-01/eeg/sub-06_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "06",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1705,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-06/ses-01/eeg/sub-06_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "06",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2383,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2085,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-06/ses-01/eeg/sub-06_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "06",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2579,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 287,
+        "1": 2292
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-06/ses-01/eeg/sub-06_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "06",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-06/ses-02/eeg/sub-06_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "06",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1190,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 891,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-06/ses-02/eeg/sub-06_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "06",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1491,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-06/ses-02/eeg/sub-06_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "06",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 282
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-06/ses-02/eeg/sub-06_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "06",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2383,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2084,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-06/ses-02/eeg/sub-06_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "06",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2586,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-06/ses-02/eeg/sub-06_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "06",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1110,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-06/ses-02/eeg/sub-06_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "06",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1387,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 276
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-06/ses-03/eeg/sub-06_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "06",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 895,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-06/ses-03/eeg/sub-06_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "06",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1786,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1490,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-06/ses-03/eeg/sub-06_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "06",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1985,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1702,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-06/ses-03/eeg/sub-06_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "06",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2384,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2085,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-06/ses-03/eeg/sub-06_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "06",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2587,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2299,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-06/ses-03/eeg/sub-06_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "06",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-06/ses-03/eeg/sub-06_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "06",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-07/ses-01/eeg/sub-07_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "07",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1190,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 891,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-07/ses-01/eeg/sub-07_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "07",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1784,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1488,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-07/ses-01/eeg/sub-07_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "07",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1986,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1705,
+        "2": 281
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-07/ses-01/eeg/sub-07_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "07",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2378,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2079,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-07/ses-01/eeg/sub-07_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "07",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-07/ses-01/eeg/sub-07_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "07",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 277
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-07/ses-01/eeg/sub-07_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "07",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1390,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-07/ses-02/eeg/sub-07_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "07",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 896,
+        "2": 295
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-07/ses-02/eeg/sub-07_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "07",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1784,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1486,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-07/ses-02/eeg/sub-07_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "07",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1987,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1704,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-07/ses-02/eeg/sub-07_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "07",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2383,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2085,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-07/ses-02/eeg/sub-07_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "07",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2583,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-07/ses-02/eeg/sub-07_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "07",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1116,
+        "2": 275
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-07/ses-02/eeg/sub-07_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "07",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-07/ses-03/eeg/sub-07_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "07",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-07/ses-03/eeg/sub-07_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "07",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1785,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1487,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-07/ses-03/eeg/sub-07_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "07",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1697,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-07/ses-03/eeg/sub-07_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "07",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2382,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2083,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-07/ses-03/eeg/sub-07_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "07",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-07/ses-03/eeg/sub-07_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "07",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1107,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-07/ses-03/eeg/sub-07_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "07",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1112,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-08/ses-01/eeg/sub-08_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "08",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 299,
+        "1": 894
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-08/ses-01/eeg/sub-08_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "08",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1789,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 297,
+        "1": 1492
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-08/ses-01/eeg/sub-08_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "08",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1989,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1706,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-08/ses-01/eeg/sub-08_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "08",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2086,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-08/ses-01/eeg/sub-08_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "08",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2583,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2295,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-08/ses-01/eeg/sub-08_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "08",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 280
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-08/ses-01/eeg/sub-08_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "08",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-08/ses-02/eeg/sub-08_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "08",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1191,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-08/ses-02/eeg/sub-08_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "08",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1786,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1488,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-08/ses-02/eeg/sub-08_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "08",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1988,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1706,
+        "2": 282
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-08/ses-02/eeg/sub-08_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "08",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2091,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-08/ses-02/eeg/sub-08_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "08",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2585,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2297,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-08/ses-02/eeg/sub-08_ses-02_task-ctos_run-5F_events.tsv",
+      "participant_id": "08",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1388,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1110,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-08/ses-02/eeg/sub-08_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "08",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1110,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-08/ses-03/eeg/sub-08_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "08",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-08/ses-03/eeg/sub-08_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "08",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1791,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1493,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-08/ses-03/eeg/sub-08_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "08",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1994,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1708,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-08/ses-03/eeg/sub-08_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "08",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2399,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2099,
+        "2": 300
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-08/ses-03/eeg/sub-08_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "08",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2594,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2308,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-08/ses-03/eeg/sub-08_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "08",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1393,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1114,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-08/ses-03/eeg/sub-08_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "08",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1392,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 279
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-09/ses-01/eeg/sub-09_ses-01_task-cnos_run-4_events.tsv",
+      "participant_id": "09",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1193,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 897,
+        "2": 296
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-09/ses-01/eeg/sub-09_ses-01_task-cnos_run-6_events.tsv",
+      "participant_id": "09",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1786,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1489,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-09/ses-01/eeg/sub-09_ses-01_task-cnos_run-7_events.tsv",
+      "participant_id": "09",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1982,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1698,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-09/ses-01/eeg/sub-09_ses-01_task-cnos_run-8_events.tsv",
+      "participant_id": "09",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2383,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 298,
+        "1": 2085
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-09/ses-01/eeg/sub-09_ses-01_task-cnos_run-9_events.tsv",
+      "participant_id": "09",
+      "session_id": "01",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2579,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2296,
+        "2": 283
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-09/ses-01/eeg/sub-09_ses-01_task-ctos_run-5F_events.tsv",
+      "participant_id": "09",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-09/ses-01/eeg/sub-09_ses-01_task-ctos_run-5H_events.tsv",
+      "participant_id": "09",
+      "session_id": "01",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 276
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-09/ses-02/eeg/sub-09_ses-02_task-cnos_run-4_events.tsv",
+      "participant_id": "09",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1192,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 893,
+        "2": 299
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-09/ses-02/eeg/sub-09_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "09",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1792,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "2": 297,
+        "1": 1495
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-09/ses-02/eeg/sub-09_ses-02_task-cnos_run-7_events.tsv",
+      "participant_id": "09",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1987,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1701,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-09/ses-02/eeg/sub-09_ses-02_task-cnos_run-8_events.tsv",
+      "participant_id": "09",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2385,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2087,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-09/ses-02/eeg/sub-09_ses-02_task-cnos_run-9_events.tsv",
+      "participant_id": "09",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2584,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2298,
+        "2": 286
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-09/ses-02/eeg/sub-09_ses-02_task-ctos_run-5H_events.tsv",
+      "participant_id": "09",
+      "session_id": "02",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1391,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-09/ses-03/eeg/sub-09_ses-03_task-cnos_run-4_events.tsv",
+      "participant_id": "09",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "4",
+      "source_flash_count": 1189,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 892,
+        "2": 297
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "filename_grid_symbols": 4
+    },
+    {
+      "source_file": "sub-09/ses-03/eeg/sub-09_ses-03_task-cnos_run-6_events.tsv",
+      "participant_id": "09",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1790,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1492,
+        "2": 298
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "filename_grid_symbols": 6
+    },
+    {
+      "source_file": "sub-09/ses-03/eeg/sub-09_ses-03_task-cnos_run-7_events.tsv",
+      "participant_id": "09",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "7",
+      "source_flash_count": 1996,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1709,
+        "2": 287
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 7
+    },
+    {
+      "source_file": "sub-09/ses-03/eeg/sub-09_ses-03_task-cnos_run-8_events.tsv",
+      "participant_id": "09",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "8",
+      "source_flash_count": 2386,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2092,
+        "2": 294
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "filename_grid_symbols": 8
+    },
+    {
+      "source_file": "sub-09/ses-03/eeg/sub-09_ses-03_task-cnos_run-9_events.tsv",
+      "participant_id": "09",
+      "session_id": "03",
+      "task_id": "cnos",
+      "run_id": "9",
+      "source_flash_count": 2583,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 2295,
+        "2": 288
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "filename_grid_symbols": 9
+    },
+    {
+      "source_file": "sub-09/ses-03/eeg/sub-09_ses-03_task-ctos_run-5F_events.tsv",
+      "participant_id": "09",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5F",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1113,
+        "2": 276
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    },
+    {
+      "source_file": "sub-09/ses-03/eeg/sub-09_ses-03_task-ctos_run-5H_events.tsv",
+      "participant_id": "09",
+      "session_id": "03",
+      "task_id": "ctos",
+      "run_id": "5H",
+      "source_flash_count": 1389,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1111,
+        "2": 278
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "filename_grid_symbols": 5
+    }
+  ],
+  "event_files": 382,
+  "total_flashes": 698010,
+  "unlabelled_flashes": 179,
+  "filename_grid_discrepancies": [
+    {
+      "source_file": "sub-016/ses-02/eeg/sub-016_ses-02_task-cnos_run-6_events.tsv",
+      "participant_id": "016",
+      "session_id": "02",
+      "task_id": "cnos",
+      "run_id": "6",
+      "source_flash_count": 1984,
+      "missing_target_flashes": 0,
+      "label_counts": {
+        "1": 1700,
+        "2": 284
+      },
+      "observed_flash_symbols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "filename_grid_symbols": 6
+    }
+  ],
+  "note": "Independent BIDS source-table inventory; converter additionally checks every value/position/onset against native VMRK before epoching. Two no-flash unnamed-channel placeholder files have no events.tsv.",
+  "nominal_protocol_files_absent_from_release": [
+    "sub-01/ses-01/eeg/sub-01_ses-01_task-ctos_run-5F_eeg.vhdr",
+    "sub-02/ses-01/eeg/sub-02_ses-01_task-ctos_run-5F_eeg.vhdr",
+    "sub-03/ses-01/eeg/sub-03_ses-01_task-ctos_run-5F_eeg.vhdr",
+    "sub-03/ses-02/eeg/sub-03_ses-02_task-ctos_run-5F_eeg.vhdr",
+    "sub-04/ses-01/eeg/sub-04_ses-01_task-ctos_run-5F_eeg.vhdr",
+    "sub-05/ses-01/eeg/sub-05_ses-01_task-ctos_run-5F_eeg.vhdr",
+    "sub-06/ses-01/eeg/sub-06_ses-01_task-ctos_run-5F_eeg.vhdr",
+    "sub-09/ses-02/eeg/sub-09_ses-02_task-ctos_run-5F_eeg.vhdr",
+    "sub-019/ses-02/eeg/sub-019_ses-02_task-cnos_run-4_eeg.vhdr",
+    "sub-019/ses-02/eeg/sub-019_ses-02_task-cnos_run-6_eeg.vhdr",
+    "sub-019/ses-02/eeg/sub-019_ses-02_task-cnos_run-7_eeg.vhdr",
+    "sub-019/ses-02/eeg/sub-019_ses-02_task-cnos_run-8_eeg.vhdr",
+    "sub-019/ses-02/eeg/sub-019_ses-02_task-cnos_run-9_eeg.vhdr",
+    "sub-019/ses-02/eeg/sub-019_ses-02_task-ctos_run-5F_eeg.vhdr",
+    "sub-019/ses-02/eeg/sub-019_ses-02_task-ctos_run-5H_eeg.vhdr"
+  ],
+  "excluded_duplicate_recording": {
+    "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-ctos_run-5H_events.tsv",
+    "participant_id": "011",
+    "session_id": "03",
+    "task_id": "ctos",
+    "run_id": "5H",
+    "source_flash_count": 1392,
+    "missing_target_flashes": 0,
+    "label_counts": {
+      "1": 1112,
+      "2": 280
+    },
+    "observed_flash_symbols": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "filename_grid_symbols": 5,
+    "retained_source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-ctos_run-5H_events.tsv",
+    "evidence": "Exact native EEG binary SHA256, native VMRK parsed stream and BIDS event table equality, same participant"
+  }
+}

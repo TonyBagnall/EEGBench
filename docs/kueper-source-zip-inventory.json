@@ -1,0 +1,894 @@
+{
+  "files": [
+    {
+      "name": "EEG_dataset/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/readme EEG.txt",
+      "bytes": 1151,
+      "crc32": "42064780"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set1.eeg",
+      "bytes": 70784160,
+      "crc32": "25fcb6ad"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set1.vhdr",
+      "bytes": 13970,
+      "crc32": "9d706883"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set1.vmrk",
+      "bytes": 12328,
+      "crc32": "8a10a867"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set2.eeg",
+      "bytes": 69623720,
+      "crc32": "956eaa75"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set2.vhdr",
+      "bytes": 13970,
+      "crc32": "c16fad74"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set2.vmrk",
+      "bytes": 12143,
+      "crc32": "793b21c6"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set3.eeg",
+      "bytes": 67514560,
+      "crc32": "4009813c"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set3.vhdr",
+      "bytes": 13970,
+      "crc32": "dfe04e11"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set3.vmrk",
+      "bytes": 12443,
+      "crc32": "e52a4dc0"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set1.eeg",
+      "bytes": 60425960,
+      "crc32": "dca97712"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set1.vhdr",
+      "bytes": 13969,
+      "crc32": "31d2a7b6"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set1.vmrk",
+      "bytes": 12435,
+      "crc32": "9df691ec"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set2.eeg",
+      "bytes": 61527440,
+      "crc32": "91955823"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set2.vhdr",
+      "bytes": 13969,
+      "crc32": "1a8ca22f"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set2.vmrk",
+      "bytes": 12128,
+      "crc32": "2e030627"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set3.eeg",
+      "bytes": 61653400,
+      "crc32": "ad71882b"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set3.vhdr",
+      "bytes": 13969,
+      "crc32": "51fab74f"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set3.vmrk",
+      "bytes": 11994,
+      "crc32": "eee6a1c2"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set1.eeg",
+      "bytes": 87743200,
+      "crc32": "6b212f86"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set1.vhdr",
+      "bytes": 13970,
+      "crc32": "18e08e6b"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set1.vmrk",
+      "bytes": 11902,
+      "crc32": "e0af592a"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set2.eeg",
+      "bytes": 68342680,
+      "crc32": "224981ce"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set2.vhdr",
+      "bytes": 13970,
+      "crc32": "09053a3a"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set2.vmrk",
+      "bytes": 11894,
+      "crc32": "18b636e5"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set3.eeg",
+      "bytes": 72370720,
+      "crc32": "0834e94b"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set3.vhdr",
+      "bytes": 13970,
+      "crc32": "c2bcad02"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set3.vmrk",
+      "bytes": 11950,
+      "crc32": "60113625"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set1.eeg",
+      "bytes": 86172720,
+      "crc32": "cb4fb7e2"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set1.vhdr",
+      "bytes": 13969,
+      "crc32": "633d7d62"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set1.vmrk",
+      "bytes": 16443,
+      "crc32": "9da8af04"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set2.eeg",
+      "bytes": 71491680,
+      "crc32": "ef57f938"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set2.vhdr",
+      "bytes": 13969,
+      "crc32": "bb553a38"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set2.vmrk",
+      "bytes": 14549,
+      "crc32": "3904e6e2"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set3.eeg",
+      "bytes": 68771480,
+      "crc32": "c7929351"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set3.vhdr",
+      "bytes": 13969,
+      "crc32": "620a3e6a"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set3.vmrk",
+      "bytes": 13870,
+      "crc32": "f80f602b"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set1.eeg",
+      "bytes": 64770240,
+      "crc32": "e2e044e4"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set1.vhdr",
+      "bytes": 13970,
+      "crc32": "6584a3f4"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set1.vmrk",
+      "bytes": 11874,
+      "crc32": "d023d1f6"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set2.eeg",
+      "bytes": 66852600,
+      "crc32": "eb6eea04"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set2.vhdr",
+      "bytes": 13970,
+      "crc32": "2249cf54"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set2.vmrk",
+      "bytes": 12135,
+      "crc32": "bee3f61b"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set3.eeg",
+      "bytes": 64231560,
+      "crc32": "c5f4c99d"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set3.vhdr",
+      "bytes": 13970,
+      "crc32": "f0366f31"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set3.vmrk",
+      "bytes": 12120,
+      "crc32": "d16c68af"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set1.eeg",
+      "bytes": 72477920,
+      "crc32": "427de597"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set1.vhdr",
+      "bytes": 13969,
+      "crc32": "efbbefd2"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set1.vmrk",
+      "bytes": 12521,
+      "crc32": "93ee8b54"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set2.eeg",
+      "bytes": 65630520,
+      "crc32": "825df732"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set2.vhdr",
+      "bytes": 13969,
+      "crc32": "f8391e3c"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set2.vmrk",
+      "bytes": 12952,
+      "crc32": "50f1d21a"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set3.eeg",
+      "bytes": 69004640,
+      "crc32": "e3602ff8"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set3.vhdr",
+      "bytes": 13969,
+      "crc32": "b8722cbd"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set3.vmrk",
+      "bytes": 14076,
+      "crc32": "301b18b4"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set1.eeg",
+      "bytes": 64346800,
+      "crc32": "a3ada473"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set1.vhdr",
+      "bytes": 13969,
+      "crc32": "d0b07e0a"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set1.vmrk",
+      "bytes": 12924,
+      "crc32": "d1feb900"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set2.eeg",
+      "bytes": 70210640,
+      "crc32": "918cd9a3"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set2.vhdr",
+      "bytes": 13969,
+      "crc32": "1b4c70c8"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set2.vmrk",
+      "bytes": 12855,
+      "crc32": "ec856228"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set3.eeg",
+      "bytes": 61168320,
+      "crc32": "45bfe911"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set3.vhdr",
+      "bytes": 13969,
+      "crc32": "3c28eab9"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set3.vmrk",
+      "bytes": 9528,
+      "crc32": "22e99bcf"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set4.eeg",
+      "bytes": 52198360,
+      "crc32": "24048629"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set4.vhdr",
+      "bytes": 13969,
+      "crc32": "afb4fee6"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set4.vmrk",
+      "bytes": 3167,
+      "crc32": "0fe270be"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set1.eeg",
+      "bytes": 79775560,
+      "crc32": "b42b5137"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set1.vhdr",
+      "bytes": 13969,
+      "crc32": "a3e90b90"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set1.vmrk",
+      "bytes": 12155,
+      "crc32": "888eb06c"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set2.eeg",
+      "bytes": 74380720,
+      "crc32": "20a2ccf8"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set2.vhdr",
+      "bytes": 13969,
+      "crc32": "cd14243a"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set2.vmrk",
+      "bytes": 12386,
+      "crc32": "62ed76b8"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set3.eeg",
+      "bytes": 70668920,
+      "crc32": "3df2c623"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set3.vhdr",
+      "bytes": 13969,
+      "crc32": "df9af7c4"
+    },
+    {
+      "name": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set3.vmrk",
+      "bytes": 12415,
+      "crc32": "75d78f5a"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set1.eeg",
+      "bytes": 69513840,
+      "crc32": "af94ec95"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set1.vhdr",
+      "bytes": 13968,
+      "crc32": "57477e7e"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set1.vmrk",
+      "bytes": 15475,
+      "crc32": "38305a1d"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set2.eeg",
+      "bytes": 60870840,
+      "crc32": "ca5d84d0"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set2.vhdr",
+      "bytes": 13968,
+      "crc32": "0fb39d38"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set2.vmrk",
+      "bytes": 14791,
+      "crc32": "d04323ad"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set3.eeg",
+      "bytes": 68447200,
+      "crc32": "24562751"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set3.vhdr",
+      "bytes": 13968,
+      "crc32": "7705e2d4"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set3.vmrk",
+      "bytes": 15423,
+      "crc32": "49408e2e"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set1.eeg",
+      "bytes": 65609080,
+      "crc32": "c0334976"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set1.vhdr",
+      "bytes": 13967,
+      "crc32": "eeb444f4"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set1.vmrk",
+      "bytes": 15672,
+      "crc32": "02515497"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set2.eeg",
+      "bytes": 59822960,
+      "crc32": "da9fa2f4"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set2.vhdr",
+      "bytes": 13967,
+      "crc32": "29d18e0b"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set2.vmrk",
+      "bytes": 14529,
+      "crc32": "3c1ff96b"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set3.eeg",
+      "bytes": 60578720,
+      "crc32": "6c52750f"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set3.vhdr",
+      "bytes": 13967,
+      "crc32": "94106b17"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set3.vmrk",
+      "bytes": 15628,
+      "crc32": "0b5a2912"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set1.eeg",
+      "bytes": 61972320,
+      "crc32": "f43eb937"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set1.vhdr",
+      "bytes": 13968,
+      "crc32": "682f9a97"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set1.vmrk",
+      "bytes": 14845,
+      "crc32": "4b24722f"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set2.eeg",
+      "bytes": 62921040,
+      "crc32": "1cbcb9ac"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set2.vhdr",
+      "bytes": 13967,
+      "crc32": "d20cf291"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set2.vmrk",
+      "bytes": 15087,
+      "crc32": "1e2286c7"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set3.eeg",
+      "bytes": 69594240,
+      "crc32": "41675eee"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set3.vhdr",
+      "bytes": 13967,
+      "crc32": "7deab2e2"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set3.vmrk",
+      "bytes": 15071,
+      "crc32": "fc855136"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set1.eeg",
+      "bytes": 63604440,
+      "crc32": "94099084"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set1.vhdr",
+      "bytes": 13967,
+      "crc32": "667603a8"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set1.vmrk",
+      "bytes": 14613,
+      "crc32": "2fb19320"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set2.eeg",
+      "bytes": 64003760,
+      "crc32": "5ada860d"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set2.vhdr",
+      "bytes": 2348,
+      "crc32": "7909558f"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set2.vmrk",
+      "bytes": 14686,
+      "crc32": "e598e447"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set3.eeg",
+      "bytes": 58954640,
+      "crc32": "e68a3c3d"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set3.vhdr",
+      "bytes": 13967,
+      "crc32": "df6ac967"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set3.vmrk",
+      "bytes": 14407,
+      "crc32": "65f58bc0"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set1.eeg",
+      "bytes": 71636400,
+      "crc32": "1706314f"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set1.vhdr",
+      "bytes": 13968,
+      "crc32": "eda52288"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set1.vmrk",
+      "bytes": 14556,
+      "crc32": "1081eecd"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set2.eeg",
+      "bytes": 68168480,
+      "crc32": "46705880"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set2.vhdr",
+      "bytes": 13968,
+      "crc32": "b9fa007b"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set2.vmrk",
+      "bytes": 14524,
+      "crc32": "8c2a113e"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set3.eeg",
+      "bytes": 64467400,
+      "crc32": "4321c20c"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set3.vhdr",
+      "bytes": 13968,
+      "crc32": "5bbcfe2c"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set3.vmrk",
+      "bytes": 15333,
+      "crc32": "8c92bc07"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set1.eeg",
+      "bytes": 63411480,
+      "crc32": "da02920c"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set1.vhdr",
+      "bytes": 13967,
+      "crc32": "95162139"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set1.vmrk",
+      "bytes": 16522,
+      "crc32": "0502e8ea"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set2.eeg",
+      "bytes": 58185480,
+      "crc32": "750a657c"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set2.vhdr",
+      "bytes": 13967,
+      "crc32": "ed434803"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set2.vmrk",
+      "bytes": 14786,
+      "crc32": "ed95aafa"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set3.eeg",
+      "bytes": 59734520,
+      "crc32": "5cc694f0"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set3.vhdr",
+      "bytes": 13967,
+      "crc32": "f35ac6a9"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set3.vmrk",
+      "bytes": 14468,
+      "crc32": "da155f44"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set1.eeg",
+      "bytes": 67128640,
+      "crc32": "787f609b"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set1.vhdr",
+      "bytes": 13967,
+      "crc32": "00dd8c5e"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set1.vmrk",
+      "bytes": 16286,
+      "crc32": "1f893a5a"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set2.eeg",
+      "bytes": 69345000,
+      "crc32": "6184200b"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set2.vhdr",
+      "bytes": 13968,
+      "crc32": "bbd61e2f"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set2.vmrk",
+      "bytes": 16120,
+      "crc32": "fbee8002"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set3.eeg",
+      "bytes": 73064840,
+      "crc32": "f1b8bc7e"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set3.vhdr",
+      "bytes": 13967,
+      "crc32": "6cf8a9d9"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set3.vmrk",
+      "bytes": 16642,
+      "crc32": "b141acd5"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set1.eeg",
+      "bytes": 78293520,
+      "crc32": "2f94b571"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set1.vhdr",
+      "bytes": 13967,
+      "crc32": "2d0e471f"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set1.vmrk",
+      "bytes": 14906,
+      "crc32": "068ba65f"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set2.eeg",
+      "bytes": 91819480,
+      "crc32": "e27c54e1"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set2.vhdr",
+      "bytes": 13967,
+      "crc32": "98b9d557"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set2.vmrk",
+      "bytes": 14931,
+      "crc32": "5a235b4c"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set3.eeg",
+      "bytes": 92583280,
+      "crc32": "395e0c65"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set3.vhdr",
+      "bytes": 13967,
+      "crc32": "928ee435"
+    },
+    {
+      "name": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set3.vmrk",
+      "bytes": 14723,
+      "crc32": "49ff4cad"
+    },
+    {
+      "name": "EEG_dataset/Metadata/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "EEG_dataset/Metadata/UP28.txt",
+      "bytes": 706,
+      "crc32": "c25e178b"
+    },
+    {
+      "name": "EEG_dataset/Metadata/short_description.txt",
+      "bytes": 3115,
+      "crc32": "8b175c56"
+    },
+    {
+      "name": "EEG_dataset/Metadata/JV43.txt",
+      "bytes": 651,
+      "crc32": "b92d0fe2"
+    },
+    {
+      "name": "EEG_dataset/Metadata/RA12.txt",
+      "bytes": 655,
+      "crc32": "ab99f74e"
+    },
+    {
+      "name": "EEG_dataset/Metadata/XP01.txt",
+      "bytes": 836,
+      "crc32": "512aaa88"
+    },
+    {
+      "name": "EEG_dataset/Metadata/QS70.txt",
+      "bytes": 812,
+      "crc32": "2bbebd28"
+    },
+    {
+      "name": "EEG_dataset/Metadata/ZS27.txt",
+      "bytes": 653,
+      "crc32": "e3d3cf26"
+    },
+    {
+      "name": "EEG_dataset/Metadata/AV82.txt",
+      "bytes": 653,
+      "crc32": "2fadf4ca"
+    },
+    {
+      "name": "EEG_dataset/Metadata/JD68.txt",
+      "bytes": 653,
+      "crc32": "146d6a82"
+    }
+  ]
+}

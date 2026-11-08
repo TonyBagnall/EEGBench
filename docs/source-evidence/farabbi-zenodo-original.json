@@ -1,0 +1,294 @@
+{
+  "created": "2022-02-08T12:16:54.816153+00:00",
+  "modified": "2026-04-23T02:29:31.413405+00:00",
+  "id": 5882500,
+  "conceptrecid": "5882499",
+  "doi": "10.5281/zenodo.5882500",
+  "conceptdoi": "10.5281/zenodo.5882499",
+  "doi_url": "https://doi.org/10.5281/zenodo.5882500",
+  "metadata": {
+    "title": "Motor-Imagery EEG Dataset During Robot-Arm Control",
+    "doi": "10.5281/zenodo.5882500",
+    "publication_date": "2020-04-29",
+    "description": "<p><strong>Experiment Description:</strong></p>\n\n<p>This experiment involved <strong>12 healthy subjects</strong> with no prior experience on neurofeedback or BCI, and without any known neurological disorders. All participants are right-handed, except one ambidextrous (participant #5). All participants have provided their signed informed consent for participating in the study in accordance with the 1964 Declaration of Helsinki.</p>\n\n<p>The experiment had been conducted in a laboratory environment under controlled conditions. The subjects went through <strong>three sessions</strong> lasting maximum two hours, during three consecutive days and each day at approximately at the same hour.</p>\n\n<p>During each session, participants underwent <strong>three different conditions</strong>. The first condition was always the &rdquo;<em>resting-state</em>&rdquo;: the user was asked to keep the eyes open for two minutes staring at a screen with a green cross and a red arrow pointing up, and then closed for the other two minutes. After this, two more conditions followed related to a Motor Imagery (MI) task performed in a randomized order between left|right-hand movement. The two MI conditions consisted of<strong> two phases</strong> each: a training phase and a test phase. The general experimental routine for both of them was the same: each trial lasted 6 seconds (2 seconds baseline and 4 seconds MI), forewarned by the appearance of a green cross on the screen and a concomitant beep-sound a second before the onset of the task.</p>\n\n<p>Then, an arrow was appearing pointing left or right, and the subject had to imagine the movement of the corresponding arm reaching an object in front of the Baxter Robot (Rethink Robotics, Bochum, Germany). For both phases, 20 trials from left and 20 trials for right MI were generated in a randomized order, for a total of 40 trials. Finally, there was an inter-trial interval that extended randomly between 1.5 and 3.5 seconds.</p>\n\n<p>Overall, this study resulted into <strong>180 EEG </strong>datasets.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Data Description:</strong></p>\n\n<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><strong>Data Format</strong></td>\n\t\t\t<td>General Data Format (GDF)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><strong>Sampling Rate</strong></td>\n\t\t\t<td>250 Hz</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><strong>Channels</strong></td>\n\t\t\t<td>32 EEG + 3 ACC.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><strong>EEG system</strong></td>\n\t\t\t<td>LiveAmp 32 with&nbsp;active electrodes actiCAP (Brain Products GmbH, Gilching, Germany)</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p><strong>Events:</strong></p>\n\n<table>\n\t<caption>&nbsp;</caption>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><strong>Code</strong></td>\n\t\t\t<td><strong>Description</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>32775</td>\n\t\t\t<td>Baseline Start</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>32776</td>\n\t\t\t<td>Baseline Stop</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>768</td>\n\t\t\t<td>Start of Trial, Trigger at t=0s</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>786</td>\n\t\t\t<td>Cross on screen (BCI experiment)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>33282</td>\n\t\t\t<td>Beep</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>769</td>\n\t\t\t<td>class1, Left hand&nbsp;&nbsp; &nbsp;- cue onset</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>770</td>\n\t\t\t<td>class2, Right hand&nbsp;&nbsp; &nbsp;- cue onset</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>781</td>\n\t\t\t<td>Feedback (continuous) - onset</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>800</td>\n\t\t\t<td>End Of Trial</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>1010</td>\n\t\t\t<td>End Of Session</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>33281</td>\n\t\t\t<td>Train</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>32770</td>\n\t\t\t<td>Experiment Stop</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p><strong>Directory Tree:</strong></p>\n\n<p>ROOT<br>\n| chanlocs.locs<br>\n|<br>\n|<br>\n+--- USER #<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---SESSION #<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---CONDITION #<br>\n|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;\\---RESTING_STATE<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---1st_PERSON<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; TRAINING<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ONLINE<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---3rd_PERSON<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; TRAINING<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ONLINE</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Farabbi, Andrea",
+        "affiliation": "Politecnico di Milano",
+        "orcid": "0000-0001-5582-4654"
+      },
+      {
+        "name": "Ghiringhelli, Fabiola",
+        "affiliation": "Politecnico di Milano"
+      },
+      {
+        "name": "Mainardi, Luca",
+        "affiliation": "Politecnico di Milano",
+        "orcid": "0000-0002-6276-6314"
+      },
+      {
+        "name": "Sanches, Joao Miguel",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa",
+        "orcid": "0000-0001-9089-2740"
+      },
+      {
+        "name": "Moreno, Plinio",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa",
+        "orcid": "0000-0002-0496-2050"
+      },
+      {
+        "name": "Santos-Victor, Jos\u00e9",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa",
+        "orcid": "0000-0002-9036-1728"
+      },
+      {
+        "name": "Figueiredo, Patricia",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa",
+        "orcid": "0000-0002-0743-0869"
+      },
+      {
+        "name": "Vourvopoulos, Athanasios",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa",
+        "orcid": "0000-0001-9676-8599"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Mainardi, Luca",
+        "affiliation": "Politecnico di Milano",
+        "type": "Supervisor",
+        "orcid": "0000-0002-6276-6314"
+      },
+      {
+        "name": "Sanches, Joao Miguel",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa",
+        "type": "Supervisor",
+        "orcid": "0000-0001-9089-2740"
+      },
+      {
+        "name": "Figueiredo, Patricia",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa",
+        "type": "Supervisor",
+        "orcid": "0000-0002-0743-0869"
+      },
+      {
+        "name": "Vourvopoulos, Athanasios",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa",
+        "type": "Supervisor",
+        "orcid": "0000-0001-9676-8599"
+      }
+    ],
+    "keywords": [
+      "Electroencephalography",
+      "Brain-Computer Interfaces",
+      "Motor Imagery",
+      "Robotics"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10589/164451",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-dissertation",
+        "scheme": "handle"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "thesis": {
+      "university": "Politecnico di Milano"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5882499"
+          }
+        }
+      ]
+    },
+    "notes": "Approved by the Ethics Committee of CHULN and CAML (Faculty of Medicine, University of Lisbon) with reference number: 245/19."
+  },
+  "title": "Motor-Imagery EEG Dataset During Robot-Arm Control",
+  "links": {
+    "self": "https://zenodo.org/api/records/5882500",
+    "self_html": "https://zenodo.org/records/5882500",
+    "preview_html": "https://zenodo.org/records/5882500?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5882500",
+    "self_doi": "https://doi.org/10.5281/zenodo.5882500",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5882500",
+    "reserve_doi": "https://zenodo.org/api/records/5882500/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5882499",
+    "parent_html": "https://zenodo.org/records/5882499",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5882499",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5882499",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5882500/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5882500/sequence/default",
+    "files": "https://zenodo.org/api/records/5882500/files",
+    "media_files": "https://zenodo.org/api/records/5882500/media-files",
+    "latest": "https://zenodo.org/api/records/5882500/versions/latest",
+    "latest_html": "https://zenodo.org/records/5882500/latest",
+    "versions": "https://zenodo.org/api/records/5882500/versions",
+    "draft": "https://zenodo.org/api/records/5882500/draft",
+    "access_links": "https://zenodo.org/api/records/5882500/access/links",
+    "access_grants": "https://zenodo.org/api/records/5882500/access/grants",
+    "access_users": "https://zenodo.org/api/records/5882500/access/users",
+    "access_request": "https://zenodo.org/api/records/5882500/access/request",
+    "access": "https://zenodo.org/api/records/5882500/access",
+    "communities": "https://zenodo.org/api/records/5882500/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5882500/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5882500/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5882500/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/5882500/quota-increase",
+    "requests": "https://zenodo.org/api/records/5882500/requests"
+  },
+  "updated": "2026-04-23T02:29:31.413405+00:00",
+  "recid": "5882500",
+  "revision": 8,
+  "files": [
+    {
+      "id": "98b68075-3514-4ef9-9f07-a8e9db0d5d70",
+      "key": "05.zip",
+      "size": 214425565,
+      "checksum": "md5:a95c7607c0f7fb09052e22ae61e8d0a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/05.zip/content"
+      }
+    },
+    {
+      "id": "92951e0e-275d-4756-b2b6-ed3573f5cde4",
+      "key": "07.zip",
+      "size": 209491845,
+      "checksum": "md5:711aa5a8678d151124eeb1b3151a748f",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/07.zip/content"
+      }
+    },
+    {
+      "id": "a907ed3f-0920-46d7-b5be-adc24172b04b",
+      "key": "06.zip",
+      "size": 212114969,
+      "checksum": "md5:d36d6a8b76d1159cffb4bbe70ff268f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/06.zip/content"
+      }
+    },
+    {
+      "id": "97509a96-7617-4f06-b02e-9dc963d220ad",
+      "key": "04.zip",
+      "size": 206218758,
+      "checksum": "md5:c2b09f0fc9cce41461142952c9498edd",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/04.zip/content"
+      }
+    },
+    {
+      "id": "4c8263d7-d3b9-4c62-89a4-215520b813d3",
+      "key": "chanlocs.locs",
+      "size": 1050,
+      "checksum": "md5:3d6ff0318790b54fde3d8d54be2fdb40",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/chanlocs.locs/content"
+      }
+    },
+    {
+      "id": "842c9163-32e4-4bd0-9b58-80014df85ed0",
+      "key": "10.zip",
+      "size": 217375136,
+      "checksum": "md5:6b507988f19e211c49c218b740dd0e0c",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/10.zip/content"
+      }
+    },
+    {
+      "id": "89d8c448-b8dd-4b16-88dc-7ed921085432",
+      "key": "09.zip",
+      "size": 204814821,
+      "checksum": "md5:f5cb7ab29253330ef52524f16c00d6c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/09.zip/content"
+      }
+    },
+    {
+      "id": "04770e02-e7cd-4631-b005-ab41a2edda6e",
+      "key": "03.zip",
+      "size": 214443292,
+      "checksum": "md5:7cf99f8543035be267fe145a46fe10a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/03.zip/content"
+      }
+    },
+    {
+      "id": "d0ca04a3-a70d-49ef-bdbf-97412a8d973f",
+      "key": "02.zip",
+      "size": 212452109,
+      "checksum": "md5:dfc8fef61262584918b977ee2db2c9f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/02.zip/content"
+      }
+    },
+    {
+      "id": "00ebe41f-d369-478d-bd9a-b1adea8e319e",
+      "key": "01.zip",
+      "size": 208809513,
+      "checksum": "md5:7d21e407c2cdd21098752410ec4f01cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/01.zip/content"
+      }
+    },
+    {
+      "id": "ce8eebbf-1329-4664-aeb6-1342aa9ea565",
+      "key": "08.zip",
+      "size": 215319045,
+      "checksum": "md5:c1b4a72ea3c6817a433f9ad08b8aacba",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/08.zip/content"
+      }
+    },
+    {
+      "id": "e5715065-bb57-48e8-98ff-103f9c442869",
+      "key": "12.zip",
+      "size": 207657158,
+      "checksum": "md5:ffb15792379b081ebf06dd50afb3a0b2",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/12.zip/content"
+      }
+    },
+    {
+      "id": "ab0e7848-7733-411d-b2b9-36ce426207f0",
+      "key": "11.zip",
+      "size": 209242983,
+      "checksum": "md5:2c12ff230a8cee988a894245e5193141",
+      "links": {
+        "self": "https://zenodo.org/api/records/5882500/files/11.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "189346"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2679,
+    "unique_downloads": 2272,
+    "views": 1952,
+    "unique_views": 1822,
+    "version_downloads": 2678,
+    "version_unique_downloads": 2271,
+    "version_unique_views": 1817,
+    "version_views": 1947
+  },
+  "state": "done",
+  "submitted": true
+}

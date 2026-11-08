@@ -1,0 +1,13 @@
+{
+  "direct": "Native IDs, epoch arrays, y/events/className/clab/t/fs/mnt and original True Label cells",
+  "documented": "Sensor roles, trial protocol, aggregate demographics and split from organizer PDF",
+  "inferred": "Global trial ordinals, walking grouping, presumed microvolt scale and nominal scalp reference position names",
+  "missing": [
+    "Original continuous offsets and acquisition file IDs unavailable; epoch/sample indices are local",
+    "Original visit/run IDs unknown; source splits are temporal partitions, not three independently recorded runs",
+    "Physical unit, ear reference, original acquisition rate and pre-distribution filtering not explicitly recovered; unit interpretation and nominal scalp reference names are inferred",
+    "Native scalp montage coordinates have unspecified units/frame; ear geometry is absent; no individual measured geometry claimed",
+    "Test targets are from the published True Label workbook, not the separate prediction-probability submission template",
+    "Nominal target fraction0.2 is approximate in supplied data; subject11 has64 targets across300 trials; labels are preserved as published"
+  ]
+}

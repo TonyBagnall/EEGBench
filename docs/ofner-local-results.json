@@ -1,0 +1,264 @@
+{
+  "datasets": [
+    {
+      "dataset": "ArmMovements",
+      "train_cases": 4620,
+      "test_cases": 1680,
+      "subjects": 15,
+      "channels": 61,
+      "timepoints": 1536,
+      "classes": 7,
+      "frequency": 512,
+      "size_GB": 6.882248382,
+      "licence": "CC-BY-4.0",
+      "validation": {
+        "quality_status": "passed_with_documented_source_metadata_limits",
+        "partitions": {
+          "TRAIN": {
+            "cases": 4620,
+            "shape": [
+              4620,
+              61,
+              1536
+            ],
+            "class_counts": {
+              "0": 660,
+              "1": 660,
+              "2": 660,
+              "3": 660,
+              "4": 660,
+              "5": 660,
+              "6": 660
+            },
+            "subjects": [
+              "01",
+              "02",
+              "03",
+              "04",
+              "05",
+              "06",
+              "07",
+              "08",
+              "09",
+              "10",
+              "11"
+            ],
+            "exact_float32_roundtrip": true
+          },
+          "TEST": {
+            "cases": 1680,
+            "shape": [
+              1680,
+              61,
+              1536
+            ],
+            "class_counts": {
+              "0": 240,
+              "1": 240,
+              "2": 240,
+              "3": 240,
+              "4": 240,
+              "5": 240,
+              "6": 240
+            },
+            "subjects": [
+              "12",
+              "13",
+              "14",
+              "15"
+            ],
+            "exact_float32_roundtrip": true
+          }
+        },
+        "subject_overlap": [],
+        "duplicate_cases_across_splits": 0,
+        "all_exported_epochs_finite": true,
+        "metadata_rows_verified": true,
+        "channel_order_verified_every_recording": true,
+        "aeon": {
+          "passed": true,
+          "aeon_version": "1.5.0",
+          "classifier": "SummaryClassifier",
+          "train_cases": 14,
+          "test_cases": 14,
+          "scope": "Representative classifier check; all cases independently read back numerically"
+        }
+      }
+    },
+    {
+      "dataset": "ImaginedArmMovements",
+      "train_cases": 4620,
+      "test_cases": 1680,
+      "subjects": 15,
+      "channels": 61,
+      "timepoints": 1536,
+      "classes": 7,
+      "frequency": 512,
+      "size_GB": 6.911358997,
+      "licence": "CC-BY-4.0",
+      "validation": {
+        "quality_status": "passed_with_documented_source_metadata_limits",
+        "partitions": {
+          "TRAIN": {
+            "cases": 4620,
+            "shape": [
+              4620,
+              61,
+              1536
+            ],
+            "class_counts": {
+              "0": 660,
+              "1": 660,
+              "2": 660,
+              "3": 660,
+              "4": 660,
+              "5": 660,
+              "6": 660
+            },
+            "subjects": [
+              "01",
+              "02",
+              "03",
+              "04",
+              "05",
+              "06",
+              "07",
+              "08",
+              "09",
+              "10",
+              "11"
+            ],
+            "exact_float32_roundtrip": true
+          },
+          "TEST": {
+            "cases": 1680,
+            "shape": [
+              1680,
+              61,
+              1536
+            ],
+            "class_counts": {
+              "0": 240,
+              "1": 240,
+              "2": 240,
+              "3": 240,
+              "4": 240,
+              "5": 240,
+              "6": 240
+            },
+            "subjects": [
+              "12",
+              "13",
+              "14",
+              "15"
+            ],
+            "exact_float32_roundtrip": true
+          }
+        },
+        "subject_overlap": [],
+        "duplicate_cases_across_splits": 0,
+        "all_exported_epochs_finite": true,
+        "metadata_rows_verified": true,
+        "channel_order_verified_every_recording": true,
+        "aeon": {
+          "passed": true,
+          "aeon_version": "1.5.0",
+          "classifier": "SummaryClassifier",
+          "train_cases": 14,
+          "test_cases": 14,
+          "scope": "Representative classifier check; all cases independently read back numerically"
+        }
+      }
+    }
+  ],
+  "source_study": "Ofner2017 / Zenodo 834976 v1 / BNCI 001-2017",
+  "shared_participants": true,
+  "distinct_recording_sessions": true,
+  "exact_shared_cases": 0,
+  "split": {
+    "train": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11"
+    ],
+    "test": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ]
+  },
+  "native_subject_ids": {
+    "bn5": [
+      "09"
+    ],
+    "cc2": [
+      "01"
+    ],
+    "cj5": [
+      "05"
+    ],
+    "cq2": [
+      "15"
+    ],
+    "cr6": [
+      "07"
+    ],
+    "cv6": [
+      "12"
+    ],
+    "cv7": [
+      "11"
+    ],
+    "dc3": [
+      "14"
+    ],
+    "di9": [
+      "04"
+    ],
+    "dj2": [
+      "03"
+    ],
+    "dj3": [
+      "02"
+    ],
+    "dj4": [
+      "06"
+    ],
+    "dj5": [
+      "08"
+    ],
+    "dj6": [
+      "10"
+    ],
+    "dj9": [
+      "13"
+    ],
+    "xyz": [
+      "01"
+    ]
+  },
+  "native_id_collisions_across_filename_participants": {},
+  "source_audits": {
+    "ArmMovements": {
+      "recordings": 150,
+      "generic_eeg_name_mappings": 10,
+      "recordings_with_nonfinite_eeg_outside_selected_windows": 138,
+      "all_selected_epochs_finite": true
+    },
+    "ImaginedArmMovements": {
+      "recordings": 150,
+      "generic_eeg_name_mappings": 0,
+      "recordings_with_nonfinite_eeg_outside_selected_windows": 142,
+      "all_selected_epochs_finite": true
+    }
+  }
+}

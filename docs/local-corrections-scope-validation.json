@@ -1,0 +1,14 @@
+{
+  "signal_files_changed": [
+    "D:\\Data\\EEG\\MatchWords\\MatchWords_TRAIN.ts",
+    "D:\\Data\\EEG\\MatchWords\\MatchWords_TEST.ts",
+    "D:\\Data\\EEG\\VideoEmotions\\VideoEmotions_TRAIN.ts",
+    "D:\\Data\\EEG\\VideoEmotions\\VideoEmotions_TEST.ts"
+  ],
+  "other_signal_files_unchanged": 90,
+  "metadata_only_datasets": [
+    "Alzheimers",
+    "FingerMovements"
+  ],
+  "active_problems": 47
+}

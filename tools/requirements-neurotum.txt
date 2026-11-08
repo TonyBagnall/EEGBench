@@ -1,0 +1,3 @@
+-r requirements-moabb.txt
+pyxdf==1.18.0
+PyYAML==6.0.3

@@ -1,0 +1,10 @@
+# Standalone MOABB-source preparation environment; separate from experiments.
+# Pinned standalone preparation and validation runtime.
+aeon==1.5.0
+certifi==2026.02.25
+h5py==3.14.0
+mne==1.13.2
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.15.3
+requests==2.33.1

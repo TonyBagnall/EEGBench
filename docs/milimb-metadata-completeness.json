@@ -1,0 +1,31 @@
+{
+  "evidence": {
+    "direct": "Original CSV sample index, numeric channel order, exact waveforms, file-based subject/run/class/trial IDs and original participant annotations",
+    "documented": "Author numbered placement and filename encoding figures; original125Hz, microvolt units, reference/filter/protocol description",
+    "assigned": "Whole-subject split and deterministic source-file ordering; unknown session placeholder is not a recovered visit",
+    "missing": "Continuous offsets/dates and individually measured electrode geometry",
+    "availability": {
+      "subject_id": true,
+      "run_id": true,
+      "session_visit": false,
+      "trial_id": true,
+      "native_sample_index": "epoch-local",
+      "channel_names": "original author figure, native CSV numeric headers",
+      "channel_type": "documented EEG",
+      "positions": "placement graphic only",
+      "physical_units": "original release explicit",
+      "participant_annotations": true,
+      "original_partition": false
+    }
+  },
+  "missing_or_inconsistent": [
+    "Original continuous recording offsets, acquisition timestamps and visits unavailable; R1 is native repetition token, not asserted session date",
+    "31original rest file pairs copied across S1/S2; both members excluded symmetrically, no correct owner/label guessed. S1/S2 retain their unambiguous baseline/imagery epochs but no class8rest.",
+    "Native CSV sensor headers are numeric; anatomical identities are recovered from original indexed author figure, not from CSV text",
+    "Source reference/filter/rate/physical units documented by original release rather than embedded in CSV",
+    "No measured individual sensor coordinates; original placement figure retained, no synthetic geometry",
+    "Version2 lists7440 epoch files across60subject folders; selected imagery files3719, all R1, unlike larger published headline/repetition counts",
+    "S22R1I2_5.csv absent from original listing; retain299 left-hand cases, no invented or relabelled replacement",
+    "Participant annotations contain mixed-language/format values and inconsistent height units; originals retained as strings without guessed corrections"
+  ]
+}

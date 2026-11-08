@@ -1,0 +1,57 @@
+{
+  "method": "Independent expected counts from header-only audit sample counts and native clinical table, not converted signals",
+  "subjects": 35,
+  "train_subjects": [
+    "901",
+    "903",
+    "904",
+    "905",
+    "906",
+    "907",
+    "908",
+    "909",
+    "911",
+    "912",
+    "914",
+    "915",
+    "916",
+    "917",
+    "919",
+    "920",
+    "921",
+    "922",
+    "924",
+    "925",
+    "926",
+    "927",
+    "929",
+    "930",
+    "931",
+    "934"
+  ],
+  "test_subjects": [
+    "932",
+    "933",
+    "935",
+    "936",
+    "937",
+    "938",
+    "939",
+    "940",
+    "941"
+  ],
+  "class_counts": {
+    "train": {
+      "2": 4998,
+      "1": 2756
+    },
+    "test": {
+      "2": 1770,
+      "1": 890
+    }
+  },
+  "cases": {
+    "train": 7754,
+    "test": 2660
+  }
+}

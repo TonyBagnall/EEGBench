@@ -1,0 +1,146 @@
+{
+  "dataset": "ImaginedHandFootActionsPilot",
+  "source_key": "milimb",
+  "path": "D:/Data/EEGSources/MILimbEEG/pilot-output/ImaginedHandFootActionsPilot",
+  "train_cases": 62,
+  "test_cases": 62,
+  "subjects": 2,
+  "channels": 16,
+  "timepoints": 500,
+  "classes": 8,
+  "frequency": 125,
+  "size_GB": 0.021547764,
+  "licence": "CC-BY-4.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 62,
+        "shape": [
+          62,
+          16,
+          500
+        ],
+        "class_counts": {
+          "1": 1,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 31
+        },
+        "subjects": [
+          "S1"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 62,
+        "shape": [
+          62,
+          16,
+          500
+        ],
+        "class_counts": {
+          "1": 1,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 5,
+          "7": 5,
+          "8": 31
+        },
+        "subjects": [
+          "S60"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": null,
+    "aeon": {
+      "load_fit_predict": true,
+      "train_cases": 22,
+      "test_cases": 22
+    },
+    "aeon_scope": "All cases exact .ts readback; aeon load/variance/fit/predict on 3 cases per class per partition",
+    "channel_order_verified_all_recordings": true,
+    "source_sensor_identity": "Every CSV header0..15 checked; anatomical mapping recovered from original numbered electrode figure1..16",
+    "original_continuous_interval_overlap": "Unknown original continuous offsets; distributed native epochs and source participants disjoint"
+  },
+  "channel_quality": {
+    "threshold_std_uV": 1e-07,
+    "constant_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_channel_names": [
+      "FC5",
+      "F3",
+      "Fz",
+      "F4",
+      "FC6",
+      "FC1",
+      "FC2",
+      "Cz",
+      "T7",
+      "CP5",
+      "C3",
+      "CP1",
+      "CP2",
+      "C4",
+      "CP6",
+      "T8"
+    ],
+    "removed_indices": [],
+    "policy": "Remove sensor globally if any retained trial has std <= 1e-7 uV"
+  },
+  "source_cache": "D:/Data/EEGSources/MILimbEEG",
+  "relocated_from": "C:\\Temp\\EEGPilot\\ImaginedHandFootActionsPilot",
+  "relocated_utc": "2026-11-08T12:14:39.753508+00:00"
+}

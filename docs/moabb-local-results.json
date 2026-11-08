@@ -1,0 +1,290 @@
+{
+  "dataset": "VisualSubjects",
+  "train_cases": 42189,
+  "test_cases": 18826,
+  "subjects": 64,
+  "channels": 16,
+  "timepoints": 512,
+  "classes": 2,
+  "frequency": 512,
+  "size_GB": 5.814653,
+  "licence": "CC-BY-4.0",
+  "class_counts": {
+    "train": {
+      "1": 35157,
+      "2": 7032
+    },
+    "test": {
+      "1": 15688,
+      "2": 3138
+    }
+  },
+  "split": {
+    "unit": "participant",
+    "train": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48"
+    ],
+    "test": [
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64"
+    ],
+    "validation": "none",
+    "origin": "EEGBench-defined fixed split; MOABB supplies no universal fixed TRAIN/TEST split."
+  },
+  "source_doi": "10.5281/zenodo.3266223",
+  "source_version": "v1",
+  "validation": {
+    "quality_status": "passed",
+    "partitions": {
+      "TRAIN": {
+        "cases": 42189,
+        "shape": [
+          42189,
+          16,
+          512
+        ],
+        "class_counts": {
+          "1": 35157,
+          "2": 7032
+        },
+        "subjects": [
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34",
+          "35",
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46",
+          "47",
+          "48"
+        ],
+        "exact_float32_roundtrip": true,
+        "metadata_rows_verified": true,
+        "sha256": "9bc77667851cbd80256b8051d32dd63a6c5a8e076c51efdc056f450c62f202f0",
+        "bytes": 4005009885
+      },
+      "TEST": {
+        "cases": 18826,
+        "shape": [
+          18826,
+          16,
+          512
+        ],
+        "class_counts": {
+          "1": 15688,
+          "2": 3138
+        },
+        "subjects": [
+          "49",
+          "50",
+          "51",
+          "52",
+          "53",
+          "54",
+          "55",
+          "56",
+          "57",
+          "58",
+          "59",
+          "60",
+          "61",
+          "62",
+          "63",
+          "64"
+        ],
+        "exact_float32_roundtrip": true,
+        "metadata_rows_verified": true,
+        "sha256": "b9883cf8b9f70b5ac642c19d10ea19df2cd23149b1b092fdfa1caf108a4b83cc",
+        "bytes": 1779986281
+      }
+    },
+    "aeon": {
+      "passed": true,
+      "aeon_version": "1.5.0",
+      "classifier": "SummaryClassifier",
+      "train_cases": 8,
+      "test_cases": 8,
+      "note": "Representative compatibility check; full case readback checked separately, no benchmark scores."
+    },
+    "metadata_rows_verified": 61015,
+    "cross_split_duplicate_signal_hashes": 0,
+    "subject_overlap": [],
+    "cross_split_recording_overlap": false,
+    "within_recording_epoch_overlap": true,
+    "channel_order": "All files use the global original Header.csv schema; axes copied without reordering. No per-subject sensor headers supplied.",
+    "dropped_events": [
+      {
+        "participant_id": "34",
+        "source_epoch_index": 897,
+        "onset_sample": 328744,
+        "reason": "incomplete one-second epoch at recording end"
+      },
+      {
+        "participant_id": "34",
+        "source_epoch_index": 898,
+        "onset_sample": 328871,
+        "reason": "incomplete one-second epoch at recording end"
+      },
+      {
+        "participant_id": "34",
+        "source_epoch_index": 899,
+        "onset_sample": 329011,
+        "reason": "incomplete one-second epoch at recording end"
+      },
+      {
+        "participant_id": "52",
+        "source_epoch_index": 861,
+        "onset_sample": 254995,
+        "reason": "incomplete one-second epoch at recording end"
+      },
+      {
+        "participant_id": "52",
+        "source_epoch_index": 862,
+        "onset_sample": 255221,
+        "reason": "incomplete one-second epoch at recording end"
+      },
+      {
+        "participant_id": "52",
+        "source_epoch_index": 863,
+        "onset_sample": 255315,
+        "reason": "incomplete one-second epoch at recording end"
+      },
+      {
+        "participant_id": "62",
+        "source_epoch_index": 1367,
+        "onset_sample": 435181,
+        "reason": "incomplete one-second epoch at recording end"
+      }
+    ],
+    "max_float32_cast_absolute_error_source_units": 4.999994416721165e-06
+  },
+  "metadata_completeness": {
+    "evidence": {
+      "distributed_files": [
+        "global channel order",
+        "participant filename",
+        "sample timestamps",
+        "event and target codes",
+        "matrix dimensions",
+        "licence record"
+      ],
+      "loader_or_publication": [
+        "EEG type",
+        "hardware/reference",
+        "source signal units",
+        "game sessions"
+      ],
+      "locally_defined": [
+        "TRAIN/TEST split",
+        "epoch IDs and bounds",
+        "encoded labels equal original target codes"
+      ]
+    },
+    "missing": [
+      "individual sensor positions",
+      "physical session/run boundaries",
+      "original block/selection IDs (event codes retained without unverified decoding)",
+      "subject demographics per retained person"
+    ]
+  }
+}

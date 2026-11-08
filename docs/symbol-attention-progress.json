@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "pilot": "passed",
+  "archive_registered": true,
+  "expected_label_counts_before_end_window_checks": {
+    "TRAIN": {
+      "1": 440029,
+      "2": 82622
+    },
+    "TEST": {
+      "1": 147485,
+      "2": 27695
+    }
+  },
+  "current_registered": 66,
+  "current_selected": 62,
+  "original_labelled_flashes": 697831,
+  "excluded_duplicate_recording_flashes": 1392,
+  "expected_train_cases": 521259,
+  "expected_test_cases": 175180,
+  "expected_total_cases": 696439,
+  "full_validation": "passed",
+  "source_case_duplicate_preflight": "passed after documented exact copied-recording exclusion",
+  "remaining_flat_channels": 0,
+  "output": "D:/Data/EEG/SymbolAttention"
+}

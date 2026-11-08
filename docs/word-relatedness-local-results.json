@@ -1,0 +1,121 @@
+{
+  "dataset": "WordRelatedness",
+  "train_cases": 3600,
+  "test_cases": 1200,
+  "subjects": 40,
+  "recordings": 40,
+  "channels": 30,
+  "timepoints": 1024,
+  "classes": 2,
+  "frequency": 1024,
+  "size_GB": 1.728745,
+  "licence": "CC-BY-SA-4.0",
+  "class_counts": {
+    "train": {
+      "1": 1800,
+      "2": 1800
+    },
+    "test": {
+      "1": 600,
+      "2": 600
+    }
+  },
+  "validation": {
+    "quality_status": "passed",
+    "partitions": {
+      "TRAIN": {
+        "cases": 3600,
+        "shape": [
+          3600,
+          30,
+          1024
+        ],
+        "class_counts": {
+          "1": 1800,
+          "2": 1800
+        },
+        "subjects": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "010",
+          "011",
+          "012",
+          "013",
+          "014",
+          "015",
+          "016",
+          "017",
+          "018",
+          "019",
+          "020",
+          "021",
+          "022",
+          "023",
+          "024",
+          "025",
+          "026",
+          "027",
+          "028",
+          "029",
+          "030"
+        ],
+        "exact_float32_roundtrip": true,
+        "metadata_rows_verified": true
+      },
+      "TEST": {
+        "cases": 1200,
+        "shape": [
+          1200,
+          30,
+          1024
+        ],
+        "class_counts": {
+          "1": 600,
+          "2": 600
+        },
+        "subjects": [
+          "031",
+          "032",
+          "033",
+          "034",
+          "035",
+          "036",
+          "037",
+          "038",
+          "039",
+          "040"
+        ],
+        "exact_float32_roundtrip": true,
+        "metadata_rows_verified": true
+      }
+    },
+    "aeon": {
+      "passed": true,
+      "aeon_version": "1.5.0",
+      "classifier": "SummaryClassifier",
+      "train_cases": 8,
+      "test_cases": 8,
+      "note": "Representative compatibility check; full numeric readback checked separately. No benchmark scores."
+    },
+    "metadata_rows_verified": 4800,
+    "subject_overlap": [],
+    "cross_split_duplicate_signal_hashes": 0,
+    "source_channel_order_verified": true,
+    "source_binary_dtype": "little-endian float32",
+    "one_based_events_verified_against_eeglab": true,
+    "dropped_events": []
+  },
+  "missing_metadata": [
+    "actual word strings (stim_file n/a)",
+    "original named session/run IDs",
+    "timezone of EEGLAB T0",
+    "verified individual digitization provenance"
+  ]
+}

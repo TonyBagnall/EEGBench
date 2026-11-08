@@ -1,0 +1,734 @@
+{
+  "batista_recordings": [
+    {
+      "source_file": "sub-01/ses-lab1/task/MIMOHP/sub-01_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "a7bb7b159b8bc3f982b2184e366938aa7234fb0b572ff57d642627259ad8885e",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-01/ses-lab1/task/MIMOVR/sub-01_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "b44e9086e7dbeb67ce21d88ec6d226bbee404d4855d00a53fa90b002179386fc",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-01/ses-lab1/task/MIMOHPVR/sub-01_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "fa2e62e6a5eb1dfb206ef978efc8e3c460463578d71b6296e5ad865c98a08f46",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-01/ses-lab1/task/MI/sub-01_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "bb66a13ad466ecf48804ede5342ca3c1134dbb72def8f7a9c6b00c61abe7a0bb",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-01/ses-lab1/task/MIMO/sub-01_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220224",
+      "eeg_only_sha256": "0ba67b3ed459676197c0a62fe48543c063381769770185397861fe88f9bb4850",
+      "cue_segments_compared": 41
+    },
+    {
+      "source_file": "sub-02/ses-lab1/task/MIMOVR/sub-02_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "a15c31c13a8c190b22ce6f0aa67f03ac8482dcceb60e1eaf3f543b65eddaf9bc",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-02/ses-lab1/task/MI/sub-02_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "79a712454c6cbe2c5db390aff1d71aa99be8a95fbde94b0f68b841457915a71f",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-02/ses-lab1/task/MIMO/sub-02_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "cff9470ac5c881ed0cec634f0b894c805a866ea5fe69f784cd35a25dd02010e5",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-02/ses-lab1/task/MIMOHP/sub-02_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "460adc33ea5df61dbbf70128753071d4ed43b4b6ac3f256bcf65b13ba33fbb3d",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-02/ses-lab1/task/MIMOHPVR/sub-02_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "e92ecf40e2fd0bfb82c0f507020de908e8fa70190e67bbae5b3fd9702061c41f",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-03/ses-lab1/task/MIMOVR/sub-03_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "6931b6865a928ad5d26a19e900d3995b94cd1c3409427a155a0fe7c81609ec69",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-03/ses-lab1/task/MIMOHPVR/sub-03_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "7bfbbef388585a37b01e34da2374a93bba9500cc361ab7c09ed35d81ad89d580",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-03/ses-lab1/task/MIMO/sub-03_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "78d5d96a8edd0be4cfaf023ba77c7c3e36b8b1662ee4ed046a23a3d255db2daf",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-03/ses-lab1/task/MIMOHP/sub-03_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "93fc595b0a17bae7720156548cd00b78187c79314f976a2c0df9481e6b2af677",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-03/ses-lab1/task/MI/sub-03_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "b286dd7192dbf12d3c79175740f7f862c9c1c47c127ce01ca7f133278cf30b9c",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-04/ses-lab1/task/MIMOHPVR/sub-04_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "28c02109409c0912b2347abe3eb7b17ffb7c2fc9ed0fc2e929ab40f2380753af",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-04/ses-lab1/task/MIMOHP/sub-04_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "e14710a19875aff753783e231ae57cca30cd758abf0696c561eef31310971a14",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-04/ses-lab1/task/MI/sub-04_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "4a97aeaa65f65dbaa2872c1d74b5f19955b2e8496a78d335174f093f2dc908a1",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-04/ses-lab1/task/MIMOVR/sub-04_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "608cb1432c5552e44b96d9d7b5051411fd9936903e9ecdfdfe95ecc9d5e124af",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-04/ses-lab1/task/MIMO/sub-04_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20211129",
+      "eeg_only_sha256": "a676967cdf945589696005bdbe2a41b3742feb473a533756be4db3ca02fa7a73",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-05/ses-lab1/task/MIMOHPVR/sub-05_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20211130",
+      "eeg_only_sha256": "02032c213d3ced03bc939107d4c685a401450edfd67eaf4b9e542b94ddb13f39",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-05/ses-lab1/task/MIMO/sub-05_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20211130",
+      "eeg_only_sha256": "f2e1504a6bad9475a48afefaca66b2bc72193be5d7470e5bed668801b5d68c74",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-05/ses-lab1/task/MIMOVR/sub-05_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20211130",
+      "eeg_only_sha256": "1e59d9d49606f993875b9c631802973cf91d67e7680012ffcbcb0184202e53d7",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-05/ses-lab1/task/MI/sub-05_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20211130",
+      "eeg_only_sha256": "de8be72c076dc6cd1b723877d2f499151dd03fbed86523eb85b5103a6fc39d8e",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-05/ses-lab1/task/MIMOHP/sub-05_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20211130",
+      "eeg_only_sha256": "44d4e60a44caca87644366955004b5d14c652de9d5e75f0bf769c7bf1b1fc983",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-06/ses-lab1/task/MI/sub-06_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220509",
+      "eeg_only_sha256": "788f53fb19d51bfb21953675f5d147fe73e271e5a7e4c22e1212596f7f71f2a5",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-06/ses-lab1/task/MIMOHP/sub-06_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220509",
+      "eeg_only_sha256": "8be6df5b61c652692ff95df87cd5f7177cc3824210db00a71bd415fc2f522d0a",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-06/ses-lab1/task/MIMOHPVR/sub-06_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220509",
+      "eeg_only_sha256": "6cf28ab9bec4ff875c1a55cfa1dc9fe53dadc0877c093a96ac2a2a4273444ae7",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-06/ses-lab1/task/MIMO/sub-06_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220509",
+      "eeg_only_sha256": "3fea28fc119ffac591679819fcc111feb8cbb46e8c5a451711feb28670fe1438",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-06/ses-lab1/task/MIMOVR/sub-06_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220509",
+      "eeg_only_sha256": "889a03c2b5a06edc1f1ff2d55fdd0c30170549776411c40888f4ff7b7aab05a0",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-07/ses-lab1/task/MIMO/sub-07_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220510",
+      "eeg_only_sha256": "672360bd45ca53811209a95fbb815ad1c61d98299667512192248684278d243e",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-07/ses-lab1/task/MIMOHPVR/sub-07_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220510",
+      "eeg_only_sha256": "6ea608b5c8a1b197018bf0eadccafa4ba4170b8bb369d4bdf98d2932a64f30e7",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-07/ses-lab1/task/MI/sub-07_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220510",
+      "eeg_only_sha256": "ba70f75917ab69a7b90d165f13b921571ecd733fa2313605f66ac1125d490c3a",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-07/ses-lab1/task/MIMOHP/sub-07_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220510",
+      "eeg_only_sha256": "e0395df1100816dcbcb72eea95dc9b3081e06fbb5d0785a2aacb31578ee52023",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-07/ses-lab1/task/MIMOVR/sub-07_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220510",
+      "eeg_only_sha256": "2d532c0c25ce820b8547867a999724b613f80daac188b7ac96071cc37818ff6c",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-08/ses-lab1/task/MIMOHP/sub-08_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220511",
+      "eeg_only_sha256": "4e300b02726b2ff102371ce1bb6b274fd808afbfd1005543e8dcbdc7dccc43a3",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-08/ses-lab1/task/MIMO/sub-08_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220511",
+      "eeg_only_sha256": "db806679ea2b10cbb8f11049e2f59e8b68b5700e478cc1b37d39b106bacf29dd",
+      "cue_segments_compared": 41
+    },
+    {
+      "source_file": "sub-08/ses-lab1/task/MI/sub-08_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220511",
+      "eeg_only_sha256": "03bb38224ca99a5266f484c6f84217ae46302ac570a18556f5c5dd96f2f29a74",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-08/ses-lab1/task/MIMOVR/sub-08_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220511",
+      "eeg_only_sha256": "463aa72e6fb098ebba92da4b2c633f05be4e17c0e8cccdea5b6b67def1137f0b",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-08/ses-lab1/task/MIMOHPVR/sub-08_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220511",
+      "eeg_only_sha256": "ced695dc221e65f82536520c3a2c9e48198a521727be1418a6792509bda14d43",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-09/ses-lab1/task/MIMO/sub-09_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220520",
+      "eeg_only_sha256": "1420aa288e72ac489b2815801daead9fde2b5c1339a7197c1e8bbb69a29fa927",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-09/ses-lab1/task/MIMOHP/sub-09_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220520",
+      "eeg_only_sha256": "7e922b822439f7c2f54531ad9955e16d1f2767d7b3d79f1a34d1033e4588b4f5",
+      "cue_segments_compared": 41
+    },
+    {
+      "source_file": "sub-09/ses-lab1/task/MIMOVR/sub-09_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220520",
+      "eeg_only_sha256": "1c6936043bd2496590a66a30bd789ccd9dc63108f1f2ede91124016398227f8d",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-09/ses-lab1/task/MI/sub-09_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220520",
+      "eeg_only_sha256": "685d97851d30ef4ceb36bb9aec4ca9429b86676d9836fd7b782693a0d321c8c1",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-09/ses-lab1/task/MIMOHPVR/sub-09_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220520",
+      "eeg_only_sha256": "99b288db7639b5c5199c60aa76dba5f0169849fcb2e61cc26710a10167234acb",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-12/ses-lab1/task/MIMOVR/sub-12_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220525",
+      "eeg_only_sha256": "39b37ee84014aaad0d3a29b18d976a448e980bce6a61717561cc555bb94bc3f6",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-12/ses-lab1/task/MIMO/sub-12_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220525",
+      "eeg_only_sha256": "0ee2b1db2573adb407332a1ac89dcfa625327d39aceab1ab110c1782dded1803",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-12/ses-lab1/task/MIMOHPVR/sub-12_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220525",
+      "eeg_only_sha256": "1354f5801ff50bf5e071457ce40ebff6d6b5d1171aab7b185d12c9ec6a24b0a4",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-12/ses-lab1/task/MI/sub-12_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220525",
+      "eeg_only_sha256": "43f30b8d7aa4f6aa3eb2b30b45473b8ad0b2201719961f8cc9f51143227a3443",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-12/ses-lab1/task/MIMOHP/sub-12_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220525",
+      "eeg_only_sha256": "b499fa9b4d4c26fa990b0368e75e43475168a7492fb828b24e74292343aa5486",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-13/ses-lab1/task/MIMOHP/sub-13_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220527",
+      "eeg_only_sha256": "df669ef267e2f4fe6b036100fcb87e56aec6cf78b47b2cf676a2b85f551c25c4",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-13/ses-lab1/task/MI/sub-13_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220527",
+      "eeg_only_sha256": "64d2e885007f5c9bd93941bcf09128816007d32dadb549e6a506c94e1e1556a7",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-13/ses-lab1/task/MIMO/sub-13_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220527",
+      "eeg_only_sha256": "cc61ae5f823508ce5a2571505eac5b4bedf95d3bc1db5187b600a30e5621f912",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-13/ses-lab1/task/MIMOVR/sub-13_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220527",
+      "eeg_only_sha256": "d2112fda70070b1877166add098c3f632af3afdd03474d2d527a4eb25db7b3e4",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-14/ses-lab1/task/MIMO/sub-14_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220609",
+      "eeg_only_sha256": "3a8f78f14c51cc9cd222ba6e47907dac4fd146bc4d4213c3f2f49ad75b5295f3",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-14/ses-lab1/task/MI/sub-14_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220609",
+      "eeg_only_sha256": "fb2df8d3c4481ea9619f4da3e5310cb5d779458d326c00b2470f5e38d9106272",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-14/ses-lab1/task/MIMOVR/sub-14_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220609",
+      "eeg_only_sha256": "c5b93822a24874c25da76c730593cd7809daff42ddbbf765097ccdde81c32efc",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-14/ses-lab1/task/MIMOHPVR/sub-14_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220609",
+      "eeg_only_sha256": "e6f238fd28fd1b9e637363151d6020f663539c2060a6c7790347efbe538940d2",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-14/ses-lab1/task/MIMOHP/sub-14_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220609",
+      "eeg_only_sha256": "2bed2ae56bd6380a4b1fac25148937aaa3f61488941a2df4a4ad680ca07d3a7d",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-15/ses-lab1/task/MIMO/sub-15_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220618",
+      "eeg_only_sha256": "5ef46a655533badfcd0bede71b453af698c4602a30797231b515292b8946abe9",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-15/ses-lab1/task/MI/sub-15_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220618",
+      "eeg_only_sha256": "b1c57cec054ec736043f542a633fc395f8a5362279b246c50e8e63530ca27098",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-15/ses-lab1/task/MIMOHP/sub-15_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220618",
+      "eeg_only_sha256": "edb96ac221c220019901b849cd07e013c7a7fc563247829bc320e73753a87758",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-15/ses-lab1/task/MIMOHPVR/sub-15_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220618",
+      "eeg_only_sha256": "3dea86c482478a4644865bd6a6eafd2d547217e1a620712fa8f402b5627cab54",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-15/ses-lab1/task/MIMOVR/sub-15_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220618",
+      "eeg_only_sha256": "2d771cd752e1d2eb0fc1ec9f91344f0536c22499ba04e02a36a01bf40e8ef91a",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-16/ses-lab1/task/MIMOHPVR/sub-16_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220705",
+      "eeg_only_sha256": "9e35257b3bb1b36df4ac739ffc7c037a2e36715afec6ad35d84a94ee4da7e64c",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-16/ses-lab1/task/MI/sub-16_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220705",
+      "eeg_only_sha256": "b081481be4e02c31e4504177722f937a9c8046f2d78a9ccf9cd172f4506eeaee",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-16/ses-lab1/task/MIMOVR/sub-16_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220705",
+      "eeg_only_sha256": "8ae96c34668a1ea826f635eab6ac068cce79cc7c3f53163e2ba53b9a4ef48a8e",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-16/ses-lab1/task/MIMO/sub-16_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220705",
+      "eeg_only_sha256": "a6e96ab1c560b70471896cb80362ab4915e09ca47f61e3c700e00bb5bd23ceb4",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-16/ses-lab1/task/MIMOHP/sub-16_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220705",
+      "eeg_only_sha256": "84184b56f32314b80c8c91ca586250acbcbf6ba0c6bbd2e4975d4e8c59e6f171",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-17/ses-lab1/task/MIMOVR/sub-17_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220711",
+      "eeg_only_sha256": "4ed3d3dda4fb620012488066e19d522b845559f0b8445b95758d0dc0e963ecea",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-17/ses-lab1/task/MIMOHP/sub-17_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220711",
+      "eeg_only_sha256": "c39812a221b5b279f92fbeb66dd90a463f30c2da3c47b408b096e48258194d42",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-17/ses-lab1/task/MIMOHPVR/sub-17_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220711",
+      "eeg_only_sha256": "161a1d269aca11925545224674f92a2fe2b1e96ce22acbecd3e723c1be4208b6",
+      "cue_segments_compared": 41
+    },
+    {
+      "source_file": "sub-17/ses-lab1/task/MI/sub-17_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220711",
+      "eeg_only_sha256": "013d9db1f9a3601ea8531faf9c705c496ee9e4ba802e74facb2cd031fcc7a87f",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-17/ses-lab1/task/MIMO/sub-17_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220711",
+      "eeg_only_sha256": "51c64e27638a2b9541b078307e9877a077866d10c98bcf2b2a2d3d34a9aff021",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-18/ses-lab1/task/MIMOHP/sub-18_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220712",
+      "eeg_only_sha256": "902996a8f5d56947a372ed1b07834e0aa0c5e22af1027ed482931d7af09b74c6",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-18/ses-lab1/task/MI/sub-18_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220712",
+      "eeg_only_sha256": "4c1fc27b4bd68a4ab1e9e999d101f0f4ceb106e3a596e8a2ac28bbf15fd9def7",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-18/ses-lab1/task/MIMOVR/sub-18_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220712",
+      "eeg_only_sha256": "73b07b3133fdf854a922cff96f17fa53aa7efbc9facffb438ae4751c3bc6921d",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-18/ses-lab1/task/MIMOHPVR/sub-18_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220712",
+      "eeg_only_sha256": "31e5d8e16cccc117d25424859b439a73fc16e5c5ea2b5ecfe3a987f0b9af1bae",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-18/ses-lab1/task/MIMO/sub-18_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220712",
+      "eeg_only_sha256": "9d8cf03b282033e5b3dd282aaccd32a39902b543b916b5e124a2258994203db4",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-19/ses-lab1/task/MIMOHP/sub-19_ses-lab1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20220930",
+      "eeg_only_sha256": "7fa28547d370f0669bc42a6ec55edc260765e0b4a9e53ab6498d457f3edc4de5",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-19/ses-lab1/task/MIMOVR/sub-19_ses-lab1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20220930",
+      "eeg_only_sha256": "99aaab5d08f1158e2b4d80f445df8ea93c5af977d304eaf90a4672e27cfc8952",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-19/ses-lab1/task/MI/sub-19_ses-lab1_task-grazMI.vhdr",
+      "recording_date": "20220930",
+      "eeg_only_sha256": "7268b601a56b4c3a30a757d681d37cb32f1f6a401d6284125ab2ebd67b1b7367",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-19/ses-lab1/task/MIMO/sub-19_ses-lab1_task-neurowMIMO.vhdr",
+      "recording_date": "20220930",
+      "eeg_only_sha256": "4b3e870a8c7173756c969fa4cfc5e13a20bd3592fd112811a10d3f640d24080b",
+      "cue_segments_compared": 41
+    },
+    {
+      "source_file": "sub-19/ses-lab1/task/MIMOHPVR/sub-19_ses-lab1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20220930",
+      "eeg_only_sha256": "319031f639d2e322357a9e18e15339279bc40ea0f331f417235e9e28d760bbdf",
+      "cue_segments_compared": 42
+    },
+    {
+      "source_file": "sub-p01/ses-pilot1/task/MI/sub-01_ses-pilot1_task-grazMI.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "833f1841616b419075df75124e4157c72cb967f0206719bb4fcdebeda390bfdf",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p01/ses-pilot1/task/MIMO/sub-01_ses-pilot1_task-neurowMIMO.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "3cb165e62b0f7bebd89d4d9de17c3fea413fc973918860eb1901396f36fc9dda",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p01/ses-pilot1/task/MIMOHP/sub-01_ses-pilot1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "c2ff1344d4f94fc026640b905b34b448fc49b3b4cd09e7340b1a2aeed52eb526",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p01/ses-pilot1/task/MIMOHPVR/sub-01_ses-pilot1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "f04c40408f21419f27c87f3d67b2dfc3be696ad84231b5b4eb1a97d0a2ae6f3f",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p01/ses-pilot1/task/MIMOVR/sub-01_ses-pilot1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "2a697b4ac9dd4f0248c73c4ed80c8935635496e77e6d7ebc6b17a58bbb351866",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p02/ses-pilot1/task/MI/sub-02_ses-pilot1_task-grazMI.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "ab007fa99d9862a1735c65ef57c11d7c67fcd4122cd461814d07272280be96b9",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p02/ses-pilot1/task/MIMO/sub-02_ses-pilot1_task-neurowMIMO.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "d6aeb02d48f1b004a4eeb888bef37518352a0f6e022caf773251dd6c14a50ac6",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p02/ses-pilot1/task/MIMOHP/sub-02_ses-pilot1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "4c56e81755f48b7f8f76afb49fbdf4348f763824ccdd2040ab61102caa5eae51",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p02/ses-pilot1/task/MIMOHPVR/sub-02_ses-pilot1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "37aaceddbb86c73cc84197d535c3ffdaec4cd3cbd7971b7c8755f652d9278386",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p02/ses-pilot1/task/MIMOVR/sub-02_ses-pilot1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20211015",
+      "eeg_only_sha256": "f943b97c5c15e7ffaa37be0043994206b1e72b7ae448b12d07fee59f1dd9d82c",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MI/sub-03_ses-pilot1_task-grazMI.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "3e1012e45b03c16423d6de941f58edf0f79ddf51089ea398bdbc5cb4d8108390",
+      "cue_segments_compared": 40
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MIMO/sub-03_ses-pilot1_task-neurowMIMO.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "9802560315070da35fdb97f8b802ffe163aa8f5a714a0ae72245d7ba2f91aacc",
+      "cue_segments_compared": 39
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MIMOHP/sub-03_ses-pilot1_task-neurowMIMOHP.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "4f75e2c3ef0276d9314b448094919418d5add50654ca152e7529efa2f205e582",
+      "cue_segments_compared": 39
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MIMOHPVR/sub-03_ses-pilot1_task-neurowMIMOVRHP.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "9731b4541a94be7963d011efa890b6309d5ed69dad5a6e2bcb0e68facd9986e9",
+      "cue_segments_compared": 38
+    },
+    {
+      "source_file": "sub-p03/ses-pilot1/task/MIMOVR/sub-03_ses-pilot1_task-neurowMIMOVR.vhdr",
+      "recording_date": "20211025",
+      "eeg_only_sha256": "a1caf0a379c9e33271e6c7df4acc2f993ac6a79c4f6d8f1d9839962058810509",
+      "cue_segments_compared": 40
+    }
+  ],
+  "vagaja_recordings": [
+    {
+      "source_file": "Embodied/SUB03/SUB03_MI.vhdr",
+      "recording_date": "20230302",
+      "eeg_only_sha256": "279bb2cccd6c78ed8747ff241c00e251144bd92c4a0330e8ab56e98c015b21d6"
+    },
+    {
+      "source_file": "Embodied/SUB05/SUB05_MI.vhdr",
+      "recording_date": "20230306",
+      "eeg_only_sha256": "0a47442c0802a80bfa669923f61ce33500c530625a9225dcf1ee6d96e001680b"
+    },
+    {
+      "source_file": "Embodied/SUB06/SUB06_MI.vhdr",
+      "recording_date": "20230307",
+      "eeg_only_sha256": "175a47e7dc84dd3155b025b86c1b9437cc14a33deb921b085ae82a910cd4a05f"
+    },
+    {
+      "source_file": "Embodied/SUB07/SUB07_MI.vhdr",
+      "recording_date": "20230307",
+      "eeg_only_sha256": "7bc018a5fd2858fd7a8e650c231a5a14a6ffaff7b863fbc8301879ee19371957"
+    },
+    {
+      "source_file": "Embodied/SUB08/SUB08_MI.vhdr",
+      "recording_date": "20230308",
+      "eeg_only_sha256": "f9653c6efe6428553fa2a643fb4fe1ab94f68a83e20749a2565394bb7380c09c"
+    },
+    {
+      "source_file": "Embodied/SUB09/SUB09_MI.vhdr",
+      "recording_date": "20230309",
+      "eeg_only_sha256": "b1d740ba45e0ce7d01b93fe4a6b3b632af58c74eb707e47b17aee664e9a0df2f"
+    },
+    {
+      "source_file": "Embodied/SUB10/SUB10_MI.vhdr",
+      "recording_date": "20230309",
+      "eeg_only_sha256": "de6cfac7d641fee7beb0f6e7f5a41a58543acd7f1489257df6013e134609b14e"
+    },
+    {
+      "source_file": "Embodied/SUB12/SUB12_MI.vhdr",
+      "recording_date": "20230310",
+      "eeg_only_sha256": "91b1795e8b31715c9bc89c6a38058596919a8a98af4042c751cd75be52b95932"
+    },
+    {
+      "source_file": "Embodied/SUB14/SUB14_MI.vhdr",
+      "recording_date": "20230313",
+      "eeg_only_sha256": "36c4b9fe1a29c813cf06fe6adf9176a55e84dfa584f7f1b67f8cf2f56e5d02dc"
+    },
+    {
+      "source_file": "Embodied/SUB15/SUB15_MI.vhdr",
+      "recording_date": "20230322",
+      "eeg_only_sha256": "0babd1c4aa3fe04563b170244ec730adab9ec64f342392771dc6b819cb0b4cb8"
+    },
+    {
+      "source_file": "Embodied/SUB16/SUB16_MI.vhdr",
+      "recording_date": "20230323",
+      "eeg_only_sha256": "16d427208964e12a6677454fa7b319226f30eaf56c8f023283f971ec85761c4e"
+    },
+    {
+      "source_file": "Control/SUB17/SUB17_MI.vhdr",
+      "recording_date": "20230327",
+      "eeg_only_sha256": "6d9aa51f205ca0488a1ab8365faf1b31b80fd41cc72944ec560670deb02f283e"
+    },
+    {
+      "source_file": "Control/SUB18/SUB18_MI.vhdr",
+      "recording_date": "20230327",
+      "eeg_only_sha256": "11e6a9a563ecc0bfd6a3a0e567cd4f3f6ae9fc84e0e5c57b87cdb87227c6712f"
+    },
+    {
+      "source_file": "Control/SUB19/SUB19_MI.vhdr",
+      "recording_date": "20230329",
+      "eeg_only_sha256": "dd1bd11e2a6a1127ca25e7056971e6d30054d8ef51c8053eb0afb6be1f46a4fb"
+    },
+    {
+      "source_file": "Control/SUB20/SUB20_MI.vhdr",
+      "recording_date": "20230330",
+      "eeg_only_sha256": "80472a2604be7cffa5ea90ce2b81363c77477197e4cff24ea5bbadea0b0382e8"
+    },
+    {
+      "source_file": "Control/SUB21/SUB21_MI.vhdr",
+      "recording_date": "20230330",
+      "eeg_only_sha256": "16c083e5a8eab1553e4c2a33066a093eccb2dc6f3765be092d49c48d0f864c9e"
+    },
+    {
+      "source_file": "Control/SUB22/SUB22_MI.vhdr",
+      "recording_date": "20230331",
+      "eeg_only_sha256": "bdb73759af6f1b0128e5218af24204cbbb7b57c47bb7844ead8519d179f3b422"
+    },
+    {
+      "source_file": "Control/SUB23/SUB23_MI.vhdr",
+      "recording_date": "20230331",
+      "eeg_only_sha256": "1d407595ae0c090d409f806c75c1e870bb88d10271a5b891f44bc0b2e0dde89d"
+    },
+    {
+      "source_file": "Control/SUB24/SUB24_MI.vhdr",
+      "recording_date": "20230403",
+      "eeg_only_sha256": "dd7bb38f2126de550d8a02ab3ea72ef34eeadd4cf8dbf46cdfe616bfaf3ceb95"
+    },
+    {
+      "source_file": "Control/SUB25/SUB25_MI.vhdr",
+      "recording_date": "20230403",
+      "eeg_only_sha256": "bf3300671b894f5eae540c28fb2bd5357403e53bb5473f38c454761dc19b1f71"
+    },
+    {
+      "source_file": "Control/SUB26/SUB26_MI.vhdr",
+      "recording_date": "20230404",
+      "eeg_only_sha256": "1b64eb96b6e48c5f8ab28c136be3132ccb6ea07cbfc2bef845ce793e793baf51"
+    },
+    {
+      "source_file": "Control/SUB27/SUB27_MI.vhdr",
+      "recording_date": "20230404",
+      "eeg_only_sha256": "69e08ee1d7318ab4d632c2598443c82c5e6fc1663f1f2583330d34bcaeaa63e0"
+    },
+    {
+      "source_file": "Control/SUB28/SUB28_MI.vhdr",
+      "recording_date": "20230404",
+      "eeg_only_sha256": "92670599b658dfd4354ea19ede50a7910794aabc076c544e3a0bb89a33382294"
+    },
+    {
+      "source_file": "Embodied/SUB29/SUB29_MI.vhdr",
+      "recording_date": "20230405",
+      "eeg_only_sha256": "96e6d62ff2d859819d19930f45a4a51c8b5c58a8f6ce5c0d0411c1cbab659c0f"
+    },
+    {
+      "source_file": "Control/SUB30/SUB30_MI.vhdr",
+      "recording_date": "20230406",
+      "eeg_only_sha256": "3ab7a09c367c8ea11850293502c5fca6cd03d144d93a657cde61c247fbd5591c"
+    },
+    {
+      "source_file": "Embodied/SUB31/SUB31_MI.vhdr",
+      "recording_date": "20230412",
+      "eeg_only_sha256": "0b786005f5e50a3228f60a3b053c69d029cb1370e68d0b0edc0616d4bfd49d81"
+    }
+  ],
+  "exact_eeg_recording_matches": 0,
+  "exact_cue_first_two_second_matches": 0,
+  "scope": "All selected Batista recording EEG-only hashes and retained cue-locked2second32EEG fingerprints compared against26VagajaMIrecordings and all source cue prefixes. Different timestamps support distinct acquisition. Does not establish participant identity across studies.",
+  "overlapping_recording_dates": []
+}

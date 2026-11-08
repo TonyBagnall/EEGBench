@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0188293</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-17-13642</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Bioassays and physiological analysis</subject><subj-group><subject>Electrophysiological techniques</subject><subj-group><subject>Brain electrophysiology</subject><subj-group><subject>Electroencephalography</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Electrophysiology</subject><subj-group><subject>Neurophysiology</subject><subj-group><subject>Brain electrophysiology</subject><subj-group><subject>Electroencephalography</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Electrophysiology</subject><subj-group><subject>Neurophysiology</subject><subj-group><subject>Brain electrophysiology</subject><subj-group><subject>Electroencephalography</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Neurophysiology</subject><subj-group><subject>Brain electrophysiology</subject><subj-group><subject>Electroencephalography</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Brain mapping</subject><subj-group><subject>Electroencephalography</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Clinical medicine</subject><subj-group><subject>Clinical neurophysiology</subject><subj-group><subject>Electroencephalography</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Imaging techniques</subject><subj-group><subject>Neuroimaging</subject><subj-group><subject>Electroencephalography</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Neuroimaging</subject><subj-group><subject>Electroencephalography</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject><subj-group><subject>Joints (anatomy)</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject><subj-group><subject>Joints (anatomy)</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject><subj-group><subject>Limbs (anatomy)</subject><subj-group><subject>Arms</subject><subj-group><subject>Elbow</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject><subj-group><subject>Limbs (anatomy)</subject><subj-group><subject>Arms</subject><subj-group><subject>Elbow</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject><subj-group><subject>Limbs (anatomy)</subject><subj-group><subject>Arms</subject><subj-group><subject>Hands</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject><subj-group><subject>Limbs (anatomy)</subject><subj-group><subject>Arms</subject><subj-group><subject>Hands</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Musculoskeletal system</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Surgical and invasive medical procedures</subject><subj-group><subject>Functional electrical stimulation</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Data acquisition</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Engineering and technology</subject><subj-group><subject>Signal processing</subject><subj-group><subject>Signal filtering</subject><subj-group><subject>Bandpass filters</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Evaluating the versatility of EEG models generated from motor imagery tasks: An exploratory investigation on upper-limb elbow-centered motor imagery tasks</article-title>
+<alt-title alt-title-type="running-head">Evaluating the versatility of EEG models from elbow-centered motor imagery tasks</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-7623-5787</contrib-id>
+<name name-style="western">
+<surname>Zhang</surname>
+<given-names>Xin</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Visualization</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Yong</surname>
+<given-names>Xinyi</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-2309-9977</contrib-id>
+<name name-style="western">
+<surname>Menon</surname>
+<given-names>Carlo</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="corresp" rid="cor001">*</xref>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+</contrib-group>
+<aff id="aff001"><addr-line>Menrva Research Group, Schools of Mechatronic Systems Engineering and Engineering Science, Simon Fraser University, Metro Vancouver, British Columbia, Canada</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>He</surname>
+<given-names>Bin</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University of Minnesota, UNITED STATES</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">cmenon@sfu.ca</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>29</day>
+<month>11</month>
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>11</issue>
+<elocation-id>e0188293</elocation-id>
+<history>
+<date date-type="received">
+<day>7</day>
+<month>4</month>
+<year>2017</year>
+</date>
+<date date-type="accepted">
+<day>3</day>
+<month>11</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Zhang et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0188293"/>
+<abstract>
+<p>Electroencephalography (EEG) has recently been considered for use in rehabilitation of people with motor deficits. EEG data from the motor imagery of different body movements have been used, for instance, as an EEG-based control method to send commands to rehabilitation devices that assist people to perform a variety of different motor tasks. However, it is both time and effort consuming to go through data collection and model training for every rehabilitation task. In this paper, we investigate the possibility of using an EEG model from one type of motor imagery (e.g.: elbow extension and flexion) to classify EEG from other types of motor imagery activities (e.g.: open a drawer). In order to study the problem, we focused on the elbow joint. Specifically, nine kinesthetic motor imagery tasks involving the elbow were investigated in twelve healthy individuals who participated in the study. While results reported that models from goal-oriented motor imagery tasks had higher accuracy than models from the simple joint tasks in intra-task testing (e.g., model from elbow extension and flexion task was tested on EEG data collected from elbow extension and flexion task), models from simple joint tasks had higher accuracies than the others in inter-task testing (e.g., model from elbow extension and flexion task tested on EEG data collected from drawer opening task). Simple single joint motor imagery tasks could, therefore, be considered for training models to potentially reduce the number of repetitive data acquisitions and model training in rehabilitation applications.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100000024</institution-id>
+<institution>Canadian Institutes of Health Research</institution>
+</institution-wrap>
+</funding-source>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-2309-9977</contrib-id>
+<name name-style="western">
+<surname>Menon</surname>
+<given-names>Carlo</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100000038</institution-id>
+<institution>Natural Sciences and Engineering Research Council of Canada</institution>
+</institution-wrap>
+</funding-source>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-2309-9977</contrib-id>
+<name name-style="western">
+<surname>Menon</surname>
+<given-names>Carlo</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award003">
+<funding-source>
+<institution>Canada Research Chair, Government of Canada</institution>
+</funding-source>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-2309-9977</contrib-id>
+<name name-style="western">
+<surname>Menon</surname>
+<given-names>Carlo</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award004">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100004543</institution-id>
+<institution>China Scholarship Council</institution>
+</institution-wrap>
+</funding-source>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-7623-5787</contrib-id>
+<name name-style="western">
+<surname>Zhang</surname>
+<given-names>Xin</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>Funded by Canadian Institutes of Health Research (CIHR), Natural Sciences and Engineering Research Council of Canada (NSERC), Canada Research Chair (CRC) program.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="8"/>
+<table-count count="10"/>
+<page-count count="20"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All EEG data collected are available from fighshare (<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.6084/m9.figshare.5579461.v1" xlink:type="simple">https://doi.org/10.6084/m9.figshare.5579461.v1</ext-link>).</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Several BCIs are based on electroencephalography (EEG). EEG measures the electric brain activity caused by the flow of electric currents during the synaptic excitations of the dendrites in the neurons. [<xref ref-type="bibr" rid="pone.0188293.ref001">1</xref>]. Recently, research on EEG controlled system has become particularly active, as EEG measurement is non-invasive and easy to set up [<xref ref-type="bibr" rid="pone.0188293.ref002">2</xref>–<xref ref-type="bibr" rid="pone.0188293.ref006">6</xref>].</p>
+<p>Different EEG-based control approaches have been explored in different populations to assist individuals to reacquire the basic abilities for communication [<xref ref-type="bibr" rid="pone.0188293.ref007">7</xref>] and mobility (e.g., control of neuroprostheses [<xref ref-type="bibr" rid="pone.0188293.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0188293.ref010">10</xref>] and wheelchairs [<xref ref-type="bibr" rid="pone.0188293.ref011">11</xref>]). Recently, research groups have also explored the use of EEG controlled systems in stroke rehabilitation, in order to encourage users to be actively engaged during the rehabilitation process [<xref ref-type="bibr" rid="pone.0188293.ref003">3</xref>][<xref ref-type="bibr" rid="pone.0188293.ref012">12</xref>]. A current challenge is to develop EEG controlled systems for a large number of tasks with high accuracy [<xref ref-type="bibr" rid="pone.0188293.ref004">4</xref>]. To overcome this problem, the building of binary classification models for each task has been investigated [<xref ref-type="bibr" rid="pone.0188293.ref013">13</xref>]. However, repetitively acquiring EEG data and building EEG models for each task does require considerable effort on the part of the user and is also time-consuming. A possible solution is to build a general EEG model based on EEG data of a specific movement, which can be reused in different but similar training tasks (general model approach, GM for short).</p>
+<p>Motor imagery is a common method for EEG controls in the literature [<xref ref-type="bibr" rid="pone.0188293.ref004">4</xref>][<xref ref-type="bibr" rid="pone.0188293.ref014">14</xref>]. Motor imaginary can be either goal-oriented or be related to a single joint. Goal-oriented motor imagery refers to imagery on context-specific movements, such as grasping a glass of water for drinking or eating with a spoon [<xref ref-type="bibr" rid="pone.0188293.ref015">15</xref>]. On the other hand, single joint motor imagery, as referred to in this paper, consists of imagining a single joint movement that is not goal-oriented or has a specific meaningful purpose. Examples of single joint motor imagery include imagining flexing or extending the elbow, the wrist, or another joint without grasping an object or any specific function [<xref ref-type="bibr" rid="pone.0188293.ref015">15</xref>].</p>
+<p>Studies have shown that practice of goal-oriented tasks after stroke produces long-lasting cortical reorganization compared to traditional stroke rehabilitation[<xref ref-type="bibr" rid="pone.0188293.ref015">15</xref>][<xref ref-type="bibr" rid="pone.0188293.ref016">16</xref>][<xref ref-type="bibr" rid="pone.0188293.ref017">17</xref>]. Additionally, Boyd et al. demonstrated that goal-oriented task training with the hemiparetic arm resulted in both functional reorganization of both motor cortices and a larger motor learning-related change after stroke[<xref ref-type="bibr" rid="pone.0188293.ref018">18</xref>].</p>
+<p>Despite the importance of goal-oriented tasks in stroke rehabilitation, most existing EEG controlled systems were developed to perform simple movements rather than goal-oriented tasks (see <xref ref-type="table" rid="pone.0188293.t001">Table 1</xref>). Only a few studies considered goal-oriented tasks (e.g. Frisoli, A. et al. [<xref ref-type="bibr" rid="pone.0188293.ref019">19</xref>], Royer, AS. et al.[<xref ref-type="bibr" rid="pone.0188293.ref020">20</xref>], Min, BK. et.al[<xref ref-type="bibr" rid="pone.0188293.ref021">21</xref>]).</p>
+<table-wrap id="pone.0188293.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t001</object-id>
+<label>Table 1</label> <caption><title>Examples of different EEG control setup and tasks used in the literature.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify">Bibliography</th>
+<th align="justify">Feedback</th>
+<th align="justify">EEG Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Wolpaw et al. 2004</bold> [<xref ref-type="bibr" rid="pone.0188293.ref022">22</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG+Visual</td>
+<td align="justify" style="background-color:#C0C0C0">8-Class: By combining Vertical and Horizontal control to select 8 targets</td>
+</tr>
+<tr>
+<td align="justify"><bold>Meng et al. 2008</bold> [<xref ref-type="bibr" rid="pone.0188293.ref023">23</xref>]</td>
+<td align="justify">EEG + Visual + FES</td>
+<td align="justify">2-Class: MI (Wrist/Hand) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Buch et al. 2008</bold>[<xref ref-type="bibr" rid="pone.0188293.ref024">24</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG + Visual + Orthosis</td>
+<td align="justify" style="background-color:#C0C0C0">2-Class: MI (Grasp) vs MI (Open)</td>
+</tr>
+<tr>
+<td align="justify"><bold>Daly et al. 2009</bold>[<xref ref-type="bibr" rid="pone.0188293.ref025">25</xref>]</td>
+<td align="justify">EEG + Visual + FES</td>
+<td align="justify">2-Class: MI/AT (Finger Extension) vs Relax</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Ying Gu et al. 2009</bold>[<xref ref-type="bibr" rid="pone.0188293.ref026">26</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG</td>
+<td align="justify" style="background-color:#C0C0C0">4-Class: MI of finger/wrist with different moving speed</td>
+</tr>
+<tr>
+<td align="justify"><bold>Prasad et al. 2010</bold>[<xref ref-type="bibr" rid="pone.0188293.ref027">27</xref>]</td>
+<td align="justify">EEG + Visual</td>
+<td align="justify">2-Class: MI Left vs MI Right (Arm/Hand)</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Tan et al. 2010</bold> [<xref ref-type="bibr" rid="pone.0188293.ref028">28</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG + Visual + NES</td>
+<td align="justify" style="background-color:#C0C0C0">2-Class: MI (Hand) vs Rest</td>
+</tr>
+<tr>
+<td align="justify"><bold>Ang et al. 2010</bold>[<xref ref-type="bibr" rid="pone.0188293.ref029">29</xref>]</td>
+<td align="justify">EEG + Visual + Robot</td>
+<td align="justify">2-Class: MI/AT (Grasp) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Broetz et al. 2010</bold>[<xref ref-type="bibr" rid="pone.0188293.ref030">30</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG + Visual + Orthosis</td>
+<td align="justify" style="background-color:#C0C0C0">2-Class: MI/AT (Grasp) vs MI/AT (Open)</td>
+</tr>
+<tr>
+<td align="justify"><bold>Tam et al. 2011</bold> [<xref ref-type="bibr" rid="pone.0188293.ref031">31</xref>]</td>
+<td align="justify">EEG + Visual + FES</td>
+<td align="justify">2-Class: MI (Wrist) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Gomez-Rodriguez et al. 2010</bold>[<xref ref-type="bibr" rid="pone.0188293.ref032">32</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG + Visual + Robot</td>
+<td align="justify" style="background-color:#C0C0C0">2-Class: MI (Elbow Flexion/Extension) vs Rest</td>
+</tr>
+<tr>
+<td align="justify"><bold>Shindo et al. 2011</bold>[<xref ref-type="bibr" rid="pone.0188293.ref033">33</xref>]</td>
+<td align="justify">EEG + Visual + Orthosis</td>
+<td align="justify">2-Class: MI (Open Hand) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Ortner et al. 2012</bold>[<xref ref-type="bibr" rid="pone.0188293.ref034">34</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG + Visual</td>
+<td align="justify" style="background-color:#C0C0C0">2-Class: MI Left vs MI Right (Hand)</td>
+</tr>
+<tr>
+<td align="justify"><bold>Kaiser et al. 2012</bold>[<xref ref-type="bibr" rid="pone.0188293.ref035">35</xref>]</td>
+<td align="justify">EEG + Visual</td>
+<td align="justify">2-Class: MI/AT (Grasp) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Cincotti et al. 2012</bold>[<xref ref-type="bibr" rid="pone.0188293.ref036">36</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG + EMG + FES</td>
+<td align="justify" style="background-color:#C0C0C0">2-Class: MI/AT (Grasp/Finger Extension) vs Relax</td>
+</tr>
+<tr>
+<td align="justify"><bold>Frisoli et al. 2012</bold>[<xref ref-type="bibr" rid="pone.0188293.ref019">19</xref>]</td>
+<td align="justify">EEG + Arm Exoskeleton + Kinect + Eye-Tracker</td>
+<td align="justify">2-Class: MI (Right Arm) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Vuckovic et al. 2012</bold>[<xref ref-type="bibr" rid="pone.0188293.ref037">37</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG</td>
+<td align="justify" style="background-color:#C0C0C0">4-Class: MI on both wrist movement</td>
+</tr>
+<tr>
+<td align="justify"><bold>Ramos-Murguialday et al. 2013</bold>[<xref ref-type="bibr" rid="pone.0188293.ref038">38</xref>]</td>
+<td align="justify">EEG + Orthosis</td>
+<td align="justify">2-Class: AT (Reach &amp; Grasp) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Young et al. 2014</bold>[<xref ref-type="bibr" rid="pone.0188293.ref039">39</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG + Visual + FES + TS</td>
+<td align="justify" style="background-color:#C0C0C0">2-Class: AT (Open + Close Hand) vs Rest</td>
+</tr>
+<tr>
+<td align="justify"><bold>Ang et al. 2015</bold>[<xref ref-type="bibr" rid="pone.0188293.ref040">40</xref>]</td>
+<td align="justify">EEG + Visual + Robot</td>
+<td align="justify">2-Class: MI (Grasp) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Pinto et al.2015</bold>[<xref ref-type="bibr" rid="pone.0188293.ref041">41</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG</td>
+<td align="justify" style="background-color:#C0C0C0">2-Class: Action vs Rest; 4-Class: L-R motor, L-R MI</td>
+</tr>
+<tr>
+<td align="justify"><bold>Ibáñez et al. 2015</bold>[<xref ref-type="bibr" rid="pone.0188293.ref042">42</xref>]</td>
+<td align="justify">EEG+FES</td>
+<td align="justify">2-Class: AT(Elbow) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Yong et al. 2015</bold>[<xref ref-type="bibr" rid="pone.0188293.ref013">13</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG Offline Analysis</td>
+<td align="justify" style="background-color:#C0C0C0">4-Class: MI(Grasp, Elbow, Reach&amp;Grasp) vs Rest</td>
+</tr>
+<tr>
+<td align="justify"><bold>Elnady et al. 2015</bold>[<xref ref-type="bibr" rid="pone.0188293.ref043">43</xref>]</td>
+<td align="justify">EEG + Exoskeleton + FES</td>
+<td align="justify">2-Class: MI (Grasp) vs Rest</td>
+</tr>
+<tr>
+<td align="justify" style="background-color:#C0C0C0"><bold>Edelman et al. 2016</bold>[<xref ref-type="bibr" rid="pone.0188293.ref044">44</xref>]</td>
+<td align="justify" style="background-color:#C0C0C0">EEG</td>
+<td align="justify" style="background-color:#C0C0C0">4-Class: MI on one hand movement</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>MI: motor imagery; AT: attempted movement; NES: neuromuscular electrical stimulation; TS: tongue stimulation; S: stroke volunteers; H: healthy individuals; sess: session(s)</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>Recent literature has shown that the motor imagery (MI) of goal-oriented movements is better than non-goal-oriented movements in terms of achieving higher EEG control accuracy [<xref ref-type="bibr" rid="pone.0188293.ref013">13</xref>]. However, in practical rehabilitation applications, participants would have to spend time and effort in repetitive data acquisition and model training for each different goal-oriented task. On the other hand, the use of a GM could potentially drastically reduce the training time as the training would be done on a single task. However, it is not known whether an EEG model trained using the EEG signals of the motor imagery of a single upper extremity movement (e.g., elbow flexion and extension) could be used to classify the motor imagery of similar other movements (e.g., opening a door, combing hair, placing a ball into a basket, etc.). To the best of the authors’ knowledge, it is also not known which movement would work best to generate the GM. The investigation into a model can be reused in different training tasks is an important problem to be addressed especially in EEG controlled rehabilitation applications, where each goal-oriented movement is generally functionally different from the others.</p>
+<p>The main goal of this exploratory study is to determine which motor imagery task is the most suitable to make the EEG model versatile during EEG acquisition, i.e. have the highest inter-task test accuracy. Specifically, the versatility of nine different motor imagery tasks was considered in this paper. In this context, versatility means that the EEG model generated from one specific motor imagery task leads to good performance when tested on the EEG data of other motor imagery tasks. In this study, six classification methods were used to generate the EEG models of the nine predefined motor imagery tasks. Then, the EEG data from other eight motor imagery tasks were used to test the inter-task test accuracy of the EEG model. Finally, a statistical analysis was performed to determine which motor imagery task was the most versatile when used as a GM.</p>
+<p>Given the complexity of the problem, this exploratory study focuses only on upper-extremity movements to simplify the investigation. Specifically, all the tasks were selected to be centered on the elbow joint.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Methods</title>
+<p>All the methods within this study were in compliance with the Declaration of Helsinki. The study was also approved by the Simon Fraser University (SFU) Office of Research Ethics.</p>
+<p>In this study, 12 participants (aged 20–33 years old, 10 males and 2 females) agreed to join the study. All the participants signed informed consent forms before taking part in the experiment. Each individual was seated in front of a computer monitor, which provided a simple Graphical User Interface (GUI) that displayed pictures or cues to the participant.</p>
+<sec id="sec003">
+<title>Experimental protocol</title>
+<p>A 32-channel, EGI Geodesic N400 system (Electrical Geodesics Inc., Eugene, OR, USA) was used to acquire the EEG data from the participants. EEG data were amplified and recorded at a sampling rate of 1 kHz. The electrode contact sites are shown in <xref ref-type="fig" rid="pone.0188293.g001">Fig 1</xref>. 17 channels were used in this study, as the remaining channels were located on the face (the EGI cap does not allow to re-position the electrodes). All participants were requested to wear the EGI sensor net for approximately 40 minutes during this experiment. During the experiment, the participants could take a break if desired.</p>
+<fig id="pone.0188293.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Contact montage of the EEG system in the experiment, 17 channels was used.</title>
+<p>Cz was defined as the reference contact by the EGI system, COM was the common ground contact.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.g001" xlink:type="simple"/>
+</fig>
+<p>EEG data were collected using the Stimulus Presentation mode in BCI2000[<xref ref-type="bibr" rid="pone.0188293.ref045">45</xref>]. During Stimulus Presentation, customized pictures were shown on the screen while the EEG signals were recorded and filtered with a bandpass filter of 0.1–40 Hz. In this study, the pictures for ten different tasks were randomly selected and displayed on the screen. These pictures are presented in <xref ref-type="fig" rid="pone.0188293.g002">Fig 2</xref>. The participants were asked to repetitively perform the kinaesthetic motor imagery task displayed on the screen for 4 seconds without actually moving. Kinaesthetic motor imagery means that the participants were required to perform imaginary movement by focusing on imagining the sensation of the movement[<xref ref-type="bibr" rid="pone.0188293.ref046">46</xref>].</p>
+<fig id="pone.0188293.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title/>
+<p>Picture of the tasks that were used in the Stimulus Presentation tasks where: (a)Rest Task, rest and stay alerted; (b)Elbow Task, imagine elbow flexion and extension; (c)Drawer Task, imagine opening and closing a drawer; (d)Soup Task, imagine drinking soup with a spoon; (e)Weight Task, imagine lifting and putting down a dumbbell; (f)Door Task, imagine opening and closing a door; (g)Plate Task, imagine cleaning a plate; (h)Comb Task, imagine combing hair; (i)Pizza Task, imagine cutting a pizza with a pizza cutter; and (j) Pick &amp;Place Task, imagine picking up a ball and put it into a basket.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.g002" xlink:type="simple"/>
+</fig>
+<p>In this study, nine motor imagery tasks were chosen as upper limb movements. Tasks were selected to primarily involve the elbow joint. These motor imagery tasks can be divided into three main categories: 1) simple joint task that do not have any context meaning. In this paper, we chose Elbow Task, Drawer Task, and Weight Task; 2) simple elbow joint tasks that are commonly executed in daily life and require a relatively low level of synergy of other joints. In this paper we chose Door Task, Plate Task, and Comb Task; and 3) goal-oriented tasks, which require trajectory planning and multiple joint synergies. In this paper, we chose Soup Task, Pizza Task, and Pick&amp;Place Task. The specific instructions given to the participants with respect to the ten tasks are summarized below:</p>
+<list list-type="order">
+<list-item><p>Rest (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(A)</xref>): rest while looking at the center of the cross;</p></list-item>
+<list-item><p>Elbow task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(B)</xref>): kinaesthetically imagine flexing and extending the elbow of the dominant arm;</p></list-item>
+<list-item><p>Drawer task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(C)</xref>): kinaesthetically imagine opening and closing a drawer with the dominant hand;</p></list-item>
+<list-item><p>Soup task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(D)</xref>): kinaesthetically imagine getting a spoonful of soup and drinking the soup using the dominant hand;</p></list-item>
+<list-item><p>Weight task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(E)</xref>): kinaesthetically imagine lifting and putting down a dumbbell with the dominant hand;</p></list-item>
+<list-item><p>Door task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(F)</xref>): kinaesthetically imagine opening and closing door with the dominant hand on the door knob;</p></list-item>
+<list-item><p>Plate task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(G)</xref>): kinaesthetically imagine cleaning a plate with only elbow extension and flexion movement;</p></list-item>
+<list-item><p>Comb task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(H)</xref>): kinaesthetically imagine combing hair with the dominant hand.</p></list-item>
+<list-item><p>Pizza task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(I)</xref>): kinaesthetically imagine cutting a pizza with a pizza cutter with the dominant hand;</p></list-item>
+<list-item><p>Pick&amp;Place Task (<xref ref-type="fig" rid="pone.0188293.g002">Fig 2(J)</xref>): kinaesthetically imagine picking a ball and placing it into a basket with the dominant hand.</p></list-item>
+</list>
+<p>During the Stimulus Presentation, each picture was displayed on the screen for 4–6 seconds, followed by 4–6 seconds of rest, and the timing was randomized by the software in order to prevent participants from adapting. When the picture was displayed on the screen, the participant was requested to perform motor imagery of the corresponding task repetitively for 1–2 repetitions. For each participant, the test consisted of 15 consecutive runs. Each run consisted of 4 Rest, 4 Elbow Tasks and 16 other tasks (2 for each of the remaining tasks). Each run lasted for approximately 3 minutes. Each participant was requested to complete 15 runs and he/she could rest for as long as was needed between two runs. The participants were required to follow the stimulus on the screen. While the picture was on the screen, the participants were required to perform the respective tasks repetitively for 2–3 repetitions. As in many MI studies reported in the literature, electromyography (EMG) was not recorded [<xref ref-type="bibr" rid="pone.0188293.ref047">47</xref>][<xref ref-type="bibr" rid="pone.0188293.ref048">48</xref>][<xref ref-type="bibr" rid="pone.0188293.ref049">49</xref>]. To ensure compliance to the protocol, we had one observer monitor the participants to ensure they were not moving during the task. In the case of the slightest movement, the recorded data were disregarded, and the participant was asked to repeat the experiment.</p>
+</sec>
+<sec id="sec004">
+<title>Participants</title>
+<p>Twelve healthy participants, aged between 20 and 33 participated in this study. Their demographic data are presented in <xref ref-type="table" rid="pone.0188293.t002">Table 2</xref>.</p>
+<table-wrap id="pone.0188293.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t002</object-id>
+<label>Table 2</label> <caption><title>Demographic data for the participants.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Participants</th>
+<th align="center">Gender</th>
+<th align="center">Age</th>
+<th align="center">Dominant Hand</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H01</bold></td>
+<td align="center" style="background-color:#C0C0C0">M</td>
+<td align="center" style="background-color:#C0C0C0">27</td>
+<td align="center" style="background-color:#C0C0C0">Right</td>
+</tr>
+<tr>
+<td align="center"><bold>H02</bold></td>
+<td align="center">F</td>
+<td align="center">31</td>
+<td align="center">Right</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H03</bold></td>
+<td align="center" style="background-color:#C0C0C0">M</td>
+<td align="center" style="background-color:#C0C0C0">21</td>
+<td align="center" style="background-color:#C0C0C0">Right</td>
+</tr>
+<tr>
+<td align="center"><bold>H04</bold></td>
+<td align="center">M</td>
+<td align="center">30</td>
+<td align="center">Right</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H05</bold></td>
+<td align="center" style="background-color:#C0C0C0">M</td>
+<td align="center" style="background-color:#C0C0C0">26</td>
+<td align="center" style="background-color:#C0C0C0">Left</td>
+</tr>
+<tr>
+<td align="center"><bold>H06</bold></td>
+<td align="center">M</td>
+<td align="center">20</td>
+<td align="center">Right</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H07</bold></td>
+<td align="center" style="background-color:#C0C0C0">M</td>
+<td align="center" style="background-color:#C0C0C0">33</td>
+<td align="center" style="background-color:#C0C0C0">Right</td>
+</tr>
+<tr>
+<td align="center"><bold>H08</bold></td>
+<td align="center">M</td>
+<td align="center">23</td>
+<td align="center">Right</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H09</bold></td>
+<td align="center" style="background-color:#C0C0C0">F</td>
+<td align="center" style="background-color:#C0C0C0">33</td>
+<td align="center" style="background-color:#C0C0C0">Right</td>
+</tr>
+<tr>
+<td align="center"><bold>H10</bold></td>
+<td align="center">M</td>
+<td align="center">28</td>
+<td align="center">Right</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H11</bold></td>
+<td align="center" style="background-color:#C0C0C0">M</td>
+<td align="center" style="background-color:#C0C0C0">24</td>
+<td align="center" style="background-color:#C0C0C0">Right</td>
+</tr>
+<tr>
+<td align="center"><bold>H12</bold></td>
+<td align="center">M</td>
+<td align="center">21</td>
+<td align="center">Right</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec005">
+<title>Feature extraction and classification</title>
+<p>The data acquired were analyzed using BCILAB[<xref ref-type="bibr" rid="pone.0188293.ref050">50</xref>], a BCI toolbox based on Matlab. The data were first resampled at 250 Hz. Then, a finite impulse response (FIR) bandpass filter was used to filter out the 6–35 Hz frequency band. By band-pass filtering, the data, ocular artifacts and other undesired frequency components of the EEG data were minimized. This frequency band covers the mu and beta rhythms, which have been reported to desynchronize during motor imagery [<xref ref-type="bibr" rid="pone.0188293.ref051">51</xref>]. According to the literature, the band power changes of the mu and beta rhythms have been used in BCI systems to classify EEG signals related to motor imagery [<xref ref-type="bibr" rid="pone.0188293.ref052">52</xref>–<xref ref-type="bibr" rid="pone.0188293.ref054">54</xref>]. Those activities are localized in the mu (7–13 Hz) and beta bands (13–30 Hz). Therefore, band power (BP) of a certain band frequency can be used as a basic feature for classification [<xref ref-type="bibr" rid="pone.0188293.ref051">51</xref>,<xref ref-type="bibr" rid="pone.0188293.ref055">55</xref>]. However, ERD/ERS signals could be overlapped in time and space by multiple signals from different brain tasks. For this reason, in some cases, it may not be sufficient to use simple methods such as a band pass filter to extract the desired band power. The literature suggests that spatial filters, like common spatial pattern (CSP), could be appropriate [<xref ref-type="bibr" rid="pone.0188293.ref056">56</xref>]. The performance of spatial filters is dependent on its operational frequency band. Therefore, we also included filter bank CSP (FBCSP) to avoid this potential problem [<xref ref-type="bibr" rid="pone.0188293.ref057">57</xref>,<xref ref-type="bibr" rid="pone.0188293.ref058">58</xref>].</p>
+<p>As each participant had a different reaction time to the stimulus, nine different epoch periods were extracted from the EEG data to find out the optimal epoch that led to the best EEG control performance. The different epochs used are presented in <xref ref-type="table" rid="pone.0188293.t003">Table 3</xref>.</p>
+<table-wrap id="pone.0188293.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t003</object-id>
+<label>Table 3</label> <caption><title>Epoch periods used in data analysis.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Epoch ID</th>
+<th align="center">Epoch Period<xref ref-type="table-fn" rid="t003fn001">*</xref></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>1</bold></td>
+<td align="center" style="background-color:#C0C0C0">0.5–2.5s</td>
+</tr>
+<tr>
+<td align="center"><bold>2</bold></td>
+<td align="center">1-3s</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>3</bold></td>
+<td align="center" style="background-color:#C0C0C0">1.5–3.5s</td>
+</tr>
+<tr>
+<td align="center"><bold>4</bold></td>
+<td align="center">2-4s</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>5</bold></td>
+<td align="center" style="background-color:#C0C0C0">2.5–4.5s</td>
+</tr>
+<tr>
+<td align="center"><bold>6</bold></td>
+<td align="center">3-5s</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>7</bold></td>
+<td align="center" style="background-color:#C0C0C0">1-3s</td>
+</tr>
+<tr>
+<td align="center"><bold>8</bold></td>
+<td align="center">1-4s</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>9</bold></td>
+<td align="center" style="background-color:#C0C0C0">1-5s</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t003fn001"><p>*Refer to the time after the stimulus was shown on the screen</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>In this paper, BP[<xref ref-type="bibr" rid="pone.0188293.ref059">59</xref>], CSP[<xref ref-type="bibr" rid="pone.0188293.ref053">53</xref>] and FBCSP [<xref ref-type="bibr" rid="pone.0188293.ref057">57</xref>] were used as feature extraction algorithms to extract features, for each EEG epoch. Detailed information is presented in <xref ref-type="table" rid="pone.0188293.t004">Table 4</xref>.</p>
+<table-wrap id="pone.0188293.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t004</object-id>
+<label>Table 4</label> <caption><title>Feature setting for model training.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Algorithm</th>
+<th align="center">Frequency Band</th>
+<th align="center">Feature Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">BP</td>
+<td align="center">6-32Hz</td>
+<td align="center">17</td>
+</tr>
+<tr>
+<td align="center">CSP</td>
+<td align="center">6-32Hz</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">FBCSP</td>
+<td align="center">6-15Hz; 15-25Hz; 25-32Hz</td>
+<td align="center">18</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The features were then sent to classifiers. Since we wanted to evaluate the influence of different motor imageries in this paper, classifiers were limited with basic classifiers. In this study, linear discriminant analysis (LDA) and dual-augmented lagrangian (DAL) method were used for classification. All the classifiers were regularized during training. For LDA, analytical covariance shrinkage was used for regularization [<xref ref-type="bibr" rid="pone.0188293.ref060">60</xref>]. For DAL, dual-spectral logistic norm was used for regularization, with grid searching λ from 2<sup>−15</sup> to 2<sup>10</sup>, the step size was 2 times [<xref ref-type="bibr" rid="pone.0188293.ref061">61</xref>]. A binary classifier was generated for the EEG features obtained from Rest Task data and one of the Tasks (b)-(j) respectively. A 5×5 cross-validation method was used to validate the performance of the classifiers.</p>
+<p>We used 3 features (i.e. BP, CSP, and FBCSP) and 2 classifiers (LDA, DAL) which resulted in 6 models per epoch for each participant. We considered 9 epochs, which resulted in 54 different models (3×2×9 = 54). We selected the best model for each motor imagery task for each participant. Each participant performed 9 different tasks, and we invited 12 participants. We, therefore, obtained 108 models in total (9×12 = 108). By doing this, we set a uniform objective classification standard for all nine different motor imagery tasks. The performance of the models from these motor imagery tasks is presented in the following sections.</p>
+</sec>
+<sec id="sec006">
+<title>Model training and testing</title>
+<p>The main goal of the work was to assess the versatility of the EEG models derived from different motor imagery tasks. We studied this in the inter-task problem, where the model generated from one type of motor imagery task was tested with data from another motor imagery task. The data were collected to investigate this inter-task problem. Specifically, 30 trials (T) for each of the 9 motor imagery tasks (i.e. T<sub>1</sub> -T<sub>9</sub>) were collected. For each task, the data were randomized. Furthermore, 60 trials of rest were recorded. After randomization, they were divided in two groups: training (R<sub>TR</sub>) and testing (R<sub>TE</sub>). Therefore, a total number of 330 trials (i.e. 30 trials × 9 motor imagery tasks + 30 rest for training (R<sub>TR</sub>) + 30 rest for testing (R<sub>TE</sub>)) were recorded.</p>
+<p>During training, 9 two-class models were created for each participant. Each model, corresponding to a single task, was trained using the 30 trials of rest (R<sub>TR</sub>) collected for training purposes (class 1) + the 30 trials related to the single task in question (class 2). Specifically, Model 1 (<italic>m</italic><sub>1_INTER</sub>) was trained using T<sub>1</sub> and R<sub>TR</sub>, model 2 (<italic>m</italic><sub>2_INTER</sub>) was trained using T<sub>2</sub> and R<sub>TR</sub>, etc. <xref ref-type="table" rid="pone.0188293.t005">Table 5</xref> shows the training datasets for each model. A 5-fold cross-validation was used to generate the models during training.</p>
+<table-wrap id="pone.0188293.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t005</object-id>
+<label>Table 5</label> <caption><title>Data usage in training models for inter-task problem.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t005g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t005" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Model Name</th>
+<th align="center"><italic>m</italic><sub>1_INTER</sub></th>
+<th align="center"><italic>m</italic><sub>2_INTER</sub></th>
+<th align="center"><italic>m</italic><sub>3_INTER</sub></th>
+<th align="center"><italic>m</italic><sub>4_INTER</sub></th>
+<th align="center"><italic>m</italic><sub>5_INTER</sub></th>
+<th align="center"><italic>m</italic><sub>6_INTER</sub></th>
+<th align="center"><italic>m</italic><sub>7_INTER</sub></th>
+<th align="center"><italic>m</italic><sub>8_INTER</sub></th>
+<th align="center"><italic>m</italic><sub>9_INTER</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>Data Used</bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>1</sub> and R<sub>TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>2</sub> and R<sub>TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>3</sub> and R<sub>TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>4</sub> and R<sub>TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>5</sub> and R<sub>TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>6</sub> and R<sub>TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>7</sub> and R<sub>TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>8</sub> and R<sub>TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>1</sub> and R<sub>TR</sub></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>For testing, each model was tested with data collected for the other models. Specifically, m<sub>1</sub> was tested with 8 testing datasets, the first being T<sub>2</sub>+R<sub>TE</sub>, the second being, T<sub>3</sub>+R<sub>TE</sub>, the third T<sub>4</sub>+R<sub>TE</sub>, etc. <xref ref-type="table" rid="pone.0188293.t006">Table 6</xref> shows the data usage in testing datasets.</p>
+<table-wrap id="pone.0188293.t006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t006</object-id>
+<label>Table 6</label> <caption><title>Data usage in the inter-task testing.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t006g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t006" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Model Name</th>
+<th align="center">Elbow</th>
+<th align="center">Drawer</th>
+<th align="center">Spoon</th>
+<th align="center">Weight</th>
+<th align="center">Door</th>
+<th align="center">Plate</th>
+<th align="center">Comb</th>
+<th align="center">Pizza</th>
+<th align="center">Pick&amp; Place</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>1_INTER</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">----</td>
+<td align="center" style="background-color:#C0C0C0">T<sub>2</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>3</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>4</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>5</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>6</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>7</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>8</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>9</sub>+R<sub>TE</sub></td>
+</tr>
+<tr>
+<td align="center"><bold><italic>m</italic><sub>2_INTER</sub></bold></td>
+<td align="center">T<sub>1</sub>+R<sub>TE</sub></td>
+<td align="center">---</td>
+<td align="center">T<sub>3</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>4</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>5</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>6</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>7</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>8</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>9</sub>+R<sub>TE</sub></td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>3_INTER</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>1</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>2</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">---</td>
+<td align="center" style="background-color:#C0C0C0">T<sub>4</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>5</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>6</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>7</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>8</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>9</sub>+R<sub>TE</sub></td>
+</tr>
+<tr>
+<td align="center"><bold><italic>m</italic><sub>4_INTER</sub></bold></td>
+<td align="center">T<sub>1</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>2</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>3</sub>+R<sub>TE</sub></td>
+<td align="center">---</td>
+<td align="center">T<sub>5</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>6</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>7</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>8</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>9</sub>+R<sub>TE</sub></td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>5_INTER</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>1</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>2</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>3</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>4</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">---</td>
+<td align="center" style="background-color:#C0C0C0">T<sub>6</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>7</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>8</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>9</sub>+R<sub>TE</sub></td>
+</tr>
+<tr>
+<td align="center"><bold><italic>m</italic><sub>6_INTER</sub></bold></td>
+<td align="center">T<sub>1</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>2</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>3</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>4</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>5</sub>+R<sub>TE</sub></td>
+<td align="center">---</td>
+<td align="center">T<sub>7</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>8</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>9</sub>+R<sub>TE</sub></td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>7_INTER</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>1</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>2</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>3</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>4</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>5</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>6</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">---</td>
+<td align="center" style="background-color:#C0C0C0">T<sub>8</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>9</sub>+R<sub>TE</sub></td>
+</tr>
+<tr>
+<td align="center"><bold><italic>m</italic><sub>8_INTER</sub></bold></td>
+<td align="center">T<sub>1</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>2</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>3</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>4</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>5</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>6</sub>+R<sub>TE</sub></td>
+<td align="center">T<sub>7</sub>+R<sub>TE</sub></td>
+<td align="center">---</td>
+<td align="center">T<sub>9</sub>+R<sub>TE</sub></td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>9_INTER</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>1</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>2</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>3</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>4</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>5</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>6</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>7</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>8</sub>+R<sub>TE</sub></td>
+<td align="center" style="background-color:#C0C0C0">---</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Before running the inter-task problem, the authors wanted to ensure that the considered BP/CSP/FBCSP+LDA/DAL method was a suitable method for the motor imagery tasks considered. Therefore, an intra-task problem was first addressed. In this case, each task had to be tested with data collected from the same motor imagery task (e.g. a model trained with T<sub>1</sub> could not be tested with T<sub>2</sub> as for the inter-task case as T<sub>1</sub> and T<sub>1</sub> were datasets related to different tasks, thus not suitable for the intra-task case). For this reason, each of the 30 trials was divided in training and testing datasets for the intra-task case. Specifically, 24 trials of each motor imagery task (e.g. T<sub>1_TR</sub>) together with 24 trials of Rest Task (R<sub>intra_TR</sub>) were used for training. The remaining six trials of the same motor imagery task (e.g. T<sub>1_TE</sub>) together with 6 trials of Rest Task (R<sub>intra_TE</sub>) were used for testing. <xref ref-type="table" rid="pone.0188293.t007">Table 7</xref> shows the training and testing dataset for each model.</p>
+<table-wrap id="pone.0188293.t007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t007</object-id>
+<label>Table 7</label> <caption><title>Training and testing datasets for the intra-task problem.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t007g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t007" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Model Name</th>
+<th align="center">Data used in training</th>
+<th align="center">Data used in Testing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>1_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>1_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+<tr>
+<td align="center"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center">T<sub>2_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center">T<sub>2_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>3_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>3_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+<tr>
+<td align="center"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center">T<sub>4_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center">T<sub>4_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>5_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>5_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+<tr>
+<td align="center"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center">T<sub>6_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center">T<sub>6_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>7_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>7_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+<tr>
+<td align="center"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center">T<sub>8_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center">T<sub>8_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold><italic>m</italic><sub>1_INTRA</sub></bold></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>9_TR</sub> and R<sub>intra_TR</sub></td>
+<td align="center" style="background-color:#C0C0C0">T<sub>9_TE</sub> and R<sub>intra_TE</sub></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec007">
+<title>The coefficient of determination (R2 value)</title>
+<p>The coefficient of determination (R<sup>2</sup> value) is a statistical measure computed over a pair of sample distributions, which measures how strongly the means of the two distributions differ in relation to variance [<xref ref-type="bibr" rid="pone.0188293.ref062">62</xref>]. In a BCI context, the R<sup>2</sup> value is computed over signals that have been measured under two different task conditions. It represents the fraction of the total signal variance caused by different tasks [<xref ref-type="bibr" rid="pone.0188293.ref062">62</xref>]. It is a measure of how well the task condition is reflected in the brain activities [<xref ref-type="bibr" rid="pone.0188293.ref062">62</xref>].</p>
+<p>The R<sup>2</sup> value at each electrode location was computed for all participants and all combinations of different tasks in order to investigate the topographical distribution on the scalp of the difference between rest and the other imaginary tasks. The frequency that generated the highest R<sup>2</sup> value was used to generate the topography. The 6-32Hz frequency component was considered for this representation as motor imagery was investigated.</p>
+</sec>
+</sec>
+<sec id="sec008" sec-type="results">
+<title>Results</title>
+<p>This section reports the results of the intra-task problem to assess the validity of the BP/CSP/FBCSP+LDA/DAL method before addressing the inter-task problem which is the main focus of this work.</p>
+<sec id="sec009">
+<title>Inter-task problem: Cross-validation results using the training dataset</title>
+<p>For the inter-task problem the models were generated according to <xref ref-type="table" rid="pone.0188293.t005">Table 5</xref>. <xref ref-type="fig" rid="pone.0188293.g003">Fig 3</xref> summarizes the distribution of the feature algorithms and classifiers used to obtain the model. Among all the features and classifiers, CSP together with LDA was the most common combination: it took 35% of all the 108 models. BP feature with LDA contributed 30% to all the models.</p>
+<fig id="pone.0188293.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Distribution of the classification method of the highest cross-validation accuracy.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.g003" xlink:type="simple"/>
+</fig>
+<p>The cross-validation accuracy achieved for each of the nine EEG models and participants is shown in <xref ref-type="table" rid="pone.0188293.t008">Table 8</xref>. This table reports the cross-validation accuracy with the highest value obtained from the optimal combination of the epoch period, feature extraction method and the classifier discussed earlier.</p>
+<table-wrap id="pone.0188293.t008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t008</object-id>
+<label>Table 8</label> <caption><title>5x5 cross-validation accuracy for each participant.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t008g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t008" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">ID</th>
+<th align="center">Elbow</th>
+<th align="center">Drawer</th>
+<th align="center">Spoon</th>
+<th align="center">Weight</th>
+<th align="center">Door</th>
+<th align="center">Plate</th>
+<th align="center">Comb</th>
+<th align="center">Pizza</th>
+<th align="center">Pick &amp;Place</th>
+<th align="center">Mean &amp;P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H1</bold></td>
+<td align="center" style="background-color:#C0C0C0">0.840</td>
+<td align="center" style="background-color:#C0C0C0">0.757</td>
+<td align="center" style="background-color:#C0C0C0">0.845</td>
+<td align="center" style="background-color:#C0C0C0">0.840</td>
+<td align="center" style="background-color:#C0C0C0">0.817</td>
+<td align="center" style="background-color:#C0C0C0">0.893</td>
+<td align="center" style="background-color:#C0C0C0">0.832</td>
+<td align="center" style="background-color:#C0C0C0">0.893</td>
+<td align="center" style="background-color:#C0C0C0">0.943</td>
+<td align="center" style="background-color:#C0C0C0">0.851&amp;Place</td>
+</tr>
+<tr>
+<td align="center"><bold>H2</bold></td>
+<td align="center">0.705</td>
+<td align="center">0.748</td>
+<td align="center">0.752</td>
+<td align="center">0.747</td>
+<td align="center">0.758</td>
+<td align="center">0.723</td>
+<td align="center">0.712</td>
+<td align="center">0.775</td>
+<td align="center">0.740</td>
+<td align="center">0.740&amp;Place</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H3</bold></td>
+<td align="center" style="background-color:#C0C0C0">0.783</td>
+<td align="center" style="background-color:#C0C0C0">0.803</td>
+<td align="center" style="background-color:#C0C0C0">0.755</td>
+<td align="center" style="background-color:#C0C0C0">0.788</td>
+<td align="center" style="background-color:#C0C0C0">0.823</td>
+<td align="center" style="background-color:#C0C0C0">0.793</td>
+<td align="center" style="background-color:#C0C0C0">0.772</td>
+<td align="center" style="background-color:#C0C0C0">0.822</td>
+<td align="center" style="background-color:#C0C0C0">0.830</td>
+<td align="center" style="background-color:#C0C0C0">0.797&amp;Place</td>
+</tr>
+<tr>
+<td align="center"><bold>H4</bold></td>
+<td align="center">0.797</td>
+<td align="center">0.743</td>
+<td align="center">0.840</td>
+<td align="center">0.798</td>
+<td align="center">0.802</td>
+<td align="center">0.812</td>
+<td align="center">0.832</td>
+<td align="center">0.905</td>
+<td align="center">0.788</td>
+<td align="center">0.813&amp;Place</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H5</bold></td>
+<td align="center" style="background-color:#C0C0C0">0.835</td>
+<td align="center" style="background-color:#C0C0C0">0.817</td>
+<td align="center" style="background-color:#C0C0C0">0.883</td>
+<td align="center" style="background-color:#C0C0C0">0.855</td>
+<td align="center" style="background-color:#C0C0C0">0.878</td>
+<td align="center" style="background-color:#C0C0C0">0.820</td>
+<td align="center" style="background-color:#C0C0C0">0.853</td>
+<td align="center" style="background-color:#C0C0C0">0.903</td>
+<td align="center" style="background-color:#C0C0C0">0.825</td>
+<td align="center" style="background-color:#C0C0C0">0.852&amp;Place</td>
+</tr>
+<tr>
+<td align="center"><bold>H6</bold></td>
+<td align="center">0.670</td>
+<td align="center">0.732</td>
+<td align="center">0.772</td>
+<td align="center">0.708</td>
+<td align="center">0.717</td>
+<td align="center">0.768</td>
+<td align="center">0.792</td>
+<td align="center">0.738</td>
+<td align="center">0.753</td>
+<td align="center">0.739&amp;Place</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H7</bold></td>
+<td align="center" style="background-color:#C0C0C0">0.852</td>
+<td align="center" style="background-color:#C0C0C0">0.848</td>
+<td align="center" style="background-color:#C0C0C0">0.805</td>
+<td align="center" style="background-color:#C0C0C0">0.798</td>
+<td align="center" style="background-color:#C0C0C0">0.850</td>
+<td align="center" style="background-color:#C0C0C0">0.942</td>
+<td align="center" style="background-color:#C0C0C0">0.822</td>
+<td align="center" style="background-color:#C0C0C0">0.907</td>
+<td align="center" style="background-color:#C0C0C0">0.883</td>
+<td align="center" style="background-color:#C0C0C0">0.856&amp;Place</td>
+</tr>
+<tr>
+<td align="center"><bold>H8</bold></td>
+<td align="center">0.810</td>
+<td align="center">0.800</td>
+<td align="center">0.890</td>
+<td align="center">0.830</td>
+<td align="center">0.860</td>
+<td align="center">0.883</td>
+<td align="center">0.765</td>
+<td align="center">0.878</td>
+<td align="center">0.837</td>
+<td align="center">0.840&amp;Place</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H9</bold></td>
+<td align="center" style="background-color:#C0C0C0">0.777</td>
+<td align="center" style="background-color:#C0C0C0">0.787</td>
+<td align="center" style="background-color:#C0C0C0">0.788</td>
+<td align="center" style="background-color:#C0C0C0">0.847</td>
+<td align="center" style="background-color:#C0C0C0">0.792</td>
+<td align="center" style="background-color:#C0C0C0">0.782</td>
+<td align="center" style="background-color:#C0C0C0">0.823</td>
+<td align="center" style="background-color:#C0C0C0">0.787</td>
+<td align="center" style="background-color:#C0C0C0">0.885</td>
+<td align="center" style="background-color:#C0C0C0">0.807&amp;Place</td>
+</tr>
+<tr>
+<td align="center"><bold>H10</bold></td>
+<td align="center">0.943</td>
+<td align="center">0.952</td>
+<td align="center">0.900</td>
+<td align="center">0.930</td>
+<td align="center">0.928</td>
+<td align="center">0.882</td>
+<td align="center">0.957</td>
+<td align="center">0.930</td>
+<td align="center">0.997</td>
+<td align="center">0.935&amp;Place</td>
+</tr>
+<tr>
+<td align="center" style="background-color:#C0C0C0"><bold>H11</bold></td>
+<td align="center" style="background-color:#C0C0C0">0.775</td>
+<td align="center" style="background-color:#C0C0C0">0.733</td>
+<td align="center" style="background-color:#C0C0C0">0.728</td>
+<td align="center" style="background-color:#C0C0C0">0.780</td>
+<td align="center" style="background-color:#C0C0C0">0.695</td>
+<td align="center" style="background-color:#C0C0C0">0.755</td>
+<td align="center" style="background-color:#C0C0C0">0.733</td>
+<td align="center" style="background-color:#C0C0C0">0.712</td>
+<td align="center" style="background-color:#C0C0C0">0.870</td>
+<td align="center" style="background-color:#C0C0C0">0.754&amp;Place</td>
+</tr>
+<tr>
+<td align="center"><bold>H12</bold></td>
+<td align="center">0.842</td>
+<td align="center">0.802</td>
+<td align="center">0.815</td>
+<td align="center">0.855</td>
+<td align="center">0.738</td>
+<td align="center">0.733</td>
+<td align="center">0.820</td>
+<td align="center">0.912</td>
+<td align="center">0.790</td>
+<td align="center">0.812&amp;Place</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>As shown in <xref ref-type="table" rid="pone.0188293.t008">Table 8</xref>, the task with the highest cross-validation accuracy was subject-specific. H10 achieved the highest mean cross-validation accuracy (0.935±0.033) among the participants. This participant achieved the highest cross-validation accuracy for the Pick&amp;Place Task (0.997± 0.023). H6, on the other hand, had the lowest cross-validation accuracy (0.739±0.037). The motor imagery task with the highest average cross-validation accuracy is Comb task (0.792± 0.160). <xref ref-type="fig" rid="pone.0188293.g004">Fig 4</xref> shows the 5×5 cross-validation accuracy averaged across participants. The cross-validation accuracy ranges from 0.793±0.062 to 0.847±0.076, with the Pizza Task having the highest cross-validation accuracy and the Drawer Task having the lowest mean cross-validation accuracy. One-way analysis of variance (ANOVA) was used to check the cross-validation accuracy difference among different tasks, no statistical difference was found (p = 0.536).</p>
+<fig id="pone.0188293.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Mean 5×5 cross-validation accuracy for different motor imagery tasks.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.g004" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec010">
+<title>Inter-task problem: Testing result</title>
+<p>The models were generated and tested as described in <xref ref-type="table" rid="pone.0188293.t006">Table 6</xref> for testing the results of the inter-task problem. The test accuracy obtained from the inter-task test is summarized in <xref ref-type="table" rid="pone.0188293.t009">Table 9</xref>. More specifically, the model for each motor imagery task was tested on 30 trials of eight other motor imagery tasks. For example, the model generated from Elbow Task was tested with EEG data from all the other tasks, but not from Elbow Task. All test accuracies for all EEG models were greater than 0.5. <xref ref-type="table" rid="pone.0188293.t009">Table 9</xref> also shows that Weight Task model has the highest average inter-task test accuracy. More specifically, it has the highest average accuracy when tested on data from other motor imagery tasks.</p>
+<table-wrap id="pone.0188293.t009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t009</object-id>
+<label>Table 9</label> <caption><title>Inter-task test accuracy summary.</title></caption>
+<alternatives>
+<graphic id="pone.0188293.t009g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t009" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" colspan="2" rowspan="2"/>
+<th align="center" colspan="10">Test Data (30 trials together with 30trials of Rest Task data)</th>
+</tr>
+<tr>
+<th align="center">Elbow</th>
+<th align="center">Drawer</th>
+<th align="center">Spoon</th>
+<th align="center">Weight</th>
+<th align="center">Door</th>
+<th align="center">Plate</th>
+<th align="center">Comb</th>
+<th align="center">Pizza</th>
+<th align="center">Pick&amp; Place</th>
+<th align="center">Mean±SD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="10">Model<break/>Name</td>
+<td align="center">Elbow</td>
+<td align="center">---</td>
+<td align="center">0.561</td>
+<td align="center">0.583</td>
+<td align="center">0.607</td>
+<td align="center">0.578</td>
+<td align="center">0.597</td>
+<td align="center">0.589</td>
+<td align="center">0.635</td>
+<td align="center">0.603</td>
+<td align="center">0.594±0.022</td>
+</tr>
+<tr>
+<td align="center">Drawer</td>
+<td align="center">0.637</td>
+<td align="center">---</td>
+<td align="center">0.572</td>
+<td align="center">0.571</td>
+<td align="center">0.583</td>
+<td align="center">0.607</td>
+<td align="center">0.578</td>
+<td align="center">0.588</td>
+<td align="center">0.581</td>
+<td align="center">0.589±0.022</td>
+</tr>
+<tr>
+<td align="center">Spoon</td>
+<td align="center">0.592</td>
+<td align="center">0.535</td>
+<td align="center">---</td>
+<td align="center">0.533</td>
+<td align="center">0.538</td>
+<td align="center">0.547</td>
+<td align="center">0.535</td>
+<td align="center">0.549</td>
+<td align="center">0.535</td>
+<td align="center">0.545±0.020</td>
+</tr>
+<tr>
+<td align="center">Weight</td>
+<td align="center">0.641</td>
+<td align="center">0.604</td>
+<td align="center">0.617</td>
+<td align="center">---</td>
+<td align="center">0.565</td>
+<td align="center">0.596</td>
+<td align="center">0.588</td>
+<td align="center">0.626</td>
+<td align="center">0.600</td>
+<td align="center">0.605±0.024</td>
+</tr>
+<tr>
+<td align="center">Door</td>
+<td align="center">0.601</td>
+<td align="center">0.561</td>
+<td align="center">0.556</td>
+<td align="center">0.528</td>
+<td align="center">---</td>
+<td align="center">0.563</td>
+<td align="center">0.533</td>
+<td align="center">0.558</td>
+<td align="center">0.532</td>
+<td align="center">0.554±0.024</td>
+</tr>
+<tr>
+<td align="center">Plate</td>
+<td align="center">0.597</td>
+<td align="center">0.543</td>
+<td align="center">0.531</td>
+<td align="center">0.539</td>
+<td align="center">0.538</td>
+<td align="center">---</td>
+<td align="center">0.524</td>
+<td align="center">0.551</td>
+<td align="center">0.519</td>
+<td align="center">0.543±0.024</td>
+</tr>
+<tr>
+<td align="center">Comb</td>
+<td align="center">0.637</td>
+<td align="center">0.536</td>
+<td align="center">0.565</td>
+<td align="center">0.568</td>
+<td align="center">0.546</td>
+<td align="center">0.557</td>
+<td align="center">---</td>
+<td align="center">0.588</td>
+<td align="center">0.538</td>
+<td align="center">0.567±0.033</td>
+</tr>
+<tr>
+<td align="center">Pizza</td>
+<td align="center">0.615</td>
+<td align="center">0.524</td>
+<td align="center">0.569</td>
+<td align="center">0.536</td>
+<td align="center">0.543</td>
+<td align="center">0.536</td>
+<td align="center">0.540</td>
+<td align="center">---</td>
+<td align="center">0.532</td>
+<td align="center">0.549±0.030</td>
+</tr>
+<tr>
+<td align="center">Pick&amp; Place</td>
+<td align="center">0.645</td>
+<td align="center">0.563</td>
+<td align="center">0.567</td>
+<td align="center">0.572</td>
+<td align="center">0.554</td>
+<td align="center">0.565</td>
+<td align="center">0.553</td>
+<td align="center">0.586</td>
+<td align="center">---</td>
+<td align="center">0.576±0.030</td>
+</tr>
+<tr>
+<td align="center">Mean±SD</td>
+<td align="center">0.620±0.022</td>
+<td align="center">0.553±0.025</td>
+<td align="center">0.570±0.024</td>
+<td align="center">0.557±0.027</td>
+<td align="center">0.556±0.018</td>
+<td align="center">0.571±0.026</td>
+<td align="center">0.555±0.026</td>
+<td align="center">0.585±0.032</td>
+<td align="center">0.555±0.034</td>
+<td align="center">---</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The mean values reported in the last column of <xref ref-type="table" rid="pone.0188293.t009">Table 9</xref> summarize the averaged inter-task test accuracy for models generated from the nine motor imagery tasks. This indicates the ability of the models to classify EEG data from other motor imagery tasks. The mean values reported in the last row of <xref ref-type="table" rid="pone.0188293.t009">Table 9</xref> summarize the averaged inter-task test accuracy for EEG data from the nine motor imagery tasks, which indicates the versatility of EEG data for the nine motor imagery tasks. The mean model test accuracy ranges from 0.543±0.023 to 0.605±0.022. The model generated from the Weight task data has the highest mean inter-task test accuracy, while the model generated from Plate Task data has the lowest mean test accuracy. The mean data test accuracy ranges from 0.553±0.025 to 0.620±0.022. The data from Elbow Task has the highest mean inter-task test accuracy and the data from Drawer Task has the lowest mean inter-task test accuracy.</p>
+<p>A Shapiro-Wilk parametric hypothesis test was performed to test the normality of the test accuracies for different task data in <xref ref-type="table" rid="pone.0188293.t009">Table 9</xref>. The test accuracies for models Drawer, Spoon, Plate, Pizza, Pick&amp;Place are not normally distributed (their <italic>p</italic> values are 0.030, 0.002, 0.030, 0.012, and 0.006 respectively). Kruskal-Wallis test showed the inter-task test accuracy is statistically different (p = 2.6×10<sup>−5</sup>), see <xref ref-type="fig" rid="pone.0188293.g005">Fig 5</xref>.</p>
+<fig id="pone.0188293.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Box plot for the Kruskal-Wallis test result for the inter-task testing accuracy.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.g005" xlink:type="simple"/>
+</fig>
+<p>In the post-hoc analysis, Dunn &amp; Sidák’s approach was used [<xref ref-type="bibr" rid="pone.0188293.ref063">63</xref>]. The model from the Weight Task has statistically higher inter-task test accuracy, compared to the model from the Spoon Task, Door Task, Plate Task, and Pizza Task(p&lt;0.05). No statistical difference was found among Elbow Task, Drawer Task, and Weight Task (p&gt;0.05), see <xref ref-type="table" rid="pone.0188293.t010">Table 10</xref>.</p>
+<table-wrap id="pone.0188293.t010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.t010</object-id>
+<label>Table 10</label> <caption><title>Dunn &amp; Sidák post-hoc analysis of the inter-task testing accuracy.</title> <p>Checkmarks indicate models whose inter-task accuracies are significantly different (p&lt;0.05).</p></caption>
+<alternatives>
+<graphic id="pone.0188293.t010g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.t010" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Model Names</th>
+<th align="center">Elbow</th>
+<th align="center">Drawer</th>
+<th align="center">Spoon</th>
+<th align="center">Weight</th>
+<th align="center">Door</th>
+<th align="center">Plate</th>
+<th align="center">Comb</th>
+<th align="center">Pizza</th>
+<th align="center">Pick&amp; Place</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Elbow</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">√</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">√</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">Drawer</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">Spoon</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">Weight</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">√</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">√</td>
+<td align="center"/>
+<td align="center">√</td>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">Door</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">Plate</td>
+<td align="center">√</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">√</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">Comb</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">Pizza</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">√</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">Pick&amp; Place</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec011">
+<title>Coefficient of determination analysis result</title>
+<p>The averaged R<sup>2</sup> value for different tasks is shown in <xref ref-type="fig" rid="pone.0188293.g006">Fig 6</xref>. One of our participants (H5) was left handed. The channels of his EEG were therefore flipped between left and right hemisphere in this analysis.</p>
+<fig id="pone.0188293.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>EEG R<sup>2</sup> analysis for different motor imagery tasks, averaged among participants.</title>
+<p>(a) R<sup>2</sup> value mapping for Rest Task vs Elbow Task; (b) R<sup>2</sup> value mapping for Rest Task vs Drawer Task;(c) R<sup>2</sup> value mapping for Rest Task vs Soup Task;(d) R<sup>2</sup> value mapping for Rest Task vs Weight Task;(e) R<sup>2</sup> value mapping for Rest Task vs Door Task(f) R<sup>2</sup> value mapping for Rest Task vs Plate Task;(g) R<sup>2</sup> value mapping for Rest Task vs Comb Task;(h) R<sup>2</sup> value mapping for Rest Task vs Pizza Task;(i) R<sup>2</sup> value mapping for Rest Task vs Pick&amp;Place Task. Motor imagery related activities with high R2 value was labeled with a black box.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.g006" xlink:type="simple"/>
+</fig>
+<p>From <xref ref-type="fig" rid="pone.0188293.g006">Fig 6</xref>, we can see that most of the EEG activities are located in central and parietal lobe area. Most of the EEG activities for different motor imagery tasks (at C3 channel) are located around 12-20Hz. The peak activities for all the motor imagery tasks were always centered around 18Hz in C3 and P3 channel. Also, some activities were found in the F8 channel between 6-16Hz, which might be related to the motor planning [<xref ref-type="bibr" rid="pone.0188293.ref064">64</xref>,<xref ref-type="bibr" rid="pone.0188293.ref065">65</xref>]. Since all these two activities were both been seen around 16Hz, the topography analysis of 16Hz is shown in <xref ref-type="fig" rid="pone.0188293.g007">Fig 7</xref>, with H10, who had the highest cross-validation accuracy during the training among our participants.</p>
+<fig id="pone.0188293.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Topographical distribution of R<sup>2</sup> value for H10 at 16Hz.</title>
+<p>(1) R<sup>2</sup> value for Rest vs Elbow Task;(2) R<sup>2</sup> value for Rest vs Drawer Task; (3) R<sup>2</sup> value for Rest vs Soup Task; (4) R<sup>2</sup> value for Rest vs Weight Task; (5) R<sup>2</sup> value for Rest vs Door Task; (6) R<sup>2</sup> value for Rest vs Plate Task; (7) R<sup>2</sup> value for Rest vs Comb Task; (8) R<sup>2</sup> value for Rest vs Pizza Task; (9) R<sup>2</sup> value for Rest vs Pick &amp; Place Task.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.g007" xlink:type="simple"/>
+</fig>
+<p>In <xref ref-type="fig" rid="pone.0188293.g007">Fig 7</xref>, large R<sup>2</sup> values are observed at electrode locations near the contralateral motor cortex area in all the motor imagery tasks. This was a result of the event-related desynchronization of the beta rhythms when motor imagery tasks were executed. The strength of activation and the topographical distribution, however, were different from task to task.</p>
+<p>For H10, the topographical distributions for Rest vs Elbow Task and Rest vs Spoon Task are similar (see <xref ref-type="fig" rid="pone.0188293.g007">Fig 7(2) and 7(3)</xref>). Similar topographical distribution was observed in Door Task and Plate Task (<xref ref-type="fig" rid="pone.0188293.g007">Fig 7(5) and 7(6)</xref>), as well as Pizza Task and Pick&amp;Place Task (<xref ref-type="fig" rid="pone.0188293.g007">Fig 7(8) and 7(9)</xref>). Especially, in <xref ref-type="fig" rid="pone.0188293.g007">Fig 7(8) and 7(9)</xref>, while imagining to perform the Pizza Task and Pick&amp;Place Task, EEG activity was recorded in the frontal lobe area (F8 channel), which might be related to the motor planning activities in complex motor imaginary tasks. These similarities suggested fundamental brain activity connections in performing some imagination tasks.</p>
+</sec>
+<sec id="sec012">
+<title>Assessing the validity of the BP/CSP/FBCSP+LDA/DAL method during intra-task testing</title>
+<p>For the intra-task problem, the models were generated and tested as described in <xref ref-type="table" rid="pone.0188293.t006">Table 6</xref>. Although we performed a 5-fold cross validation in the training, we only reported the testing accuracy to keep the manuscript concise. The classification accuracy for each motor imagery task was averaged across participants (see <xref ref-type="fig" rid="pone.0188293.g008">Fig 8</xref>).</p>
+<fig id="pone.0188293.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0188293.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>Average intra-task test accuracies for different motor imagery tasks.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0188293.g008" xlink:type="simple"/>
+</fig>
+<p>As shown in <xref ref-type="fig" rid="pone.0188293.g008">Fig 8</xref>, the Pick&amp;Place task had the highest average intra-task test accuracy (0.715±0.148) among all the motor imagery tasks, followed by Elbow task (0.711±0.128). However, the difference between different tasks is not statistically significant (one-way ANOVA, p = 0.817). The door task, on the other hand, had the lowest average intra-task test accuracy (0.618±0.186). The average intra-tasks testing result shows the test accuracy was significantly higher than random (accuracy higher than 0.6359, p = 0.05 according to Muller-putz et al. [<xref ref-type="bibr" rid="pone.0188293.ref066">66</xref>]), except for the door task. All tasks showed higher accuracy than chance level (accuracy higher than 0.6141, p = 0.1).</p>
+</sec>
+</sec>
+<sec id="sec013">
+<title>Discussions</title>
+<p>In <xref ref-type="fig" rid="pone.0188293.g002">Fig 2</xref>, all the nine motor imagery tasks focused on upper extremity activities, centered around elbow joint movement. These tasks can arguably be divided into three main categories: i) simple joint tasks (SJM, i.e. <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(B)</xref>, <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(C)</xref> and <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(E)</xref>); ii) simple elbow joint that are commonly executed in everyday life and require a relatively low level of synergy of other joints (DSJM, i.e. <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(F)</xref>, <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(G)</xref> and <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(H)</xref>); and iii) and goal-oriented tasks (GOM, i.e. <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(D)</xref>, <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(I)</xref> and <xref ref-type="fig" rid="pone.0188293.g002">Fig 2(J)</xref>), which require trajectory planning and multi-joint synergy.</p>
+<p>The EEG performance varied across participants and the type of motor imagery task. GOM tasks such as Pick&amp;Place Task and Pizza Task had a significantly higher accuracy compared to the SJM tasks. However, not all GOM tasks investigated in this study had higher cross-validation accuracy (e.g., Soup Task). In the Pizza Task and the Pick&amp;Place Task, some activities were found from the F8 channel in lower frequency, which might be related to the motor planning activity [<xref ref-type="bibr" rid="pone.0188293.ref050">50</xref>][<xref ref-type="bibr" rid="pone.0188293.ref051">51</xref>]. More precise neural recordings would be needed to verify the brain region involved in order to confirm the activities in these tasks. However, it is surprising to see the Soup Task did not inducing similar activities in the same frequency band (in <xref ref-type="fig" rid="pone.0188293.g006">Fig 6(C)</xref>). This phenomenon may be due to the task design. We can see from <xref ref-type="fig" rid="pone.0188293.g006">Fig 6(C)</xref> that the highest R<sup>2</sup> value is located in the O2 area, which suggests the Soup Task may be primarily related to vision/target related activity[<xref ref-type="bibr" rid="pone.0188293.ref067">67</xref>].</p>
+<p>In the R<sup>2</sup> analysis, the peak R<sup>2</sup> value for the SJM tasks is generally smaller, and the contrast of the R<sup>2</sup> mapping is lower than DSJM and GOM tasks. The “low-contrast” feature may result in the lower accuracy in cross-validation and intra-task test for models generated from the SJM tasks. While the difference is not statistically significant, this “low-contrast” feature might be a general pattern for upper extremity motor imagery. This could explain why the SJM tasks have higher inter-task test accuracy among all the other tasks (i.e. the EEG model generated from the SJM tasks are more versatile). For the SJM tasks, only the elbow joint was involved. All the three SJM tasks were similar. The only difference was the resistance feedback in these tasks. For example, in the Weight Task, because of the imagination of the weight, the Weight Task showed higher P3 activities than C3 activities. That might explain why the EEG model from the Weight Tasks exhibited higher versatility than DSJM and GOM tasks. For the Weight Task, there was only a 6% mean accuracy decrease between testing with data from its own task and the other tasks.</p>
+<p>It is interesting to see how imagined interaction with other objects induces parietal lobe activities[<xref ref-type="bibr" rid="pone.0188293.ref068">68</xref>], such as the R<sup>2</sup> value mapping varies in Elbow Task and Weight Task. The movement is physically almost the same, however, by just imaging a dumbbell in the hand excites brain activities around the P3 area.</p>
+<p>It is also important to investigate the possibility of multi-class classification using the tasks mentioned in this paper in the future.</p>
+</sec>
+<sec id="sec014" sec-type="conclusions">
+<title>Conclusion</title>
+<p>In this study, we found that EEG models generated from single joint movements motor imagery tasks show higher versatility than other tasks. Among all the tested tasks, the Weight Task showed a statistically higher versatility than the other tasks (p&lt;0.05) with the average inter-task testing accuracy was 0.605±0.022. Also, the other two single joint motor imagery tasks (i.e. Elbow Task and Drawer Task) showed higher versatility compared to non-single joint tasks. However, the difference was not statistically significant (p&gt;0.05). The inter-task testing accuracy for the Elbow Task and Drawer Tasks was 0.594±0.022 and 0.590±0.022, respectively. Among the single joint motor imagery tasks, the difference was not statistically significant (ANOVA, p&gt;0.05). For applications like rehabilitation, it would be possible for the individuals to go through an EEG training session that only involves the motor imagery of simple one-joint movements. The EEG model generated could then be re-used to classify different other goal-oriented motor imagery tasks.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="pone.0188293.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baillet</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Mosher</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Leahy</surname> <given-names>RM</given-names></name>. <article-title>Electromagnetic brain mapping</article-title>. <source>IEEE Signal Process Mag</source>. <year>2001</year>;<volume>18</volume>: <fpage>14</fpage>–<lpage>30</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/79.962275" xlink:type="simple">10.1109/79.962275</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wolpaw</surname> <given-names>JR</given-names></name>. <article-title>Brain-computer interfaces as new brain output pathways</article-title>. <source>J Physiol</source>. <year>2007</year>;<volume>579</volume>: <fpage>613</fpage>–<lpage>619</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1113/jphysiol.2006.125948" xlink:type="simple">10.1113/jphysiol.2006.125948</ext-link></comment> <object-id pub-id-type="pmid">17255164</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silvoni</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Ramos-Murguialday</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Cavinato</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Volpato</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Cisotto</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Turolla</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Brain-Computer Interface in Stroke: A Review of Progress</article-title>. <source>Clin EEG Neurosci</source>. <year>2011</year>;<volume>42</volume>: <fpage>245</fpage>–<lpage>252</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1177/155005941104200410" xlink:type="simple">10.1177/155005941104200410</ext-link></comment> <object-id pub-id-type="pmid">22208122</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nicolas-Alonso</surname> <given-names>LF</given-names></name>, <name name-style="western"><surname>Gomez-Gil</surname> <given-names>J</given-names></name>. <article-title>Brain computer interfaces, a review</article-title>. <source>Sensors (Basel)</source>. <year>2012</year>;<volume>12</volume>: <fpage>1211</fpage>–<lpage>1279</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3390/s120201211" xlink:type="simple">10.3390/s120201211</ext-link></comment> <object-id pub-id-type="pmid">22438708</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Choi</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Rhiu</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Yun</surname> <given-names>MH</given-names></name>, <name name-style="western"><surname>Nam</surname> <given-names>CS</given-names></name>. <article-title>A systematic review of hybrid brain-computer interfaces: Taxonomy and usability perspectives</article-title>. <source>PloS one</source>. <year>2017</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0176674" xlink:type="simple">https://doi.org/10.1371/journal.pone.0176674</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Remsik</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Young</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Vermilyea</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Kiekoefer</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Abrams</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Evander Elmore</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>A review of the progression and future implications of brain-computer interface therapies for restoration of distal upper extremity motor function after stroke</article-title>. <source>Expert Rev Med Devices</source>. <year>2016</year>;<volume>4440</volume>: <fpage>17434440</fpage>.2016.1174572. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/17434440.2016.1174572" xlink:type="simple">10.1080/17434440.2016.1174572</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sellers</surname> <given-names>EW</given-names></name>, <name name-style="western"><surname>Vaughan</surname> <given-names>TM</given-names></name>, <name name-style="western"><surname>Wolpaw</surname> <given-names>JR</given-names></name>. <article-title>A brain-computer interface for long-term independent home use</article-title>. <source>Amyotroph Lateral Scler</source>. <year>2010</year>;<volume>11</volume>: <fpage>449</fpage>–<lpage>455</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3109/17482961003777470" xlink:type="simple">10.3109/17482961003777470</ext-link></comment> <object-id pub-id-type="pmid">20583947</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Müller-Putz</surname> <given-names>GR</given-names></name>, <name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>. <article-title>Control of an electrical prosthesis with an SSVEP-based BCI</article-title>. <source>IEEE Trans Biomed Eng</source>. <year>2008</year>;<volume>55</volume>: <fpage>361</fpage>–<lpage>364</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/TBME.2007.897815" xlink:type="simple">10.1109/TBME.2007.897815</ext-link></comment> <object-id pub-id-type="pmid">18232384</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref009"><label>9</label><mixed-citation publication-type="other" xlink:type="simple">Wang H, Li T, Huang Z. Remote control of an electrical car with SSVEP-Based BCI. Proceedings 2010 IEEE International Conference on Information Theory and Information Security, ICITIS 2010. 2010. pp. 837–840. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/ICITIS.2010.5689710" xlink:type="simple">10.1109/ICITIS.2010.5689710</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Meng</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Bekyo</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Olsoe</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Baxter</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>He</surname> <given-names>B</given-names></name>. <article-title>Noninvasive Electroencephalogram Based Control of a Robotic Arm for Reach and Grasp Tasks</article-title>. <source>Sci Rep</source>. <year>2016</year>;<volume>6</volume>: <fpage>38565</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/srep38565" xlink:type="simple">10.1038/srep38565</ext-link></comment> <object-id pub-id-type="pmid">27966546</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Müller</surname> <given-names>SMT</given-names></name>, <name name-style="western"><surname>Bastos</surname> <given-names>TF</given-names></name>, <name name-style="western"><surname>Filho</surname> <given-names>MS</given-names></name>. <article-title>Proposal of a SSVEP-BCI to command a robotic wheelchair</article-title>. <source>J Control Autom Electr Syst</source>. <year>2013</year>;<volume>24</volume>: <fpage>97</fpage>–<lpage>105</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/s40313-013-0002-9" xlink:type="simple">10.1007/s40313-013-0002-9</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ang</surname> <given-names>KK</given-names></name>, <name name-style="western"><surname>Guan</surname> <given-names>C</given-names></name>. <article-title>Brain-Computer Interface in Stroke Rehabilitation</article-title>. <source>J Comput Sci Eng</source>. <year>2013</year>;<volume>7</volume>: <fpage>139</fpage>–<lpage>146</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.5626/JCSE.2013.7.2.139" xlink:type="simple">10.5626/JCSE.2013.7.2.139</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yong</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Menon</surname> <given-names>C</given-names></name>. <article-title>EEG Classification of Different Imaginary Movements within the Same Limb</article-title>. <source>PLoS One</source>. <year>2015</year>;<volume>10</volume>: <fpage>e0121896</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0121896" xlink:type="simple">10.1371/journal.pone.0121896</ext-link></comment> <object-id pub-id-type="pmid">25830611</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>He</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Baxter</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Edelman</surname> <given-names>BJ</given-names></name>, <name name-style="western"><surname>Cline</surname> <given-names>CC</given-names></name>, <name name-style="western"><surname>Ye</surname> <given-names>WW</given-names></name>. <article-title>Noninvasive brain-computer interfaces based on sensorimotor rhythms</article-title>. <source>Proc IEEE</source>. <year>2015</year>;<volume>103</volume>: <fpage>907</fpage>–<lpage>925</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/JPROC.2015.2407272" xlink:type="simple">10.1109/JPROC.2015.2407272</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hubbard</surname> <given-names>IJ</given-names></name>, <name name-style="western"><surname>Parsons</surname> <given-names>MW</given-names></name>, <name name-style="western"><surname>Neilson</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Carey</surname> <given-names>LM</given-names></name>. <article-title>Task-specific training: Evidence for and translation to clinical practice</article-title>. <source>Occupational Therapy International</source>. <year>2009</year>. pp. <fpage>175</fpage>–<lpage>189</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/oti.275" xlink:type="simple">10.1002/oti.275</ext-link></comment> <object-id pub-id-type="pmid">19504501</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kwakkel</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Wagenaar</surname> <given-names>RC</given-names></name>, <name name-style="western"><surname>Koelman</surname> <given-names>TW</given-names></name>, <name name-style="western"><surname>Lankhorst</surname> <given-names>GJ</given-names></name>, <name name-style="western"><surname>Koetsier</surname> <given-names>JC</given-names></name>. <article-title>Effects of Intensity of Rehabilitation After Stroke: A Research Synthesis</article-title>. <source>Stroke</source>. <year>1997</year>;<volume>28</volume>: <fpage>1550</fpage>–<lpage>1556</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1161/01.STR.28.8.1550" xlink:type="simple">10.1161/01.STR.28.8.1550</ext-link></comment> <object-id pub-id-type="pmid">9259747</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Krebs</surname> <given-names>HI</given-names></name>, <name name-style="western"><surname>Volpe</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Hogan</surname> <given-names>N</given-names></name>. <article-title>A working model of stroke recovery from rehabilitation robotics practitioners</article-title>. <source>J Neuroeng Rehabil</source>. <year>2009</year>;<volume>6</volume>: <fpage>6</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/1743-0003-6-6" xlink:type="simple">10.1186/1743-0003-6-6</ext-link></comment> <object-id pub-id-type="pmid">19243615</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Boyd</surname> <given-names>LA</given-names></name>, <name name-style="western"><surname>Vidoni</surname> <given-names>ED</given-names></name>, <name name-style="western"><surname>Wessel</surname> <given-names>BD</given-names></name>. <article-title>Motor learning after stroke: Is skill acquisition a prerequisite for contralesional neuroplastic change?</article-title> <source>Neurosci Lett</source>. <year>2010</year>;<volume>482</volume>: <fpage>21</fpage>–<lpage>25</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.neulet.2010.06.082" xlink:type="simple">10.1016/j.neulet.2010.06.082</ext-link></comment> <object-id pub-id-type="pmid">20609381</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Frisoli</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Loconsole</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Leonardis</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Banno</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Barsotti</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Chisari</surname> <given-names>C</given-names></name>, <etal>et al</etal>. <article-title>A new gaze-BCI-driven control of an upper limb exoskeleton for rehabilitation in real-world tasks</article-title>. <source>IEEE Trans Syst Man Cybern Part C Appl Rev</source>. <year>2012</year>;<volume>42</volume>: <fpage>1169</fpage>–<lpage>1179</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/TSMCC.2012.2226444" xlink:type="simple">10.1109/TSMCC.2012.2226444</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Royer</surname> <given-names>AS</given-names></name>, <name name-style="western"><surname>He</surname> <given-names>B</given-names></name>. <article-title>Goal selection versus process control in a brain-computer interface based on sensorimotor rhythms</article-title>. <source>J Neural Eng</source>. <year>2009</year>;<volume>6</volume>: <fpage>16005</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1088/1741-2560/6/1/016005" xlink:type="simple">10.1088/1741-2560/6/1/016005</ext-link></comment> <object-id pub-id-type="pmid">19155552</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Min</surname> <given-names>BK</given-names></name>, <name name-style="western"><surname>Chavarriaga</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Mill??n</surname> <given-names>J del R</given-names></name>. <article-title>Harnessing Prefrontal Cognitive Signals for Brain-Machine Interfaces</article-title>. <source>Trends in Biotechnology</source>. <year>2017</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.tibtech.2017.03.008" xlink:type="simple">10.1016/j.tibtech.2017.03.008</ext-link></comment> <object-id pub-id-type="pmid">28389030</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wolpaw</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>McFarland</surname> <given-names>DJ</given-names></name>. <article-title>Control of a two-dimensional movement signal by a noninvasive brain-computer interface in humans</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2004</year>;<volume>101</volume>: <fpage>17849</fpage>–<lpage>17854</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1073/pnas.0403504101" xlink:type="simple">10.1073/pnas.0403504101</ext-link></comment> <object-id pub-id-type="pmid">15585584</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref023"><label>23</label><mixed-citation publication-type="other" xlink:type="simple">Meng F, Tong K, Chan S, Wong W, Lui K, Tang K, et al. BCI-FES training system design and implementation for rehabilitation of stroke patients., 2008 Ijcnn 2008. 2008; 4103–4106. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/IJCNN.2008.4634388" xlink:type="simple">10.1109/IJCNN.2008.4634388</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Buch</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Weber</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Cohen</surname> <given-names>LG</given-names></name>, <name name-style="western"><surname>Braun</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Dimyan</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Ard</surname> <given-names>T</given-names></name>, <etal>et al</etal>. <article-title>Think to move: A neuromagnetic brain-computer interface (BCI) system for chronic stroke</article-title>. <source>Stroke</source>. <year>2008</year>;<volume>39</volume>: <fpage>910</fpage>–<lpage>917</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1161/STROKEAHA.107.505313" xlink:type="simple">10.1161/STROKEAHA.107.505313</ext-link></comment> <object-id pub-id-type="pmid">18258825</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Daly</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Cheng</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Rogers</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Litinas</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Hrovat</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Dohring</surname> <given-names>M</given-names></name>. <article-title>Feasibility of a new application of noninvasive Brain Computer Interface (BCI): a case study of training for recovery of volitional motor control after stroke</article-title>. <source>J Neurol Phys Ther</source>. <year>2009</year>;<volume>33</volume>(<issue>4</issue>): <fpage>203</fpage>–<lpage>211</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1097/NPT.0b013e3181c1fc0b" xlink:type="simple">10.1097/NPT.0b013e3181c1fc0b</ext-link></comment> <object-id pub-id-type="pmid">20208465</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gu</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Dremstrup</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Farina</surname> <given-names>D</given-names></name>. <article-title>Single-trial discrimination of type and speed of wrist movements from EEG recordings</article-title>. <source>Clin Neurophysiol</source>. International Federation of Clinical Neurophysiology; <year>2009</year>;<volume>120</volume>: <fpage>1596</fpage>–<lpage>1600</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.clinph.2009.05.006" xlink:type="simple">10.1016/j.clinph.2009.05.006</ext-link></comment> <object-id pub-id-type="pmid">19535289</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Prasad</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Herman</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Coyle</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>McDonough</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Crosbie</surname> <given-names>J</given-names></name>. <article-title>Applying a brain-computer interface to support motor imagery practice in people with stroke for upper limb recovery: a feasibility study</article-title>. <source>J Neuroeng Rehabil</source>. <year>2010</year>;<volume>7</volume>: <fpage>60</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/1743-0003-7-60" xlink:type="simple">10.1186/1743-0003-7-60</ext-link></comment> <object-id pub-id-type="pmid">21156054</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref028"><label>28</label><mixed-citation publication-type="other" xlink:type="simple">Tan HG, Kong KH, Shee CY, Wang CC, Guan CT, Ang WT. Post-acute stroke patients use brain-computer interface to activate electrical stimulation. 2010 Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBC’10. 2010. pp. 4234–4237. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/IEMBS.2010.5627381" xlink:type="simple">10.1109/IEMBS.2010.5627381</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref029"><label>29</label><mixed-citation publication-type="other" xlink:type="simple">Ang KK, Guan C, Chua KSG, Ang BT, Kuah C, Wang C, et al. Clinical study of neurorehabilitation in stroke using EEG-based motor imagery brain-computer interface with robotic feedback. 2010 Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBC’10. 2010. pp. 5549–5552. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/IEMBS.2010.5626782" xlink:type="simple">10.1109/IEMBS.2010.5626782</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Broetz</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Braun</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Weber</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Soekadar</surname> <given-names>SR</given-names></name>, <name name-style="western"><surname>Caria</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Birbaumer</surname> <given-names>N</given-names></name>. <article-title>Combination of brain-computer interface training and goal-directed physical therapy in chronic stroke: a case report</article-title>. <source>Neurorehabil Neural Repair</source>. <year>2010</year>;<volume>24</volume>: <fpage>674</fpage>–<lpage>679</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1177/1545968310368683" xlink:type="simple">10.1177/1545968310368683</ext-link></comment> <object-id pub-id-type="pmid">20519741</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tam</surname> <given-names>WK</given-names></name>, <name name-style="western"><surname>Tong</surname> <given-names>KY</given-names></name>, <name name-style="western"><surname>Meng</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Gao</surname> <given-names>S</given-names></name>. <article-title>A minimal set of electrodes for motor imagery BCI to control an assistive device in chronic stroke subjects: A multi-session study</article-title>. <source>IEEE Trans Neural Syst Rehabil Eng</source>. <year>2011</year>;<volume>19</volume>: <fpage>617</fpage>–<lpage>627</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/TNSRE.2011.2168542" xlink:type="simple">10.1109/TNSRE.2011.2168542</ext-link></comment> <object-id pub-id-type="pmid">21984520</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref032"><label>32</label><mixed-citation publication-type="other" xlink:type="simple">Gomez-Rodriguez M, Peterst J, Hin J, Schölkopf B, Gharabaghi A, Grosse-Wentrup M. Closing the sensorimotor loop: Haptic feedback facilitates decoding of arm movement imagery. Conference Proceedings—IEEE International Conference on Systems, Man and Cybernetics. 2010. pp. 121–126. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/ICSMC.2010.5642217" xlink:type="simple">10.1109/ICSMC.2010.5642217</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shindo</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Kawashima</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Ushiba</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Ota</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Ito</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ota</surname> <given-names>T</given-names></name>, <etal>et al</etal>. <article-title>Effects of neurofeedback training with an electroencephalogram-based brain-computer interface for hand paralysis in patients with chronic stroke: A preliminary case series study</article-title>. <source>J Rehabil Med</source>. <year>2011</year>;<volume>43</volume>: <fpage>951</fpage>–<lpage>957</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.2340/16501977-0859" xlink:type="simple">10.2340/16501977-0859</ext-link></comment> <object-id pub-id-type="pmid">21947184</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ortner</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Irimia</surname> <given-names>D-C</given-names></name>, <name name-style="western"><surname>Scharinger</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Guger</surname> <given-names>C</given-names></name>. <article-title>A motor imagery based brain-computer interface for stroke rehabilitation</article-title>. <source>Stud Health Technol Inform</source>. <year>2012</year>;<volume>181</volume>: <fpage>319</fpage>–<lpage>23</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3233/978-1-61499-121-2-319" xlink:type="simple">10.3233/978-1-61499-121-2-319</ext-link></comment> <object-id pub-id-type="pmid">22954880</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kaiser</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Kreilinger</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Müller-Putz</surname> <given-names>GR</given-names></name>, <name name-style="western"><surname>Neuper</surname> <given-names>C</given-names></name>. <article-title>First steps toward a motor imagery based stroke BCI: New strategy to set up a classifier</article-title>. <source>Front Neurosci</source>. <year>2011</year>; <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3389/fnins.2011.00086" xlink:type="simple">10.3389/fnins.2011.00086</ext-link></comment> <object-id pub-id-type="pmid">21779234</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref036"><label>36</label><mixed-citation publication-type="other" xlink:type="simple">Cincotti F, Pichiorri F, Arico P, Aloise F, Leotta F, De Vico Fallani F, et al. EEG-based brain-computer interface to support post-stroke motor rehabilitation of the upper limb. Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBS. 2012. pp. 4112–4115. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/EMBC.2012.6346871" xlink:type="simple">10.1109/EMBC.2012.6346871</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vuckovic</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Sepulveda</surname> <given-names>F</given-names></name>. <article-title>A two-stage four-class BCI based on imaginary movements of the left and the right wrist</article-title>. <source>Med Eng Phys</source>. <year>2012</year>;<volume>34</volume>: <fpage>964</fpage>–<lpage>971</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.medengphy.2011.11.001" xlink:type="simple">10.1016/j.medengphy.2011.11.001</ext-link></comment> <object-id pub-id-type="pmid">22119365</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ramos-Murguialday</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Broetz</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Rea</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Läer</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Yilmaz</surname> <given-names>Ö</given-names></name>, <name name-style="western"><surname>Brasil</surname> <given-names>FL</given-names></name>, <etal>et al</etal>. <article-title>Brain-machine interface in chronic stroke rehabilitation: A controlled study</article-title>. <source>Ann Neurol</source>. <year>2013</year>;<volume>74</volume>: <fpage>100</fpage>–<lpage>108</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/ana.23879" xlink:type="simple">10.1002/ana.23879</ext-link></comment> <object-id pub-id-type="pmid">23494615</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Young</surname> <given-names>BM</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Prabhakaran</surname> <given-names>V</given-names></name>. <article-title>BCI-FES: could a new rehabilitation device hold fresh promise for stroke patients?</article-title> <source>Expert Rev Med Devices</source>. <year>2014</year>;<volume>11</volume>: <fpage>537</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1586/17434440.2014.941811" xlink:type="simple">10.1586/17434440.2014.941811</ext-link></comment> <object-id pub-id-type="pmid">25060658</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ang</surname> <given-names>KK</given-names></name>, <name name-style="western"><surname>Chua</surname> <given-names>KSG</given-names></name>, <name name-style="western"><surname>Phua</surname> <given-names>KS</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Chin</surname> <given-names>ZY</given-names></name>, <name name-style="western"><surname>Kuah</surname> <given-names>CWK</given-names></name>, <etal>et al</etal>. <article-title>A Randomized Controlled Trial of EEG-Based Motor Imagery Brain-Computer Interface Robotic Rehabilitation for Stroke</article-title>. <source>Clin EEG Neurosci</source>. <year>2015</year>;<volume>46</volume>: <fpage>310</fpage>–<lpage>320</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1177/1550059414522229" xlink:type="simple">10.1177/1550059414522229</ext-link></comment> <object-id pub-id-type="pmid">24756025</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref041"><label>41</label><mixed-citation publication-type="other" xlink:type="simple">Pinto RD, Ferreira HA. Development of a Non-invasive Brain Computer Interface for Neurorehabilitation. Proceedings of the 3rd 2015 Workshop on ICTs for improving Patients Rehabilitation Research Techniques. Lisbon, Portugal: ACM; 2015. pp. 126–130. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1145/2838944.2838975" xlink:type="simple">10.1145/2838944.2838975</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref042"><label>42</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Ibáñez</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Serrano</surname> <given-names>JI</given-names></name>, <name name-style="western"><surname>Del Castillo</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Monge</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Molina</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Pons</surname> <given-names>JL</given-names></name>. <chapter-title>Heterogeneous BCI-Triggered Functional Electrical Stimulation Intervention for the Upper-Limb Rehabiliation of Stroke Patients</chapter-title>. In: <name name-style="western"><surname>Guger</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Müller-Putz</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Allison</surname> <given-names>B</given-names></name>, editors. <source>Brain-Computer Interface Research</source>. <publisher-name>Springer International Publishing</publisher-name>; <year>2015</year>. pp. <fpage>67</fpage>–<lpage>77</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/978-3-319-25190-5_7" xlink:type="simple">10.1007/978-3-319-25190-5_7</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Elnady</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Xiao</surname> <given-names>ZG</given-names></name>, <name name-style="western"><surname>Yong</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Randhawa</surname> <given-names>BK</given-names></name>, <name name-style="western"><surname>Boyd</surname> <given-names>L</given-names></name>, <etal>et al</etal>. <article-title>A Single-Session Preliminary Evaluation of an Affordable BCI-Controlled Arm Exoskeleton and Motor-Proprioception Platform</article-title>. <source>Front Hum Neurosci</source>. <year>2015</year>;<volume>9</volume>: <fpage>168</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3389/fnhum.2015.00168" xlink:type="simple">10.3389/fnhum.2015.00168</ext-link></comment> <object-id pub-id-type="pmid">25870554</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Edelman</surname> <given-names>BJ</given-names></name>, <name name-style="western"><surname>Baxter</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>He</surname> <given-names>B</given-names></name>. <article-title>EEG source imaging enhances the decoding of complex right-hand motor imagery tasks</article-title>. <source>IEEE Trans Biomed Eng</source>. <year>2016</year>;<volume>63</volume>: <fpage>4</fpage>–<lpage>14</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/TBME.2015.2467312" xlink:type="simple">10.1109/TBME.2015.2467312</ext-link></comment> <object-id pub-id-type="pmid">26276986</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schalk</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>McFarland</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Hinterberger</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Birbaumer</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Wolpaw</surname> <given-names>JR</given-names></name>. <article-title>BCI2000: a general-purpose brain-computer interface (BCI) system</article-title>. <source>Biomed Eng IEEE Trans</source>. <year>2004</year>;<volume>51</volume>: <fpage>1034</fpage>–<lpage>1043</lpage>.</mixed-citation></ref>
+<ref id="pone.0188293.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neuper</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Scherer</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Reiner</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>. <article-title>Imagery of motor actions: Differential effects of kinesthetic and visual–motor mode of imagery in single-trial EEG</article-title>. <source>Cogn Brain Res</source>. <year>2005</year>;<volume>25</volume>: <fpage>668</fpage>–<lpage>677</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.cogbrainres.2005.08.014" xlink:type="simple">10.1016/j.cogbrainres.2005.08.014</ext-link></comment> <object-id pub-id-type="pmid">16236487</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref047"><label>47</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Brunner</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Schlögl</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lopes da Silva</surname> <given-names>FH</given-names></name>. <article-title>Mu rhythm (de)synchronization and EEG single-trial classification of different motor imagery tasks</article-title>. <source>Neuroimage</source>. <year>2006</year>;<volume>31</volume>: <fpage>153</fpage>–<lpage>159</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.neuroimage.2005.12.003" xlink:type="simple">10.1016/j.neuroimage.2005.12.003</ext-link></comment> <object-id pub-id-type="pmid">16443377</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ince</surname> <given-names>NF</given-names></name>, <name name-style="western"><surname>Arica</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Tewfik</surname> <given-names>A</given-names></name>. <article-title>Classification of single trial motor imagery EEG recordings with subject adapted non-dyadic arbitrary time–frequency tilings</article-title>. <source>J Neural Eng</source>. <year>2006</year>;<volume>3</volume>: <fpage>235</fpage>–<lpage>244</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1088/1741-2560/3/3/006" xlink:type="simple">10.1088/1741-2560/3/3/006</ext-link></comment> <object-id pub-id-type="pmid">16921207</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref049"><label>49</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ang</surname> <given-names>KK</given-names></name>, <name name-style="western"><surname>Chua</surname> <given-names>KSG</given-names></name>, <name name-style="western"><surname>Phua</surname> <given-names>KS</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Chin</surname> <given-names>ZY</given-names></name>, <name name-style="western"><surname>Kuah</surname> <given-names>CWK</given-names></name>, <etal>et al</etal>. <article-title>A Randomized Controlled Trial of EEG-Based Motor Imagery Brain-Computer Interface Robotic Rehabilitation for Stroke</article-title>. <source>Clin EEG Neurosci</source>. <year>2015</year>;<volume>46</volume>: <fpage>310</fpage>–<lpage>320</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1177/1550059414522229" xlink:type="simple">10.1177/1550059414522229</ext-link></comment> <object-id pub-id-type="pmid">24756025</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref050"><label>50</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Christian Andreas</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Scott</surname> <given-names>M</given-names></name>. <article-title>BCILAB: a platform for brain–computer interface development</article-title>. <source>J Neural Eng</source>. <year>2013</year>;<volume>10</volume>: <fpage>56014</fpage>. Available: <ext-link ext-link-type="uri" xlink:href="http://stacks.iop.org/1741-2552/10/i=5/a=056014" xlink:type="simple">http://stacks.iop.org/1741-2552/10/i=5/a=056014</ext-link></mixed-citation></ref>
+<ref id="pone.0188293.ref051"><label>51</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Lopes Da Silva</surname> <given-names>FH</given-names></name>. <article-title>Event-related EEG/MEG synchronization and desynchronization: Basic principles</article-title>. <source>Clinical Neurophysiology</source>. <year>1999</year>. pp. <fpage>1842</fpage>–<lpage>1857</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S1388-2457(99)00141-8" xlink:type="simple">10.1016/S1388-2457(99)00141-8</ext-link></comment> <object-id pub-id-type="pmid">10576479</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref052"><label>52</label><mixed-citation publication-type="other" xlink:type="simple">Dornhege G, Blankertz B, Krauledat M, Losch F, Curio G, Müller K-R. Optimizing spatio-temporal filters for improving brain-computer interfacing.</mixed-citation></ref>
+<ref id="pone.0188293.ref053"><label>53</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ramoser</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Müller-Gerking</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>. <article-title>Optimal spatial filtering of single trial EEG during imagined hand movement</article-title>. <source>IEEE Trans Rehabil Eng</source>. <year>2000</year>;<volume>8</volume>: <fpage>441</fpage>–<lpage>446</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/86.895946" xlink:type="simple">10.1109/86.895946</ext-link></comment> <object-id pub-id-type="pmid">11204034</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref054"><label>54</label><mixed-citation publication-type="other" xlink:type="simple">Wang Y, Gao S, Gao X. Common spatial pattern method for channel selelction in motor imagery based brain-computer interface. Engineering in Medicine and Biology Society, 2005 IEEE-EMBS 2005 27th Annual International Conference of the. IEEE; 2006. pp. 5392–5395. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/IEMBS.2005.1615701" xlink:type="simple">10.1109/IEMBS.2005.1615701</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref055"><label>55</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Neuper</surname> <given-names>C</given-names></name>. <article-title>Motor imagery and direct brain- computer communication</article-title>. <source>Proc IEEE</source>. <year>2001</year>;<volume>89</volume>: <fpage>1123</fpage>–<lpage>1134</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/5.939829" xlink:type="simple">10.1109/5.939829</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref056"><label>56</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blankertz</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Blankertz</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Tomioka</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Tomioka</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Lemm</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Lemm</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>Optimizing Spatial Filters for Robust\nEEG Single-Trial Analysis</article-title>. <source>IEEE Signal Process Mag</source>. <year>2008</year>;<volume>XX</volume>: <fpage>1</fpage>–<lpage>12</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/MSP.2008.4408441" xlink:type="simple">10.1109/MSP.2008.4408441</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref057"><label>57</label><mixed-citation publication-type="other" xlink:type="simple">Kai Keng Ang, Zheng Yang Chin, Haihong Zhang, Cuntai Guan. Filter Bank Common Spatial Pattern (FBCSP) in Brain-Computer Interface. 2008 IEEE International Joint Conference on Neural Networks (IEEE World Congress on Computational Intelligence). 2008. pp. 2390–2397. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/IJCNN.2008.4634130" xlink:type="simple">10.1109/IJCNN.2008.4634130</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref058"><label>58</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ang</surname> <given-names>KK</given-names></name>, <name name-style="western"><surname>Chin</surname> <given-names>ZY</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Guan</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>H</given-names></name>. <article-title>Filter bank common spatial pattern algorithm on BCI competition IV datasets 2a and 2b</article-title>. <source>Front Neurosci</source>. <year>2012</year>;<volume>6</volume>: <fpage>1</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.3389/fnins.2012.00001" xlink:type="simple">10.3389/fnins.2012.00001</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref059"><label>59</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Neuper</surname> <given-names>C</given-names></name>. <article-title>Motor imagery and direct brain-computer communication</article-title>. <source>Proc IEEE</source>. <year>2001</year>;<volume>89</volume>: <fpage>1123</fpage>–<lpage>1134</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1109/5.939829" xlink:type="simple">10.1109/5.939829</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref060"><label>60</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schäfer</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Strimmer</surname> <given-names>K</given-names></name>. <article-title>A Shrinkage Approach to Large-Scale Covariance Matrix Estimation and Implications for Functional Genomics</article-title>. <source>Stat Appl Genet Mol Biol</source>. <year>2005</year>;<volume>4</volume>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.2202/1544-6115.1175" xlink:type="simple">10.2202/1544-6115.1175</ext-link></comment> <object-id pub-id-type="pmid">16646851</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref061"><label>61</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tomioka</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Müller</surname> <given-names>KR</given-names></name>. <article-title>A regularized discriminative framework for EEG analysis with application to brain-computer interface</article-title>. <source>Neuroimage</source>. <year>2010</year>;<volume>49</volume>: <fpage>415</fpage>–<lpage>432</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.neuroimage.2009.07.045" xlink:type="simple">10.1016/j.neuroimage.2009.07.045</ext-link></comment> <object-id pub-id-type="pmid">19646534</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref062"><label>62</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wolpaw</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>Birbaumer</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>McFarland</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Vaughan</surname> <given-names>TM</given-names></name>. <article-title>Brain–computer interfaces for communication and control</article-title>. <source>Clin Neurophysiol</source>. <year>2002</year>;<volume>113</volume>: <fpage>767</fpage>–<lpage>791</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S1388-2457(02)00057-3" xlink:type="simple">10.1016/S1388-2457(02)00057-3</ext-link></comment> <object-id pub-id-type="pmid">12048038</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref063"><label>63</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hochberg</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Tamhane</surname> <given-names>AC</given-names></name>. <article-title>Multiple Comparison Procedures</article-title>. <source>Wiley Ser Probab Stat</source>. <year>1987</year>;<volume>312</volume>: <fpage>2014</fpage>–<lpage>2015</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/9780470316672" xlink:type="simple">10.1002/9780470316672</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref064"><label>64</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hanakawa</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Dimyan</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Hallett</surname> <given-names>M</given-names></name>. <article-title>Motor planning, imagery, and execution in the distributed motor network: A time-course study with functional MRI</article-title>. <source>Cereb Cortex</source>. <year>2008</year>;<volume>18</volume>: <fpage>2775</fpage>–<lpage>2788</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1093/cercor/bhn036" xlink:type="simple">10.1093/cercor/bhn036</ext-link></comment> <object-id pub-id-type="pmid">18359777</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref065"><label>65</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Goldman-Rakic</surname> <given-names>PS</given-names></name>, <name name-style="western"><surname>Schwartz</surname> <given-names>ML</given-names></name>. <article-title>Interdigitation of contralateral and ipsilateral columnar projections to frontal association cortex in primates</article-title>. <source>Science</source>. <year>1982</year>;<volume>216</volume>: <fpage>755</fpage>–<lpage>757</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1126/science.6177037" xlink:type="simple">10.1126/science.6177037</ext-link></comment> <object-id pub-id-type="pmid">6177037</object-id></mixed-citation></ref>
+<ref id="pone.0188293.ref066"><label>66</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Müller-putz</surname> <given-names>GR</given-names></name>, <name name-style="western"><surname>Scherer</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Brunner</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Leeb</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Pfurtscheller</surname> <given-names>G</given-names></name>. <article-title>Better than random? A closer look on BCI results</article-title>. <source>Int Jouranl Bioelectromagn</source>. <year>2008</year>;<volume>10</volume>: <fpage>52</fpage>–<lpage>55</lpage>.</mixed-citation></ref>
+<ref id="pone.0188293.ref067"><label>67</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kandel</surname> <given-names>ER</given-names></name>, <name name-style="western"><surname>Schwartz</surname> <given-names>JH</given-names></name>, <name name-style="western"><surname>Jessell</surname> <given-names>TM</given-names></name>, <name name-style="western"><surname>Siegelbaum</surname> <given-names>SA</given-names></name>, <name name-style="western"><surname>Hudspeth</surname> <given-names>AJ</given-names></name>. <article-title>Principles of Neural Science, Fifth Edition [Internet]</article-title>. <source>Neurology</source>. <year>2014</year>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1036/0838577016" xlink:type="simple">10.1036/0838577016</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0188293.ref068"><label>68</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fogassi</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Luppino</surname> <given-names>G</given-names></name>. <article-title>Motor functions of the parietal lobe</article-title>. <source>Current Opinion in Neurobiology</source>. <year>2005</year>. pp. <fpage>626</fpage>–<lpage>631</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.conb.2005.10.015" xlink:type="simple">10.1016/j.conb.2005.10.015</ext-link></comment> <object-id pub-id-type="pmid">16271458</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

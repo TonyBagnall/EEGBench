@@ -1,0 +1,16 @@
+{
+  "evidence": {
+    "direct": "Native subject/session folders, filenames/timestamps, class/end/segment markers, sensor order/calibration/template coordinates and filter tables",
+    "documented": "Original data licence, modality roles, single-session NeuRow protocol and cohort summary",
+    "assigned": "Encoded labels, whole-subject split, cue ordinal and common safe crop; no invented individual demographics"
+  },
+  "missing_or_inconsistent": [
+    "Pilot foldersp01-p03 use filename subject01-03 tokens; folder IDs remain primary, both kept",
+    "Reference/ground, individual demographics/timezone and measured geometry unavailable",
+    "Some source trials have lost-sample gaps; exclude complete affected trials, preserve markers",
+    "Different imagery cue counts are retained, not forced to nominal40",
+    "ME executed-movement recordings excluded; feedback conditions pooled as one problem",
+    "Excluded auxiliary labels differ across source recordings; generic Aux1-Aux3 physiological identities cannot be assigned from the named schema without evidence",
+    "Some source headers omit coordinates and/or hardware filter tables; retain unknowns, no generated montage or assumed filter history substituted"
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "created": "2023-07-03T16:56:18.193046+00:00",
+  "modified": "2025-04-24T07:12:27.445397+00:00",
+  "id": 8086086,
+  "conceptrecid": "8086085",
+  "doi": "10.5281/zenodo.8086086",
+  "conceptdoi": "10.5281/zenodo.8086085",
+  "doi_url": "https://doi.org/10.5281/zenodo.8086086",
+  "metadata": {
+    "title": "Electrophysiological Signals of Embodiment and MI-BCI Training in VR",
+    "doi": "10.5281/zenodo.8086086",
+    "publication_date": "2023-06-27",
+    "description": "<p><strong>DATASET DETAILS:</strong></p>\n\n<p><strong>Participant demographics:</strong></p>\n\n<p>A total of 26 participants were included, consisting of 10 males (mean age 25.4 &plusmn; 7.4) and 16 females (mean age 23 &plusmn; 3.2). All participants were right-handed, reported normal or corrected-to-normal vision, and had no motor impairments. Three participants had previous experience with BCIs, and five participants used VR more than twice. Participants were randomly assigned to either the embodied group (N=13) or the non-embodied group (N=13), which served as a control. All participants signed an informed consent before participating in the study in accordance with the 1964 Declaration of Helsinki.&nbsp;</p>\n\n<p><strong>Experiment Description:</strong></p>\n\n<p>A between-subject design was used to investigate the effect of virtual embodiment priming phase on the subsequent motor-imagery training phase in VR. The experiment comprised four main blocks: (1) equipment setup and instructions (45-60 minutes), (2) resting state EEG recording (4 minutes), (3) inducing or breaking the sense of embodiment in VR (5 minutes), and (4) MI training in VR (15 minutes). The entire experiment lasted approximately 90-120 minutes. Directly after block 3, participants answered a questionnaire that measured their subjective sense of embodiment and physical presence.</p>\n\n<p><strong>Equipment:</strong></p>\n\n<p>A wireless EEG amplifier (LiveAmp; Brain Products GmbH, Gilching, Germany) was used, with 32 active <strong>EEG</strong> electrodes (+3 ACC) with a sampling rate of 500Hz. In addition, <strong>EMG, </strong>and <strong>Temperature</strong> signals (in uV) have been recorded synchronously in a bipolar montage and connected to the EEG amplifier&rsquo;s AUX input through the Brain Products BIP2AUX adapter.</p>\n\n<p>Visual feedback was provided through an Oculus Rift CV1 headset (Reality Labs, formerly Facebook, Inc., CA, USA).<br>\n&nbsp;</p>\n\n<p><strong>Channel Indices:</strong></p>\n\n<p><strong>EEG</strong>: 1-32<br>\n<strong>EMG Left</strong> (AUX1): 33<br>\n<strong>EMG Right</strong>. (AUX2): 34<br>\n<strong>Temperature</strong> (AUX3): 35<br>\n<strong>ACC</strong>: 36-38</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Event codes:</strong></p>\n\n<table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><strong>Code</strong></td>\n\t\t\t<td><strong>Description</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S01</td>\n\t\t\t<td>Experiment Start</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S02</td>\n\t\t\t<td>Baseline Start</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S03</td>\n\t\t\t<td>Baseline Stop</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S04</td>\n\t\t\t<td>Start Of Trial</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S05</td>\n\t\t\t<td>Cross On Screen</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S07</td>\n\t\t\t<td>class1, Left hand&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S08</td>\n\t\t\t<td>class2, Right hand&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S09</td>\n\t\t\t<td>Feedback Continuous</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S10</td>\n\t\t\t<td>End of Trial</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S11</td>\n\t\t\t<td>End Of Session</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>S12</td>\n\t\t\t<td>Experiment Stop</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p><strong>Directory tree:</strong></p>\n\n<p>ROOT<br>\n|<br>\n+--- GROUP [Control or Embodied]<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---USER #<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---TASK #<br>\n|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; +---Resting State<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---Embodiment<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;+---MI<br>\n|&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; .eeg<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vhdr<br>\n|&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .vmrk</p>\n\n<p>&nbsp;</p>\n\n<p>For demographics and questionnaire data, please contact the authors.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Katarina Vagaja",
+        "affiliation": "VU University Amsterdam, Amsterdam, Netherlands"
+      },
+      {
+        "name": "Athanasios Vourvopoulos",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa, Lisbon, Portugal",
+        "orcid": "0000-0001-9676-8599"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Athanasios Vourvopoulos",
+        "affiliation": "Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa, Lisbon, Portugal",
+        "type": "Supervisor",
+        "orcid": "0000-0001-9676-8599"
+      },
+      {
+        "name": "Klaus Linkenkaer-Hansen",
+        "affiliation": "VU University Amsterdam, Amsterdam, Netherlands",
+        "type": "Supervisor",
+        "orcid": "0000-0003-2140-9780"
+      }
+    ],
+    "keywords": [
+      "Embodiment",
+      "Virtual Hand Illusion",
+      "Virtual Reality",
+      "Motor Imagery",
+      "Event-Related Desynchronization",
+      "Brain-Computer Interfaces",
+      "EEG",
+      "EMG",
+      "Temperature"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://www.youtube.com/watch?v=txPpFjRKIos",
+        "relation": "compiles",
+        "resource_type": "video",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://github.com/noisys-project/Virtual-Embodiment-and-Motor-Imagery-BCIs",
+        "relation": "isCompiledBy",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "thesis": {
+      "university": "VU University Amsterdam, Amsterdam, Netherlands"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "2022.02283.PTDC",
+        "internal_id": "10.13039/501100001871::2022.02283.PTDC",
+        "funder": {
+          "name": "Funda\u00e7\u00e3o para a Ci\u00eancia e Tecnologia",
+          "doi": "10.13039/501100001871",
+          "acronym": "FCT"
+        },
+        "title": "Neuroadaptive Systems for Brain Restoration based on Virtual-Reality and Brain-Computer-Interfaces",
+        "program": "3599-PPCDT"
+      },
+      {
+        "code": "UIDB/50009/2020",
+        "internal_id": "10.13039/501100001871::UIDB/50009/2020",
+        "funder": {
+          "name": "Funda\u00e7\u00e3o para a Ci\u00eancia e Tecnologia",
+          "doi": "10.13039/501100001871",
+          "acronym": "FCT"
+        },
+        "title": "Laboratory of Robotics and Engineering Systems",
+        "acronym": "UIDB/50009/2020",
+        "program": "6817 - DCRRNI ID",
+        "url": "http://www.fct.pt/apoios/projectos/consulta/vglobal_projecto.phtml.en?idProjecto=157672&idElemConcurso=14251"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8086085"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Electrophysiological Signals of Embodiment and MI-BCI Training in VR",
+  "links": {
+    "self": "https://zenodo.org/api/records/8086086",
+    "self_html": "https://zenodo.org/records/8086086",
+    "preview_html": "https://zenodo.org/records/8086086?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8086086",
+    "self_doi": "https://doi.org/10.5281/zenodo.8086086",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8086086",
+    "reserve_doi": "https://zenodo.org/api/records/8086086/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8086085",
+    "parent_html": "https://zenodo.org/records/8086085",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8086085",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8086085",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8086086/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8086086/sequence/default",
+    "files": "https://zenodo.org/api/records/8086086/files",
+    "media_files": "https://zenodo.org/api/records/8086086/media-files",
+    "latest": "https://zenodo.org/api/records/8086086/versions/latest",
+    "latest_html": "https://zenodo.org/records/8086086/latest",
+    "versions": "https://zenodo.org/api/records/8086086/versions",
+    "draft": "https://zenodo.org/api/records/8086086/draft",
+    "access_links": "https://zenodo.org/api/records/8086086/access/links",
+    "access_grants": "https://zenodo.org/api/records/8086086/access/grants",
+    "access_users": "https://zenodo.org/api/records/8086086/access/users",
+    "access_request": "https://zenodo.org/api/records/8086086/access/request",
+    "access": "https://zenodo.org/api/records/8086086/access",
+    "communities": "https://zenodo.org/api/records/8086086/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8086086/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8086086/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8086086/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/8086086/quota-increase",
+    "requests": "https://zenodo.org/api/records/8086086/requests"
+  },
+  "updated": "2025-04-24T07:12:27.445397+00:00",
+  "recid": "8086086",
+  "revision": 7,
+  "files": [
+    {
+      "id": "981298eb-f6b8-4fbb-85a7-a25bfd6f1e7c",
+      "key": "GROUPS.zip",
+      "size": 2177915815,
+      "checksum": "md5:e89017e33a730ffa37f5a1a02acfc74f",
+      "links": {
+        "self": "https://zenodo.org/api/records/8086086/files/GROUPS.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "189346"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 340,
+    "unique_downloads": 211,
+    "views": 863,
+    "unique_views": 785,
+    "version_downloads": 340,
+    "version_unique_downloads": 211,
+    "version_unique_views": 784,
+    "version_views": 862
+  },
+  "state": "done",
+  "submitted": true
+}

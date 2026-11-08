@@ -1,0 +1,151 @@
+{
+  "files": [
+    {
+      "id": 36436944,
+      "name": "bci-simuator-data-README.md",
+      "size": 1116,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/36436944",
+      "supplied_md5": "d30f2ae606e5fc8429869ba01b7482f8",
+      "computed_md5": "d30f2ae606e5fc8429869ba01b7482f8",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 36438960,
+      "name": "study-2022-data-anonymized.zip",
+      "size": 353215261,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/36438960",
+      "supplied_md5": "c59c1f1a07256d06a2d9feb649409072",
+      "computed_md5": "c59c1f1a07256d06a2d9feb649409072",
+      "mimetype": "application/zip"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 13161621,
+      "full_name": "Hyonyoung Shin",
+      "first_name": "Hyonyoung",
+      "last_name": "Shin",
+      "is_active": true,
+      "url_name": "Hyonyoung_Shin",
+      "orcid_id": "0000-0002-4316-5847"
+    },
+    {
+      "id": 4949023,
+      "full_name": "Daniel Suma",
+      "first_name": "Daniel",
+      "last_name": "Suma",
+      "is_active": true,
+      "url_name": "Daniel_Suma",
+      "orcid_id": ""
+    },
+    {
+      "id": 6537365,
+      "full_name": "Bin He",
+      "first_name": "Bin",
+      "last_name": "He",
+      "is_active": true,
+      "url_name": "Bin_He",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Data_from_Closed-loop_motor_imagery_EEG_simulation_for_brain-computer_interfaces/20383716",
+  "download_disabled": false,
+  "description": "<p>This dataset contains the experimentally collected data used for the paper: Shin H, Suma D and He B (2022) Closed-loop motor imagery EEG simulation for brain-computer interfaces. <em>Front. Hum. Neurosci.</em> 16:951591. doi:10.3389/fnhum.2022.951591</p>\n<p><br></p>\n<p>The data was recorded from 10 unique healthy human subjects (assigned subject numbers S01 to S10). All data is organized into LIVE and SIMULATED directories, followed by BW, NT and CV subdirectories according to which experimental condition the data came from. For details on the live vs. simulated parallel experiment design and the implementation of BW, NT and CV parameters, please refer to the paper. All identifying information have been removed.</p>\n<p><br></p>\n<p>Please cite the above paper if you use any data included in this dataset. Code related to this study are also available from <sub><a href=\"https://github.com/mcvain/bci-simulator\" target=\"_blank\">https://github.com/mcvain/bci-simulator.\u00a0</a></sub></p>",
+  "funding": "NIH AT009263",
+  "funding_list": [
+    {
+      "id": 13769744,
+      "title": "NIH AT009263",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    }
+  ],
+  "version": 1,
+  "status": "public",
+  "size": 353216377,
+  "created_date": "2022-08-12T13:58:01Z",
+  "modified_date": "2022-08-12T13:58:01Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "EEG",
+    "EEG simulation",
+    "brain-computer interface",
+    "closed-loop systems",
+    "sensorimotor rhythm",
+    "motor imagery",
+    "Biomedical Engineering not elsewhere classified",
+    "Neuroscience"
+  ],
+  "keywords": [
+    "EEG",
+    "EEG simulation",
+    "brain-computer interface",
+    "closed-loop systems",
+    "sensorimotor rhythm",
+    "motor imagery",
+    "Biomedical Engineering not elsewhere classified",
+    "Neuroscience"
+  ],
+  "categories": [
+    {
+      "id": 26299,
+      "title": "Biomedical engineering not elsewhere classified",
+      "parent_id": 26263,
+      "path": "/26212/26263/26299",
+      "source_id": "400399",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 24748,
+      "title": "Neurosciences not elsewhere classified",
+      "parent_id": 24724,
+      "path": "/24457/24724/24748",
+      "source_id": "320999",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Shin, Hyonyoung; Suma, Daniel; He, Bin (2022). Data from: Closed-loop motor imagery EEG simulation for brain-computer interfaces. figshare. Dataset. https://doi.org/10.6084/m9.figshare.20383716.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": "file",
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 20383716,
+  "title": "Data from: Closed-loop motor imagery EEG simulation for brain-computer interfaces",
+  "doi": "10.6084/m9.figshare.20383716.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/20383716",
+  "published_date": "2022-08-12T13:58:01Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/20383716",
+  "url_public_api": "https://api.figshare.com/v2/articles/20383716",
+  "url_private_html": "https://figshare.com/account/articles/20383716",
+  "url_public_html": "https://figshare.com/articles/dataset/Data_from_Closed-loop_motor_imagery_EEG_simulation_for_brain-computer_interfaces/20383716",
+  "timeline": {
+    "posted": "2022-08-12T13:58:01",
+    "firstOnline": "2022-08-12"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

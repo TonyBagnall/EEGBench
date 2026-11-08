@@ -1,0 +1,270 @@
+{
+  "created": "2025-12-29T16:26:34.073531+00:00",
+  "modified": "2025-12-29T16:26:34.751443+00:00",
+  "id": 18087806,
+  "conceptrecid": "18087805",
+  "doi": "10.5281/zenodo.18087806",
+  "conceptdoi": "10.5281/zenodo.18087805",
+  "doi_url": "https://doi.org/10.5281/zenodo.18087806",
+  "metadata": {
+    "title": "neuroTUM-BCI: Cybathlon Dataset",
+    "doi": "10.5281/zenodo.18087806",
+    "publication_date": "2025-12-29",
+    "description": "<p>Dataset for the paper \"Improving motor imagery decoding methods for an EEG-based mobile brain-computer interface in the context of the 2024 Cybathlon\".</p>\n<p>Structure of the data:</p>\n<p>P0 - describes the anonymized identifier of the pilot.</p>\n<p>S0 - describes the recording session</p>\n<p>mapping.yaml - describes the mapping from the marker (given cue) to the class (performed action).</p>\n<p>data.xdf - recorded EEG data in the XDF file format. Recorded using an mBrainTrain Smarting EEG. Labelled data with markers for the three classes specified in the mapping.yaml.</p>\n<p>calibration.xdf - recorded calibration EEG data in the XDF file format. Recorded using an mBrainTrain Smarting EEG. Used for ASR calibration.</p>\n<p>&nbsp;</p>\n<p>Data collected by neuroTUM e.V., Munich, Germany. (neurotum.com)</p>\n<p>Informed consent was obtained prior to data collection, usage, and publication.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "neuroTUM e.V.",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.48550/arXiv.2511.23384",
+        "relation": "isDescribedBy",
+        "resource_type": "publication",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "18087805"
+          }
+        }
+      ]
+    }
+  },
+  "title": "neuroTUM-BCI: Cybathlon Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/18087806",
+    "self_html": "https://zenodo.org/records/18087806",
+    "preview_html": "https://zenodo.org/records/18087806?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.18087806",
+    "self_doi": "https://doi.org/10.5281/zenodo.18087806",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18087806",
+    "reserve_doi": "https://zenodo.org/api/records/18087806/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/18087805",
+    "parent_html": "https://zenodo.org/records/18087805",
+    "parent_doi": "https://doi.org/10.5281/zenodo.18087805",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18087805",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:18087806/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:18087806/sequence/default",
+    "files": "https://zenodo.org/api/records/18087806/files",
+    "media_files": "https://zenodo.org/api/records/18087806/media-files",
+    "latest": "https://zenodo.org/api/records/18087806/versions/latest",
+    "latest_html": "https://zenodo.org/records/18087806/latest",
+    "versions": "https://zenodo.org/api/records/18087806/versions",
+    "draft": "https://zenodo.org/api/records/18087806/draft",
+    "access_links": "https://zenodo.org/api/records/18087806/access/links",
+    "access_grants": "https://zenodo.org/api/records/18087806/access/grants",
+    "access_users": "https://zenodo.org/api/records/18087806/access/users",
+    "access_request": "https://zenodo.org/api/records/18087806/access/request",
+    "access": "https://zenodo.org/api/records/18087806/access",
+    "communities": "https://zenodo.org/api/records/18087806/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/18087806/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/18087806/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/18087806/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/18087806/quota-increase",
+    "requests": "https://zenodo.org/api/records/18087806/requests"
+  },
+  "updated": "2025-12-29T16:26:34.751443+00:00",
+  "recid": "18087806",
+  "revision": 4,
+  "files": [
+    {
+      "id": "de249b61-263c-4a4b-80b9-f77e961c5ab7",
+      "key": "P1_S1_data.xdf",
+      "size": 8586085,
+      "checksum": "md5:34040ca68c438297d32473c3bd903c29",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S1_data.xdf/content"
+      }
+    },
+    {
+      "id": "ae50224a-4f05-4721-90fe-2306e0b5b84e",
+      "key": "P2_S3_data.xdf",
+      "size": 94653061,
+      "checksum": "md5:3cb4ca2eb468e335c7e56a152a94c339",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P2_S3_data.xdf/content"
+      }
+    },
+    {
+      "id": "c1fe4b79-b9fe-4803-a7c4-d1db78dfa0ab",
+      "key": "P1_S3_calibration.xdf",
+      "size": 1740548,
+      "checksum": "md5:ef5b49197e91a6c764b675a6577c5029",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S3_calibration.xdf/content"
+      }
+    },
+    {
+      "id": "0616974b-c03f-4cb0-9563-4a7bb876c693",
+      "key": "P2_S2_data.xdf",
+      "size": 75332450,
+      "checksum": "md5:1710a31ac1cbe83746fe4eaa85fec37b",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P2_S2_data.xdf/content"
+      }
+    },
+    {
+      "id": "4b07c5a3-45e4-47bd-b71e-2583690b65f7",
+      "key": "P1_S4_data.xdf",
+      "size": 8743108,
+      "checksum": "md5:056920615564fc65f8dfff339ad165b8",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S4_data.xdf/content"
+      }
+    },
+    {
+      "id": "f514942d-bb84-46f2-8e91-3fb5541cb8e2",
+      "key": "P1_S2_calibration.xdf",
+      "size": 1634875,
+      "checksum": "md5:547e4843eee4f3720598c71febcd60c9",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S2_calibration.xdf/content"
+      }
+    },
+    {
+      "id": "4b72538a-95ff-495b-96a8-ec086602e048",
+      "key": "P1_S4_calibration.xdf",
+      "size": 1740548,
+      "checksum": "md5:ef5b49197e91a6c764b675a6577c5029",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S4_calibration.xdf/content"
+      }
+    },
+    {
+      "id": "6d10c2af-bed3-4bd9-9f81-45e8a6a6f478",
+      "key": "P1_S2_data.xdf",
+      "size": 12211159,
+      "checksum": "md5:e3b225845373ef7b25dc1aad31fecbd4",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S2_data.xdf/content"
+      }
+    },
+    {
+      "id": "f94e4d1f-ef54-4710-9858-f6625380492a",
+      "key": "P1_S5_data.xdf",
+      "size": 10695028,
+      "checksum": "md5:3df6a9dffcdb88b1c1344a24ff64d746",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S5_data.xdf/content"
+      }
+    },
+    {
+      "id": "fabc183e-d642-42d8-ab59-81019e87a283",
+      "key": "P1_mapping.yaml",
+      "size": 146,
+      "checksum": "md5:f45e31cb97b87a8b3e4f4f6c877f6a8c",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_mapping.yaml/content"
+      }
+    },
+    {
+      "id": "0d8631bf-93d3-4e33-b4ce-d6b35892d765",
+      "key": "P1_S3_data.xdf",
+      "size": 14219505,
+      "checksum": "md5:4c884ee0db819ea2dec6a1969bba2270",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S3_data.xdf/content"
+      }
+    },
+    {
+      "id": "107370d4-ed5d-43a7-bc77-c5bf4bda8d99",
+      "key": "P1_S5_calibration.xdf",
+      "size": 1583210,
+      "checksum": "md5:581f66ef8635033073bb02727cf87f77",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S5_calibration.xdf/content"
+      }
+    },
+    {
+      "id": "232523bb-80dd-46e4-b2c1-0c8c0d9499cd",
+      "key": "P2_S2_calibration.xdf",
+      "size": 1742401,
+      "checksum": "md5:de2a888f6e8bdc1226b516e050f262a4",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P2_S2_calibration.xdf/content"
+      }
+    },
+    {
+      "id": "50f43fbc-9ef3-4486-81be-8cde942a0e91",
+      "key": "P1_S1_calibration.xdf",
+      "size": 1634467,
+      "checksum": "md5:4001b5b6fe1685d32cface8daf1cfeec",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P1_S1_calibration.xdf/content"
+      }
+    },
+    {
+      "id": "b0137887-eb6c-410b-a4ac-daf5edfca68f",
+      "key": "P2_mapping.yaml",
+      "size": 151,
+      "checksum": "md5:e05afd092a97bc30c633a351258c2794",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P2_mapping.yaml/content"
+      }
+    },
+    {
+      "id": "8f407826-3d9d-478c-aaf4-8ef2cfaeb8e1",
+      "key": "P2_S1_data.xdf",
+      "size": 69366467,
+      "checksum": "md5:7372646c093578924c8a3d63c536b254",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P2_S1_data.xdf/content"
+      }
+    },
+    {
+      "id": "6c8b09fd-1b49-407d-a2bc-81ee2e1687e2",
+      "key": "P2_S1_calibration.xdf",
+      "size": 1585929,
+      "checksum": "md5:dd9dcfce273172e0c1b6bd66d46a4d0d",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P2_S1_calibration.xdf/content"
+      }
+    },
+    {
+      "id": "256370b8-fd9d-403b-a018-4a8f663fd77b",
+      "key": "P2_S3_calibration.xdf",
+      "size": 1058905,
+      "checksum": "md5:6d289d272444afd83ee9b8bf26c1b592",
+      "links": {
+        "self": "https://zenodo.org/api/records/18087806/files/P2_S3_calibration.xdf/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1502058"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 379,
+    "unique_downloads": 357,
+    "views": 162,
+    "unique_views": 153,
+    "version_downloads": 379,
+    "version_unique_downloads": 357,
+    "version_unique_views": 153,
+    "version_views": 162
+  },
+  "state": "done",
+  "submitted": true
+}

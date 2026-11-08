@@ -1,0 +1,16 @@
+{
+  "dataset": "MOVING2024",
+  "source_record_id": "MOVING2024",
+  "source_url": "https://zenodo.org/records/12804784",
+  "source_revision": "Zenodo 12804784 v1",
+  "licence": "CC-BY-4.0",
+  "files": [
+    {
+      "name": "edf.rar",
+      "url": "https://zenodo.org/api/records/12804784/files/edf.rar/content",
+      "bytes": 98203839,
+      "md5": "f875a20e1aecbd96c555c9793ae6c714",
+      "sha256": "cfc91e9ebcf21856ebd9e9b36b46d63ebcb3e70bce9f800ec63c01be76e756ae"
+    }
+  ]
+}

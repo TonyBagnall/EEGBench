@@ -1,0 +1,104 @@
+{
+  "revision": "20261105T115705Z-metadata",
+  "datasets": [
+    {
+      "name": "Alzheimers",
+      "revision": "20261105T115705Z-metadata",
+      "status": "metadata corrected; signals unchanged",
+      "correction": {
+        "id": "20261105T115705Z-metadata",
+        "kind": "metadata_only",
+        "signals_rewritten": false,
+        "resampling_performed": false,
+        "fields": {
+          "length": {
+            "previous_registry": 30000,
+            "current": 15000
+          }
+        },
+        "evidence": "Actual numeric field counts and @seriesLength in both local files",
+        "backup": "D:\\Data\\EEG_Backups\\20261105T115705Z-metadata\\Alzheimers"
+      },
+      "validation": {
+        "source_headers_and_field_counts_verified": true,
+        "case_counts_verified": true,
+        "class_counts_unchanged": true,
+        "signals_rewritten": false
+      },
+      "artifacts": {
+        "Alzheimers_id_TEST.txt": {
+          "sha256": "7079dc96f637154e2c9435c1252f071c5f7906b6d2032d83bcfaeedfd88a3942",
+          "bytes": 170
+        },
+        "Alzheimers_id_TRAIN.txt": {
+          "sha256": "54bf0a5866d43d8f18634312a3a0b6bdcb9011f9d533ad80d50c9f9e0b787e79",
+          "bytes": 168
+        },
+        "Alzheimers_TEST.ts": {
+          "sha256": "09d380929b411d382720e3a317fbbb3dd2879f1a25dd6fe5334a8621b45adb1b",
+          "bytes": 251924662
+        },
+        "Alzheimers_TRAIN.ts": {
+          "sha256": "8ddf01d310537b8975944ee8b350366af3d1c6065460ae7e158d1d405d8c84d1",
+          "bytes": 262917300
+        },
+        "channels.txt": {
+          "sha256": "d3955e5766646ce68335cb160af95a3910b876af49b5edcc99ed407887d7e73b",
+          "bytes": 114
+        },
+        "Alzheimers_metadata.json": {
+          "sha256": "c93aeda9e9b136b095ea50d1ab547046b3ace3d8fd50a61aaacaa1cf788c01bc",
+          "bytes": 3206
+        }
+      }
+    },
+    {
+      "name": "FingerMovements",
+      "revision": "20261105T115705Z-metadata",
+      "status": "metadata corrected; signals unchanged",
+      "correction": {
+        "id": "20261105T115705Z-metadata",
+        "kind": "metadata_only",
+        "signals_rewritten": false,
+        "resampling_performed": false,
+        "fields": {
+          "length": {
+            "previous_registry": 400,
+            "current": 50
+          },
+          "frequency": {
+            "previous_registry": 128,
+            "current": 100,
+            "evidence": "Distributed TRAIN comments: 500 ms, downsampled at 100 Hz, 50 observations"
+          }
+        },
+        "evidence": "Actual numeric field counts and @seriesLength in both local files",
+        "backup": "D:\\Data\\EEG_Backups\\20261105T115705Z-metadata\\FingerMovements"
+      },
+      "validation": {
+        "source_headers_and_field_counts_verified": true,
+        "case_counts_verified": true,
+        "class_counts_unchanged": true,
+        "signals_rewritten": false
+      },
+      "artifacts": {
+        "FingerMovements_TEST.ts": {
+          "sha256": "1314ea4caaa744eda77a1f5f13e0390cfec4d950da78f58b140580fa7d0518ef",
+          "bytes": 724312
+        },
+        "FingerMovements_TRAIN.ts": {
+          "sha256": "947608221dbeea7c260a18c9c0b3d53bd8708d3d56886b40504d489355cd1f45",
+          "bytes": 2278167
+        },
+        "channels.txt": {
+          "sha256": "fd50f4ffb178eabdadcb4761fb8fbb3fff6cf56fd8513a1e6dd6ef65435fd2c5",
+          "bytes": 184
+        },
+        "FingerMovements_metadata.json": {
+          "sha256": "ca9148e9f8ec8516d773b05a3fb4f83ab4e061a29761b3244bd09ff11655e5c6",
+          "bytes": 3342
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "people": [
+    "P1",
+    "P2"
+  ],
+  "cases": [
+    190,
+    720
+  ],
+  "exact_shared_cases": 0,
+  "hash_dtype": "<f8",
+  "note": "Same native24-channel order checked within each problem; no cross-person exact waveforms found; one shared source study"
+}

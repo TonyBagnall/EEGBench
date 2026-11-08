@@ -1,0 +1,1668 @@
+{
+  "date": "2026-11-05",
+  "status": "Historical pre-correction baseline; selected subsequent corrections documented separately",
+  "datasets_audited": 47,
+  "files_audited": 94,
+  "source_bytes": 149683818815,
+  "cases_audited": 348585,
+  "case_channel_pairs": 8993595,
+  "nonfinite_values": 0,
+  "exact_constant_pairs": 729,
+  "aeon_tiny_nonconstant_pairs": 112476,
+  "rules": {
+    "exact_constant": "Fully finite channel with max == min, at least two samples",
+    "aeon_tiny": "Population nanstd <= 1e-7 AND nanmax - nanmin != 0",
+    "effectively_flat_relative": "Nonconstant std < 1e-6 times median nonconstant channel std in the same case; diagnostic candidate, not an automatic physical-unit conclusion"
+  },
+  "proposed_retirements": [
+    "Blink",
+    "EpilepticSeizures",
+    "Sleep"
+  ],
+  "proposed_remaining_problems": 44,
+  "removal_candidates": [
+    {
+      "dataset": "Blink",
+      "channel_index_0based": 1,
+      "channel_name": null,
+      "train_exact_constant": 0,
+      "test_exact_constant": 2,
+      "train_effectively_flat": 0,
+      "test_effectively_flat": 0,
+      "all_cases_flat": false,
+      "proposed_action": "Retire whole problem"
+    },
+    {
+      "dataset": "Blink",
+      "channel_index_0based": 2,
+      "channel_name": null,
+      "train_exact_constant": 0,
+      "test_exact_constant": 7,
+      "train_effectively_flat": 0,
+      "test_effectively_flat": 0,
+      "all_cases_flat": false,
+      "proposed_action": "Retire whole problem"
+    },
+    {
+      "dataset": "MatchWords",
+      "channel_index_0based": 55,
+      "channel_name": "MEG 056 (source-order correspondence)",
+      "train_exact_constant": 360,
+      "test_exact_constant": 360,
+      "train_effectively_flat": 0,
+      "test_effectively_flat": 0,
+      "all_cases_flat": true,
+      "proposed_action": "Drop this axis globally in both splits, subject to review"
+    },
+    {
+      "dataset": "VideoEmotions",
+      "channel_index_0based": 6,
+      "channel_name": "F8",
+      "train_exact_constant": 0,
+      "test_exact_constant": 0,
+      "train_effectively_flat": 156,
+      "test_effectively_flat": 0,
+      "all_cases_flat": false,
+      "proposed_action": "Drop this axis globally in both splits, subject to review"
+    }
+  ],
+  "length_metadata_discrepancies": [
+    {
+      "dataset": "Alzheimers",
+      "actual_train": 15000,
+      "actual_test": 15000,
+      "registry": 30000
+    },
+    {
+      "dataset": "FingerMovements",
+      "actual_train": 50,
+      "actual_test": 50,
+      "registry": 400
+    }
+  ],
+  "proposed_threshold_repairs": [
+    {
+      "dataset": "MatchWords",
+      "remove_original_channel_indices_0based": [
+        55
+      ],
+      "gain": 1000000000000000.0,
+      "source_unit": "T",
+      "output_unit": "fT",
+      "reason": "MEG; requested 1e6 gain leaves 25214 varying pairs below threshold"
+    },
+    {
+      "dataset": "VideoEmotions",
+      "remove_original_channel_indices_0based": [
+        6
+      ],
+      "gain": 1,
+      "source_unit": "microvolt scale",
+      "output_unit": "unchanged",
+      "reason": "F8 effectively flat for subject 030; source is already scaled by 1e6"
+    }
+  ],
+  "voltage_standardisation_candidates": [
+    {
+      "dataset": "Alzheimers",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "ButtonPress",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "CodedSymbols",
+      "gain": 1000000.0,
+      "evidence": "V (documented local preparation)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "CovidSurvivors",
+      "gain": 1000000.0,
+      "evidence": "V (documented local preparation)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "FeetHands",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "FibroLiverpool",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "FibroUEA",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "ImaginedFeetHands",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "ImaginedLeftRightHand",
+      "gain": 1000000.0,
+      "evidence": "V (documented local preparation)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "ImaginedOpenCloseFist",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "ImaginedRightHandFeet",
+      "gain": 1000000.0,
+      "evidence": "V (documented local preparation)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "InnerSpeech",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "LongIntervalTask",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "MatchingPennies",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "OpenCloseFist",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "PhotoStimulation",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "PronouncedSpeech",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "ShortIntervalTask",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "SitStand",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "SongFamiliarity",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    },
+    {
+      "dataset": "VisualSpeech",
+      "gain": 1000000.0,
+      "evidence": "V-like (inferred, not verified physical units)",
+      "currently_fails_aeon": false
+    }
+  ],
+  "precision_plan": {
+    "computation": "float64 for gains",
+    "decimal_output": "17 significant digits / exact float64 roundtrip",
+    "removal_only": "Preserve retained numeric tokens where possible",
+    "limitation": "Casting cannot recover precision already lost in prior source/float32 conversions"
+  },
+  "sidecar_plan": [
+    "Before/after SHA256 and byte sizes",
+    "Gain, source/output units and confidence",
+    "Source precision, computation dtype and decimal output precision",
+    "Removed original indices/names/reasons and kept-axis mapping",
+    "Before/after shapes and class counts; unchanged case/split order",
+    "Case metadata hashes updated with explicit dtype; original source hashes retained",
+    "Sensor/channel sidecars, manifests and registry counts updated",
+    "Versioned transformation history and validation; existing benchmark results left historical"
+  ],
+  "dataset_summaries": [
+    {
+      "dataset": "Alzheimers",
+      "proposed_status": "retain",
+      "train_cases": 45,
+      "test_cases": 43,
+      "channels": 19,
+      "train_timepoints": 15000,
+      "test_timepoints": 15000,
+      "registry_timepoints": 30000,
+      "train_median_std": 6.961737031145436e-05,
+      "test_median_std": 7.38407057419427e-05,
+      "min_nonconstant_std": 4.147001799883709e-05,
+      "max_abs": 0.00428154296875,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "ArmMovements",
+      "proposed_status": "retain",
+      "train_cases": 4620,
+      "test_cases": 1680,
+      "channels": 61,
+      "train_timepoints": 1536,
+      "test_timepoints": 1536,
+      "registry_timepoints": 1536,
+      "train_median_std": 13.609792877538297,
+      "test_median_std": 13.252102165223764,
+      "min_nonconstant_std": 4.022751527210887,
+      "max_abs": 851098.5,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native; upstream interprets microvolts, GDF units ambiguous",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "Blink",
+      "proposed_status": "retire",
+      "train_cases": 500,
+      "test_cases": 450,
+      "channels": 4,
+      "train_timepoints": 510,
+      "test_timepoints": 510,
+      "registry_timepoints": 510,
+      "train_median_std": 57.37379457904812,
+      "test_median_std": 43.4987807443274,
+      "min_nonconstant_std": 0.017824557336703697,
+      "max_abs": 1650.0,
+      "exact_constant_pairs": 9,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "ButtonPress",
+      "proposed_status": "retain",
+      "train_cases": 120,
+      "test_cases": 120,
+      "channels": 32,
+      "train_timepoints": 1000,
+      "test_timepoints": 1000,
+      "registry_timepoints": 1000,
+      "train_median_std": 9.219949932236176e-06,
+      "test_median_std": 9.036053007391363e-06,
+      "min_nonconstant_std": 2.1481676767897232e-06,
+      "max_abs": 0.00016717438326822984,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "ChildhoodSeizures",
+      "proposed_status": "retain",
+      "train_cases": 34045,
+      "test_cases": 2140,
+      "channels": 17,
+      "train_timepoints": 2000,
+      "test_timepoints": 2000,
+      "registry_timepoints": 2000,
+      "train_median_std": 35.21045150995317,
+      "test_median_std": 31.829571110947583,
+      "min_nonconstant_std": 8.77205995160632e-06,
+      "max_abs": 3749.36011,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "microvolt scale (documented/interpreted)",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "ClinicalSleepStages",
+      "proposed_status": "retain",
+      "train_cases": 64889,
+      "test_cases": 8803,
+      "channels": 6,
+      "train_timepoints": 6000,
+      "test_timepoints": 6000,
+      "registry_timepoints": 6000,
+      "train_median_std": 14.793020398481712,
+      "test_median_std": 13.366345187754163,
+      "min_nonconstant_std": 3.494123898506781,
+      "max_abs": 6070.4873,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "microvolt scale (documented/interpreted)",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "CodedSymbols",
+      "proposed_status": "retain",
+      "train_cases": 2200,
+      "test_cases": 800,
+      "channels": 8,
+      "train_timepoints": 16128,
+      "test_timepoints": 16128,
+      "registry_timepoints": 16128,
+      "train_median_std": 4.225029927153736e-05,
+      "test_median_std": 3.3504044268242165e-05,
+      "min_nonconstant_std": 6.091546512962123e-06,
+      "max_abs": 0.0311434343,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V (documented local preparation)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "CovidSurvivors",
+      "proposed_status": "retain",
+      "train_cases": 25319,
+      "test_cases": 11216,
+      "channels": 19,
+      "train_timepoints": 400,
+      "test_timepoints": 400,
+      "registry_timepoints": 400,
+      "train_median_std": 6.639703342165332e-06,
+      "test_median_std": 6.995881615190151e-06,
+      "min_nonconstant_std": 1.4356333395773889e-06,
+      "max_abs": 0.0044824425,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V (documented local preparation)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "EpilepticSeizures",
+      "proposed_status": "retire",
+      "train_cases": 80,
+      "test_cases": 11420,
+      "channels": 1,
+      "train_timepoints": 178,
+      "test_timepoints": 178,
+      "registry_timepoints": 178,
+      "train_median_std": 0.052334366511526606,
+      "test_median_std": 0.04712324628632092,
+      "min_nonconstant_std": 0.037337645380438406,
+      "max_abs": 1.0000000000000002,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "EyesOpenShut",
+      "proposed_status": "retain",
+      "train_cases": 56,
+      "test_cases": 42,
+      "channels": 14,
+      "train_timepoints": 128,
+      "test_timepoints": 128,
+      "registry_timepoints": 128,
+      "train_median_std": 8.680295297325346,
+      "test_median_std": 8.722525816324131,
+      "min_nonconstant_std": 3.7949068965221877,
+      "max_abs": 4756.92,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "FaceDetection",
+      "proposed_status": "retain",
+      "train_cases": 5890,
+      "test_cases": 3524,
+      "channels": 144,
+      "train_timepoints": 62,
+      "test_timepoints": 62,
+      "registry_timepoints": 62,
+      "train_median_std": 0.8670246269790807,
+      "test_median_std": 0.8706010303937435,
+      "min_nonconstant_std": 0.03073412420342849,
+      "max_abs": 24.327769,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "FeedbackButton",
+      "proposed_status": "retain",
+      "train_cases": 1700,
+      "test_cases": 1150,
+      "channels": 61,
+      "train_timepoints": 450,
+      "test_timepoints": 450,
+      "registry_timepoints": 450,
+      "train_median_std": 5.714845732813366,
+      "test_median_std": 5.964360174795113,
+      "min_nonconstant_std": 1.5747357629837089,
+      "max_abs": 201.06214904785156,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "FeetHands",
+      "proposed_status": "retain",
+      "train_cases": 2835,
+      "test_cases": 1890,
+      "channels": 64,
+      "train_timepoints": 640,
+      "test_timepoints": 640,
+      "registry_timepoints": 640,
+      "train_median_std": 3.717760723849931e-05,
+      "test_median_std": 5.085288405255526e-05,
+      "min_nonconstant_std": 6.484356174671469e-07,
+      "max_abs": 0.000808,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "FibroLiverpool",
+      "proposed_status": "retain",
+      "train_cases": 15,
+      "test_cases": 21,
+      "channels": 64,
+      "train_timepoints": 15360,
+      "test_timepoints": 15360,
+      "registry_timepoints": 15360,
+      "train_median_std": 3.624048118058288e-05,
+      "test_median_std": 3.143856672055992e-05,
+      "min_nonconstant_std": 2.8715273484473525e-06,
+      "max_abs": 0.04671177306251365,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "FibroUEA",
+      "proposed_status": "retain",
+      "train_cases": 17,
+      "test_cases": 23,
+      "channels": 64,
+      "train_timepoints": 15000,
+      "test_timepoints": 15000,
+      "registry_timepoints": 15000,
+      "train_median_std": 1.088663976425024e-05,
+      "test_median_std": 9.885731779402764e-06,
+      "min_nonconstant_std": 2.6367347940890955e-06,
+      "max_abs": 0.005350523527574477,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "FingerMovements",
+      "proposed_status": "retain",
+      "train_cases": 316,
+      "test_cases": 100,
+      "channels": 28,
+      "train_timepoints": 50,
+      "test_timepoints": 50,
+      "registry_timepoints": 400,
+      "train_median_std": 13.918606902838762,
+      "test_median_std": 13.73190976153369,
+      "min_nonconstant_std": 4.356134065889157,
+      "max_abs": 220.3,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "FlickerAttention",
+      "proposed_status": "retain",
+      "train_cases": 576,
+      "test_cases": 352,
+      "channels": 8,
+      "train_timepoints": 512,
+      "test_timepoints": 512,
+      "registry_timepoints": 512,
+      "train_median_std": 0.007263614965747345,
+      "test_median_std": 0.006737278681398128,
+      "min_nonconstant_std": 0.0034299097950014094,
+      "max_abs": 0.499984771,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native FIF scale; physical calibration unresolved",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "HandMovementDirection",
+      "proposed_status": "retain",
+      "train_cases": 160,
+      "test_cases": 74,
+      "channels": 10,
+      "train_timepoints": 400,
+      "test_timepoints": 400,
+      "registry_timepoints": 400,
+      "train_median_std": 162.86132652913105,
+      "test_median_std": 160.84020298249663,
+      "min_nonconstant_std": 103.66886500868476,
+      "max_abs": 935.516031,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "ImaginedArmMovements",
+      "proposed_status": "retain",
+      "train_cases": 4620,
+      "test_cases": 1680,
+      "channels": 61,
+      "train_timepoints": 1536,
+      "test_timepoints": 1536,
+      "registry_timepoints": 1536,
+      "train_median_std": 12.657522696577889,
+      "test_median_std": 13.04397995709402,
+      "min_nonconstant_std": 3.2126915540399,
+      "max_abs": 111447.07,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native; upstream interprets microvolts, GDF units ambiguous",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "ImaginedCommands",
+      "proposed_status": "retain",
+      "train_cases": 5250,
+      "test_cases": 750,
+      "channels": 64,
+      "train_timepoints": 600,
+      "test_timepoints": 600,
+      "registry_timepoints": 600,
+      "train_median_std": 17.67444098501998,
+      "test_median_std": 17.918080860192465,
+      "min_nonconstant_std": 2.579876743396774,
+      "max_abs": 18260.416,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "microvolt scale (documented/interpreted)",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "ImaginedFeetHands",
+      "proposed_status": "retain",
+      "train_cases": 2835,
+      "test_cases": 1935,
+      "channels": 64,
+      "train_timepoints": 640,
+      "test_timepoints": 640,
+      "registry_timepoints": 640,
+      "train_median_std": 3.7577860575836486e-05,
+      "test_median_std": 4.014480016725311e-05,
+      "min_nonconstant_std": 6.951263795841373e-07,
+      "max_abs": 0.000807,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "ImaginedHandFeetTongue",
+      "proposed_status": "retain",
+      "train_cases": 3456,
+      "test_cases": 1728,
+      "channels": 22,
+      "train_timepoints": 800,
+      "test_timepoints": 800,
+      "registry_timepoints": 800,
+      "train_median_std": 9.902884004854062,
+      "test_median_std": 11.500421901485108,
+      "min_nonconstant_std": 4.2915548829916474,
+      "max_abs": 143.189957,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "microvolt scale (documented/interpreted)",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "ImaginedLeftRightHand",
+      "proposed_status": "retain",
+      "train_cases": 1260,
+      "test_cases": 320,
+      "channels": 60,
+      "train_timepoints": 800,
+      "test_timepoints": 800,
+      "registry_timepoints": 800,
+      "train_median_std": 2.244685326225438e-05,
+      "test_median_std": 1.326860182486899e-05,
+      "min_nonconstant_std": 5.115982447070153e-06,
+      "max_abs": 0.0022198432,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V (documented local preparation)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "ImaginedOpenCloseFist",
+      "proposed_status": "retain",
+      "train_cases": 2835,
+      "test_cases": 1890,
+      "channels": 64,
+      "train_timepoints": 640,
+      "test_timepoints": 640,
+      "registry_timepoints": 640,
+      "train_median_std": 3.6295320790416966e-05,
+      "test_median_std": 4.216951200508969e-05,
+      "min_nonconstant_std": 6.647074074357829e-07,
+      "max_abs": 0.000815,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "ImaginedRightHandFeet",
+      "proposed_status": "retain",
+      "train_cases": 240,
+      "test_cases": 80,
+      "channels": 16,
+      "train_timepoints": 1536,
+      "test_timepoints": 1536,
+      "registry_timepoints": 1536,
+      "train_median_std": 6.2921888471879985e-06,
+      "test_median_std": 5.194912335845336e-06,
+      "min_nonconstant_std": 2.7854894004853333e-06,
+      "max_abs": 0.0002060884,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V (documented local preparation)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "InnerSpeech",
+      "proposed_status": "retain",
+      "train_cases": 250,
+      "test_cases": 200,
+      "channels": 128,
+      "train_timepoints": 3584,
+      "test_timepoints": 3584,
+      "registry_timepoints": 3584,
+      "train_median_std": 9.97221578719763e-06,
+      "test_median_std": 1.2206049992666192e-05,
+      "min_nonconstant_std": 1.123252780938086e-06,
+      "max_abs": 0.06662304877335123,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "LongIntervalTask",
+      "proposed_status": "retain",
+      "train_cases": 1660,
+      "test_cases": 1120,
+      "channels": 63,
+      "train_timepoints": 4750,
+      "test_timepoints": 4750,
+      "registry_timepoints": 4750,
+      "train_median_std": 1.6005756579241765e-05,
+      "test_median_std": 1.4282052944533411e-05,
+      "min_nonconstant_std": 8.597732256919791e-07,
+      "max_abs": 0.4157369,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "LowCost",
+      "proposed_status": "retain",
+      "train_cases": 600,
+      "test_cases": 600,
+      "channels": 15,
+      "train_timepoints": 375,
+      "test_timepoints": 375,
+      "registry_timepoints": 375,
+      "train_median_std": 26.802202301850507,
+      "test_median_std": 37.04277893141936,
+      "min_nonconstant_std": 3.6209496068096296,
+      "max_abs": 1721.2842988326847,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "MatchWords",
+      "proposed_status": "retain",
+      "train_cases": 360,
+      "test_cases": 360,
+      "channels": 157,
+      "train_timepoints": 1500,
+      "test_timepoints": 1500,
+      "registry_timepoints": 1500,
+      "train_median_std": 1.354676518245204e-13,
+      "test_median_std": 1.3186416449985937e-13,
+      "min_nonconstant_std": 4.0726413781822255e-14,
+      "max_abs": 1.499999950638209e-11,
+      "exact_constant_pairs": 720,
+      "aeon_tiny_nonconstant_pairs": 112320,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 25214,
+      "unit_assessment": "T (source MEG sidecar); local scale consistent",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "MatchingPennies",
+      "proposed_status": "retain",
+      "train_cases": 700,
+      "test_cases": 700,
+      "channels": 10,
+      "train_timepoints": 10000,
+      "test_timepoints": 10000,
+      "registry_timepoints": 10000,
+      "train_median_std": 1.0015472157315207e-05,
+      "test_median_std": 1.0573691851896565e-05,
+      "min_nonconstant_std": 3.327056983101131e-06,
+      "max_abs": 0.0007555,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "MentalArithmetic",
+      "proposed_status": "retain",
+      "train_cases": 1515,
+      "test_cases": 192,
+      "channels": 19,
+      "train_timepoints": 1000,
+      "test_timepoints": 1000,
+      "registry_timepoints": 1000,
+      "train_median_std": 9.797417467946312,
+      "test_median_std": 9.724968903453078,
+      "min_nonconstant_std": 3.5412591639709703,
+      "max_abs": 583.335999,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "microvolt scale (documented/interpreted)",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "MindReading",
+      "proposed_status": "retain",
+      "train_cases": 727,
+      "test_cases": 653,
+      "channels": 204,
+      "train_timepoints": 200,
+      "test_timepoints": 200,
+      "registry_timepoints": 200,
+      "train_median_std": 0.046447100247681006,
+      "test_median_std": 0.04385511601517307,
+      "min_nonconstant_std": 0.018693934426531653,
+      "max_abs": 2.4532,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "MotorImagery",
+      "proposed_status": "retain",
+      "train_cases": 278,
+      "test_cases": 100,
+      "channels": 64,
+      "train_timepoints": 3000,
+      "test_timepoints": 3000,
+      "registry_timepoints": 3000,
+      "train_median_std": 6.418608677369168,
+      "test_median_std": 10.84169431352695,
+      "min_nonconstant_std": 3.232780553786627,
+      "max_abs": 446.5,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "NBackAudioCondition",
+      "proposed_status": "retain",
+      "train_cases": 11520,
+      "test_cases": 5040,
+      "channels": 16,
+      "train_timepoints": 600,
+      "test_timepoints": 600,
+      "registry_timepoints": 600,
+      "train_median_std": 8.723004608688075,
+      "test_median_std": 10.37335540016355,
+      "min_nonconstant_std": 2.5453477605667607,
+      "max_abs": 1319.28,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "OpenCloseFist",
+      "proposed_status": "retain",
+      "train_cases": 2835,
+      "test_cases": 1890,
+      "channels": 64,
+      "train_timepoints": 640,
+      "test_timepoints": 640,
+      "registry_timepoints": 640,
+      "train_median_std": 4.40010100369847e-05,
+      "test_median_std": 3.5106733779342015e-05,
+      "min_nonconstant_std": 6.819090848492927e-07,
+      "max_abs": 0.000846,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "PhotoStimulation",
+      "proposed_status": "retain",
+      "train_cases": 37,
+      "test_cases": 36,
+      "channels": 19,
+      "train_timepoints": 9000,
+      "test_timepoints": 9000,
+      "registry_timepoints": 9000,
+      "train_median_std": 6.473695289834738e-05,
+      "test_median_std": 5.8674212297852354e-05,
+      "min_nonconstant_std": 3.552311006440819e-05,
+      "max_abs": 0.005317431640625,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "PronouncedSpeech",
+      "proposed_status": "retain",
+      "train_cases": 250,
+      "test_cases": 200,
+      "channels": 128,
+      "train_timepoints": 3584,
+      "test_timepoints": 3584,
+      "registry_timepoints": 3584,
+      "train_median_std": 1.1819099386540105e-05,
+      "test_median_std": 1.459844164612767e-05,
+      "min_nonconstant_std": 1.1271187583756998e-06,
+      "max_abs": 0.08827447751697763,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "SelfRegulationSCP1",
+      "proposed_status": "retain",
+      "train_cases": 268,
+      "test_cases": 293,
+      "channels": 6,
+      "train_timepoints": 896,
+      "test_timepoints": 896,
+      "registry_timepoints": 896,
+      "train_median_std": 9.746838679591498,
+      "test_median_std": 9.708318779276201,
+      "min_nonconstant_std": 5.93742650800382,
+      "max_abs": 175.06,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "SelfRegulationSCP2",
+      "proposed_status": "retain",
+      "train_cases": 200,
+      "test_cases": 180,
+      "channels": 7,
+      "train_timepoints": 1152,
+      "test_timepoints": 1152,
+      "registry_timepoints": 1152,
+      "train_median_std": 7.898928534625547,
+      "test_median_std": 7.53005394357017,
+      "min_nonconstant_std": 4.810148422846673,
+      "max_abs": 113.88,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "ShortIntervalTask",
+      "proposed_status": "retain",
+      "train_cases": 1660,
+      "test_cases": 1120,
+      "channels": 63,
+      "train_timepoints": 2750,
+      "test_timepoints": 2750,
+      "registry_timepoints": 2750,
+      "train_median_std": 1.3631342439808418e-05,
+      "test_median_std": 1.3855306018199556e-05,
+      "min_nonconstant_std": 8.524413946686836e-07,
+      "max_abs": 0.33572993,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "SitStand",
+      "proposed_status": "retain",
+      "train_cases": 3200,
+      "test_cases": 3200,
+      "channels": 17,
+      "train_timepoints": 1250,
+      "test_timepoints": 1250,
+      "registry_timepoints": 1250,
+      "train_median_std": 1.547228131085718e-05,
+      "test_median_std": 1.5231705707208008e-05,
+      "min_nonconstant_std": 3.9759538063118115e-06,
+      "max_abs": 0.005896515624999999,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "Sleep",
+      "proposed_status": "retire",
+      "train_cases": 2394,
+      "test_cases": 1205,
+      "channels": 1,
+      "train_timepoints": 178,
+      "test_timepoints": 178,
+      "registry_timepoints": 178,
+      "train_median_std": 12.577008807617808,
+      "test_median_std": 10.836132656763082,
+      "min_nonconstant_std": 2.936690042548599,
+      "max_abs": 190.4762,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "native / unspecified",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "SongFamiliarity",
+      "proposed_status": "retain",
+      "train_cases": 700,
+      "test_cases": 750,
+      "channels": 32,
+      "train_timepoints": 3000,
+      "test_timepoints": 3000,
+      "registry_timepoints": 3000,
+      "train_median_std": 9.83969898953904e-06,
+      "test_median_std": 9.942066869458945e-06,
+      "min_nonconstant_std": 2.0539368560633773e-06,
+      "max_abs": 0.0017626236572265625,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "VideoEmotions",
+      "proposed_status": "retain",
+      "train_cases": 15629,
+      "test_cases": 3588,
+      "channels": 26,
+      "train_timepoints": 2000,
+      "test_timepoints": 2000,
+      "registry_timepoints": 2000,
+      "train_median_std": 12.39325291829965,
+      "test_median_std": 11.389342980535394,
+      "min_nonconstant_std": 1.6415564518747246e-10,
+      "max_abs": 347306.875,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 156,
+      "relative_channel_flat_pairs": 156,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "microvolt scale (documented/interpreted)",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "VisualSpeech",
+      "proposed_status": "retain",
+      "train_cases": 250,
+      "test_cases": 200,
+      "channels": 128,
+      "train_timepoints": 3584,
+      "test_timepoints": 3584,
+      "registry_timepoints": 3584,
+      "train_median_std": 1.027033078500789e-05,
+      "test_median_std": 1.1511616788140148e-05,
+      "min_nonconstant_std": 1.1187415577003106e-06,
+      "max_abs": 0.037650414807463575,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "V-like (inferred, not verified physical units)",
+      "unit_standardisation_candidate_gain": 1000000.0
+    },
+    {
+      "dataset": "VisualSubjects",
+      "proposed_status": "retain",
+      "train_cases": 42189,
+      "test_cases": 18826,
+      "channels": 16,
+      "train_timepoints": 512,
+      "test_timepoints": 512,
+      "registry_timepoints": 512,
+      "train_median_std": 102.81349844558348,
+      "test_median_std": 206.44354455044433,
+      "min_nonconstant_std": 4.4858393959382115,
+      "max_abs": 103131.203,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "microvolt scale (documented/interpreted)",
+      "unit_standardisation_candidate_gain": 1
+    },
+    {
+      "dataset": "WordRelatedness",
+      "proposed_status": "retain",
+      "train_cases": 3600,
+      "test_cases": 1200,
+      "channels": 30,
+      "train_timepoints": 1024,
+      "test_timepoints": 1024,
+      "registry_timepoints": 1024,
+      "train_median_std": 9.585807938446326,
+      "test_median_std": 10.842842471531641,
+      "min_nonconstant_std": 1.7700283716840433,
+      "max_abs": 43987.7461,
+      "exact_constant_pairs": 0,
+      "aeon_tiny_nonconstant_pairs": 0,
+      "relative_channel_flat_pairs": 0,
+      "tiny_pairs_remaining_after_gain_1e6": 0,
+      "unit_assessment": "microvolt scale (documented/interpreted)",
+      "unit_standardisation_candidate_gain": 1
+    }
+  ],
+  "source_snapshot": [
+    {
+      "path": "D:\\Data\\EEG\\Alzheimers\\Alzheimers_TRAIN.ts",
+      "bytes": 262917300,
+      "mtime_ns": 1773309376000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\Alzheimers\\Alzheimers_TEST.ts",
+      "bytes": 251924662,
+      "mtime_ns": 1773309408000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ArmMovements\\ArmMovements_TRAIN.ts",
+      "bytes": 5077720013,
+      "mtime_ns": 1793814548000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ArmMovements\\ArmMovements_TEST.ts",
+      "bytes": 1787796838,
+      "mtime_ns": 1793814548000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\Blink\\Blink_TRAIN.ts",
+      "bytes": 18281980,
+      "mtime_ns": 1773309422000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\Blink\\Blink_TEST.ts",
+      "bytes": 16394961,
+      "mtime_ns": 1773309426000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ButtonPress\\ButtonPress_TRAIN.ts",
+      "bytes": 87799010,
+      "mtime_ns": 1773309438000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ButtonPress\\ButtonPress_TEST.ts",
+      "bytes": 87830196,
+      "mtime_ns": 1773309450000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ChildhoodSeizures\\ChildhoodSeizures_TRAIN.ts",
+      "bytes": 13242425484,
+      "mtime_ns": 1793718966000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ChildhoodSeizures\\ChildhoodSeizures_TEST.ts",
+      "bytes": 831963821,
+      "mtime_ns": 1793718998000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ClinicalSleepStages\\ClinicalSleepStages_TRAIN.ts",
+      "bytes": 26798747587,
+      "mtime_ns": 1793792492000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ClinicalSleepStages\\ClinicalSleepStages_TEST.ts",
+      "bytes": 3638280959,
+      "mtime_ns": 1793792572000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\CodedSymbols\\CodedSymbols_TRAIN.ts",
+      "bytes": 4076097472,
+      "mtime_ns": 1793821530000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\CodedSymbols\\CodedSymbols_TEST.ts",
+      "bytes": 1468060719,
+      "mtime_ns": 1793821530000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\CovidSurvivors\\CovidSurvivors_TRAIN.ts",
+      "bytes": 2716293828,
+      "mtime_ns": 1793722066000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\CovidSurvivors\\CovidSurvivors_TEST.ts",
+      "bytes": 1203524982,
+      "mtime_ns": 1793722092000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\EpilepticSeizures\\EpilepticSeizures_TRAIN.ts",
+      "bytes": 272040,
+      "mtime_ns": 1773327384000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\EpilepticSeizures\\EpilepticSeizures_TEST.ts",
+      "bytes": 38806349,
+      "mtime_ns": 1773327390000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\EyesOpenShut\\EyesOpenShut_TRAIN.ts",
+      "bytes": 795443,
+      "mtime_ns": 1773309454000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\EyesOpenShut\\EyesOpenShut_TEST.ts",
+      "bytes": 596643,
+      "mtime_ns": 1773309454000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FaceDetection\\FaceDetection_TRAIN.ts",
+      "bytes": 493652128,
+      "mtime_ns": 1773309562000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FaceDetection\\FaceDetection_TEST.ts",
+      "bytes": 295402468,
+      "mtime_ns": 1773309496000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FeedbackButton\\FeedbackButton_TRAIN.ts",
+      "bytes": 884809505,
+      "mtime_ns": 1773327506000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FeedbackButton\\FeedbackButton_TEST.ts",
+      "bytes": 598615181,
+      "mtime_ns": 1773327586000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FeetHands\\FeetHands_TRAIN.ts",
+      "bytes": 927461791,
+      "mtime_ns": 1773309714000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FeetHands\\FeetHands_TEST.ts",
+      "bytes": 632483424,
+      "mtime_ns": 1773309796000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FibroLiverpool\\FibroLiverpool_TRAIN.ts",
+      "bytes": 320479681,
+      "mtime_ns": 1780917180000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FibroLiverpool\\FibroLiverpool_TEST.ts",
+      "bytes": 450592060,
+      "mtime_ns": 1780916880000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FibroUEA\\FibroUEA_TRAIN.ts",
+      "bytes": 373116885,
+      "mtime_ns": 1780923360000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FibroUEA\\FibroUEA_TEST.ts",
+      "bytes": 504691104,
+      "mtime_ns": 1780923300000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FingerMovements\\FingerMovements_TRAIN.ts",
+      "bytes": 2278167,
+      "mtime_ns": 1773309850000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FingerMovements\\FingerMovements_TEST.ts",
+      "bytes": 724312,
+      "mtime_ns": 1773309850000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FlickerAttention\\FlickerAttention_TRAIN.ts",
+      "bytes": 33265457,
+      "mtime_ns": 1793807468000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\FlickerAttention\\FlickerAttention_TEST.ts",
+      "bytes": 20364022,
+      "mtime_ns": 1793807470000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\HandMovementDirection\\HandMovementDirection_TRAIN.ts",
+      "bytes": 6976068,
+      "mtime_ns": 1773309854000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\HandMovementDirection\\HandMovementDirection_TEST.ts",
+      "bytes": 3229786,
+      "mtime_ns": 1773309852000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedArmMovements\\ImaginedArmMovements_TRAIN.ts",
+      "bytes": 5087543147,
+      "mtime_ns": 1793815132000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedArmMovements\\ImaginedArmMovements_TEST.ts",
+      "bytes": 1807021094,
+      "mtime_ns": 1793815132000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedCommands\\ImaginedCommands_TRAIN.ts",
+      "bytes": 2301484272,
+      "mtime_ns": 1793718952000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedCommands\\ImaginedCommands_TEST.ts",
+      "bytes": 328698491,
+      "mtime_ns": 1793718958000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedFeetHands\\ImaginedFeetHands_TRAIN.ts",
+      "bytes": 927864248,
+      "mtime_ns": 1773310062000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedFeetHands\\ImaginedFeetHands_TEST.ts",
+      "bytes": 638645205,
+      "mtime_ns": 1773309938000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedHandFeetTongue\\ImaginedHandFeetTongue_TRAIN.ts",
+      "bytes": 698507730,
+      "mtime_ns": 1793792486000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedHandFeetTongue\\ImaginedHandFeetTongue_TEST.ts",
+      "bytes": 348924714,
+      "mtime_ns": 1793792488000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedLeftRightHand\\ImaginedLeftRightHand_TRAIN.ts",
+      "bytes": 863568200,
+      "mtime_ns": 1793792638000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedLeftRightHand\\ImaginedLeftRightHand_TEST.ts",
+      "bytes": 218125762,
+      "mtime_ns": 1793792640000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedOpenCloseFist\\ImaginedOpenCloseFist_TRAIN.ts",
+      "bytes": 923891513,
+      "mtime_ns": 1773310724000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedOpenCloseFist\\ImaginedOpenCloseFist_TEST.ts",
+      "bytes": 622406714,
+      "mtime_ns": 1773310806000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedRightHandFeet\\ImaginedRightHandFeet_TRAIN.ts",
+      "bytes": 83190134,
+      "mtime_ns": 1793792874000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ImaginedRightHandFeet\\ImaginedRightHandFeet_TEST.ts",
+      "bytes": 27722460,
+      "mtime_ns": 1793792876000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\InnerSpeech\\InnerSpeech_TRAIN.ts",
+      "bytes": 2497349089,
+      "mtime_ns": 1773311450000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\InnerSpeech\\InnerSpeech_TEST.ts",
+      "bytes": 1966776738,
+      "mtime_ns": 1773311116000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\LongIntervalTask\\LongIntervalTask_TRAIN.ts",
+      "bytes": 7034584263,
+      "mtime_ns": 1773312494000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\LongIntervalTask\\LongIntervalTask_TEST.ts",
+      "bytes": 4749335253,
+      "mtime_ns": 1773313108000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\LowCost\\LowCost_TRAIN.ts",
+      "bytes": 63811659,
+      "mtime_ns": 1773313402000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\LowCost\\LowCost_TEST.ts",
+      "bytes": 63797555,
+      "mtime_ns": 1773313394000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MatchWords\\MatchWords_TRAIN.ts",
+      "bytes": 1944961684,
+      "mtime_ns": 1785241380000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MatchWords\\MatchWords_TEST.ts",
+      "bytes": 1944477263,
+      "mtime_ns": 1785241320000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MatchingPennies\\MatchingPennies_TRAIN.ts",
+      "bytes": 995929680,
+      "mtime_ns": 1773313664000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MatchingPennies\\MatchingPennies_TEST.ts",
+      "bytes": 994447097,
+      "mtime_ns": 1773313534000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MentalArithmetic\\MentalArithmetic_TRAIN.ts",
+      "bytes": 330609165,
+      "mtime_ns": 1793718948000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MentalArithmetic\\MentalArithmetic_TEST.ts",
+      "bytes": 41886154,
+      "mtime_ns": 1793718950000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MindReading\\MindReading_TRAIN.ts",
+      "bytes": 367179668,
+      "mtime_ns": 1773313770000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MindReading\\MindReading_TEST.ts",
+      "bytes": 331645035,
+      "mtime_ns": 1773313892000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MotorImagery\\MotorImagery_TRAIN.ts",
+      "bytes": 414951187,
+      "mtime_ns": 1773313970000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\MotorImagery\\MotorImagery_TEST.ts",
+      "bytes": 122386618,
+      "mtime_ns": 1773313986000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\NBackAudioCondition\\NBackAudioCondition_TRAIN.ts",
+      "bytes": 634923776,
+      "mtime_ns": 1793795790000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\NBackAudioCondition\\NBackAudioCondition_TEST.ts",
+      "bytes": 281010660,
+      "mtime_ns": 1793795790000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\OpenCloseFist\\OpenCloseFist_TRAIN.ts",
+      "bytes": 936883695,
+      "mtime_ns": 1773314126000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\OpenCloseFist\\OpenCloseFist_TEST.ts",
+      "bytes": 619165703,
+      "mtime_ns": 1773314206000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\PhotoStimulation\\PhotoStimulation_TRAIN.ts",
+      "bytes": 131188320,
+      "mtime_ns": 1773314290000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\PhotoStimulation\\PhotoStimulation_TEST.ts",
+      "bytes": 127712638,
+      "mtime_ns": 1773314272000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\PronouncedSpeech\\PronouncedSpeech_TRAIN.ts",
+      "bytes": 2497923346,
+      "mtime_ns": 1773314904000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\PronouncedSpeech\\PronouncedSpeech_TEST.ts",
+      "bytes": 1969290996,
+      "mtime_ns": 1773314580000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\SelfRegulationSCP1\\SelfRegulationSCP1_TRAIN.ts",
+      "bytes": 8452683,
+      "mtime_ns": 1773315010000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\SelfRegulationSCP1\\SelfRegulationSCP1_TEST.ts",
+      "bytes": 9389096,
+      "mtime_ns": 1773315010000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\SelfRegulationSCP2\\SelfRegulationSCP2_TRAIN.ts",
+      "bytes": 9308948,
+      "mtime_ns": 1773315016000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\SelfRegulationSCP2\\SelfRegulationSCP2_TEST.ts",
+      "bytes": 8349428,
+      "mtime_ns": 1773315014000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ShortIntervalTask\\ShortIntervalTask_TRAIN.ts",
+      "bytes": 4069802776,
+      "mtime_ns": 1773315544000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\ShortIntervalTask\\ShortIntervalTask_TEST.ts",
+      "bytes": 2749225140,
+      "mtime_ns": 1773315908000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\SitStand\\SitStand_TRAIN.ts",
+      "bytes": 1552525198,
+      "mtime_ns": 1773316254000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\SitStand\\SitStand_TEST.ts",
+      "bytes": 1556033682,
+      "mtime_ns": 1773316474000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\Sleep\\Sleep_TRAIN.ts",
+      "bytes": 4347943,
+      "mtime_ns": 1773316552000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\Sleep\\Sleep_TEST.ts",
+      "bytes": 2160210,
+      "mtime_ns": 1773316552000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\SongFamiliarity\\SongFamiliarity_TRAIN.ts",
+      "bytes": 1525151785,
+      "mtime_ns": 1773316992000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\SongFamiliarity\\SongFamiliarity_TEST.ts",
+      "bytes": 1635676278,
+      "mtime_ns": 1773316764000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\VideoEmotions\\VideoEmotions_TRAIN.ts",
+      "bytes": 9336497487,
+      "mtime_ns": 1793792590000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\VideoEmotions\\VideoEmotions_TEST.ts",
+      "bytes": 2144168838,
+      "mtime_ns": 1793792622000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\VisualSpeech\\VisualSpeech_TRAIN.ts",
+      "bytes": 2482812021,
+      "mtime_ns": 1773317660000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\VisualSpeech\\VisualSpeech_TEST.ts",
+      "bytes": 1988554509,
+      "mtime_ns": 1773317338000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\VisualSubjects\\VisualSubjects_TRAIN.ts",
+      "bytes": 4005009885,
+      "mtime_ns": 1793797110000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\VisualSubjects\\VisualSubjects_TEST.ts",
+      "bytes": 1779986281,
+      "mtime_ns": 1793797110000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\WordRelatedness\\WordRelatedness_TRAIN.ts",
+      "bytes": 1292698705,
+      "mtime_ns": 1793808528000000000
+    },
+    {
+      "path": "D:\\Data\\EEG\\WordRelatedness\\WordRelatedness_TEST.ts",
+      "bytes": 429174670,
+      "mtime_ns": 1793808528000000000
+    }
+  ],
+  "subsequent_corrections": {
+    "description": "local-data-corrections.md",
+    "signals": "signal-cleanup-results.json",
+    "metadata": "metadata-corrections-results.json"
+  }
+}

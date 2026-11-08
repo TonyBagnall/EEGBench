@@ -1,0 +1,137 @@
+{
+  "dataset": "ImaginedGripForce",
+  "path": "D:\\Data\\EEG\\ImaginedGripForce",
+  "train_cases": 240,
+  "test_cases": 60,
+  "subjects": 10,
+  "channels": 14,
+  "timepoints": 640,
+  "classes": 3,
+  "frequency": 128,
+  "size_GB": 0.026681231,
+  "licence": "CC-BY-4.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 240,
+        "shape": [
+          240,
+          14,
+          640
+        ],
+        "class_counts": {
+          "1": 80,
+          "2": 80,
+          "3": 80
+        },
+        "subjects": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 60,
+        "shape": [
+          60,
+          14,
+          640
+        ],
+        "class_counts": {
+          "1": 20,
+          "2": 20,
+          "3": 20
+        },
+        "subjects": [
+          "009",
+          "010"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": 0,
+    "numeric_column_order_verified_all_60_files": true,
+    "sensor_identity_basis": "Documented source/loader mapping, not embedded names",
+    "npz_exact_roundtrip": true,
+    "aeon": {
+      "full_train_load": true,
+      "full_test_load": true,
+      "classifier": "aeon.classification.feature_based.SummaryClassifier",
+      "fitted_cases": 240,
+      "predicted_cases": 60,
+      "accuracy": 0.4166666666666667,
+      "purpose": "Format compatibility only; not a reported benchmark result"
+    }
+  },
+  "channel_quality": {
+    "threshold_uV": 1e-07,
+    "policy": "Remove a sensor globally if any case is constant or std <= threshold",
+    "source_channel_names": [
+      "AF3",
+      "F7",
+      "F3",
+      "FC5",
+      "T7",
+      "P7",
+      "O1",
+      "O2",
+      "P8",
+      "T8",
+      "FC6",
+      "F4",
+      "F8",
+      "AF4"
+    ],
+    "constant_case_counts_by_source_channel": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts_by_source_channel": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "removed_source_channel_indices": []
+  }
+}

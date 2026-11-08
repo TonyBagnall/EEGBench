@@ -1,0 +1,2609 @@
+{
+  "source": "MIMED2024 v3 imagery archive",
+  "cases": 360,
+  "crop": [
+    384,
+    896
+  ],
+  "duplicate_groups": [
+    [
+      {
+        "participant_id": "P05",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P05.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "2b5322bb13d57d893750d2cf3be55449f6a6055ae26b6dd2413a946a1d42571f",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "322bc9f4b8b8f553ecec84f193cc09d2f855b989188386089b9e9cfa2745ccb3",
+        "minimum_channel_std": 10.074765209104005,
+        "native_mat_subject": "P05"
+      },
+      {
+        "participant_id": "P06",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P06.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "2b5322bb13d57d893750d2cf3be55449f6a6055ae26b6dd2413a946a1d42571f",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "f4a17b566a65a6552bba3b6d052ebb87686cff55a95e22169e9dd548f0440cd7",
+        "minimum_channel_std": 10.074765209104005,
+        "native_mat_subject": "P06"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P17.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "43ad98864eb796c13070bcc366df8006a5c772ba60acb7e31d2dc38ae766dc64",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "d6e79fbae3f2365165fa894f42e45a335e10fe72511c9c138f680fc37d9a8f66",
+        "minimum_channel_std": 6.075851512688984,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P24.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "43ad98864eb796c13070bcc366df8006a5c772ba60acb7e31d2dc38ae766dc64",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "d6e79fbae3f2365165fa894f42e45a335e10fe72511c9c138f680fc37d9a8f66",
+        "minimum_channel_std": 6.075851512688984,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P17.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "c9bd2d8a885dedfacc1b32beec07a78b8a12a831c7a9392a0bcef5369611af96",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "e5be7bfd105c1a8a78cbde2bb12534692856ac5d57ee49b23dde29fa087a79be",
+        "minimum_channel_std": 5.987479263397062,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P24.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "c9bd2d8a885dedfacc1b32beec07a78b8a12a831c7a9392a0bcef5369611af96",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "e5be7bfd105c1a8a78cbde2bb12534692856ac5d57ee49b23dde29fa087a79be",
+        "minimum_channel_std": 5.987479263397062,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P17.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "4438e87361d76c4b89734de09ae507072462270986cfd11dbc93ff817b9bb91e",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "74f351f89e7bb7d044bcdc598b93564f14b4a434aaa25ce16083a1144c000464",
+        "minimum_channel_std": 7.792139846162644,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P24.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "4438e87361d76c4b89734de09ae507072462270986cfd11dbc93ff817b9bb91e",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "74f351f89e7bb7d044bcdc598b93564f14b4a434aaa25ce16083a1144c000464",
+        "minimum_channel_std": 7.792139846162644,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P17.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "24c40984100b6359f88c8eadbcded38f8c97df2a3c0feedfd1ff15c6ad9bfe4d",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "95512e1e0b59c4ed564eb1c98e466f9097b0554244a9ba67a1d03bf4b837486a",
+        "minimum_channel_std": 6.4077519145909445,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P24.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "24c40984100b6359f88c8eadbcded38f8c97df2a3c0feedfd1ff15c6ad9bfe4d",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "95512e1e0b59c4ed564eb1c98e466f9097b0554244a9ba67a1d03bf4b837486a",
+        "minimum_channel_std": 6.4077519145909445,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P17.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "d63204eb469b2d2d61cca9040b4bb07bf13858f90c2c2466d07d2c4bf7d450be",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "3c49d900dedb0023ab64786da761d8926f45d1e634cbf15f399f86f8e26b4a7c",
+        "minimum_channel_std": 6.637416906343911,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P24.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "d63204eb469b2d2d61cca9040b4bb07bf13858f90c2c2466d07d2c4bf7d450be",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "3c49d900dedb0023ab64786da761d8926f45d1e634cbf15f399f86f8e26b4a7c",
+        "minimum_channel_std": 6.637416906343911,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P17.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "43f5f047a967caf46a2b7a13d789fe0648839499660f877e74c80e1515ce407b",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "3a2de2f5c598f0dd69bb3097edcb6097b594c70a9fd0986eb5ebf7c74602e8ae",
+        "minimum_channel_std": 6.522944984522136,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P24.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "43f5f047a967caf46a2b7a13d789fe0648839499660f877e74c80e1515ce407b",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "3a2de2f5c598f0dd69bb3097edcb6097b594c70a9fd0986eb5ebf7c74602e8ae",
+        "minimum_channel_std": 6.522944984522136,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P17.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "0c8e6543336b360505c10979c13249643cf36cfbe0f41bb263ecf57a13a4275d",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "bf3ea343e8dae30f0b772ef313cea128c94dc0aea28d4dafc4896e0c32ed5e6d",
+        "minimum_channel_std": 7.235356675306777,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P24.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "0c8e6543336b360505c10979c13249643cf36cfbe0f41bb263ecf57a13a4275d",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "bf3ea343e8dae30f0b772ef313cea128c94dc0aea28d4dafc4896e0c32ed5e6d",
+        "minimum_channel_std": 7.235356675306777,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P17.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "2e9b41f376ce46e605c1e1672fef99e438a680ba3e7344db2167854a9ff5cd7b",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "1bff699600bb5eb8b8bd52b2e2c99b4f2400488c2dc459ed4e77515241d392be",
+        "minimum_channel_std": 6.997361536583757,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P24.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "2e9b41f376ce46e605c1e1672fef99e438a680ba3e7344db2167854a9ff5cd7b",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "1bff699600bb5eb8b8bd52b2e2c99b4f2400488c2dc459ed4e77515241d392be",
+        "minimum_channel_std": 6.997361536583757,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P17.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "b382a3258e63feed657e7db16d52b19b3a3bb0688b2ccd51993dbe8b41b552c1",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "294919d8d6ac4af138997438ecd513032fbf4814dcba123d5f1fbf8dcff21f63",
+        "minimum_channel_std": 6.093498112491957,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P24.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "b382a3258e63feed657e7db16d52b19b3a3bb0688b2ccd51993dbe8b41b552c1",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "294919d8d6ac4af138997438ecd513032fbf4814dcba123d5f1fbf8dcff21f63",
+        "minimum_channel_std": 6.093498112491957,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P17.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "2e084c2bab7420a6fc6b899ac84012d692fe105aac54904b561c3329e958fea4",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "8a86b6a03aedca2244d9646495b755d60e7f324b46e934e29a383ad15dd4b4ea",
+        "minimum_channel_std": 6.903992274558223,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P24.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "2e084c2bab7420a6fc6b899ac84012d692fe105aac54904b561c3329e958fea4",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "8a86b6a03aedca2244d9646495b755d60e7f324b46e934e29a383ad15dd4b4ea",
+        "minimum_channel_std": 6.903992274558223,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P17.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "23431c9c7ed47a7f71703d8d2ba74ba1e5e7688517d4cf48a319065102789255",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "c6b43c7a7a9781737038c50244d6b77df2670ef66f30c98e7fce32e88f47ee31",
+        "minimum_channel_std": 6.260394459715046,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P24.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "23431c9c7ed47a7f71703d8d2ba74ba1e5e7688517d4cf48a319065102789255",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "c6b43c7a7a9781737038c50244d6b77df2670ef66f30c98e7fce32e88f47ee31",
+        "minimum_channel_std": 6.260394459715046,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P17",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P17.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "6075f0784d3df77a63fc97128c853ea931cb0425e83933a0f18e2dd9c97db8f9",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "5b027579e913ca6b880dd30bebb689d4dac1b87f3b4e2430dbe2141fe8104ebc",
+        "minimum_channel_std": 5.888148024887241,
+        "native_mat_subject": "P17"
+      },
+      {
+        "participant_id": "P24",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P24.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "6075f0784d3df77a63fc97128c853ea931cb0425e83933a0f18e2dd9c97db8f9",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "5b027579e913ca6b880dd30bebb689d4dac1b87f3b4e2430dbe2141fe8104ebc",
+        "minimum_channel_std": 5.888148024887241,
+        "native_mat_subject": "P24"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P18.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "d8035f476c7687c221f2881798ba77e95363c5d8cf7cb999c6ae751fdc53b568",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "d6ab4352117ba24ede09ea8ecc9fb0462914a0aa5bc68cc85cace2cb6d89d676",
+        "minimum_channel_std": 7.02176147475235,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P25.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "d8035f476c7687c221f2881798ba77e95363c5d8cf7cb999c6ae751fdc53b568",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "d6ab4352117ba24ede09ea8ecc9fb0462914a0aa5bc68cc85cace2cb6d89d676",
+        "minimum_channel_std": 7.02176147475235,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P18.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "83682c906d2bb3de3d2ee12032618151a4a5477266f2774e830ff317f7114763",
+        "native_block_shape": [
+          2433,
+          14
+        ],
+        "full_block_sha256": "cc87eca2d6cbd2455c6e4d81ae5d5551caabd1a4d30240351f89a9e18edf79c7",
+        "minimum_channel_std": 6.903888886896251,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P25.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "83682c906d2bb3de3d2ee12032618151a4a5477266f2774e830ff317f7114763",
+        "native_block_shape": [
+          2433,
+          14
+        ],
+        "full_block_sha256": "cc87eca2d6cbd2455c6e4d81ae5d5551caabd1a4d30240351f89a9e18edf79c7",
+        "minimum_channel_std": 6.903888886896251,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P18.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "1625262f3ebb84d95fbee56f696be9d80e214332b350092381d49aa7cf6609da",
+        "native_block_shape": [
+          2433,
+          14
+        ],
+        "full_block_sha256": "4bdb2d592ab35f0c8b1c3028ad53c8f1c8a5bdd92249968ebe9dc18e0aefb445",
+        "minimum_channel_std": 6.399222321195559,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P25.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "1625262f3ebb84d95fbee56f696be9d80e214332b350092381d49aa7cf6609da",
+        "native_block_shape": [
+          2433,
+          14
+        ],
+        "full_block_sha256": "4bdb2d592ab35f0c8b1c3028ad53c8f1c8a5bdd92249968ebe9dc18e0aefb445",
+        "minimum_channel_std": 6.399222321195559,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P18.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "4da0ada84638bed33bd33de05fc8ef51c17420d4166d4fca07b01f3767f41ef6",
+        "native_block_shape": [
+          2433,
+          14
+        ],
+        "full_block_sha256": "7f2cdf7ee03758bbbef746e8d1ca94f05734d393db0b80448aad5c3369176aa7",
+        "minimum_channel_std": 7.017931695693161,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P25.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "4da0ada84638bed33bd33de05fc8ef51c17420d4166d4fca07b01f3767f41ef6",
+        "native_block_shape": [
+          2433,
+          14
+        ],
+        "full_block_sha256": "7f2cdf7ee03758bbbef746e8d1ca94f05734d393db0b80448aad5c3369176aa7",
+        "minimum_channel_std": 7.017931695693161,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P18.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "55652856079be1c5aa5631050ed7c7f8240105667254da1d8a3cc9cb6350c70b",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "a913b719b6ed6539c9bbbf242f45e315d318597968e529cee2c1fed1fbbce9c3",
+        "minimum_channel_std": 5.2262626517224495,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P25.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "55652856079be1c5aa5631050ed7c7f8240105667254da1d8a3cc9cb6350c70b",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "a913b719b6ed6539c9bbbf242f45e315d318597968e529cee2c1fed1fbbce9c3",
+        "minimum_channel_std": 5.2262626517224495,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P18.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "74843efcf947c3ec32269e5548d2dfbc361fd2c31d6e43463cc0709e3b1263bc",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "e614f43dc67a707e8249d0bd4e7c97afb2c3ace283c9350bd07b07c070f6cd77",
+        "minimum_channel_std": 5.432879920272345,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P25.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "74843efcf947c3ec32269e5548d2dfbc361fd2c31d6e43463cc0709e3b1263bc",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "e614f43dc67a707e8249d0bd4e7c97afb2c3ace283c9350bd07b07c070f6cd77",
+        "minimum_channel_std": 5.432879920272345,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P18.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "8d17bb3d77235f87dceac23ef19ef16641909bd978d5c2ed7f8cea31f4cbe66d",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "12b6f9ee3c98fb90f96e724dfd236f234187458e3cd30de125231dc3529703b7",
+        "minimum_channel_std": 6.304767842824627,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P25.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "8d17bb3d77235f87dceac23ef19ef16641909bd978d5c2ed7f8cea31f4cbe66d",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "12b6f9ee3c98fb90f96e724dfd236f234187458e3cd30de125231dc3529703b7",
+        "minimum_channel_std": 6.304767842824627,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P18.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "87f6adc1d001ddbe06aca218a6f8cdbf129d5c3a2e29bbff733420ddc5ff719a",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "cc1ebfed978cf071fdb11215236ed1cbd926278b0244754c664f94b4d4ef3df0",
+        "minimum_channel_std": 6.152108428006391,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P25.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "87f6adc1d001ddbe06aca218a6f8cdbf129d5c3a2e29bbff733420ddc5ff719a",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "cc1ebfed978cf071fdb11215236ed1cbd926278b0244754c664f94b4d4ef3df0",
+        "minimum_channel_std": 6.152108428006391,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P18.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "1d43529909c45b47d259a2b586b636546105ec66c597bc0fd7d926fb8282ed92",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "35ff777ef5193c62deac0ab3015209d791a4dd26d04dd7bceb942d21a6e5ad4e",
+        "minimum_channel_std": 5.138275333815589,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P25.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "1d43529909c45b47d259a2b586b636546105ec66c597bc0fd7d926fb8282ed92",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "35ff777ef5193c62deac0ab3015209d791a4dd26d04dd7bceb942d21a6e5ad4e",
+        "minimum_channel_std": 5.138275333815589,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P18.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "436ec906cf1d52838db243efd22f2b23b1e1118f3bca097746408bc43c48d461",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "39a03d582471efefaa453d124f51b6bc4a2346a241e529f5f6ddd074128c4403",
+        "minimum_channel_std": 8.083059287922417,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P25.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "436ec906cf1d52838db243efd22f2b23b1e1118f3bca097746408bc43c48d461",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "39a03d582471efefaa453d124f51b6bc4a2346a241e529f5f6ddd074128c4403",
+        "minimum_channel_std": 8.083059287922417,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P18.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "91c54ed8321fd1f8a3f91f2d4ca490e2acc32653c8b135b5d8336d7996fb2ec5",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "5f19bdf8c2fd620d766eacba67b50452d8884178baa609eba068e8f5dbd5c241",
+        "minimum_channel_std": 7.630040762253196,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P25.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "91c54ed8321fd1f8a3f91f2d4ca490e2acc32653c8b135b5d8336d7996fb2ec5",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "5f19bdf8c2fd620d766eacba67b50452d8884178baa609eba068e8f5dbd5c241",
+        "minimum_channel_std": 7.630040762253196,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P18",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P18.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "ae0f86fc3fddf6af86144caff6e8a48afc030406fc85c3e4183ef8ae1dbc8044",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "9f3c47b8d92eb0645191a49f28f7b750e18bc605273504ed3af0b92955969e47",
+        "minimum_channel_std": 6.9274016491010935,
+        "native_mat_subject": "P18"
+      },
+      {
+        "participant_id": "P25",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P25.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "ae0f86fc3fddf6af86144caff6e8a48afc030406fc85c3e4183ef8ae1dbc8044",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "9f3c47b8d92eb0645191a49f28f7b750e18bc605273504ed3af0b92955969e47",
+        "minimum_channel_std": 6.9274016491010935,
+        "native_mat_subject": "P25"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P19.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "6c5bea3b94180492d575b335d0d5e150a15f153b8d9da3a7a41bfdd63e73a1cb",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "1ddc6822f18f78a528aeb8ab658ec6157b6e4032acb43236aaacdcd8830d6724",
+        "minimum_channel_std": 5.7736770580952514,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P26.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "6c5bea3b94180492d575b335d0d5e150a15f153b8d9da3a7a41bfdd63e73a1cb",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "1ddc6822f18f78a528aeb8ab658ec6157b6e4032acb43236aaacdcd8830d6724",
+        "minimum_channel_std": 5.7736770580952514,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P19.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "2e6f3abeae26e89f75fee76267f76405e3d6f01dfae8bea1cd618c891a0a70f0",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "f309b79abc149da1cfe2e14fdcde46c858b788f3f06d71c1e5ac4436efbbacba",
+        "minimum_channel_std": 9.024808609641111,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P26.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "2e6f3abeae26e89f75fee76267f76405e3d6f01dfae8bea1cd618c891a0a70f0",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "f309b79abc149da1cfe2e14fdcde46c858b788f3f06d71c1e5ac4436efbbacba",
+        "minimum_channel_std": 9.024808609641111,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P19.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "8a9852d90d0c3ae5c4c347f3da91ed661dd1f813dcf380e0e1f3144fdd76b707",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "9335cd7a7cad3e4c09d78a3a5852d61e0d7e118d7396f70607b9d517d95da1a3",
+        "minimum_channel_std": 7.5423373232043485,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P26.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "8a9852d90d0c3ae5c4c347f3da91ed661dd1f813dcf380e0e1f3144fdd76b707",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "9335cd7a7cad3e4c09d78a3a5852d61e0d7e118d7396f70607b9d517d95da1a3",
+        "minimum_channel_std": 7.5423373232043485,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P19.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "14c2170110961453e8ffed4c7044c1af733867c4eca242c322ba27a50f3d93fe",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "7ca87b088f06ee7f39a6b65ecd877dcaa8ab54b146c2a2b25ed42f3f7c20c053",
+        "minimum_channel_std": 7.107622967400784,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P26.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "14c2170110961453e8ffed4c7044c1af733867c4eca242c322ba27a50f3d93fe",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "7ca87b088f06ee7f39a6b65ecd877dcaa8ab54b146c2a2b25ed42f3f7c20c053",
+        "minimum_channel_std": 7.107622967400784,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P19.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "925c5f11d2c7a7f7273701efbeef3925249d6fb1639780d68d98ccd088569588",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "f020704752225cdc0236fbfdfe2cf9d527757c3839c25ba8bb0467c577af2ae3",
+        "minimum_channel_std": 6.403517090374492,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P26.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "925c5f11d2c7a7f7273701efbeef3925249d6fb1639780d68d98ccd088569588",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "f020704752225cdc0236fbfdfe2cf9d527757c3839c25ba8bb0467c577af2ae3",
+        "minimum_channel_std": 6.403517090374492,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P19.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "eeff891c8c86d4a80aacdfbdca6c953bc5162ad6d608713a7e6d216709a180e2",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "ea764141c16708ed4b4aba3b1dc31f5b38435a530d1c95d49cb20e3e48b9d453",
+        "minimum_channel_std": 6.577149361016729,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P26.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "eeff891c8c86d4a80aacdfbdca6c953bc5162ad6d608713a7e6d216709a180e2",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "ea764141c16708ed4b4aba3b1dc31f5b38435a530d1c95d49cb20e3e48b9d453",
+        "minimum_channel_std": 6.577149361016729,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P19.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "235bd2816e41416d499f3ed063278755aa8607758522a1ca3621d32ee7da238b",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "d648cbadac29a07442e38f4bb1bb1cc48782a9bf4f831defbb7c5ecccaaaf3f0",
+        "minimum_channel_std": 6.633577940219608,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P26.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "235bd2816e41416d499f3ed063278755aa8607758522a1ca3621d32ee7da238b",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "d648cbadac29a07442e38f4bb1bb1cc48782a9bf4f831defbb7c5ecccaaaf3f0",
+        "minimum_channel_std": 6.633577940219608,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P19.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "72b57e8d56ba8dac2d8a2ba1761ab14bb6185f5dc960b3e72734bcb37ad704d0",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "b8ec9e70d7d23cdefe8264105aef5b89a8e6d3bf76608b7346d686e716667199",
+        "minimum_channel_std": 6.331096690228834,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P26.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "72b57e8d56ba8dac2d8a2ba1761ab14bb6185f5dc960b3e72734bcb37ad704d0",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "b8ec9e70d7d23cdefe8264105aef5b89a8e6d3bf76608b7346d686e716667199",
+        "minimum_channel_std": 6.331096690228834,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P19.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "454b3f2c36699ff9388077ed82be4edcce6ba045a18e15320ad52bd0f5bb1799",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "c24928048a718fc382cd6bca52693932122724166cea4948172a7f080626758d",
+        "minimum_channel_std": 6.364594653840487,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P26.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "454b3f2c36699ff9388077ed82be4edcce6ba045a18e15320ad52bd0f5bb1799",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "c24928048a718fc382cd6bca52693932122724166cea4948172a7f080626758d",
+        "minimum_channel_std": 6.364594653840487,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P19.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "3df44f86424f4bbc9fb5a3e4212b0482ca01c17f7f30fcea0deb28964e638238",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "05d3840003d8d22ae06c48de94151e1f601bbe11285dcc32455ecadbf942cd52",
+        "minimum_channel_std": 7.3831597439500865,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P26.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "3df44f86424f4bbc9fb5a3e4212b0482ca01c17f7f30fcea0deb28964e638238",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "05d3840003d8d22ae06c48de94151e1f601bbe11285dcc32455ecadbf942cd52",
+        "minimum_channel_std": 7.3831597439500865,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P19.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "ba4afab38da4fcd3e7110b10e49dacecaf3a9a9f0575156a6563133b7a950321",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "cc80c26a1bc7079b7291c3102bb49a68d83dae6dbc546f4e2bc3fd96faef1775",
+        "minimum_channel_std": 6.300540625622534,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P26.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "ba4afab38da4fcd3e7110b10e49dacecaf3a9a9f0575156a6563133b7a950321",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "cc80c26a1bc7079b7291c3102bb49a68d83dae6dbc546f4e2bc3fd96faef1775",
+        "minimum_channel_std": 6.300540625622534,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P19",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P19.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "3b40c6f52333c4d5b5f5162b224bbede3d2f5c99ffd4c66cb9eb5b4e745e6114",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "e176dcf64a7003a6c6c4dd3422536e198a587854ae7e99b9158e1c874385c53d",
+        "minimum_channel_std": 5.554445335113348,
+        "native_mat_subject": "P19"
+      },
+      {
+        "participant_id": "P26",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P26.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "3b40c6f52333c4d5b5f5162b224bbede3d2f5c99ffd4c66cb9eb5b4e745e6114",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "e176dcf64a7003a6c6c4dd3422536e198a587854ae7e99b9158e1c874385c53d",
+        "minimum_channel_std": 5.554445335113348,
+        "native_mat_subject": "P26"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P20.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "f208207bd0356316c804fb9eb1ee940f16dcae055bd563d383891da8d9e58be7",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "d12980d631b81481489be94ed9cd6cfc7d37598e8713f73a375057b81d872a8e",
+        "minimum_channel_std": 6.713888273651741,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P27.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "f208207bd0356316c804fb9eb1ee940f16dcae055bd563d383891da8d9e58be7",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "d12980d631b81481489be94ed9cd6cfc7d37598e8713f73a375057b81d872a8e",
+        "minimum_channel_std": 6.713888273651741,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P20.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "da5b75b11b165fd9aee7163f66693e626a06f870ab7ae48355f290818b75c460",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "762498a590e62270fc095d91725964903d9e18bfe7533ddc68c4c86aaf6d838b",
+        "minimum_channel_std": 8.03886286585778,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P27.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "da5b75b11b165fd9aee7163f66693e626a06f870ab7ae48355f290818b75c460",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "762498a590e62270fc095d91725964903d9e18bfe7533ddc68c4c86aaf6d838b",
+        "minimum_channel_std": 8.03886286585778,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P20.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "89e51ec7861bb1837be0c38ac18532ffdf6053ba43569b7345fd1bfd8a2b97c7",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "245b2cd47b1ab0519dd1e5a4338d9cd51be4d5100501ef0ccf0a84d28e7b3f6c",
+        "minimum_channel_std": 6.025230031582706,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P27.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "89e51ec7861bb1837be0c38ac18532ffdf6053ba43569b7345fd1bfd8a2b97c7",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "245b2cd47b1ab0519dd1e5a4338d9cd51be4d5100501ef0ccf0a84d28e7b3f6c",
+        "minimum_channel_std": 6.025230031582706,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P20.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "56840e2ad0f86b231fa746e4aa87c15ac43f834f3bc533d4a8c47600cc7a95b3",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "b51884203af25e1dfcb37b7eab557eb7ae3d0ca4666ba3a5d4339f66b8072a1b",
+        "minimum_channel_std": 6.029397113249759,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P27.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "56840e2ad0f86b231fa746e4aa87c15ac43f834f3bc533d4a8c47600cc7a95b3",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "b51884203af25e1dfcb37b7eab557eb7ae3d0ca4666ba3a5d4339f66b8072a1b",
+        "minimum_channel_std": 6.029397113249759,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P20.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "a6e09a92e95f1485c39c5ac0aba9d48d6092bd69c321d15112946976e9d0df5d",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "a06c908de0c626d723625ac9e28d8041ffc812da5b98dbd18599cbefb633a201",
+        "minimum_channel_std": 6.0554329811100756,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P27.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "a6e09a92e95f1485c39c5ac0aba9d48d6092bd69c321d15112946976e9d0df5d",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "a06c908de0c626d723625ac9e28d8041ffc812da5b98dbd18599cbefb633a201",
+        "minimum_channel_std": 6.0554329811100756,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P20.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "d4f7ca908e99532a23ab1048630a76ee193704346d2104e0a43fae6ecb00a955",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "ff935bb77a14c7316a865e47b2f14a879fd89d8cfc994fde3803fe69849046df",
+        "minimum_channel_std": 6.0531680878623115,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P27.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "d4f7ca908e99532a23ab1048630a76ee193704346d2104e0a43fae6ecb00a955",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "ff935bb77a14c7316a865e47b2f14a879fd89d8cfc994fde3803fe69849046df",
+        "minimum_channel_std": 6.0531680878623115,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P20.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "572b632fd602e9500041216550631b47c2bd042fccd0f60f0a4d38efab1f9f84",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "e99e3987d4f73e27f110edd419442b6ff0bca19946b90a1f6983afcb583ef2b2",
+        "minimum_channel_std": 5.659519903001879,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P27.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "572b632fd602e9500041216550631b47c2bd042fccd0f60f0a4d38efab1f9f84",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "e99e3987d4f73e27f110edd419442b6ff0bca19946b90a1f6983afcb583ef2b2",
+        "minimum_channel_std": 5.659519903001879,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P20.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "9f380c2715aca01f3252655221fbf87a25d2b9bef462562c2131686babf324f1",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "a121571cca5ec9df7719d910da352a187095f94a58009c155a7eba5a68cb9c00",
+        "minimum_channel_std": 7.163224018031653,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P27.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "9f380c2715aca01f3252655221fbf87a25d2b9bef462562c2131686babf324f1",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "a121571cca5ec9df7719d910da352a187095f94a58009c155a7eba5a68cb9c00",
+        "minimum_channel_std": 7.163224018031653,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P20.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "ee817e9161c8c3997d88c29a650d2f7d2fcbd958fd2d721e486e56e607f8b227",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "6a206db71ad3b614a526193fa312a315b1bce04d5b80b6837b7f7f388aec839e",
+        "minimum_channel_std": 6.459041313213631,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P27.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "ee817e9161c8c3997d88c29a650d2f7d2fcbd958fd2d721e486e56e607f8b227",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "6a206db71ad3b614a526193fa312a315b1bce04d5b80b6837b7f7f388aec839e",
+        "minimum_channel_std": 6.459041313213631,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P20.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "a874e0454136b70f1246f54d5068e50d7b5df92581b304a92ecfeae64ae001d7",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "e7ae47a4b34de565738443d32867f4f873de9603e798d7f1c992e8284677b193",
+        "minimum_channel_std": 6.958263564513953,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P27.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "a874e0454136b70f1246f54d5068e50d7b5df92581b304a92ecfeae64ae001d7",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "e7ae47a4b34de565738443d32867f4f873de9603e798d7f1c992e8284677b193",
+        "minimum_channel_std": 6.958263564513953,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P20.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "c6628b42a012aa050f3e31cf3223ac6cdad7da147135b40f283aa32ef3b15d25",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "676cb86674bf1200e79c903de8543debf93a475f744499cbc12a3aa32ba2106d",
+        "minimum_channel_std": 7.020387133332905,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P27.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "c6628b42a012aa050f3e31cf3223ac6cdad7da147135b40f283aa32ef3b15d25",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "676cb86674bf1200e79c903de8543debf93a475f744499cbc12a3aa32ba2106d",
+        "minimum_channel_std": 7.020387133332905,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P20",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P20.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "bfe319ad5de29984a0e0b132e50ff965c48cf866895deba16c5791efa4d664fe",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "19ffee81360db0e4f27a4c47082a01c032fa5c0eca67085931cd18e6f0a154d4",
+        "minimum_channel_std": 6.927614816906823,
+        "native_mat_subject": "P20"
+      },
+      {
+        "participant_id": "P27",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P27.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "bfe319ad5de29984a0e0b132e50ff965c48cf866895deba16c5791efa4d664fe",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "19ffee81360db0e4f27a4c47082a01c032fa5c0eca67085931cd18e6f0a154d4",
+        "minimum_channel_std": 6.927614816906823,
+        "native_mat_subject": "P27"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P21.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "942fc1353b8b64c659d39ec00b9a32f34d745db3547903c81ea617c7e700d771",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "2740790449cd394dcaa29470c75400f0d607120dd8002592a5c69827ef3b24e3",
+        "minimum_channel_std": 7.366155161802524,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P28.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "942fc1353b8b64c659d39ec00b9a32f34d745db3547903c81ea617c7e700d771",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "2740790449cd394dcaa29470c75400f0d607120dd8002592a5c69827ef3b24e3",
+        "minimum_channel_std": 7.366155161802524,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P21.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "d6a1f94edc598040ad52a460b94343d1fcc553c89b1dce696fdfe7a89d994cb8",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "2143439ecfb169336c389cdae2978bbfd5ef62de05f6c79fdbeca54bbd4d3d0a",
+        "minimum_channel_std": 6.404860431103967,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P28.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "d6a1f94edc598040ad52a460b94343d1fcc553c89b1dce696fdfe7a89d994cb8",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "2143439ecfb169336c389cdae2978bbfd5ef62de05f6c79fdbeca54bbd4d3d0a",
+        "minimum_channel_std": 6.404860431103967,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P21.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "1c281aae5dad7b4e9033a79f322aa04ba52dacc95fb8742a1eb4b81455f3d0ce",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "b339d83d7d8de8daa4a6d88e2dcd753e78a95d0fc82322f7388251e33c555247",
+        "minimum_channel_std": 6.589246618291548,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P28.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "1c281aae5dad7b4e9033a79f322aa04ba52dacc95fb8742a1eb4b81455f3d0ce",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "b339d83d7d8de8daa4a6d88e2dcd753e78a95d0fc82322f7388251e33c555247",
+        "minimum_channel_std": 6.589246618291548,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P21.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "e217281f5997dddc43855e6edd41ccbe3d0e8d807162e2192f92011d565582a7",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "47d4b789dce46d3e2f46a0dde73f1fb0b3ee791b823699e93b8601778b85b0df",
+        "minimum_channel_std": 6.970399653310478,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P28.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "e217281f5997dddc43855e6edd41ccbe3d0e8d807162e2192f92011d565582a7",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "47d4b789dce46d3e2f46a0dde73f1fb0b3ee791b823699e93b8601778b85b0df",
+        "minimum_channel_std": 6.970399653310478,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P21.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "e147e19f7559cce68ba05c4ee35a287a99a230935ef3cd1aba183efdbd44f28c",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "0a9324e2bf6aeb7d103dbc1bcfc9211de4b08ef429cdbf115565af5e300f43d9",
+        "minimum_channel_std": 6.62326559710227,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P28.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "e147e19f7559cce68ba05c4ee35a287a99a230935ef3cd1aba183efdbd44f28c",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "0a9324e2bf6aeb7d103dbc1bcfc9211de4b08ef429cdbf115565af5e300f43d9",
+        "minimum_channel_std": 6.62326559710227,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P21.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "becc27cfe9ea9bcf7d956a42a0a0d814cf4bdbaff53a71dfd84543f425456ed5",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "eff9cfd9ace11c8baa1b927afdff78033ad581576ced6bbc3b95013ec6419726",
+        "minimum_channel_std": 6.760172912665994,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P28.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "becc27cfe9ea9bcf7d956a42a0a0d814cf4bdbaff53a71dfd84543f425456ed5",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "eff9cfd9ace11c8baa1b927afdff78033ad581576ced6bbc3b95013ec6419726",
+        "minimum_channel_std": 6.760172912665994,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P21.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "0ee9fda05f14958499fdcc53280a8f31a0c8442d240fb3f9ab3766f699af7259",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "df1ab2d646822db19cf3c37a0b8f600dbda41ae1e15aaf27e11b2f17ca208e02",
+        "minimum_channel_std": 6.157118668913317,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P28.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "0ee9fda05f14958499fdcc53280a8f31a0c8442d240fb3f9ab3766f699af7259",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "df1ab2d646822db19cf3c37a0b8f600dbda41ae1e15aaf27e11b2f17ca208e02",
+        "minimum_channel_std": 6.157118668913317,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P21.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "844d848737ff8fb05c243cc89c29626a35667a114563b02b32b6eed1a6014ae8",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "3f984b336b87b10129326773a5e901868e9a2aceb3f772f49237596202e45fd9",
+        "minimum_channel_std": 6.023971151418106,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P28.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "844d848737ff8fb05c243cc89c29626a35667a114563b02b32b6eed1a6014ae8",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "3f984b336b87b10129326773a5e901868e9a2aceb3f772f49237596202e45fd9",
+        "minimum_channel_std": 6.023971151418106,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P21.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "dade939c153d29d8ca1992f09b8f8877098de11d12c89b408e89be774c521932",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "9bbf57ea686c59e236f6892ee90687bd115cfeea0f51154cd82c8e7a26776560",
+        "minimum_channel_std": 7.218063454345933,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P28.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "dade939c153d29d8ca1992f09b8f8877098de11d12c89b408e89be774c521932",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "9bbf57ea686c59e236f6892ee90687bd115cfeea0f51154cd82c8e7a26776560",
+        "minimum_channel_std": 7.218063454345933,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P21.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "5c789c4bbcea5265bc4fa055285e7650381738a6d472c5fa9dbbee62c4caa4c8",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "767344e849c2462dd5949de4385f0c9ddd08ffb6439401bcb305dcd15f24287b",
+        "minimum_channel_std": 7.005385623622408,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P28.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "5c789c4bbcea5265bc4fa055285e7650381738a6d472c5fa9dbbee62c4caa4c8",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "767344e849c2462dd5949de4385f0c9ddd08ffb6439401bcb305dcd15f24287b",
+        "minimum_channel_std": 7.005385623622408,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P21.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "324786724a000f0bf5cd47631f63911b7439b6fd4d748273542f8e512f86ebeb",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "ec0247499d9334b08d6f0c0ef6665eb75931d4f80aedb48eeaa691be7cca5991",
+        "minimum_channel_std": 6.187390577648747,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P28.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "324786724a000f0bf5cd47631f63911b7439b6fd4d748273542f8e512f86ebeb",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "ec0247499d9334b08d6f0c0ef6665eb75931d4f80aedb48eeaa691be7cca5991",
+        "minimum_channel_std": 6.187390577648747,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P21",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P21.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "1bd86decb85d7aeb2087779ed30356af7960a87c991d4e7dc8c43db4b6af5e46",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "25c3f6b2e7588eb519352fafc96d40de0e067dfce2f972301e416474d918bbf8",
+        "minimum_channel_std": 6.254545285793046,
+        "native_mat_subject": "P21"
+      },
+      {
+        "participant_id": "P28",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P28.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "1bd86decb85d7aeb2087779ed30356af7960a87c991d4e7dc8c43db4b6af5e46",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "25c3f6b2e7588eb519352fafc96d40de0e067dfce2f972301e416474d918bbf8",
+        "minimum_channel_std": 6.254545285793046,
+        "native_mat_subject": "P28"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P22.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "d9d80a2551af6b8c998d5ab88a23b323805bc1572cd8e533d0aebabb4b40f583",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "ec6f874df5b187b06a5343b403664bada69615829d2dcd685930a7470c97b4ed",
+        "minimum_channel_std": 6.468295695931971,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P29.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "d9d80a2551af6b8c998d5ab88a23b323805bc1572cd8e533d0aebabb4b40f583",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "ec6f874df5b187b06a5343b403664bada69615829d2dcd685930a7470c97b4ed",
+        "minimum_channel_std": 6.468295695931971,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P22.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "4ee4209548c383e56be46bf3fa6e4a9ff48bc942012d22e70f3718b644a27d30",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "955fb380b2b471dac0cb17239b993d3e1622c8f51f981d4679c1828173cbd37f",
+        "minimum_channel_std": 6.2706857788756665,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P29.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "4ee4209548c383e56be46bf3fa6e4a9ff48bc942012d22e70f3718b644a27d30",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "955fb380b2b471dac0cb17239b993d3e1622c8f51f981d4679c1828173cbd37f",
+        "minimum_channel_std": 6.2706857788756665,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P22.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "891c681187a8cce6f278d268f3380c14d5c2e0bbe5cf7dd8e4896e4935e882ac",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "cf89bf2539dec64efbdff5d106ac7c6a2123324d9782f22dfe586290bd4cd558",
+        "minimum_channel_std": 5.539944728186452,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P29.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "891c681187a8cce6f278d268f3380c14d5c2e0bbe5cf7dd8e4896e4935e882ac",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "cf89bf2539dec64efbdff5d106ac7c6a2123324d9782f22dfe586290bd4cd558",
+        "minimum_channel_std": 5.539944728186452,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P22.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "a47d5e96b0cf424e101267a6ae6b62167a07974e23ae31d64d936af9a56d2a7e",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "2bccb4a602be6c5ea2b9e4717832aa340db9efe1d057ef4d0b8a767ead350765",
+        "minimum_channel_std": 6.906030359207098,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P29.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "a47d5e96b0cf424e101267a6ae6b62167a07974e23ae31d64d936af9a56d2a7e",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "2bccb4a602be6c5ea2b9e4717832aa340db9efe1d057ef4d0b8a767ead350765",
+        "minimum_channel_std": 6.906030359207098,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P22.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "8b94f92f7915b7763fcb7762d653e0004b73e0e5d6a26f793986018b64ee2852",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "f6061f48b23bb4557ad58769d466381e0c398c6a73a2eb6ff4addb29adaf111e",
+        "minimum_channel_std": 7.303792965931789,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P29.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "8b94f92f7915b7763fcb7762d653e0004b73e0e5d6a26f793986018b64ee2852",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "f6061f48b23bb4557ad58769d466381e0c398c6a73a2eb6ff4addb29adaf111e",
+        "minimum_channel_std": 7.303792965931789,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P22.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "5d62053510f479cea3c5c6c0cf3424d4012e3e2948aa2a3b8444c7f45e167584",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "2b38dc2c885a00e3eb34c5fbcb3161e8d8e7465424de860d3b5152db2fa8a12c",
+        "minimum_channel_std": 6.310048378812863,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P29.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "5d62053510f479cea3c5c6c0cf3424d4012e3e2948aa2a3b8444c7f45e167584",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "2b38dc2c885a00e3eb34c5fbcb3161e8d8e7465424de860d3b5152db2fa8a12c",
+        "minimum_channel_std": 6.310048378812863,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P22.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "a86413d0a3183dc83974cbacb4f42b6538daf5298cab090d5184315633eabb4f",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "4c25c12b60ae7ef6cdae3301db856e9a3e0038d730f76eb7f04e9d46568671ed",
+        "minimum_channel_std": 6.596147507047569,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P29.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "a86413d0a3183dc83974cbacb4f42b6538daf5298cab090d5184315633eabb4f",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "4c25c12b60ae7ef6cdae3301db856e9a3e0038d730f76eb7f04e9d46568671ed",
+        "minimum_channel_std": 6.596147507047569,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P22.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "4c98b38ee97dde17d869593244f00a9c322ffd685800518e23f85a5945318c61",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "16becf1117e03f1fc695f1f8d80e558a260676f8cf91ddbceb0dd0ad307bac43",
+        "minimum_channel_std": 6.026545330311367,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P29.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "4c98b38ee97dde17d869593244f00a9c322ffd685800518e23f85a5945318c61",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "16becf1117e03f1fc695f1f8d80e558a260676f8cf91ddbceb0dd0ad307bac43",
+        "minimum_channel_std": 6.026545330311367,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P22.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "07a1103dbd37746678dacaf39df4720ee66a5b07c2b8690979eb712871856517",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "23b18cad76b82f057d88ed5bb6d1e98f45b22c5b8961589b016d89324ec000d7",
+        "minimum_channel_std": 7.349810050226938,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P29.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "07a1103dbd37746678dacaf39df4720ee66a5b07c2b8690979eb712871856517",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "23b18cad76b82f057d88ed5bb6d1e98f45b22c5b8961589b016d89324ec000d7",
+        "minimum_channel_std": 7.349810050226938,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P22.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "c53e2cb199d18a8b2e774082abdfdfd9cd56e0478541c06ae8124a72c1d2b796",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "6a804c7b1ebe43ea184ed733e76749a8e40fb7ddab926c62f9e1f03946ea5d55",
+        "minimum_channel_std": 7.510232626752546,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P29.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "c53e2cb199d18a8b2e774082abdfdfd9cd56e0478541c06ae8124a72c1d2b796",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "6a804c7b1ebe43ea184ed733e76749a8e40fb7ddab926c62f9e1f03946ea5d55",
+        "minimum_channel_std": 7.510232626752546,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P22.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "5fc14a23a6f21c3e44a681751b2f269eda756ff4a35cdc5e4389d10acacd1668",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "0a94b9931ff8865fd543a9125ae0110c614c1b688c4b5b6b12e205075e9d2a51",
+        "minimum_channel_std": 7.34419368615012,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P29.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "5fc14a23a6f21c3e44a681751b2f269eda756ff4a35cdc5e4389d10acacd1668",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "0a94b9931ff8865fd543a9125ae0110c614c1b688c4b5b6b12e205075e9d2a51",
+        "minimum_channel_std": 7.34419368615012,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P22",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P22.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "6635e70011b383e7bc4f92c0831b20dec891512aae8fb4a95b9354c8a78d658d",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "b9800b10d36723bef245a4ac3cc03140b306b541a3d1474fa1a09017bfdb00c8",
+        "minimum_channel_std": 6.322507555711391,
+        "native_mat_subject": "P22"
+      },
+      {
+        "participant_id": "P29",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P29.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "6635e70011b383e7bc4f92c0831b20dec891512aae8fb4a95b9354c8a78d658d",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "b9800b10d36723bef245a4ac3cc03140b306b541a3d1474fa1a09017bfdb00c8",
+        "minimum_channel_std": 6.322507555711391,
+        "native_mat_subject": "P29"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P23.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "3fb86626ea50e1f41fd32164259fe6e8b66b546279a0042e20cbc1d52d049f05",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "2dd3f885dec9f6d38529e8cc034b14840e2455ce686b21b7472de814c189408b",
+        "minimum_channel_std": 7.574290974152413,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P30.mat",
+        "source_block_index": 0,
+        "label": "1",
+        "crop_sha256": "3fb86626ea50e1f41fd32164259fe6e8b66b546279a0042e20cbc1d52d049f05",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "2dd3f885dec9f6d38529e8cc034b14840e2455ce686b21b7472de814c189408b",
+        "minimum_channel_std": 7.574290974152413,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P23.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "31cccadac77036d2f558a409776818e2dac60175e93636de22238fd8c6d53347",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "06109b8ef2fba79e157e34b1c2a1258ff289b02a5c5121f17b1c0699462f9772",
+        "minimum_channel_std": 6.849907138833944,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P30.mat",
+        "source_block_index": 1,
+        "label": "1",
+        "crop_sha256": "31cccadac77036d2f558a409776818e2dac60175e93636de22238fd8c6d53347",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "06109b8ef2fba79e157e34b1c2a1258ff289b02a5c5121f17b1c0699462f9772",
+        "minimum_channel_std": 6.849907138833944,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P23.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "bfec199bf86398cd26acef8fd29ed4c7cdd8cf9b7df18cca308c722af733a402",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "75d97f7c1eedc6c0d39327a81600eeab1e2789966041fdeeb0ef7d6f767f15b8",
+        "minimum_channel_std": 7.818789009518965,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P30.mat",
+        "source_block_index": 2,
+        "label": "1",
+        "crop_sha256": "bfec199bf86398cd26acef8fd29ed4c7cdd8cf9b7df18cca308c722af733a402",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "75d97f7c1eedc6c0d39327a81600eeab1e2789966041fdeeb0ef7d6f767f15b8",
+        "minimum_channel_std": 7.818789009518965,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P23.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "6e8457c95561f98570f56feb461942a212a0aa0efbe6b0782c3f83978a73d65a",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "aa577ca6bdc8b4d499a4775a0563db420e26fc16d650e648a30bd65deb9b6079",
+        "minimum_channel_std": 5.454547324159534,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Left Hand Up-Down Imagine/P30.mat",
+        "source_block_index": 3,
+        "label": "1",
+        "crop_sha256": "6e8457c95561f98570f56feb461942a212a0aa0efbe6b0782c3f83978a73d65a",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "aa577ca6bdc8b4d499a4775a0563db420e26fc16d650e648a30bd65deb9b6079",
+        "minimum_channel_std": 5.454547324159534,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P23.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "7a5bb6be913ebb344272295f7984d7cf20ea85ecdc46967d1e78b2c7d8cd7365",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "4ff2e9283a27cd7766a240a1a175fa4d4364779681badda605e0dba0ca109621",
+        "minimum_channel_std": 6.5148812816614035,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P30.mat",
+        "source_block_index": 0,
+        "label": "2",
+        "crop_sha256": "7a5bb6be913ebb344272295f7984d7cf20ea85ecdc46967d1e78b2c7d8cd7365",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "4ff2e9283a27cd7766a240a1a175fa4d4364779681badda605e0dba0ca109621",
+        "minimum_channel_std": 6.5148812816614035,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P23.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "68e7e33306f4dcd5655924693e24813e9d83e51997276848388deaa2d9d0bb72",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "3b9e6cc5fedf9ad4ae2dec8b07cd5cdfdfe5534e440375e2a2baca4034d93a64",
+        "minimum_channel_std": 6.058199712078923,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P30.mat",
+        "source_block_index": 1,
+        "label": "2",
+        "crop_sha256": "68e7e33306f4dcd5655924693e24813e9d83e51997276848388deaa2d9d0bb72",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "3b9e6cc5fedf9ad4ae2dec8b07cd5cdfdfe5534e440375e2a2baca4034d93a64",
+        "minimum_channel_std": 6.058199712078923,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P23.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "feeeec8614ebee45235d09ff686869df9989486bbcab1da460c74e3f03521c38",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "1c2068bea0829cd9a86900b3a962be642622503230e179019c0b8d0f8dfb2f12",
+        "minimum_channel_std": 5.352415565691121,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P30.mat",
+        "source_block_index": 2,
+        "label": "2",
+        "crop_sha256": "feeeec8614ebee45235d09ff686869df9989486bbcab1da460c74e3f03521c38",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "1c2068bea0829cd9a86900b3a962be642622503230e179019c0b8d0f8dfb2f12",
+        "minimum_channel_std": 5.352415565691121,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P23.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "7aeb06b437371cfbba79ccd81d7a8fdb45c80714fd37f85672f74dae5ab3374a",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "c4ce6216969fc15fc632f5234b2f775a2e3739f6c65a6c9b420a4e5ec8642725",
+        "minimum_channel_std": 8.376797162470082,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Right Hand Up-Down Imagine/P30.mat",
+        "source_block_index": 3,
+        "label": "2",
+        "crop_sha256": "7aeb06b437371cfbba79ccd81d7a8fdb45c80714fd37f85672f74dae5ab3374a",
+        "native_block_shape": [
+          1152,
+          14
+        ],
+        "full_block_sha256": "c4ce6216969fc15fc632f5234b2f775a2e3739f6c65a6c9b420a4e5ec8642725",
+        "minimum_channel_std": 8.376797162470082,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P23.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "37badf3400d38b4b9de6a45b826c0ce9863f5b9df71b02eaf0667d2aa6701999",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "857c44213b8653351020f72439ea1d33f2d4eaad49c5ad41dc0008c902e61b9c",
+        "minimum_channel_std": 6.633026828776936,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P30.mat",
+        "source_block_index": 0,
+        "label": "3",
+        "crop_sha256": "37badf3400d38b4b9de6a45b826c0ce9863f5b9df71b02eaf0667d2aa6701999",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "857c44213b8653351020f72439ea1d33f2d4eaad49c5ad41dc0008c902e61b9c",
+        "minimum_channel_std": 6.633026828776936,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P23.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "72eec6b8eee88386ef79eab518087a4f616dceb8c86d162e6c1a4a96815195f2",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "cd9ed13b88a37299d34bdbb29abc21da273e066c136557005a1c4f7bfc89da74",
+        "minimum_channel_std": 5.883899322733811,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P30.mat",
+        "source_block_index": 1,
+        "label": "3",
+        "crop_sha256": "72eec6b8eee88386ef79eab518087a4f616dceb8c86d162e6c1a4a96815195f2",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "cd9ed13b88a37299d34bdbb29abc21da273e066c136557005a1c4f7bfc89da74",
+        "minimum_channel_std": 5.883899322733811,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P23.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "78a104cfa9b4146d6f77e4bb748f199cd2dcb3fbee7c5ed1701f0114df1e1aa2",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "5d5e91a8033bf692decb9746e21107573dd9e99721bf94bbd97d16870132da87",
+        "minimum_channel_std": 6.8277200068617665,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P30.mat",
+        "source_block_index": 2,
+        "label": "3",
+        "crop_sha256": "78a104cfa9b4146d6f77e4bb748f199cd2dcb3fbee7c5ed1701f0114df1e1aa2",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "5d5e91a8033bf692decb9746e21107573dd9e99721bf94bbd97d16870132da87",
+        "minimum_channel_std": 6.8277200068617665,
+        "native_mat_subject": "P30"
+      }
+    ],
+    [
+      {
+        "participant_id": "P23",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P23.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "603e741c5c1f981ea53140e08930ce729c708de65244f8d376a3607f8093eb71",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "7972c977c1530e6a42e16d45fdc526ba1275b58911d0c47f7b417d7dac928e7f",
+        "minimum_channel_std": 5.8169751949015644,
+        "native_mat_subject": "P23"
+      },
+      {
+        "participant_id": "P30",
+        "source_file": "extracted/Motor Imagery/Stand Up-Down Imagine/P30.mat",
+        "source_block_index": 3,
+        "label": "3",
+        "crop_sha256": "603e741c5c1f981ea53140e08930ce729c708de65244f8d376a3607f8093eb71",
+        "native_block_shape": [
+          2432,
+          14
+        ],
+        "full_block_sha256": "7972c977c1530e6a42e16d45fdc526ba1275b58911d0c47f7b417d7dac928e7f",
+        "minimum_channel_std": 5.8169751949015644,
+        "native_mat_subject": "P30"
+      }
+    ]
+  ],
+  "duplicate_group_count": 85,
+  "constant_cases": [],
+  "conflicting_class_groups": 1,
+  "implicated_participants": [
+    "P05",
+    "P06",
+    "P17",
+    "P18",
+    "P19",
+    "P20",
+    "P21",
+    "P22",
+    "P23",
+    "P24",
+    "P25",
+    "P26",
+    "P27",
+    "P28",
+    "P29",
+    "P30"
+  ],
+  "unimplicated_participants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P15",
+    "P16"
+  ],
+  "pair_counts": {
+    "P05,P06": 1,
+    "P17,P24": 12,
+    "P18,P25": 12,
+    "P19,P26": 12,
+    "P20,P27": 12,
+    "P21,P28": 12,
+    "P22,P29": 12,
+    "P23,P30": 12
+  },
+  "interpretation": "No label/participant repaired. Identical nonflat crops across IDs; compare full-block hashes and shapes. Whole release cannot pass duplicate/subject provenance admission.",
+  "decision": "Full conversion stopped; defer or explicitly document an unimplicated-participant subset before proceeding"
+}

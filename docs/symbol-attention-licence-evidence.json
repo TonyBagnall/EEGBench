@@ -1,0 +1,11 @@
+{
+  "dataset": "Chailloux2020",
+  "release": "1.0.1",
+  "revision": "153d0a1633adbf7d079eeabc866a2ad727bcff46",
+  "licence": "CC0-1.0",
+  "original_data_description": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003190/153d0a1633adbf7d079eeabc866a2ad727bcff46/dataset_description.json",
+  "original_licence": "https://s3.amazonaws.com/openneuro.org/ds003190/LICENSE",
+  "licence_publisher_md5": "802ffa7a93ea98a97a3048f733b9f514",
+  "licence_sha256": "06d886d93e0ed466dc5ad0957d8333dcedcd3d6a0b10fbc7e63abf8a958770d1",
+  "applicability": "Original dataset-description License CC0 and original dataset-named LICENSE dedication; not the software licence"
+}

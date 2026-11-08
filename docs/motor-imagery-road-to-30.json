@@ -1,0 +1,109 @@
+{
+  "updated": "2026-11-08",
+  "current_mi_problems": 22,
+  "current_scalp_eeg_mi_problems": 21,
+  "target_by_existing_count": 30,
+  "additional_needed": 8,
+  "scope": "Live assimilation: both former pending problems and Vagaja fully validated and registered",
+  "existing_pipeline": [
+    {
+      "source": "Farabbi2020",
+      "name": "ImaginedHandsRobot",
+      "status": "Complete, fully validated and registered on D"
+    },
+    {
+      "source": "BCIComp2020UpperLimb",
+      "name": "ImaginedGrasps",
+      "status": "Complete, fully validated and registered on D"
+    }
+  ],
+  "primary_candidates": [
+    {
+      "source": "Vagaja2023",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Vagaja2023.html",
+      "reported_subjects": "26",
+      "declared_licence": "CC-BY-4.0",
+      "original_source_url": "https://zenodo.org/records/8086086",
+      "status": "Complete as ImaginedHandsEmbodiment:798/240cases32x4997at500Hz; fully validated and registered"
+    },
+    {
+      "source": "Batista2022",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Batista2022.html",
+      "reported_subjects": "20",
+      "declared_licence": "CC-BY-4.0",
+      "original_source_url": "https://zenodo.org/records/7664069",
+      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+    },
+    {
+      "source": "PoloHortiguela2025",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.PoloHortiguela2025.html",
+      "reported_subjects": "6",
+      "declared_licence": "CC-BY-4.0",
+      "original_source_url": "https://doi.org/10.5281/zenodo.14672334",
+      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+    },
+    {
+      "source": "Leeuwis2021",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Leeuwis2021.html",
+      "reported_subjects": "55",
+      "declared_licence": "CC-BY-4.0",
+      "original_source_url": "https://doi.org/10.34894/Z7ZVOD",
+      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+    },
+    {
+      "source": "Pan2023",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Pan2023.html",
+      "reported_subjects": "14",
+      "declared_licence": "CC0-1.0",
+      "original_source_url": "https://doi.org/10.7910/DVN/251NOW",
+      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+    },
+    {
+      "source": "Pan2025",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Pan2025.html",
+      "reported_subjects": "10",
+      "declared_licence": "CC0-1.0",
+      "original_source_url": "https://doi.org/10.7910/DVN/GH74ZG",
+      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+    },
+    {
+      "source": "Rozado2015",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Rozado2015.html",
+      "reported_subjects": "30",
+      "declared_licence": "CC0 1.0",
+      "original_source_url": "https://doi.org/10.7910/DVN/28932",
+      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+    },
+    {
+      "source": "Cho2017",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Cho2017.html",
+      "reported_subjects": "52",
+      "declared_licence": "CC-BY-4.0",
+      "original_source_url": "http://dx.doi.org/10.5524/100295",
+      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+    },
+    {
+      "source": "Daly2020",
+      "documentation_url": "https://moabb.neurotechx.com/docs/generated/moabb.datasets.Daly2020.html",
+      "reported_subjects": "18",
+      "declared_licence": "CC0",
+      "original_source_url": "https://openneuro.org/datasets/ds002720",
+      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+    }
+  ],
+  "reserves": [
+    "GrosseWentrup2009",
+    "Dreyer2023",
+    "Lee2019_MI",
+    "Alawieh2025",
+    "Chang2025"
+  ],
+  "identity_checks": [
+    "Compare Pan2023/Pan2025 native recording membership",
+    "Compare Batista/Vagaja native recordings before both count",
+    "Do not count Dreyer aggregate plus its subsets",
+    "Exclude imagined speech and executed movements"
+  ],
+  "roadmap": "docs/motor-imagery-road-to-30.md",
+  "next_candidate": "Batista2022"
+}

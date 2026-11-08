@@ -1,0 +1,8 @@
+{
+  "checked_date": "2026-11-05",
+  "url": "https://predict.cs.unm.edu/downloads.php",
+  "html_sha256": "d245a644d2714a22c5328282d76cda88f43fe0e54d341e61d21da06febc9af2b",
+  "scope": "Original catalogue explicitly grants PDDL v1.0 to the database and its contents; root mirror data LICENSE.txt agrees",
+  "licence": "PDDL-1.0",
+  "licence_url": "https://opendatacommons.org/licenses/pddl/1-0/"
+}

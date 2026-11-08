@@ -1,0 +1,133 @@
+{
+  "dataset": "CodedSymbols",
+  "train_cases": 2200,
+  "test_cases": 800,
+  "subjects": 30,
+  "channels": 8,
+  "timepoints": 16128,
+  "classes": 20,
+  "frequency": 512,
+  "size_GB": 5.575003055,
+  "licence": "CC0-1.0",
+  "validation": {
+    "quality_status": "passed_with_documented_sensor_and_timing_limits",
+    "partitions": {
+      "TRAIN": {
+        "cases": 2200,
+        "shape": [
+          2200,
+          8,
+          16128
+        ],
+        "class_counts": {
+          "1": 110,
+          "2": 110,
+          "3": 110,
+          "4": 110,
+          "5": 110,
+          "6": 110,
+          "7": 110,
+          "8": 110,
+          "9": 110,
+          "10": 110,
+          "11": 110,
+          "12": 110,
+          "13": 110,
+          "14": 110,
+          "15": 110,
+          "16": 110,
+          "17": 110,
+          "18": 110,
+          "19": 110,
+          "20": 110
+        },
+        "subjects": [
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22"
+        ],
+        "exact_float32_roundtrip": true
+      },
+      "TEST": {
+        "cases": 800,
+        "shape": [
+          800,
+          8,
+          16128
+        ],
+        "class_counts": {
+          "1": 40,
+          "2": 40,
+          "3": 40,
+          "4": 40,
+          "5": 40,
+          "6": 40,
+          "7": 40,
+          "8": 40,
+          "9": 40,
+          "10": 40,
+          "11": 40,
+          "12": 40,
+          "13": 40,
+          "14": 40,
+          "15": 40,
+          "16": 40,
+          "17": 40,
+          "18": 40,
+          "19": 40,
+          "20": 40
+        },
+        "subjects": [
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30"
+        ],
+        "exact_float32_roundtrip": true
+      }
+    },
+    "metadata_rows_verified": 3000,
+    "subject_overlap": [],
+    "duplicate_cases_across_splits": 0,
+    "duplicates_within_partitions": 0,
+    "channel_order_verified_every_recording": true,
+    "all_exported_cases_finite": true,
+    "aeon": {
+      "passed": true,
+      "aeon_version": "1.5.0",
+      "classifier": "SummaryClassifier",
+      "train_cases": 40,
+      "test_cases": 40,
+      "scope": "Representative all-class .ts check; full numeric readback independently covers every case"
+    },
+    "source_timing": {
+      "nominal_window_seconds": 31.5,
+      "max_cycle_deviation_samples": 104.19999999999891,
+      "trials_with_cycle_deviation_over_100ms": 2,
+      "policy": "Preserve original marker times and samples; report drift without time warping. Trial count, labels, complete windows and non-overlap remain mandatory."
+    }
+  }
+}

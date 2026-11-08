@@ -1,0 +1,67 @@
+{
+  "updated": "2026-11-08",
+  "registered_before": 74,
+  "selected_before": 70,
+  "motor_imagery_before": 22,
+  "stage": "Leeuwis and Polo fully validated; Batista full4117case export complete and TRAIN exact readback passed, TEST/final checks running",
+  "datasets": {
+    "batista": {
+      "source": "Batista2022",
+      "name": "ImaginedHandsHaptics",
+      "pilot_state": ".openeegbench/mi-next/batista-pilot.json",
+      "download_state": ".openeegbench/mi-next/batista-download-full.json"
+    },
+    "polo": {
+      "source": "PoloHortiguela2025",
+      "name": "ImaginedAnkleRest",
+      "pilot_state": ".openeegbench/mi-next/polo-pilot.json",
+      "download_state": ".openeegbench/mi-next/polo-download-full.json"
+    },
+    "leeuwis": {
+      "source": "Leeuwis2021",
+      "name": "ImaginedHandsFeedback",
+      "pilot_state": ".openeegbench/mi-next/leeuwis-pilot.json",
+      "download_state": ".openeegbench/mi-next/leeuwis-download-full.json"
+    }
+  },
+  "no_uploads": true,
+  "pilot_results": {
+    "batista": {
+      "train": 209,
+      "test": 196,
+      "channels": 32,
+      "timepoints": 2497,
+      "aeon_passed": true
+    },
+    "polo": {
+      "train": 33,
+      "test": 33,
+      "channels": 28,
+      "timepoints": 1000,
+      "aeon_passed": true
+    },
+    "leeuwis": {
+      "train": 160,
+      "test": 160,
+      "channels": 16,
+      "timepoints": 1250,
+      "aeon_passed": true
+    }
+  },
+  "tests": "88passed",
+  "orchestrator": ".openeegbench/mi-next/cohort-orchestrator.json",
+  "native_batista_audit": {
+    "recordings": 99,
+    "cues": 4127,
+    "eligible": 4117,
+    "common_window_samples": 2495,
+    "missing_condition": "sub-13 MIMOVRHP",
+    "auxiliary_variation": "Native32EEG invariant; two excluded auxiliary schemas",
+    "missing_coordinate_tables": 24
+  },
+  "worker_states": {
+    "batista": ".openeegbench/mi-next/batista-full.json",
+    "polo": ".openeegbench/mi-next/polo-full.json",
+    "leeuwis": ".openeegbench/mi-next/leeuwis-full.json"
+  }
+}

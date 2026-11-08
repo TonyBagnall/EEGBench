@@ -1,0 +1,127 @@
+{
+  "files": [
+    {
+      "id": 9700792,
+      "name": "KI.rar",
+      "size": 1755269242,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/9700792",
+      "supplied_md5": "1d349c194f98ccdfab4f7328e1908704",
+      "computed_md5": "1d349c194f98ccdfab4f7328e1908704",
+      "mimetype": "application/x-rar"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 4577305,
+      "full_name": "Xin Zhang",
+      "first_name": "Xin",
+      "last_name": "Zhang",
+      "is_active": true,
+      "url_name": "Xin_Zhang",
+      "orcid_id": ""
+    },
+    {
+      "id": 337256,
+      "full_name": "Carlo Menon",
+      "first_name": "Carlo",
+      "last_name": "Menon",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 715992,
+      "full_name": "Xinyi Yong",
+      "first_name": "Xinyi",
+      "last_name": "Yong",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Evaluating_the_versatility_of_EEG_models_generated_from_motor_imagery_tasks_an_exploratory_investigation_on_upper-limb_elbow-centered_motor_imagery_tasks/5579461",
+  "download_disabled": false,
+  "description": "Electroencephalography (EEG) has recently been considered for use in rehabilitation of people with motor deficits. EEG data from the motor imagery of different body movements have been used, for instance, as an EEG-based control method to send commands to rehabilitation devices that assist people to perform a variety of different motor tasks. However, it is both time and effort consuming to go through data collection and model training for every rehabilitation task. In this paper, we investigate the possibility of using an EEG model from one type of motor imagery (e.g.: elbow extension and flexion) to classify EEG from other types of motor imagery activities (e.g.: open a drawer). In order to study the problem, we focused on the elbow joint. Specifically, nine kinesthetic motor imagery tasks involving the elbow were investigated in twelve healthy individuals who participated in the study. While results reported that models from goal-oriented motor imagery tasks had higher accuracy than models from the simple joint tasks in intra-task testing (e.g., model from elbow extension and flexion task was tested on EEG data collected from elbow extension and flexion task), models from simple joint tasks had higher accuracies than the others in inter-task testing (e.g., model from elbow extension and flexion task task tested on EEG data collected from drawer opening task). Simple single joint motor imagery tasks could, therefore, be considered for training models to potentially reduce the number of repetitive data acquisitions and model training in rehabilitation applications.",
+  "funding": "Canadian Institutes of Health Research, Natural Sciences and Engineering Research Council of Canada, Canada Research Chair, Government of Canada, China Scholarship Council",
+  "funding_list": [
+    {
+      "id": 256046,
+      "title": "Canadian Institutes of Health Research, Natural Sciences and Engineering Research Council of Canada, Canada Research Chair, Government of Canada, China Scholarship Council",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    }
+  ],
+  "version": 1,
+  "status": "public",
+  "size": 1755269242,
+  "created_date": "2017-11-08T20:35:16Z",
+  "modified_date": "2017-11-08T20:35:17Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "Electroencephalography (EEG)",
+    "motor imagery tasks",
+    "single joint motor imagery",
+    "goal-oriented motor imagery",
+    "Biomedical Engineering not elsewhere classified"
+  ],
+  "keywords": [
+    "Electroencephalography (EEG)",
+    "motor imagery tasks",
+    "single joint motor imagery",
+    "goal-oriented motor imagery",
+    "Biomedical Engineering not elsewhere classified"
+  ],
+  "categories": [
+    {
+      "id": 26299,
+      "title": "Biomedical engineering not elsewhere classified",
+      "parent_id": 26263,
+      "path": "/26212/26263/26299",
+      "source_id": "400399",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Zhang, Xin; Menon, Carlo; Yong, Xinyi (2017). Evaluating the versatility of EEG models generated from motor imagery tasks: an exploratory investigation on upper-limb elbow-centered motor imagery tasks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.5579461.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": "file",
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 5579461,
+  "title": "Evaluating the versatility of EEG models generated from motor imagery tasks: an exploratory investigation on upper-limb elbow-centered motor imagery tasks",
+  "doi": "10.6084/m9.figshare.5579461.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/5579461",
+  "published_date": "2017-11-08T20:35:16Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/5579461",
+  "url_public_api": "https://api.figshare.com/v2/articles/5579461",
+  "url_private_html": "https://figshare.com/account/articles/5579461",
+  "url_public_html": "https://figshare.com/articles/dataset/Evaluating_the_versatility_of_EEG_models_generated_from_motor_imagery_tasks_an_exploratory_investigation_on_upper-limb_elbow-centered_motor_imagery_tasks/5579461",
+  "timeline": {
+    "posted": "2017-11-08T20:35:16",
+    "firstOnline": "2017-11-08"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

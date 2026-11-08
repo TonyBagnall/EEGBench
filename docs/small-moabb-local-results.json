@@ -1,0 +1,547 @@
+[
+  {
+    "dataset": "FlickerTargets",
+    "source_key": "nakanishi",
+    "train_cases": 1440,
+    "test_cases": 360,
+    "subjects": 10,
+    "channels": 8,
+    "timepoints": 1114,
+    "classes": 12,
+    "frequency": 256,
+    "size_GB": 0.173844683,
+    "licence": "Unspecified original data licence; public author release",
+    "validation": {
+      "partitions": {
+        "TRAIN": {
+          "cases": 1440,
+          "shape": [
+            1440,
+            8,
+            1114
+          ],
+          "class_counts": {
+            "1": 120,
+            "2": 120,
+            "3": 120,
+            "4": 120,
+            "5": 120,
+            "6": 120,
+            "7": 120,
+            "8": 120,
+            "9": 120,
+            "10": 120,
+            "11": 120,
+            "12": 120
+          },
+          "subjects": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        },
+        "TEST": {
+          "cases": 360,
+          "shape": [
+            360,
+            8,
+            1114
+          ],
+          "class_counts": {
+            "1": 30,
+            "2": 30,
+            "3": 30,
+            "4": 30,
+            "5": 30,
+            "6": 30,
+            "7": 30,
+            "8": 30,
+            "9": 30,
+            "10": 30,
+            "11": 30,
+            "12": 30
+          },
+          "subjects": [
+            "09",
+            "10"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        }
+      },
+      "cross_split_duplicate_cases": 0,
+      "cross_split_overlapping_intervals": 0,
+      "shared_subjects": [],
+      "shared_subjects_intentional": false,
+      "split_unit": "subject",
+      "channel_names_and_order_verified_for_all_recordings": true,
+      "aeon": {
+        "load_fit_predict": true,
+        "train_cases": 36,
+        "test_cases": 36
+      }
+    }
+  },
+  {
+    "dataset": "ImaginedHandSides",
+    "source_key": "bci2b",
+    "train_cases": 3680,
+    "test_cases": 2840,
+    "subjects": 9,
+    "channels": 3,
+    "timepoints": 1125,
+    "classes": 2,
+    "frequency": 250,
+    "size_GB": 0.422863373,
+    "licence": "CC-BY-ND-4.0",
+    "validation": {
+      "partitions": {
+        "TRAIN": {
+          "cases": 3680,
+          "shape": [
+            3680,
+            3,
+            1125
+          ],
+          "class_counts": {
+            "1": 1840,
+            "2": 1840
+          },
+          "subjects": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        },
+        "TEST": {
+          "cases": 2840,
+          "shape": [
+            2840,
+            3,
+            1125
+          ],
+          "class_counts": {
+            "2": 1420,
+            "1": 1420
+          },
+          "subjects": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        }
+      },
+      "cross_split_duplicate_cases": 0,
+      "cross_split_overlapping_intervals": 0,
+      "shared_subjects": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "shared_subjects_intentional": true,
+      "split_unit": "official",
+      "channel_names_and_order_verified_for_all_recordings": true,
+      "aeon": {
+        "load_fit_predict": true,
+        "train_cases": 6,
+        "test_cases": 6
+      }
+    }
+  },
+  {
+    "dataset": "SpellerFlashes",
+    "source_key": "speller",
+    "train_cases": 12600,
+    "test_cases": 12600,
+    "subjects": 10,
+    "channels": 8,
+    "timepoints": 205,
+    "classes": 2,
+    "frequency": 256,
+    "size_GB": 0.794604411,
+    "licence": "CC-BY-NC-ND-4.0",
+    "validation": {
+      "partitions": {
+        "TRAIN": {
+          "cases": 12600,
+          "shape": [
+            12600,
+            8,
+            205
+          ],
+          "class_counts": {
+            "1": 11250,
+            "2": 1350
+          },
+          "subjects": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        },
+        "TEST": {
+          "cases": 12600,
+          "shape": [
+            12600,
+            8,
+            205
+          ],
+          "class_counts": {
+            "1": 11250,
+            "2": 1350
+          },
+          "subjects": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        }
+      },
+      "cross_split_duplicate_cases": 0,
+      "cross_split_overlapping_intervals": 0,
+      "shared_subjects": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "shared_subjects_intentional": true,
+      "split_unit": "official",
+      "channel_names_and_order_verified_for_all_recordings": true,
+      "aeon": {
+        "load_fit_predict": true,
+        "train_cases": 6,
+        "test_cases": 6
+      }
+    }
+  },
+  {
+    "dataset": "ALSAttention",
+    "source_key": "als",
+    "train_cases": 14400,
+    "test_cases": 19200,
+    "subjects": 8,
+    "channels": 8,
+    "timepoints": 256,
+    "classes": 2,
+    "frequency": 256,
+    "size_GB": 1.315511422,
+    "licence": "CC-BY-NC-ND-4.0",
+    "validation": {
+      "partitions": {
+        "TRAIN": {
+          "cases": 14400,
+          "shape": [
+            14400,
+            8,
+            256
+          ],
+          "class_counts": {
+            "1": 12000,
+            "2": 2400
+          },
+          "subjects": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        },
+        "TEST": {
+          "cases": 19200,
+          "shape": [
+            19200,
+            8,
+            256
+          ],
+          "class_counts": {
+            "1": 16000,
+            "2": 3200
+          },
+          "subjects": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        }
+      },
+      "cross_split_duplicate_cases": 0,
+      "cross_split_overlapping_intervals": 0,
+      "shared_subjects": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "shared_subjects_intentional": true,
+      "split_unit": "official",
+      "channel_names_and_order_verified_for_all_recordings": true,
+      "aeon": {
+        "load_fit_predict": true,
+        "train_cases": 6,
+        "test_cases": 6
+      }
+    }
+  },
+  {
+    "dataset": "ImaginedHandsFeet",
+    "source_key": "zhou",
+    "train_cases": 1365,
+    "test_cases": 435,
+    "subjects": 4,
+    "channels": 13,
+    "timepoints": 1250,
+    "classes": 3,
+    "frequency": 250,
+    "size_GB": 0.559024502,
+    "licence": "CC-BY-4.0 (pinned BIDS release)",
+    "validation": {
+      "partitions": {
+        "TRAIN": {
+          "cases": 1365,
+          "shape": [
+            1365,
+            13,
+            1250
+          ],
+          "class_counts": {
+            "1": 456,
+            "2": 455,
+            "3": 454
+          },
+          "subjects": [
+            "01",
+            "02",
+            "03"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        },
+        "TEST": {
+          "cases": 435,
+          "shape": [
+            435,
+            13,
+            1250
+          ],
+          "class_counts": {
+            "1": 145,
+            "2": 145,
+            "3": 145
+          },
+          "subjects": [
+            "04"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        }
+      },
+      "cross_split_duplicate_cases": 0,
+      "cross_split_overlapping_intervals": 0,
+      "shared_subjects": [],
+      "shared_subjects_intentional": false,
+      "split_unit": "subject",
+      "channel_names_and_order_verified_for_all_recordings": true,
+      "aeon": {
+        "load_fit_predict": true,
+        "train_cases": 9,
+        "test_cases": 9
+      }
+    }
+  },
+  {
+    "dataset": "WirelessFlicker",
+    "source_key": "mamem3",
+    "train_cases": 1000,
+    "test_cases": 375,
+    "subjects": 11,
+    "channels": 14,
+    "timepoints": 640,
+    "classes": 5,
+    "frequency": 128,
+    "size_GB": 0.224319091,
+    "licence": "CC-BY-4.0",
+    "validation": {
+      "partitions": {
+        "TRAIN": {
+          "cases": 1000,
+          "shape": [
+            1000,
+            14,
+            640
+          ],
+          "class_counts": {
+            "4": 200,
+            "2": 200,
+            "3": 240,
+            "5": 160,
+            "1": 200
+          },
+          "subjects": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005",
+            "006",
+            "007",
+            "008"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        },
+        "TEST": {
+          "cases": 375,
+          "shape": [
+            375,
+            14,
+            640
+          ],
+          "class_counts": {
+            "4": 75,
+            "2": 75,
+            "3": 90,
+            "5": 60,
+            "1": 75
+          },
+          "subjects": [
+            "009",
+            "010",
+            "011"
+          ],
+          "exact_float64_roundtrip": true,
+          "metadata_rows_verified": true,
+          "finite": true,
+          "exact_constant_pairs": 0,
+          "aeon_tiny_nonconstant_pairs": 0,
+          "within_split_duplicate_cases": 0
+        }
+      },
+      "cross_split_duplicate_cases": 0,
+      "cross_split_overlapping_intervals": 0,
+      "shared_subjects": [],
+      "shared_subjects_intentional": false,
+      "split_unit": "subject",
+      "channel_names_and_order_verified_for_all_recordings": true,
+      "aeon": {
+        "load_fit_predict": true,
+        "train_cases": 15,
+        "test_cases": 15
+      }
+    }
+  }
+]

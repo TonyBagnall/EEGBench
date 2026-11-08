@@ -1,0 +1,38 @@
+[
+  {
+    "source_epoch_index": 1653,
+    "first_epoch_index": 1652,
+    "label": 4,
+    "first_label": 4,
+    "exemplar": 44,
+    "first_exemplar": 38,
+    "sha256": "112977c919095718f251a5153f2d446bcf75857ee068b198910a3de1f47556d5"
+  },
+  {
+    "source_epoch_index": 2840,
+    "first_epoch_index": 2839,
+    "label": 1,
+    "first_label": 1,
+    "exemplar": 11,
+    "first_exemplar": 10,
+    "sha256": "3318025f6e27c8aed7994b3ddea7c940aa354696d793ac92055608792af7b327"
+  },
+  {
+    "source_epoch_index": 3263,
+    "first_epoch_index": 3262,
+    "label": 6,
+    "first_label": 1,
+    "exemplar": 66,
+    "first_exemplar": 2,
+    "sha256": "81389818c7193b70b4f5ca3e1fd9557885aab7fff3653c89ca496175f1f938ba"
+  },
+  {
+    "source_epoch_index": 4178,
+    "first_epoch_index": 4177,
+    "label": 3,
+    "first_label": 3,
+    "exemplar": 33,
+    "first_exemplar": 25,
+    "sha256": "d50cd5410342670121106d571402d6ceccae503cb73cffd73fabffbe379295ee"
+  }
+]

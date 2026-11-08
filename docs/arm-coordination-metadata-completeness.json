@@ -1,0 +1,35 @@
+{
+  "direct": [
+    "native EEG labels/order/units/resolution/fs",
+    "source file/marker line/position/time",
+    "participant age/gender/handedness/date/cap token and notes"
+  ],
+  "documented": [
+    "sensor roles",
+    "FCz reference/AFz ground",
+    "source marker meanings",
+    "XP01 split-set relationship"
+  ],
+  "assigned": [
+    "class encoding",
+    "whole-subject split",
+    "date-based session grouping",
+    "interval flag association"
+  ],
+  "missing": [
+    "original distinct visit ID",
+    "individual electrode geometry",
+    "original timezone",
+    "complete original trial ID/flag matching"
+  ],
+  "inconsistencies": [
+    "Original session IDs not embedded; date grouping is assigned and documented",
+    "Native marker keys repeat; line ordinal and sample position uniquely identify source annotations",
+    "Native source includes2003 selected motion onsets, exceeding nominal1920; all kept with interval flags, not forced to paper valid-trial subset",
+    "S26/S28 semantics not supplied in README; preserve raw codes. S3=error, S27=excluded-event, S128=correct-trial end; interval flags do not establish original trial identity",
+    "XP01 set3/4 jointly complete interrupted unilateral logical set3; retain physical recording boundaries",
+    "Native hardware/software filter tables differ; preserve both, MNE lowpass249Hz alone omits hardware131Hz",
+    "AV82 participant metadata lists filenames with20211210, while experiment date and actual filenames agree20211220",
+    "Individual sensor positions and original timezone not established; no standard geometry or timezone invented"
+  ]
+}

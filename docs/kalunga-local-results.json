@@ -1,0 +1,135 @@
+{
+  "dataset": "FlickerAttention",
+  "train_cases": 576,
+  "test_cases": 352,
+  "subjects": 12,
+  "recordings": 29,
+  "channels": 8,
+  "timepoints": 512,
+  "classes": 4,
+  "frequency": 256,
+  "size_GB": 0.054792,
+  "licence": "CC-BY-4.0",
+  "class_counts": {
+    "train": {
+      "1": 144,
+      "2": 144,
+      "3": 144,
+      "4": 144
+    },
+    "test": {
+      "1": 88,
+      "2": 88,
+      "3": 88,
+      "4": 88
+    }
+  },
+  "validation": {
+    "quality_status": "passed",
+    "partitions": {
+      "TRAIN": {
+        "cases": 576,
+        "shape": [
+          576,
+          8,
+          512
+        ],
+        "class_counts": {
+          "1": 144,
+          "2": 144,
+          "3": 144,
+          "4": 144
+        },
+        "subjects": [
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09"
+        ],
+        "recordings": [
+          "subject01_run1",
+          "subject01_run2",
+          "subject02_run1",
+          "subject02_run2",
+          "subject03_run1",
+          "subject03_run2",
+          "subject04_run1",
+          "subject04_run2",
+          "subject05_run1",
+          "subject05_run2",
+          "subject06_run1",
+          "subject06_run2",
+          "subject07_run2",
+          "subject07_run3",
+          "subject08_run1",
+          "subject08_run2",
+          "subject09_run1",
+          "subject09_run2"
+        ],
+        "exact_float32_roundtrip": true,
+        "metadata_rows_verified": true
+      },
+      "TEST": {
+        "cases": 352,
+        "shape": [
+          352,
+          8,
+          512
+        ],
+        "class_counts": {
+          "1": 88,
+          "2": 88,
+          "3": 88,
+          "4": 88
+        },
+        "subjects": [
+          "10",
+          "11",
+          "12"
+        ],
+        "recordings": [
+          "subject10_run1",
+          "subject10_run2",
+          "subject10_run3",
+          "subject10_run4",
+          "subject11_run1",
+          "subject11_run2",
+          "subject12_run1",
+          "subject12_run2",
+          "subject12_run3",
+          "subject12_run4",
+          "subject12_run5"
+        ],
+        "exact_float32_roundtrip": true,
+        "metadata_rows_verified": true
+      }
+    },
+    "aeon": {
+      "passed": true,
+      "aeon_version": "1.5.0",
+      "classifier": "SummaryClassifier",
+      "train_cases": 8,
+      "test_cases": 8,
+      "note": "Representative four-class compatibility check, not benchmark results."
+    },
+    "metadata_rows_verified": 928,
+    "subject_overlap": [],
+    "cross_split_duplicate_signal_hashes": 0,
+    "duplicate_signal_cases_remaining": 0,
+    "dropped_events": [],
+    "channel_order_verified": true,
+    "max_float32_cast_absolute_error_source_units": 0.0
+  },
+  "missing_metadata": [
+    "verified physical signal units/calibration",
+    "verified sensor coordinates in metres",
+    "original session labels",
+    "reference laterality",
+    "true subject ownership of duplicate 03/07 recording"
+  ]
+}

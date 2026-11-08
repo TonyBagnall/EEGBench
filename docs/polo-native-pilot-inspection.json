@@ -1,0 +1,204 @@
+{
+  "source": "B01 native original repetition01",
+  "native_shape": {
+    "shape": [
+      35,
+      21125
+    ],
+    "dtype": "float64"
+  },
+  "native_dtype": "float64",
+  "device": {
+    "option_selected": [
+      [
+        "b''",
+        "b'MCOS'",
+        "b'string'",
+        "[3707764736          2          1          1          2          1]"
+      ]
+    ],
+    "activated": 1,
+    "mode": 1,
+    "start_order": 7,
+    "disconnectAtEnd": 0,
+    "fm": 250,
+    "shift": 125,
+    "electrodes_names_selected": [
+      "AF3",
+      "F3",
+      "FZ",
+      "FC3",
+      "FC1",
+      "FCZ",
+      "C5",
+      "C3",
+      "C1",
+      "CZ",
+      "CP3",
+      "CP1",
+      "CPZ",
+      "P3",
+      "PZ",
+      "PO3",
+      "AF4",
+      "F4",
+      "FC2",
+      "FC4",
+      "C2",
+      "C4",
+      "C6",
+      "CP2",
+      "CP4",
+      "P4",
+      "POZ",
+      "PO4",
+      "VU",
+      "VD",
+      "HR",
+      "HL",
+      "AX",
+      "AY",
+      "AZ"
+    ],
+    "electrodeEyes_names_selected": [
+      "HL",
+      "HR",
+      "VD",
+      "VU"
+    ],
+    "electrodes_names_inertial": [
+      "AX",
+      "AY",
+      "AZ"
+    ],
+    "electrode_positions_x": [
+      -0.178501099687918,
+      -0.296077061122885,
+      0.0,
+      -0.361276711851371,
+      -0.182117901617289,
+      0.0,
+      -0.576923076923077,
+      -0.384615384615385,
+      -0.192307692307693,
+      0.0,
+      -0.361276711851371,
+      -0.182117901617289,
+      0.0,
+      -0.296077061122885,
+      0.0,
+      -0.178501099687918,
+      0.178501099687918,
+      0.296077061122885,
+      0.182117901617289,
+      0.361276711851371,
+      0.192307692307693,
+      0.384615384615385,
+      0.576923076923077,
+      0.182117901617289,
+      0.361276711851371,
+      0.296077061122885,
+      0.0,
+      0.178501099687918,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "electrode_positions_y": [
+      0.609440875453003,
+      0.418716195347552,
+      0.384615384615385,
+      0.219711342316326,
+      0.197122996244171,
+      0.197122996244171,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.219711342316326,
+      -0.197122996244171,
+      -0.197122996244171,
+      -0.418716195347552,
+      -0.384615384615385,
+      -0.609440875453003,
+      0.609440875453003,
+      0.418716195347552,
+      0.197122996244171,
+      0.219711342316326,
+      0.0,
+      0.0,
+      0.0,
+      -0.197122996244171,
+      -0.219711342316326,
+      -0.418716195347552,
+      -0.609440875453003,
+      -0.609440875453003,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "acquisition_user_code": "B01",
+  "acquisition_mode": "Static",
+  "acquisition_file_name": "B01_20230608_openloop_01_overwritten_01",
+  "task_sequence": [
+    110,
+    210,
+    211,
+    310,
+    311,
+    210,
+    211,
+    911,
+    99
+  ],
+  "task_times": [
+    15.0,
+    2.0,
+    15.0,
+    2.0,
+    28.0,
+    2.0,
+    15.0,
+    5.0,
+    0.5
+  ],
+  "preprocessing_step_table": {
+    "ListPreprocessingSteps": [
+      {
+        "PreprocessingFilter": "no-filtered",
+        "First": 1,
+        "Last": 35
+      },
+      {
+        "PreprocessingFilter": "Hinfinity",
+        "First": 36,
+        "Last": 70
+      },
+      {
+        "PreprocessingFilter": "high_pass_filter",
+        "First": 71,
+        "Last": 105
+      },
+      {
+        "PreprocessingFilter": "normalize_data",
+        "First": 106,
+        "Last": 140
+      }
+    ],
+    "previousPreprocessingSteps": {
+      "PreprocessingFilter": "normalize_data",
+      "First": 106,
+      "Last": 140
+    }
+  },
+  "note": "Raw data_EEG selected; algorithm state/opaque MATLAB string objects omitted from this compact summary; original MAT retained on D"
+}

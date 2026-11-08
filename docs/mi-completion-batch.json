@@ -1,0 +1,49 @@
+{
+  "updated": "2026-11-08",
+  "registered": 74,
+  "selected": 70,
+  "motor_imagery_problems": 22,
+  "scalp_eeg_motor_imagery_problems": 21,
+  "datasets": [
+    {
+      "dataset": "ImaginedHandsRobot",
+      "train_cases": 2880,
+      "test_cases": 2880,
+      "subjects": 12,
+      "channels": 32,
+      "timepoints": 1000,
+      "classes": 2,
+      "frequency": 250,
+      "size_GB": 3.509394523,
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "dataset": "ImaginedGrasps",
+      "train_cases": 4500,
+      "test_cases": 2250,
+      "subjects": 15,
+      "channels": 60,
+      "timepoints": 1000,
+      "classes": 3,
+      "frequency": 250,
+      "size_GB": 7.688085485,
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "dataset": "ImaginedHandsEmbodiment",
+      "train_cases": 798,
+      "test_cases": 240,
+      "subjects": 26,
+      "channels": 32,
+      "timepoints": 4997,
+      "classes": 2,
+      "frequency": 500,
+      "size_GB": 2.276832733,
+      "licence": "CC-BY-4.0"
+    }
+  ],
+  "validation": "Every numeric case exact float64 .ts readback and metadata/label/hash alignment; all source sensor orders verified; no exact duplicate cases; aeon load/fit/predict smoke passed; see per-dataset full reports",
+  "storage": "D:/Data/EEG",
+  "next_candidate": "Batista2022, not downloaded in this batch",
+  "no_uploads": true
+}

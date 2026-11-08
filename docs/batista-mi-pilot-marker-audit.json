@@ -1,0 +1,381 @@
+[
+  {
+    "zip": "sub-01.zip",
+    "file": "sub-01/ses-lab1/task/MI/sub-01_ses-lab1_task-grazMI.vmrk",
+    "cues": 42,
+    "ends": {
+      "2500": 34,
+      "2501": 4,
+      "2499": 4
+    },
+    "gaps": [],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20220224204008183337"
+      }
+    ]
+  },
+  {
+    "zip": "sub-01.zip",
+    "file": "sub-01/ses-lab1/task/MIMO/sub-01_ses-lab1_task-neurowMIMO.vmrk",
+    "cues": 42,
+    "ends": {
+      "2499": 8,
+      "2500": 26,
+      "2501": 7,
+      "2498": 1
+    },
+    "gaps": [
+      {
+        "marker_key": "Mk171",
+        "marker_line_number_1based": 182,
+        "marker_ordinal": 170,
+        "type": "New Segment",
+        "description": "LostSamples: 2",
+        "code": "LostSamples:2",
+        "position_1based": 188786,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20220224205612152287"
+      }
+    ],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20220224204954571215"
+      },
+      {
+        "marker_key": "Mk171",
+        "marker_line_number_1based": 182,
+        "marker_ordinal": 170,
+        "type": "New Segment",
+        "description": "LostSamples: 2",
+        "code": "LostSamples:2",
+        "position_1based": 188786,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20220224205612152287"
+      }
+    ]
+  },
+  {
+    "zip": "sub-01.zip",
+    "file": "sub-01/ses-lab1/task/MIMOHP/sub-01_ses-lab1_task-neurowMIMOHP.vmrk",
+    "cues": 42,
+    "ends": {
+      "2500": 28,
+      "2501": 8,
+      "2499": 6
+    },
+    "gaps": [],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20220224195104223784"
+      }
+    ]
+  },
+  {
+    "zip": "sub-01.zip",
+    "file": "sub-01/ses-lab1/task/MIMOHPVR/sub-01_ses-lab1_task-neurowMIMOVRHP.vmrk",
+    "cues": 42,
+    "ends": {
+      "2500": 33,
+      "2499": 4,
+      "2501": 5
+    },
+    "gaps": [],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20220224201534743541"
+      }
+    ]
+  },
+  {
+    "zip": "sub-01.zip",
+    "file": "sub-01/ses-lab1/task/MIMOVR/sub-01_ses-lab1_task-neurowMIMOVR.vmrk",
+    "cues": 42,
+    "ends": {
+      "2500": 31,
+      "2499": 7,
+      "2501": 3,
+      "2497": 1
+    },
+    "gaps": [],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20220224200503115055"
+      }
+    ]
+  },
+  {
+    "zip": "sub-p03.zip",
+    "file": "sub-p03/ses-pilot1/task/MI/sub-03_ses-pilot1_task-grazMI.vmrk",
+    "cues": 40,
+    "ends": {
+      "2508": 34,
+      "2509": 4,
+      "2507": 2
+    },
+    "gaps": [],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025153529026624"
+      }
+    ]
+  },
+  {
+    "zip": "sub-p03.zip",
+    "file": "sub-p03/ses-pilot1/task/MIMO/sub-03_ses-pilot1_task-neurowMIMO.vmrk",
+    "cues": 40,
+    "ends": {
+      "2500": 32,
+      "2496": 1,
+      "2499": 5,
+      "2501": 2
+    },
+    "gaps": [
+      {
+        "marker_key": "Mk24",
+        "marker_line_number_1based": 35,
+        "marker_ordinal": 23,
+        "type": "New Segment",
+        "description": "LostSamples: 3",
+        "code": "LostSamples:3",
+        "position_1based": 30583,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025154838909235"
+      }
+    ],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025154737736413"
+      },
+      {
+        "marker_key": "Mk24",
+        "marker_line_number_1based": 35,
+        "marker_ordinal": 23,
+        "type": "New Segment",
+        "description": "LostSamples: 3",
+        "code": "LostSamples:3",
+        "position_1based": 30583,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025154838909235"
+      }
+    ]
+  },
+  {
+    "zip": "sub-p03.zip",
+    "file": "sub-p03/ses-pilot1/task/MIMOHP/sub-03_ses-pilot1_task-neurowMIMOHP.vmrk",
+    "cues": 40,
+    "ends": {
+      "2500": 26,
+      "2499": 5,
+      "2501": 8,
+      "2497": 1
+    },
+    "gaps": [
+      {
+        "marker_key": "Mk138",
+        "marker_line_number_1based": 149,
+        "marker_ordinal": 137,
+        "type": "New Segment",
+        "description": "LostSamples: 2",
+        "code": "LostSamples:2",
+        "position_1based": 160204,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025160204206054"
+      }
+    ],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025155643789749"
+      },
+      {
+        "marker_key": "Mk138",
+        "marker_line_number_1based": 149,
+        "marker_ordinal": 137,
+        "type": "New Segment",
+        "description": "LostSamples: 2",
+        "code": "LostSamples:2",
+        "position_1based": 160204,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025160204206054"
+      }
+    ]
+  },
+  {
+    "zip": "sub-p03.zip",
+    "file": "sub-p03/ses-pilot1/task/MIMOHPVR/sub-03_ses-pilot1_task-neurowMIMOVRHP.vmrk",
+    "cues": 39,
+    "ends": {
+      "2501": 5,
+      "2500": 26,
+      "2499": 7,
+      "2211": 1
+    },
+    "gaps": [
+      {
+        "marker_key": "Mk129",
+        "marker_line_number_1based": 140,
+        "marker_ordinal": 128,
+        "type": "New Segment",
+        "description": "LostSamples: 10",
+        "code": "LostSamples:10",
+        "position_1based": 150400,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025162020476782"
+      },
+      {
+        "marker_key": "Mk130",
+        "marker_line_number_1based": 141,
+        "marker_ordinal": 129,
+        "type": "New Segment",
+        "description": "LostSamples: 5965",
+        "code": "LostSamples:5965",
+        "position_1based": 150401,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025162032428783"
+      }
+    ],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025161519652740"
+      },
+      {
+        "marker_key": "Mk129",
+        "marker_line_number_1based": 140,
+        "marker_ordinal": 128,
+        "type": "New Segment",
+        "description": "LostSamples: 10",
+        "code": "LostSamples:10",
+        "position_1based": 150400,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025162020476782"
+      },
+      {
+        "marker_key": "Mk130",
+        "marker_line_number_1based": 141,
+        "marker_ordinal": 129,
+        "type": "New Segment",
+        "description": "LostSamples: 5965",
+        "code": "LostSamples:5965",
+        "position_1based": 150401,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025162032428783"
+      }
+    ]
+  },
+  {
+    "zip": "sub-p03.zip",
+    "file": "sub-p03/ses-pilot1/task/MIMOVR/sub-03_ses-pilot1_task-neurowMIMOVR.vmrk",
+    "cues": 40,
+    "ends": {
+      "2500": 35,
+      "2501": 2,
+      "2499": 3
+    },
+    "gaps": [],
+    "segments": [
+      {
+        "marker_key": "Mk1",
+        "marker_line_number_1based": 12,
+        "marker_ordinal": 0,
+        "type": "New Segment",
+        "description": "",
+        "code": "",
+        "position_1based": 1,
+        "duration_samples": 1,
+        "channel": "0",
+        "timestamp": "20211025162449110231"
+      }
+    ]
+  }
+]

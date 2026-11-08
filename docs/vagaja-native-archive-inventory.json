@@ -1,0 +1,1574 @@
+[
+  {
+    "name": "Control/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB25/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB25/SUB25_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 233137094
+  },
+  {
+    "name": "Control/SUB25/SUB25_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1895,
+    "crc32": 3782740344
+  },
+  {
+    "name": "Control/SUB25/SUB25_rest.eeg",
+    "bytes": 18955920,
+    "compressed_bytes": 12898028,
+    "crc32": 3491781382
+  },
+  {
+    "name": "Control/SUB25/SUB25_MI.vmrk",
+    "bytes": 8162,
+    "compressed_bytes": 2038,
+    "crc32": 2188799105
+  },
+  {
+    "name": "Control/SUB25/SUB25_MI.vhdr",
+    "bytes": 7227,
+    "compressed_bytes": 1879,
+    "crc32": 1565071649
+  },
+  {
+    "name": "Control/SUB25/SUB25_MI.eeg",
+    "bytes": 70909520,
+    "compressed_bytes": 48322319,
+    "crc32": 3730809190
+  },
+  {
+    "name": "Control/SUB25/SUB25_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 227448245
+  },
+  {
+    "name": "Control/SUB25/SUB25_embodiment.vhdr",
+    "bytes": 7243,
+    "compressed_bytes": 1866,
+    "crc32": 1876812415
+  },
+  {
+    "name": "Control/SUB25/SUB25_embodiment.eeg",
+    "bytes": 28044000,
+    "compressed_bytes": 19457246,
+    "crc32": 3414781415
+  },
+  {
+    "name": "Control/SUB28/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB28/SUB28_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 34660443
+  },
+  {
+    "name": "Control/SUB28/SUB28_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1889,
+    "crc32": 2164538126
+  },
+  {
+    "name": "Control/SUB28/SUB28_rest.eeg",
+    "bytes": 18869280,
+    "compressed_bytes": 13083137,
+    "crc32": 310405456
+  },
+  {
+    "name": "Control/SUB28/SUB28_MI.vmrk",
+    "bytes": 8228,
+    "compressed_bytes": 2073,
+    "crc32": 1229286191
+  },
+  {
+    "name": "Control/SUB28/SUB28_MI.vhdr",
+    "bytes": 7459,
+    "compressed_bytes": 1869,
+    "crc32": 975810343
+  },
+  {
+    "name": "Control/SUB28/SUB28_MI.eeg",
+    "bytes": 70611600,
+    "compressed_bytes": 48854561,
+    "crc32": 1757968058
+  },
+  {
+    "name": "Control/SUB28/SUB28_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 29383097
+  },
+  {
+    "name": "Control/SUB28/SUB28_embodiment.vhdr",
+    "bytes": 7499,
+    "compressed_bytes": 1885,
+    "crc32": 2140266216
+  },
+  {
+    "name": "Control/SUB28/SUB28_embodiment.eeg",
+    "bytes": 27630560,
+    "compressed_bytes": 19448180,
+    "crc32": 996102402
+  },
+  {
+    "name": "Control/SUB27/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB27/SUB27_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 356,
+    "crc32": 1366767614
+  },
+  {
+    "name": "Control/SUB27/SUB27_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1892,
+    "crc32": 2412972535
+  },
+  {
+    "name": "Control/SUB27/SUB27_rest.eeg",
+    "bytes": 19642960,
+    "compressed_bytes": 13569477,
+    "crc32": 2663932779
+  },
+  {
+    "name": "Control/SUB27/SUB27_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 1999,
+    "crc32": 3980986494
+  },
+  {
+    "name": "Control/SUB27/SUB27_MI.vhdr",
+    "bytes": 7427,
+    "compressed_bytes": 1870,
+    "crc32": 2736200603
+  },
+  {
+    "name": "Control/SUB27/SUB27_MI.eeg",
+    "bytes": 71283440,
+    "compressed_bytes": 49537357,
+    "crc32": 970171101
+  },
+  {
+    "name": "Control/SUB27/SUB27_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 831092527
+  },
+  {
+    "name": "Control/SUB27/SUB27_embodiment.vhdr",
+    "bytes": 7467,
+    "compressed_bytes": 1887,
+    "crc32": 1429899683
+  },
+  {
+    "name": "Control/SUB27/SUB27_embodiment.eeg",
+    "bytes": 26446480,
+    "compressed_bytes": 18767055,
+    "crc32": 3649252514
+  },
+  {
+    "name": "Control/SUB26/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB26/SUB26_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 2024392335
+  },
+  {
+    "name": "Control/SUB26/SUB26_rest.vhdr",
+    "bytes": 7239,
+    "compressed_bytes": 1875,
+    "crc32": 3821407053
+  },
+  {
+    "name": "Control/SUB26/SUB26_rest.eeg",
+    "bytes": 18670160,
+    "compressed_bytes": 13048412,
+    "crc32": 2183117428
+  },
+  {
+    "name": "Control/SUB26/SUB26_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 1996,
+    "crc32": 246246459
+  },
+  {
+    "name": "Control/SUB26/SUB26_MI.vhdr",
+    "bytes": 7307,
+    "compressed_bytes": 1869,
+    "crc32": 1825769101
+  },
+  {
+    "name": "Control/SUB26/SUB26_MI.eeg",
+    "bytes": 71243920,
+    "compressed_bytes": 49935993,
+    "crc32": 4066455400
+  },
+  {
+    "name": "Control/SUB26/SUB26_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 355,
+    "crc32": 361662501
+  },
+  {
+    "name": "Control/SUB26/SUB26_embodiment.vhdr",
+    "bytes": 7347,
+    "compressed_bytes": 1888,
+    "crc32": 4081568390
+  },
+  {
+    "name": "Control/SUB26/SUB26_embodiment.eeg",
+    "bytes": 26248880,
+    "compressed_bytes": 18447729,
+    "crc32": 3820763121
+  },
+  {
+    "name": "Control/SUB30/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB30/SUB30_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 2085050026
+  },
+  {
+    "name": "Control/SUB30/SUB30_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1900,
+    "crc32": 781670593
+  },
+  {
+    "name": "Control/SUB30/SUB30_rest.eeg",
+    "bytes": 18805440,
+    "compressed_bytes": 12717448,
+    "crc32": 1636374971
+  },
+  {
+    "name": "Control/SUB30/SUB30_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 2002,
+    "crc32": 3101974211
+  },
+  {
+    "name": "Control/SUB30/SUB30_MI.vhdr",
+    "bytes": 7491,
+    "compressed_bytes": 1876,
+    "crc32": 3819889078
+  },
+  {
+    "name": "Control/SUB30/SUB30_MI.eeg",
+    "bytes": 70938400,
+    "compressed_bytes": 47851290,
+    "crc32": 171799499
+  },
+  {
+    "name": "Control/SUB30/SUB30_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 3026305754
+  },
+  {
+    "name": "Control/SUB30/SUB30_embodiment.vhdr",
+    "bytes": 7219,
+    "compressed_bytes": 1890,
+    "crc32": 1764414254
+  },
+  {
+    "name": "Control/SUB30/SUB30_embodiment.eeg",
+    "bytes": 26972400,
+    "compressed_bytes": 18513065,
+    "crc32": 2527397715
+  },
+  {
+    "name": "Control/SUB18/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB18/SUB18_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 352001756
+  },
+  {
+    "name": "Control/SUB18/SUB18_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1913,
+    "crc32": 1423593723
+  },
+  {
+    "name": "Control/SUB18/SUB18_rest.eeg",
+    "bytes": 19158080,
+    "compressed_bytes": 13230826,
+    "crc32": 1696527474
+  },
+  {
+    "name": "Control/SUB18/SUB18_MI.vmrk",
+    "bytes": 8168,
+    "compressed_bytes": 2058,
+    "crc32": 1564185762
+  },
+  {
+    "name": "Control/SUB18/SUB18_MI.vhdr",
+    "bytes": 7475,
+    "compressed_bytes": 1887,
+    "crc32": 37041139
+  },
+  {
+    "name": "Control/SUB18/SUB18_MI.eeg",
+    "bytes": 71449120,
+    "compressed_bytes": 49360540,
+    "crc32": 1315331630
+  },
+  {
+    "name": "Control/SUB18/SUB18_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 3352862763
+  },
+  {
+    "name": "Control/SUB18/SUB18_embodiment.vhdr",
+    "bytes": 7491,
+    "compressed_bytes": 1884,
+    "crc32": 2718315040
+  },
+  {
+    "name": "Control/SUB18/SUB18_embodiment.eeg",
+    "bytes": 35125680,
+    "compressed_bytes": 24491895,
+    "crc32": 4001808256
+  },
+  {
+    "name": "Control/SUB17/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB17/SUB17_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 1823144088
+  },
+  {
+    "name": "Control/SUB17/SUB17_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1899,
+    "crc32": 3053985669
+  },
+  {
+    "name": "Control/SUB17/SUB17_rest.eeg",
+    "bytes": 18761360,
+    "compressed_bytes": 12831647,
+    "crc32": 860530053
+  },
+  {
+    "name": "Control/SUB17/SUB17_MI.vmrk",
+    "bytes": 8106,
+    "compressed_bytes": 1993,
+    "crc32": 3097046220
+  },
+  {
+    "name": "Control/SUB17/SUB17_MI.vhdr",
+    "bytes": 7339,
+    "compressed_bytes": 1872,
+    "crc32": 1331164075
+  },
+  {
+    "name": "Control/SUB17/SUB17_MI.eeg",
+    "bytes": 72678800,
+    "compressed_bytes": 50284938,
+    "crc32": 3734506043
+  },
+  {
+    "name": "Control/SUB17/SUB17_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 3346618896
+  },
+  {
+    "name": "Control/SUB17/SUB17_embodiment.vhdr",
+    "bytes": 7379,
+    "compressed_bytes": 1889,
+    "crc32": 2131449611
+  },
+  {
+    "name": "Control/SUB17/SUB17_embodiment.eeg",
+    "bytes": 32704320,
+    "compressed_bytes": 22931300,
+    "crc32": 2959469836
+  },
+  {
+    "name": "Control/SUB19/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB19/SUB19_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 945468595
+  },
+  {
+    "name": "Control/SUB19/SUB19_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1891,
+    "crc32": 3417004742
+  },
+  {
+    "name": "Control/SUB19/SUB19_rest.eeg",
+    "bytes": 18621520,
+    "compressed_bytes": 12694700,
+    "crc32": 2872791264
+  },
+  {
+    "name": "Control/SUB19/SUB19_MI.vmrk",
+    "bytes": 8102,
+    "compressed_bytes": 1983,
+    "crc32": 4022690019
+  },
+  {
+    "name": "Control/SUB19/SUB19_MI.vhdr",
+    "bytes": 7323,
+    "compressed_bytes": 1889,
+    "crc32": 2147131876
+  },
+  {
+    "name": "Control/SUB19/SUB19_MI.eeg",
+    "bytes": 71587440,
+    "compressed_bytes": 49925202,
+    "crc32": 3262508349
+  },
+  {
+    "name": "Control/SUB19/SUB19_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 3141908687
+  },
+  {
+    "name": "Control/SUB19/SUB19_embodiment.vhdr",
+    "bytes": 7243,
+    "compressed_bytes": 1899,
+    "crc32": 2943177484
+  },
+  {
+    "name": "Control/SUB19/SUB19_embodiment.eeg",
+    "bytes": 28630720,
+    "compressed_bytes": 20089860,
+    "crc32": 3942357955
+  },
+  {
+    "name": "Control/SUB23/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB23/SUB23_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 1716715181
+  },
+  {
+    "name": "Control/SUB23/SUB23_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1895,
+    "crc32": 2443781021
+  },
+  {
+    "name": "Control/SUB23/SUB23_rest.eeg",
+    "bytes": 19553280,
+    "compressed_bytes": 13401701,
+    "crc32": 1781267865
+  },
+  {
+    "name": "Control/SUB23/SUB23_MI.vmrk",
+    "bytes": 8163,
+    "compressed_bytes": 2033,
+    "crc32": 684202941
+  },
+  {
+    "name": "Control/SUB23/SUB23_MI.vhdr",
+    "bytes": 7267,
+    "compressed_bytes": 1859,
+    "crc32": 1949685025
+  },
+  {
+    "name": "Control/SUB23/SUB23_MI.eeg",
+    "bytes": 70798560,
+    "compressed_bytes": 49234802,
+    "crc32": 3667047609
+  },
+  {
+    "name": "Control/SUB23/SUB23_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 704296229
+  },
+  {
+    "name": "Control/SUB23/SUB23_embodiment.vhdr",
+    "bytes": 7307,
+    "compressed_bytes": 1876,
+    "crc32": 2826040405
+  },
+  {
+    "name": "Control/SUB23/SUB23_embodiment.eeg",
+    "bytes": 28268960,
+    "compressed_bytes": 19804373,
+    "crc32": 2792437821
+  },
+  {
+    "name": "Control/SUB22/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB22/SUB22_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 3659112148
+  },
+  {
+    "name": "Control/SUB22/SUB22_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1891,
+    "crc32": 25857745
+  },
+  {
+    "name": "Control/SUB22/SUB22_rest.eeg",
+    "bytes": 18702080,
+    "compressed_bytes": 12928298,
+    "crc32": 2068247134
+  },
+  {
+    "name": "Control/SUB22/SUB22_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 2006,
+    "crc32": 2014963493
+  },
+  {
+    "name": "Control/SUB22/SUB22_MI.vhdr",
+    "bytes": 7403,
+    "compressed_bytes": 1888,
+    "crc32": 1880777822
+  },
+  {
+    "name": "Control/SUB22/SUB22_MI.eeg",
+    "bytes": 70949040,
+    "compressed_bytes": 49557241,
+    "crc32": 608476141
+  },
+  {
+    "name": "Control/SUB22/SUB22_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 1654312638
+  },
+  {
+    "name": "Control/SUB22/SUB22_embodiment.vhdr",
+    "bytes": 7435,
+    "compressed_bytes": 1891,
+    "crc32": 1611958744
+  },
+  {
+    "name": "Control/SUB22/SUB22_embodiment.eeg",
+    "bytes": 28498480,
+    "compressed_bytes": 20058105,
+    "crc32": 2492599494
+  },
+  {
+    "name": "Control/SUB21/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB21/SUB21_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 864509381
+  },
+  {
+    "name": "Control/SUB21/SUB21_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1898,
+    "crc32": 3846709003
+  },
+  {
+    "name": "Control/SUB21/SUB21_rest.eeg",
+    "bytes": 19127680,
+    "compressed_bytes": 13186590,
+    "crc32": 2996075169
+  },
+  {
+    "name": "Control/SUB21/SUB21_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 2005,
+    "crc32": 1742209800
+  },
+  {
+    "name": "Control/SUB21/SUB21_MI.vhdr",
+    "bytes": 7371,
+    "compressed_bytes": 1889,
+    "crc32": 3960019577
+  },
+  {
+    "name": "Control/SUB21/SUB21_MI.eeg",
+    "bytes": 70461120,
+    "compressed_bytes": 49018677,
+    "crc32": 1614882719
+  },
+  {
+    "name": "Control/SUB21/SUB21_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 354,
+    "crc32": 2746171144
+  },
+  {
+    "name": "Control/SUB21/SUB21_embodiment.vhdr",
+    "bytes": 7363,
+    "compressed_bytes": 1894,
+    "crc32": 2589821313
+  },
+  {
+    "name": "Control/SUB21/SUB21_embodiment.eeg",
+    "bytes": 27443600,
+    "compressed_bytes": 19218031,
+    "crc32": 536171250
+  },
+  {
+    "name": "Control/SUB20/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB20/SUB20_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 2959683358
+  },
+  {
+    "name": "Control/SUB20/SUB20_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1880,
+    "crc32": 542871567
+  },
+  {
+    "name": "Control/SUB20/SUB20_rest.eeg",
+    "bytes": 19190000,
+    "compressed_bytes": 13119997,
+    "crc32": 508018848
+  },
+  {
+    "name": "Control/SUB20/SUB20_MI.vmrk",
+    "bytes": 8202,
+    "compressed_bytes": 2030,
+    "crc32": 1670127549
+  },
+  {
+    "name": "Control/SUB20/SUB20_MI.vhdr",
+    "bytes": 7443,
+    "compressed_bytes": 1884,
+    "crc32": 1026692612
+  },
+  {
+    "name": "Control/SUB20/SUB20_MI.eeg",
+    "bytes": 73075520,
+    "compressed_bytes": 49795756,
+    "crc32": 2569117988
+  },
+  {
+    "name": "Control/SUB20/SUB20_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 355,
+    "crc32": 4004494632
+  },
+  {
+    "name": "Control/SUB20/SUB20_embodiment.vhdr",
+    "bytes": 7243,
+    "compressed_bytes": 1888,
+    "crc32": 1750529205
+  },
+  {
+    "name": "Control/SUB20/SUB20_embodiment.eeg",
+    "bytes": 30649280,
+    "compressed_bytes": 21133416,
+    "crc32": 2773657670
+  },
+  {
+    "name": "Control/SUB24/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Control/SUB24/SUB24_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 2224748658
+  },
+  {
+    "name": "Control/SUB24/SUB24_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1889,
+    "crc32": 4218082374
+  },
+  {
+    "name": "Control/SUB24/SUB24_rest.eeg",
+    "bytes": 19156560,
+    "compressed_bytes": 13228382,
+    "crc32": 4200639124
+  },
+  {
+    "name": "Control/SUB24/SUB24_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 2005,
+    "crc32": 3559833998
+  },
+  {
+    "name": "Control/SUB24/SUB24_MI.vhdr",
+    "bytes": 7227,
+    "compressed_bytes": 1868,
+    "crc32": 2407738634
+  },
+  {
+    "name": "Control/SUB24/SUB24_MI.eeg",
+    "bytes": 71003760,
+    "compressed_bytes": 49079245,
+    "crc32": 1621089957
+  },
+  {
+    "name": "Control/SUB24/SUB24_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 355,
+    "crc32": 4024855086
+  },
+  {
+    "name": "Control/SUB24/SUB24_embodiment.vhdr",
+    "bytes": 7379,
+    "compressed_bytes": 1893,
+    "crc32": 2884448274
+  },
+  {
+    "name": "Control/SUB24/SUB24_embodiment.eeg",
+    "bytes": 26346160,
+    "compressed_bytes": 18403994,
+    "crc32": 3513844142
+  },
+  {
+    "name": "Embodied/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB14/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 353,
+    "crc32": 3418065178
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_rest.vhdr",
+    "bytes": 7239,
+    "compressed_bytes": 1907,
+    "crc32": 1538335463
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_rest.eeg",
+    "bytes": 20320880,
+    "compressed_bytes": 14209571,
+    "crc32": 1845264780
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 1980,
+    "crc32": 1182575785
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_MI.vhdr",
+    "bytes": 7315,
+    "compressed_bytes": 1882,
+    "crc32": 777874737
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_MI.eeg",
+    "bytes": 70795520,
+    "compressed_bytes": 50385628,
+    "crc32": 2212495940
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 3164046877
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_embodiment.vhdr",
+    "bytes": 7331,
+    "compressed_bytes": 1884,
+    "crc32": 3570949476
+  },
+  {
+    "name": "Embodied/SUB14/SUB14_embodiment.eeg",
+    "bytes": 33686240,
+    "compressed_bytes": 23975558,
+    "crc32": 1629466823
+  },
+  {
+    "name": "Embodied/SUB10/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 4213772042
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1900,
+    "crc32": 100044741
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_rest.eeg",
+    "bytes": 19452960,
+    "compressed_bytes": 13365775,
+    "crc32": 432705221
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_MI.vmrk",
+    "bytes": 8102,
+    "compressed_bytes": 1986,
+    "crc32": 3264252442
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_MI.vhdr",
+    "bytes": 7291,
+    "compressed_bytes": 1871,
+    "crc32": 3538045754
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_MI.eeg",
+    "bytes": 72596720,
+    "compressed_bytes": 50392419,
+    "crc32": 3537800126
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_embodiment.vmrk",
+    "bytes": 609,
+    "compressed_bytes": 390,
+    "crc32": 1598171582
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_embodiment.vhdr",
+    "bytes": 7363,
+    "compressed_bytes": 1901,
+    "crc32": 1281941237
+  },
+  {
+    "name": "Embodied/SUB10/SUB10_embodiment.eeg",
+    "bytes": 30111200,
+    "compressed_bytes": 21038261,
+    "crc32": 3616042922
+  },
+  {
+    "name": "Embodied/SUB09/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 151329991
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1870,
+    "crc32": 1982939269
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_rest.eeg",
+    "bytes": 19421040,
+    "compressed_bytes": 13198640,
+    "crc32": 1855919607
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 2000,
+    "crc32": 2127160427
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_MI.vhdr",
+    "bytes": 7203,
+    "compressed_bytes": 1840,
+    "crc32": 1849686353
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_MI.eeg",
+    "bytes": 70512800,
+    "compressed_bytes": 48578650,
+    "crc32": 404170330
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 355,
+    "crc32": 2728049417
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_embodiment.vhdr",
+    "bytes": 7243,
+    "compressed_bytes": 1860,
+    "crc32": 226973768
+  },
+  {
+    "name": "Embodied/SUB09/SUB09_embodiment.eeg",
+    "bytes": 30991280,
+    "compressed_bytes": 21445345,
+    "crc32": 259085476
+  },
+  {
+    "name": "Embodied/SUB08/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 3861043045
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1895,
+    "crc32": 1798648797
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_rest.eeg",
+    "bytes": 19258400,
+    "compressed_bytes": 13467233,
+    "crc32": 2873814395
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_MI.vmrk",
+    "bytes": 8102,
+    "compressed_bytes": 2002,
+    "crc32": 1743565810
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_MI.vhdr",
+    "bytes": 7339,
+    "compressed_bytes": 1871,
+    "crc32": 174018288
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_MI.eeg",
+    "bytes": 71523600,
+    "compressed_bytes": 50248848,
+    "crc32": 2969220609
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 355,
+    "crc32": 4218435360
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_embodiment.vhdr",
+    "bytes": 7379,
+    "compressed_bytes": 1888,
+    "crc32": 1676758456
+  },
+  {
+    "name": "Embodied/SUB08/SUB08_embodiment.eeg",
+    "bytes": 31789280,
+    "compressed_bytes": 22443376,
+    "crc32": 1962385504
+  },
+  {
+    "name": "Embodied/SUB07/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 355,
+    "crc32": 2705302487
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_rest.vhdr",
+    "bytes": 7247,
+    "compressed_bytes": 1889,
+    "crc32": 2616797891
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_rest.eeg",
+    "bytes": 18893600,
+    "compressed_bytes": 12966296,
+    "crc32": 2860465947
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_MI.vmrk",
+    "bytes": 8106,
+    "compressed_bytes": 2004,
+    "crc32": 1762225952
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_MI.vhdr",
+    "bytes": 7339,
+    "compressed_bytes": 1883,
+    "crc32": 2468396504
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_MI.eeg",
+    "bytes": 73344560,
+    "compressed_bytes": 50469951,
+    "crc32": 843053565
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 3538884485
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_embodiment.vhdr",
+    "bytes": 7347,
+    "compressed_bytes": 1892,
+    "crc32": 404782494
+  },
+  {
+    "name": "Embodied/SUB07/SUB07_embodiment.eeg",
+    "bytes": 31467040,
+    "compressed_bytes": 21713084,
+    "crc32": 1581194620
+  },
+  {
+    "name": "Embodied/SUB06/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_rest.vmrk",
+    "bytes": 538,
+    "compressed_bytes": 353,
+    "crc32": 174199071
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_rest.vhdr",
+    "bytes": 7271,
+    "compressed_bytes": 1906,
+    "crc32": 3077399319
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_rest.eeg",
+    "bytes": 18937680,
+    "compressed_bytes": 13475930,
+    "crc32": 3298486591
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_MI.vmrk",
+    "bytes": 8109,
+    "compressed_bytes": 1980,
+    "crc32": 1431656688
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_MI.vhdr",
+    "bytes": 7355,
+    "compressed_bytes": 1883,
+    "crc32": 333331119
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_MI.eeg",
+    "bytes": 73373440,
+    "compressed_bytes": 52305729,
+    "crc32": 1895511926
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 354,
+    "crc32": 3830514555
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_embodiment.vhdr",
+    "bytes": 7259,
+    "compressed_bytes": 1897,
+    "crc32": 3278174533
+  },
+  {
+    "name": "Embodied/SUB06/SUB06_embodiment.eeg",
+    "bytes": 29674960,
+    "compressed_bytes": 21156921,
+    "crc32": 456620605
+  },
+  {
+    "name": "Embodied/SUB05/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_rest.vmrk",
+    "bytes": 540,
+    "compressed_bytes": 356,
+    "crc32": 1901286523
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_rest.vhdr",
+    "bytes": 7271,
+    "compressed_bytes": 1893,
+    "crc32": 2961764552
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_rest.eeg",
+    "bytes": 20792080,
+    "compressed_bytes": 14356535,
+    "crc32": 1268500878
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_MI.vmrk",
+    "bytes": 8174,
+    "compressed_bytes": 2074,
+    "crc32": 3052923903
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_MI.vhdr",
+    "bytes": 7291,
+    "compressed_bytes": 1869,
+    "crc32": 1426469247
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_MI.eeg",
+    "bytes": 74565120,
+    "compressed_bytes": 52605176,
+    "crc32": 3628811142
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 97897544
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_embodiment.vhdr",
+    "bytes": 7283,
+    "compressed_bytes": 1899,
+    "crc32": 896567525
+  },
+  {
+    "name": "Embodied/SUB05/SUB05_embodiment.eeg",
+    "bytes": 30954800,
+    "compressed_bytes": 21945687,
+    "crc32": 3167458517
+  },
+  {
+    "name": "Embodied/SUB03/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 356,
+    "crc32": 4031546544
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1890,
+    "crc32": 1103559428
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_rest.eeg",
+    "bytes": 19107920,
+    "compressed_bytes": 13352581,
+    "crc32": 180716315
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_MI.vmrk",
+    "bytes": 8111,
+    "compressed_bytes": 1971,
+    "crc32": 75637106
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_MI.vhdr",
+    "bytes": 7203,
+    "compressed_bytes": 1875,
+    "crc32": 2800362615
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_MI.eeg",
+    "bytes": 74043760,
+    "compressed_bytes": 51966073,
+    "crc32": 1288552026
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_embodiment.vmrk",
+    "bytes": 512,
+    "compressed_bytes": 342,
+    "crc32": 62213733
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_embodiment.vhdr",
+    "bytes": 7243,
+    "compressed_bytes": 1894,
+    "crc32": 447668387
+  },
+  {
+    "name": "Embodied/SUB03/SUB03_embodiment.eeg",
+    "bytes": 31077920,
+    "compressed_bytes": 21792811,
+    "crc32": 1203266389
+  },
+  {
+    "name": "Embodied/SUB12/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_rest.vmrk",
+    "bytes": 540,
+    "compressed_bytes": 355,
+    "crc32": 3905868668
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1908,
+    "crc32": 1664567491
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_rest.eeg",
+    "bytes": 19924160,
+    "compressed_bytes": 13682974,
+    "crc32": 285005202
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 2014,
+    "crc32": 2371549996
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_MI.vhdr",
+    "bytes": 7203,
+    "compressed_bytes": 1886,
+    "crc32": 279579812
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_MI.eeg",
+    "bytes": 71713600,
+    "compressed_bytes": 49425334,
+    "crc32": 1814885157
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 354,
+    "crc32": 3684198477
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_embodiment.vhdr",
+    "bytes": 7243,
+    "compressed_bytes": 1906,
+    "crc32": 1202802368
+  },
+  {
+    "name": "Embodied/SUB12/SUB12_embodiment.eeg",
+    "bytes": 30074720,
+    "compressed_bytes": 20953451,
+    "crc32": 662613377
+  },
+  {
+    "name": "Embodied/SUB15/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 3529689113
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1908,
+    "crc32": 1385045897
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_rest.eeg",
+    "bytes": 18816080,
+    "compressed_bytes": 13204168,
+    "crc32": 2323482845
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_MI.vmrk",
+    "bytes": 8101,
+    "compressed_bytes": 1996,
+    "crc32": 1687041315
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_MI.vhdr",
+    "bytes": 7331,
+    "compressed_bytes": 1887,
+    "crc32": 2400050107
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_MI.eeg",
+    "bytes": 71546400,
+    "compressed_bytes": 49347852,
+    "crc32": 147826874
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 355,
+    "crc32": 2924283287
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_embodiment.vhdr",
+    "bytes": 7315,
+    "compressed_bytes": 1882,
+    "crc32": 1748139678
+  },
+  {
+    "name": "Embodied/SUB15/SUB15_embodiment.eeg",
+    "bytes": 26919200,
+    "compressed_bytes": 18715574,
+    "crc32": 2978741661
+  },
+  {
+    "name": "Embodied/SUB29/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 356,
+    "crc32": 763109912
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1893,
+    "crc32": 149851195
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_rest.eeg",
+    "bytes": 18753760,
+    "compressed_bytes": 12889208,
+    "crc32": 1812886300
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_MI.vmrk",
+    "bytes": 8097,
+    "compressed_bytes": 2002,
+    "crc32": 839142777
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_MI.vhdr",
+    "bytes": 7227,
+    "compressed_bytes": 1857,
+    "crc32": 682186282
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_MI.eeg",
+    "bytes": 72257760,
+    "compressed_bytes": 50104219,
+    "crc32": 718641314
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 2470295126
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_embodiment.vhdr",
+    "bytes": 7267,
+    "compressed_bytes": 1874,
+    "crc32": 2696343076
+  },
+  {
+    "name": "Embodied/SUB29/SUB29_embodiment.eeg",
+    "bytes": 27163920,
+    "compressed_bytes": 18952522,
+    "crc32": 3824860089
+  },
+  {
+    "name": "Embodied/SUB16/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 2749281492
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_rest.vhdr",
+    "bytes": 7239,
+    "compressed_bytes": 1925,
+    "crc32": 3684492979
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_rest.eeg",
+    "bytes": 18612400,
+    "compressed_bytes": 13181969,
+    "crc32": 1686194085
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_MI.vmrk",
+    "bytes": 8102,
+    "compressed_bytes": 1996,
+    "crc32": 1713690848
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_MI.vhdr",
+    "bytes": 7211,
+    "compressed_bytes": 1909,
+    "crc32": 3879978956
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_MI.eeg",
+    "bytes": 71930960,
+    "compressed_bytes": 51399946,
+    "crc32": 2004068227
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 355,
+    "crc32": 1452712047
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_embodiment.vhdr",
+    "bytes": 7251,
+    "compressed_bytes": 1932,
+    "crc32": 344414883
+  },
+  {
+    "name": "Embodied/SUB16/SUB16_embodiment.eeg",
+    "bytes": 27349360,
+    "compressed_bytes": 19884412,
+    "crc32": 4227537791
+  },
+  {
+    "name": "Embodied/SUB31/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_rest.vmrk",
+    "bytes": 539,
+    "compressed_bytes": 354,
+    "crc32": 814435216
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_rest.vhdr",
+    "bytes": 7231,
+    "compressed_bytes": 1883,
+    "crc32": 134549365
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_rest.eeg",
+    "bytes": 18645840,
+    "compressed_bytes": 13111459,
+    "crc32": 1152495160
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_MI.vmrk",
+    "bytes": 8098,
+    "compressed_bytes": 2014,
+    "crc32": 1200931746
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_MI.vhdr",
+    "bytes": 7381,
+    "compressed_bytes": 1874,
+    "crc32": 3422615482
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_MI.eeg",
+    "bytes": 70649600,
+    "compressed_bytes": 49276221,
+    "crc32": 2624988226
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_embodiment.vmrk",
+    "bytes": 545,
+    "compressed_bytes": 356,
+    "crc32": 2241506363
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_embodiment.vhdr",
+    "bytes": 7435,
+    "compressed_bytes": 1893,
+    "crc32": 3247278100
+  },
+  {
+    "name": "Embodied/SUB31/SUB31_embodiment.eeg",
+    "bytes": 30059520,
+    "compressed_bytes": 21196192,
+    "crc32": 1144990548
+  }
+]

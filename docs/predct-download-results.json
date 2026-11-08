@@ -1,0 +1,20 @@
+[
+  {
+    "dataset": "Singh2020",
+    "files": 123,
+    "bytes": 1578799303,
+    "pilot": false
+  },
+  {
+    "dataset": "Cavanagh2018b",
+    "files": 89,
+    "bytes": 2088797000,
+    "pilot": false
+  },
+  {
+    "dataset": "Gruendler2009",
+    "files": 62,
+    "bytes": 7385920308,
+    "pilot": false
+  }
+]

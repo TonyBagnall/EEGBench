@@ -1,0 +1,186 @@
+{
+  "created": "2025-05-21T03:19:41.494187+00:00",
+  "modified": "2025-05-21T16:10:39.749734+00:00",
+  "id": 15454355,
+  "conceptrecid": "15454354",
+  "doi": "10.5281/zenodo.15454355",
+  "conceptdoi": "10.5281/zenodo.15454354",
+  "doi_url": "https://doi.org/10.5281/zenodo.15454355",
+  "metadata": {
+    "title": "A Multi-Session EEG Dataset of Longitudinal Motor Imagery BCI Training with Transcutaneous Spinal Stimulation in Able-Bodied and Spinal Cord Injury Participants",
+    "doi": "10.5281/zenodo.15454355",
+    "publication_date": "2025-05-18",
+    "description": "<p>This dataset captures longitudinal brain-computer interface (BCI) training data collected from a total of <strong>27 human participants</strong>, including <strong>25 healthy individuals</strong> and <strong>2 individuals with spinal cord injury (SCI)</strong>. The dataset is designed to support research into <strong>motor imagery (MI)-based BCI performance</strong>, <strong>neuromodulation through transcutaneous electrical spinal stimulation (TESS)</strong>, and <strong>neuroplasticity associated with longitudinal BCI use</strong>. It contains high-resolution <strong>EEG and EOG recordings</strong>, <strong>performance metrics</strong>, <strong>stimulation metadata</strong>, and <strong>detailed session logs</strong> across multiple experimental conditions.</p>\n<h4>1. <strong>Participants</strong></h4>\n<ul>\n<li>\n<p><strong>Healthy Cohort (n=25)</strong>:</p>\n<ul>\n<li>\n<p>Age: 18&ndash;30 years</p>\n</li>\n<li>\n<p>Gender: 48% female</p>\n</li>\n<li>\n<p>No prior history of neurological disorders</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>SCI Participants (n=3)</strong>:</p>\n<ul>\n<li>\n<p>Patient-I: C5 complete lesion, 9 years post-injury, consistent motor rehabilitation</p>\n</li>\n<li>\n<p>Patient-II: C4 complete lesion, 3 months post-injury, stimulation at C5/C6</p>\n</li>\n<li>\n<p>(Note: One female SCI participant excluded due to medical complications)</p>\n</li>\n</ul>\n</li>\n</ul>\n<h4>2. <strong>Experimental Design</strong></h4>\n<p>The study included <strong>three major participant groups</strong>:</p>\n<ul>\n<li>\n<p><strong>Main Group (n=20)</strong>:</p>\n<ul>\n<li>\n<p>EEG recordings with 32-channel cap</p>\n</li>\n<li>\n<p>Randomized controlled study to evaluate the effects of TESS on BCI learning</p>\n</li>\n<li>\n<p>Split into:</p>\n<ul>\n<li>\n<p><strong>TESS Group (n=10)</strong>: Received 20 minutes of spinal stimulation before each training session</p>\n</li>\n<li>\n<p><strong>Rest Group (n=10)</strong>: Completed 20 minutes of rest instead</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Protocol lasted five days, including offline and online BCI sessions</p>\n</li>\n</ul>\n</li>\n<li><strong>Cross-Over Group (n=4)</strong>:\n<ul>\n<li>\n<p>Subset of Rest group participants who failed to reach BCI control</p>\n</li>\n<li>\n<p>Underwent a second round of training with the TESS condition after a 6-month washout</p>\n</li>\n<li>\n<p>Included additional pre/post stimulation resting-state EEG recordings</p>\n</li>\n<li>\n<p>Final follow-up session one week post-training to assess retention</p>\n</li>\n<li>EEG recordings with 64-channel cap, including pre/post stimulation resting-state EEG</li>\n</ul>\n</li>\n<li>\n<p><strong>Single-Pulse Group (n=5)</strong>:</p>\n<ul>\n<li>\n<p>EEG recordings with 64-channel cap</p>\n</li>\n<li>\n<p>Underwent identical training with a&nbsp;<strong>single-pulse stimulation protocol</strong> instead of multi-pulse TESS</p>\n</li>\n<li>\n<p>Designed to serve as a placebo/control to isolate TESS-specific effects</p>\n</li>\n<li>\n<p>Included resting-state EEG pre/post stimulation</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>SCI Participants (n=2)</strong>:</p>\n<ul>\n<li>\n<p>Each completed the full protocol under both TESS and Rest conditions</p>\n</li>\n<li>\n<p>EEG recordings with 64-channel cap, including pre/post stimulation resting-state EEG</p>\n</li>\n</ul>\n</li>\n</ul>\n<h4>3. <strong>EEG and EOG Data Acquisition</strong></h4>\n<ul>\n<li>\n<p><strong>Sampling Rate</strong>: 512 Hz</p>\n</li>\n<li>\n<p><strong>Electrode Montage</strong>:</p>\n<ul>\n<li>\n<p>32-channel 10&ndash;10 system for healthy participants</p>\n</li>\n<li>\n<p>64-channel high-density cap for SCI and subgroup participants</p>\n</li>\n<li>\n<p>Ground: AFz; Reference: CPz</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Recording System</strong>: ANTNeuro EEGO with Ag/AgCl-coated electrodes</p>\n</li>\n<li>\n<p><strong>Artifact Monitoring</strong>: Integrated EOG channels for blink and eye movement detection</p>\n</li>\n</ul>\n<h4>4. <strong>BCI Task and Feedback</strong></h4>\n<ul>\n<li>\n<p><strong>Modality</strong>: Motor imagery (left/right hand)</p>\n</li>\n<li>\n<p><strong>Task</strong>: Kinesthetic MI with bar feedback interface</p>\n</li>\n<li>\n<p><strong>Online BCI Decoder</strong>: Riemannian geometry-based, recalibrated after conditioning phase</p>\n</li>\n<li>\n<p><strong>Feedback Algorithm</strong>:</p>\n<ul>\n<li>\n<p>Evidence accumulation over sliding windows</p>\n</li>\n<li>\n<p>Decisions based on dynamic thresholds</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Trial Outcomes</strong>: Hit, Miss, Timeout</p>\n</li>\n<li>\n<p><strong>Session Format</strong>:</p>\n<ul>\n<li>\n<p>3&ndash;4 runs/session</p>\n</li>\n<li>\n<p>20 trials/run</p>\n</li>\n<li>\n<p>EEG time-locked to MI cues, execution, and feedback events</p>\n</li>\n</ul>\n</li>\n</ul>\n<h4>5. <strong>Stimulation Conditions</strong></h4>\n<ul>\n<li>\n<p><strong>TESS Protocol</strong>: Multi-pulse 5 kHz carrier at 30 Hz</p>\n</li>\n<li>\n<p><strong>Single-Pulse Protocol</strong>: 200 &micro;s biphasic pulse once per 30 Hz period</p>\n</li>\n<li>\n<p><strong>Stimulation Duration</strong>: 20 minutes/session (pre-BCI)</p>\n</li>\n<li>\n<p><strong>Target Site</strong>: Cervical spine (C5/C6)</p>\n</li>\n<li>\n<p><strong>Additional EEG Collection</strong>: 2-minute resting state EEG recordings pre/post stimulation in relevant groups</p>\n</li>\n</ul>\n<h4>6. <strong>Metadata and Annotations</strong></h4>\n<ul>\n<li>\n<p><strong>Session Labels</strong>: Offline, Online-Baseline, Post-Conditioning, Long-Term Follow-Up</p>\n</li>\n<li>\n<p><strong>Condition Tags</strong>: TESS, Rest, Single-Pulse</p>\n</li>\n<li>\n<p><strong>Performance Scores</strong>: Trial-level and session-level accuracy, command latency, hit/miss distribution</p>\n</li>\n<li>\n<p><strong>Participant Information</strong>: Anonymized IDs, handedness, group assignment, SCI details (where applicable)</p>\n</li>\n<li>\n<p><strong>Stimulation Logs</strong>: Protocol type, duration, electrode configuration, session timestamps</p>\n</li>\n</ul>\n<h4>7. <strong>Ethical Compliance</strong></h4>\n<ul>\n<li>\n<p><strong>IRB Approval</strong>: University of Texas at Austin (Protocol #2020-03-0073)</p>\n</li>\n<li>\n<p><strong>ClinicalTrials.gov Registration</strong>: NCT05183152</p>\n</li>\n<li>\n<p><strong>Informed Consent</strong>: Obtained from all participants</p>\n</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Alawieh, Hussein",
+        "affiliation": null
+      },
+      {
+        "name": "Deland, Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Jonathan, Madera",
+        "affiliation": null
+      },
+      {
+        "name": "Satyam, Kumar",
+        "affiliation": null
+      },
+      {
+        "name": "Frigyes Samuel, Racz",
+        "affiliation": null
+      },
+      {
+        "name": "Ann, Majewicz Fey",
+        "affiliation": null
+      },
+      {
+        "name": "Jos\u00e9 del R., Mill\u00e1n",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1101/2024.06.10.24308723",
+        "relation": "describes",
+        "resource_type": "publication-journal",
+        "scheme": "doi"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/hma001/TESS_BCI_PNAS",
+      "code:programmingLanguage": [
+        {
+          "id": "matlab",
+          "title": {
+            "en": "MATLAB"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15454354"
+          }
+        }
+      ]
+    }
+  },
+  "title": "A Multi-Session EEG Dataset of Longitudinal Motor Imagery BCI Training with Transcutaneous Spinal Stimulation in Able-Bodied and Spinal Cord Injury Participants",
+  "links": {
+    "self": "https://zenodo.org/api/records/15454355",
+    "self_html": "https://zenodo.org/records/15454355",
+    "preview_html": "https://zenodo.org/records/15454355?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15454355",
+    "self_doi": "https://doi.org/10.5281/zenodo.15454355",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15454355",
+    "reserve_doi": "https://zenodo.org/api/records/15454355/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15454354",
+    "parent_html": "https://zenodo.org/records/15454354",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15454354",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15454354",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15454355/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15454355/sequence/default",
+    "files": "https://zenodo.org/api/records/15454355/files",
+    "media_files": "https://zenodo.org/api/records/15454355/media-files",
+    "latest": "https://zenodo.org/api/records/15454355/versions/latest",
+    "latest_html": "https://zenodo.org/records/15454355/latest",
+    "versions": "https://zenodo.org/api/records/15454355/versions",
+    "draft": "https://zenodo.org/api/records/15454355/draft",
+    "access_links": "https://zenodo.org/api/records/15454355/access/links",
+    "access_grants": "https://zenodo.org/api/records/15454355/access/grants",
+    "access_users": "https://zenodo.org/api/records/15454355/access/users",
+    "access_request": "https://zenodo.org/api/records/15454355/access/request",
+    "access": "https://zenodo.org/api/records/15454355/access",
+    "communities": "https://zenodo.org/api/records/15454355/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15454355/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15454355/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15454355/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/15454355/quota-increase",
+    "requests": "https://zenodo.org/api/records/15454355/requests"
+  },
+  "updated": "2025-05-21T16:10:39.749734+00:00",
+  "recid": "15454355",
+  "revision": 6,
+  "files": [
+    {
+      "id": "d95615ad-93a0-44d6-85ad-ab0db18fb0b6",
+      "key": "d5_mri.zip",
+      "size": 77634252,
+      "checksum": "md5:19aa2ff1541e6e60220d8d31884ff4b8",
+      "links": {
+        "self": "https://zenodo.org/api/records/15454355/files/d5_mri.zip/content"
+      }
+    },
+    {
+      "id": "a9389437-10c0-48d1-8f8a-d358727fd4fe",
+      "key": "d1_Main_Group_n20.zip",
+      "size": 5300238461,
+      "checksum": "md5:2e9168e2fc36d25d576138450e333363",
+      "links": {
+        "self": "https://zenodo.org/api/records/15454355/files/d1_Main_Group_n20.zip/content"
+      }
+    },
+    {
+      "id": "517504cc-31d8-4413-b1dd-4d919982d54b",
+      "key": "d3_SinglePulse_n5.zip",
+      "size": 5359572741,
+      "checksum": "md5:b85ac32ecf8be018fa82322029305cde",
+      "links": {
+        "self": "https://zenodo.org/api/records/15454355/files/d3_SinglePulse_n5.zip/content"
+      }
+    },
+    {
+      "id": "cfb2c2db-146a-4efe-94ef-d8e6912e832f",
+      "key": "d4_SCI_patients.zip",
+      "size": 3402925696,
+      "checksum": "md5:5257af4124d53d8303a18ac81d572019",
+      "links": {
+        "self": "https://zenodo.org/api/records/15454355/files/d4_SCI_patients.zip/content"
+      }
+    },
+    {
+      "id": "a1cc9ce1-adc8-427b-8cfa-8fd8ec4619f5",
+      "key": "d2_SlowLearners_n4.zip",
+      "size": 4147516650,
+      "checksum": "md5:efe7140ca3890be011a54cd24114be06",
+      "links": {
+        "self": "https://zenodo.org/api/records/15454355/files/d2_SlowLearners_n4.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1321610"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 4049,
+    "unique_downloads": 481,
+    "views": 465,
+    "unique_views": 391,
+    "version_downloads": 4049,
+    "version_unique_downloads": 481,
+    "version_unique_views": 391,
+    "version_views": 465
+  },
+  "state": "done",
+  "submitted": true
+}

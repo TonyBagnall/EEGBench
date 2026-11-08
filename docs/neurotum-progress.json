@@ -1,0 +1,28 @@
+{
+  "updated": "2026-11-08",
+  "storage_root": "D:/Data",
+  "d_drive_access": true,
+  "initial_c_free_GB": 8.59348992,
+  "c_free_GB": 8.261287936,
+  "minimum_free_before_job_GB": 4,
+  "pilot": "Both pilots passed",
+  "full_source_download": "All8labelled session files+2maps verified; ASR calibration excluded",
+  "problems": [
+    "ImaginedRightHandFeetRest",
+    "ImaginedLeftRightHandRest"
+  ],
+  "source_studies": 1,
+  "source_people": 2,
+  "registered_before": 68,
+  "selected_before": 64,
+  "status": "complete_restored_to_D",
+  "problems_registered": true,
+  "registered": 71,
+  "selected": 67,
+  "tests": "74relevant tests passed",
+  "source_root": "D:/Data/EEGSources",
+  "previous_storage_root": "C:/Temp",
+  "relocation_report": "docs/c-temp-to-d-transfer.json",
+  "verified_temporary_copies_removed": true,
+  "d_free_GB": 120.980242432
+}

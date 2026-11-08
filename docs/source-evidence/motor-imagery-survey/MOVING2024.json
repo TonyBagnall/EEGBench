@@ -1,0 +1,165 @@
+{
+  "created": "2024-07-25T10:28:51.238732+00:00",
+  "modified": "2024-08-19T12:39:07.516513+00:00",
+  "id": 12804784,
+  "conceptrecid": "12804783",
+  "doi": "10.5281/zenodo.12804784",
+  "conceptdoi": "10.5281/zenodo.12804783",
+  "doi_url": "https://doi.org/10.5281/zenodo.12804784",
+  "metadata": {
+    "title": "MOVING: a Multi-MOdal dataset of EEG signals and VIrtual Glove hand trackING",
+    "doi": "10.5281/zenodo.12804784",
+    "publication_date": "2024-07-24",
+    "description": "<p>A new Multi-modal dataset comprising neural EEG signals and kinematic data associated with three hand movements &mdash; open/close, finger tapping, and wrist rotation &mdash; along with a rest period. The dataset, obtained from eleven subjects using a 32-channel dry wireless EEG system, also includes synchronized kinematic data captured by a Virtual Glove (VG) system equipped with two orthogonal Leap Motion Controllers. The use of these two devices allows for fast assembly (~ 1 minute) while introducing more noise than the gold standard devices for data acquisition. The data set, obtained from 11 subjects using a 32-channel dry wireless EEG system, also includes synchronized kinematic data captured by a Virtual Glove (VG) system equipped with two orthogonal Leap Motion Controllers.&nbsp;</p>\n<p>For citation please refer to the paper:<br>Mattei, E.; Lozzi, D.; Di Matteo, A.; Cipriani, A.; Manes, C.;&nbsp;Placidi, G. MOVING: A Multi-Modal Dataset of EEG Signals and Virtual Glove Hand Tracking. Sensors 2024,24, 5207.&nbsp; https://doi.org/10.3390/s24165207&nbsp;</p>\n<p><strong>References</strong>:</p>\n<p>Placidi, Giuseppe. \"<em>A smart virtual glove for the hand telerehabilitation.</em>\" Computers in Biology and Medicine 37.8 (2007): 1100-1107.</p>\n<p>Placidi, Giuseppe, et al. \"<em>Measurements by a LEAP-based virtual glove for the hand rehabilitation.</em>\" Sensors 18.3 (2018): 834.</p>\n<p>Placidi, Giuseppe, et al. \"<em>Patient&ndash;therapist cooperative hand telerehabilitation through a novel framework involving the virtual glove system.</em>\" Sensors 23.7 (2023): 3463.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Mattei, Enrico",
+        "affiliation": "University of L'Aquila",
+        "orcid": "0009-0005-7702-9519"
+      },
+      {
+        "name": "Lozzi, Daniele",
+        "affiliation": "University of L'Aquila",
+        "orcid": "0000-0002-6180-5131"
+      },
+      {
+        "name": "Di Matteo, Alessandro",
+        "affiliation": "University of L'Aquila",
+        "orcid": "0009-0004-8163-5186"
+      },
+      {
+        "name": "Placidi, Giuseppe",
+        "affiliation": "University of L'Aquila",
+        "orcid": "0000-0002-4790-4029"
+      },
+      {
+        "name": "Cipriani, Alessia",
+        "affiliation": "Universit\u00e0 Cattolica del Sacro Cuore",
+        "orcid": "0009-0001-1241-7423"
+      },
+      {
+        "name": "Manes, Costanzo",
+        "affiliation": "University of L'Aquila",
+        "orcid": "0000-0002-0771-7413"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.3390/s24165207",
+        "relation": "isPublishedIn",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Placidi, Giuseppe. \"A smart virtual glove for the hand telerehabilitation.\" Computers in Biology and Medicine 37.8 (2007): 1100-1107.",
+      "Placidi, Giuseppe, et al. \"Measurements by a LEAP-based virtual glove for the hand rehabilitation.\" Sensors 18.3 (2018): 834.",
+      "Placidi, Giuseppe, et al. \"Patient\u2013therapist cooperative hand telerehabilitation through a novel framework involving the virtual glove system.\" Sensors 23.7 (2023): 3463."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "CS00000041 - 307 VITALITY - CUP E13C22001060006.",
+        "internal_id": "019w4f821::CS00000041 - 307 VITALITY - CUP E13C22001060006.",
+        "funder": {
+          "name": "European Union"
+        },
+        "title": "NextGenerationEU under the Italian Ministry of University and Research (MUR) National Innovation Ecosystem"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": false,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12804783"
+          }
+        }
+      ]
+    }
+  },
+  "title": "MOVING: a Multi-MOdal dataset of EEG signals and VIrtual Glove hand trackING",
+  "links": {
+    "self": "https://zenodo.org/api/records/12804784",
+    "self_html": "https://zenodo.org/records/12804784",
+    "preview_html": "https://zenodo.org/records/12804784?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.12804784",
+    "self_doi": "https://doi.org/10.5281/zenodo.12804784",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12804784",
+    "reserve_doi": "https://zenodo.org/api/records/12804784/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12804783",
+    "parent_html": "https://zenodo.org/records/12804783",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12804783",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12804783",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12804784/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12804784/sequence/default",
+    "files": "https://zenodo.org/api/records/12804784/files",
+    "media_files": "https://zenodo.org/api/records/12804784/media-files",
+    "latest": "https://zenodo.org/api/records/12804784/versions/latest",
+    "latest_html": "https://zenodo.org/records/12804784/latest",
+    "versions": "https://zenodo.org/api/records/12804784/versions",
+    "draft": "https://zenodo.org/api/records/12804784/draft",
+    "access_links": "https://zenodo.org/api/records/12804784/access/links",
+    "access_grants": "https://zenodo.org/api/records/12804784/access/grants",
+    "access_users": "https://zenodo.org/api/records/12804784/access/users",
+    "access_request": "https://zenodo.org/api/records/12804784/access/request",
+    "access": "https://zenodo.org/api/records/12804784/access",
+    "communities": "https://zenodo.org/api/records/12804784/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/12804784/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/12804784/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/12804784/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/12804784/quota-increase",
+    "requests": "https://zenodo.org/api/records/12804784/requests"
+  },
+  "updated": "2024-08-19T12:39:07.516513+00:00",
+  "recid": "12804784",
+  "revision": 12,
+  "files": [
+    {
+      "id": "998ee9da-23b7-4e1b-8248-65a0256d98ac",
+      "key": "edf.rar",
+      "size": 98203839,
+      "checksum": "md5:f875a20e1aecbd96c555c9793ae6c714",
+      "links": {
+        "self": "https://zenodo.org/api/records/12804784/files/edf.rar/content"
+      }
+    },
+    {
+      "id": "218aefbf-f02c-4949-a83d-593c4c6b7bbf",
+      "key": "virtual_glove.rar",
+      "size": 2348701074,
+      "checksum": "md5:5b8de152cc17ea6068f4d8deda2870e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/12804784/files/virtual_glove.rar/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1163434"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1037,
+    "unique_downloads": 887,
+    "views": 1887,
+    "unique_views": 1735,
+    "version_downloads": 662,
+    "version_unique_downloads": 548,
+    "version_unique_views": 1328,
+    "version_views": 1456
+  },
+  "state": "done",
+  "submitted": true
+}

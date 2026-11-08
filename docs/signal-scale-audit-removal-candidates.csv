@@ -1,0 +1,5 @@
+dataset,channel_index_0based,channel_name,train_exact_constant,test_exact_constant,train_effectively_flat,test_effectively_flat,all_cases_flat,proposed_action
+Blink,1,,0,2,0,0,False,Retire whole problem
+Blink,2,,0,7,0,0,False,Retire whole problem
+MatchWords,55,MEG 056 (source-order correspondence),360,360,0,0,True,"Drop this axis globally in both splits, subject to review"
+VideoEmotions,6,F8,0,0,156,0,False,"Drop this axis globally in both splits, subject to review"

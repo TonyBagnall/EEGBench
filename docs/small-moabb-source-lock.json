@@ -1,0 +1,1169 @@
+{
+  "nakanishi": {
+    "Nakanishi2015/s1.mat": {
+      "path": "Nakanishi2015/s1.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s1.mat",
+      "sha256": "dea3eecb45cf9295e41b1eb1dfca0d63febf3537a0e35f5036aba5cde661c9e5",
+      "bytes": 15011521,
+      "publisher_checksum": "gitblob:207bfed4cffea53d851e3892ce58b3c075350765"
+    },
+    "Nakanishi2015/s2.mat": {
+      "path": "Nakanishi2015/s2.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s2.mat",
+      "sha256": "d36e829c2e2d28f650ee424b0558db41f9db5236146700197395b01eef1bb4b4",
+      "bytes": 15013755,
+      "publisher_checksum": "gitblob:21d9b2e0076e22e306195b35a1a3377d09a86932"
+    },
+    "Nakanishi2015/s3.mat": {
+      "path": "Nakanishi2015/s3.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s3.mat",
+      "sha256": "60be5572f58c83aba05312003847bcab9c3d7004f888ed74685d5b61c1aabf0d",
+      "bytes": 15517919,
+      "publisher_checksum": "gitblob:eb1b29481908680f00d2a8e75446bd1d34cafbc6"
+    },
+    "Nakanishi2015/s4.mat": {
+      "path": "Nakanishi2015/s4.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s4.mat",
+      "sha256": "bbeaca8d516c9a958d4eac30211b771d30ead1404707744e77e226a08c45204e",
+      "bytes": 14838183,
+      "publisher_checksum": "gitblob:afbf3fdc2c9a5a866235afef47143c60835fe1c7"
+    },
+    "Nakanishi2015/s5.mat": {
+      "path": "Nakanishi2015/s5.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s5.mat",
+      "sha256": "ae516f18fb3c40f953a3e46e338f0d28a4bcdc79e63b5ff688f46db16729e501",
+      "bytes": 16203531,
+      "publisher_checksum": "gitblob:b5516e0fb31d51736bc2f2fc5ed39f2b14bac572"
+    },
+    "Nakanishi2015/s6.mat": {
+      "path": "Nakanishi2015/s6.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s6.mat",
+      "sha256": "647cd71eaac5085725024a65105fad1629c7c2bd8a478784999b767c5f40b589",
+      "bytes": 14869841,
+      "publisher_checksum": "gitblob:0d8f6a12b86c168ee90b7921878f6228bcd7a64f"
+    },
+    "Nakanishi2015/s7.mat": {
+      "path": "Nakanishi2015/s7.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s7.mat",
+      "sha256": "858e094341c9be47e133dcfdee3ecd4d216ee3de1812832115c7b231cfff0b64",
+      "bytes": 14805617,
+      "publisher_checksum": "gitblob:e8366699ae94980d860f1d654acd553e2c1480f7"
+    },
+    "Nakanishi2015/s8.mat": {
+      "path": "Nakanishi2015/s8.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s8.mat",
+      "sha256": "7a2ef2dfbedda89ec22a32b1f20083c9fd44ff6b2dfa298389985faf831f983f",
+      "bytes": 15985195,
+      "publisher_checksum": "gitblob:49ead261948ec12dfd34cfb55b4d60e07e65d14e"
+    },
+    "Nakanishi2015/s9.mat": {
+      "path": "Nakanishi2015/s9.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s9.mat",
+      "sha256": "03349983da36e4c619a44998453db5bfb7ca067dbee63e7b98050558dcb23396",
+      "bytes": 15378144,
+      "publisher_checksum": "gitblob:aeb00c58b2e1f59cfc378f499be6bfa3ae680834"
+    },
+    "Nakanishi2015/s10.mat": {
+      "path": "Nakanishi2015/s10.mat",
+      "url": "https://raw.githubusercontent.com/mnakanishi/12JFPM_SSVEP/2d4e281a430b4676f75c9270db839e963f172da5/data/s10.mat",
+      "sha256": "e71f4968ee954d39ea184ae34611e4d2e43ea5f473f1825a73b28b09157e72ee",
+      "bytes": 16033360,
+      "publisher_checksum": "gitblob:fed89f56f6cef2ea2cb4117f70f8392898bc80f4"
+    }
+  },
+  "bci2b": {
+    "BCIIV2b/B01T.mat": {
+      "path": "BCIIV2b/B01T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B01T.mat",
+      "sha256": "0da6e77ab0dab5b4aa1d2d5a6a542ac02f6768d3b7a76b0abe896ec1cf259919",
+      "bytes": 34203437,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B01E.mat": {
+      "path": "BCIIV2b/B01E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B01E.mat",
+      "sha256": "5effd365ae3733402286f2eea6b1ce482680a9f9ffc55c0b41bc63061a0161b5",
+      "bytes": 18595217,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B02T.mat": {
+      "path": "BCIIV2b/B02T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B02T.mat",
+      "sha256": "1c4ace3eee8d72ca184fa6995a9466939b71175b8b3a129bdaa838a85adf6473",
+      "bytes": 33060824,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B02E.mat": {
+      "path": "BCIIV2b/B02E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B02E.mat",
+      "sha256": "f057ada16e36e7d58e5670b705ab41aec1175afde0a1e1e0b96cae58dbc7a083",
+      "bytes": 16538614,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B03T.mat": {
+      "path": "BCIIV2b/B03T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B03T.mat",
+      "sha256": "4ae1b23b4b4359151787a1a61d3acea128719677c49bfaf0113748cffece3b98",
+      "bytes": 35581243,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B03E.mat": {
+      "path": "BCIIV2b/B03E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B03E.mat",
+      "sha256": "6fca9dd9cbbdbb53dd8fb2798feed8e22669a91d1259fdac6695855756181353",
+      "bytes": 19310824,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B04T.mat": {
+      "path": "BCIIV2b/B04T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B04T.mat",
+      "sha256": "e7230d6d28a9e81d3afdf7ba5d363979e0186dbbc5a73f66d4b713be020ce960",
+      "bytes": 35749247,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B04E.mat": {
+      "path": "BCIIV2b/B04E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B04E.mat",
+      "sha256": "a08bbc7efb12a29b9ac901c810a42f84053a268b567c0c5c705d401038c6d7f6",
+      "bytes": 17900104,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B05T.mat": {
+      "path": "BCIIV2b/B05T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B05T.mat",
+      "sha256": "53166e2cf1a97576262b3f2f27395f489af6fda15ade5c3b3cdd2c89f7df0d79",
+      "bytes": 35047531,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B05E.mat": {
+      "path": "BCIIV2b/B05E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B05E.mat",
+      "sha256": "a395a547e62241f6bf69b1b42828d394f997189271ebd90d5ff4dde4e4e9e757",
+      "bytes": 17493104,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B06T.mat": {
+      "path": "BCIIV2b/B06T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B06T.mat",
+      "sha256": "d69f679ea33121a9202901d5b62efb50f8ed004fa8ad70d10a59351493ffdad8",
+      "bytes": 36512412,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B06E.mat": {
+      "path": "BCIIV2b/B06E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B06E.mat",
+      "sha256": "c13d76a3bcd6fd445482e3268d38ebd51f28ea286869fc22c47c6d39857b2f2f",
+      "bytes": 19381269,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B07T.mat": {
+      "path": "BCIIV2b/B07T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B07T.mat",
+      "sha256": "0b79522d66710a88f852b83802c7bffd015226d765480f60f16b6bedc5ea33c2",
+      "bytes": 33061422,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B07E.mat": {
+      "path": "BCIIV2b/B07E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B07E.mat",
+      "sha256": "29900042a1adee5f722410f8e52e46961f356b68d5a7906df05df04319fde2f1",
+      "bytes": 17883151,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B08T.mat": {
+      "path": "BCIIV2b/B08T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B08T.mat",
+      "sha256": "d96bdfd0c8331f238740c10ff03121dc3e3a20a4b1254840c5cc4878aa149b67",
+      "bytes": 38046816,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B08E.mat": {
+      "path": "BCIIV2b/B08E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B08E.mat",
+      "sha256": "d616cd7f843e899fb01cd1fa86a2a8dd0fd2f2e4db94ab3a09e6b9f8d5a6399a",
+      "bytes": 18959016,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B09T.mat": {
+      "path": "BCIIV2b/B09T.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B09T.mat",
+      "sha256": "4f017991a64ceabb2ca73abf6f3c620b2b8fd7468184f52a8444dfdec1ee2adc",
+      "bytes": 33324824,
+      "publisher_checksum": null
+    },
+    "BCIIV2b/B09E.mat": {
+      "path": "BCIIV2b/B09E.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/004-2014/B09E.mat",
+      "sha256": "99f3937393a3c4982beda69850cf3c6cde98dd33e1733a9d67a787e10f407bfd",
+      "bytes": 17332216,
+      "publisher_checksum": null
+    }
+  },
+  "speller": {
+    "Speller/s1.mat": {
+      "path": "Speller/s1.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s1.mat",
+      "sha256": "f542f80d2f9042901a3165265119f8d5c8b975fabeecced9c41257557e631c1d",
+      "bytes": 8597069,
+      "publisher_checksum": null
+    },
+    "Speller/s2.mat": {
+      "path": "Speller/s2.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s2.mat",
+      "sha256": "d95f983f76d7d3b364031a9263ae907869e896c14e0911886230a7a961a8aaf7",
+      "bytes": 8338148,
+      "publisher_checksum": null
+    },
+    "Speller/s3.mat": {
+      "path": "Speller/s3.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s3.mat",
+      "sha256": "be397a729bd6c7fedfda91e610b24428804fd74d48f51238dabab03d796dd1d2",
+      "bytes": 7447520,
+      "publisher_checksum": null
+    },
+    "Speller/s4.mat": {
+      "path": "Speller/s4.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s4.mat",
+      "sha256": "59ab90aba55fb2d7f450b8e3b2ef2e1999ac62f7ebf61e873a0dd50d11d30ca3",
+      "bytes": 6484454,
+      "publisher_checksum": null
+    },
+    "Speller/s5.mat": {
+      "path": "Speller/s5.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s5.mat",
+      "sha256": "52ec4e9876245f12a804e285de1bdae72b956f7f80f409a74e3b69bbb1425d69",
+      "bytes": 7000178,
+      "publisher_checksum": null
+    },
+    "Speller/s6.mat": {
+      "path": "Speller/s6.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s6.mat",
+      "sha256": "0a78616d301b1788e9a8c8a43f3aee3cd056f806b3be9a0c809fe85204ddffb3",
+      "bytes": 3368512,
+      "publisher_checksum": null
+    },
+    "Speller/s7.mat": {
+      "path": "Speller/s7.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s7.mat",
+      "sha256": "acccbcb1af72f8efccfec344fce32e80c0b911df0768a56fe6ea531c5b8f2e41",
+      "bytes": 3719967,
+      "publisher_checksum": null
+    },
+    "Speller/s8.mat": {
+      "path": "Speller/s8.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s8.mat",
+      "sha256": "8cd781d01b64da2c57fac435a42f8e2dccc2da28905ace10e1f8d46523075972",
+      "bytes": 3594200,
+      "publisher_checksum": null
+    },
+    "Speller/s9.mat": {
+      "path": "Speller/s9.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s9.mat",
+      "sha256": "d583e4d6dcb0929c564dce0b4834cf596199abbe8c64e35eeeedd9056a8ddf02",
+      "bytes": 3482805,
+      "publisher_checksum": null
+    },
+    "Speller/s10.mat": {
+      "path": "Speller/s10.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/003-2015/s10.mat",
+      "sha256": "7d430f54b482bfe6f412262bf629bccfaeaf18be5cb14db939c27eb5e35aa7d4",
+      "bytes": 3351079,
+      "publisher_checksum": null
+    }
+  },
+  "zhou": {
+    "Zhou2016/sub-4.zip": {
+      "path": "Zhou2016/sub-4.zip",
+      "url": "https://zenodo.org/api/records/16534752/files/sub-4.zip/content",
+      "sha256": "77651222111d339be51e10ab3a05584ca09be27432796fc5da19c3e77e4edf42",
+      "bytes": 28760942,
+      "publisher_checksum": "md5:bd7e5060076c9312e0ed94809aea0d05"
+    },
+    "Zhou2016/participants.json": {
+      "path": "Zhou2016/participants.json",
+      "url": "https://zenodo.org/api/records/16534752/files/participants.json/content",
+      "sha256": "4b8aeb7120262dc2ff8cb93d218fdcc09062a65f0ec300afa2e67bb6c81d95dc",
+      "bytes": 756,
+      "publisher_checksum": "md5:c585c4afc65d3af43030a4196c31a119"
+    },
+    "Zhou2016/sub-1.zip": {
+      "path": "Zhou2016/sub-1.zip",
+      "url": "https://zenodo.org/api/records/16534752/files/sub-1.zip/content",
+      "sha256": "7fa527006f99456fc9789f1611b695e27786bf7b4d383749570cbd5b3310f5fe",
+      "bytes": 39400978,
+      "publisher_checksum": "md5:1df3bd036ed6bc6e0e20b37033d7eeaf"
+    },
+    "Zhou2016/sub-2.zip": {
+      "path": "Zhou2016/sub-2.zip",
+      "url": "https://zenodo.org/api/records/16534752/files/sub-2.zip/content",
+      "sha256": "358b51e5a277fe7e2d15f4e4a47bb84e3ba3df669f1810e7b1bd1f46951cedc0",
+      "bytes": 27168266,
+      "publisher_checksum": "md5:24406af5aa8ddd6597bc4c3d48aea6e7"
+    },
+    "Zhou2016/sub-3.zip": {
+      "path": "Zhou2016/sub-3.zip",
+      "url": "https://zenodo.org/api/records/16534752/files/sub-3.zip/content",
+      "sha256": "96e499531ae7918d7c0492e4601c2a493288ca08a314fe7d7d385e77da8ee70d",
+      "bytes": 30967918,
+      "publisher_checksum": "md5:13384211933d7788af9dbe84802bb980"
+    },
+    "Zhou2016/README": {
+      "path": "Zhou2016/README",
+      "url": "https://zenodo.org/api/records/16534752/files/README/content",
+      "sha256": "e0b5231ca06b97a1597194ee398df2347842e64f45398e62bf420c6ba8694b63",
+      "bytes": 692,
+      "publisher_checksum": "md5:83effba1d88f1ff99185cc6e9a70722b"
+    },
+    "Zhou2016/participants.tsv": {
+      "path": "Zhou2016/participants.tsv",
+      "url": "https://zenodo.org/api/records/16534752/files/participants.tsv/content",
+      "sha256": "d4ef5a68c73bf5dd358abc17c2eb73521cedcf00d049809a6b39faa2d65541aa",
+      "bytes": 149,
+      "publisher_checksum": "md5:5510f53b0d3ef6c7291992b8d6bc1020"
+    },
+    "Zhou2016/dataset_description.json": {
+      "path": "Zhou2016/dataset_description.json",
+      "url": "https://zenodo.org/api/records/16534752/files/dataset_description.json/content",
+      "sha256": "32255b20ff79d990346751a9c231de0f746099e1616a01076c6ea88d029c54a9",
+      "bytes": 493,
+      "publisher_checksum": "md5:0e45302d8379ae3438e33b11fecb5c61"
+    }
+  },
+  "als": {
+    "ALS/A01.mat": {
+      "path": "ALS/A01.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/008-2014/A01.mat",
+      "sha256": "cdf9bca4f48c61ee9c9ba998382a4e84392918c9dbc5a43f45ee0052614e25bd",
+      "bytes": 21548593,
+      "publisher_checksum": null
+    },
+    "ALS/A02.mat": {
+      "path": "ALS/A02.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/008-2014/A02.mat",
+      "sha256": "0023ee04e4a113231c125bcfdf59780ed95d858a5e5c0bc993701eb6c9652894",
+      "bytes": 21588837,
+      "publisher_checksum": null
+    },
+    "ALS/A03.mat": {
+      "path": "ALS/A03.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/008-2014/A03.mat",
+      "sha256": "820287459d83e5512e3ac00cdb25d1806b26518daba14281c61983b230f9dd9f",
+      "bytes": 21611830,
+      "publisher_checksum": null
+    },
+    "ALS/A04.mat": {
+      "path": "ALS/A04.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/008-2014/A04.mat",
+      "sha256": "65b14803eb38fda4910cca1103e4b527be1624155f106fe8083861bbf3e644e3",
+      "bytes": 21580390,
+      "publisher_checksum": null
+    },
+    "ALS/A05.mat": {
+      "path": "ALS/A05.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/008-2014/A05.mat",
+      "sha256": "d372ae2c39ece0c8dded986307e70ebb7f4bdf2c5c2fa2382c8ba489fb59f200",
+      "bytes": 21607457,
+      "publisher_checksum": null
+    },
+    "ALS/A06.mat": {
+      "path": "ALS/A06.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/008-2014/A06.mat",
+      "sha256": "8320e78fb0d73baa03857c4976a4b4d8e605b1c9a7a4cf2e5e80e1bb6fd30337",
+      "bytes": 21596479,
+      "publisher_checksum": null
+    },
+    "ALS/A07.mat": {
+      "path": "ALS/A07.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/008-2014/A07.mat",
+      "sha256": "444d9da58332f58e89e7cdd39f9d9e7b0cb8ee4fd01ce03ef3ce57e53068f47c",
+      "bytes": 21526026,
+      "publisher_checksum": null
+    },
+    "ALS/A08.mat": {
+      "path": "ALS/A08.mat",
+      "url": "https://lampx.tugraz.at/~bci/database/008-2014/A08.mat",
+      "sha256": "7b5d249058dcac4ad477ea8591256d51c19df384551eba82b6c88e3ae6333571",
+      "bytes": 21629160,
+      "publisher_checksum": null
+    }
+  },
+  "mamem3": {
+    "MAMEM3/DataAcquisitionDetails-Experiment3.pdf": {
+      "path": "MAMEM3/DataAcquisitionDetails-Experiment3.pdf",
+      "url": "https://ndownloader.figshare.com/files/5344522",
+      "sha256": "e3936d8887d0e43ddc5ec1c96a960eae5a3e38e64e1f6b5d09959d3338b2cb54",
+      "bytes": 355149,
+      "publisher_checksum": "md5:14cf8ad24d9591c702ace32c3c50429b"
+    },
+    "MAMEM3/U001ai.mat": {
+      "path": "MAMEM3/U001ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27802707",
+      "sha256": "b12268e9826457ae8073b2e9199d9d80565ff9a23da630e9e2d128cc58d2bbc5",
+      "bytes": 1247120,
+      "publisher_checksum": "md5:aaf1b3976e1cee791812782ced2a5202"
+    },
+    "MAMEM3/U001aii.mat": {
+      "path": "MAMEM3/U001aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27802710",
+      "sha256": "f10c9f09d535a88d6bcb5344481b6172e9b4b74f86481bf2c5437a5bf4b7eead",
+      "bytes": 1327822,
+      "publisher_checksum": "md5:1f2ec1719f6f8f722402fe3fd920e559"
+    },
+    "MAMEM3/U001bi.mat": {
+      "path": "MAMEM3/U001bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27802713",
+      "sha256": "b91ae028846cae2e50a6095d13985648cb23af15d0ff25301d3176f405a47f93",
+      "bytes": 1239903,
+      "publisher_checksum": "md5:66e9a0d6f39e23f0eaf51636eb00aef3"
+    },
+    "MAMEM3/U001bii.mat": {
+      "path": "MAMEM3/U001bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27802716",
+      "sha256": "e0fe9d8d8f7d00291b76f06122e6816149388b1a60127b3e39420466c8068481",
+      "bytes": 1346610,
+      "publisher_checksum": "md5:6cf622a62038882cae30fd7883a4d027"
+    },
+    "MAMEM3/U001ci.mat": {
+      "path": "MAMEM3/U001ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27802719",
+      "sha256": "c723a427993b7b4176e5bf50e147d5f0f4bf1e76f59548bf32fae11e0294bf25",
+      "bytes": 1218238,
+      "publisher_checksum": "md5:e801e4395d419e922f15572ca5ba46d1"
+    },
+    "MAMEM3/U001cii.mat": {
+      "path": "MAMEM3/U001cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27802722",
+      "sha256": "a83ecdd309b2d3b0b12b6d2ccb693df168f4d5044ac7dda01cb74eaedf04b43c",
+      "bytes": 1597337,
+      "publisher_checksum": "md5:07e4fd2a206011cf5a462422d90370a0"
+    },
+    "MAMEM3/U001di.mat": {
+      "path": "MAMEM3/U001di.mat",
+      "url": "https://ndownloader.figshare.com/files/27802725",
+      "sha256": "4c48cd4344031200a36b93668703b5e6d2490854667f9caee08534a84df5f853",
+      "bytes": 1283569,
+      "publisher_checksum": "md5:5e7f98d46741d35f6203bcc724058ae8"
+    },
+    "MAMEM3/U001dii.mat": {
+      "path": "MAMEM3/U001dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27802728",
+      "sha256": "d1a42baf288366f292232db7cd4c08eaa7cd6b6d1cad579b379f23b3ac0ad1fe",
+      "bytes": 1366933,
+      "publisher_checksum": "md5:d2a147b15e8968898226df56928cb737"
+    },
+    "MAMEM3/U001ei.mat": {
+      "path": "MAMEM3/U001ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27802731",
+      "sha256": "3646b559c157146f1dd5dbd94c89046a14decb87f04b7c6ec2af55f8e921a7c8",
+      "bytes": 1154767,
+      "publisher_checksum": "md5:1463804e2800d01c3f119c89f7d77595"
+    },
+    "MAMEM3/U001eii.mat": {
+      "path": "MAMEM3/U001eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27802734",
+      "sha256": "ba40465d18298b44c02ed3193c741fa74ebce4dbae179a69f1fea5dfcd39612d",
+      "bytes": 1235648,
+      "publisher_checksum": "md5:b431ac2c45a560587a776babfa26033a"
+    },
+    "MAMEM3/U002ai.mat": {
+      "path": "MAMEM3/U002ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901395",
+      "sha256": "16de30155a0257a216163ce32a2426fd20bc61992d1faa7b06760c0d0c0ce1cc",
+      "bytes": 1164838,
+      "publisher_checksum": "md5:80c79a6957e89ada82363b0aca8aa46b"
+    },
+    "MAMEM3/U002aii.mat": {
+      "path": "MAMEM3/U002aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901398",
+      "sha256": "a8a1ec0cf4d40b2ce8b5f016f699748440440853cc6cd1fbd10ec81fa86f1363",
+      "bytes": 1232354,
+      "publisher_checksum": "md5:ceaec9005fda899939b93efe0d934c90"
+    },
+    "MAMEM3/U002bi.mat": {
+      "path": "MAMEM3/U002bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901401",
+      "sha256": "ea82429d27db60d4014a60a9cd6c9907bf4835900d477f97946cb9f29e9e3ded",
+      "bytes": 1165436,
+      "publisher_checksum": "md5:e0bac455bcbaf74c645ff1af819521a0"
+    },
+    "MAMEM3/U002bii.mat": {
+      "path": "MAMEM3/U002bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901404",
+      "sha256": "90974249c2392bf76b0b01c15a5195da6cb338460b968d4dedb600151bf663f9",
+      "bytes": 1255834,
+      "publisher_checksum": "md5:b8e21b0b085d4cde26119bcd9ce30717"
+    },
+    "MAMEM3/U002ci.mat": {
+      "path": "MAMEM3/U002ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901407",
+      "sha256": "3d462992a1e8fd3d9be787e203f45b13ce4381bb6741545e7ed48d2c01d2f1b0",
+      "bytes": 1210461,
+      "publisher_checksum": "md5:8678c68456754f1a28fac702d33e2d61"
+    },
+    "MAMEM3/U002cii.mat": {
+      "path": "MAMEM3/U002cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901410",
+      "sha256": "812cc04a0838a68d454213828e88aead1b73d2ab081c799951f4c0ed2de30853",
+      "bytes": 1213275,
+      "publisher_checksum": "md5:34052986b8ecd2ca80f6e6a28c5df4e0"
+    },
+    "MAMEM3/U002di.mat": {
+      "path": "MAMEM3/U002di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901413",
+      "sha256": "d7d35b189b795da062dae87bccca8190f5875e1113cc184a433a57d457683112",
+      "bytes": 1175548,
+      "publisher_checksum": "md5:501a118b81420f86d29469f26448935b"
+    },
+    "MAMEM3/U002dii.mat": {
+      "path": "MAMEM3/U002dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901416",
+      "sha256": "2f2ef2d5f58667d0f6c09e1db8ebf2d413be5f9b33e60b006d44160697bcd05d",
+      "bytes": 1242046,
+      "publisher_checksum": "md5:447cfb4788e66862711a4c536b2d12ef"
+    },
+    "MAMEM3/U002ei.mat": {
+      "path": "MAMEM3/U002ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901419",
+      "sha256": "421501cfe15dcdd1720a8f65aef0ab59a9f40f236fd791832c74cf63a2ca5e19",
+      "bytes": 1145184,
+      "publisher_checksum": "md5:0eb281469e011e38beb641f0ad973607"
+    },
+    "MAMEM3/U002eii.mat": {
+      "path": "MAMEM3/U002eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901422",
+      "sha256": "4612c2c3d98b5b471b9c76bf22e303cf745cc1befdb4587c9b9ca78d2c57e75b",
+      "bytes": 1250709,
+      "publisher_checksum": "md5:e3b521091412ed7ebcc408879769f1b1"
+    },
+    "MAMEM3/U003ai.mat": {
+      "path": "MAMEM3/U003ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901428",
+      "sha256": "bb05c101a855e3e173382bb1a252b504d0d7abe75551a1d0ce53def56853c7f2",
+      "bytes": 1492239,
+      "publisher_checksum": "md5:cb23042ec58c799fd8a06664b2b1a3ce"
+    },
+    "MAMEM3/U003aii.mat": {
+      "path": "MAMEM3/U003aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901431",
+      "sha256": "e6de99c392a4a8a0267765f521f82492c670b5dc004efa5cef0b6b7e922fc1fa",
+      "bytes": 1607051,
+      "publisher_checksum": "md5:9e47b715fcf1080a714b6b88a7f34173"
+    },
+    "MAMEM3/U003bi.mat": {
+      "path": "MAMEM3/U003bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901434",
+      "sha256": "383bb17391c901d5d29da6fa331b74cbe582f078ba01538d3e1d2a0b3af28897",
+      "bytes": 1581838,
+      "publisher_checksum": "md5:60acbf20d7025a4482a9f6b0be4494e3"
+    },
+    "MAMEM3/U003bii.mat": {
+      "path": "MAMEM3/U003bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901437",
+      "sha256": "0ac9db7f8e6cd04d7f2b4f2876e2219813d60602e062b83decefca39399ce8cc",
+      "bytes": 1544613,
+      "publisher_checksum": "md5:b1a7a5ff72cb74e38a6664b0db9e0553"
+    },
+    "MAMEM3/U003ci.mat": {
+      "path": "MAMEM3/U003ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901440",
+      "sha256": "2b98cc0b9e34711f0d10a6e5d73695d99cff3fefeaf44d8d26f1976ad01e3b0d",
+      "bytes": 1456069,
+      "publisher_checksum": "md5:546d6cfc386eaa46e345a6f423493ec1"
+    },
+    "MAMEM3/U003cii.mat": {
+      "path": "MAMEM3/U003cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901443",
+      "sha256": "327a963f7f8718b5e1edc394a0ff0f7d9360c314132ffd27832ba2ce55e58b49",
+      "bytes": 1618585,
+      "publisher_checksum": "md5:aa41128f15ab4c735dd1b453f4856388"
+    },
+    "MAMEM3/U003di.mat": {
+      "path": "MAMEM3/U003di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901446",
+      "sha256": "26db3fdd9285f01a09ec968960fbb6d320010736c14cacea61f992c692eb41d3",
+      "bytes": 1502625,
+      "publisher_checksum": "md5:7bddf2004ecf9df6f7203e8dddfcd0fd"
+    },
+    "MAMEM3/U003dii.mat": {
+      "path": "MAMEM3/U003dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901449",
+      "sha256": "3a86e84d013648e951a145b9a6e8b1454e3b67cc3980fa3bd9efd7a1903e0742",
+      "bytes": 1624633,
+      "publisher_checksum": "md5:1d1ecb3245d300494aac589406a627ad"
+    },
+    "MAMEM3/U003ei.mat": {
+      "path": "MAMEM3/U003ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901452",
+      "sha256": "0aa3259e9228cbbfa8ece3f09f91fee5eedb23449aec83dc337f1d836e2133ef",
+      "bytes": 1442040,
+      "publisher_checksum": "md5:662cb41567901e9a6987de4c0e629d1b"
+    },
+    "MAMEM3/U003eii.mat": {
+      "path": "MAMEM3/U003eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901455",
+      "sha256": "91422c453bd457fdd7a70a29b8ab0b89673b53081a3ea68d23c5fe3b23445dbd",
+      "bytes": 1637148,
+      "publisher_checksum": "md5:ecba36ecdc20b0c5bab485527cb35112"
+    },
+    "MAMEM3/U004ai.mat": {
+      "path": "MAMEM3/U004ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901461",
+      "sha256": "a3642ba2808cfcaaec4dcfa66875ca98619f319228a3ea2c338f865ea97709ad",
+      "bytes": 1201726,
+      "publisher_checksum": "md5:2396692dda4132b498e6891897aa7a44"
+    },
+    "MAMEM3/U004aii.mat": {
+      "path": "MAMEM3/U004aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901464",
+      "sha256": "c870e45332cd21b74505f80d68752345ab4de29f960457a78d91197facca008d",
+      "bytes": 1303729,
+      "publisher_checksum": "md5:430b2e2f6b46f18aeeb99eda60940225"
+    },
+    "MAMEM3/U004bi.mat": {
+      "path": "MAMEM3/U004bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901467",
+      "sha256": "252e735ba3ea27749ee9841f39658e075b05382ecc620e1f16a3aa7fb7e351cb",
+      "bytes": 1197394,
+      "publisher_checksum": "md5:e33e10d59bfbea2e1a60a6d552ab49ec"
+    },
+    "MAMEM3/U004bii.mat": {
+      "path": "MAMEM3/U004bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901470",
+      "sha256": "b12aebcef79172b8865af62a12747aa6e744ec53206ac275bbb947a554ae2ccd",
+      "bytes": 1289841,
+      "publisher_checksum": "md5:48ee6954e7242aac0c9569b597ab81b4"
+    },
+    "MAMEM3/U004ci.mat": {
+      "path": "MAMEM3/U004ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901473",
+      "sha256": "5ad7f43ce95ea6b1d96c047826a4d89c0dfe4f84eb900e41c901ad47b6924892",
+      "bytes": 1254975,
+      "publisher_checksum": "md5:518f39e8facba9a3a6608805db22f9a1"
+    },
+    "MAMEM3/U004cii.mat": {
+      "path": "MAMEM3/U004cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901476",
+      "sha256": "9d3cdf5ed91fb5856194fcf62e33c4f5c69943f8420ca4ab810e053f82254cff",
+      "bytes": 1350397,
+      "publisher_checksum": "md5:240af55d520eca4ea4369250a3870842"
+    },
+    "MAMEM3/U004di.mat": {
+      "path": "MAMEM3/U004di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901479",
+      "sha256": "8603cf9480b560269c3083f1ff88d67f262babc5dc3f26cc9af054d08b84e6f9",
+      "bytes": 1240886,
+      "publisher_checksum": "md5:05bd2c3e86aabd122349c007073099f0"
+    },
+    "MAMEM3/U004dii.mat": {
+      "path": "MAMEM3/U004dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901482",
+      "sha256": "62f6b31a06a3a27f4dbd63e96af09f6179525bf2bef8ecd6596b3a9305668b21",
+      "bytes": 1327184,
+      "publisher_checksum": "md5:f3badf0e4aa3001b1a14004f868ea6b8"
+    },
+    "MAMEM3/U004ei.mat": {
+      "path": "MAMEM3/U004ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901485",
+      "sha256": "c646f047caefd91b142d61b7377d73f733068b918ea6a5ad2c88adc0ecf0b2d1",
+      "bytes": 1281711,
+      "publisher_checksum": "md5:2e23f52041c681e99df30cbc900a9cab"
+    },
+    "MAMEM3/U004eii.mat": {
+      "path": "MAMEM3/U004eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901488",
+      "sha256": "54f867dcfe72200ee02943938cdee75f4bdd4025023a92357092f6213d4b62af",
+      "bytes": 1332220,
+      "publisher_checksum": "md5:8e0d67d38c983ca93ac2449561af6f42"
+    },
+    "MAMEM3/U005ai.mat": {
+      "path": "MAMEM3/U005ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901494",
+      "sha256": "247f7a9df434b4d6caa5087cf0f453844a51dacb1fed25cc08f4d673f3574d21",
+      "bytes": 1455371,
+      "publisher_checksum": "md5:47a98a65086d297a5448136f989eae95"
+    },
+    "MAMEM3/U005aii.mat": {
+      "path": "MAMEM3/U005aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901497",
+      "sha256": "bbfea42d7cb77216d2a92fc028ac96ce92e9fd53e061703dbb83eceff7620641",
+      "bytes": 1702388,
+      "publisher_checksum": "md5:222c892a017e6be58204899a0e429ba1"
+    },
+    "MAMEM3/U005bi.mat": {
+      "path": "MAMEM3/U005bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901500",
+      "sha256": "363c9adbee13c84256ac81f33db2aa9d56756f09e4b7b905e32e29bc73548a59",
+      "bytes": 1528469,
+      "publisher_checksum": "md5:1df4df1f1c6d0ef589c674f04a0bbd0f"
+    },
+    "MAMEM3/U005bii.mat": {
+      "path": "MAMEM3/U005bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901503",
+      "sha256": "809bb250e0e6d9eeee8e067f5279f1f533b2169f0329b65a9a191a64982e0753",
+      "bytes": 1676374,
+      "publisher_checksum": "md5:289a03bc8c3e6f615e9fa890ed6bd08d"
+    },
+    "MAMEM3/U005ci.mat": {
+      "path": "MAMEM3/U005ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901506",
+      "sha256": "9fc5ad5ea8bb8f73ef747422cc2d7d5647ee7bafe6af46f992a77993d998a1a3",
+      "bytes": 1518837,
+      "publisher_checksum": "md5:94ce009be72bb84145824018a7ee90cd"
+    },
+    "MAMEM3/U005cii.mat": {
+      "path": "MAMEM3/U005cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901509",
+      "sha256": "889895d162b613dadbf7c935ddd174196d13baeea9caf04486a5030b7f58082f",
+      "bytes": 1559228,
+      "publisher_checksum": "md5:56aec04ef4a4cd1ddf44a68f677e4c0a"
+    },
+    "MAMEM3/U005di.mat": {
+      "path": "MAMEM3/U005di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901512",
+      "sha256": "4fe0ff942c3e82593394bc0b4aa664ae1d1031fa3d1b76c7abab392b4d07a121",
+      "bytes": 1449465,
+      "publisher_checksum": "md5:aae3ebc29ff7f85dc7b6d4e1a456bfdf"
+    },
+    "MAMEM3/U005dii.mat": {
+      "path": "MAMEM3/U005dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901515",
+      "sha256": "070843ecaba1a93f272516aebaffe31bed709db8f9bad68c88409095e3e91dbd",
+      "bytes": 1642672,
+      "publisher_checksum": "md5:6c4378ec4276804b7fa6c8ecd8e19bf8"
+    },
+    "MAMEM3/U005ei.mat": {
+      "path": "MAMEM3/U005ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901518",
+      "sha256": "4de3582412fa224c691b2b0855139fa5b3b0cdd22d0f01171c38973a5862a1e6",
+      "bytes": 1471869,
+      "publisher_checksum": "md5:7048d2cf643e748dd4c294f88e18e8cd"
+    },
+    "MAMEM3/U005eii.mat": {
+      "path": "MAMEM3/U005eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901521",
+      "sha256": "e5395c130ea4ec08606cdbf20cda0e8020f1b86c28c80df3c075d54bd2254d08",
+      "bytes": 1555915,
+      "publisher_checksum": "md5:9cf52fd85deb627619587a4f53463447"
+    },
+    "MAMEM3/U006ai.mat": {
+      "path": "MAMEM3/U006ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901527",
+      "sha256": "c201f6224fb89e0fa5001826afa48945788d8249339361717a5faf321dbe86c7",
+      "bytes": 1176172,
+      "publisher_checksum": "md5:ac4aad02b6583f273cb88a5d9532d0ec"
+    },
+    "MAMEM3/U006aii.mat": {
+      "path": "MAMEM3/U006aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901530",
+      "sha256": "e540a947c297cc118cfb18258a6b07fa111c1414ad3d2968e31942d364cf91ae",
+      "bytes": 1300761,
+      "publisher_checksum": "md5:9a6d1c47f3867ed9668d47744c3bb701"
+    },
+    "MAMEM3/U006bi.mat": {
+      "path": "MAMEM3/U006bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901533",
+      "sha256": "42509796824e2017282bd16bd4f010086cdf995fe351aa0a224a8dd5e1b50783",
+      "bytes": 1193938,
+      "publisher_checksum": "md5:3894652732f8015f34699cccf9711931"
+    },
+    "MAMEM3/U006bii.mat": {
+      "path": "MAMEM3/U006bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901536",
+      "sha256": "0497a5ec78c42e6c3cde6f00ba3882e3ba37f4d58480bba6b2153f5e539299db",
+      "bytes": 1321055,
+      "publisher_checksum": "md5:1407f3386aa489f53cdc00e9325a0dc6"
+    },
+    "MAMEM3/U006ci.mat": {
+      "path": "MAMEM3/U006ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901539",
+      "sha256": "53edfa01897c30afd93a4ffce58595ac5e4d0c7028768065c8c0944b5932ffd5",
+      "bytes": 1205210,
+      "publisher_checksum": "md5:fa7719fb7b507c0686d0e5753816af79"
+    },
+    "MAMEM3/U006cii.mat": {
+      "path": "MAMEM3/U006cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901542",
+      "sha256": "3e1353cd4a1c2d5e8a45c8fbcec42755465f00cd50e67b196be3b95a9f5fe90c",
+      "bytes": 1296601,
+      "publisher_checksum": "md5:0d6b5ea5b8a73fe4956d575017b330ca"
+    },
+    "MAMEM3/U006di.mat": {
+      "path": "MAMEM3/U006di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901545",
+      "sha256": "e7f22703c62ad1e5dae2741756bb6cd8bccd132da4531512313d45632e496766",
+      "bytes": 1254975,
+      "publisher_checksum": "md5:badb6308836050ca176d00f68c551740"
+    },
+    "MAMEM3/U006dii.mat": {
+      "path": "MAMEM3/U006dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901548",
+      "sha256": "6023a4db9f65e827454913b0d6ee321c89e123a3d02a6f2f722a82c780adac36",
+      "bytes": 1309792,
+      "publisher_checksum": "md5:0f3952836a96c6de3fe2319038ab673f"
+    },
+    "MAMEM3/U006ei.mat": {
+      "path": "MAMEM3/U006ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901551",
+      "sha256": "f3b994825d2c80af60a580359ddf68ff1af5e5d44adc13292b26370f68b738f1",
+      "bytes": 1280146,
+      "publisher_checksum": "md5:81fe9cc911e1e9049176265c2db25a70"
+    },
+    "MAMEM3/U006eii.mat": {
+      "path": "MAMEM3/U006eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901554",
+      "sha256": "8fcdc5a53403c3c26ede56598aca08279e1b5c2c15a61b55dcba748cccb8b513",
+      "bytes": 1320303,
+      "publisher_checksum": "md5:fc19132770f412410ac98aa34ec00694"
+    },
+    "MAMEM3/U007ai.mat": {
+      "path": "MAMEM3/U007ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901560",
+      "sha256": "678aa9188a33eda3e8c247897cba9048dade91317b5ae6edebb6ded43d9f3b9c",
+      "bytes": 1241496,
+      "publisher_checksum": "md5:b02227535b7b0e90301cdf412e2804d5"
+    },
+    "MAMEM3/U007aii.mat": {
+      "path": "MAMEM3/U007aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901563",
+      "sha256": "cc15d223bd1d64fa52d0a58bbcf6fecf4f45e88a5e619050b72f80ed9a293679",
+      "bytes": 1322344,
+      "publisher_checksum": "md5:355bc030a3b1ae208438f7a7ab774454"
+    },
+    "MAMEM3/U007bi.mat": {
+      "path": "MAMEM3/U007bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901566",
+      "sha256": "8938db6d4f156ba2a0e3b5173732b818f884df499c763f7da49761927192ecb2",
+      "bytes": 1255754,
+      "publisher_checksum": "md5:fc2c0991d2e7773b58ed373e2cce9175"
+    },
+    "MAMEM3/U007bii.mat": {
+      "path": "MAMEM3/U007bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901569",
+      "sha256": "2156370996d9ad2a84621a41037eaf7bc319005f05fea10dc1332aa034487a70",
+      "bytes": 1330696,
+      "publisher_checksum": "md5:4f1f45af7e198847ddc459d93d3f012d"
+    },
+    "MAMEM3/U007ci.mat": {
+      "path": "MAMEM3/U007ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901572",
+      "sha256": "3d21eb3cda240fee2f39cb823761f3e5513eaa8a6e3e77873730e354665adb35",
+      "bytes": 1253523,
+      "publisher_checksum": "md5:de87a1289c87dc563c184a690a641390"
+    },
+    "MAMEM3/U007cii.mat": {
+      "path": "MAMEM3/U007cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901575",
+      "sha256": "7d5db8f97689e314e057a4e042a4b6d34e59a7b0e44f2c7d64e99f5d4e5fa78a",
+      "bytes": 1350388,
+      "publisher_checksum": "md5:97e5b4955af1cc095ad67bbd2557efea"
+    },
+    "MAMEM3/U007di.mat": {
+      "path": "MAMEM3/U007di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901578",
+      "sha256": "4dd0ac7892773ed7bdc2416bd3d4e6f8b43e91b0cb058722910e04de430e8df1",
+      "bytes": 1490472,
+      "publisher_checksum": "md5:40917b3246b0f0def340041124dc5017"
+    },
+    "MAMEM3/U007dii.mat": {
+      "path": "MAMEM3/U007dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901581",
+      "sha256": "55037588ab0e9606a32c9d40199297cbf384a409c0798d6ef21632354e78cdef",
+      "bytes": 1517683,
+      "publisher_checksum": "md5:6e8af500d0256ab17ee8c2e88202ef6c"
+    },
+    "MAMEM3/U007ei.mat": {
+      "path": "MAMEM3/U007ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901584",
+      "sha256": "0ca08061bded5271c89ffb09f5bd41f60300295804190a565283793d39350d80",
+      "bytes": 1286983,
+      "publisher_checksum": "md5:cab263403aa0fe4eadbd74b7b4d40e8e"
+    },
+    "MAMEM3/U007eii.mat": {
+      "path": "MAMEM3/U007eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901587",
+      "sha256": "9262d54ea343b373ed1ece61de3b6a3dd932a5e5852c253463e85de4f386b8e0",
+      "bytes": 1359984,
+      "publisher_checksum": "md5:0c160723056fc1d06222d3f8abc3fb7b"
+    },
+    "MAMEM3/U008ai.mat": {
+      "path": "MAMEM3/U008ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901593",
+      "sha256": "c3c9226853f0e40b5a93ec0b536a21344b5245c246d6c1c217a8e16e51b2adab",
+      "bytes": 1274142,
+      "publisher_checksum": "md5:1008c6da4080f30f301bc1bf0b49b69c"
+    },
+    "MAMEM3/U008aii.mat": {
+      "path": "MAMEM3/U008aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901596",
+      "sha256": "0e288342b2aa657abde19001a96366edcbd822c657565d29272d37007831013b",
+      "bytes": 1358610,
+      "publisher_checksum": "md5:bf0caf63c81f3c3317de12f465b79a35"
+    },
+    "MAMEM3/U008bi.mat": {
+      "path": "MAMEM3/U008bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901599",
+      "sha256": "97816147d13938a0ae22d70fedc2e0ab33d0152de063ff8d7030c7d7dccc4d81",
+      "bytes": 2186852,
+      "publisher_checksum": "md5:e6633b7b3a89255ecb44583500994b35"
+    },
+    "MAMEM3/U008bii.mat": {
+      "path": "MAMEM3/U008bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901602",
+      "sha256": "b3a9d6fa4a67f838296890ccc20eadff74e9ca9200b8e4fc9be6613dc03bcedf",
+      "bytes": 1466028,
+      "publisher_checksum": "md5:2cb8167779db471cb1e6c39a14b93d61"
+    },
+    "MAMEM3/U008ci.mat": {
+      "path": "MAMEM3/U008ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901605",
+      "sha256": "9190ae3ed9dc97fd3ba81dc5a984c214de172e596eb9c2ee03a3355fdc7d7a7f",
+      "bytes": 4871822,
+      "publisher_checksum": "md5:180341b2e046654ec50b652307fe3b7b"
+    },
+    "MAMEM3/U008cii.mat": {
+      "path": "MAMEM3/U008cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901608",
+      "sha256": "a2c3481aa38cb0168c5fd255ad9a858c90d07913a3927668f56d65316023a4f0",
+      "bytes": 1456261,
+      "publisher_checksum": "md5:00661a569cc267c3b7463f6fd704b5c3"
+    },
+    "MAMEM3/U008di.mat": {
+      "path": "MAMEM3/U008di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901611",
+      "sha256": "2df696007d0b1de78d4d96cacadf36b186e385eb6ada543255e943fac045a189",
+      "bytes": 2054729,
+      "publisher_checksum": "md5:c5b6cf06e76058ca6f5199e14fe12e7e"
+    },
+    "MAMEM3/U008dii.mat": {
+      "path": "MAMEM3/U008dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901614",
+      "sha256": "eae78e93bed0e6750e1ce5fb87a7f2d033a38a9e3b83238d26c2406897ab9a0e",
+      "bytes": 1589901,
+      "publisher_checksum": "md5:196a5c3db85c7e160d1986b10722c55c"
+    },
+    "MAMEM3/U008ei.mat": {
+      "path": "MAMEM3/U008ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901617",
+      "sha256": "b4d0342cb1eaa2a455569baa3453a3d8d6c85c24699b1075cf7f49906c9d4037",
+      "bytes": 2367005,
+      "publisher_checksum": "md5:5c6d74d247f0b3bf7e046f0d3e1b50e6"
+    },
+    "MAMEM3/U008eii.mat": {
+      "path": "MAMEM3/U008eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901620",
+      "sha256": "b22545a864ff5c1279f9a9297855b455d63d3d22c8d852f8ee2b0d421749aeeb",
+      "bytes": 1553482,
+      "publisher_checksum": "md5:f8c848b16a55593d010b95017091b0f6"
+    },
+    "MAMEM3/U009ai.mat": {
+      "path": "MAMEM3/U009ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901626",
+      "sha256": "ce17244db1b63e8e1fbc80f24b4408607cf1aa419ff12ca10bab6a8d4d0b3645",
+      "bytes": 1114642,
+      "publisher_checksum": "md5:60ad3f7f621c68d1153b4be6b85193f1"
+    },
+    "MAMEM3/U009aii.mat": {
+      "path": "MAMEM3/U009aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901629",
+      "sha256": "41d04eb1e2327457d1efc2a664afd47306c1274c36bba2b42dcbb5e7af73d1a9",
+      "bytes": 1333050,
+      "publisher_checksum": "md5:6f29d62cc637e64c9364ef95fb9f3616"
+    },
+    "MAMEM3/U009bi.mat": {
+      "path": "MAMEM3/U009bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901632",
+      "sha256": "fdae5cdf27207fc857130b9c4609d524a4b7cc3c7de197591244a09843a34040",
+      "bytes": 1117646,
+      "publisher_checksum": "md5:755d9fb6b98b6187954e0d7e67652574"
+    },
+    "MAMEM3/U009bii.mat": {
+      "path": "MAMEM3/U009bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901635",
+      "sha256": "a7627f948eb4617c1329be0970e6c2a56b6f3bb26861df1f2a31fafa34836229",
+      "bytes": 1194217,
+      "publisher_checksum": "md5:95f744686b7235ee67f630ae61c66762"
+    },
+    "MAMEM3/U009ci.mat": {
+      "path": "MAMEM3/U009ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901638",
+      "sha256": "ff8dddd9e6e08713ed3c9faf8a8782d2c4fea0bb4b09f44a4189f12e41497fa0",
+      "bytes": 1113303,
+      "publisher_checksum": "md5:7e5d3e86bb3c363081b5f28aeb58bf05"
+    },
+    "MAMEM3/U009cii.mat": {
+      "path": "MAMEM3/U009cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901641",
+      "sha256": "002eca5b8a4502f39dba42fe4f8584c24f16df8ebe7c040f0efb6eaa31dee772",
+      "bytes": 1186777,
+      "publisher_checksum": "md5:9a07bd7580b40763fa1b545b5a831eb1"
+    },
+    "MAMEM3/U009di.mat": {
+      "path": "MAMEM3/U009di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901644",
+      "sha256": "878f09ec222bb767d1b31cf95fb5d466a0c18f82111ef08522c32723808f1efd",
+      "bytes": 1174467,
+      "publisher_checksum": "md5:0356e47406d9cd674698415431434498"
+    },
+    "MAMEM3/U009dii.mat": {
+      "path": "MAMEM3/U009dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901647",
+      "sha256": "cb2ecd748fccf0d42f0e6984fc286318d1579634401a31161c8efa78fc50b63f",
+      "bytes": 1350170,
+      "publisher_checksum": "md5:e492596edef8073ec2495b3385e69d8f"
+    },
+    "MAMEM3/U009ei.mat": {
+      "path": "MAMEM3/U009ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901650",
+      "sha256": "022430ff45700faf258e771d8ce5744f3b9ecdd959c351ff8054baf21b5406d6",
+      "bytes": 1105251,
+      "publisher_checksum": "md5:0701e1e35990d5f9f04e4233180e78d5"
+    },
+    "MAMEM3/U009eii.mat": {
+      "path": "MAMEM3/U009eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901653",
+      "sha256": "c821cdba0e0b82c15afbcd6067b2b63e767b30b45ca7fe0dd27398b0a25453db",
+      "bytes": 1315272,
+      "publisher_checksum": "md5:4d248c28c0aac36cf0b6f741a872c021"
+    },
+    "MAMEM3/U010ai.mat": {
+      "path": "MAMEM3/U010ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901659",
+      "sha256": "ef6c96df871a5e0c49eee617c2dd9fc38f2a9bbd37c9ff922d9a865f268c0918",
+      "bytes": 1128310,
+      "publisher_checksum": "md5:d5b3645ee75d1e64b3896e6454ee4537"
+    },
+    "MAMEM3/U010aii.mat": {
+      "path": "MAMEM3/U010aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901662",
+      "sha256": "8b36c7ca1513ae3200dce7c2c98b43fe9dde9ac26d25bee31cecfed32912d0fa",
+      "bytes": 1673242,
+      "publisher_checksum": "md5:fb8e46f52596f9cf8ef4d39665849158"
+    },
+    "MAMEM3/U010bi.mat": {
+      "path": "MAMEM3/U010bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901665",
+      "sha256": "2ced75ad04d2570a01295b0b7042c3ebc2c75ab422f7ed44054d75e49ef1c3dc",
+      "bytes": 1141190,
+      "publisher_checksum": "md5:8fb79c3f3862a50b15853454a1c6d842"
+    },
+    "MAMEM3/U010bii.mat": {
+      "path": "MAMEM3/U010bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901668",
+      "sha256": "6e6490cc51a586b7cbb542719af67b9b991909b8c1834d809f85bdaea35f94eb",
+      "bytes": 1359734,
+      "publisher_checksum": "md5:367e2cf91931dec94bfb4e50b4b6e884"
+    },
+    "MAMEM3/U010ci.mat": {
+      "path": "MAMEM3/U010ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901671",
+      "sha256": "0ca7f3cf28bc37d2b0828138b7193721ddd35efaf924412b05a60fd5140b0ac4",
+      "bytes": 1143290,
+      "publisher_checksum": "md5:8b40a1512599f6ad18a2739446296a2b"
+    },
+    "MAMEM3/U010cii.mat": {
+      "path": "MAMEM3/U010cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901674",
+      "sha256": "2a0a9a1410061db4811ff4d0f3d8024ac2f75e8f3e1f58dd0c4011931d64561b",
+      "bytes": 1244559,
+      "publisher_checksum": "md5:332f15349538093a77cec1eddd300d5b"
+    },
+    "MAMEM3/U010di.mat": {
+      "path": "MAMEM3/U010di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901677",
+      "sha256": "69ddcda68212161d5fb6a7e084b1cf88d55b82b89e255649155e2e7492599550",
+      "bytes": 1147815,
+      "publisher_checksum": "md5:315317c7e2860d708f3e0180f4d5e7ff"
+    },
+    "MAMEM3/U010dii.mat": {
+      "path": "MAMEM3/U010dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901680",
+      "sha256": "8d4637b4635741f6a33311957ea5aeebb281ca578147e7851bd7f22e43fa959a",
+      "bytes": 1269231,
+      "publisher_checksum": "md5:f5ef438b0fc011832daad0d38d169a75"
+    },
+    "MAMEM3/U010ei.mat": {
+      "path": "MAMEM3/U010ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901683",
+      "sha256": "60252f31bd1fa07688f858b504d98e72c8d7710f92e6ffb584a43d883eb83137",
+      "bytes": 1131245,
+      "publisher_checksum": "md5:1952e20a26e5b5c4138f80f35ef95d65"
+    },
+    "MAMEM3/U010eii.mat": {
+      "path": "MAMEM3/U010eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901686",
+      "sha256": "6bd3e22bf4d9e271f75975fcb6faefd11958f196ae02a7cbc09c707c324dec9a",
+      "bytes": 1213907,
+      "publisher_checksum": "md5:f3df1d315dfe1c8a189c5daebd0bd19a"
+    },
+    "MAMEM3/U011ai.mat": {
+      "path": "MAMEM3/U011ai.mat",
+      "url": "https://ndownloader.figshare.com/files/27901692",
+      "sha256": "7cda15bdbe0433963663381df743539b2e2205f4f3d21fa23432c8dafc26ade7",
+      "bytes": 1198996,
+      "publisher_checksum": "md5:3d6c8928b41d46010f72e446051a0889"
+    },
+    "MAMEM3/U011aii.mat": {
+      "path": "MAMEM3/U011aii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901695",
+      "sha256": "ccbeb766fe29233810c6102db2b9e9ebdd7adb82fd976aa2ccf8a33211adb988",
+      "bytes": 1368782,
+      "publisher_checksum": "md5:4d612dfa8d72deac1d96a1010ab7db42"
+    },
+    "MAMEM3/U011bi.mat": {
+      "path": "MAMEM3/U011bi.mat",
+      "url": "https://ndownloader.figshare.com/files/27901698",
+      "sha256": "d81258c79624738280d78f0233b9aefdb59bf7f22448d1a148cfdbd46c4fbcb2",
+      "bytes": 1358917,
+      "publisher_checksum": "md5:c8bf6566be6499702e471d287e334722"
+    },
+    "MAMEM3/U011bii.mat": {
+      "path": "MAMEM3/U011bii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901701",
+      "sha256": "1257d71cb052a96fda4e5754d92f8609b2cf524ffdaafad0df2288cb678db240",
+      "bytes": 1484064,
+      "publisher_checksum": "md5:e68220d979a94f65ca181feeeba40245"
+    },
+    "MAMEM3/U011ci.mat": {
+      "path": "MAMEM3/U011ci.mat",
+      "url": "https://ndownloader.figshare.com/files/27901704",
+      "sha256": "da26ff8614addc01110b37faa4042d8c214250d4ad0ad37c911a8d4a02c04647",
+      "bytes": 1277563,
+      "publisher_checksum": "md5:619284f2669d66ca9f19e676e83b4d04"
+    },
+    "MAMEM3/U011cii.mat": {
+      "path": "MAMEM3/U011cii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901707",
+      "sha256": "c4038132aba6113e9398d05d692f3db5a674fff170457dc0392b3bb48f4acdb6",
+      "bytes": 1340439,
+      "publisher_checksum": "md5:0711dd4f860d1712921907ff69ecd19e"
+    },
+    "MAMEM3/U011di.mat": {
+      "path": "MAMEM3/U011di.mat",
+      "url": "https://ndownloader.figshare.com/files/27901710",
+      "sha256": "7bcf4ce051ecbf1700cabf47856275891d4a9c13ac0538fd032faae7a3297f35",
+      "bytes": 1282459,
+      "publisher_checksum": "md5:e9682e05b949e36aca74b06edf7f83cc"
+    },
+    "MAMEM3/U011dii.mat": {
+      "path": "MAMEM3/U011dii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901713",
+      "sha256": "90d9b2b98957c074cac856ca395577578df2b5c021c8b641f4f53475670fd26e",
+      "bytes": 1346319,
+      "publisher_checksum": "md5:1d1255e61d6fafb9c1acb7fc03d29914"
+    },
+    "MAMEM3/U011ei.mat": {
+      "path": "MAMEM3/U011ei.mat",
+      "url": "https://ndownloader.figshare.com/files/27901716",
+      "sha256": "5bf7e72e267d0b329d2f96b56640e020f7cab17d639e20391c7f1433b70fc622",
+      "bytes": 1216675,
+      "publisher_checksum": "md5:d2662e1f740d50086f2904f2c46002a2"
+    },
+    "MAMEM3/U011eii.mat": {
+      "path": "MAMEM3/U011eii.mat",
+      "url": "https://ndownloader.figshare.com/files/27901722",
+      "sha256": "120c0ad93c76a0e9f50ca84216cb38ff54bfb91baf405c8db78204aad5e0bbe8",
+      "bytes": 1317773,
+      "publisher_checksum": "md5:a7f666deb4aee278d6ec9db98b0fc7b7"
+    }
+  }
+}

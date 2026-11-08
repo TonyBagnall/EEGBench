@@ -1,0 +1,41 @@
+[
+  {
+    "dataset": "ImaginedRightHandFeetRest",
+    "path": "D:/Data/EEG/ImaginedRightHandFeetRest",
+    "train_cases": 150,
+    "test_cases": 40,
+    "subjects": 1,
+    "channels": 24,
+    "timepoints": 750,
+    "classes": 3,
+    "frequency": 250,
+    "size_GB": 0.059912652,
+    "licence": "CC-BY-4.0"
+  },
+  {
+    "dataset": "ImaginedLeftRightHandRest",
+    "path": "D:/Data/EEG/ImaginedLeftRightHandRest",
+    "train_cases": 480,
+    "test_cases": 240,
+    "subjects": 1,
+    "channels": 24,
+    "timepoints": 750,
+    "classes": 3,
+    "frequency": 250,
+    "size_GB": 0.222202752,
+    "licence": "CC-BY-4.0"
+  },
+  {
+    "dataset": "ImaginedHandFootActions",
+    "path": "D:/Data/EEG/ImaginedHandFootActions",
+    "train_cases": 2727,
+    "test_cases": 930,
+    "subjects": 60,
+    "channels": 11,
+    "timepoints": 500,
+    "classes": 8,
+    "frequency": 125,
+    "size_GB": 0.387460264,
+    "licence": "CC-BY-4.0"
+  }
+]

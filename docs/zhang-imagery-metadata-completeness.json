@@ -1,0 +1,30 @@
+{
+  "evidence": {
+    "direct": "Native float32 source columns, gain/offset, state definitions and stimulus captions; ChannelNames explicitly empty",
+    "documented": "Original paper acquisition protocol and MIMED cell/day interpretation",
+    "assigned": "Archive split, encoded classes, fixed crop lengths; MIMED cue offset assigned after documented baseline",
+    "inferred": "No inferred anatomical channel names/positions used; only original source-column ordinals",
+    "availability": {
+      "participant_id": true,
+      "session_id": true,
+      "run_or_block_id": true,
+      "original_trial_or_epoch_id": true,
+      "continuous_recording_samples": true,
+      "native_channel_names": false,
+      "anatomical_channel_order_confirmed": false,
+      "measured_individual_positions": false,
+      "physical_units_explicit": true,
+      "native_labels": true,
+      "source_file": true,
+      "original_partition": false,
+      "original_reference_documented": true
+    }
+  },
+  "missing_or_inconsistent": [
+    "Anatomical channel identities absent in original header; inferred loader EGI1-16/E28 mapping not accepted as recovered names",
+    "Same anatomical order across recordings cannot be established; original source column order preserved without reordering",
+    "No source montage coordinates applied because channel-to-electrode mapping unresolved",
+    "H1..H12 are directory participant IDs; native SubjectName H is nonunique; actual calendar timezone unknown",
+    "Published nominal trial arithmetic is inconsistent; actual StimulusCode intervals determine retained counts"
+  ]
+}

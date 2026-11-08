@@ -1,0 +1,29 @@
+{
+  "evidence": {
+    "direct": "Native numeric arrays, channel labels/order, source IDs and calibration/annotations where available",
+    "documented": "Original paper acquisition protocol and MIMED cell/day interpretation",
+    "assigned": "Archive split, encoded classes, fixed crop lengths; MIMED cue offset assigned after documented baseline",
+    "inferred": "MIMED microvolt numeric interpretation; no inferred anatomical names or individual geometry",
+    "availability": {
+      "participant_id": true,
+      "session_id": true,
+      "run_or_block_id": true,
+      "original_trial_or_epoch_id": true,
+      "continuous_recording_samples": true,
+      "native_channel_names": true,
+      "anatomical_channel_order_confirmed": true,
+      "measured_individual_positions": false,
+      "physical_units_explicit": true,
+      "native_labels": true,
+      "source_file": true,
+      "original_partition": false,
+      "original_reference_documented": false
+    }
+  },
+  "missing_or_inconsistent": [
+    "Fixed movement order confounds task with position in block",
+    "Individual montage geometry and reference not recovered; anatomical sensor names are native EDF labels",
+    "EDF measurement date has no independently established timezone; displayed UTC is MNE representation",
+    "Session/run recording1 identifiers assigned for sole native file per participant"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "evidence": {
+    "direct": "Subject/session/run/file tokens, channels, marker ordinals/positions/symbols, EEG JSON M2, fs256 and binary float32 arrays",
+    "documented": "Sensor roles, AFz ground, M2 reference and protocol in original README/paper",
+    "assigned": "Target encoding, one-second epochs and subject-disjoint archive split; source has no epoch IDs or fixed partitions",
+    "inferred": "Microvolt interpretation follows BrainVision default; no synthetic geometry"
+  },
+  "direct_fields": [
+    "participant_id",
+    "session_id",
+    "run_id",
+    "source_file",
+    "native_marker_number",
+    "source_event_sample_1based",
+    "source_flash_symbol",
+    "target_symbol",
+    "native_timestamp_start",
+    "native_timestamp_last_sample",
+    "channel_names",
+    "sampling_frequency_hz"
+  ],
+  "inferred": [
+    "microvolt interpretation",
+    "target/non-target encoding from native target/flash equality",
+    "archive-defined whole-subject split"
+  ],
+  "missing": [
+    "original pre-BIDS matrix row IDs beyond native files",
+    "individual demographics",
+    "individual electrode coordinates",
+    "native explicit physical unit",
+    "native acquisition filter settings",
+    "precise original timestamps"
+  ],
+  "inconsistent": [
+    "Source has no fixed TRAIN/TEST: archive uses14 lowest numeric subject IDs train, remaining5 test",
+    "Physical units inferred, not explicit; native numeric values preserved",
+    "BIDS EEGChannelCount0 and unknown types conflict with original README8EEG and native labels; Timestamp excluded",
+    "BIDS sample values use one-based native VMRK positions, despite zero-based onset times; converter explicitly subtracts1",
+    "Individual demographics/electrode positions and native acquisition filtering unavailable",
+    "Available sessions/runs vary; inventory reports actual files rather than assuming19x3x7"
+  ],
+  "excluded_recordings": [
+    {
+      "source_file": "sub-011/ses-03/eeg/sub-011_ses-03_task-ctos_run-5H_eeg.vhdr",
+      "reason": "Exact duplicate native EEG binary and marker stream of earlier file for same participant",
+      "retained_source_file": "sub-011/ses-02/eeg/sub-011_ses-02_task-ctos_run-5H_eeg.vhdr",
+      "native_eeg_sha256": "8f753d0c452ed832d3b0a726ab2e5225acde08c7db7572862dc4ec6d8aeb0a78",
+      "excluded_flash_count": 1392
+    },
+    {
+      "source_file": "sub-019/ses-01/eeg/sub-019_ses-01_task-ctos_run-5H_eeg.vhdr",
+      "native_channel_names": [
+        "chan001",
+        "chan002",
+        "chan003",
+        "chan004",
+        "chan005",
+        "chan006",
+        "chan007",
+        "chan008",
+        "chan009",
+        "chan010"
+      ],
+      "native_samples": 72968,
+      "native_marker_count": 0,
+      "reason": "No native flash events: no classification cases; placeholder/unknown sensors not assigned scalp names"
+    },
+    {
+      "source_file": "sub-019/ses-03/eeg/sub-019_ses-03_task-ctos_run-5H_eeg.vhdr",
+      "native_channel_names": [
+        "chan001",
+        "chan002",
+        "chan003",
+        "chan004",
+        "chan005",
+        "chan006",
+        "chan007",
+        "chan008",
+        "chan009",
+        "chan010"
+      ],
+      "native_samples": 73008,
+      "native_marker_count": 0,
+      "reason": "No native flash events: no classification cases; placeholder/unknown sensors not assigned scalp names"
+    }
+  ],
+  "excluded_cases": 179
+}

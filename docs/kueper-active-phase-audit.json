@@ -1,0 +1,247 @@
+[
+  {
+    "file": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set1.vmrk",
+    "source_onsets": 42,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set2.vmrk",
+    "source_onsets": 43,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/AV82/20211220_r_AV82_intentional_bilateral_set3.vmrk",
+    "source_onsets": 43,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/JD68/20220105_r_JD68_intentional_bilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/JV43/20211210_r_JV43_intentional_bilateral_set3.vmrk",
+    "source_onsets": 42,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set1.vmrk",
+    "source_onsets": 47,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/QS70/20220107_r_QS70_intentional_bilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set1.vmrk",
+    "source_onsets": 42,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/RA12/20211216_r_RA12_intentional_bilateral_set3.vmrk",
+    "source_onsets": 43,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set1.vmrk",
+    "source_onsets": 44,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/UP28/20211223_r_UP28_intentional_bilateral_set3.vmrk",
+    "source_onsets": 45,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set1.vmrk",
+    "source_onsets": 45,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set2.vmrk",
+    "source_onsets": 45,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/XP01/20211222_r_XP01_intentional_bilateral_set3.vmrk",
+    "source_onsets": 45,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set1.vmrk",
+    "source_onsets": 42,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set2.vmrk",
+    "source_onsets": 42,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/bilateral/ZS27/20220104_r_ZS27_intentional_bilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/AV82/20211220_r_AV82_intentional_unilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/JD68/20220105_r_JD68_intentional_unilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/JV43/20211210_r_JV43_intentional_unilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/QS70/20220107_r_QS70_intentional_unilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/RA12/20211216_r_RA12_intentional_unilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/UP28/20211223_r_UP28_intentional_unilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set3.vmrk",
+    "source_onsets": 31,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/XP01/20211222_r_XP01_intentional_unilateral_set4.vmrk",
+    "source_onsets": 9,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set1.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set2.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  },
+  {
+    "file": "EEG_dataset/EEG/unilateral/ZS27/20220104_r_ZS27_intentional_unilateral_set3.vmrk",
+    "source_onsets": 41,
+    "outside_active_phase": []
+  }
+]

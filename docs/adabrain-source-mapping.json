@@ -1,0 +1,137 @@
+{
+  "review_date": "2026-11-05",
+  "repo": "https://github.com/Jamine-W/AdaBrain-Bench",
+  "revision": "c29be9291b927b037325640137bf0871acc04f57",
+  "dataset_entries": 13,
+  "selected_source_matches": 2,
+  "registry_source_matches": 3,
+  "new_source_entries": 10,
+  "limitations": "Source identity, not signal/case equality. TUAB/TUEV share TUH parent corpus; exact independent recording count unresolved.",
+  "datasets": [
+    {
+      "dataset": "SEED",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/SEED/data_process.py",
+      "code_sha256": "84e9ef2a3223ac04b602ddb61c7c0895209161100e17a3073839406703e01cd0"
+    },
+    {
+      "dataset": "SEED-IV",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/SEED-IV/data_process.py",
+      "code_sha256": "a196958363f637b14e46ff8ae262745a3537cfec34a49c1b26e6600fcf38ff1a"
+    },
+    {
+      "dataset": "EEGMAT",
+      "relation": "same-source-different-view",
+      "our_problems": [
+        "MentalArithmetic"
+      ],
+      "selected_match": true,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/EEGMAT/data_process.py",
+      "code_sha256": "3d904e2cb92921713139db672bf744472fd6f101b639a5c772aa4fc33c7a0372"
+    },
+    {
+      "dataset": "SEED-VIG",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "regression",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/SEED-VIG/data_process.py",
+      "code_sha256": "2c60d52f9094ca2bbd26142653dfa0336a2fff0ce56b960cc3fd6953dd43fde6"
+    },
+    {
+      "dataset": "BCI-IV-2A",
+      "relation": "same-source-different-view",
+      "our_problems": [
+        "ImaginedHandFeetTongue"
+      ],
+      "selected_match": true,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/BCI-IV-2A/data_process.py",
+      "code_sha256": "09c6875dfd865bf00ae931611b82b64e47326e4723ee240bf174221c75b0e313"
+    },
+    {
+      "dataset": "SHU",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/SHU/data_process.py",
+      "code_sha256": "2acb55f4c8f393b041b10aea573d6b58bf0ebf6a10edc49ceb02aa06c7d1fc1b"
+    },
+    {
+      "dataset": "Things-EEG",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "retrieval",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/Things-EEG/data_process.py",
+      "code_sha256": "64fa592f0e84f118c8024f72923d4753c68b210e3a79b515dc91cf50863890f6"
+    },
+    {
+      "dataset": "TUEV",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/TUEV/data_process.py",
+      "code_sha256": "7f2f9d8bee51aa20f2538d998fdd473045ab8a8ff09e040f8bc095b2ced9ff68"
+    },
+    {
+      "dataset": "TUAB",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/TUAB/data_process.py",
+      "code_sha256": "af618e2af50aad9f5f70d440381e4eb3ed15c633e420e91fa39078f6d7be56ac"
+    },
+    {
+      "dataset": "Siena",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/Siena/data_process.py",
+      "code_sha256": "faa9225f8d71cf76d2c18f0b6996e63b9964aa88f365070dad7572603b2f492f"
+    },
+    {
+      "dataset": "HMC",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/HMC/data_process.py",
+      "code_sha256": "c354cbfd498b6225290ddcd126fd84226aa09073c94fa0411627911f3879e0ae"
+    },
+    {
+      "dataset": "SHHS",
+      "relation": "no-identified-match",
+      "our_problems": [],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/SHHS/data_process.py",
+      "code_sha256": "0727017a87ce30a679db33c09a8a5dd3f449cd3062db9089c476ac68781c6151"
+    },
+    {
+      "dataset": "Sleep-EDF",
+      "relation": "same-source-different-view",
+      "our_problems": [
+        "Sleep"
+      ],
+      "selected_match": false,
+      "task_type": "classification",
+      "code_url": "https://github.com/Jamine-W/AdaBrain-Bench/blob/c29be9291b927b037325640137bf0871acc04f57/preprocessing/Sleep-EDF/data_process.py",
+      "code_sha256": "fc1de7f591d4f3db20d4f022e144a0f8bb1486929463e9f7605280b7d7acdc91"
+    }
+  ],
+  "archive_registry_count": 60,
+  "archive_selected_count": 56
+}

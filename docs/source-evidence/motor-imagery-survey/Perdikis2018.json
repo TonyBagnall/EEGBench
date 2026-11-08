@@ -1,0 +1,135 @@
+{
+  "created": "2017-08-11T16:23:08.443793+00:00",
+  "modified": "2020-01-24T19:24:33.890598+00:00",
+  "id": 841764,
+  "conceptrecid": "841763",
+  "doi": "10.5281/zenodo.841764",
+  "conceptdoi": "10.5281/zenodo.841763",
+  "doi_url": "https://doi.org/10.5281/zenodo.841764",
+  "metadata": {
+    "title": "CNBI EPFL Brain Tweakers Cybathlon BCI race dataset",
+    "doi": "10.5281/zenodo.841764",
+    "publication_date": "2017-08-11",
+    "description": "<p>This dataset contains training and competition EEG data (GDF format) and application log files for the two pilots of the Brain Tweakers team in the Cybathlon BCI race event. The Cybathlon is the first international competition for bionic technologies. It was held in Zurich, Switzerland in October 2016 and encompassed the BCI race event, where 4 disabled contestants were driving their avatar by means of 3 mental commands towards the finish line of a race track. Pilot MA25VE was the winner of the competition and pilot AN14VE the recordman.</p>\n\n<p>More information on the event can be found at:&nbsp;http://www.cybathlon.ethz.ch/</p>\n\n<p>All EEG data were recorded with a gTec gUSBamp 16-channel system at 512 Hz on scalp locations (10-20 system, in order): Fz,FC3,FC1,FCz,FC2,FC4,C3,C1,Cz,C2,C4,CP3,CP1,CPz,CP2,CP4. The brain-computer interface used was a motor-imagery BCI. This dataset will be linked to a publication upon acceptance of the latter.</p>\n\n<p>For more information on the dataset, please contact the authors.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Perdikis, Serafeim",
+        "affiliation": "EPFL"
+      },
+      {
+        "name": "Tonin, Luca",
+        "affiliation": "EPFL"
+      },
+      {
+        "name": "Saeedi, Sareh",
+        "affiliation": "EPFL"
+      },
+      {
+        "name": "Schneider, Christoph",
+        "affiliation": "EPFL"
+      },
+      {
+        "name": "Millan, Jose del R.",
+        "affiliation": "EPFL"
+      }
+    ],
+    "keywords": [
+      "brain-computer interface, motor-imagery, spinal cord injury, cybathlon, BCI race, EEG"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "841763"
+          }
+        }
+      ]
+    }
+  },
+  "title": "CNBI EPFL Brain Tweakers Cybathlon BCI race dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/841764",
+    "self_html": "https://zenodo.org/records/841764",
+    "preview_html": "https://zenodo.org/records/841764?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.841764",
+    "self_doi": "https://doi.org/10.5281/zenodo.841764",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.841764",
+    "reserve_doi": "https://zenodo.org/api/records/841764/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/841763",
+    "parent_html": "https://zenodo.org/records/841763",
+    "parent_doi": "https://doi.org/10.5281/zenodo.841763",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.841763",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:841764/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:841764/sequence/default",
+    "files": "https://zenodo.org/api/records/841764/files",
+    "media_files": "https://zenodo.org/api/records/841764/media-files",
+    "latest": "https://zenodo.org/api/records/841764/versions/latest",
+    "latest_html": "https://zenodo.org/records/841764/latest",
+    "versions": "https://zenodo.org/api/records/841764/versions",
+    "draft": "https://zenodo.org/api/records/841764/draft",
+    "access_links": "https://zenodo.org/api/records/841764/access/links",
+    "access_grants": "https://zenodo.org/api/records/841764/access/grants",
+    "access_users": "https://zenodo.org/api/records/841764/access/users",
+    "access_request": "https://zenodo.org/api/records/841764/access/request",
+    "access": "https://zenodo.org/api/records/841764/access",
+    "communities": "https://zenodo.org/api/records/841764/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/841764/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/841764/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/841764/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/841764/quota-increase",
+    "requests": "https://zenodo.org/api/records/841764/requests"
+  },
+  "updated": "2020-01-24T19:24:33.890598+00:00",
+  "recid": "841764",
+  "revision": 8,
+  "files": [
+    {
+      "id": "fc2681ae-a32b-40d8-9fba-648f3d14b35f",
+      "key": "MA25VE.tar.gz",
+      "size": 1661504878,
+      "checksum": "md5:4134d9b4f85d85e7f5cd4d6d2061160f",
+      "links": {
+        "self": "https://zenodo.org/api/records/841764/files/MA25VE.tar.gz/content"
+      }
+    },
+    {
+      "id": "dc6f6410-0212-478a-8c20-790fba5bb495",
+      "key": "AN14VE.tar.gz",
+      "size": 3019565120,
+      "checksum": "md5:9c3fd463aba6ecc059b99af037302c26",
+      "links": {
+        "self": "https://zenodo.org/api/records/841764/files/AN14VE.tar.gz/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "34863"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 232,
+    "unique_downloads": 189,
+    "views": 954,
+    "unique_views": 899,
+    "version_downloads": 232,
+    "version_unique_downloads": 189,
+    "version_unique_views": 899,
+    "version_views": 954
+  },
+  "state": "done",
+  "submitted": true
+}

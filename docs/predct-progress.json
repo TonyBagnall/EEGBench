@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "completed": [
+    "ParkinsonsPedalling",
+    "ParkinsonsRest",
+    "ObsessiveCompulsiveSymptoms"
+  ],
+  "source_root": "D:/Data/EEGSources/PREDCT",
+  "output_root": "D:/Data/EEG",
+  "downloads": "All selected native files checksum verified",
+  "conversion_jobs": {},
+  "overnight_request": {
+    "pause": "2026-11-06T00:00:00+00:00",
+    "resume": "2026-11-06T07:00:00+00:00",
+    "timezone": "Europe/London",
+    "guard": ".openeegbench/overnight-batch-schedule.json",
+    "limitation": "Guard resumes the exact local converter workers only; assistant chat needs a resume message",
+    "agent_instruction": "At midnight checkpoint and update_goal paused; do not work overnight",
+    "batch_status": "This three-source batch finished before midnight; its converter workers have exited."
+  },
+  "rest_correction": "Rejected provisional export stopped and removed. Control896 isolated marker precedes regular sequence by199.442s. rest_intervals now splits gaps over1.5s; eight clinical tests pass.",
+  "next_steps": [
+    "Use final PRED+CT report for release/metadata review; no upload performed",
+    "Continue smaller fully open candidate screening under the user-authorised queue before midnight"
+  ],
+  "registered": 63,
+  "selected": 59,
+  "clinical_scope": "35 nominal raw records retained (12high/23low). Eleven processed _ready files excluded (10high/1low), five impossible header counts. No repair attempted.",
+  "flanker_cases_inspected": 10414,
+  "flanker_status": "35 source recordings inspected; exact-source-matched intermediates reused; .ts export running",
+  "tests": "29 relevant tests passed; all three full readbacks/duplicate/subject checks and aeon smoke tests passed"
+}

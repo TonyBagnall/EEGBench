@@ -1,0 +1,150 @@
+{
+  "source_record_id": 7664069,
+  "source_revision": "Zenodo7664069 v1",
+  "licence": "CC-BY-4.0",
+  "pilot": false,
+  "evidence_sha256": "ce07c2a331d2edb145278f20cb349a7a514d220861355f35cf0884e2ad19c3e8",
+  "files": [
+    {
+      "name": "sub-01.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-01.zip/content",
+      "bytes": 120052339,
+      "checksum": "md5:0f94741d86cea15009bbeb43ed55e850",
+      "sha256": "d586d4f1d19bef6ada1915dda03b41492b5096e49a7ee8da8cf448869563c0a4"
+    },
+    {
+      "name": "sub-02.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-02.zip/content",
+      "bytes": 141480533,
+      "checksum": "md5:fa88b5237799ac9d82005b0364afbcc7",
+      "sha256": "da133348ab12aa8d40fa97d7e1f8267ae40c44b6175339ff4568ab11a8f0ed23"
+    },
+    {
+      "name": "sub-03.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-03.zip/content",
+      "bytes": 136956977,
+      "checksum": "md5:02b75f15710b41734bf2e748fa562574",
+      "sha256": "6a2b40ff72a55fb2f9221051c555466067d8fffcabf399b8acf8e27ef80c97dc"
+    },
+    {
+      "name": "sub-04.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-04.zip/content",
+      "bytes": 138176128,
+      "checksum": "md5:bceef36338eb9dc053bc28e4e8366954",
+      "sha256": "d43e7aeed631477a71fc022144506551f0c5ae3976b21469cb03cc90c98fec54"
+    },
+    {
+      "name": "sub-05.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-05.zip/content",
+      "bytes": 138060094,
+      "checksum": "md5:82b9c73d1f5465d20603fd0829d10f0a",
+      "sha256": "d1051688ce3493e5b4e80f5c33796f5c497d1b6d3b5ee20fa82b46336209db1c"
+    },
+    {
+      "name": "sub-06.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-06.zip/content",
+      "bytes": 143136883,
+      "checksum": "md5:f161a384e7ecad79e18abb438eb82dd7",
+      "sha256": "df698a01de8c8dbfae0c2638305156981c2ef0f7377361d8b594014fef9a6ec9"
+    },
+    {
+      "name": "sub-07.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-07.zip/content",
+      "bytes": 155667559,
+      "checksum": "md5:eb59d70ffbb754a40aefee37285c4094",
+      "sha256": "0b0a807eb90b0c7dc136a92fdcd682a84eb83a66d7bf3dea3bad76a70fd92443"
+    },
+    {
+      "name": "sub-08.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-08.zip/content",
+      "bytes": 151651992,
+      "checksum": "md5:cb3a117f2e6911959ad763c6af5a0b44",
+      "sha256": "b9b30a9c0b4920431035d02c035fb3244bc26dbfbf52623f5ff44c747fc58af7"
+    },
+    {
+      "name": "sub-09.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-09.zip/content",
+      "bytes": 148580882,
+      "checksum": "md5:537a24c670ea0fc62ae02dea78d47933",
+      "sha256": "b0065332cd308122e9cd2fc634c572af2370c5ec2025b00593beed3cf1249e3b"
+    },
+    {
+      "name": "sub-12.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-12.zip/content",
+      "bytes": 153847139,
+      "checksum": "md5:3a2ffb16c84d8b5fbbd97a68bf0aafd6",
+      "sha256": "a9c0acc43d7658bd5131e244998c94c49586efd4d58fdbcfe791799635117d6e"
+    },
+    {
+      "name": "sub-13.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-13.zip/content",
+      "bytes": 122205913,
+      "checksum": "md5:021d6b5e0e93cd4b3d9facfecc23e268",
+      "sha256": "0907f178131bdf355e01c64eb1ab14ad7603cb7bdbe5f6b11b19990dfab1317b"
+    },
+    {
+      "name": "sub-14.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-14.zip/content",
+      "bytes": 150851595,
+      "checksum": "md5:d6a2eb2a53ae10ac4fd2b0d0420f05b5",
+      "sha256": "db735c1a5f9d56ba04b8a08f22abe38d4b24464800e80fdcdc0860ba4469f348"
+    },
+    {
+      "name": "sub-15.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-15.zip/content",
+      "bytes": 150891753,
+      "checksum": "md5:650a9c79d8efd72bbd06b4393a04c31a",
+      "sha256": "6df83fc0d2f503cc5f162eece280ddb661c5958026384de735a73894c094339c"
+    },
+    {
+      "name": "sub-16.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-16.zip/content",
+      "bytes": 151815006,
+      "checksum": "md5:1df4a49c5b3ab676bc27161191dc1dd3",
+      "sha256": "db526dfffc9958c3128cff4d61ab9f02b2496442b803c1050dd7496d7b1369ae"
+    },
+    {
+      "name": "sub-17.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-17.zip/content",
+      "bytes": 149955988,
+      "checksum": "md5:c05123ba792de4df68f0f566816f1432",
+      "sha256": "8dd8794b36db915796a1d922a38ad9916b67e0aa8eab7edfb93e40db96864e48"
+    },
+    {
+      "name": "sub-18.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-18.zip/content",
+      "bytes": 147134260,
+      "checksum": "md5:bbbd10800eb1d13de15292b1893ea409",
+      "sha256": "74d1609df7454cac7041ea0c9517b542d8e5888a059bfdb645a3e19448ad3c49"
+    },
+    {
+      "name": "sub-19.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-19.zip/content",
+      "bytes": 151342365,
+      "checksum": "md5:d5c1d54559c0fc424ecc0957fe915614",
+      "sha256": "a8533e56d9e42568d4dc2d8fd7c8cec46321ca92bf237023134b73588c2111d9"
+    },
+    {
+      "name": "sub-p01.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-p01.zip/content",
+      "bytes": 142731293,
+      "checksum": "md5:196bb0e35d223531546c214cddef84ff",
+      "sha256": "108b141128dd3e391fbc5ab5ca12bf8b96a41b9a753e804067cd3d41a31aa5d2"
+    },
+    {
+      "name": "sub-p02.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-p02.zip/content",
+      "bytes": 141319349,
+      "checksum": "md5:f770e81f3cb9200d4b13fed80365510e",
+      "sha256": "c62784e7b7e9c6cb3cb598e4cf4ea0e190c514b2f668e0fefaaeb62b0db44eee"
+    },
+    {
+      "name": "sub-p03.zip",
+      "url": "https://zenodo.org/api/records/7664069/files/sub-p03.zip/content",
+      "bytes": 126857771,
+      "checksum": "md5:fb727a43bc755133e19d34d0a3ab8070",
+      "sha256": "26ac8e9b150a25ac9007ee31e90b7583454e564a99edc48de29d8f289e1d7d85"
+    }
+  ],
+  "moabb_revision": "bed9f0fa1b9c4d3f71c7f2ddb22e4e44383211b5"
+}

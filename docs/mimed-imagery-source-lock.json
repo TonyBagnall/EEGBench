@@ -1,0 +1,16 @@
+{
+  "dataset": "MIMED2024",
+  "source_record_id": "MIMED2024",
+  "source_url": "https://data.mendeley.com/datasets/zs25xxjkm9/3",
+  "source_revision": "Mendeley zs25xxjkm9 v3; imagery object cZvz73BnHgnl2VH81tQm6WDgyOy0O3uA",
+  "licence": "CC-BY-4.0",
+  "files": [
+    {
+      "name": "Motor Imagery.zip",
+      "url": "https://data.mendeley.com/public-files/datasets/zs25xxjkm9/files/3dc41eb1-8999-4e0d-a77a-0394b53ba04e/file_downloaded",
+      "bytes": 19526072,
+      "md5": "82726a38955c7ca8041018010fd33a30",
+      "sha256": "8ffe3106457a1cdba3ff1ff54a7a3b13f9c1c6531729a1db95e2cfe731a55e86"
+    }
+  ]
+}

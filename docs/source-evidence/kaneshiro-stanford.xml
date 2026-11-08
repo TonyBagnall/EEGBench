@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publicObject id="druid:bq914sc3730" published="2026-07-27T20:11:39Z" publishVersion="cocina-models/0.130.0">
+  <identityMetadata>
+    <objectType>item</objectType>
+    <objectLabel>EEG data analyzed in "A Representational Similarity Analysis of the Dynamics of Object Processing Using Single-Trial EEG Classification"</objectLabel>
+    <sourceId source="sul">h3:object-788</sourceId>
+  </identityMetadata>
+  <contentMetadata objectId="druid:bq914sc3730" type="file">
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_1" sequence="1" type="file">
+      <file id="Kaneshiro_etAl_objectCategoryEEG_README.pdf" mimetype="application/pdf" size="76591" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">420e95c8d98cded282e59ec13510bd05</checksum>
+        <checksum type="sha1">927c17ab4d7de95939c0dccdee9ebac135a7cb72</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_2" sequence="2" type="file">
+      <file id="S1.mat" mimetype="application/x-matlab-data" size="315986819" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">228e34461abcb3b1631671742fc142e5</checksum>
+        <checksum type="sha1">e31c528f1b8d690bcafedfc94e6b9173ae7e1080</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_3" sequence="3" type="file">
+      <file id="S10.mat" mimetype="application/x-matlab-data" size="315823290" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">d935f75f90c49f5ec79bfd6772dca8a4</checksum>
+        <checksum type="sha1">07980e52923fc090e563b763a1a6f32f5801e7bf</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_4" sequence="4" type="file">
+      <file id="S2.mat" mimetype="application/x-matlab-data" size="315834238" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">9f0b0f99a66d934c809ab3583484912c</checksum>
+        <checksum type="sha1">cc7f009649e526c13af68dea5eec4a922a56f51d</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_5" sequence="5" type="file">
+      <file id="S3.mat" mimetype="application/x-matlab-data" size="315913011" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">1e36ea78b02246292ee0f04c03f03a65</checksum>
+        <checksum type="sha1">2421a28dccd623db9c43f3ee148948bd6953c0b3</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_6" sequence="6" type="file">
+      <file id="S4.mat" mimetype="application/x-matlab-data" size="315924536" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">40646bc24c00a117fee964f28890d8c9</checksum>
+        <checksum type="sha1">478cdbc5f0783f7305319d28065060acd28d97eb</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_7" sequence="7" type="file">
+      <file id="S5.mat" mimetype="application/x-matlab-data" size="315865524" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">32783a42c44bcbaf009d65b175cf707d</checksum>
+        <checksum type="sha1">89b508709255d791d574240cdae398e5e1ed1a5b</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_8" sequence="8" type="file">
+      <file id="S6.mat" mimetype="application/x-matlab-data" size="315811204" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">44912f8a41010150dfa327eec93ede00</checksum>
+        <checksum type="sha1">d90c75d41402b9b9c635577e8e90e69f53992048</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_9" sequence="9" type="file">
+      <file id="S7.mat" mimetype="application/x-matlab-data" size="315951880" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">22d9f79edfba9e71554b77328b7da71b</checksum>
+        <checksum type="sha1">b12d0e37cb620734c82711033220ff5c07d5266c</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_10" sequence="10" type="file">
+      <file id="S8.mat" mimetype="application/x-matlab-data" size="315934371" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">d53fda863f0cb7ba6a4e4b6d17b9d0fe</checksum>
+        <checksum type="sha1">0c6f31f01f0554711a66e2f71e6c776166e9f4d7</checksum>
+      </file>
+    </resource>
+    <resource id="cocina-fileSet-bq914sc3730-bq914sc3730_11" sequence="11" type="file">
+      <file id="S9.mat" mimetype="application/x-matlab-data" size="315975004" publish="yes" shelve="yes" preserve="yes">
+        <checksum type="md5">d0fc47af8b633a462bc8a1e919d779c2</checksum>
+        <checksum type="sha1">192368d57e224aea8226cf4c8188bcd689f4088e</checksum>
+      </file>
+    </resource>
+  </contentMetadata>
+  <rightsMetadata>
+    <access type="discover">
+      <machine>
+        <world/>
+      </machine>
+    </access>
+    <access type="read">
+      <machine>
+        <world/>
+      </machine>
+    </access>
+    <use>
+      <human type="useAndReproduction">User agrees that, where applicable, content will not be used to identify or to otherwise infringe the privacy or confidentiality rights of individuals. Content distributed via the Stanford Digital Repository may be subject to additional license and use restrictions applied by the depositor.</human>
+      <license>https://creativecommons.org/licenses/by/3.0/legalcode</license>
+    </use>
+    <copyright>
+      <human/>
+    </copyright>
+  </rightsMetadata>
+  <rdf:RDF xmlns:fedora="info:fedora/fedora-system:def/relations-external#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="info:fedora/druid:bq914sc3730">
+      <fedora:isMemberOfCollection rdf:resource="info:fedora/druid:md919gh6774"/>
+    </rdf:Description>
+  </rdf:RDF>
+  <mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.7" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+    <titleInfo>
+      <title>EEG data analyzed in "A Representational Similarity Analysis of the Dynamics of Object Processing Using Single-Trial EEG Classification"</title>
+    </titleInfo>
+    <name usage="primary" type="personal">
+      <namePart type="given">Blair</namePart>
+      <namePart type="family">Kaneshiro</namePart>
+      <role>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="text">author</roleTerm>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="code">aut</roleTerm>
+      </role>
+    </name>
+    <name type="personal">
+      <namePart type="given">Marcos</namePart>
+      <namePart type="family">Perreau Guimaraes</namePart>
+      <role>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="text">author</roleTerm>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="code">aut</roleTerm>
+      </role>
+    </name>
+    <name type="personal">
+      <namePart type="given">Hyung-Suk</namePart>
+      <namePart type="family">Kim</namePart>
+      <role>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="text">author</roleTerm>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="code">aut</roleTerm>
+      </role>
+    </name>
+    <name type="personal">
+      <namePart type="given">Anthony M.</namePart>
+      <namePart type="family">Norcia</namePart>
+      <role>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="text">author</roleTerm>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="code">aut</roleTerm>
+      </role>
+    </name>
+    <name type="personal">
+      <namePart type="given">Patrick</namePart>
+      <namePart type="family">Suppes</namePart>
+      <role>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="text">author</roleTerm>
+        <roleTerm valueURI="http://id.loc.gov/vocabulary/relators/aut" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators/" type="code">aut</roleTerm>
+      </role>
+    </name>
+    <typeOfResource>Data</typeOfResource>
+    <typeOfResource valueURI="http://id.loc.gov/vocabulary/resourceTypes/dat" authorityURI="http://id.loc.gov/vocabulary/resourceTypes/">Dataset</typeOfResource>
+    <extension displayLabel="datacite">
+      <resourceType resourceTypeGeneral="Dataset"/>
+    </extension>
+    <genre valueURI="http://id.loc.gov/authorities/genreForms/gf2018026119" authority="lcgft">Data sets</genre>
+    <genre authority="local">dataset</genre>
+    <abstract>The data package contains 10 anonymized datasets of scalp-recorded EEG in MATLAB (.mat) format. Each .mat file contains EEG data from one experimental subject. Data matrices have been preprocessed and are presented as 2D trials-by-feature matrices and 3D electrodes-by-time-by-trial matrices. Dimensionality reduction/PCA has not been performed.</abstract>
+    <note type="preferred citation">Kaneshiro B, Perreau Guimaraes M, Kim HS, Norcia AM, and Suppes P (2015). EEG data analyzed in "A Representational Similarity Analysis of the Dynamics of Object Processing Using Single-Trial EEG Classification". Stanford Digital Repository. Available at: http://purl.stanford.edu/bq914sc3730 doi:10.25740/bq914sc3730</note>
+    <subject>
+      <topic>Center for the Study of Language and Information</topic>
+    </subject>
+    <subject>
+      <topic>Stanford Department of Psychology</topic>
+    </subject>
+    <subject>
+      <topic>Stanford Department of Electrical Engineering</topic>
+    </subject>
+    <originInfo eventType="deposit">
+      <dateIssued encoding="edtf">2026-03-26</dateIssued>
+    </originInfo>
+    <originInfo eventType="creation">
+      <dateCreated encoding="edtf">2015</dateCreated>
+    </originInfo>
+    <location>
+      <url usage="primary display">https://purl.stanford.edu/bq914sc3730</url>
+    </location>
+    <note type="contact" displayLabel="Contact">blairbo@ccrma.stanford.edu</note>
+    <recordInfo>
+      <recordOrigin>Metadata created by user via Stanford self-deposit application</recordOrigin>
+      <recordCreationDate encoding="edtf">2017-08-23</recordCreationDate>
+    </recordInfo>
+    <relatedItem type="isReferencedBy">
+      <note type="preferred citation">Kaneshiro B, Perreau Guimaraes M, Kim HS, Norcia AM, and Suppes P (2015). A Representational Similarity Analysis of the Dynamics of Object Processing Using Single-Trial EEG Classification. PLoS ONE 10(8): e0135697. doi:10.1371/journal.pone.0135697</note>
+    </relatedItem>
+    <relatedItem type="host">
+      <titleInfo>
+        <title>Stanford Research Data</title>
+      </titleInfo>
+      <location>
+        <url>https://purl.stanford.edu/md919gh6774</url>
+      </location>
+      <typeOfResource collection="yes"/>
+    </relatedItem>
+    <accessCondition type="useAndReproduction">User agrees that, where applicable, content will not be used to identify or to otherwise infringe the privacy or confidentiality rights of individuals. Content distributed via the Stanford Digital Repository may be subject to additional license and use restrictions applied by the depositor.</accessCondition>
+    <accessCondition type="license" xlink:href="https://creativecommons.org/licenses/by/3.0/legalcode">This work is licensed under a Creative Commons Attribution 3.0 Unported license (CC BY).</accessCondition>
+    <identifier type="doi" displayLabel="DOI">https://doi.org/10.25740/bq914sc3730</identifier>
+  </mods>
+</publicObject>

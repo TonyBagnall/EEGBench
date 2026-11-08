@@ -1,0 +1,177 @@
+[
+  {
+    "file": "sub-06/ses-lab1/task/MI/sub-06_ses-lab1_task-grazMI.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-06/ses-lab1/task/MIMO/sub-06_ses-lab1_task-neurowMIMO.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-06/ses-lab1/task/MIMOHP/sub-06_ses-lab1_task-neurowMIMOHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-06/ses-lab1/task/MIMOHPVR/sub-06_ses-lab1_task-neurowMIMOVRHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-06/ses-lab1/task/MIMOVR/sub-06_ses-lab1_task-neurowMIMOVR.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-12/ses-lab1/task/MI/sub-12_ses-lab1_task-grazMI.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-12/ses-lab1/task/MIMO/sub-12_ses-lab1_task-neurowMIMO.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-12/ses-lab1/task/MIMOHP/sub-12_ses-lab1_task-neurowMIMOHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-12/ses-lab1/task/MIMOHPVR/sub-12_ses-lab1_task-neurowMIMOVRHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-12/ses-lab1/task/MIMOVR/sub-12_ses-lab1_task-neurowMIMOVR.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-13/ses-lab1/task/MI/sub-13_ses-lab1_task-grazMI.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-13/ses-lab1/task/MIMO/sub-13_ses-lab1_task-neurowMIMO.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-13/ses-lab1/task/MIMOHP/sub-13_ses-lab1_task-neurowMIMOHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-13/ses-lab1/task/MIMOVR/sub-13_ses-lab1_task-neurowMIMOVR.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-14/ses-lab1/task/MI/sub-14_ses-lab1_task-grazMI.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-14/ses-lab1/task/MIMO/sub-14_ses-lab1_task-neurowMIMO.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-14/ses-lab1/task/MIMOHP/sub-14_ses-lab1_task-neurowMIMOHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-14/ses-lab1/task/MIMOHPVR/sub-14_ses-lab1_task-neurowMIMOVRHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-14/ses-lab1/task/MIMOVR/sub-14_ses-lab1_task-neurowMIMOVR.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-17/ses-lab1/task/MIMOVR/sub-17_ses-lab1_task-neurowMIMOVR.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-18/ses-lab1/task/MIMOHPVR/sub-18_ses-lab1_task-neurowMIMOVRHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-18/ses-lab1/task/MIMOVR/sub-18_ses-lab1_task-neurowMIMOVR.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-18/ses-lab1/task/MI/sub-18_ses-lab1_task-grazMI.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-18/ses-lab1/task/MIMO/sub-18_ses-lab1_task-neurowMIMO.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  },
+  {
+    "file": "sub-18/ses-lab1/task/MIMOHP/sub-18_ses-lab1_task-neurowMIMOHP.vhdr",
+    "coordinate_rows": 0,
+    "coordinate_section_present": false,
+    "big_endian": [],
+    "coordinate_text": ""
+  }
+]

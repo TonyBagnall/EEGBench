@@ -1,0 +1,221 @@
+{
+  "status": "complete",
+  "files": [
+    {
+      "archive": "B01_S1_MOTION.zip",
+      "mat_files": 11,
+      "first_file": "B01_S1_MOTION/B01_20230608_openloop_01.mat",
+      "native_recording_filenames": [
+        "B01_S1_MOTION/B01_20230608_openloop_01.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_02.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_03.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_04.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_05.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_06.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_07.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_08.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_09.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_10.mat",
+        "B01_S1_MOTION/B01_20230608_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B01_S1_STATIC.zip",
+      "mat_files": 11,
+      "first_file": "B01_S1_STATIC/B01_20230608_openloop_01.mat",
+      "native_recording_filenames": [
+        "B01_S1_STATIC/B01_20230608_openloop_01.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_02.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_03.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_04.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_05.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_06.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_07.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_08.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_09.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_10.mat",
+        "B01_S1_STATIC/B01_20230608_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B02_S1_MOTION.zip",
+      "mat_files": 11,
+      "first_file": "B02_S1_MOTION/B02_20230605_openloop_01.mat",
+      "native_recording_filenames": [
+        "B02_S1_MOTION/B02_20230605_openloop_01.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_02.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_03.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_04.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_05.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_06.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_07.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_08.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_09.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_10.mat",
+        "B02_S1_MOTION/B02_20230605_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B02_S1_STATIC.zip",
+      "mat_files": 11,
+      "first_file": "B02_S1_STATIC/B02_20230605_openloop_01.mat",
+      "native_recording_filenames": [
+        "B02_S1_STATIC/B02_20230605_openloop_01.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_02.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_03.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_04.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_05.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_06.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_07.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_08.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_09.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_10.mat",
+        "B02_S1_STATIC/B02_20230605_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B03_S1_MOTION.zip",
+      "mat_files": 11,
+      "first_file": "B03_S1_MOTION/B03_20230921_openloop_01.mat",
+      "native_recording_filenames": [
+        "B03_S1_MOTION/B03_20230921_openloop_01.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_02.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_03.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_04.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_05.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_06.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_07.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_08.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_09.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_10.mat",
+        "B03_S1_MOTION/B03_20230921_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B03_S1_STATIC.zip",
+      "mat_files": 11,
+      "first_file": "B03_S1_STATIC/B03_20230921_openloop_01.mat",
+      "native_recording_filenames": [
+        "B03_S1_STATIC/B03_20230921_openloop_01.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_02.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_03.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_04.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_05.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_06.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_07.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_08.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_09.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_10.mat",
+        "B03_S1_STATIC/B03_20230921_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B04_S1_MOTION.zip",
+      "mat_files": 11,
+      "first_file": "B04_S1_MOTION/B04_20230612_openloop_01.mat",
+      "native_recording_filenames": [
+        "B04_S1_MOTION/B04_20230612_openloop_01.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_02.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_03.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_04.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_05.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_06.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_07.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_08.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_09.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_10.mat",
+        "B04_S1_MOTION/B04_20230612_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B04_S1_STATIC.zip",
+      "mat_files": 11,
+      "first_file": "B04_S1_STATIC/B04_20230612_openloop_01.mat",
+      "native_recording_filenames": [
+        "B04_S1_STATIC/B04_20230612_openloop_01.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_02.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_03.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_04.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_05.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_06.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_07.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_08.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_09.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_10.mat",
+        "B04_S1_STATIC/B04_20230612_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B05_S1_MOTION.zip",
+      "mat_files": 11,
+      "first_file": "B05_S1_MOTION/B05_20230706_openloop_01.mat",
+      "native_recording_filenames": [
+        "B05_S1_MOTION/B05_20230706_openloop_01.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_02.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_03.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_04.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_05.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_06.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_07.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_08.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_09.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_10.mat",
+        "B05_S1_MOTION/B05_20230706_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B05_S1_STATIC.zip",
+      "mat_files": 11,
+      "first_file": "B05_S1_STATIC/B05_20230706_openloop_01.mat",
+      "native_recording_filenames": [
+        "B05_S1_STATIC/B05_20230706_openloop_01.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_02.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_03.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_04.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_05.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_06.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_07.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_08.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_09.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_10.mat",
+        "B05_S1_STATIC/B05_20230706_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B06_S1_MOTION.zip",
+      "mat_files": 11,
+      "first_file": "B06_S1_MOTION/B07_20240118_openloop_01.mat",
+      "native_recording_filenames": [
+        "B06_S1_MOTION/B07_20240118_openloop_01.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_02.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_03.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_04.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_05.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_06.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_07.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_08.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_09.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_10.mat",
+        "B06_S1_MOTION/B07_20240118_openloop_11.mat"
+      ]
+    },
+    {
+      "archive": "B06_S1_STATIC.zip",
+      "mat_files": 11,
+      "first_file": "B06_S1_STATIC/B07_20240118_openloop_01.mat",
+      "native_recording_filenames": [
+        "B06_S1_STATIC/B07_20240118_openloop_01.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_02.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_03.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_04.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_05.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_06.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_07.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_08.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_09.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_10.mat",
+        "B06_S1_STATIC/B07_20240118_openloop_11.mat"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "article_id": 21679035,
+  "version": 5,
+  "licence": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "doi": "10.6084/m9.figshare.21679035.v5",
+  "files": [
+    {
+      "id": 38516573,
+      "name": "dataset_description.json",
+      "size": 139,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516573",
+      "supplied_md5": "8854bd64db759e9bab35d64b6875d06c",
+      "computed_md5": "8854bd64db759e9bab35d64b6875d06c",
+      "mimetype": "application/json"
+    },
+    {
+      "id": 38516654,
+      "name": "edffile.zip",
+      "size": 462843633,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516654",
+      "supplied_md5": "aa4f96a0e8456f377f30d1ee8f41be40",
+      "computed_md5": "aa4f96a0e8456f377f30d1ee8f41be40",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 38516579,
+      "name": "participants.json",
+      "size": 2389,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516579",
+      "supplied_md5": "19ff0e65b74ada4e2df468a2509a22cb",
+      "computed_md5": "19ff0e65b74ada4e2df468a2509a22cb",
+      "mimetype": "application/json"
+    },
+    {
+      "id": 38516069,
+      "name": "task-motor-imagery_channels.tsv",
+      "size": 709,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516069",
+      "supplied_md5": "7cea7fafbea6c27a908a64e4f9e08308",
+      "computed_md5": "7cea7fafbea6c27a908a64e4f9e08308",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 38516072,
+      "name": "task-motor-imagery_coordsystem.json",
+      "size": 66,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516072",
+      "supplied_md5": "c0ddd76983c871f75724747797f62fa8",
+      "computed_md5": "c0ddd76983c871f75724747797f62fa8",
+      "mimetype": "application/json"
+    },
+    {
+      "id": 38516075,
+      "name": "task-motor-imagery_eeg.json",
+      "size": 569,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516075",
+      "supplied_md5": "1949b61d99b34801defd25d2530dc32e",
+      "computed_md5": "1949b61d99b34801defd25d2530dc32e",
+      "mimetype": "application/json"
+    },
+    {
+      "id": 38516078,
+      "name": "task-motor-imagery_electrodes.tsv",
+      "size": 761,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516078",
+      "supplied_md5": "803e56c5d8713a2e037cae49b46f2c5d",
+      "computed_md5": "803e56c5d8713a2e037cae49b46f2c5d",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 38516081,
+      "name": "task-motor-imagery_events.json",
+      "size": 806,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516081",
+      "supplied_md5": "3c4fec571862c8bfce41e4a54011d170",
+      "computed_md5": "3c4fec571862c8bfce41e4a54011d170",
+      "mimetype": "application/json"
+    },
+    {
+      "id": 38516084,
+      "name": "task-motor-imagery_events.tsv",
+      "size": 3732,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/38516084",
+      "supplied_md5": "f1c1f482471b90a7e067d9c502889647",
+      "computed_md5": "f1c1f482471b90a7e067d9c502889647",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 42305223,
+      "name": "README.md",
+      "size": 515,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/42305223",
+      "supplied_md5": "e39a8f87938e1b117f3b0a5ce989c37d",
+      "computed_md5": "e39a8f87938e1b117f3b0a5ce989c37d",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 42305226,
+      "name": "code.zip",
+      "size": 20811,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/42305226",
+      "supplied_md5": "a86d243337f57739b18cf0f74a240004",
+      "computed_md5": "a86d243337f57739b18cf0f74a240004",
+      "mimetype": "application/zip"
+    },
+    {
+      "id": 42345150,
+      "name": "participants.tsv",
+      "size": 3557,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/42345150",
+      "supplied_md5": "d82596d5309f7d207c760918e74d4553",
+      "computed_md5": "d82596d5309f7d207c760918e74d4553",
+      "mimetype": "text/plain"
+    }
+  ]
+}

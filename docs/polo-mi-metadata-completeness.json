@@ -1,0 +1,15 @@
+{
+  "evidence": {
+    "direct": "Native configured channel labels/order/indexes/frequency/2Dpositions, release/native IDs/date/repetition, sample task codes/phase bounds and preprocessing-step table",
+    "documented": "Original licence,28EEG/4EOG/3inertial roles, single-visit ankle imagery/exoskeleton protocol",
+    "inferred": "Microvolt scale only, factor1; coordinate units and missing reference not invented",
+    "assigned": "Whole-subject split and encoded classes; release IDs linked explicitly to native aliases"
+  },
+  "missing_or_inconsistent": [
+    "Release folder IDs may differ from native user_code/filename; one-to-one mapping must hold across all files/conditions",
+    "Some MATLAB string objects opaque to SciPy; originals retained rather than guessed",
+    "Physical units, reference/ground and individual demographics not explicitly recovered",
+    "Native configured2D positions retained, coordinate units/frame/measurement status unknown",
+    "Trigger quality vectors retained by source bounds/hash/ranges; semantics not guessed or used for undocumented rejection"
+  ]
+}

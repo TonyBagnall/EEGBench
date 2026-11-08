@@ -1,0 +1,5 @@
+[
+  {"dataset":"ImaginedHandFeetTongue","train_cases":3456,"test_cases":1728,"subjects":9,"channels":22,"timepoints":800,"classes":4,"frequency":200,"size_GB":1.055,"licence":"CC-BY-ND-4.0","checks_passed":true,"revision":"3585206f74463e787688a0f4afd12605c9be700c"},
+  {"dataset":"ClinicalSleepStages","train_cases":64889,"test_cases":8803,"subjects":82,"channels":6,"timepoints":6000,"classes":5,"frequency":200,"size_GB":30.487,"licence":"Research access; redistribution unverified","checks_passed":true,"revision":"beda68130bc3a84c8e6abf11c527d7c5ff941616"},
+  {"dataset":"VideoEmotions","train_cases":15629,"test_cases":3588,"subjects":123,"channels":26,"timepoints":2000,"classes":8,"frequency":200,"size_GB":11.511,"licence":"CC-BY-4.0; local release review retained","checks_passed":true,"revision":"18c73355fc71c055e92828384da85bb49bc6e3c0"}
+]

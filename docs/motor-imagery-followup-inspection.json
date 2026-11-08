@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-08",
+  "scope": "Metadata only, no EEG downloads",
+  "records": [
+    {
+      "source": "Pan2023",
+      "error": "403 Client Error: Forbidden for url: https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/251NOW"
+    },
+    {
+      "source": "Pan2025",
+      "error": "403 Client Error: Forbidden for url: https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/GH74ZG"
+    }
+  ]
+}

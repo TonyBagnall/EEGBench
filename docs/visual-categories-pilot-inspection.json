@@ -1,0 +1,89 @@
+{
+  "subject": "S1",
+  "variables": {
+    "sub": {
+      "shape": [],
+      "dtype": "<U2",
+      "preview": [
+        "S1"
+      ]
+    },
+    "Fs": {
+      "shape": [],
+      "dtype": "float64",
+      "preview": [
+        62.5
+      ]
+    },
+    "N": {
+      "shape": [],
+      "dtype": "int64",
+      "preview": [
+        32
+      ]
+    },
+    "T": {
+      "shape": [],
+      "dtype": "int64",
+      "preview": [
+        5188
+      ]
+    },
+    "exemplarLabels": {
+      "shape": [
+        5188
+      ],
+      "dtype": "uint8",
+      "preview": [
+        40,
+        64,
+        29,
+        66,
+        45,
+        69,
+        8,
+        62
+      ]
+    },
+    "categoryLabels": {
+      "shape": [
+        5188
+      ],
+      "dtype": "uint8",
+      "preview": [
+        4,
+        6,
+        3,
+        6,
+        4,
+        6,
+        1,
+        6
+      ]
+    },
+    "X_2D": {
+      "shape": [
+        5188,
+        3968
+      ],
+      "dtype": "float64",
+      "preview": null,
+      "min": -12.147637743651565,
+      "max": 30.813462468876274,
+      "std": 0.15957179516901882
+    },
+    "X_3D": {
+      "shape": [
+        124,
+        32,
+        5188
+      ],
+      "dtype": "float64",
+      "preview": null,
+      "min": -12.147637743651565,
+      "max": 30.813462468876274,
+      "std": 0.15957179516901882
+    }
+  },
+  "equivalent_2d_3d_exact": true
+}

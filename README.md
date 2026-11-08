@@ -4,7 +4,7 @@ This is a draft, we are adding results as we generate them.
 
 **EEGBench** is a leaderboard for EEG classification. It holds benchmark results for
 general purpose time series classifiers, deep learners and methods designed for EEG, on
-an archive of 66 EEG classification problems covering medical diagnosis, brain-computer
+an archive of 74 EEG classification problems covering medical diagnosis, brain-computer
 interfacing and psychology.
 
 The original 30 datasets and first set of results are described in
@@ -93,11 +93,11 @@ pip install -e .
 
 ### Load a dataset
 
-28 of the 66 datasets are registered on Zenodo, in the
+28 of the 74 datasets are registered on Zenodo, in the
 [tsml community](https://zenodo.org/communities/tsml/), and are loaded with `aeon`. The
-two fibromyalgia datasets require research access through Tony Bagnall. The 36
+two fibromyalgia datasets require research access through Tony Bagnall. The 41
 newer preparations are available as local `.ts` files, with provenance and source
-terms in their sidecars. All 66 are in `eegbench.datasets.eegbench`; the original
+terms in their sidecars. All 74 are in `eegbench.datasets.eegbench`; the original
 paper subset is `eegbench_paper`. See [the datasets page](docs/datasets.md).
 
 ```python
@@ -111,7 +111,7 @@ X_test, y_test = load_classification("Blink", split="test")
 
 For a local preparation, use `aeon.datasets.load_from_ts_file`, for example
 `load_from_ts_file("D:/Data/EEG/ImaginedLeftRightHand/ImaginedLeftRightHand_TRAIN.ts")`.
-The batch experiment example requests all 66 and uses `D:/Data/EEG` by default;
+The batch experiment example requests all 74 and uses `D:/Data/EEG` by default;
 set `EEGBENCH_DATA_PATH` to use another location. Use each supplied split:
 some protocols intentionally share subjects across different runs, and older
 subject/session mappings have documented gaps. More in [`docs/datasets.md`](docs/datasets.md).
@@ -176,3 +176,9 @@ EEGBench/
     â”œâ”€â”€ estimators.py        # The estimators on the leaderboard, as metadata only
     â””â”€â”€ experiments/         # Result generation and leaderboard tables
 ```
+
+
+For continuing dataset ingestion, start with [the agent conversion handover](DATASET_CONVERSION_HANDOVER.md) and [live assimilation progress](docs/assimilation-progress.json).
+
+The latest three MI preparations are now in `D:/Data/EEG`, restored from verified
+C:/Temp staging copies; see [locations, provenance and validation](docs/temp-c-mi-preparations.md).

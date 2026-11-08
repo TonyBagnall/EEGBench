@@ -16,10 +16,10 @@ from eegbench.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
 
 
 def test_archive_lists():
-    """All 66 problems, with published and local subsets explicitly identified."""
-    assert len(eegbench) == len(set(eegbench)) == 66
+    """All 74 problems, with published and local subsets explicitly identified."""
+    assert len(eegbench) == len(set(eegbench)) == 74
     assert eegbench == sorted(eegbench)
-    assert len(eegbench_paper) == 30 and len(local_only) == 36
+    assert len(eegbench_paper) == 30 and len(local_only) == 44
     assert set(eegbench_paper).isdisjoint(local_only)
     assert len(eegbench_open) == 28
     assert set(eegbench) - set(eegbench_open) == set(restricted) | set(local_only)
@@ -40,6 +40,11 @@ def test_domains_partition_the_archive():
 def test_metadata():
     """The table describes the current local versions, including corrections."""
     frame = metadata()
+    assert frame.loc["ImaginedRightHandFeetRest", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [1,24,150,40,250]
+    assert frame.loc["ImaginedLeftRightHandRest", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [1,24,480,240,250]
+    assert frame.loc["ImaginedHandFootActions", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [60,11,2727,930,125]
+    assert frame.loc["ImaginedHandGestures", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [11,17,382,143,500]
+    assert frame.loc["ImaginedArmTasks", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [12,17,3240,1080,1000]
     assert frame.loc['SymbolAttention', ["subjects","channels","train_size","test_size","frequency"]].tolist() == [19,8,521259,175180,256]
     assert frame.loc['ArmCoordination', ["subjects","channels","train_size","test_size","frequency"]].tolist() == [8,64,1498,505,500]
     assert frame.loc["WalkingTargets", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [15,42,3600,900,100]

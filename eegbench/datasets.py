@@ -1,7 +1,7 @@
 """The EEG classification archive: dataset lists and metadata.
 
 The archive includes the 30 problems published by Rushbrooke et al. (2026)
-and 36 additional local preparations. Use the supplied fixed train/test splits;
+and 44 additional local preparations. Use the supplied fixed train/test splits;
 some protocols intentionally share subjects and some older identity mappings
 remain incomplete. See docs/dataset-provenance.md for dataset-specific evidence.
 
@@ -141,6 +141,23 @@ _TABLE += [
     ('ArmCoordination', 64, 2, 1500, 8, 1498, 505, 500, "BCI"),
 ]
 
+_TABLE += [
+    ("ImaginedHandGestures", 17, 4, 3000, 11, 382, 143, 500, "BCI"),
+    ("ImaginedArmTasks", 17, 10, 3960, 12, 3240, 1080, 1000, "BCI"),
+]
+
+_TABLE += [
+    ("ImaginedRightHandFeetRest", 24, 3, 750, 1, 150, 40, 250, "BCI"),
+    ("ImaginedLeftRightHandRest", 24, 3, 750, 1, 480, 240, 250, "BCI"),
+    ("ImaginedHandFootActions", 11, 8, 500, 60, 2727, 930, 125, "BCI"),
+]
+
+_TABLE += [("ImaginedHandsRobot", 32, 2, 1000, 12, 2880, 2880, 250, "BCI")]
+
+_TABLE += [('ImaginedGrasps', 60, 3, 1000, 15, 4500, 2250, 250, 'BCI')]
+
+_TABLE += [('ImaginedHandsEmbodiment', 32, 2, 4997, 26, 798, 240, 500, 'BCI')]
+
 _TABLE.sort(key=lambda row: row[0])
 
 #: Prepared locally; not registered for aeon's automatic archive downloads.
@@ -150,7 +167,7 @@ local_only = [row[0] for row in _TABLE if row[0] not in eegbench_paper]
 #: loaded through aeon. Results for them are still reported.
 restricted = ["FibroLiverpool", "FibroUEA"]
 
-#: All 66 prepared classification problems used by this repository.
+#: All 74 prepared classification problems used by this repository.
 eegbench = [row[0] for row in _TABLE]
 
 #: The 28 problems anyone can download, the same list as aeon's ``eeg2026``.

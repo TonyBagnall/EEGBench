@@ -788,3 +788,174 @@ TRAIN `(3600,42,100)`, TEST `(900,42,100)`, 100 Hz, two classes, 15 participants
 - **Task/dimensions:** executed right-arm-only versus both-arm reaching; TRAIN `(1498,64,1500)`, TEST `(505,64,1500)`, 500 Hz, 8 healthy participants / 49 recordings. Subject-disjoint 6/2 split. Native 64 EEG labels/order retained; three accelerometers excluded. Explicit microvolt resolution is applied after float64 casting.
 - **Reference:** Kueper, Kim and Kirchner (2024), Scientific Reports 14:16690, [paper DOI 10.1038/s41598-024-65910-8](https://doi.org/10.1038/s41598-024-65910-8).
 - **Source caveats:** 2,003 native movement onsets exceed nominal trial counts; retain all with source flags rather than invent valid-trial repairs. Marker keys repeat, so line ordinals/sample positions are retained. XP01 set4 continues set3. Hardware/software filter tables differ; both are preserved. This condition task differs from the paper's movement-versus-rest classifiers. [Full provenance, participant metadata, exact sensor order, flags and preprocessing](arm-coordination-preparation.md).
+
+
+## ImaginedHandGestures (MOVING2024)
+
+- **Original source/aliases:** MOVING; MOVING2024; EEG/virtual-glove hand tracking,
+  [data DOI10.5281/zenodo.12804784](https://doi.org/10.5281/zenodo.12804784), v1,
+  publisher-checksummed `edf.rar`. Original-host CC BY4.0; glove archive unnecessary.
+- **Task/dimensions:** three imagined right-hand actions plus rest; TRAIN
+  `(382,17,3000)`, TEST `(143,17,3000)`,500Hz,11 participants. EEG order, scale,
+  source markers, file/date/subject and sample intervals retained. Assigned sole
+  session/run IDs distinguished from embedded metadata. Reference/individual
+  positions unknown. Whole subjects01-08/09-11; no shared people or cases.
+- **Recording relationship:** imagination/execution intervals share each original
+  acquisition and rest segments. This entry contains MI plus rest only; a later
+  execution view must not be counted as wholly independent recordings.
+- **Reference/caveats:** Mattei et al.(2024),
+  [10.3390/s24165207](https://doi.org/10.3390/s24165207). Fixed task ordering;
+  three absent source markers,15 globally flat EEG sensors removed. Native EDF
+  calibrated volts cast float64 before multiplying1e6. No other numerical
+  processing. [Complete metadata and source lock](compact-imagery-preparation.md).
+
+## ImaginedArmTasks (Zhang2017)
+
+- **Original source/aliases:** Zhang2017; KI; elbow-centred kinesthetic motor
+  imagery, [data DOI10.6084/m9.figshare.5579461.v1](https://doi.org/10.6084/m9.figshare.5579461.v1),
+  `KI.rar`,180 native BCI2000 files. Original-host CC BY4.0.
+- **Task/dimensions:** nine imagined upper-limb tasks plus rest; TRAIN
+  `(3240,17,3960)`, TEST `(1080,17,3960)`,1000Hz,12 participants,15 runs each,
+  H1-H9/H10-H12 subject split. Native source IDs, stimulus code/caption matrix,
+  run/session, sample bounds, storage times and gain/offset retained. Source
+  column ordering preserved without hemisphere flip. Paper Table2 demographics
+  retain H01-style published IDs alongside H1-style original directory IDs.
+- **Essential unresolved metadata:** no native electrode names in any header.
+  source_column_00..16 are explicit ordinal identifiers; anatomical names/order
+  correspondence unknown, no inferred EGI sensor labels or coordinates. Cz
+  reference/COM ground are publication statements. Numeric validation does not
+  resolve these anatomical metadata gaps; the dataset is flagged accordingly.
+- **Reference/caveats:** Zhang, Yong and Menon(2017),
+  [10.1371/journal.pone.0188293](https://doi.org/10.1371/journal.pone.0188293).
+  Three cues last3960 samples; all others4000. Crop first3960 consistently;
+  exclude one40-sample initial state fragment in H6run01. Actual4320 complete
+  intervals take precedence over inconsistent nominal counts. Calibration
+  `(raw-offset)*gain` follows explicit BCI2000 header values after float64 casting.
+  [Complete metadata, flags and reproducibility](compact-imagery-preparation.md).
+
+## MIMED / ImaginedHandsTrunk: full preparation stopped
+
+Original [Mendeley zs25xxjkm9 v3](https://doi.org/10.17632/zs25xxjkm9.3), CC BY4.0;
+Wirawan et al.(2024), [paper10.1016/j.dib.2024.110833](https://doi.org/10.1016/j.dib.2024.110833).
+The30-person,14-channel,128Hz imagery archive contains85cross-ID exact duplicate
+window pairs. Seven participant pairs share all12 selected cases and their
+complete block arrays. A further P05 stand/sit versus P06 right-hand crop has
+conflicting classes. None are flatlines. The complete-source export was stopped;
+no final dataset or registry entry added, no identity/class guessed. A14-person
+unimplicated subset would require explicit scope selection. See the
+[native audit](mimed-native-quality-audit.json) and
+[local reproduction/issue draft](issues/mimed-cross-participant-copies.md).
+
+
+## NeuroTUM: ImaginedRightHandFeetRest / ImaginedLeftRightHandRest
+
+Original [Zenodo18087806 v1.0.0](https://doi.org/10.5281/zenodo.18087806), aliases
+NeuroTUMBCI2025/neuroTUM-BCI Cybathlon. Original CC BY4.0 verified; software/paper
+licences are separate. Reference Tscherniak et al.,
+[10.48550/arXiv.2511.23384](https://doi.org/10.48550/arXiv.2511.23384).
+
+- **P1 / ImaginedRightHandFeetRest:** rest/right-hand/legs imagination, one
+  tetraplegic person, five sessions;150/40cases,24channels x750points,250Hz.
+  NativeS1-S4train,S5test. Original YAML maps left arrow to LEGS MI, not left hand.
+- **P2 / ImaginedLeftRightHandRest:** rest/left-hand/right-hand imagination, one
+  healthy person, three sessions;480/240cases,24x750,250Hz. S1-S2train,S3test.
+- These are **one study, two individual classification problems**, distinct
+  recordings, no cross-person copied cases found. Intentional within-person
+  transfer, not unseen-person evaluation. Exact source files/samples/marker IDs
+  and exception reason retained. Original source files have no official split.
+- Native24channel labels/order/EEG type and capXYZ descriptors recovered from XDF,
+  retaining actual case. XYZ physical units/frame/measurement status and reference
+  unknown; no guessed montage. Presumed microvolt numeric values cast float64
+  unchanged. Native shared-host timestamp alignment with no clock fit/dejitter,
+  no filtering/resampling/rereferencing. P1S3coincident empty markers preserved.
+
+Full [source pins, mappings, metadata and validation](neurotum-preparation.md).
+These files are now under D:/Data/EEG following checksum-verified relocation.
+Their original C:/Temp conversion did not access D: while it was offline.
+
+## ImaginedHandFootActions (MILimbEEG)
+
+Original [Mendeley x8psbz3f6x v2](https://doi.org/10.17632/x8psbz3f6x.2), alias
+MILimbEEG motor imagery only. Original CC BY4.0 data grant. Asanza et al.(2023),
+[10.1016/j.dib.2023.109540](https://doi.org/10.1016/j.dib.2023.109540).
+Source combines execution M and imagination I; this entry uses **I only**,
+including original baseline/rest classes, not a diagnostic view of annotations.
+
+Eight original classes,60 people,125Hz,500points; TRAIN `(2727,11,500)`, TEST
+`(930,11,500)`, S1-S45/S46-S60whole-subject split. Original16numbered CSV columns
+map through the author's indexed electrode graphic; no unverified standard
+montage. Explicit source microvolt units preserved, no scale/filter/resample
+change. Original sample index verified0..499; offsets within continuous records
+and session visits unknown. R1 is native repetition. Participant annotation
+tokens are uncorrected source strings; ages/height units not guessed.
+
+The original3719I epochs include31copied rest pairs across S1/S2. All62 ambiguous
+copies are excluded, no guessed owner retained. Source S22I2trial5 missing;
+five globally flat sensors removed: F4,FC1,Cz,CP1,T8. Final remaining order
+FC5,F3,Fz,FC6,FC2,T7,CP5,C3,CP2,C4,CP6. All exclusions/hashes/case accounting
+and missing metadata are explicit. Original source CSVs preserved under D:/Data/EEGSources/MILimbEEG;
+only admitted classification arrays reflect the changes. This is one source
+study, not separate new studies for each limb/rest/clinical label.
+[Full source identity, audit and output validation](milimb-preparation.md).
+
+
+## ImaginedHandsRobot (Farabbi2020)
+
+Original *Motor-Imagery EEG Dataset During Robot-Arm Control*,
+[Zenodo5882500 v1](https://doi.org/10.5281/zenodo.5882500), CC BY4.0 original-data
+grant; related Farabbi thesis [10589/164451](https://hdl.handle.net/10589/164451).
+Aliases Farabbi2020. Twelve participants, three days each, left/right-hand
+imagery with robot feedback.144MIrecordings,36sessions. TRAIN/TEST each
+`(2880,32,1000)` at250Hz, original training/online phases; people and sessions
+intentionally shared. Not independent-person or strictly chronological evaluation.
+Native calibrated EEG converted volts to microvolts in float64; exact channel
+order supplied by indexed original chanlocs.locs, not generic GDF ChannelN labels
+alone. Author polar positions retained; reference/ground and measured individual
+geometry unknown. No extra DSP, no removed EEG sensors, no exact duplicates.
+[Complete recovery and source locks](imagined-hands-robot-preparation.md).
+
+
+## ImaginedGrasps (BCI Competition2020 Track4)
+
+Original [OSFpq7vb Track4](https://osf.io/pq7vb/), original CC BY4.0 project grant,
+49pinned files5.811GB; no separately established dataset DOI. Aliases
+BCIComp2020UpperLimb,2020InternationalBCICompetitionTrack4. Reference Jeong
+et al.(2022), [10.3389/fnhum.2022.898300](https://doi.org/10.3389/fnhum.2022.898300).
+Cylindrical/spherical/lumbrical grasp imagination,15people,45recordings over
+three days/person. TRAIN `(4500,60,1000)`, TEST `(2250,60,1000)`,250Hz. Original
+training then validation days merged, original test preserved; shared people
+intentional. Native epo.x[1500:2500] is imagery0..3996ms; masked test-cue interval
+is excluded. Names/order/montage from actual epo/mnt agree with organiser numbered
+sensor table and across all45files. FCz reference,Fpz ground; coordinate
+frame/units unspecified. Native numeric float64 scale unchanged, microvolt
+interpretation inferred rather than proven. TrueLabel workbook supplies test
+labels; root answer workbook is only a prediction template. No flat-channel
+removals or exact duplicate cases. Continuous offset/interval overlap unknown.
+Track3speech/Track5ERP are different recordings/tasks in the same project;
+participant independence is not established.
+[Full source lock, inconsistencies and recovered metadata](imagined-grasps-preparation.md).
+
+
+## ImaginedHandsEmbodiment (Vagaja2023)
+
+Left/right-hand imagination in VR after Embodied or Control priming;26people,
+one visit and one retained MI recording per person. TRAIN `(798,32,4997)`,
+TEST `(240,32,4997)`,500Hz. Original [Zenodo8086086 v1](https://doi.org/10.5281/zenodo.8086086),
+CC BY4.0; Vagaja and Vourvopoulos(2023), *Electrophysiological Signals of
+Embodiment and MI-BCI Training in VR*. Aliases Vagaja2023, NEMAR nm000292.
+No separate paper DOI established. Rest/priming runs are excluded. Native32EEG
+order, explicit microvolt calibration and header coordinate template retained;
+2EMG/temperature/3ACC excluded. Native float32 counts cast to float64 before
+physical calibration. Native DC/131Hz, notch off, software filters disabled;
+no added DSP. Reference/ground identities and individual demographic mappings
+unavailable. SUB31 stale header references explicitly linked to deposited
+same-stem binary/marker files.
+
+Common9.994second crop stays inside every native S10 end marker. Two imagery
+trials crossing lost-sample markers excluded, yielding1038cases from1040cues;
+all original markers/exclusions retained. First10numeric IDs per13-person
+priming group TRAIN, remaining3/group TEST: no shared people. No flat EEG
+removals or exact duplicate cases; full readback/metadata/aeon checks passed.
+Same laboratory/hardware as Batista2022 does not prove shared recordings; its
+future admission must compare native identities/dates/waveforms.
+[Full provenance, memberships and recovery](imagined-hands-embodiment-preparation.md).

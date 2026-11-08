@@ -959,3 +959,79 @@ removals or exact duplicate cases; full readback/metadata/aeon checks passed.
 Same laboratory/hardware as Batista2022 does not prove shared recordings; its
 future admission must compare native identities/dates/waveforms.
 [Full provenance, memberships and recovery](imagined-hands-embodiment-preparation.md).
+
+
+## ImaginedHandsHaptics (Batista2022)
+
+TRAIN `(3083,32,2495)`, TEST `(1034,32,2495)`; two classes, 500 Hz.
+
+Left/right-hand imagination with abstract, motor-observation, VR and haptic
+feedback, pooled as one problem. Twenty original participants, one native
+session each, 99 imagery recordings. Executed-movement ME controls excluded.
+Keep actual source cues: 4,127 cues become 4,117 cases after ten unusable
+timing/discontinuity trials are excluded. The common safe crop is 2,495 samples
+at 500 Hz. Native 32 EEG names/order and explicit microvolt calibration retained;
+float32 digital samples calibrated in float64, no added DSP. Auxiliary labels
+vary without changing EEG order; generic roles and missing geometry stay unknown.
+Native main/pilot IDs remain distinct. Whole-subject 15/5-person split balances
+pilot/main cohorts. No exact recording or cue-prefix matches with
+ImaginedHandsEmbodiment; this does not establish cross-study participant identity.
+Original [Zenodo 7664069 v1](https://doi.org/10.5281/zenodo.7664069), CC BY 4.0;
+Batista et al. (2022), *Physiological Signals During Motor Imagery Brain-Computer
+Interface Training Using Virtual Reality and Haptics*. MOABB alias Batista2022;
+declared NEMAR view nm000318 is not another independent dataset.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+
+
+## ImaginedAnkleRest (PoloHortiguela2025)
+
+TRAIN `(264,28,1000)`, TEST `(132,28,1000)`; two classes, 250 Hz.
+
+Imagined dominant-ankle dorsal/plantar flexion versus relaxation, six people,
+one original S1 visit each. STATIC/MOTION exoskeleton conditions are pooled,
+not counted as separate visits or problems. Original 132 repetition files each
+supply two relaxation windows and one imagery window: first four seconds of
+each native labelled phase, 396 cases. Initial settling/audio/return phases
+excluded. Native 28 EEG labels/order, 250 Hz, raw float64 numbers and configured
+2D layout retained; four EOG and three inertial channels excluded. Microvolt
+interpretation inferred; explicit physical units, reference/ground and coordinate
+units/frame were not recovered. No added DSP or supplied processed blocks used.
+Whole-subject release B01–B04 TRAIN, B05–B06 TEST. Release B06 internally identifies
+B07; preserve both IDs with the verified one-to-one mapping.
+Original [Zenodo 14672334 v1](https://doi.org/10.5281/zenodo.14672334), CC BY 4.0;
+Polo-Hortiguela et al. (2025), *EEG Signal Dataset During Dorsiflexion and Plantar
+Flexion Movements*. MOABB alias PoloHortiguela2025, declared NEMAR view nm000302.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+
+
+## ImaginedHandsFeedback (Leeuwis2021)
+
+TRAIN `(6560,16,1250)`, TEST `(2240,16,1250)`; two classes, 250 Hz.
+
+Left/right-hand imagination by 55 novice BCI users, one visit and four runs
+per person: calibration plus three feedback runs, 8,800 cases. Original
+non-contiguous subject IDs 7–67 and native 16 EEG column order retained. Locate
+actual zero time at epoch index 749 and keep 1,250 samples, 0–4.996 seconds,
+at 250 Hz. Native decimal values parsed as round-trip float64 and unchanged;
+microvolt interpretation inferred. Original report/paper documents right-earlobe
+reference and AFz ground; individual positions and continuous offsets unknown.
+Paper filtering protocol retained separately from uncertain exact CSV filtering
+history; no added DSP. Whole-subject first 41 numeric native IDs TRAIN, remaining
+14 TEST, pooling original calibration/feedback phases. Individual questionnaire
+metadata mapped by ppnr: 55 rows, 36 Female/19 Male; the report's 57-person totals
+are inconsistent. Irregular Subject40 filenames and pinned file IDs preserved.
+Original [DataverseNL 10.34894/Z7ZVOD v1.0](https://doi.org/10.34894/Z7ZVOD),
+version ID 3733, CC BY 4.0; Leeuwis, Paas and Alimardani (2021), *Psychological
+and Cognitive Factors in Motor Imagery Brain Computer Interfaces*.
+Related [Frontiers paper](https://doi.org/10.3389/fnhum.2021.634748).
+MOABB alias Leeuwis2021, declared NEMAR view nm000327.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).

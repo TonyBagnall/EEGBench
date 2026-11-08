@@ -1,0 +1,65 @@
+[
+  {
+    "key": "pan2023-api",
+    "url": "https://dataverse.harvard.edu/api/datasets/:persistentId?persistentId=doi:10.7910/DVN/251NOW",
+    "status": 403,
+    "bytes": 199,
+    "type": "text/html; charset=iso-8859-1"
+  },
+  {
+    "key": "pan2023-export",
+    "url": "https://dataverse.harvard.edu/api/datasets/export?exporter=dataverse_json&persistentId=doi:10.7910/DVN/251NOW",
+    "status": 403,
+    "bytes": 199,
+    "type": "text/html; charset=iso-8859-1"
+  },
+  {
+    "key": "pan2023-page",
+    "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/251NOW",
+    "status": 202,
+    "bytes": 0,
+    "type": "text/html; charset=UTF-8"
+  },
+  {
+    "key": "pan2025-api",
+    "url": "https://dataverse.harvard.edu/api/datasets/:persistentId?persistentId=doi:10.7910/DVN/GH74ZG",
+    "status": 403,
+    "bytes": 199,
+    "type": "text/html; charset=iso-8859-1"
+  },
+  {
+    "key": "pan2025-export",
+    "url": "https://dataverse.harvard.edu/api/datasets/export?exporter=dataverse_json&persistentId=doi:10.7910/DVN/GH74ZG",
+    "status": 403,
+    "bytes": 199,
+    "type": "text/html; charset=iso-8859-1"
+  },
+  {
+    "key": "pan2025-page",
+    "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GH74ZG",
+    "status": 202,
+    "bytes": 0,
+    "type": "text/html; charset=UTF-8"
+  },
+  {
+    "key": "rozado-api",
+    "url": "https://dataverse.harvard.edu/api/datasets/:persistentId?persistentId=doi:10.7910/DVN/28932",
+    "status": 403,
+    "bytes": 199,
+    "type": "text/html; charset=iso-8859-1"
+  },
+  {
+    "key": "rozado-export",
+    "url": "https://dataverse.harvard.edu/api/datasets/export?exporter=dataverse_json&persistentId=doi:10.7910/DVN/28932",
+    "status": 403,
+    "bytes": 199,
+    "type": "text/html; charset=iso-8859-1"
+  },
+  {
+    "key": "rozado-page",
+    "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28932",
+    "status": 202,
+    "bytes": 0,
+    "type": "text/html; charset=UTF-8"
+  }
+]

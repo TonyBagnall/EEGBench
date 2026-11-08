@@ -4114,7 +4114,7 @@
     "timepoints": 1250,
     "classes": 2,
     "frequency": 250,
-    "size_GB": 3.100185045,
+    "size_GB": 3.10021281,
     "licence": "CC-BY-4.0",
     "validation": {
       "partitions": {
@@ -4298,7 +4298,7 @@
     "timepoints": 2495,
     "classes": 2,
     "frequency": 500,
-    "size_GB": 4.604559099,
+    "size_GB": 4.604573777,
     "licence": "CC-BY-4.0",
     "validation": {
       "partitions": {
@@ -4494,7 +4494,7 @@
     "timepoints": 1000,
     "classes": 2,
     "frequency": 250,
-    "size_GB": 0.211664567,
+    "size_GB": 0.211667842,
     "licence": "CC-BY-4.0",
     "validation": {
       "partitions": {

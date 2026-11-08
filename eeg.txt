@@ -19,6 +19,7 @@ FlickerSymbols
 FlickerTargets
 GameTargets
 HandMovementDirection
+ImaginedAnkleRest
 ImaginedArmMovements
 ImaginedArmTasks
 ImaginedCommands
@@ -31,7 +32,9 @@ ImaginedHandGestures
 ImaginedHandSides
 ImaginedHandTraining
 ImaginedHandsEmbodiment
+ImaginedHandsFeedback
 ImaginedHandsFeet
+ImaginedHandsHaptics
 ImaginedHandsRobot
 ImaginedHandsStroke
 ImaginedLeftRightHand

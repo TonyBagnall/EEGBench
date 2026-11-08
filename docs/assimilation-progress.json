@@ -1,32 +1,13 @@
 {
   "updated": "2026-11-08",
-  "registered": 74,
-  "selected": 70,
+  "registered": 77,
+  "selected": 73,
   "completed_latest": [
-    "ImaginedHandsRobot",
-    "ImaginedGrasps",
-    "ImaginedHandsEmbodiment"
+    "ImaginedHandsHaptics",
+    "ImaginedAnkleRest",
+    "ImaginedHandsFeedback"
   ],
-  "in_progress": {
-    "ImaginedHandsHaptics": {
-      "source": "Batista2022",
-      "stage": "Full conversion running after tested pre-export correction; native99recordings/4127cues/4117eligible cases audit complete",
-      "worker_directory": ".openeegbench/mi-next",
-      "progress": "docs/mi-next-three-progress.json"
-    },
-    "ImaginedAnkleRest": {
-      "source": "PoloHortiguela2025",
-      "stage": "Full conversion and validation complete on D; repository registration pending batch completion",
-      "worker_directory": ".openeegbench/mi-next",
-      "progress": "docs/mi-next-three-progress.json"
-    },
-    "ImaginedHandsFeedback": {
-      "source": "Leeuwis2021",
-      "stage": "Full conversion and validation complete on D; repository registration pending batch completion",
-      "worker_directory": ".openeegbench/mi-next",
-      "progress": "docs/mi-next-three-progress.json"
-    }
-  },
+  "in_progress": {},
   "deferred": {
     "VisualCategories": {
       "source": "Kaneshiro2015",
@@ -42,7 +23,9 @@
   "no_uploads": true,
   "original_30_results_unchanged": true,
   "flags": {
-    "ImaginedArmTasks": "Anatomical channel names/order correspondence unknown; only native source-column ordinals preserved, no guessed montage"
+    "ImaginedArmTasks": "Anatomical channel names/order correspondence unknown; only native source-column ordinals preserved, no guessed montage",
+    "ImaginedAnkleRest": "Physical unit inferred microvolts, unchanged native numeric scale; native/release participant aliases retained",
+    "ImaginedHandsFeedback": "Physical unit inferred microvolts, exact supplied CSV filtering history not explicit"
   },
   "d_drive_access": "Resumed by user; temporary batch checksum-verified and restored to D",
   "preparation_root": "D:/Data/EEG",
@@ -60,11 +43,26 @@
     "transfer_report": "docs/c-temp-to-d-transfer.json",
     "temporary_copies_removed": true
   },
-  "motor_imagery_problems": 22,
-  "scalp_eeg_motor_imagery_problems": 21,
-  "completion_report": "docs/mi-completion-batch.md",
+  "motor_imagery_problems": 25,
+  "scalp_eeg_motor_imagery_problems": 24,
+  "completion_report": "docs/mi-next-three-preparation.md",
   "next_candidate": {
-    "source": "Batista2022",
-    "stage": "Current authorised three-dataset batch in progress"
+    "source": "Pan2023/Pan2025/Rozado2015/Cho2017/Daly2020",
+    "stage": "Remaining candidates only; resolve source access/licence/recording-identity gates before download"
+  },
+  "latest_batch": {
+    "problems": [
+      "ImaginedHandsHaptics",
+      "ImaginedAnkleRest",
+      "ImaginedHandsFeedback"
+    ],
+    "locations": {
+      "ImaginedHandsHaptics": "D:/Data/EEG/ImaginedHandsHaptics",
+      "ImaginedAnkleRest": "D:/Data/EEG/ImaginedAnkleRest",
+      "ImaginedHandsFeedback": "D:/Data/EEG/ImaginedHandsFeedback"
+    },
+    "report": "docs/mi-next-three-preparation.md",
+    "tests": "93 passed",
+    "manifest_artifacts_verified": true
   }
 }

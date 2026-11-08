@@ -1,6 +1,6 @@
 # Route from 19 to 30 motor imagery problems
 
-**Live update8November2026:** ImaginedHandsRobot, ImaginedGrasps and Vagaja2023/ImaginedHandsEmbodiment are complete and registered:74registered/70selected,22MI (21scalp EEG plus one ECoG). Eight more are needed for30. Next candidate Batista2022, not downloaded in this batch. [Completed batch and metadata](mi-completion-batch.md). The original19-to30 survey below is historical; use assimilation-progress.json for current state.
+**Live update 8 November 2026:** Batista2022/ImaginedHandsHaptics, PoloHortiguela2025/ImaginedAnkleRest and Leeuwis2021/ImaginedHandsFeedback are complete and registered. Current collection: 77 registered / 73 selected; 25 MI problems (24 scalp EEG plus one ECoG), five short of 30. [Latest results and metadata](mi-next-three-preparation.md). The original survey below is historical. Remaining candidates Pan2023, Pan2025, Rozado2015, Cho2017 and Daly2020 still need their original access/licence/recording-identity checks; none started in this batch.
 
 Reviewed8November2026 against current eeg.txt, source provenance, live MOABB
 documentation and original-host metadata. This review downloaded **no EEG**.

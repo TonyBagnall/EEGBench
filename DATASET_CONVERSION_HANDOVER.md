@@ -2,6 +2,10 @@
 
 Entry point for an agent continuing archive assimilation. Read this before downloading or converting. The user authorises continuing through eligible batches without repeatedly asking permission. Read live state before relying on the snapshot below.
 
+## Cache recovery correction
+
+The queue stopped during Rozado full conversion with EOFError on an empty derived NPZ left by a previous worker restart. Fixed store_intermediate to rebuild EOF/truncated caches and publish new caches atomically after complete writes; interrupted writes preserve the previous valid cache. Focused native/registry tests:26passed. Two full Pan outputs are validated; registry remains25 MI until the five-problem batch completes. Queue resumed; original recordings and final arrays untouched. Read live docs/mi-to-30-progress.json rather than assuming the last background run finished.
+
 ## Active MI queue towards thirty
 
 The next five are running locally on `dataset-assimilation`: Pan2023, Pan2025, Rozado2015, Daly2020 and Cho2017. See [batch progress](docs/mi-to-30-progress.json) and [preparation details](docs/mi-to-30-preparation.md). Current registered counts below remain valid until all five complete; pilots do not count. No push/upload.

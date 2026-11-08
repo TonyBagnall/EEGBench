@@ -137,8 +137,16 @@ def store_intermediate(path,x):
                 if saved.files==['X']:
                     previous=saved['X']
                     if previous.shape==x.shape and previous.dtype==x.dtype and np.array_equal(np.ascontiguousarray(previous).view('u1'),np.ascontiguousarray(x).view('u1')):return
-        except (OSError,ValueError,zipfile.BadZipFile):pass
-    np.savez_compressed(path,X=x)
+        except (OSError,ValueError,EOFError,zipfile.BadZipFile,zlib.error):pass
+    # A stopped worker must not leave a zero-byte or half-written cache at the
+    # reusable destination. Publish only after the complete archive is closed.
+    pending=None
+    try:
+        with tempfile.NamedTemporaryFile(dir=path.parent,prefix=path.stem+'-',suffix='.npz.tmp',delete=False) as handle:
+            pending=Path(handle.name);np.savez_compressed(handle,X=x)
+        pending.replace(path)
+    finally:
+        if pending is not None and pending.exists():pending.unlink()
 
 
 def base_row(person, session, run, file, event, start, points, hz, original, encoded):

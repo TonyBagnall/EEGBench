@@ -66,6 +66,19 @@ def test_intermediate_reuse_requires_identical_source_bits(tmp_path,monkeypatch)
     with np.load(p,allow_pickle=False) as a:assert np.signbit(a['X'][0,0,0])
     p.write_bytes(b'incomplete old archive')
     store_intermediate(p,x);assert len(writes)==2
+    p.write_bytes(b'')
+    store_intermediate(p,x);assert len(writes)==3
+    with np.load(p,allow_pickle=False) as saved:assert np.array_equal(saved['X'],x)
+
+
+def test_interrupted_cache_write_keeps_previous_complete_archive(tmp_path,monkeypatch):
+    p=tmp_path/'cases.npz';x=np.arange(6,dtype=float).reshape(1,2,3);store_intermediate(p,x)
+    def interrupted(handle,**kwargs):
+        handle.write(b'partial archive');raise OSError('simulated interruption')
+    monkeypatch.setattr(np,'savez_compressed',interrupted)
+    with pytest.raises(OSError,match='interruption'):store_intermediate(p,x+1)
+    with np.load(p,allow_pickle=False) as saved:assert np.array_equal(saved['X'],x)
+    assert list(tmp_path.iterdir())==[p]
 
 
 def test_duplicate_source_cases_fail_before_export_even_with_conflicting_labels():

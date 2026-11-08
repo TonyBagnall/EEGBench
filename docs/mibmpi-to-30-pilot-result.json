@@ -1,0 +1,121 @@
+{
+  "dataset": "ImaginedPhoneGesturesPilot",
+  "source_key": "mibmpi",
+  "path": "D:\\Data\\EEGSources\\MIBMPI2024\\pilot-output\\ImaginedPhoneGesturesPilot",
+  "train_cases": 201,
+  "test_cases": 220,
+  "subjects": 2,
+  "channels": 13,
+  "timepoints": 320,
+  "classes": 2,
+  "frequency": 128,
+  "size_GB": 0.03366225,
+  "licence": "CC-BY-NC-4.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 201,
+        "shape": [
+          201,
+          13,
+          320
+        ],
+        "class_counts": {
+          "1": 107,
+          "2": 94
+        },
+        "subjects": [
+          "D01"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 220,
+        "shape": [
+          220,
+          13,
+          320
+        ],
+        "class_counts": {
+          "1": 113,
+          "2": 107
+        },
+        "subjects": [
+          "D08"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": 0,
+    "aeon": {
+      "load_fit_predict": true,
+      "train_cases": 6,
+      "test_cases": 6
+    },
+    "aeon_scope": "All cases exact .ts readback; aeon load/variance/fit/predict on 3 cases per class per partition",
+    "channel_order_verified_all_recordings": true,
+    "source_sensor_identity": "Native MAT header, BIDS/EDF or SET/GDF labels; Castillos explicit named intersection"
+  },
+  "channel_quality": {
+    "threshold_std_uV": 1e-07,
+    "constant_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_channel_names": [
+      "C5",
+      "C3",
+      "FC3",
+      "CP3",
+      "C1",
+      "CZ",
+      "FCZ",
+      "CPZ",
+      "C2",
+      "C4",
+      "FC4",
+      "CP4",
+      "C6"
+    ],
+    "removed_indices": [],
+    "policy": "Remove sensor globally if any retained trial has std <= 1e-7 uV"
+  }
+}

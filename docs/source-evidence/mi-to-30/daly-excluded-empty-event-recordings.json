@@ -1,0 +1,90 @@
+[
+  {
+    "name": "sub-01/eeg/sub-01_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-02/eeg/sub-02_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-03/eeg/sub-03_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-04/eeg/sub-04_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-05/eeg/sub-05_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-05/eeg/sub-05_task-run2_eeg.edf",
+    "reason": "No labelled1/2 events in original events.tsv"
+  },
+  {
+    "name": "sub-06/eeg/sub-06_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-07/eeg/sub-07_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-08/eeg/sub-08_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-09/eeg/sub-09_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-10/eeg/sub-10_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-11/eeg/sub-11_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-12/eeg/sub-12_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-13/eeg/sub-13_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-14/eeg/sub-14_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-15/eeg/sub-15_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-15/eeg/sub-15_task-run3_eeg.edf",
+    "reason": "No labelled1/2 events in original events.tsv"
+  },
+  {
+    "name": "sub-16/eeg/sub-16_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-17/eeg/sub-17_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  },
+  {
+    "name": "sub-17/eeg/sub-17_task-run2_eeg.edf",
+    "reason": "No labelled1/2 events in original events.tsv"
+  },
+  {
+    "name": "sub-17/eeg/sub-17_task-run3_eeg.edf",
+    "reason": "No labelled1/2 events in original events.tsv"
+  },
+  {
+    "name": "sub-18/eeg/sub-18_task-run1_eeg.edf",
+    "reason": "Original calibration run1, excluded consistently even when events have1/2 labels"
+  }
+]

@@ -1,0 +1,103 @@
+[DOI] 10.5524/100295
+
+[Title] Supporting data for "EEG datasets for motor imagery brain computer
+interface"
+
+[Release Date] 2017-05-05
+
+[Citation] Cho, H; Ahn, M; Ahn, S; Kwon, M; Jun, SC (2017): Supporting data for
+"EEG datasets for motor imagery brain computer interface" GigaScience Database.
+https://dx.doi.org/10.5524/100295
+
+[Data Type] ElectroEncephaloGraphy(EEG)
+
+[Data Summary] Most investigators of brain computer interface (BCI) believe that
+BCI can be achieved through induced neuronal activity from the cortex, but not
+by evoked neuronal activity. Motor imagery (MI) based BCI is one of the standard
+concepts of BCI, in that the user can generate induced activity by imagining
+motor movements. However, variations in performance over sessions and subjects
+are too severe to overcome easily; therefore, a basic understanding and
+investigation of BCI performance variation is necessary to find critical
+evidence of performance variation.<br>Here we present not only EEG datasets for
+MI BCI from 52 subjects, but also the results of a psychological and
+physiological questionnaire, EMG datasets, the locations of 3D EEG electrodes,
+and EEGs for non-task related states. <br>We validated our EEG datasets by using
+the percentage of bad trials, event-related desynchronization/synchronization
+(ERD/ERS) analysis, and classification analysis. After conventional rejection of
+bad trials, we showed contralateral ERD and ipsilateral ERS in the somatosensory
+area, which are well-known patterns of MI. Finally, we showed that 73.08% of
+datasets (38 subjects) included reasonably discriminative information.<br>Our
+EEG datasets included information necessary to determine statistical
+significance; they consisted of well-discriminated datasets (38 subjects) and
+less-discriminative datasets. These may provide researchers with opportunities
+to investigate human factors related to MI BCI performance variation, and may
+also achieve subject-to-subject transfer by using metadata, including a
+questionnaire, EEG coordinates, and EEGs for non-task related states. <br>
+
+[File Location] https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/
+
+[File name] - [File Description]
+readme.txt  -  
+s51.mat  -  
+s31.mat  -  
+s28.mat  -  
+s01.mat  -  
+s24.mat  -  
+s40.mat  -  
+s41.mat  -  
+s14.mat  -  
+s05.mat  -  
+s26.mat  -  
+s30.mat  -  
+s38.mat  -  
+s07.mat  -  
+s18.mat  -  
+s22.mat  -  
+s21.mat  -  
+s44.mat  -  
+s49.mat  -  
+s16.mat  -  
+s15.mat  -  
+s33.mat  -  
+s36.mat  -  
+s42.mat  -  
+s43.mat  -  
+s10.mat  -  
+s11.mat  -  
+s20.mat  -  
+s03.mat  -  
+s27.mat  -  
+s37.mat  -  
+s23.mat  -  
+s25.mat  -  
+s13.mat  -  
+s17.mat  -  
+s19.mat  -  
+s06.mat  -  
+s04.mat  -  
+s46.mat  -  
+s08.mat  -  
+s45.mat  -  
+s35.mat  -  
+s39.mat  -  
+Questionnaire_results_of_52_subjects.xlsx  -  
+s12.mat  -  
+s09.mat  -  
+trial_sequence.zip  -  contains trial numbering for all 52 subject datasets
+s48.mat  -  
+s52.mat  -  
+s47.mat  -  
+s50.mat  -  
+s02.mat  -  
+s32.mat  -  
+s34.mat  -  
+s29.mat  -  
+
+[License]
+All files and data are distributed under the CC0 1.0 Universal (CC0 1.0) Public
+Domain Dedication (https://creativecommons.org/publicdomain/zero/1.0/), unless
+specifically stated otherwise, see http://gigadb.org/site/term for more details.
+
+[Comments]
+
+[End]

@@ -1,0 +1,36 @@
+{
+  "dataset": "Rozado2015",
+  "licence": "CC0-1.0",
+  "source_record_id": "10.7910/DVN/28932",
+  "source_revision": "Harvard Dataverse 10.7910/DVN/28932; publisher DataCite metadata version 2.2; immutable numeric datafile IDs and recorded content hashes (dataset-version API unavailable)",
+  "moabb_revision": "bed9f0fa1b9c4d3f71c7f2ddb22e4e44383211b5",
+  "pilot": false,
+  "files": [
+    {
+      "dataset": "rozado",
+      "subject_range": "1-15",
+      "name": "userdata1.rar",
+      "datafile_id": 2531738,
+      "url": "https://dataverse.harvard.edu/api/access/datafile/2531738",
+      "bytes": 802015617,
+      "checksum": null,
+      "etag": "6fefc9ec3858cd9dc7f786bf4145b21b-12",
+      "last_modified": "Sun, 15 Feb 2026 20:40:20 GMT",
+      "sha256": "eefc1037b8c54885a5f9c3be9e7faaa53b3051040156c2eb5d8796c7a246fae6"
+    },
+    {
+      "dataset": "rozado",
+      "subject_range": "16-30",
+      "name": "userdata2.rar",
+      "datafile_id": 2531739,
+      "url": "https://dataverse.harvard.edu/api/access/datafile/2531739",
+      "bytes": 842723510,
+      "checksum": null,
+      "etag": "a2620c19c4914ae2a14f4e1debb425ad-13",
+      "last_modified": "Sun, 15 Feb 2026 20:42:38 GMT",
+      "sha256": "d6ac4f46c919ffd7d7f367470a18eafc05491180d42fcf7c19c759e29a89f7f9"
+    }
+  ],
+  "licence_evidence": "Original publisher-registered DataCite rightsList, CC0-1.0",
+  "limitations": null
+}

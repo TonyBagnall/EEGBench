@@ -7,7 +7,28 @@
     "ImaginedAnkleRest",
     "ImaginedHandsFeedback"
   ],
-  "in_progress": {},
+  "in_progress": {
+    "pan23": {
+      "source": "Pan2023",
+      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
+    },
+    "pan25": {
+      "source": "Pan2025",
+      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
+    },
+    "rozado": {
+      "source": "Rozado2015",
+      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
+    },
+    "daly": {
+      "source": "Daly2020",
+      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
+    },
+    "cho": {
+      "source": "Cho2017",
+      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
+    }
+  },
   "deferred": {
     "VisualCategories": {
       "source": "Kaneshiro2015",
@@ -48,7 +69,7 @@
   "completion_report": "docs/mi-next-three-preparation.md",
   "next_candidate": {
     "source": "Pan2023/Pan2025/Rozado2015/Cho2017/Daly2020",
-    "stage": "Remaining candidates only; resolve source access/licence/recording-identity gates before download"
+    "stage": "Pilots passed except Cho source still downloading; full queue runs unattended, stops on failed quality gates"
   },
   "latest_batch": {
     "problems": [
@@ -64,5 +85,6 @@
     "report": "docs/mi-next-three-preparation.md",
     "tests": "93 passed",
     "manifest_artifacts_verified": true
-  }
+  },
+  "active_batch_report": "docs/mi-to-30-progress.json"
 }

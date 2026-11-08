@@ -1,0 +1,416 @@
+{
+  "created": "2024-09-03T01:22:24.513240+00:00",
+  "modified": "2025-06-04T18:31:27.159087+00:00",
+  "id": 13626922,
+  "conceptrecid": "13626921",
+  "doi": "10.21203/rs.3.rs-4268007/v1",
+  "doi_url": "https://doi.org/10.21203/rs.3.rs-4268007/v1",
+  "metadata": {
+    "title": "MI-BMPI: Motor Imagery Brain--Mobil Phone Interface Dataset",
+    "doi": "10.21203/rs.3.rs-4268007/v1",
+    "publication_date": "2024-09-02",
+    "description": "<p dir=\"ltr\">This dataset contains two significant mobile gestures for brain-mobile phone interfaces (BMPIs: (i) motor imagery of tapping on the screen of a mobile device and (ii) motor imagery of swiping down with a thumb on the screen of a mobile device. The raw EEG signals were recorded using the Emotiv EPOC Flex (Model 1.0) headset with saline-based sensors and Emotiv Pro (2.5.1.227) software. The sampling rate is 128 Hz. Each epoch contains 3.5 s signals. The first 1 s signal is recorded before the MI task starts (5 s to 6 s interval in the timing plan), and the next 2.5 s signal is recorded during the MI execution (6 s to 8.5 s interval in the timing plan). Please refer to the reference study below for details.</p>\n<p dir=\"ltr\">The file names are constructed as follows. For example, taking \"D01_s1\" and \"D01\" in the file name refers to subject \"01\", and \"s1\" refers to session 1 (\"s2\" refers to session 2). The label data is given in a separate folder in Matlab format.</p>\n<p dir=\"ltr\">The data is provided in two different forms for use (the desired is preferable):</p>\n<p dir=\"ltr\">The set_files folder contains the data prepared for import in EEGLAB. EEGLAB must be installed, and the set files must be imported to access the data. The data is in epoched format in 3D (channels, sample_points, trials). With the EEGLAB interface, all the data can be accessed, and EEGLAB functions can be executed. Also, the EEG variable, which is built after importing the *.set file, contains all the information about the experiment. With the EEG.data variable, epoched data in the dimensions (channels, sample_points, trials) can be accessed.</p>\n<p dir=\"ltr\">The mat_files folder contains data in mat file format. In these files, epoched data is stored in a 3-D array of size (channels, sample_points, trials). You can access the data as follows. For example, all data from the first session of subject D01 can be retrieved as follows. Load the mat file with the load('D01_s1.mat') code, and access the data using the EEG variable in the workspace. For instance, 13x448 x101 sized epoched data (channels, sample_points, trials) can be retrieved with the command EEG.data. Other information about the experiments and subjects is also included in the fields of the EEG variable.</p>\n<p dir=\"ltr\">This research was supported by the Turkish Scientific and Research Council (TUBITAK) under project number 119E397.</p>\n<p dir=\"ltr\">The following article can be cited in academic studies as follow.</p>\n<p dir=\"ltr\">Yilmaz, C.M., Yilmaz, B.H. &amp; Kose, C. MI-BMPI motor imagery brain&ndash;mobile phone dataset and performance evaluation of voting ensembles utilizing QPDM. <em>Neural Comput &amp; Applic</em> <strong>37</strong>, 4679&ndash;4696 (2025). https://doi.org/10.1007/s00521-024-10917-5</p>\n<p dir=\"ltr\">Permission must be obtained for use in commercial studies.</p>\n<p dir=\"ltr\"><strong>This dataset is licensed under the </strong><strong>Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</strong><strong> license.</strong></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Y\u0131lmaz, \u00c7a\u011fatay Murat",
+        "affiliation": "Karadeniz Technical University",
+        "orcid": "0000-0002-6513-7337"
+      },
+      {
+        "name": "K\u00f6se, Cemal",
+        "affiliation": "Karadeniz Technical University"
+      }
+    ],
+    "keywords": [
+      "Human-computer interaction",
+      "Motor Imagery",
+      "Electroencephalography",
+      "Brain-computer interface",
+      "Brain-mobile phone interfac",
+      "BCI",
+      "EEG"
+    ],
+    "language": "tur",
+    "custom": {
+      "code:programmingLanguage": [
+        {
+          "id": "matlab",
+          "title": {
+            "en": "MATLAB"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "communities": [
+      {
+        "id": "electrophys-imaging"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13626921"
+          }
+        }
+      ]
+    }
+  },
+  "title": "MI-BMPI: Motor Imagery Brain--Mobil Phone Interface Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/13626922",
+    "self_html": "https://zenodo.org/records/13626922",
+    "preview_html": "https://zenodo.org/records/13626922?preview=1",
+    "doi": "https://doi.org/10.21203/rs.3.rs-4268007/v1",
+    "self_doi": "https://doi.org/10.21203/rs.3.rs-4268007/v1",
+    "self_doi_html": "https://zenodo.org/doi/10.21203/rs.3.rs-4268007/v1",
+    "reserve_doi": "https://zenodo.org/api/records/13626922/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13626921",
+    "parent_html": "https://zenodo.org/records/13626921",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13626922/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13626922/sequence/default",
+    "files": "https://zenodo.org/api/records/13626922/files",
+    "media_files": "https://zenodo.org/api/records/13626922/media-files",
+    "latest": "https://zenodo.org/api/records/13626922/versions/latest",
+    "latest_html": "https://zenodo.org/records/13626922/latest",
+    "versions": "https://zenodo.org/api/records/13626922/versions",
+    "draft": "https://zenodo.org/api/records/13626922/draft",
+    "access_links": "https://zenodo.org/api/records/13626922/access/links",
+    "access_grants": "https://zenodo.org/api/records/13626922/access/grants",
+    "access_users": "https://zenodo.org/api/records/13626922/access/users",
+    "access_request": "https://zenodo.org/api/records/13626922/access/request",
+    "access": "https://zenodo.org/api/records/13626922/access",
+    "communities": "https://zenodo.org/api/records/13626922/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13626922/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13626922/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13626922/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/13626922/quota-increase",
+    "requests": "https://zenodo.org/api/records/13626922/requests"
+  },
+  "updated": "2025-06-04T18:31:27.159087+00:00",
+  "recid": "13626922",
+  "revision": 12,
+  "files": [
+    {
+      "id": "bf4d4f25-3437-47a5-babb-867eeca5227b",
+      "key": "D08_s2_labels.mat",
+      "size": 184,
+      "checksum": "md5:f1bcabc79777cf6c0c96d40e2f771862",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D08_s2_labels.mat/content"
+      }
+    },
+    {
+      "id": "21010cdf-5504-432c-a775-16e10ab99e45",
+      "key": "D07_s2_labels.mat",
+      "size": 184,
+      "checksum": "md5:90ace2fd908812da2abe5dcfe6855ab1",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D07_s2_labels.mat/content"
+      }
+    },
+    {
+      "id": "d6cdab11-c9a9-4840-b44b-2b8dac51792b",
+      "key": "D04_s1.set",
+      "size": 2409548,
+      "checksum": "md5:ae55117e6f8a77685b8f3e38251a09d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D04_s1.set/content"
+      }
+    },
+    {
+      "id": "90d01090-85b6-49c8-b933-26a3a8bf08bd",
+      "key": "D01_s1_labels.mat",
+      "size": 184,
+      "checksum": "md5:66e1697839a873c4cf09645fc1ed1343",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D01_s1_labels.mat/content"
+      }
+    },
+    {
+      "id": "0a49b620-597e-4db8-9669-f38799b866f7",
+      "key": "D02_s1_labels.mat",
+      "size": 182,
+      "checksum": "md5:1cc052fba5fc14b079b9e573e12c99f8",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D02_s1_labels.mat/content"
+      }
+    },
+    {
+      "id": "97d6a0b2-41ba-4869-9270-1df6b79f6759",
+      "key": "D07_s2.set",
+      "size": 2258379,
+      "checksum": "md5:276c9662c272825279837b0e6b338395",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D07_s2.set/content"
+      }
+    },
+    {
+      "id": "b380e11f-c09e-4c35-91f6-0c7af684bfef",
+      "key": "D05_s1.set",
+      "size": 2454980,
+      "checksum": "md5:77deccc288c6172748f0e9eca6b6fdec",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D05_s1.set/content"
+      }
+    },
+    {
+      "id": "f19b9bcf-69c0-4b3b-a2fc-eb61563e4190",
+      "key": "D05_s1_labels.mat",
+      "size": 184,
+      "checksum": "md5:dc72f6446233093464f89504ab518c4d",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D05_s1_labels.mat/content"
+      }
+    },
+    {
+      "id": "b7ae9632-4468-48a7-9cf7-9c112c74fa18",
+      "key": "D01_s1.set",
+      "size": 2309194,
+      "checksum": "md5:1b7a79ee89c6fad7beb4426c831908fb",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D01_s1.set/content"
+      }
+    },
+    {
+      "id": "4731e2ad-1736-4bff-8534-6e2977450a65",
+      "key": "D02_s2.set",
+      "size": 2729662,
+      "checksum": "md5:e57ec9ac137bd1dd447bee5734ed2c48",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D02_s2.set/content"
+      }
+    },
+    {
+      "id": "7a7a7d2d-dc3d-4213-bc8f-d5beb4f7f89f",
+      "key": "D05_s2.set",
+      "size": 2303186,
+      "checksum": "md5:030e3e171296ea8146edc9c196b1b777",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D05_s2.set/content"
+      }
+    },
+    {
+      "id": "4c75430c-b545-487f-b22a-337fd2ee998e",
+      "key": "D05_s2_labels.mat",
+      "size": 184,
+      "checksum": "md5:cf873b1644b3406e7e0a6ad97981e07b",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D05_s2_labels.mat/content"
+      }
+    },
+    {
+      "id": "c4b78963-8647-4c48-8550-87ad1933b0e2",
+      "key": "D03_s2.set",
+      "size": 2212471,
+      "checksum": "md5:1c78453dfd10b1e7bbfc1d86620ae45f",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D03_s2.set/content"
+      }
+    },
+    {
+      "id": "5cbc63e2-d220-414e-9ae6-1498e4ca930c",
+      "key": "D04_s2_labels.mat",
+      "size": 184,
+      "checksum": "md5:3fbb9ad7f2ae16b7acf3f9bed6d924ae",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D04_s2_labels.mat/content"
+      }
+    },
+    {
+      "id": "f0560ee1-5c71-4b0f-89a4-7c002d5ab140",
+      "key": "D08_s1_labels.mat",
+      "size": 184,
+      "checksum": "md5:8818fddff8a66523cf3f3c695fb9329f",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D08_s1_labels.mat/content"
+      }
+    },
+    {
+      "id": "277ebf46-44ae-4186-9e7a-1880f2990e77",
+      "key": "D01_s2.set",
+      "size": 2287443,
+      "checksum": "md5:19d9d23793c9a6a4cd3da26250bed0f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D01_s2.set/content"
+      }
+    },
+    {
+      "id": "b3d74eb9-166b-4d5d-9615-1a2cb59dd871",
+      "key": "D02_s1.set",
+      "size": 2734037,
+      "checksum": "md5:edd20af8148ed434467a6a770f63b278",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D02_s1.set/content"
+      }
+    },
+    {
+      "id": "796c55c4-b741-4631-b470-96c3739960a7",
+      "key": "D06_s2.set",
+      "size": 2519370,
+      "checksum": "md5:0f205a55718eb637ffaaddb99c73ca8a",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D06_s2.set/content"
+      }
+    },
+    {
+      "id": "36e9f550-1929-447e-9553-3645002b6a7b",
+      "key": "D03_s1.set",
+      "size": 2300585,
+      "checksum": "md5:f2feb538c1491ac7e1cbe811d4339fb5",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D03_s1.set/content"
+      }
+    },
+    {
+      "id": "b16dbbbc-e207-4c4c-bee0-084498f44907",
+      "key": "D04_s2.set",
+      "size": 2409129,
+      "checksum": "md5:9de7d85920d98e60902b2092b937a2ac",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D04_s2.set/content"
+      }
+    },
+    {
+      "id": "d35889e3-d7c6-4e44-bc62-3602a17ee27f",
+      "key": "D04_s1_labels.mat",
+      "size": 184,
+      "checksum": "md5:ca22a5e535e421f74b71d5d0526791ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D04_s1_labels.mat/content"
+      }
+    },
+    {
+      "id": "c3b37a2e-36c0-463e-81cc-306cbef2ae94",
+      "key": "D08_s1.set",
+      "size": 2520969,
+      "checksum": "md5:f1aca16709006b6f59da8149760da710",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D08_s1.set/content"
+      }
+    },
+    {
+      "id": "76f9eb6d-65bb-4b59-822b-45ce5db4c44c",
+      "key": "D07_s1_labels.mat",
+      "size": 182,
+      "checksum": "md5:7bfc7a111b36b4a1f8891549f6913b87",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D07_s1_labels.mat/content"
+      }
+    },
+    {
+      "id": "43d0b5a9-e762-44d4-bfef-f452d8b69123",
+      "key": "D03_s1_labels.mat",
+      "size": 184,
+      "checksum": "md5:afd4812d1c67154229ef36499bdd8714",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D03_s1_labels.mat/content"
+      }
+    },
+    {
+      "id": "458d45f9-a8c3-46fa-9eb4-c70f20c45b54",
+      "key": "D06_s1.set",
+      "size": 2512620,
+      "checksum": "md5:643de72e0c1d24badd74f1ffc508f96e",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D06_s1.set/content"
+      }
+    },
+    {
+      "id": "b9159acd-353f-49a5-9733-8e007170c536",
+      "key": "D06_s1_labels.mat",
+      "size": 184,
+      "checksum": "md5:a3d3daaff5cbc8a7c9d2f194b8ca82ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D06_s1_labels.mat/content"
+      }
+    },
+    {
+      "id": "494064b4-23e6-410a-96eb-d84b1f6b8ced",
+      "key": "D07_s1.set",
+      "size": 2217256,
+      "checksum": "md5:7bfef88d2af66f30abbc5ef371f01e97",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D07_s1.set/content"
+      }
+    },
+    {
+      "id": "a40ee803-6b67-420c-82cf-10ec7fef845d",
+      "key": "D06_s2_labels.mat",
+      "size": 184,
+      "checksum": "md5:df4b783a0318a8ae031f7ed29f155848",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D06_s2_labels.mat/content"
+      }
+    },
+    {
+      "id": "8f1283b4-fecc-4885-b7d8-5220fe56cf68",
+      "key": "D01_s2_labels.mat",
+      "size": 184,
+      "checksum": "md5:870d103df783c31ad6d23f876a487287",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D01_s2_labels.mat/content"
+      }
+    },
+    {
+      "id": "18067374-d064-4252-8e6b-626d35030d71",
+      "key": "D02_s2_labels.mat",
+      "size": 182,
+      "checksum": "md5:be2024cca9eeb166764c04eef0f22abd",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D02_s2_labels.mat/content"
+      }
+    },
+    {
+      "id": "cb76db99-ddf7-43e7-be06-5b9ce766f584",
+      "key": "D03_s2_labels.mat",
+      "size": 182,
+      "checksum": "md5:7e4386d22d76bffe8ef6a906a255cc78",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D03_s2_labels.mat/content"
+      }
+    },
+    {
+      "id": "8425982b-755a-4e43-b818-4dcab3350d37",
+      "key": "D08_s2.set",
+      "size": 2516322,
+      "checksum": "md5:97915487995fc91f304032323ec9c210",
+      "links": {
+        "self": "https://zenodo.org/api/records/13626922/files/D08_s2.set/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1182865"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 3149,
+    "unique_downloads": 2967,
+    "views": 389,
+    "unique_views": 365,
+    "version_downloads": 3149,
+    "version_unique_downloads": 2967,
+    "version_unique_views": 365,
+    "version_views": 389
+  },
+  "state": "done",
+  "submitted": true
+}

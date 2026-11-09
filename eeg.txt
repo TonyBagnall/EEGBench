@@ -29,12 +29,17 @@ ImaginedGripForce
 ImaginedHandFeetTongue
 ImaginedHandFootActions
 ImaginedHandGestures
+ImaginedHandMusicTempo
+ImaginedHandPupils
 ImaginedHandSides
 ImaginedHandTraining
+ImaginedHandsCrossSession
 ImaginedHandsEmbodiment
 ImaginedHandsFeedback
 ImaginedHandsFeet
 ImaginedHandsHaptics
+ImaginedHandsOnline
+ImaginedHandsPhysiology
 ImaginedHandsRobot
 ImaginedHandsStroke
 ImaginedLeftRightHand

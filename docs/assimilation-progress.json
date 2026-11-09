@@ -1,34 +1,15 @@
 {
-  "updated": "2026-11-08",
-  "registered": 77,
-  "selected": 73,
+  "updated": "2026-11-09",
+  "registered": 82,
+  "selected": 78,
   "completed_latest": [
-    "ImaginedHandsHaptics",
-    "ImaginedAnkleRest",
-    "ImaginedHandsFeedback"
+    "ImaginedHandsOnline",
+    "ImaginedHandsCrossSession",
+    "ImaginedHandPupils",
+    "ImaginedHandsPhysiology",
+    "ImaginedHandMusicTempo"
   ],
-  "in_progress": {
-    "pan23": {
-      "source": "Pan2023",
-      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
-    },
-    "pan25": {
-      "source": "Pan2025",
-      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
-    },
-    "rozado": {
-      "source": "Rozado2015",
-      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
-    },
-    "daly": {
-      "source": "Daly2020",
-      "stage": "Investigated: exclude both ambiguously attributed09/15run10 copies, preserve originals/other runs; pinned source restoration and conversion queue resumed"
-    },
-    "cho": {
-      "source": "Cho2017",
-      "stage": "Full conversion complete:10520cases,52subjects,64channels; final artifact refresh/registration pending batch"
-    }
-  },
+  "in_progress": {},
   "deferred": {
     "VisualCategories": {
       "source": "Kaneshiro2015",
@@ -46,7 +27,9 @@
   "flags": {
     "ImaginedArmTasks": "Anatomical channel names/order correspondence unknown; only native source-column ordinals preserved, no guessed montage",
     "ImaginedAnkleRest": "Physical unit inferred microvolts, unchanged native numeric scale; native/release participant aliases retained",
-    "ImaginedHandsFeedback": "Physical unit inferred microvolts, exact supplied CSV filtering history not explicit"
+    "ImaginedHandsFeedback": "Physical unit inferred microvolts, exact supplied CSV filtering history not explicit",
+    "ImaginedHandsCrossSession": "Anatomical names absent from native MAT; opaque original column identifiers and source positions/mapping evidence retained, no invented labels",
+    "ImaginedHandsPhysiology": "Anatomical names absent from native MAT; opaque original column identifiers and source positions/mapping evidence retained, no invented labels"
   },
   "d_drive_access": "Resumed by user; temporary batch checksum-verified and restored to D",
   "preparation_root": "D:/Data/EEG",
@@ -64,28 +47,39 @@
     "transfer_report": "docs/c-temp-to-d-transfer.json",
     "temporary_copies_removed": true
   },
-  "motor_imagery_problems": 25,
-  "scalp_eeg_motor_imagery_problems": 24,
-  "completion_report": "docs/mi-next-three-preparation.md",
-  "next_candidate": {
-    "source": "Pan2023/Pan2025/Rozado2015/Cho2017/Daly2020",
-    "stage": "Pilots passed except Cho source still downloading; full queue runs unattended, stops on failed quality gates"
-  },
+  "motor_imagery_problems": 30,
+  "scalp_eeg_motor_imagery_problems": 29,
+  "completion_report": "docs/mi-to-30-preparation.md",
+  "next_candidate": null,
   "latest_batch": {
     "problems": [
-      "ImaginedHandsHaptics",
-      "ImaginedAnkleRest",
-      "ImaginedHandsFeedback"
+      "ImaginedHandsOnline",
+      "ImaginedHandsCrossSession",
+      "ImaginedHandPupils",
+      "ImaginedHandsPhysiology",
+      "ImaginedHandMusicTempo"
     ],
     "locations": {
-      "ImaginedHandsHaptics": "D:/Data/EEG/ImaginedHandsHaptics",
-      "ImaginedAnkleRest": "D:/Data/EEG/ImaginedAnkleRest",
-      "ImaginedHandsFeedback": "D:/Data/EEG/ImaginedHandsFeedback"
+      "ImaginedHandsOnline": "D:\\Data\\EEG\\ImaginedHandsOnline",
+      "ImaginedHandsCrossSession": "D:\\Data\\EEG\\ImaginedHandsCrossSession",
+      "ImaginedHandPupils": "D:\\Data\\EEG\\ImaginedHandPupils",
+      "ImaginedHandsPhysiology": "D:\\Data\\EEG\\ImaginedHandsPhysiology",
+      "ImaginedHandMusicTempo": "D:\\Data\\EEG\\ImaginedHandMusicTempo"
     },
-    "report": "docs/mi-next-three-preparation.md",
-    "tests": "93 passed",
-    "manifest_artifacts_verified": true
+    "report": "docs/mi-to-30-progress.json",
+    "manifest_artifacts_verified": true,
+    "tests": "106 passed"
   },
   "active_batch_report": "docs/mi-to-30-progress.json",
-  "prepared_motor_imagery_problems": 29
+  "prepared_motor_imagery_problems": 30,
+  "upstream_reports": {
+    "Daly2020": {
+      "status": "reported_by_user",
+      "platform": "OpenNeuro dataset comments",
+      "dataset": "ds002720",
+      "reported_date": "2026-11-09",
+      "evidence": "User confirmed posting to OpenNeuro in this conversation",
+      "url": null
+    }
+  }
 }

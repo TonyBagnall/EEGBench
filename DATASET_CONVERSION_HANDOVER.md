@@ -2,7 +2,11 @@
 
 Entry point for an agent continuing archive assimilation. Read this before downloading or converting. The user authorises continuing through eligible batches without repeatedly asking permission. Read live state before relying on the snapshot below.
 
-## Daly duplication investigated and cleanup authorised
+## Current completion: thirty motor imagery problems
+
+All five additions passed full conversion, artifact verification and local registration: **82registered /78selected /30MI (29scalp EEG +1ECoG)**. Final arrays and sidecars are under D:/Data/EEG; no uploads or pushes. Machine-readable evidence: docs/mi-to-30-progress.json and docs/mi-to-30-summary.json. Original30paper data/results unchanged. Daly final1698TRAIN/643TEST,18subjects,19EEG x20000points at1000Hz; both ambiguous09/15run10 copies excluded, other recordings retained, no retained duplicate cases or shared subjects. The user confirmed reporting the issue on OpenNeuro on9Nov; comment URL not supplied. The focused final tests passed28checks. No conversion worker remains required for this batch. Earlier snapshots below are historical.
+
+## Historical Daly cleanup snapshot
 
 9Nov: original09/15run10 EDFs and event tables are identical; headers do not identify the true participant. Both ambiguous recordings are excluded by exact pinned path/SHA/size checks; other runs and original source objects retained. User authorised removing duplication after investigation. No existing specific report found, OpenNeuro comments empty, latest public release1.0.1 unchanged. See docs/daly-duplication-investigation.md and ready-to-paste issue draft; no issue posted.28focused tests passed. Cho full conversion completed10520cases, so29MI prepared. Main queue restarted via .openeegbench/mi-to-30/recover-daly-and-resume.py; logs daly-reviewed-batch.log/.err. It restores source metadata/originals, verifies other4full outputs, downloads/converts correctedDaly, then registers all5andtests. Do not start competing writers. State docs/mi-to-30-progress.json. Registry remains25until final registration.
 
@@ -14,7 +18,11 @@ Three full outputs validated: Pan23/Pan25/Rozado, giving28prepared MI including2
 
 The queue stopped during Rozado full conversion with EOFError on an empty derived NPZ left by a previous worker restart. Fixed store_intermediate to rebuild EOF/truncated caches and publish new caches atomically after complete writes; interrupted writes preserve the previous valid cache. Focused native/registry tests:26passed. Two full Pan outputs are validated; registry remains25 MI until the five-problem batch completes. Queue resumed; original recordings and final arrays untouched. Read live docs/mi-to-30-progress.json rather than assuming the last background run finished.
 
-## Active MI queue towards thirty
+## MI queue completed
+
+All five full preparations passed and were registered locally. Read [current progress](docs/assimilation-progress.json), [batch results](docs/mi-to-30-progress.json) and [summary](docs/mi-to-30-summary.json). Original paper arrays/results unchanged; no uploads or pushes. Active-queue text below is historical.
+
+## Previous active MI queue towards thirty
 
 The next five are running locally on `dataset-assimilation`: Pan2023, Pan2025, Rozado2015, Daly2020 and Cho2017. See [batch progress](docs/mi-to-30-progress.json) and [preparation details](docs/mi-to-30-preparation.md). Current registered counts below remain valid until all five complete; pilots do not count. No push/upload.
 

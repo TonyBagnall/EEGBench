@@ -25,9 +25,9 @@ collection includes the documented [local corrections](local-data-corrections.md
 The archive is a sub-collection of the
 [Multiverse](https://github.com/aeon-toolkit/multiverse) archive for multivariate time
 series classification, and some of these datasets are also in its benchmark subset,
-Multiverse-core. The local collection now contains 77 prepared
+Multiverse-core. The local collection now contains 82 prepared
 classification problems, including the additional preparations described below.
-The selected problem list in `eeg.txt` contains 73 problems. It excludes Blink,
+The selected problem list in `eeg.txt` contains 78 problems. It excludes Blink,
 ButtonPress, Sleep and EpilepticSeizures; their registry entries and local files
 are retained.
 
@@ -71,12 +71,17 @@ are retained.
 | ImaginedHandFeetTongue | BCI | 22 | 800 | 4 | 9 | 3456 | 1728 | 200 | local |
 | ImaginedHandFootActions | BCI | 11 | 500 | 8 | 60 | 2727 | 930 | 125 | local |
 | ImaginedHandGestures | BCI | 17 | 3000 | 4 | 11 | 382 | 143 | 500 | local |
+| ImaginedHandMusicTempo | BCI | 19 | 20000 | 2 | 18 | 1698 | 643 | 1000 | local |
+| ImaginedHandPupils | BCI | 32 | 3072 | 2 | 30 | 1150 | 400 | 512 | local |
 | ImaginedHandSides | BCI | 3 | 1125 | 2 | 9 | 3680 | 2840 | 250 | local |
 | ImaginedHandTraining | BCI | 22 | 2560 | 2 | 18 | 5568 | 1588 | 512 | local |
+| ImaginedHandsCrossSession | BCI | 28 | 1000 | 2 | 14 | 2400 | 960 | 250 | local |
 | ImaginedHandsEmbodiment | BCI | 32 | 4997 | 2 | 26 | 798 | 240 | 500 | local |
 | ImaginedHandsFeedback | BCI | 16 | 1250 | 2 | 55 | 6560 | 2240 | 250 | local |
 | ImaginedHandsFeet | BCI | 13 | 1250 | 3 | 4 | 1365 | 435 | 250 | local |
 | ImaginedHandsHaptics | BCI | 32 | 2495 | 2 | 20 | 3083 | 1034 | 500 | local |
+| ImaginedHandsOnline | BCI | 28 | 1000 | 2 | 10 | 2123 | 1519 | 250 | local |
+| ImaginedHandsPhysiology | BCI | 64 | 1536 | 2 | 52 | 7880 | 2640 | 512 | local |
 | ImaginedHandsRobot | BCI | 32 | 1000 | 2 | 12 | 2880 | 2880 | 250 | local |
 | ImaginedHandsStroke | BCI | 29 | 2000 | 2 | 46 | 1400 | 440 | 500 | local |
 | ImaginedLeftRightHand | BCI | 60 | 800 | 2 | 10 | 1260 | 320 | 200 | local |
@@ -789,3 +794,45 @@ MOABB alias Leeuwis2021, declared NEMAR view nm000327.
 No EEG sensors removed or exact duplicate cases found; full readback, metadata,
 sensor-order and aeon compatibility checks passed.
 [Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+
+## Further motor imagery preparations
+
+### ImaginedHandsOnline (Pan2025)
+
+10 participants; 2123 training and 1519 test cases, 28 channels x 1000 samples at 250 Hz. Classes: imagined_left_hand, imagined_right_hand.
+
+Original session1 and session2 first30 trials TRAIN, remaining session2 trials TEST; intentional shared participants. No separate validation archive. Native numbers cast to float64; presumed microvolts according to pinned loader, physical unit not embedded. No added filtering, resampling, demeaning, baseline or reference. Native epoch/crop identity retained; original continuous offsets unavailable.
+
+Original source [10.7910/DVN/GH74ZG](https://doi.org/10.7910/DVN/GH74ZG), CC0-1.0. Directly recovered native ordered channel labels. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandsOnline`. Native and documented/inferred metadata are distinguished. See [pan25 source lock](pan25-to-30-source-lock.json) and [conversion result](pan25-to-30-conversion-result.json).
+
+### ImaginedHandsCrossSession (Pan2023)
+
+14 participants; 2400 training and 960 test cases, 28 channels x 1000 samples at 250 Hz. Classes: imagined_left_hand, imagined_right_hand.
+
+Whole-subject original01-10 TRAIN,11-14 TEST. No separate validation archive. Native numbers cast to float64; presumed microvolts according to pinned loader, physical unit not embedded. No added filtering, resampling, demeaning, baseline or reference. Native epoch/crop identity retained; original continuous offsets unavailable.
+
+Original source [10.7910/DVN/251NOW](https://doi.org/10.7910/DVN/251NOW), CC0-1.0. Unverified anatomical identities: opaque original column IDs. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandsCrossSession`. Native and documented/inferred metadata are distinguished. See [pan23 source lock](pan23-to-30-source-lock.json) and [conversion result](pan23-to-30-conversion-result.json).
+
+### ImaginedHandPupils (Rozado2015)
+
+30 participants; 1150 training and 400 test cases, 32 channels x 3072 samples at 512 Hz. Classes: imagined_left_hand_grasp, rest.
+
+Whole-subject1-11 and16-26 TRAIN;12-15 and27-30 TEST. No separate validation archive. Explicit native XDF EEG microvolts cast to float64; select32 EEG by native type/order, exclude trigger/EX/AUX. Six seconds at nominal512Hz per cue. Raw common-host timestamps retained; no clock correction, interpolation, filter or reference change. Known noisy subjects retained with flags.
+
+Original source [10.7910/DVN/28932](https://doi.org/10.7910/DVN/28932), CC0-1.0. Directly recovered native ordered channel labels. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandPupils`. Native and documented/inferred metadata are distinguished. See [rozado source lock](rozado-to-30-source-lock.json) and [conversion result](rozado-to-30-conversion-result.json).
+
+### ImaginedHandsPhysiology (Cho2017)
+
+52 participants; 7880 training and 2640 test cases, 64 channels x 1536 samples at 512 Hz. Classes: imagined_left_hand, imagined_right_hand.
+
+Whole-subject01-39 TRAIN,40-52 TEST. No separate validation archive. Native class-array values cast to float64, presumed microvolts; actual imagery_event onsets define3-second crops. Original trial_sequence values order cases across classes. No mean removal, synthetic gaps or extra DSP. Native coordinates retained; no anatomical names embedded.
+
+Original source [10.5524/100295](https://doi.org/10.5524/100295), CC0-1.0. Opaque original EEG column identifiers; native anatomical names absent. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandsPhysiology`. Native and documented/inferred metadata are distinguished. See [cho source lock](cho-to-30-source-lock.json) and [conversion result](cho-to-30-conversion-result.json).
+
+### ImaginedHandMusicTempo (Daly2020)
+
+18 participants; 1698 training and 643 test cases, 19 channels x 20000 samples at 1000 Hz. Classes: lower_alpha_imagined_right_hand_squeezing, raise_alpha_relaxation.
+
+Whole-subject01-13 TRAIN,14-18 TEST; all native labelled non-calibration runs retained. No separate validation archive. Original calibrated EDF volts multiplied by1e6 in float64; native BIDS event onsets define20-second cases. Both byte-identical09/15run10 copies excluded because true participant attribution is unresolved; all other unique complete runs retained and strictly audited for duplicates. No extra DSP. Original README CC BY4.0 and dataset_description CC0 discrepancy retained, conservative attribution terms.
+
+Original source [10.18112/openneuro.ds002720.v1.0.1](https://doi.org/10.18112/openneuro.ds002720.v1.0.1), CC-BY-4.0. Directly recovered native ordered channel labels. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandMusicTempo`. Native and documented/inferred metadata are distinguished. See [daly source lock](daly-to-30-source-lock.json) and [conversion result](daly-to-30-conversion-result.json).

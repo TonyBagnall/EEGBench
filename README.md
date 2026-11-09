@@ -7,7 +7,7 @@ This is a draft, we are adding results as we generate them.
 
 **EEGBench** is a leaderboard for EEG classification. It holds benchmark results for
 general purpose time series classifiers, deep learners and methods designed for EEG, on
-an archive of 77 EEG classification problems covering medical diagnosis, brain-computer
+an archive of 82 EEG classification problems covering medical diagnosis, brain-computer
 interfacing and psychology.
 
 The original 30 datasets and first set of results are described in
@@ -96,11 +96,11 @@ pip install -e .
 
 ### Load a dataset
 
-28 of the 77 datasets are registered on Zenodo, in the
+28 of the 82 datasets are registered on Zenodo, in the
 [tsml community](https://zenodo.org/communities/tsml/), and are loaded with `aeon`. The
-two fibromyalgia datasets require research access through Tony Bagnall. The 47
+two fibromyalgia datasets require research access through Tony Bagnall. The 52
 newer preparations are available as local `.ts` files, with provenance and source
-terms in their sidecars. All 77 are in `eegbench.datasets.eegbench`; the original
+terms in their sidecars. All 82 are in `eegbench.datasets.eegbench`; the original
 paper subset is `eegbench_paper`. See [the datasets page](docs/datasets.md).
 
 ```python
@@ -114,7 +114,7 @@ X_test, y_test = load_classification("Blink", split="test")
 
 For a local preparation, use `aeon.datasets.load_from_ts_file`, for example
 `load_from_ts_file("D:/Data/EEG/ImaginedLeftRightHand/ImaginedLeftRightHand_TRAIN.ts")`.
-The batch experiment example requests all 77 and uses `D:/Data/EEG` by default;
+The batch experiment example requests all 82 and uses `D:/Data/EEG` by default;
 set `EEGBENCH_DATA_PATH` to use another location. Use each supplied split:
 some protocols intentionally share subjects across different runs, and older
 subject/session mappings have documented gaps. More in [`docs/datasets.md`](docs/datasets.md).

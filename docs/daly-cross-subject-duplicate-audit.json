@@ -36,5 +36,13 @@
   "investigation": "docs/daly-duplication-investigation.md",
   "issue_draft": "docs/daly-duplication-issue-draft.md",
   "report_destination": "https://openneuro.org/datasets/ds002720/versions/1.0.1",
-  "github_mirror_issues_enabled": false
+  "github_mirror_issues_enabled": false,
+  "upstream_report": {
+    "status": "reported_by_user",
+    "platform": "OpenNeuro dataset comments",
+    "dataset": "ds002720",
+    "reported_date": "2026-11-09",
+    "evidence": "User confirmed posting to OpenNeuro in this conversation",
+    "url": null
+  }
 }

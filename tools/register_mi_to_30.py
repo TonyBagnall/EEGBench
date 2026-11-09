@@ -48,7 +48,7 @@ def register(results):
           f'Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/{name}`. '
           f'Native and documented/inferred metadata are distinguished. See [{key} source lock]({key}-to-30-source-lock.json) and [conversion result]({key}-to-30-conversion-result.json).\n')
         descriptions.append(description)
-        provenance.append(f'### {name}\n\nOriginal/source aliases: **{m["source_dataset"]}**. [{m["source_doi"]}]({m["original_source_url"]}); {m["reference"]}. '
+        provenance.append(f'### {name}\n\nOriginal/source aliases: **{m["source_dataset"]}**. [{m["source_doi"]}]({m["original_source_url"]}); {m.get("paper_reference",m["reference"])}. '
           f'Data grant: {m["licence"]}. Revision: {m["source_revision"]}. '
           f'{r["subjects"]} native participant IDs; {r["channels"]} x {r["timepoints"]}, {r["frequency"]} Hz, {r["classes"]} classes, {r["train_cases"]}/{r["test_cases"]} TRAIN/TEST. '
           f'{m["split_definition"]}. {m["source_and_conversion_notes"]} '

@@ -66,7 +66,7 @@ The [GitHub dataset mirror](https://github.com/OpenNeuroDatasets/ds002720) has
 For downstream loader handling, use
 [MOABB's issue tracker](https://github.com/NeuroTechX/moabb/issues/new/choose).
 For help reaching the owner, OpenNeuro's user guide also documents its SUPPORT
-facility. No message or issue has been posted by this agent.
+facility. The user confirmed posting to OpenNeuro on 9 November 2026. No direct comment URL was supplied; the report is recorded from that confirmation. No message or issue has been posted by this agent.
 
 A ready-to-paste report is in
 [`daly-duplication-issue-draft.md`](daly-duplication-issue-draft.md).

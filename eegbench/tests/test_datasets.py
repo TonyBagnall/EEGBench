@@ -16,10 +16,10 @@ from eegbench.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
 
 
 def test_archive_lists():
-    """All 77 problems, with published and local subsets explicitly identified."""
-    assert len(eegbench) == len(set(eegbench)) == 77
+    """All 82 problems, with published and local subsets explicitly identified."""
+    assert len(eegbench) == len(set(eegbench)) == 82
     assert eegbench == sorted(eegbench)
-    assert len(eegbench_paper) == 30 and len(local_only) == 47
+    assert len(eegbench_paper) == 30 and len(local_only) == 52
     assert set(eegbench_paper).isdisjoint(local_only)
     assert len(eegbench_open) == 28
     assert set(eegbench) - set(eegbench_open) == set(restricted) | set(local_only)

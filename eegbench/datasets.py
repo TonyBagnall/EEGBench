@@ -1,7 +1,7 @@
 """The EEG classification archive: dataset lists and metadata.
 
 The archive includes the 30 problems published by Rushbrooke et al. (2026)
-and 47 additional local preparations. Use the supplied fixed train/test splits;
+and 52 additional local preparations. Use the supplied fixed train/test splits;
 some protocols intentionally share subjects and some older identity mappings
 remain incomplete. See docs/dataset-provenance.md for dataset-specific evidence.
 
@@ -164,6 +164,8 @@ _TABLE += [('ImaginedAnkleRest', 28, 2, 1000, 6, 264, 132, 250, 'BCI')]
 
 _TABLE += [('ImaginedHandsFeedback', 16, 2, 1250, 55, 6560, 2240, 250, 'BCI')]
 
+_TABLE += [('ImaginedHandsOnline', 28, 2, 1000, 10, 2123, 1519, 250, 'BCI'), ('ImaginedHandsCrossSession', 28, 2, 1000, 14, 2400, 960, 250, 'BCI'), ('ImaginedHandPupils', 32, 2, 3072, 30, 1150, 400, 512, 'BCI'), ('ImaginedHandsPhysiology', 64, 2, 1536, 52, 7880, 2640, 512, 'BCI'), ('ImaginedHandMusicTempo', 19, 2, 20000, 18, 1698, 643, 1000, 'BCI')]
+
 _TABLE.sort(key=lambda row: row[0])
 
 #: Prepared locally; not registered for aeon's automatic archive downloads.
@@ -173,7 +175,7 @@ local_only = [row[0] for row in _TABLE if row[0] not in eegbench_paper]
 #: loaded through aeon. Results for them are still reported.
 restricted = ["FibroLiverpool", "FibroUEA"]
 
-#: All 77 prepared classification problems used by this repository.
+#: All 82 prepared classification problems used by this repository.
 eegbench = [row[0] for row in _TABLE]
 
 #: The 28 problems anyone can download, the same list as aeon's ``eeg2026``.

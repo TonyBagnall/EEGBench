@@ -174,6 +174,9 @@ def prepare(key,cache_root=Path('D:/Data/EEGSources'),output=Path('D:/Data/EEG')
     if key in ['pan23','cho']:
         spec['validation_updates']=dict(source_sensor_identity='Opaque original column IDs verified in array order; anatomical names unavailable in native files',anatomical_channel_names_verified=False)
     else:spec['validation_updates']=dict(source_sensor_identity='All native embedded channel labels/types and order checked against selected array indices')
+    # Keep the bibliographic citation separate from the electrical reference.
+    spec['metadata_updates']['paper_reference']=spec['paper']
+    spec['metadata_updates']['eeg_reference']=spec['metadata_updates'].get('reference')
     core.SPECS[key]=spec;core.READERS[key]=NATIVE_READERS[key] if key in NATIVE_READERS else mibmpi_records if key=='mibmpi' else pan_records
     result=core.prepare(key,cache_root,output);folder=Path(result['path']);name=result['dataset'];m=json.loads((folder/(name+'_metadata.json')).read_text(encoding='utf-8'))
     for s in m['sensors']:

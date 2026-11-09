@@ -22,7 +22,10 @@ participant block IDs:
 - Test: `2,9,14,15,18,19,25`; 5,040 cases, 420 per class.
 - Excluded: `10,16`; scientific reason to follow.
 
-Each case has 16 channels and 600 timepoints. Signal decimal tokens and channel
+Each case has 16 channels and 600 timepoints at **200 Hz**, a **3-second** window.
+The archive owner confirmed the recording sampling frequency on 9 November 2026;
+it is not embedded in the supplied signal text. No resampling was required.
+Signal decimal tokens and channel
 order are preserved. No filtering, resampling, scaling or numeric rounding is
 added. Stray NUL bytes are removed from the representation and the three-field
 label segment is replaced by its unchanged combined code. Source order within
@@ -39,7 +42,8 @@ original N-back, audio and combined labels are retained.
 The archive owner confirmed contiguous 720-row participant blocks and exclusions
 on 4 November 2026. Dimensions, values and label distributions are directly
 recovered from the supplied file. Attribution to Christoph Tremmel is supplied by
-the archive owner. Sampling frequency, sessions, recording/run IDs, original trial
+the archive owner. Recording sampling frequency is owner-confirmed as 200 Hz.
+Sessions, recording/run IDs, original trial
 IDs and recording sample/time bounds are unknown. Sensor names, units,
 montage/reference and original preprocessing are also unknown. `channels.tsv`
 lists array positions with blank names; EEG type comes from the earlier formatter,
@@ -85,6 +89,7 @@ independent recording collections. `format_nback_random.py` documents that split
 The older `C:/Code/aeon-neuro/aeon_neuro/datasets/classification_datasets.py`
 also lists `N_Back` among 31 candidates. Its record key 49 is explicitly a
 placeholder, not a confirmed Zenodo release. The original study, source licence,
-sampling frequency and sensor identities have not been established by this
-location check. The original files remain in place; the joint task is now prepared
+and sensor identities were not established by that historical location check;
+the archive owner subsequently confirmed 200 Hz on 9 November 2026. The original
+files remain in place; the joint task is now prepared
 separately in the archive as described above.

@@ -50,7 +50,9 @@ below, including their relationship to datasets already present on the local dri
 Further [BCI IV 2a, ISRUC-Sleep and FACED local preparations](openeegbench-local-preparations.md)
 have pinned source revisions, task descriptions and channel/label recovery notes.
 [NBackAudioCondition](nback-location.md) adds Christoph Tremmel's joint N-back/audio
-task, with owner-confirmed participant blocks and further source details to follow.
+task, with owner-confirmed participant blocks and a recording sampling frequency
+of 200 Hz (confirmed 9 November 2026); its 600 samples span 3 seconds. Further
+source details remain to follow.
 [VisualSubjects](moabb-preparations.md) is the BI2014a visual P300 task, with original
 Zenodo licence evidence, pinned loader snapshots and the source F5/F6 channel names.
 [FlickerAttention](kalunga-preparation.md) is Kalunga2016 / SSVEP-exoskeleton,

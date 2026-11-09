@@ -97,7 +97,7 @@ are retained.
 | MentalArithmetic | BCI | 19 | 1000 | 2 | 36 | 1515 | 192 | 200 | local |
 | MindReading | BCI | 204 | 200 | 5 | &mdash; | 727 | 653 | 200 | aeon/Zenodo |
 | MotorImagery | BCI | 64 | 3000 | 2 | &mdash; | 278 | 100 | 1000 | aeon/Zenodo |
-| NBackAudioCondition | Psy | 16 | 600 | 12 | 23 | 11520 | 5040 | &mdash; | local |
+| NBackAudioCondition | Psy | 16 | 600 | 12 | 23 | 11520 | 5040 | 200 | local |
 | ObsessiveCompulsiveSymptoms | Med | 52 | 2000 | 2 | 35 | 7754 | 2660 | 500 | local |
 | OpenCloseFist | BCI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
 | ParkinsonsPedalling | Med | 63 | 2000 | 2 | 39 | 2123 | 842 | 500 | local |
@@ -385,13 +385,14 @@ The source has 25 participants with 720 trials each. Participants 10 and 16 are
 excluded, retaining 23; the archive owner confirmed the subject blocks and
 exclusions. The existing NBack subject split is preserved: 16 people / 11,520 cases
 for training, seven / 5,040 for test, with 960 / 420 per joint class. Each case has
-16 channels and 600 timepoints. Signal values, channel-axis order and source order
+16 channels and 600 timepoints at 200 Hz (3 seconds), confirmed by the archive
+owner on 9 November 2026. Signal values, channel-axis order and source order
 within partitions are preserved, with no filtering or resampling added.
 
 The folder is `D:/Data/EEG/NBackAudioCondition/`, with ordered case tables,
 component labels, source row indices, participant strings, provenance, validation
 and a hashed manifest. Older NBack, NBackR and noise-subset preparations use the
-same collection. Sensor names, frequency, sessions, original recording boundaries,
+same collection. Sensor names, sessions, original recording boundaries,
 publication and data licence are pending. Channel indices are not anatomical
 names. See [NBack provenance](nback-location.md).
 

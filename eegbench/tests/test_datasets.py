@@ -112,7 +112,7 @@ def test_metadata():
     assert frame.loc['NBackAudioCondition', 'train_size'] == 11520
     assert frame.loc['NBackAudioCondition', 'test_size'] == 5040
     assert frame.loc['NBackAudioCondition', 'availability'] == 'local'
-    assert frame['frequency'].isna().loc['NBackAudioCondition']
+    assert frame.loc['NBackAudioCondition', 'frequency'] == 200
     assert frame.loc['VisualSubjects', 'classes'] == 2
     assert frame.loc['VisualSubjects', 'channels'] == 16
     assert frame.loc['VisualSubjects', 'subjects'] == 64

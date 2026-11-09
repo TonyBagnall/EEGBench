@@ -118,7 +118,7 @@ _TABLE += [
     ("ImaginedLeftRightHand", 60, 2, 800, 10, 1260, 320, 200, "BCI"),
     ("MatchWords", 156, 2, 1500, None, 360, 360, 1000, "Psy"),
     ("MentalArithmetic", 19, 2, 1000, 36, 1515, 192, 200, "BCI"),
-    ("NBackAudioCondition", 16, 12, 600, 23, 11520, 5040, None, "Psy"),
+    ("NBackAudioCondition", 16, 12, 600, 23, 11520, 5040, 200, "Psy"),
     ("VideoEmotions", 25, 8, 2000, 123, 15629, 3588, 200, "Psy"),
     ("VisualSubjects", 16, 2, 512, 64, 42189, 18826, 512, "BCI"),
     ("WordRelatedness", 30, 2, 1024, 40, 3600, 1200, 1024, "Psy"),

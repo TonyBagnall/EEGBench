@@ -4,7 +4,7 @@ import numpy as np
 import pytest
 from scipy.io import savemat
 from tools.prepare_mi_to_30 import pan_epoch_arrays,pan25_partition
-from tools.mi_to_30_native import nearest_sample,cho_epochs
+from tools.mi_to_30_native import nearest_sample,cho_epochs,daly_recording_selection,DALY_AMBIGUOUS_PATHS,DALY_AMBIGUOUS_SHA256
 from tools.audit_pan_identity import fingerprint
 from tools.download_original_ranges import fetch_ranges,verify
 import hashlib
@@ -80,6 +80,21 @@ def test_publisher_multipart_etag_is_not_plain_md5(tmp_path):
     etag=hashlib.md5(hashlib.md5(first).digest()+hashlib.md5(last).digest()).hexdigest()+'-2'
     assert verify(path,len(data),'s3-multipart-md5-5242880:'+etag)
     assert not verify(path,len(data),'s3-multipart-md5-5242880:'+hashlib.md5(data).hexdigest()+'-2')
+
+
+def test_daly_excludes_both_ambiguous_owners_but_keeps_unique_runs():
+    copies=[dict(name=p,sha256=DALY_AMBIGUOUS_SHA256,bytes=15015120) for p in sorted(DALY_AMBIGUOUS_PATHS)]
+    other=dict(name='sub-17/eeg/sub-17_task-run10_eeg.edf',sha256='unique',bytes=11899120)
+    selected,excluded=daly_recording_selection(dict(pilot=False,files=copies+[other]))
+    assert selected==[other] and {r['participant_id'] for r in excluded}=={'09','15'}
+    copies[0]['sha256']='unexpected release content'
+    with pytest.raises(ValueError,match='content changed'):daly_recording_selection(dict(pilot=False,files=copies+[other]))
+
+
+def test_daly_does_not_suppress_new_unreviewed_duplicates():
+    a=dict(name='sub-01/eeg/sub-01_task-run2_eeg.edf',sha256='new-copy',bytes=1)
+    b=dict(a,name='sub-02/eeg/sub-02_task-run2_eeg.edf')
+    with pytest.raises(ValueError,match='Unreviewed'):daly_recording_selection(dict(pilot=True,files=[a,b]))
 
 
 @pytest.mark.parametrize('valid',[True,False])

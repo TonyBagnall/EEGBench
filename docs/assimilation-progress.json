@@ -22,11 +22,11 @@
     },
     "daly": {
       "source": "Daly2020",
-      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
+      "stage": "Investigated: exclude both ambiguously attributed09/15run10 copies, preserve originals/other runs; pinned source restoration and conversion queue resumed"
     },
     "cho": {
       "source": "Cho2017",
-      "stage": "See docs/mi-to-30-progress.json and .openeegbench/mi-to-30 worker logs"
+      "stage": "Full conversion complete:10520cases,52subjects,64channels; final artifact refresh/registration pending batch"
     }
   },
   "deferred": {
@@ -86,5 +86,6 @@
     "tests": "93 passed",
     "manifest_artifacts_verified": true
   },
-  "active_batch_report": "docs/mi-to-30-progress.json"
+  "active_batch_report": "docs/mi-to-30-progress.json",
+  "prepared_motor_imagery_problems": 29
 }

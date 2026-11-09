@@ -1,0 +1,23 @@
+{
+  "data": {
+    "dataset": {
+      "id": "ds002720",
+      "snapshots": [
+        {
+          "tag": "1.0.0"
+        },
+        {
+          "tag": "1.0.1"
+        }
+      ],
+      "latestSnapshot": {
+        "tag": "1.0.1"
+      }
+    }
+  },
+  "extensions": {
+    "openneuro": {
+      "version": "5.12.0"
+    }
+  }
+}

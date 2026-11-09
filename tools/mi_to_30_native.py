@@ -117,10 +117,37 @@ def cho_records(cache,spec):
             yield np.stack([e[-1] for e in events]),rows,names,info
 
 
+DALY_AMBIGUOUS_SHA256='a25412b552cfff794a32d052c5d5b3b00a2cdcae24574db603ff05dc26845312'
+DALY_AMBIGUOUS_PATHS={f'sub-{person}/eeg/sub-{person}_task-run10_eeg.edf' for person in ['09','15']}
+
+
+def daly_recording_selection(receipt):
+    """Exclude both reviewed cross-ID copies; never guess the true participant."""
+    files=[f for f in receipt['files'] if f['name'].endswith('.edf')]
+    present={f['name'] for f in files}&DALY_AMBIGUOUS_PATHS
+    if not receipt.get('pilot',False) and present!=DALY_AMBIGUOUS_PATHS:raise ValueError('Reviewed Daly source membership changed')
+    excluded=[];selected=[];by_digest={}
+    for f in files:
+        if f['name'] in DALY_AMBIGUOUS_PATHS:
+            if f['sha256']!=DALY_AMBIGUOUS_SHA256 or f['bytes']!=15015120:raise ValueError('Reviewed Daly duplicate content changed')
+            excluded.append(dict(source_file=f['name'],source_sha256=f['sha256'],bytes=f['bytes'],
+                reason='Byte-identical original recording under participants09/15; true owner unresolved. Both copies excluded, not assigned to either participant.',
+                participant_id=re.search(r'sub-(\d+)',f['name'])[1],run_id='10',scope='Only this ambiguous recording; other runs of both participants retained'))
+        else:
+            if f['sha256'] in by_digest:raise ValueError('Unreviewed exact Daly recording duplicate: '+f['name']+' / '+by_digest[f['sha256']])
+            by_digest[f['sha256']]=f['name'];selected.append(f)
+    return selected,excluded
+
+
 def daly_records(cache,spec):
     import mne
     receipt=json.loads((cache/'download-receipt.json').read_text(encoding='utf-8'));demographics={r['participant_id']:r for r in core.table(cache/'participants.tsv')}
-    files=[f for f in receipt['files'] if f['name'].endswith('.edf')]
+    files,ambiguous=daly_recording_selection(receipt)
+    for entry in ambiguous:
+        events_path=cache/entry['source_file'].replace('_eeg.edf','_events.tsv')
+        entry['excluded_original_events']=[dict(native_event_index=i,**r) for i,r in enumerate(core.table(events_path))]
+    spec['metadata_updates']['excluded_ambiguous_recordings']=ambiguous
+    spec['metadata_updates']['duplicate_handling']='Exclude both reviewed copies of the ambiguous09/15run10 recording, retaining both participants other runs. All remaining native cases must pass the unchanged strict duplicate gate.'
     files.sort(key=lambda f:(f['name'].split('/')[0],int(re.search(r'_task-run(\d+)_',f['name'])[1])))
     for f in files:
         person=re.search(r'sub-(\d+)',f['name'])[1];run=re.search(r'_task-run(\d+)_',f['name'])[1]

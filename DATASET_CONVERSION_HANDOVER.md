@@ -2,6 +2,14 @@
 
 Entry point for an agent continuing archive assimilation. Read this before downloading or converting. The user authorises continuing through eligible batches without repeatedly asking permission. Read live state before relying on the snapshot below.
 
+## Daly duplication investigated and cleanup authorised
+
+9Nov: original09/15run10 EDFs and event tables are identical; headers do not identify the true participant. Both ambiguous recordings are excluded by exact pinned path/SHA/size checks; other runs and original source objects retained. User authorised removing duplication after investigation. No existing specific report found, OpenNeuro comments empty, latest public release1.0.1 unchanged. See docs/daly-duplication-investigation.md and ready-to-paste issue draft; no issue posted.28focused tests passed. Cho full conversion completed10520cases, so29MI prepared. Main queue restarted via .openeegbench/mi-to-30/recover-daly-and-resume.py; logs daly-reviewed-batch.log/.err. It restores source metadata/originals, verifies other4full outputs, downloads/converts correctedDaly, then registers all5andtests. Do not start competing writers. State docs/mi-to-30-progress.json. Registry remains25until final registration.
+
+## Earlier 9 November status
+
+Three full outputs validated: Pan23/Pan25/Rozado, giving28prepared MI including25registered. Main queue stopped on Daly: sub09run10/sub15run10 entire original EDF SHA256identical, no owner chosen. Evidence docs/daly-cross-subject-duplicate-audit.json. Daly source directory currently absent on D; repo has immutable original file pins/receipts. Cho all52native MAT files downloaded/verified; independent full conversion `.openeegbench/run_to_30.py cho full` resumed, live state/log cho-full.json/cho-full.log. Do not start a competing main queue while Cho writes. Do not count pilots as final problems.
+
 ## Cache recovery correction
 
 The queue stopped during Rozado full conversion with EOFError on an empty derived NPZ left by a previous worker restart. Fixed store_intermediate to rebuild EOF/truncated caches and publish new caches atomically after complete writes; interrupted writes preserve the previous valid cache. Focused native/registry tests:26passed. Two full Pan outputs are validated; registry remains25 MI until the five-problem batch completes. Queue resumed; original recordings and final arrays untouched. Read live docs/mi-to-30-progress.json rather than assuming the last background run finished.

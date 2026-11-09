@@ -1035,3 +1035,18 @@ MOABB alias Leeuwis2021, declared NEMAR view nm000327.
 No EEG sensors removed or exact duplicate cases found; full readback, metadata,
 sensor-order and aeon compatibility checks passed.
 [Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+## Daly2020 / OpenNeuro ds002720: reviewed cross-subject duplicate
+
+On 9 November 2026, original `sub-09/eeg/sub-09_task-run10_eeg.edf` and
+`sub-15/eeg/sub-15_task-run10_eeg.edf` were confirmed to identify the same
+Git-annex object and have identical complete-file SHA256, with identical event
+tables. Native headers do not establish the true participant. The derived
+conversion excludes both ambiguous run-10 copies, retaining other eligible runs
+of both subjects, and re-audits all retained cases. Original sources are kept.
+This prevents copied recordings entering TRAIN under09 and TEST under15.
+See [investigation and reporting route](daly-duplication-investigation.md),
+[machine-readable evidence](daly-cross-subject-duplicate-audit.json) and
+[ready-to-paste issue draft](daly-duplication-issue-draft.md). No external report
+has been posted by the agent. This note does not itself declare the full
+classification conversion complete.
+

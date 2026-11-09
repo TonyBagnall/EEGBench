@@ -132,6 +132,7 @@ def prepare(key,cache_root=Path('D:/Data/EEGSources'),output=Path('D:/Data/EEG')
     spec=copy.deepcopy(SPECS[key]);spec['key']=key;cache=Path(cache_root)/spec['cache']
     spec['intermediate_directory']='classification-intermediate-'+('pilot' if pilot else 'full')
     spec['evidence_files'] += [key+'-to-30-source-lock.json'];spec['conversion_files'] += ['mi_to_30_native.py','download_original_ranges.py','lock_daly_release.py']
+    if key=='daly':spec['evidence_files'] += ['daly-duplication-investigation.md','daly-cross-subject-duplicate-audit.json']
     if key in ['pan23','pan25'] and not pilot:
         identity=json.loads((ROOT/'docs/pan-full-native-identity-audit.json').read_text(encoding='utf-8'))
         if not identity['admission_gate_passed']:raise ValueError('Full Pan identity audit has not passed')
@@ -143,7 +144,7 @@ def prepare(key,cache_root=Path('D:/Data/EEGSources'),output=Path('D:/Data/EEG')
         split={'cho':'Whole-subject01-39 TRAIN,40-52 TEST','rozado':'Whole-subject1-11 and16-26 TRAIN;12-15 and27-30 TEST','daly':'Whole-subject01-13 TRAIN,14-18 TEST; all native labelled non-calibration runs retained'}[key]
         spec['note']={'cho':'Native class-array values cast to float64, presumed microvolts; actual imagery_event onsets define3-second crops. Original trial_sequence values order cases across classes. No mean removal, synthetic gaps or extra DSP. Native coordinates retained; no anatomical names embedded.',
                       'rozado':'Explicit native XDF EEG microvolts cast to float64; select32 EEG by native type/order, exclude trigger/EX/AUX. Six seconds at nominal512Hz per cue. Raw common-host timestamps retained; no clock correction, interpolation, filter or reference change. Known noisy subjects retained with flags.',
-                      'daly':'Original calibrated EDF volts multiplied by1e6 in float64; native BIDS event onsets define20-second cases. No extra DSP. Original README CC BY4.0 and dataset_description CC0 discrepancy retained, conservative attribution terms.'}[key]
+                      'daly':'Original calibrated EDF volts multiplied by1e6 in float64; native BIDS event onsets define20-second cases. Both byte-identical09/15run10 copies excluded because true participant attribution is unresolved; all other unique complete runs retained and strictly audited for duplicates. No extra DSP. Original README CC BY4.0 and dataset_description CC0 discrepancy retained, conservative attribution terms.'}[key]
     spec['metadata_updates']=dict(split_definition=split,original_source_url='https://zenodo.org/records/13626922' if key=='mibmpi' else 'https://doi.org/'+spec['doi'],
         unit_evidence=spec['note'],metadata_evidence=dict(direct='Original arrays, epoch labels/indices, filename IDs and native sampling rates; Pan2025 and MI-BMPI native ordered sensor labels',
         secondary='Pinned MOABB task/label and unit interpretation, Pan2023 anatomical mapping not native',assigned='Encoded class strings, archive memberships where no source test phase; original epoch ordinal'),
@@ -169,7 +170,7 @@ def prepare(key,cache_root=Path('D:/Data/EEGSources'),output=Path('D:/Data/EEG')
         spec['metadata_updates'].update(channel_identity_status='Opaque original EEG column identifiers; native anatomical names absent',reference='BioSemi CMS/DRL, documented hardware',missing_or_inconsistent_metadata=['No original anatomical names in MAT; preserve numbered source columns and measured coordinates, do not invent montage labels','Native class arrays separate left/right trials; original sequence values retained, continuous clock units/run membership not established','Microvolt interpretation from source loader, no explicit native units field'])
     if key=='daly':spec['metadata_updates'].update(reference='FCz, original BIDS EEGReference',licence_discrepancy='Original rights-holder README CC BY4.0, dataset_description CC0; both retained, conservative attribution grant',
         preprocessing='Native EDF physical calibration, float64 volts times1e6; BIDS onset rounded to nearest millisecond,20seconds. Exclude calibration, targetless recordings and incomplete final trials; no extra filter/resampling/reference.',
-        missing_or_inconsistent_metadata=spec['metadata_updates']['missing_or_inconsistent_metadata']+['Source README19 participants versus18 released IDs','Some final labelled events extend beyond native EDF end; incomplete windows excluded explicitly','Some subjects have labelled run10 beyond MOABB fixedrun2..9; retain released unique complete trials, audit for copies'])
+        missing_or_inconsistent_metadata=spec['metadata_updates']['missing_or_inconsistent_metadata']+['Source README19 participants versus18 released IDs','Some final labelled events extend beyond native EDF end; incomplete windows excluded explicitly','Original09/15run10 EDF and event tables are identical; true owner unknown, both ambiguous recordings excluded; other native run10 retained when unique'])
     if key in ['pan23','cho']:
         spec['validation_updates']=dict(source_sensor_identity='Opaque original column IDs verified in array order; anatomical names unavailable in native files',anatomical_channel_names_verified=False)
     else:spec['validation_updates']=dict(source_sensor_identity='All native embedded channel labels/types and order checked against selected array indices')
@@ -180,7 +181,9 @@ def prepare(key,cache_root=Path('D:/Data/EEGSources'),output=Path('D:/Data/EEG')
         if key in ['pan23','cho']:s.update(identity_evidence='Opaque original column identifier; anatomical label unavailable',anatomical_name=None)
         if key=='rozado':s['native_channel_index']+=1
     # Native coordinates/reference remain per-recording evidence; do not fabricate a montage.
-    result=finish(result,m,spec['evidence_files'],spec['conversion_files'],dict(label_mapping=spec['labels'],split_definition=split,licence_url=spec['licence_url'],original_source_url=m['original_source_url']))
+    manifest_fields=dict(label_mapping=spec['labels'],split_definition=split,licence_url=spec['licence_url'],original_source_url=m['original_source_url'])
+    if key=='daly':manifest_fields.update(excluded_ambiguous_recordings=m['excluded_ambiguous_recordings'],duplicate_handling=m['duplicate_handling'])
+    result=finish(result,m,spec['evidence_files'],spec['conversion_files'],manifest_fields)
     core.dump(ROOT/'docs'/(key+'-to-30-'+('pilot' if pilot else 'conversion')+'-result.json'),result)
     return result
 

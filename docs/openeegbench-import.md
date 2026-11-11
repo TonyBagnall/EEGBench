@@ -57,7 +57,7 @@ Run commands from the repository root, using a local virtual environment:
 ```powershell
 python -m venv .openeegbench/venv
 .openeegbench/venv/Scripts/python.exe -m pip install -e ".[data-import,test]"
-.openeegbench/venv/Scripts/python.exe -m pytest tools/openeegbench eegbench -q
+.openeegbench/venv/Scripts/python.exe -m pytest tools/openeegbench neuroverse -q
 ```
 
 Use the appropriate environment activation or Python path on other platforms.

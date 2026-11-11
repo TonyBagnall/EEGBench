@@ -1,4 +1,4 @@
-"""Interactive HTML dashboard and Markdown summary builders for EEGBench.
+"""Interactive HTML dashboard and Markdown summary builders for Neuroverse.
 
 Generates three self-contained pages sharing a common navigation bar and
 visual design inspired by modern ML benchmark suites (such as ``eeg.fm``):
@@ -25,14 +25,14 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from eegbench.datasets import (
+from neuroverse.datasets import (
     PROBLEM_TYPE_TABS,
     STUDY_TAXONOMY,
     by_type,
-    eegbench_76,
     metadata as dataset_metadata,
+    neuroverse_76,
 )
-from eegbench.estimators import PARADIGMS, TSML_FAMILIES, estimator_info
+from neuroverse.estimators import PARADIGMS, TSML_FAMILIES, estimator_info
 
 PRIMARY_METRICS = ("balacc", "accuracy", "auroc", "logloss")
 LOWER_IS_BETTER = frozenset({"logloss"})
@@ -192,7 +192,7 @@ def study_leaderboard_markdown(
 ) -> str:
     """Build the concise Overall + By-Problem-Type Markdown summary for README.md."""
     overall, common_all = compute_league_table(
-        eegbench_76, frames, primary_metric="balacc", min_coverage_ratio=min_coverage_ratio
+        neuroverse_76, frames, primary_metric="balacc", min_coverage_ratio=min_coverage_ratio
     )
     if overall.empty:
         return "No common-block results available."
@@ -254,7 +254,7 @@ def study_leaderboard_markdown(
             f"| {auroc_txt} | {ll_txt} | {int(row['wins'])} |"
         )
 
-    min_cov_all = math.ceil(min_coverage_ratio * len(eegbench_76))
+    min_cov_all = math.ceil(min_coverage_ratio * len(neuroverse_76))
     lines.extend(
         [
             "",
@@ -337,11 +337,11 @@ def _build_payload(
     cd_top_k: int = 10,
 ) -> dict[str, object]:
     """Assemble compact JSON payload shared by the interactive HTML pages."""
-    meta_df = dataset_metadata().reindex(eegbench_76)
+    meta_df = dataset_metadata().reindex(neuroverse_76)
     estimators = [c for c in frames["balacc"].columns if c != "Default"]
 
     datasets_info = []
-    for ds in eegbench_76:
+    for ds in neuroverse_76:
         fam, bci = STUDY_TAXONOMY[ds]
         row = meta_df.loc[ds]
         datasets_info.append(
@@ -380,8 +380,8 @@ def _build_payload(
 
     def serialise_matrix(metric: str, decimals: int = 5) -> list[list[float | None]]:
         if metric not in frames:
-            return [[None] * len(estimators) for _ in eegbench_76]
-        mat = frames[metric].reindex(index=eegbench_76, columns=estimators).to_numpy(dtype=float)
+            return [[None] * len(estimators) for _ in neuroverse_76]
+        mat = frames[metric].reindex(index=neuroverse_76, columns=estimators).to_numpy(dtype=float)
         out: list[list[float | None]] = []
         for r in range(mat.shape[0]):
             out.append(
@@ -395,12 +395,12 @@ def _build_payload(
     default_floor: dict[str, list[float | None]] = {}
     for m in PRIMARY_METRICS:
         if m in frames and "Default" in frames[m].columns:
-            ser = frames[m].reindex(eegbench_76)["Default"].to_numpy(dtype=float)
+            ser = frames[m].reindex(neuroverse_76)["Default"].to_numpy(dtype=float)
             default_floor[m] = [
                 None if not np.isfinite(v) else round(float(v), 5) for v in ser
             ]
         else:
-            default_floor[m] = [None] * len(eegbench_76)
+            default_floor[m] = [None] * len(neuroverse_76)
 
     tabs_meta = []
     cd_images: dict[str, dict[str, object]] = {}
@@ -979,7 +979,7 @@ def _topbar_html(active_page: str) -> str:
         ("leaderboard", "leaderboard.html", "Algorithm Leaderboard"),
         ("matrix", "matrix.html", "Overall Score Matrix"),
         ("datasets", "datasets.html", "Problem Explorer"),
-        ("paper", "../eegbench_paper_2026/leaderboard.html", "2026 Paper Archive (30)"),
+        ("paper", "../neuroverse_paper_2026/leaderboard.html", "2026 Paper Archive (30)"),
     ]
     nav = "".join(
         f'<a class="nav-link{" active" if key == active_page else ""}" href="{href}">{escape(label)}</a>'
@@ -989,8 +989,8 @@ def _topbar_html(active_page: str) -> str:
         '<header class="topbar"><div class="topbar-inner">'
         '<div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">'
         '<a class="brand" href="leaderboard.html">'
-        '<span class="brand-mark">EB</span>'
-        '<span>EEGBench</span>'
+        '<span class="brand-mark">NV</span>'
+        '<span>Neuroverse</span>'
         '</a>'
         '<span class="brand-tag">76 Scalp EEG Problems &middot; 90 Algorithms</span>'
         "</div>"
@@ -1003,7 +1003,7 @@ def _topbar_html(active_page: str) -> str:
 _THEME_JS = r"""
 (function(){
   var root = document.documentElement;
-  var saved = localStorage.getItem("eegbench-theme");
+  var saved = localStorage.getItem("neuroverse-theme");
   if (saved === "dark" || saved === "light") {
     root.setAttribute("data-theme", saved);
   } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -1019,7 +1019,7 @@ _THEME_JS = r"""
     btn.addEventListener("click", function(){
       var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
-      localStorage.setItem("eegbench-theme", next);
+      localStorage.setItem("neuroverse-theme", next);
       syncBtn();
     });
   }
@@ -1059,7 +1059,7 @@ def write_interactive_leaderboard(
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EEGBench &mdash; Algorithm Leaderboard</title>
+<title>Neuroverse &mdash; Algorithm Leaderboard</title>
 <style>{_SHARED_CSS}
 .champ-grid {{
   display: grid;
@@ -1167,7 +1167,7 @@ def write_interactive_leaderboard(
     sortBy: "mean_rank",
     sortDir: "asc"
   }};
-  var lastExport = {{ filename: "eegbench_leaderboard.csv", rows: [] }};
+  var lastExport = {{ filename: "neuroverse_leaderboard.csv", rows: [] }};
 
   // Populate tabs
   var tabStrip = document.getElementById("tabStrip");
@@ -1748,7 +1748,7 @@ def write_interactive_leaderboard(
     document.getElementById("lbHead").innerHTML = headHtml;
     document.getElementById("lbBody").innerHTML = bodyHtml;
     lastExport = {{
-      filename: "eegbench_leaderboard_" + state.tab.toLowerCase() + "_" + state.view + ".csv",
+      filename: "neuroverse_leaderboard_" + state.tab.toLowerCase() + "_" + state.view + ".csv",
       rows: csvRows
     }};
 
@@ -1807,7 +1807,7 @@ def write_score_matrix_page(payload: dict[str, object], output_path: Path) -> Pa
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EEGBench &mdash; Overall Performance Score Matrix</title>
+<title>Neuroverse &mdash; Overall Performance Score Matrix</title>
 <style>{_SHARED_CSS}
 .matrix-wrap {{
   background: var(--surface);
@@ -1991,7 +1991,7 @@ td.cell-win {{
     dsQuery: "",
     estQuery: ""
   }};
-  var lastMatrixCsv = {{ filename: "eegbench_matrix.csv", rows: [] }};
+  var lastMatrixCsv = {{ filename: "neuroverse_matrix.csv", rows: [] }};
 
   var strip = document.getElementById("matrixTabStrip");
   DATA.tabs.forEach(function(t) {{
@@ -2200,7 +2200,7 @@ td.cell-win {{
       '<thead class="matrix-head"><tr class="banner-row">' + bannerRow.slice(4) + algRow + "</thead>" +
       "<tbody>" + sumRow + bodyRows + "</tbody>";
     lastMatrixCsv = {{
-      filename: "eegbench_matrix_" + state.tab.toLowerCase() + "_" + state.metric + ".csv",
+      filename: "neuroverse_matrix_" + state.tab.toLowerCase() + "_" + state.metric + ".csv",
       rows: csvRows
     }};
 
@@ -2273,7 +2273,7 @@ def write_problem_explorer_page(payload: dict[str, object], output_path: Path) -
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EEGBench &mdash; Problem Explorer</title>
+<title>Neuroverse &mdash; Problem Explorer</title>
 <style>{_SHARED_CSS}
 tr.row-nosignal td {{ background: rgba(245, 158, 11, 0.10); }}
 tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
@@ -2367,7 +2367,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
     sortBy: "gain",
     sortDir: "asc"
   }};
-  var lastDsCsv = {{ filename: "eegbench_problems.csv", rows: [] }};
+  var lastDsCsv = {{ filename: "neuroverse_problems.csv", rows: [] }};
 
   var strip = document.getElementById("dsTabStrip");
   DATA.tabs.forEach(function(t) {{
@@ -2603,7 +2603,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
     }});
     document.getElementById("dsBody").innerHTML = html;
     lastDsCsv = {{
-      filename: "eegbench_problems_" + state.tab.toLowerCase() + "_" + state.metric + ".csv",
+      filename: "neuroverse_problems_" + state.tab.toLowerCase() + "_" + state.metric + ".csv",
       rows: csvRows
     }};
   }}

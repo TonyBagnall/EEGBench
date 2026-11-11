@@ -34,13 +34,13 @@ ten participants, one documented session each, 60 recordings and 300 trials.
 The original data licence is CC BY 4.0. The report distinguishes source-file
 fields from documented channel mapping and protocol-inferred epoch times.
 
-This page traces the original 30 EEGBench problems to their recording collections,
+This page traces the original 30 Neuroverse problems to their recording collections,
 source names and publications, and links the provenance reports for local additions.
 Original benchmark dimensions and extraction details are taken from
 Sections 2.1-2.3 and Table 1 of Rushbrooke, Sami, Middlehurst and Bagnall (2026),
 [Time Series Machine Learning for Classifying Electroencephalograms](https://data.mlr.press/assets/pdf/v03-8.pdf)
 (the root paper, `v03-8.pdf`), and checked against
-[`eegbench/datasets.py`](../eegbench/datasets.py). External sources were checked on
+[`neuroverse/datasets.py`](../neuroverse/datasets.py). External sources were checked on
 3 November 2026. This is primarily a source audit; subsequent verification of
 selected local files and their corrections is explicitly identified below and
 in [Local data corrections](local-data-corrections.md).

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EEGBench &mdash; Algorithm Leaderboard</title>
+<title>Neuroverse &mdash; Algorithm Leaderboard</title>
 <style>
 :root {
   --bg: #f8fafc;
@@ -555,7 +555,7 @@ tr.clickable-row { cursor: pointer; }
 </style>
 </head>
 <body>
-<header class="topbar"><div class="topbar-inner"><div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap"><a class="brand" href="leaderboard.html"><span class="brand-mark">EB</span><span>EEGBench</span></a><span class="brand-tag">76 Scalp EEG Problems &middot; 90 Algorithms</span></div><nav class="nav-links"><a class="nav-link active" href="leaderboard.html">Algorithm Leaderboard</a><a class="nav-link" href="matrix.html">Overall Score Matrix</a><a class="nav-link" href="datasets.html">Problem Explorer</a><a class="nav-link" href="../eegbench_paper_2026/leaderboard.html">2026 Paper Archive (30)</a><button type="button" class="theme-btn" id="themeToggle" title="Switch colour theme">Theme</button></nav></div></header>
+<header class="topbar"><div class="topbar-inner"><div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap"><a class="brand" href="leaderboard.html"><span class="brand-mark">NV</span><span>Neuroverse</span></a><span class="brand-tag">76 Scalp EEG Problems &middot; 90 Algorithms</span></div><nav class="nav-links"><a class="nav-link active" href="leaderboard.html">Algorithm Leaderboard</a><a class="nav-link" href="matrix.html">Overall Score Matrix</a><a class="nav-link" href="datasets.html">Problem Explorer</a><a class="nav-link" href="../neuroverse_paper_2026/leaderboard.html">2026 Paper Archive (30)</a><button type="button" class="theme-btn" id="themeToggle" title="Switch colour theme">Theme</button></nav></div></header>
 <main class="container">
   <section class="hero">
     <h1>EEG Classification Algorithm Leaderboard</h1>
@@ -625,7 +625,7 @@ tr.clickable-row { cursor: pointer; }
 <script>
 (function(){
   var root = document.documentElement;
-  var saved = localStorage.getItem("eegbench-theme");
+  var saved = localStorage.getItem("neuroverse-theme");
   if (saved === "dark" || saved === "light") {
     root.setAttribute("data-theme", saved);
   } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -641,7 +641,7 @@ tr.clickable-row { cursor: pointer; }
     btn.addEventListener("click", function(){
       var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
-      localStorage.setItem("eegbench-theme", next);
+      localStorage.setItem("neuroverse-theme", next);
       syncBtn();
     });
   }
@@ -687,7 +687,7 @@ tr.clickable-row { cursor: pointer; }
     sortBy: "mean_rank",
     sortDir: "asc"
   };
-  var lastExport = { filename: "eegbench_leaderboard.csv", rows: [] };
+  var lastExport = { filename: "neuroverse_leaderboard.csv", rows: [] };
 
   // Populate tabs
   var tabStrip = document.getElementById("tabStrip");
@@ -1268,7 +1268,7 @@ tr.clickable-row { cursor: pointer; }
     document.getElementById("lbHead").innerHTML = headHtml;
     document.getElementById("lbBody").innerHTML = bodyHtml;
     lastExport = {
-      filename: "eegbench_leaderboard_" + state.tab.toLowerCase() + "_" + state.view + ".csv",
+      filename: "neuroverse_leaderboard_" + state.tab.toLowerCase() + "_" + state.view + ".csv",
       rows: csvRows
     };
 

@@ -1,10 +1,10 @@
 """The estimators on the leaderboard, and where each comes from.
 
-This is metadata only. EEGBench holds no classifier code: classifiers designed
+This is metadata only. Neuroverse holds no classifier code: classifiers designed
 for EEG are in aeon-neuro, ports of general multivariate classifiers are in
 multiverse.classification, and the rest are in aeon.
 
-An estimator's name here matches its column in ``results/eegbench/<metric>.csv``
+An estimator's name here matches its column in ``results/neuroverse/<metric>.csv``
 (or its directory name in Multiverse per-estimator layout). Two groupings are
 recorded for every estimator:
 

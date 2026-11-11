@@ -2,19 +2,19 @@
 
 Two result layouts are supported across the repository:
 
-1. **Wide summary layout** (default in ``results/eegbench`` for the 76-problem,
+1. **Wide summary layout** (default in ``results/neuroverse`` for the 76-problem,
    90-classifier study)::
 
-       results/eegbench/accuracy.csv
-       results/eegbench/balacc.csv
-       results/eegbench/auroc.csv
-       results/eegbench/logloss.csv
-       results/eegbench/classifiers.csv
-       results/eegbench/datasets.csv
+       results/neuroverse/accuracy.csv
+       results/neuroverse/balacc.csv
+       results/neuroverse/auroc.csv
+       results/neuroverse/logloss.csv
+       results/neuroverse/classifiers.csv
+       results/neuroverse/datasets.csv
 
    Each metric file holds one row per dataset and one column per classifier.
 
-2. **Multiverse per-estimator layout** (used in ``results/eegbench_paper_2026``
+2. **Multiverse per-estimator layout** (used in ``results/neuroverse_paper_2026``
    and ``aeon-toolkit/multiverse``)::
 
        results/<archive>/<classifier>/<classifier>_<metric>.csv
@@ -47,7 +47,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from eegbench.datasets import STUDY_TAXONOMY, eegbench, eegbench_76, metadata
+from neuroverse.datasets import STUDY_TAXONOMY, metadata, neuroverse, neuroverse_76
 
 # metric name used in the file name -> attribute on a tsml-eval results object
 metrics = {
@@ -86,7 +86,7 @@ SOURCE_DATASETS = {
 DEFAULT_SKIP_ESTIMATORS = frozenset({"STC", "FreshPRINCE", "MiniROCKET", "ROCKET"})
 DEFAULT_KEEP_HYBRID = frozenset({"HC2-500-pc", "HC2-noTDE-500-pc"})
 
-results_path = Path(__file__).resolve().parents[2] / "results" / "eegbench"
+results_path = Path(__file__).resolve().parents[2] / "results" / "neuroverse"
 
 
 def _prediction_file(classifier, predictions_path, dataset, resample):
@@ -186,7 +186,7 @@ def export_wide_snapshot(
         Target directory for ``accuracy.csv``, ``balacc.csv``, ``logloss.csv``,
         ``auroc.csv``, ``classifiers.csv``, and ``datasets.csv``.
     datasets : list of str or None
-        Problems to export. Defaults to :data:`eegbench.datasets.eegbench_76`.
+        Problems to export. Defaults to :data:`neuroverse.datasets.neuroverse_76`.
     skip_estimators : collection of str
         Superseded estimator directory names to ignore.
     keep_hybrid : collection of str
@@ -203,7 +203,7 @@ def export_wide_snapshot(
     """
     raw_root = Path(raw_results_dir)
     out = Path(output_dir)
-    selected = list(eegbench_76 if datasets is None else datasets)
+    selected = list(neuroverse_76 if datasets is None else datasets)
     selected_set = set(selected)
     skip_set = set(skip_estimators)
     hybrid_set = set(keep_hybrid)
@@ -271,7 +271,7 @@ def compute_default_from_predictions(
 ) -> list[str]:
     """Compute the constant test-majority ``Default`` baseline from prediction files."""
     raw_root = Path(raw_results_dir)
-    selected = list(eegbench_76 if datasets is None else datasets)
+    selected = list(neuroverse_76 if datasets is None else datasets)
     expected_test = metadata()["test_size"].to_dict()
 
     default_scores: dict[str, list[float]] = {m: [] for m in WIDE_METRICS}
@@ -383,7 +383,7 @@ def ingest(classifier, predictions_path, datasets=None, resample=0):
     """
     from tsml_eval.evaluation.storage import load_classifier_results
 
-    datasets = sorted(eegbench) if datasets is None else sorted(datasets)
+    datasets = sorted(neuroverse) if datasets is None else sorted(datasets)
     found = [
         d
         for d in datasets
@@ -408,7 +408,7 @@ def ingest_default(reference, predictions_path, datasets=None, resample=0):
     """Write the majority class baseline, the Default column of the paper."""
     from tsml_eval.evaluation.storage import ClassifierResults, load_classifier_results
 
-    datasets = sorted(eegbench) if datasets is None else sorted(datasets)
+    datasets = sorted(neuroverse) if datasets is None else sorted(datasets)
     found = [
         d
         for d in datasets
@@ -438,7 +438,7 @@ def ingest_default(reference, predictions_path, datasets=None, resample=0):
 
 
 def sync_snapshot(snapshot_dir: Path | str, target_dir: Path | str = results_path) -> None:
-    """Copy a prepared wide-CSV snapshot directory into ``results/eegbench``."""
+    """Copy a prepared wide-CSV snapshot directory into ``results/neuroverse``."""
     src = Path(snapshot_dir)
     dst = Path(target_dir)
     dst.mkdir(parents=True, exist_ok=True)
@@ -449,7 +449,7 @@ def sync_snapshot(snapshot_dir: Path | str, target_dir: Path | str = results_pat
 
 
 def main(argv: list[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(description="Ingest or sync EEGBench result tables.")
+    parser = argparse.ArgumentParser(description="Ingest or sync Neuroverse result tables.")
     parser.add_argument(
         "--wide-from",
         type=Path,
@@ -464,7 +464,7 @@ def main(argv: list[str] | None = None) -> None:
         "--out",
         type=Path,
         default=results_path,
-        help="Output results directory (default: results/eegbench).",
+        help="Output results directory (default: results/neuroverse).",
     )
     parser.add_argument(
         "--to-multiverse",

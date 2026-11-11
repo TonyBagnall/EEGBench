@@ -1,27 +1,27 @@
-"""Build HTML leaderboards from EEGBench results.
+"""Build HTML leaderboards from Neuroverse results.
 
-Results are stored one directory per estimator under ``results/eegbench``, with
-one file per performance measure::
+Results are stored as wide summary CSVs under ``results/neuroverse`` (or one
+directory per estimator under ``results/neuroverse_paper_2026``)::
 
-    results/eegbench/<estimator>/<estimator>_<metric>.csv
+    results/neuroverse/<metric>.csv
+    results/neuroverse_paper_2026/<estimator>/<estimator>_<metric>.csv
 
-Each file holds one row per dataset and one column per resample, written by the
-evaluation tooling with a ``Resamples:`` header. Where several resamples are
-present they are averaged.
+Each Multiverse per-estimator file holds one row per dataset and one column per
+resample, written by the evaluation tooling with a ``Resamples:`` header. Where
+several resamples are present they are averaged.
 
 :func:`leaderboard` takes a list of datasets, a list of estimators, and a metric
 name, and writes a self-contained HTML page holding a per-dataset table, average
 scores and ranks, and a critical difference diagram.
 
-Run this module directly to build the leaderboards over the EEG archive for
-every estimator with results in the repository::
+Run this module directly to build the interactive dashboards and Markdown tables
+over the EEG archive::
 
-    python -m eegbench.experiments.tables
+    python -m neuroverse.experiments.tables
 
-EEGBench is part of the Multiverse archive but does not depend on its package.
-This module is a copy of ``multiverse.experiments.tables`` adapted for the EEG
-archive. It keeps the same result format, so fixes made in one can be carried
-to the other.
+Neuroverse is the neural companion to the Multiverse archive and does not depend
+on its package. This module adapts ``multiverse.experiments.tables`` while
+retaining full Multiverse CSV compatibility.
 """
 
 from __future__ import annotations
@@ -53,7 +53,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from eegbench.experiments._dashboard import (
+from neuroverse.experiments._dashboard import (
     _build_payload,
     compute_league_table,
     full_domain_tables_markdown,
@@ -63,8 +63,8 @@ from eegbench.experiments._dashboard import (
     write_score_matrix_page,
 )
 
-DEFAULT_RESULTS_DIR = Path(__file__).resolve().parents[2] / "results" / "eegbench"
-PAPER_RESULTS_DIR = Path(__file__).resolve().parents[2] / "results" / "eegbench_paper_2026"
+DEFAULT_RESULTS_DIR = Path(__file__).resolve().parents[2] / "results" / "neuroverse"
+PAPER_RESULTS_DIR = Path(__file__).resolve().parents[2] / "results" / "neuroverse_paper_2026"
 
 #: A dataset whose best estimator gains no more than this over the baseline
 #: shows little signal; one whose best reaches SATURATED_BEST is solved.
@@ -73,7 +73,7 @@ NO_SIGNAL_GAIN = 0.05
 SATURATED_BEST = 0.99
 
 #: The no-skill floor: always predict the majority class. See
-#: ``eegbench.experiments.ingest.ingest_default`` for how it is built.
+#: ``neuroverse.experiments.ingest.ingest_default`` for how it is built.
 BASELINE = "Default"
 
 #: Metrics where a smaller value is a better result. Anything not listed here is
@@ -481,10 +481,10 @@ def _describe_datasets(datasets) -> str | None:
     Returns the expression that recreates ``datasets``, or None when it is not a
     list we can name.
     """
-    from eegbench import datasets as archive
+    from neuroverse import datasets as archive
 
     requested = sorted(dict.fromkeys(datasets))
-    for name in ["eegbench", "eegbench_open"]:
+    for name in ["neuroverse", "neuroverse_76", "neuroverse_open"]:
         if requested == sorted(getattr(archive, name)):
             return f"sorted({name})"
     for domain in archive.DOMAINS:
@@ -503,12 +503,12 @@ def _snippet_html(
     critical_difference,
 ) -> str:
     """Render the call that reproduces this page, as a copyable code block."""
-    imports = ["from eegbench.experiments.tables import leaderboard"]
+    imports = ["from neuroverse.experiments.tables import leaderboard"]
     if datasets_expr is None:
         datasets_expr = f"[...]  # {n_datasets} datasets"
-    for name in ["eegbench_open", "eegbench", "by_domain"]:
+    for name in ["neuroverse_open", "neuroverse_76", "neuroverse", "by_domain"]:
         if name in datasets_expr:
-            imports.insert(0, f"from eegbench.datasets import {name}")
+            imports.insert(0, f"from neuroverse.datasets import {name}")
             break
 
     estimator_list = ", ".join(f'"{name}"' for name in estimators)
@@ -533,7 +533,7 @@ def _snippet_html(
     return (
         "<h2>Reproducing this page</h2>"
         f"<pre><code>{code}</code></pre>"
-        '<p class="note">Or <code>python -m eegbench.experiments.tables</code> '
+        '<p class="note">Or <code>python -m neuroverse.experiments.tables</code> '
         "to rebuild it with the defaults.</p>"
     )
 
@@ -682,7 +682,7 @@ def leaderboard(
     Parameters
     ----------
     datasets : list of str
-        Datasets to consider, for example ``eegbench.datasets.eegbench``.
+        Datasets to consider, for example ``neuroverse.datasets.neuroverse_76``.
     estimators : list of str
         Estimator names, matching their results directories.
     metrics : list of str or None
@@ -724,8 +724,8 @@ def leaderboard(
         statement about that subset only.
     datasets_expr : str or None
         How ``datasets`` was written, for the "Reproducing this page" snippet,
-        for example ``"sorted(eegbench)"``. When None, one of the lists in
-        ``eegbench.datasets`` is recognised automatically. Only affects that
+        for example ``"sorted(neuroverse)"``. When None, one of the lists in
+        ``neuroverse.datasets`` is recognised automatically. Only affects that
         snippet.
 
     Returns
@@ -766,7 +766,7 @@ def leaderboard(
     )
 
     sort_label = METRIC_LABELS.get(sort_by, sort_by)
-    title = title or "EEGBench leaderboard"
+    title = title or "Neuroverse leaderboard"
 
     parts = [
         f"<h1>{escape(title)}</h1>",
@@ -1147,7 +1147,7 @@ def dataset_page(
     summary = summary.sort_values(sort_by, ascending=ascending, na_position="last")
 
     label = METRIC_LABELS.get(metric, metric)
-    title = title or f"EEGBench datasets: {label.lower()}"
+    title = title or f"Neuroverse datasets: {label.lower()}"
     scored = int((summary["estimators"] > 0).sum())
     no_signal = int(summary["gain"].le(NO_SIGNAL_GAIN).sum())
     saturated = int(summary["best"].ge(SATURATED_BEST).sum())
@@ -1251,7 +1251,7 @@ def build_benchmark_site(
     output_dir: Path | str | None = None,
     render_cd: bool = True,
 ) -> dict[str, Path]:
-    """Build the full interactive EEGBench HTML suite (leaderboard, matrix, datasets).
+    """Build the full interactive Neuroverse HTML suite (leaderboard, matrix, datasets).
 
     Parameters
     ----------
@@ -1291,7 +1291,7 @@ def build_benchmark_site(
 
 
 def main() -> None:
-    """Build the interactive EEGBench dashboard and synchronise Markdown tables."""
+    """Build the interactive Neuroverse dashboard and synchronise Markdown tables."""
     everything = available_estimators(DEFAULT_RESULTS_DIR)
     frames = _load_all(
         everything, ["balacc", "accuracy", "auroc", "logloss"], DEFAULT_RESULTS_DIR
@@ -1305,8 +1305,8 @@ def main() -> None:
     if write_markdown_table(readme, readme_md, marker="LEADERBOARD"):
         print(f"updated LEADERBOARD block in {readme}")
 
-    from eegbench.datasets import metadata_markdown
-    from eegbench.estimators import estimator_markdown
+    from neuroverse.datasets import metadata_markdown
+    from neuroverse.estimators import estimator_markdown
 
     docs = readme.parent / "docs"
     if (docs / "leaderboard.md").is_file():

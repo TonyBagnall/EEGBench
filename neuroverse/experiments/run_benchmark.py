@@ -15,16 +15,16 @@ continues.
 
 Edit the settings in main and run it with
 
-    python -m eegbench.experiments.run_benchmark
+    python -m neuroverse.experiments.run_benchmark
 """
 
-from eegbench.datasets import eegbench
-from eegbench.experiments.run_single_dataset import single_experiment
+from neuroverse.datasets import neuroverse
+from neuroverse.experiments.run_single_dataset import single_experiment
 
 
 def main():
     classifiers = ["MRHydra", "HC2"]
-    datasets = sorted(eegbench)
+    datasets = sorted(neuroverse)
 
     print(f"{len(classifiers)} classifiers x {len(datasets)} datasets")
     for classifier in classifiers:

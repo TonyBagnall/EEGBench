@@ -151,7 +151,7 @@ Domain is medical (Med), brain-computer interface (BCI) or psychology (Psy). Sub
 blank where the local participant count is not established. FaceDetection,
 HandMovementDirection, MindReading and MatchWords are MEG. Availability distinguishes
 automatic aeon/Zenodo downloads, local preparations and restricted access. The table
-is written from `eegbench.datasets.metadata()` when the leaderboards are rebuilt.
+is written from `neuroverse.datasets.metadata()` when the leaderboards are rebuilt.
 Sampling frequency is blank where it has not been supplied.
 
 ## Additional local preparations
@@ -526,22 +526,32 @@ all aliases and template positions are preserved. See the
 ## Lists
 
 ```python
-from eegbench.datasets import eegbench, eegbench_paper, eegbench_open, local_only, by_domain, metadata
+from neuroverse.datasets import (
+    by_domain,
+    by_type,
+    local_only,
+    metadata,
+    neuroverse,
+    neuroverse_76,
+    neuroverse_open,
+    neuroverse_paper,
+)
 
-len(eegbench)        # 60, the full registry
-len(eegbench_paper)  # 30, the original paper subset
-len(local_only)      # 24, prepared additions without automatic aeon downloads
-len(eegbench_open)   # 28, the ones anyone can download
-by_domain("Med")     # all registered medical problems
-metadata()           # the table above as a DataFrame
+len(neuroverse)        # 85, the full archive registry
+len(neuroverse_76)     # 76, the selected scalp EEG benchmark study
+len(neuroverse_paper)  # 30, the original Rushbrooke et al. (2026) subset
+len(local_only)        # 55, prepared additions without automatic aeon downloads
+len(neuroverse_open)   # 28, open Zenodo downloads (aeon's 'eeg2026')
+by_type("MI")          # 35 motor imagery problems in neuroverse_76
+by_domain("Med")       # all registered medical problems
+metadata()             # the table above as a DataFrame
 ```
 
-`eegbench_open` is the 28-problem automatic-download subset, matching aeon's
-`eeg2026`. `local_only` contains thirty additional preparations to load from local
+`neuroverse_open` is the 28-problem automatic-download subset, matching aeon's
+`eeg2026`. `local_only` contains 55 additional preparations to load from local
 `.ts` files. FibroLiverpool and FibroUEA require research access through Tony
-Bagnall. `eegbench_paper` identifies the original 30; the default registry and
-batch experiment list include all 60. Existing results cover the datasets on
-which each estimator has actually been evaluated.
+Bagnall. `neuroverse_paper` identifies the original 30; `neuroverse_76` defines the
+76 scalp EEG problems evaluated on the active leaderboard.
 
 ## Downloading and loading
 

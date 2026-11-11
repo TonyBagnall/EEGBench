@@ -63,7 +63,7 @@ The previous P300 review missed existing GameTargets (BrainForm/RomaniBF2025ERP)
 - **LongIntervalTask:** PD versus control in interval timing; diagnosis target, not timing-task identity.
 - **ShortIntervalTask:** PD versus control in interval timing; diagnosis target, not timing-task identity.
 
-Sources: [dataset descriptions](datasets.md), [provenance](dataset-provenance.md), [BrainForm and other conversions](open-moabb-conversions.md), [selected list](../eeg.txt), [registry](../eegbench/datasets.py). Machine-readable assignments: [problem-taxonomy.json](problem-taxonomy.json).
+Sources: [dataset descriptions](datasets.md), [provenance](dataset-provenance.md), [BrainForm and other conversions](open-moabb-conversions.md), [selected list](../eeg.txt), [registry](../neuroverse/datasets.py). Machine-readable assignments: [problem-taxonomy.json](problem-taxonomy.json).
 
 ## Excluded modalities retained in the archive
 

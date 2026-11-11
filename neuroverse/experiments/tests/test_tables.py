@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from eegbench.experiments.tables import (
+from neuroverse.experiments.tables import (
     LOWER_IS_BETTER,
     METRIC_LABELS,
     available_estimators,
@@ -308,7 +308,7 @@ def test_complete_estimators(results_dir):
 
 def test_wide_and_multiverse_layouts_roundtrip_identically(results_dir, tmp_path_factory):
     """Converting Multiverse CSVs to wide CSVs and back preserves scores and discovery."""
-    from eegbench.experiments.ingest import multiverse_to_wide, wide_to_multiverse
+    from neuroverse.experiments.ingest import multiverse_to_wide, wide_to_multiverse
 
     wide_dir = tmp_path_factory.mktemp("wide")
     roundtrip_dir = tmp_path_factory.mktemp("roundtrip")
@@ -334,7 +334,7 @@ def test_wide_and_multiverse_layouts_roundtrip_identically(results_dir, tmp_path
 
 def test_compute_league_table_common_block_vs_available_mode():
     """Common-block mode filters by coverage and pairs ranks; available mode keeps partial specialists."""
-    from eegbench.experiments.tables import compute_league_table
+    from neuroverse.experiments.tables import compute_league_table
 
     problems = ["p1", "p2", "p3", "p4"]
     frames = {
@@ -374,8 +374,8 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
     import shutil
     import subprocess
 
-    from eegbench.datasets import PROBLEM_TYPE_TABS, by_type, eegbench_76
-    from eegbench.experiments.tables import build_benchmark_site
+    from neuroverse.datasets import PROBLEM_TYPE_TABS, by_type, neuroverse_76
+    from neuroverse.experiments.tables import build_benchmark_site
 
     sample_problems = by_type("Speech") + by_type("VEP")[:2]
     sample_estimators = ["HC2-500-pc", "EEGNeX-NB", "DE-LR"]
@@ -409,9 +409,9 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
         assert match is not None
         payload = json.loads(match.group(1))
         assert [e["name"] for e in payload["estimators"]] == sorted(sample_estimators)
-        assert len(payload["datasets"]) == len(eegbench_76)
+        assert len(payload["datasets"]) == len(neuroverse_76)
         assert [t["key"] for t in payload["tabs"]] == list(PROBLEM_TYPE_TABS)
-        assert len(payload["scores"]["balacc"]) == len(eegbench_76)
+        assert len(payload["scores"]["balacc"]) == len(neuroverse_76)
         assert len(payload["scores"]["balacc"][0]) == len(sample_estimators)
         if node_bin is not None:
             js_blocks = re.findall(r"<script>(.*?)</script>", html, re.DOTALL)

@@ -2,35 +2,35 @@
 
 import pytest
 
-from eegbench.datasets import (
+from neuroverse.datasets import (
     DOMAINS,
     by_domain,
-    eegbench,
-    eegbench_open,
-    eegbench_paper,
     local_only,
     metadata,
+    neuroverse,
+    neuroverse_open,
+    neuroverse_paper,
     restricted,
 )
-from eegbench.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
+from neuroverse.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
 
 
 def test_archive_lists():
     """All 85 problems, with published and local subsets explicitly identified."""
-    assert len(eegbench) == len(set(eegbench)) == 85
-    assert eegbench == sorted(eegbench)
-    assert len(eegbench_paper) == 30 and len(local_only) == 55
-    assert set(eegbench_paper).isdisjoint(local_only)
-    assert len(eegbench_open) == 28
-    assert set(eegbench) - set(eegbench_open) == set(restricted) | set(local_only)
-    assert {'ImaginedHandFeetTongue', 'ClinicalSleepStages', 'VideoEmotions', 'ImaginedLeftRightHand', 'ImaginedRightHandFeet'} <= set(eegbench)
-    assert not {'BCIIV2a', 'ISRUCSleep', 'FACED', 'Weibo2014', 'AlexMI'} & set(eegbench)
+    assert len(neuroverse) == len(set(neuroverse)) == 85
+    assert neuroverse == sorted(neuroverse)
+    assert len(neuroverse_paper) == 30 and len(local_only) == 55
+    assert set(neuroverse_paper).isdisjoint(local_only)
+    assert len(neuroverse_open) == 28
+    assert set(neuroverse) - set(neuroverse_open) == set(restricted) | set(local_only)
+    assert {'ImaginedHandFeetTongue', 'ClinicalSleepStages', 'VideoEmotions', 'ImaginedLeftRightHand', 'ImaginedRightHandFeet'} <= set(neuroverse)
+    assert not {'BCIIV2a', 'ISRUCSleep', 'FACED', 'Weibo2014', 'AlexMI'} & set(neuroverse)
 
 
 def test_domains_partition_the_archive():
     """Every dataset is in exactly one domain."""
     split = [name for domain in DOMAINS for name in by_domain(domain)]
-    assert sorted(split) == sorted(eegbench)
+    assert sorted(split) == sorted(neuroverse)
     assert "FibroUEA" in by_domain("Med")
     assert "FibroUEA" not in by_domain("Med", open_only=True)
     with pytest.raises(ValueError):
@@ -77,7 +77,7 @@ def test_metadata():
     assert frame.loc['ImaginedHandTraining', 'subjects'] == 18
     assert frame.loc['ImaginedHandTraining', 'train_size'] == 5568
     assert frame.loc['ImaginedHandTraining', 'test_size'] == 1588
-    assert list(frame.index) == eegbench
+    assert list(frame.index) == neuroverse
     assert frame.loc["Alzheimers", "length"] == 15000
     assert frame.loc['FingerMovements', 'length'] == 50
     assert frame.loc['FingerMovements', 'frequency'] == 100
@@ -154,7 +154,7 @@ def test_estimators():
 
 def test_fractional_sampling_frequency_is_preserved(monkeypatch):
     """Native rates such as 62.5 Hz must not be rounded to integer Hz."""
-    import eegbench.datasets as datasets
+    import neuroverse.datasets as datasets
     monkeypatch.setattr(datasets, '_TABLE', datasets._TABLE + [('FractionalRateExample', 2, 2, 32, 2, 4, 2, 62.5, 'Psy')])
     assert datasets.metadata().loc['FractionalRateExample', 'frequency'] == 62.5
     markdown = datasets.metadata_markdown()
@@ -164,23 +164,23 @@ def test_fractional_sampling_frequency_is_preserved(monkeypatch):
 
 def test_study_76_taxonomy_partitions_selected_problems():
     """The 76-problem scalp EEG taxonomy partitions families and BCI sub-types cleanly."""
-    from eegbench.datasets import (
+    from neuroverse.datasets import (
         BCI_TYPES,
         PROBLEM_FAMILIES,
         by_type,
-        eegbench_76,
         excluded_archive,
+        neuroverse_76,
     )
 
-    assert by_type("All") == eegbench_76
-    assert set(eegbench_76).isdisjoint(excluded_archive)
-    assert sorted(eegbench_76 + excluded_archive) == eegbench
+    assert by_type("All") == neuroverse_76
+    assert set(neuroverse_76).isdisjoint(excluded_archive)
+    assert sorted(neuroverse_76 + excluded_archive) == neuroverse
 
     family_parts = [by_type(fam) for fam in PROBLEM_FAMILIES]
     for idx, left in enumerate(family_parts):
         for right in family_parts[idx + 1 :]:
             assert set(left).isdisjoint(right)
-    assert sorted(name for part in family_parts for name in part) == eegbench_76
+    assert sorted(name for part in family_parts for name in part) == neuroverse_76
 
     bci_parts = [by_type(sub) for sub in BCI_TYPES]
     for idx, left in enumerate(bci_parts):
@@ -196,7 +196,7 @@ def test_study_76_taxonomy_partitions_selected_problems():
 
 def test_bakeoff_estimators_metadata_contract():
     """Every active bake-off estimator maps to a valid paradigm and tsml-eval family."""
-    from eegbench.estimators import (
+    from neuroverse.estimators import (
         BAKEOFF_ESTIMATORS,
         PARADIGMS,
         TSML_FAMILIES,

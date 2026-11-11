@@ -35,20 +35,20 @@ jobs:
 
       - name: Build interactive leaderboards
         run: |
-          python -m eegbench.experiments.tables
-          mkdir -p _site/eegbench _site/eegbench_paper_2026
-          cp -r results/eegbench/*.html _site/eegbench/
-          cp -r results/eegbench_paper_2026/*.html _site/eegbench_paper_2026/
+          python -m neuroverse.experiments.tables
+          mkdir -p _site/neuroverse _site/neuroverse_paper_2026
+          cp -r results/neuroverse/*.html _site/neuroverse/
+          cp -r results/neuroverse_paper_2026/*.html _site/neuroverse_paper_2026/
           cat << 'EOF' > _site/index.html
           <!doctype html>
           <html lang="en">
           <head>
             <meta charset="utf-8">
-            <meta http-equiv="refresh" content="0; url=eegbench/leaderboard.html">
-            <title>EEGBench Leaderboard</title>
+            <meta http-equiv="refresh" content="0; url=neuroverse/leaderboard.html">
+            <title>Neuroverse Leaderboard</title>
           </head>
           <body>
-            <p>Redirecting to <a href="eegbench/leaderboard.html">EEGBench Leaderboard</a>...</p>
+            <p>Redirecting to <a href="neuroverse/leaderboard.html">Neuroverse Leaderboard</a>...</p>
           </body>
           </html>
           EOF

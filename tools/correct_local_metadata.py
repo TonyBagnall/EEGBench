@@ -13,7 +13,7 @@ import shutil
 
 import pandas as pd
 
-from eegbench.datasets import metadata as registry_metadata
+from neuroverse.datasets import metadata as registry_metadata
 from tools.prepare_moabb import dump,sha
 
 SPECS={

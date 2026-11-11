@@ -1,15 +1,15 @@
 # Leaderboards
 
-`python -m eegbench.experiments.tables` builds the three-page interactive dashboard in `results/eegbench/` and updates the summary tables in `README.md` and this document.
+`python -m neuroverse.experiments.tables` builds the three-page interactive dashboard in `results/neuroverse/` and updates the summary tables in `README.md` and this document.
 
 ## Interactive Dashboard Pages
 
 | Page | Purpose | Scope |
 |---|---|---|
-| [`results/eegbench/leaderboard.html`](../results/eegbench/leaderboard.html) | Algorithm leaderboard with problem-type tabs, paradigm filters, coverage-mode switches, and critical difference diagrams | 90 algorithms across 76 scalp EEG problems (and 7 domain/BCI subsets) |
-| [`results/eegbench/matrix.html`](../results/eegbench/matrix.html) | Interactive problem-by-algorithm score heatmap grouped under paradigm banners, with metric selector and multi-metric hover tooltips | 76 problems &times; 90 algorithms |
-| [`results/eegbench/datasets.html`](../results/eegbench/datasets.html) | Per-problem explorer comparing the `Default` floor, median, best score, winning paradigm, gain over floor, and spread | 76 scalp EEG problems |
-| [`results/eegbench_paper_2026/leaderboard.html`](../results/eegbench_paper_2026/leaderboard.html) | Archived Rushbrooke et al. (2026) DMLR paper leaderboard | 20 estimators across 30 archive problems |
+| [`results/neuroverse/leaderboard.html`](../results/neuroverse/leaderboard.html) | Algorithm leaderboard with problem-type tabs, Standard Metrics vs Split-by-Problem-Type column views, paradigm filters, coverage-mode switches, and critical difference diagrams | 90 algorithms across 76 scalp EEG problems (and 7 domain/BCI subsets) |
+| [`results/neuroverse/matrix.html`](../results/neuroverse/matrix.html) | Interactive problem-by-algorithm score heatmap grouped under paradigm banners, with metric selector and multi-metric hover tooltips | 76 problems &times; 90 algorithms |
+| [`results/neuroverse/datasets.html`](../results/neuroverse/datasets.html) | Per-problem explorer comparing the `Default` floor, median, best score, winning paradigm, gain over floor, and spread | 76 scalp EEG problems |
+| [`results/neuroverse_paper_2026/leaderboard.html`](../results/neuroverse_paper_2026/leaderboard.html) | Archived Rushbrooke et al. (2026) DMLR paper leaderboard | 20 estimators across 30 archive problems |
 
 ## Ranking Methodology & Coverage Rules
 
@@ -29,8 +29,8 @@ The leaderboard therefore provides two explicit ranking modes in the UI and Pyth
 Build a league table in Python for any problem type (`"All"`, `"BCI"`, `"MI"`, `"ERP"`, `"VEP"`, `"Speech"`, `"Clinical"`, `"Cognitive"`):
 
 ```python
-from eegbench.datasets import by_type
-from eegbench.experiments.tables import (
+from neuroverse.datasets import by_type
+from neuroverse.experiments.tables import (
     available_estimators,
     compute_league_table,
     load_metric,
@@ -56,8 +56,8 @@ print(mi_table.head(10))
 The standalone Multiverse single-table HTML builder `leaderboard()` also works directly with both wide summary CSVs and per-estimator directories:
 
 ```python
-from eegbench.datasets import by_type
-from eegbench.experiments.tables import complete_estimators, leaderboard
+from neuroverse.datasets import by_type
+from neuroverse.experiments.tables import complete_estimators, leaderboard
 
 erp_problems = by_type("ERP")
 candidates = ["Deep4Net-NB", "EEGNeX-NB", "HC2-500-pc", "MRHydra", "XdawnCov-TS-SVM-MOABB"]

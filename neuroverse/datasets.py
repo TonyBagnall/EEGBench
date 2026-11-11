@@ -1,4 +1,4 @@
-"""The EEG classification archive: dataset lists and metadata.
+"""The Neuroverse classification archive: dataset lists and metadata.
 
 The archive includes the 30 problems published by Rushbrooke et al. (2026)
 and 55 additional local preparations. Use the supplied fixed train/test splits;
@@ -8,9 +8,9 @@ remain incomplete. See docs/dataset-provenance.md for dataset-specific evidence.
 The lists here are plain lists of dataset names, so they can be passed directly
 to the experiment and leaderboard code::
 
-    from eegbench.datasets import eegbench, by_domain
+    from neuroverse.datasets import neuroverse_76, by_type
 
-    leaderboard(datasets=by_domain("Med"), estimators=["HC2", "MRHydra"])
+    leaderboard(datasets=by_type("MI"), estimators=["HC2-500-pc", "MRHydra"])
 
 Published open files are downloaded with ``aeon.datasets.load_classification``;
 the newer preparations are loaded from local .ts files. The list is
@@ -20,10 +20,10 @@ does.
 """
 
 __all__ = [
-    "eegbench",
-    "eegbench_76",
-    "eegbench_open",
-    "eegbench_paper",
+    "neuroverse",
+    "neuroverse_76",
+    "neuroverse_open",
+    "neuroverse_paper",
     "excluded_archive",
     "local_only",
     "restricted",
@@ -123,7 +123,7 @@ _TABLE = [
 ]
 
 #: Original published benchmark subset, retained for reproducing the paper.
-eegbench_paper = [row[0] for row in _TABLE]
+neuroverse_paper = [row[0] for row in _TABLE]
 
 _TABLE += [
     ("ImaginedHandsStroke", 29, 2, 2000, 46, 1400, 440, 500, "BCI"),
@@ -209,17 +209,17 @@ _TABLE += [('ParkinsonsRestUCSD', 32, 2, 2048, 31, 1126, 380, 512, 'Med')]
 _TABLE.sort(key=lambda row: row[0])
 
 #: Prepared locally; not registered for aeon's automatic archive downloads.
-local_only = [row[0] for row in _TABLE if row[0] not in eegbench_paper]
+local_only = [row[0] for row in _TABLE if row[0] not in neuroverse_paper]
 
 #: Datasets that are not fully open access, so are not on Zenodo and cannot be
 #: loaded through aeon. Results for them are still reported.
 restricted = ["FibroLiverpool", "FibroUEA"]
 
 #: All 85 prepared classification problems used by this repository.
-eegbench = [row[0] for row in _TABLE]
+neuroverse = [row[0] for row in _TABLE]
 
 #: The 28 problems anyone can download, the same list as aeon's ``eeg2026``.
-eegbench_open = [name for name in eegbench_paper if name not in restricted]
+neuroverse_open = [name for name in neuroverse_paper if name not in restricted]
 
 #: Problem-type assignment ``(family, bci_type)`` for the 76 selected scalp EEG
 #: classification problems. MEG (FaceDetection, HandMovementDirection,
@@ -306,10 +306,10 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
 }
 
 #: The 76 selected scalp EEG classification problems in the extended benchmark.
-eegbench_76 = sorted(STUDY_TAXONOMY)
+neuroverse_76 = sorted(STUDY_TAXONOMY)
 
 #: Registered archive problems excluded from the 76-problem scalp EEG study.
-excluded_archive = [name for name in eegbench if name not in STUDY_TAXONOMY]
+excluded_archive = [name for name in neuroverse if name not in STUDY_TAXONOMY]
 
 
 def metadata() -> pd.DataFrame:
@@ -326,8 +326,8 @@ def metadata() -> pd.DataFrame:
     frame["subjects"] = frame["subjects"].astype("Int64")
     frequency = frame["frequency"].astype("Float64")
     frame["frequency"] = frequency.astype("Int64") if (frequency.dropna() % 1 == 0).all() else frequency
-    frame["open"] = frame.index.isin(eegbench_open)
-    frame["published_benchmark"] = frame.index.isin(eegbench_paper)
+    frame["open"] = frame.index.isin(neuroverse_open)
+    frame["published_benchmark"] = frame.index.isin(neuroverse_paper)
     frame["availability"] = [
         "local" if n in local_only else "restricted" if n in restricted else "aeon/Zenodo"
         for n in frame.index
@@ -362,7 +362,7 @@ def by_domain(domain: str, open_only: bool = False) -> list[str]:
     return [
         row[0]
         for row in _TABLE
-        if row[-1] == domain and (not open_only or row[0] in eegbench_open)
+        if row[-1] == domain and (not open_only or row[0] in neuroverse_open)
     ]
 
 
@@ -382,14 +382,14 @@ def by_type(problem_type: str = "All") -> list[str]:
         Dataset names in alphabetical order.
     """
     if problem_type == "All":
-        return list(eegbench_76)
+        return list(neuroverse_76)
     if problem_type in PROBLEM_FAMILIES:
         return [
-            name for name in eegbench_76 if STUDY_TAXONOMY[name][0] == problem_type
+            name for name in neuroverse_76 if STUDY_TAXONOMY[name][0] == problem_type
         ]
     if problem_type in BCI_TYPES:
         return [
-            name for name in eegbench_76 if STUDY_TAXONOMY[name][1] == problem_type
+            name for name in neuroverse_76 if STUDY_TAXONOMY[name][1] == problem_type
         ]
     valid = ", ".join(PROBLEM_TYPE_TABS)
     raise ValueError(f"problem_type must be one of {valid}, not {problem_type!r}")
@@ -419,3 +419,10 @@ def metadata_markdown() -> str:
         ]
         rows.append("| " + " | ".join(cells) + " |")
     return "\n".join(rows)
+
+
+# Backwards-compatible aliases for scripts written before the Neuroverse rename.
+eegbench = neuroverse
+eegbench_76 = neuroverse_76
+eegbench_open = neuroverse_open
+eegbench_paper = neuroverse_paper

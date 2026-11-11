@@ -98,7 +98,7 @@ def run(keys,cache_root=Path('D:/Data/EEGSources'),output=Path('D:/Data/EEG')):
         for key,result in progress['completed'].items():progress['completed'][key]=refresh_final(result,key)
         progress['registered_by_this_runner']=True
         import pytest
-        status=pytest.main(['-q','-p','no:cacheprovider','--basetemp='+str(ROOT/'.openeegbench'/('mi-final-tests-'+uuid.uuid4().hex)),str(ROOT/'tools/test_prepare_mi_to_30.py'),str(ROOT/'tools/test_prepare_open_moabb.py'),str(ROOT/'eegbench/tests/test_datasets.py')])
+        status=pytest.main(['-q','-p','no:cacheprovider','--basetemp='+str(ROOT/'.openeegbench'/('mi-final-tests-'+uuid.uuid4().hex)),str(ROOT/'tools/test_prepare_mi_to_30.py'),str(ROOT/'tools/test_prepare_open_moabb.py'),str(ROOT/'neuroverse/tests/test_datasets.py')])
         if status:raise RuntimeError('Final registry/conversion tests failed: '+str(status))
         progress['status']='complete_registered_and_verified';dump(STATE,progress)
         checkpoint=ROOT/'.openeegbench/current-batch-checkpoint.json'

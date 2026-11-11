@@ -1,6 +1,6 @@
 # EEG dataset repository reviews
 
-Start here for the external repositories surveyed for additions to EEGBench.
+Start here for the external repositories surveyed for additions to Neuroverse.
 The detailed reviews are all in this repository's root directory.
 
 | Repository | Our review | What it covers |

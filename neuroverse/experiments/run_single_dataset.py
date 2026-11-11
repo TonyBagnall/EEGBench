@@ -7,7 +7,7 @@ dataset and resample
     <results_path>/<classifier>/Predictions/<dataset>/testResample<id>.csv
 
 containing the class labels, the predictions, the probability estimates and the
-fit and predict times. Those files are the input to eegbench.experiments.ingest.
+fit and predict times. Those files are the input to neuroverse.experiments.ingest.
 
 Only resample 0, the default split, is used. The default splits keep each
 subject on one side, and tsml-eval's other resamples are stratified by class
@@ -15,7 +15,7 @@ alone, so they would put the same subject in train and test.
 
 Edit the settings in main and run it with
 
-    python -m eegbench.experiments.run_single_dataset
+    python -m neuroverse.experiments.run_single_dataset
 
 The classifier name is anything tsml-eval can resolve, which covers the aeon
 classifiers. For anything else, pass the estimator to single_experiment instead
@@ -31,7 +31,9 @@ from tsml_eval.experiments import (
     load_and_run_classification_experiment,
 )
 
-data_path = os.environ.get("EEGBENCH_DATA_PATH", "D:/Data/EEG")
+data_path = os.environ.get(
+    "NEUROVERSE_DATA_PATH", os.environ.get("EEGBENCH_DATA_PATH", "D:/Data/EEG")
+)
 results_path = "./results-raw"
 
 

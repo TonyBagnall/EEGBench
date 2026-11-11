@@ -17,7 +17,7 @@ Primary benchmark ranking uses **test balanced accuracy** (`balacc`) so class-im
 | `auroc` | AUROC | Higher is better | Binary ROC AUC or macro one-vs-rest multi-class ROC AUC |
 | `logloss` | Log loss | Lower is better | Cross-entropy with probabilities clipped to $[10^{-15}, 1]$ |
 
-*(In the archived 2026 DMLR Multiverse layout under `results/eegbench_paper_2026/`, `f1`, `sensitivity`, and `specificity` are also stored.)*
+*(In the archived 2026 DMLR Multiverse layout under `results/neuroverse_paper_2026/`, `f1`, `sensitivity`, and `specificity` are also stored.)*
 
 Estimators that emit hard $0/1$ vote proportions (such as `Arsenal` or `MRHydra`) incur larger clipped `logloss` values; this reflects uncalibrated vote probabilities rather than a scoring error. Fit and predict wall-clock times are not ranked because neural models run on GPUs while CPU ensembles run single-threaded across heterogeneous cluster nodes.
 
@@ -33,7 +33,7 @@ It serves on `datasets.html` and `matrix.html` as a strict no-skill floor (`Gain
 
 ## Where the Classifiers Live
 
-EEGBench stores metadata and benchmark scores only—never classifier code:
+Neuroverse stores metadata and benchmark scores only—never classifier code:
 
 | Paradigm | Home Repository |
 |---|---|
@@ -43,29 +43,29 @@ EEGBench stores metadata and benchmark scores only—never classifier code:
 
 ## Result File Formats
 
-`eegbench.experiments.tables` transparently reads two layouts:
+`neuroverse.experiments.tables` transparently reads two layouts:
 
-1. **Wide summary CSVs** (active benchmark in `results/eegbench/`):
+1. **Wide summary CSVs** (active benchmark in `results/neuroverse/`):
    - `accuracy.csv`, `balacc.csv`, `auroc.csv`, `logloss.csv` (`76` dataset rows &times; `90` classifier columns)
    - `datasets.csv` (`dataset,family,bci_type`) and `classifiers.csv` (`classifier,family`)
    - `Default/Default_<metric>.csv` for the constant test-majority floor
-2. **Multiverse per-estimator CSVs** (archived 2026 paper results in `results/eegbench_paper_2026/` and `aeon-toolkit/multiverse`):
+2. **Multiverse per-estimator CSVs** (archived 2026 paper results in `results/neuroverse_paper_2026/` and `aeon-toolkit/multiverse`):
    - `<results_dir>/<estimator>/<estimator>_<metric>.csv` with `Resamples:` index header.
 
-Convert or refresh between raw `tsml-eval` predictions, wide snapshots, and Multiverse directories with `eegbench.experiments.ingest`:
+Convert or refresh between raw `tsml-eval` predictions, wide snapshots, and Multiverse directories with `neuroverse.experiments.ingest`:
 
 ```bash
 # Export wide summary CSVs directly from a tsml-eval category tree
-python -m eegbench.experiments.ingest --wide-from D:/Results/EEG --out results/eegbench
+python -m neuroverse.experiments.ingest --wide-from D:/Results/EEG --out results/neuroverse
 
 # Sync from a dated wide snapshot directory
-python -m eegbench.experiments.ingest --sync-from results/tsml-eval-20261111 --out results/eegbench
+python -m neuroverse.experiments.ingest --sync-from results/tsml-eval-20261111 --out results/neuroverse
 
 # Export Multiverse per-estimator directories from wide CSVs
-python -m eegbench.experiments.ingest --out results/eegbench --to-multiverse results/multiverse_export
+python -m neuroverse.experiments.ingest --out results/neuroverse --to-multiverse results/multiverse_export
 
 # Rebuild all HTML pages and Markdown tables
-python -m eegbench.experiments.tables
+python -m neuroverse.experiments.tables
 ```
 
 ## Registered Benchmark Estimators (90 Active)

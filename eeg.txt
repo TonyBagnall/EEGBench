@@ -1,5 +1,6 @@
 ALSAttention
 Alzheimers
+AlzheimersAuditory
 ArmCoordination
 ArmMovements
 ChildhoodSeizures
@@ -8,7 +9,6 @@ CodedFlickerTargets
 CodedSymbols
 CovidSurvivors
 EyesOpenShut
-FaceDetection
 FeedbackButton
 FeetHands
 FibroLiverpool
@@ -18,7 +18,6 @@ FlickerAttention
 FlickerSymbols
 FlickerTargets
 GameTargets
-HandMovementDirection
 ImaginedAnkleRest
 ImaginedArmMovements
 ImaginedArmTasks
@@ -50,16 +49,15 @@ ImaginedRightHandFeetRest
 InnerSpeech
 LongIntervalTask
 LowCost
-MatchWords
 MatchingPennies
 MentalArithmetic
-MindReading
-MotorImagery
 NBackAudioCondition
 ObsessiveCompulsiveSymptoms
 OpenCloseFist
 ParkinsonsPedalling
 ParkinsonsRest
+ParkinsonsRestIowa
+ParkinsonsRestUCSD
 PhotoStimulation
 PronouncedSpeech
 RestingEyeState

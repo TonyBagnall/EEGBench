@@ -10,6 +10,9 @@ The detailed reviews are all in this repository's root directory.
 | [AdaBrain-Bench](https://github.com/Jamine-W/AdaBrain-Bench) | [AdaBrain-Bench.md](AdaBrain-Bench.md) | Mapping its datasets and tasks to our archive and identifying additional sources. |
 | [ETH-DISCO EEG-Bench](https://github.com/ETH-DISCO/EEG-Bench) | [EEG-Bench.md](EEG-Bench.md) | Dataset/task inventory, original recording sources and overlap with our collection. |
 | [EEGDash](https://github.com/eegdash/EEGDash) | [EEGDash.md](EEGDash.md) | Catalogue and mirror access, converted corpus, source matching and the existing [clinical candidate survey](docs/clinical-candidates.md). |
+| [EEG-Arena / EEG.FM](https://eeg.fm/benchmarks/overall-performance/) | [EEG-Arena.md](EEG-Arena.md) | Foundation-model and supervised-baseline benchmark; initial review of protocols, dataset access and pretraining-overlap handling. |
+
+For a comprehensive cross-benchmark comparison of **classification algorithms and pipelines** across MOABB, Braindecode, OpenEEGBench, EEG-Arena, NeuralBench, AdaBrain-Bench, ETH EEG-Bench, OmniEEG-Bench, EEGDash, and `aeon-neuro`, see [docs/benchmark_algorithms_survey.md](docs/benchmark_algorithms_survey.md).
 
 These reviews include historical snapshots. For current completion counts and
 active work, use [assimilation progress](docs/assimilation-progress.json).

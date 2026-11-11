@@ -304,3 +304,130 @@ def test_complete_estimators(results_dir):
         "Bob",
     ]
     assert complete_estimators(["d1", "d2"], everyone, results_dir=results_dir) == everyone
+
+
+def test_wide_and_multiverse_layouts_roundtrip_identically(results_dir, tmp_path_factory):
+    """Converting Multiverse CSVs to wide CSVs and back preserves scores and discovery."""
+    from eegbench.experiments.ingest import multiverse_to_wide, wide_to_multiverse
+
+    wide_dir = tmp_path_factory.mktemp("wide")
+    roundtrip_dir = tmp_path_factory.mktemp("roundtrip")
+    metrics_used = ("accuracy", "balacc", "auroc", "logloss")
+
+    written_metrics = multiverse_to_wide(
+        results_dir, wide_dir, metrics_list=metrics_used, exclude=()
+    )
+    assert set(written_metrics) == set(metrics_used)
+    assert available_estimators(wide_dir) == available_estimators(results_dir)
+
+    written_ests = wide_to_multiverse(wide_dir, roundtrip_dir, metrics_list=metrics_used)
+    assert written_ests == available_estimators(results_dir)
+
+    for est in written_ests:
+        for metric in metrics_used:
+            expected = load_metric(est, metric, results_dir)
+            from_wide = load_metric(est, metric, wide_dir)
+            from_rt = load_metric(est, metric, roundtrip_dir)
+            pd.testing.assert_series_equal(from_wide, expected)
+            pd.testing.assert_series_equal(from_rt, expected)
+
+
+def test_compute_league_table_common_block_vs_available_mode():
+    """Common-block mode filters by coverage and pairs ranks; available mode keeps partial specialists."""
+    from eegbench.experiments.tables import compute_league_table
+
+    problems = ["p1", "p2", "p3", "p4"]
+    frames = {
+        "balacc": pd.DataFrame(
+            {
+                "Leader": [0.80, 0.80, 0.90, 0.90],
+                "RunnerUp": [0.70, 0.70, 0.60, 0.60],
+                "PartialSpecialist": [0.95, 0.95, np.nan, np.nan],
+            },
+            index=problems,
+        )
+    }
+
+    block_tbl, common = compute_league_table(
+        problems, frames, primary_metric="balacc", min_coverage_ratio=0.75, mode="common_block"
+    )
+    assert common == problems
+    assert list(block_tbl["estimator"]) == ["Leader", "RunnerUp"]
+    assert block_tbl.loc[0, "mean_rank"] == pytest.approx(1.0)
+    assert block_tbl.loc[0, "balacc"] == pytest.approx(0.85)
+    assert block_tbl.loc[0, "wins"] == len(problems)
+
+    avail_tbl, avail_common = compute_league_table(
+        problems, frames, primary_metric="balacc", mode="available"
+    )
+    assert avail_common == problems
+    specialist = avail_tbl.set_index("estimator").loc["PartialSpecialist"]
+    assert specialist["coverage"] == 2
+    assert specialist["mean_rank"] == pytest.approx(1.0)
+    assert specialist["wins"] == 2
+
+
+def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
+    """The interactive dashboard suite writes self-contained HTML pages with valid embedded payloads."""
+    import json
+    import re
+    import shutil
+    import subprocess
+
+    from eegbench.datasets import PROBLEM_TYPE_TABS, by_type, eegbench_76
+    from eegbench.experiments.tables import build_benchmark_site
+
+    sample_problems = by_type("Speech") + by_type("VEP")[:2]
+    sample_estimators = ["HC2-500-pc", "EEGNeX-NB", "DE-LR"]
+    rng = np.random.default_rng(42)
+
+    snap_dir = tmp_path / "snap"
+    snap_dir.mkdir()
+    for metric in ("balacc", "accuracy", "auroc", "logloss"):
+        mat = pd.DataFrame(
+            rng.uniform(0.3, 0.9, size=(len(sample_problems), len(sample_estimators))),
+            index=sample_problems,
+            columns=sample_estimators,
+        )
+        mat.index.name = "dataset"
+        mat.to_csv(snap_dir / f"{metric}.csv")
+
+    paths = build_benchmark_site(snap_dir, render_cd=False)
+    assert set(paths) == {"leaderboard", "index", "matrix", "datasets"}
+    node_bin = shutil.which("node")
+    for page_key, page_path in paths.items():
+        html = page_path.read_text(encoding="utf-8")
+        assert "http://" not in html
+        assert 'src="http' not in html
+        assert "@import" not in html
+        assert "eegDownloadCsv" in html
+        match = re.search(
+            r'<script id="benchData" type="application/json">(.*?)</script>',
+            html,
+            re.DOTALL,
+        )
+        assert match is not None
+        payload = json.loads(match.group(1))
+        assert [e["name"] for e in payload["estimators"]] == sorted(sample_estimators)
+        assert len(payload["datasets"]) == len(eegbench_76)
+        assert [t["key"] for t in payload["tabs"]] == list(PROBLEM_TYPE_TABS)
+        assert len(payload["scores"]["balacc"]) == len(eegbench_76)
+        assert len(payload["scores"]["balacc"][0]) == len(sample_estimators)
+        if node_bin is not None:
+            js_blocks = re.findall(r"<script>(.*?)</script>", html, re.DOTALL)
+            assert len(js_blocks) == 1
+            js_file = tmp_path / f"{page_key}_check.js"
+            js_file.write_text(js_blocks[0], encoding="utf-8")
+            proc = subprocess.run(
+                [node_bin, "--check", str(js_file)], capture_output=True, text=True
+            )
+            assert proc.returncode == 0, f"{page_key} JS syntax error: {proc.stderr}"
+
+    lb_html = paths["leaderboard"].read_text(encoding="utf-8")
+    assert 'id="viewSelect"' in lb_html
+    assert 'id="algModal"' in lb_html
+    assert 'id="exportLbCsv"' in lb_html
+    assert 'id="exportMatrixCsv"' in paths["matrix"].read_text(encoding="utf-8")
+    ds_html = paths["datasets"].read_text(encoding="utf-8")
+    assert 'id="dsModal"' in ds_html
+    assert 'id="exportDsCsv"' in ds_html

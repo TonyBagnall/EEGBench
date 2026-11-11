@@ -16,10 +16,10 @@ from eegbench.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
 
 
 def test_archive_lists():
-    """All 82 problems, with published and local subsets explicitly identified."""
-    assert len(eegbench) == len(set(eegbench)) == 82
+    """All 85 problems, with published and local subsets explicitly identified."""
+    assert len(eegbench) == len(set(eegbench)) == 85
     assert eegbench == sorted(eegbench)
-    assert len(eegbench_paper) == 30 and len(local_only) == 52
+    assert len(eegbench_paper) == 30 and len(local_only) == 55
     assert set(eegbench_paper).isdisjoint(local_only)
     assert len(eegbench_open) == 28
     assert set(eegbench) - set(eegbench_open) == set(restricted) | set(local_only)
@@ -160,3 +160,56 @@ def test_fractional_sampling_frequency_is_preserved(monkeypatch):
     markdown = datasets.metadata_markdown()
     assert '| 62.5 |' in markdown
     assert '| 500.0 |' not in markdown
+
+
+def test_study_76_taxonomy_partitions_selected_problems():
+    """The 76-problem scalp EEG taxonomy partitions families and BCI sub-types cleanly."""
+    from eegbench.datasets import (
+        BCI_TYPES,
+        PROBLEM_FAMILIES,
+        by_type,
+        eegbench_76,
+        excluded_archive,
+    )
+
+    assert by_type("All") == eegbench_76
+    assert set(eegbench_76).isdisjoint(excluded_archive)
+    assert sorted(eegbench_76 + excluded_archive) == eegbench
+
+    family_parts = [by_type(fam) for fam in PROBLEM_FAMILIES]
+    for idx, left in enumerate(family_parts):
+        for right in family_parts[idx + 1 :]:
+            assert set(left).isdisjoint(right)
+    assert sorted(name for part in family_parts for name in part) == eegbench_76
+
+    bci_parts = [by_type(sub) for sub in BCI_TYPES]
+    for idx, left in enumerate(bci_parts):
+        for right in bci_parts[idx + 1 :]:
+            assert set(left).isdisjoint(right)
+    assert sorted(name for part in bci_parts for name in part) == by_type("BCI")
+
+    frame = metadata()
+    assert set(frame.index[frame["problem_type"] == "Excluded"]) == set(excluded_archive)
+    with pytest.raises(ValueError, match="problem_type"):
+        by_type("UnknownType")
+
+
+def test_bakeoff_estimators_metadata_contract():
+    """Every active bake-off estimator maps to a valid paradigm and tsml-eval family."""
+    from eegbench.estimators import (
+        BAKEOFF_ESTIMATORS,
+        PARADIGMS,
+        TSML_FAMILIES,
+        estimator_info,
+        estimator_table,
+    )
+
+    active_table = estimator_table(active_only=True)
+    assert sorted(active_table.index, key=str.lower) == BAKEOFF_ESTIMATORS
+    assert set(active_table["paradigm"]) <= set(PARADIGMS)
+    assert set(active_table["tsml_family"]) <= set(TSML_FAMILIES)
+
+    for base_fm in ("CBraMod", "LaBraM"):
+        assert not estimator_info(base_fm)["is_ablation"]
+        assert estimator_info(f"{base_fm}-random")["is_ablation"]
+        assert estimator_info(base_fm)["base_method"] == estimator_info(f"{base_fm}-random")["base_method"]

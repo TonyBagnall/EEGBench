@@ -1,0 +1,119 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>EEGBench datasets: accuracy</title><style>
+:root {
+  --bg: #ffffff; --fg: #1a1a1a; --muted: #666666;
+  --line: #e0e0e0; --head: #f5f5f5; --best: #e8f4ec; --accent: #2b6cb0;
+  --stripe: #fafafa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181c; --fg: #e8e8e8; --muted: #9aa0a6;
+    --line: #30343a; --head: #212429; --best: #1e3226; --accent: #7aa7d9;
+    --stripe: #1b1e23;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 2rem 1.25rem 4rem; background: var(--bg); color: var(--fg);
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 1100px; margin: 0 auto; }
+h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+.sub { color: var(--muted); margin: 0 0 2rem; }
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { padding: .45rem .7rem; text-align: right; white-space: nowrap;
+  border-bottom: 1px solid var(--line); }
+th { background: var(--head); font-weight: 600; position: sticky; top: 0; }
+td.pos { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums;
+  width: 2.5rem; }
+th.pos { text-align: right; color: var(--muted); }
+th:nth-child(-n+2), td:nth-child(-n+2) { position: sticky; background: var(--bg); }
+td:nth-child(2), th:nth-child(2) { text-align: left; }
+th:nth-child(1), td:nth-child(1) { left: 0; }
+th:nth-child(2), td:nth-child(2) { left: 2.5rem; box-shadow: 1px 0 0 var(--line); }
+th:nth-child(-n+2) { background: var(--head); z-index: 1; }
+tbody tr:last-child td { border-bottom: none; }
+td.best { background: var(--best); font-weight: 600; }
+th.grp { text-align: center; border-left: 2px solid var(--line); }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: var(--accent); }
+th.sortable::after { content: "↕"; opacity: .25; margin-left: .35em;
+  font-size: .85em; }
+th.sortable[aria-sort="ascending"]::after { content: "↑"; opacity: 1; }
+th.sortable[aria-sort="descending"]::after { content: "↓"; opacity: 1; }
+th.sortable:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+pre { background: var(--head); border: 1px solid var(--line); border-radius: 6px;
+  padding: .8rem 1rem; overflow-x: auto; font-size: .86rem; line-height: 1.5;
+  margin: 0; }
+pre code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+ul.missing { margin: .5rem 0 0; padding-left: 1.2rem; }
+ul.missing li { margin-bottom: .3rem; }
+th.sep, td.sep { border-left: 2px solid var(--line); }
+tbody td:not(:first-child) { font-variant-numeric: tabular-nums; }
+tbody tr:nth-child(even) td { background: var(--stripe); }
+tbody tr:hover td { background: var(--head); }
+tbody tr:hover td.best { background: var(--best); }
+tbody tr:hover td.best { background: var(--best); }
+figure { margin: 0; }
+figure img { max-width: 100%; height: auto; background: #fff; border-radius: 6px;
+  padding: .5rem; }
+.note { color: var(--muted); font-size: .88rem; margin-top: .6rem; }
+details { margin-top: .6rem; }
+summary { cursor: pointer; color: var(--accent); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+tr.nosignal td { background: rgba(214, 158, 46, .16); }tr.saturated td { background: rgba(56, 161, 105, .14); }</style></head><body><main><h1>EEGBench datasets: accuracy</h1><p class="sub">30 datasets &middot; accuracy &middot; best of up to 20 estimators against the Default baseline &middot; built 2026-10-12</p><div class="scroll"><table id="leaderboard"><thead><tr><th class="sortable" data-col="0" data-first="asc" data-type="text">Dataset</th><th class="sortable" data-col="1" data-first="asc">Default</th><th class="sortable" data-col="2" data-first="desc">Median</th><th class="sortable" data-col="3" data-first="desc">Best</th><th class="sortable" data-col="4" data-first="asc" data-type="text">Best estimator</th><th class="sortable" data-col="5" data-first="asc">Gain over baseline</th><th class="sortable" data-col="6" data-first="desc">Spread</th><th class="sortable" data-col="7" data-first="desc">Estimators</th></tr></thead><tbody><tr class="nosignal"><td>InnerSpeech</td><td>0.2600</td><td>0.2550</td><td class="best">0.2700</td><td>HC2</td><td>0.0100</td><td>0.0650</td><td>20</td></tr><tr class="nosignal"><td>SongFamiliarity</td><td>0.5187</td><td>0.5187</td><td class="best">0.5333</td><td>Arsenal</td><td>0.0147</td><td>0.0533</td><td>20</td></tr><tr class="nosignal"><td>LongIntervalTask</td><td>0.6786</td><td>0.6786</td><td class="best">0.7116</td><td>HC2</td><td>0.0330</td><td>0.3902</td><td>19</td></tr><tr class="nosignal"><td>VisualSpeech</td><td>0.2600</td><td>0.2550</td><td class="best">0.3000</td><td>QUANT</td><td>0.0400</td><td>0.0850</td><td>20</td></tr><tr><td>FeedbackButton</td><td>0.5000</td><td>0.5235</td><td class="best">0.5565</td><td>MRHydra</td><td>0.0565</td><td>0.0870</td><td>20</td></tr><tr><td>PronouncedSpeech</td><td>0.2600</td><td>0.2675</td><td class="best">0.3250</td><td>STC</td><td>0.0650</td><td>0.0900</td><td>20</td></tr><tr><td>SelfRegulationSCP2</td><td>0.5000</td><td>0.5083</td><td class="best">0.5667</td><td>FreshPRINCE</td><td>0.0667</td><td>0.0889</td><td>20</td></tr><tr><td>FingerMovements</td><td>0.5100</td><td>0.5400</td><td class="best">0.5800</td><td>LogisticRegression</td><td>0.0700</td><td>0.1000</td><td>20</td></tr><tr><td>EyesOpenShut</td><td>0.5000</td><td>0.5000</td><td class="best">0.5714</td><td>QUANT</td><td>0.0714</td><td>0.3095</td><td>20</td></tr><tr><td>Alzheimers</td><td>0.4186</td><td>0.3953</td><td class="best">0.5116</td><td>Arsenal</td><td>0.0930</td><td>0.2093</td><td>14</td></tr><tr><td>ShortIntervalTask</td><td>0.6429</td><td>0.6455</td><td class="best">0.7429</td><td>MRHydra</td><td>0.1000</td><td>0.3857</td><td>19</td></tr><tr><td>Sleep</td><td>0.5029</td><td>0.5527</td><td class="best">0.6075</td><td>HC2</td><td>0.1046</td><td>0.3046</td><td>14</td></tr><tr><td>MotorImagery</td><td>0.5000</td><td>0.5100</td><td class="best">0.6100</td><td>FreshPRINCE</td><td>0.1100</td><td>0.1800</td><td>20</td></tr><tr><td>MatchingPennies</td><td>0.5029</td><td>0.5700</td><td class="best">0.6143</td><td>ROCKET</td><td>0.1114</td><td>0.1171</td><td>19</td></tr><tr><td>EpilepticSeizures</td><td>0.8021</td><td>0.9483</td><td class="best">0.9679</td><td>HC2</td><td>0.1658</td><td>0.7906</td><td>20</td></tr><tr><td>PhotoStimulation</td><td>0.4167</td><td>0.3889</td><td class="best">0.5833</td><td>ROCKET</td><td>0.1667</td><td>0.3611</td><td>20</td></tr><tr><td>SitStand</td><td>0.2500</td><td>0.3517</td><td class="best">0.4231</td><td>Arsenal</td><td>0.1731</td><td>0.1619</td><td>20</td></tr><tr><td>FibroUEA</td><td>0.6957</td><td>0.6522</td><td class="best">0.8696</td><td>DCN</td><td>0.1739</td><td>0.4783</td><td>20</td></tr><tr><td>FibroLiverpool</td><td>0.5238</td><td>0.5238</td><td class="best">0.7143</td><td>EEGNet</td><td>0.1905</td><td>0.3333</td><td>20</td></tr><tr><td>FaceDetection</td><td>0.5000</td><td>0.6058</td><td class="best">0.6924</td><td>SVM</td><td>0.1924</td><td>0.1969</td><td>19</td></tr><tr><td>FeetHands</td><td>0.5042</td><td>0.6505</td><td class="best">0.7026</td><td>HC2</td><td>0.1984</td><td>0.2058</td><td>20</td></tr><tr><td>ImaginedFeetHands</td><td>0.5003</td><td>0.6667</td><td class="best">0.6987</td><td>HC2</td><td>0.1984</td><td>0.2000</td><td>20</td></tr><tr><td>HandMovementDirection</td><td>0.4054</td><td>0.4189</td><td class="best">0.6081</td><td>CSP-SVM</td><td>0.2027</td><td>0.2973</td><td>20</td></tr><tr><td>LowCost</td><td>0.5000</td><td>0.6217</td><td class="best">0.7200</td><td>DrCIF</td><td>0.2200</td><td>0.2167</td><td>20</td></tr><tr><td>ImaginedOpenCloseFist</td><td>0.5005</td><td>0.7196</td><td class="best">0.7778</td><td>HC2</td><td>0.2772</td><td>0.2783</td><td>20</td></tr><tr><td>OpenCloseFist</td><td>0.5005</td><td>0.7315</td><td class="best">0.8217</td><td>EEGNet</td><td>0.3212</td><td>0.3212</td><td>20</td></tr><tr><td>MindReading</td><td>0.2312</td><td>0.3591</td><td class="best">0.6141</td><td>MiniROCKET</td><td>0.3828</td><td>0.4227</td><td>20</td></tr><tr class="saturated"><td>ButtonPress</td><td>0.5583</td><td>0.9500</td><td class="best">1.0000</td><td>Arsenal</td><td>0.4417</td><td>0.5583</td><td>15</td></tr><tr class="saturated"><td>Blink</td><td>0.5556</td><td>0.9511</td><td class="best">1.0000</td><td>HC2</td><td>0.4444</td><td>0.6711</td><td>20</td></tr><tr><td>SelfRegulationSCP1</td><td>0.5017</td><td>0.8430</td><td class="best">0.9488</td><td>MRHydra</td><td>0.4471</td><td>0.4266</td><td>20</td></tr></tbody></table></div><p class="note">One row per dataset. <strong>Default</strong> is the no-skill floor. <strong>Median</strong>, <strong>best</strong> and <strong>spread</strong> are over the other estimators, so the baseline cannot flatter them. <strong>Gain over baseline</strong> is best minus baseline, how much skill was found at all; <strong>spread</strong> is best minus worst, how much the choice of estimator mattered. The two answer different questions, and a single range would conflate them.</p><p class="note">4 of 30 datasets gained 0.05 or less over the baseline (shaded amber) and 2 have a best of 0.99 or more (shaded green). Both separate estimators poorly, for opposite reasons. Best is a maximum over many estimators, so it is optimistic by construction: read it as what the archive can currently do on a problem, not as what any one method delivers.</p></main><script>
+(function () {
+  var table = document.getElementById("leaderboard");
+  if (!table) return;
+  var body = table.tBodies[0];
+  var headers = table.querySelectorAll("th.sortable");
+
+  function value(row, index, text) {
+    var cell = row.cells[index];
+    if (!cell) return text ? "" : 0;
+    var raw = cell.textContent.trim();
+    if (text) return raw.toLowerCase();
+    var number = parseFloat(raw.replace(/,/g, ""));
+    return isNaN(number) ? 0 : number;
+  }
+
+  function sort(header) {
+    var index = parseInt(header.dataset.col, 10);
+    var isText = header.dataset.type === "text";
+    // repeat clicks toggle; a new column starts in its "best first" direction
+    var current = header.getAttribute("aria-sort");
+    var direction;
+    if (current === "ascending") direction = "descending";
+    else if (current === "descending") direction = "ascending";
+    else direction = header.dataset.first === "asc" ? "ascending" : "descending";
+
+    var sign = direction === "ascending" ? 1 : -1;
+    var rows = Array.prototype.slice.call(body.rows);
+    rows.sort(function (a, b) {
+      var x = value(a, index, isText);
+      var y = value(b, index, isText);
+      if (x < y) return -sign;
+      if (x > y) return sign;
+      return 0;
+    });
+    rows.forEach(function (row, i) {
+      body.appendChild(row);
+      // the position column always numbers the order actually on screen
+      if (row.cells[0]) row.cells[0].textContent = i + 1;
+    });
+
+    headers.forEach(function (other) { other.removeAttribute("aria-sort"); });
+    header.setAttribute("aria-sort", direction);
+  }
+
+  headers.forEach(function (header) {
+    header.tabIndex = 0;
+    header.addEventListener("click", function () { sort(header); });
+    header.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        sort(header);
+      }
+    });
+  });
+})();
+</script></body></html>

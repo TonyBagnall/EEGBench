@@ -1,7 +1,7 @@
 """The EEG classification archive: dataset lists and metadata.
 
 The archive includes the 30 problems published by Rushbrooke et al. (2026)
-and 52 additional local preparations. Use the supplied fixed train/test splits;
+and 55 additional local preparations. Use the supplied fixed train/test splits;
 some protocols intentionally share subjects and some older identity mappings
 remain incomplete. See docs/dataset-provenance.md for dataset-specific evidence.
 
@@ -21,13 +21,20 @@ does.
 
 __all__ = [
     "eegbench",
+    "eegbench_76",
     "eegbench_open",
     "eegbench_paper",
+    "excluded_archive",
     "local_only",
     "restricted",
     "DOMAINS",
+    "PROBLEM_FAMILIES",
+    "BCI_TYPES",
+    "PROBLEM_TYPE_TABS",
+    "STUDY_TAXONOMY",
     "metadata",
     "by_domain",
+    "by_type",
     "metadata_markdown",
 ]
 
@@ -38,6 +45,33 @@ DOMAINS = {
     "Med": "Medical",
     "BCI": "Brain-computer interface",
     "Psy": "Psychology",
+}
+
+#: Top-level problem families for the 76-problem scalp EEG study.
+PROBLEM_FAMILIES = {
+    "BCI": "Brain-computer interface",
+    "Clinical": "Clinical and physiological",
+    "Cognitive": "Cognitive and affective",
+}
+
+#: Sub-paradigms within the BCI family.
+BCI_TYPES = {
+    "MI": "Motor imagery and execution",
+    "ERP": "Event-related potentials (P300 / SCP)",
+    "VEP": "Visual evoked potentials (SSVEP / c-VEP)",
+    "Speech": "Decoded and imagined speech",
+}
+
+#: Ordered problem-type tabs used on the interactive leaderboard.
+PROBLEM_TYPE_TABS = {
+    "All": "All Scalp EEG",
+    "BCI": "BCI (All)",
+    "MI": "Motor Imagery",
+    "ERP": "ERP / P300",
+    "VEP": "VEP / SSVEP",
+    "Speech": "Speech BCI",
+    "Clinical": "Clinical",
+    "Cognitive": "Cognitive",
 }
 
 _COLUMNS = [
@@ -166,6 +200,12 @@ _TABLE += [('ImaginedHandsFeedback', 16, 2, 1250, 55, 6560, 2240, 250, 'BCI')]
 
 _TABLE += [('ImaginedHandsOnline', 28, 2, 1000, 10, 2123, 1519, 250, 'BCI'), ('ImaginedHandsCrossSession', 28, 2, 1000, 14, 2400, 960, 250, 'BCI'), ('ImaginedHandPupils', 32, 2, 3072, 30, 1150, 400, 512, 'BCI'), ('ImaginedHandsPhysiology', 64, 2, 1536, 52, 7880, 2640, 512, 'BCI'), ('ImaginedHandMusicTempo', 19, 2, 20000, 18, 1698, 643, 1000, 'BCI')]
 
+_TABLE += [('AlzheimersAuditory', 19, 3, 1000, 33, 2020, 1000, 250, 'Med')]
+
+_TABLE += [('ParkinsonsRestIowa', 60, 2, 2000, 149, 4598, 1306, 500, 'Med')]
+
+_TABLE += [('ParkinsonsRestUCSD', 32, 2, 2048, 31, 1126, 380, 512, 'Med')]
+
 _TABLE.sort(key=lambda row: row[0])
 
 #: Prepared locally; not registered for aeon's automatic archive downloads.
@@ -175,11 +215,101 @@ local_only = [row[0] for row in _TABLE if row[0] not in eegbench_paper]
 #: loaded through aeon. Results for them are still reported.
 restricted = ["FibroLiverpool", "FibroUEA"]
 
-#: All 82 prepared classification problems used by this repository.
+#: All 85 prepared classification problems used by this repository.
 eegbench = [row[0] for row in _TABLE]
 
 #: The 28 problems anyone can download, the same list as aeon's ``eeg2026``.
 eegbench_open = [name for name in eegbench_paper if name not in restricted]
+
+#: Problem-type assignment ``(family, bci_type)`` for the 76 selected scalp EEG
+#: classification problems. MEG (FaceDetection, HandMovementDirection,
+#: MatchWords, MindReading), ECoG (MotorImagery), and the four older excluded
+#: problems (Blink, ButtonPress, EpilepticSeizures, Sleep) remain in the 85-item
+#: archive registry above but are outside this study.
+STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
+    "ALSAttention": ("BCI", "ERP"),
+    "Alzheimers": ("Clinical", ""),
+    "AlzheimersAuditory": ("Clinical", ""),
+    "ArmCoordination": ("BCI", "MI"),
+    "ArmMovements": ("BCI", "MI"),
+    "ChildhoodSeizures": ("Clinical", ""),
+    "ClinicalSleepStages": ("Clinical", ""),
+    "CodedFlickerTargets": ("BCI", "VEP"),
+    "CodedSymbols": ("BCI", "VEP"),
+    "CovidSurvivors": ("Clinical", ""),
+    "EyesOpenShut": ("Cognitive", ""),
+    "FeedbackButton": ("Cognitive", ""),
+    "FeetHands": ("BCI", "MI"),
+    "FibroLiverpool": ("Clinical", ""),
+    "FibroUEA": ("Clinical", ""),
+    "FingerMovements": ("BCI", "MI"),
+    "FlickerAttention": ("BCI", "VEP"),
+    "FlickerSymbols": ("BCI", "VEP"),
+    "FlickerTargets": ("BCI", "VEP"),
+    "GameTargets": ("BCI", "ERP"),
+    "ImaginedAnkleRest": ("BCI", "MI"),
+    "ImaginedArmMovements": ("BCI", "MI"),
+    "ImaginedArmTasks": ("BCI", "MI"),
+    "ImaginedCommands": ("BCI", "Speech"),
+    "ImaginedFeetHands": ("BCI", "MI"),
+    "ImaginedGrasps": ("BCI", "MI"),
+    "ImaginedGripForce": ("BCI", "MI"),
+    "ImaginedHandFeetTongue": ("BCI", "MI"),
+    "ImaginedHandFootActions": ("BCI", "MI"),
+    "ImaginedHandGestures": ("BCI", "MI"),
+    "ImaginedHandMusicTempo": ("BCI", "MI"),
+    "ImaginedHandPupils": ("BCI", "MI"),
+    "ImaginedHandSides": ("BCI", "MI"),
+    "ImaginedHandTraining": ("BCI", "MI"),
+    "ImaginedHandsCrossSession": ("BCI", "MI"),
+    "ImaginedHandsEmbodiment": ("BCI", "MI"),
+    "ImaginedHandsFeedback": ("BCI", "MI"),
+    "ImaginedHandsFeet": ("BCI", "MI"),
+    "ImaginedHandsHaptics": ("BCI", "MI"),
+    "ImaginedHandsOnline": ("BCI", "MI"),
+    "ImaginedHandsPhysiology": ("BCI", "MI"),
+    "ImaginedHandsRobot": ("BCI", "MI"),
+    "ImaginedHandsStroke": ("BCI", "MI"),
+    "ImaginedLeftRightHand": ("BCI", "MI"),
+    "ImaginedLeftRightHandRest": ("BCI", "MI"),
+    "ImaginedOpenCloseFist": ("BCI", "MI"),
+    "ImaginedRightHandFeet": ("BCI", "MI"),
+    "ImaginedRightHandFeetRest": ("BCI", "MI"),
+    "InnerSpeech": ("BCI", "Speech"),
+    "LongIntervalTask": ("Clinical", ""),
+    "LowCost": ("BCI", "MI"),
+    "MatchingPennies": ("BCI", "MI"),
+    "MentalArithmetic": ("Cognitive", ""),
+    "NBackAudioCondition": ("Cognitive", ""),
+    "ObsessiveCompulsiveSymptoms": ("Clinical", ""),
+    "OpenCloseFist": ("BCI", "MI"),
+    "ParkinsonsPedalling": ("Clinical", ""),
+    "ParkinsonsRest": ("Clinical", ""),
+    "ParkinsonsRestIowa": ("Clinical", ""),
+    "ParkinsonsRestUCSD": ("Clinical", ""),
+    "PhotoStimulation": ("Clinical", ""),
+    "PronouncedSpeech": ("BCI", "Speech"),
+    "RestingEyeState": ("Cognitive", ""),
+    "SelfRegulationSCP1": ("BCI", "ERP"),
+    "SelfRegulationSCP2": ("BCI", "ERP"),
+    "ShortIntervalTask": ("Clinical", ""),
+    "SitStand": ("BCI", "MI"),
+    "SongFamiliarity": ("Cognitive", ""),
+    "SpellerFlashes": ("BCI", "ERP"),
+    "SymbolAttention": ("BCI", "ERP"),
+    "VideoEmotions": ("Cognitive", ""),
+    "VisualSpeech": ("BCI", "Speech"),
+    "VisualSubjects": ("BCI", "ERP"),
+    "WalkingTargets": ("BCI", "ERP"),
+    "WirelessFlicker": ("BCI", "VEP"),
+    "WordRelatedness": ("Cognitive", ""),
+}
+
+#: The 76 selected scalp EEG classification problems in the extended benchmark.
+eegbench_76 = sorted(STUDY_TAXONOMY)
+
+#: Registered archive problems excluded from the 76-problem scalp EEG study.
+excluded_archive = [name for name in eegbench if name not in STUDY_TAXONOMY]
 
 
 def metadata() -> pd.DataFrame:
@@ -188,8 +318,9 @@ def metadata() -> pd.DataFrame:
     Returns
     -------
     pd.DataFrame
-        Indexed by dataset name, with the columns of Table 1 and an ``open``
-        column saying whether the dataset can be downloaded.
+        Indexed by dataset name, with the columns of Table 1, availability
+        flags, and the 76-problem study taxonomy (``family``, ``bci_type``,
+        ``problem_type``, ``study_76``).
     """
     frame = pd.DataFrame(_TABLE, columns=_COLUMNS).set_index("dataset")
     frame["subjects"] = frame["subjects"].astype("Int64")
@@ -197,7 +328,17 @@ def metadata() -> pd.DataFrame:
     frame["frequency"] = frequency.astype("Int64") if (frequency.dropna() % 1 == 0).all() else frequency
     frame["open"] = frame.index.isin(eegbench_open)
     frame["published_benchmark"] = frame.index.isin(eegbench_paper)
-    frame["availability"] = ["local" if n in local_only else "restricted" if n in restricted else "aeon/Zenodo" for n in frame.index]
+    frame["availability"] = [
+        "local" if n in local_only else "restricted" if n in restricted else "aeon/Zenodo"
+        for n in frame.index
+    ]
+    frame["study_76"] = frame.index.isin(STUDY_TAXONOMY)
+    frame["family"] = [STUDY_TAXONOMY.get(n, ("", ""))[0] for n in frame.index]
+    frame["bci_type"] = [STUDY_TAXONOMY.get(n, ("", ""))[1] for n in frame.index]
+    frame["problem_type"] = [
+        bci if bci else (fam if fam else "Excluded")
+        for fam, bci in (STUDY_TAXONOMY.get(n, ("", "")) for n in frame.index)
+    ]
     return frame
 
 
@@ -225,17 +366,48 @@ def by_domain(domain: str, open_only: bool = False) -> list[str]:
     ]
 
 
+def by_type(problem_type: str = "All") -> list[str]:
+    """Return datasets from the 76-problem scalp EEG study by problem type.
+
+    Parameters
+    ----------
+    problem_type : str, default="All"
+        One of ``"All"`` (76), a top-level family (``"BCI"``, ``"Clinical"``,
+        ``"Cognitive"``), or a BCI sub-type (``"MI"``, ``"ERP"``, ``"VEP"``,
+        ``"Speech"``).
+
+    Returns
+    -------
+    list of str
+        Dataset names in alphabetical order.
+    """
+    if problem_type == "All":
+        return list(eegbench_76)
+    if problem_type in PROBLEM_FAMILIES:
+        return [
+            name for name in eegbench_76 if STUDY_TAXONOMY[name][0] == problem_type
+        ]
+    if problem_type in BCI_TYPES:
+        return [
+            name for name in eegbench_76 if STUDY_TAXONOMY[name][1] == problem_type
+        ]
+    valid = ", ".join(PROBLEM_TYPE_TABS)
+    raise ValueError(f"problem_type must be one of {valid}, not {problem_type!r}")
+
+
 def metadata_markdown() -> str:
     """Return the archive metadata as a Markdown table, for the documentation."""
     header = [
-        "Dataset", "Domain", "Channels", "Length", "Classes", "Subjects",
-        "Train", "Test", "Hz", "Availability",
+        "Dataset", "Domain", "Study type", "Channels", "Length", "Classes",
+        "Subjects", "Train", "Test", "Hz", "Availability",
     ]
     rows = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)]
     for name, row in metadata().iterrows():
+        study_type = "&mdash;" if row["problem_type"] == "Excluded" else row["problem_type"]
         cells = [
             name,
             row["domain"],
+            study_type,
             str(row["channels"]),
             str(row["length"]),
             str(row["classes"]),

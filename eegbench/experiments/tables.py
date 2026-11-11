@@ -38,6 +38,10 @@ __all__ = [
     "complete_estimators",
     "load_metric",
     "load_missing_reasons",
+    "compute_league_table",
+    "study_leaderboard_markdown",
+    "full_domain_tables_markdown",
+    "build_benchmark_site",
 ]
 
 import base64
@@ -49,7 +53,18 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from eegbench.experiments._dashboard import (
+    _build_payload,
+    compute_league_table,
+    full_domain_tables_markdown,
+    study_leaderboard_markdown,
+    write_interactive_leaderboard,
+    write_problem_explorer_page,
+    write_score_matrix_page,
+)
+
 DEFAULT_RESULTS_DIR = Path(__file__).resolve().parents[2] / "results" / "eegbench"
+PAPER_RESULTS_DIR = Path(__file__).resolve().parents[2] / "results" / "eegbench_paper_2026"
 
 #: A dataset whose best estimator gains no more than this over the baseline
 #: shows little signal; one whose best reaches SATURATED_BEST is solved.
@@ -81,12 +96,16 @@ def available_estimators(
     results_dir: Path | str = DEFAULT_RESULTS_DIR,
     exclude=(),
 ) -> list[str]:
-    """Return the estimators that have a results directory.
+    """Return the estimators present in ``results_dir``.
+
+    Supports both wide summary CSVs (``<results_dir>/<metric>.csv``) and
+    Multiverse per-estimator subdirectories (``<results_dir>/<estimator>/``).
 
     Parameters
     ----------
     results_dir : Path or str
-        Directory holding one sub-directory per estimator.
+        Directory holding wide summary CSVs and/or one sub-directory per
+        estimator.
     exclude : iterable of str, default=()
         Estimator names to leave out, for example a baseline such as
         ``"Default"`` that would otherwise take a place in the leaderboard.
@@ -94,20 +113,26 @@ def available_estimators(
     Returns
     -------
     list of str
-        Estimator names, sorted, case insensitively.
+        Estimator names, sorted case-insensitively.
     """
     results_dir = Path(results_dir)
     if not results_dir.is_dir():
         raise FileNotFoundError(f"results directory not found: {results_dir}")
     excluded = set(exclude)
-    return sorted(
-        (
-            path.name
-            for path in results_dir.iterdir()
-            if path.is_dir() and path.name not in excluded
-        ),
-        key=str.lower,
-    )
+    found: set[str] = {
+        path.name
+        for path in results_dir.iterdir()
+        if path.is_dir() and path.name not in excluded
+    }
+    for metric in METRIC_LABELS:
+        wide_path = results_dir / f"{metric}.csv"
+        if wide_path.is_file():
+            header = pd.read_csv(wide_path, index_col=0, nrows=0)
+            for col in header.columns:
+                name = str(col)
+                if name not in excluded:
+                    found.add(name)
+    return sorted(found, key=str.lower)
 
 
 def complete_estimators(
@@ -127,11 +152,13 @@ def complete_estimators(
     datasets : list of str
         Datasets that must all be present.
     estimators : list of str
-        Estimator names to check, matching their results directories.
+        Estimator names to check, matching their results directories or wide
+        CSV columns.
     metric : str, default="accuracy"
         Metric whose file is checked.
     results_dir : Path or str
-        Directory holding one sub-directory per estimator.
+        Directory holding wide summary CSVs and/or one sub-directory per
+        estimator.
 
     Returns
     -------
@@ -153,28 +180,46 @@ def load_metric(
 ) -> pd.Series:
     """Load one estimator's results for one metric.
 
+    Reads from ``<results_dir>/<metric>.csv`` when a wide summary table is
+    present and contains ``estimator``, falling back to the Multiverse
+    per-estimator file ``<results_dir>/<estimator>/<estimator>_<metric>.csv``.
+
     Parameters
     ----------
     estimator : str
-        Estimator name, matching its results directory.
+        Estimator name.
     metric : str
-        Metric name, matching the file suffix, for example ``"accuracy"``.
+        Metric name, matching the file suffix, for example ``"balacc"`` or
+        ``"accuracy"``.
     results_dir : Path or str
-        Directory holding one sub-directory per estimator.
+        Directory holding wide summary CSVs and/or one sub-directory per
+        estimator.
 
     Returns
     -------
     pd.Series
         Score per dataset, averaged over resamples where there is more than one.
-        Named after the estimator.
+        Named after the estimator, with missing datasets omitted.
     """
-    path = Path(results_dir) / estimator / f"{estimator}_{metric}.csv"
+    results_dir = Path(results_dir)
+    wide_path = results_dir / f"{metric}.csv"
+    if wide_path.is_file():
+        wide = pd.read_csv(wide_path, index_col=0)
+        if estimator in wide.columns:
+            series = wide[estimator].dropna().astype(float)
+            series.index = series.index.astype(str)
+            series.index.name = "dataset"
+            series.name = estimator
+            return series
+
+    path = results_dir / estimator / f"{estimator}_{metric}.csv"
     if not path.is_file():
         raise FileNotFoundError(f"no {metric} results for {estimator}: {path}")
 
     frame = pd.read_csv(path, index_col=0)
     series = frame.mean(axis=1)
     series.index = series.index.astype(str)
+    series.index.name = "dataset"
     series.name = estimator
     return series
 
@@ -497,18 +542,26 @@ def _load_all(estimators, metrics, results_dir) -> dict[str, pd.DataFrame]:
     """Load every requested metric for every estimator.
 
     Returns one frame per metric, indexed by dataset with one column per
-    estimator. A metric is skipped if any estimator lacks a file for it, so the
-    table never mixes different estimator sets across columns.
+    estimator. A metric is skipped if any estimator lacks a file/column for it,
+    so the table never mixes different estimator sets across columns.
     """
+    results_dir = Path(results_dir)
     frames = {}
     for metric in metrics:
+        wide_path = results_dir / f"{metric}.csv"
+        wide = pd.read_csv(wide_path, index_col=0) if wide_path.is_file() else None
+        if wide is not None:
+            wide.index = wide.index.astype(str)
         try:
-            frames[metric] = pd.DataFrame(
-                {
-                    estimator: load_metric(estimator, metric, results_dir)
-                    for estimator in estimators
-                }
-            )
+            cols: dict[str, pd.Series] = {}
+            for estimator in estimators:
+                if wide is not None and estimator in wide.columns:
+                    ser = wide[estimator].dropna().astype(float)
+                    ser.name = estimator
+                    cols[estimator] = ser
+                else:
+                    cols[estimator] = load_metric(estimator, metric, results_dir)
+            frames[metric] = pd.DataFrame(cols)
         except FileNotFoundError:
             continue
     if not frames:
@@ -1193,65 +1246,77 @@ def dataset_markdown(
     return "\n".join(rows)
 
 
-def main() -> None:
-    """Build the EEGBench leaderboards.
+def build_benchmark_site(
+    results_dir: Path | str = DEFAULT_RESULTS_DIR,
+    output_dir: Path | str | None = None,
+    render_cd: bool = True,
+) -> dict[str, Path]:
+    """Build the full interactive EEGBench HTML suite (leaderboard, matrix, datasets).
 
-    The main leaderboard requests all registered datasets. Prefer estimators
-    complete on the full collection; otherwise report available overlap and
-    missing results. A second page takes every
-    estimator, and so scores on the smaller set of datasets they all completed.
-    The Default baseline takes a place in both.
+    Parameters
+    ----------
+    results_dir : Path or str
+        Results directory holding wide summary CSVs (and optional ``Default``).
+    output_dir : Path or str or None
+        Target directory for ``leaderboard.html``, ``index.html``,
+        ``matrix.html``, and ``datasets.html``. Defaults to ``results_dir``.
+    render_cd : bool, default=True
+        Whether to pre-render critical difference diagrams for each problem-type
+        tab.
+
+    Returns
+    -------
+    dict of str -> Path
+        Paths of the written HTML files.
     """
-    from eegbench.datasets import eegbench
+    results_dir = Path(results_dir)
+    out_dir = results_dir if output_dir is None else Path(output_dir)
+    everything = available_estimators(results_dir)
+    frames = _load_all(everything, ["balacc", "accuracy", "auroc", "logloss"], results_dir)
 
-    datasets = sorted(eegbench)
-    everything = available_estimators()
-    estimators = complete_estimators(datasets, everything) or everything
-    partial = [name for name in everything if name not in estimators]
-    print(f"complete: {', '.join(estimators)}")
-    print(f"partial:  {', '.join(partial)}")
-
-    path = leaderboard(
-        datasets,
-        estimators,
-        sort_by="accuracy",
-        title="EEGBench leaderboard",
+    payload = _build_payload(
+        frames,
+        cd_png_fn=_critical_difference_png if render_cd else None,
+        cd_top_k=10,
     )
-    print(f"wrote {path}")
+    lb_path = write_interactive_leaderboard(payload, out_dir / "leaderboard.html", also_index=True)
+    mx_path = write_score_matrix_page(payload, out_dir / "matrix.html")
+    ds_path = write_problem_explorer_page(payload, out_dir / "datasets.html")
+    return {
+        "leaderboard": lb_path,
+        "index": out_dir / "index.html",
+        "matrix": mx_path,
+        "datasets": ds_path,
+    }
 
-    if partial:
-        path = leaderboard(
-            datasets,
-            everything,
-            sort_by="accuracy",
-            title="EEGBench leaderboard: all estimators",
-            output_path=DEFAULT_RESULTS_DIR / "leaderboard_all.html",
-        )
-        print(f"wrote {path}")
 
-    datasets_path = dataset_page(
-        datasets,
-        everything,
-        metric="accuracy",
-        title="EEGBench datasets: accuracy",
+def main() -> None:
+    """Build the interactive EEGBench dashboard and synchronise Markdown tables."""
+    everything = available_estimators(DEFAULT_RESULTS_DIR)
+    frames = _load_all(
+        everything, ["balacc", "accuracy", "auroc", "logloss"], DEFAULT_RESULTS_DIR
     )
-    print(f"wrote {datasets_path}")
+    paths = build_benchmark_site(DEFAULT_RESULTS_DIR)
+    for key, path in paths.items():
+        print(f"wrote {key:12s}: {path}")
 
-    table = leaderboard_markdown(datasets, estimators, sort_by="accuracy")
     readme = Path(__file__).resolve().parents[2] / "README.md"
-    if write_markdown_table(readme, table):
-        print(f"updated the table in {readme}")
-    else:
-        print(f"no LEADERBOARD markers in {readme}; Markdown table not written")
+    readme_md = study_leaderboard_markdown(frames, top_n=15, min_coverage_ratio=0.8)
+    if write_markdown_table(readme, readme_md, marker="LEADERBOARD"):
+        print(f"updated LEADERBOARD block in {readme}")
 
-    # The documentation tables are written from the same metadata the code uses.
     from eegbench.datasets import metadata_markdown
     from eegbench.estimators import estimator_markdown
 
     docs = readme.parent / "docs"
+    if (docs / "leaderboard.md").is_file():
+        domain_md = full_domain_tables_markdown(frames, top_n=15, min_coverage_ratio=0.8)
+        if write_markdown_table(docs / "leaderboard.md", domain_md, marker="LEADERBOARD_BY_TYPE"):
+            print(f"updated LEADERBOARD_BY_TYPE block in {docs / 'leaderboard.md'}")
+
     write_markdown_table(docs / "datasets.md", metadata_markdown(), marker="DATASETS")
     write_markdown_table(
-        docs / "evaluation.md", estimator_markdown(), marker="ESTIMATORS"
+        docs / "evaluation.md", estimator_markdown(active_only=True), marker="ESTIMATORS"
     )
 
 

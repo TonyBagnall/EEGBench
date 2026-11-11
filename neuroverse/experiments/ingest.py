@@ -3,7 +3,7 @@
 Two result layouts are supported across the repository:
 
 1. **Wide summary layout** (default in ``results/neuroverse`` for the 76-problem,
-   90-classifier study)::
+   72-classifier study, storing all 90 evaluated configurations)::
 
        results/neuroverse/accuracy.csv
        results/neuroverse/balacc.csv

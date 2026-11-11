@@ -195,11 +195,13 @@ def test_study_76_taxonomy_partitions_selected_problems():
 
 
 def test_bakeoff_estimators_metadata_contract():
-    """Every active bake-off estimator maps to a valid paradigm and tsml-eval family."""
+    """The 90 configurations partition into 72 distinct canonical classifiers and 18 variants."""
     from neuroverse.estimators import (
         BAKEOFF_ESTIMATORS,
+        CANONICAL_ESTIMATORS,
         PARADIGMS,
         TSML_FAMILIES,
+        VARIANT_ESTIMATORS,
         estimator_info,
         estimator_table,
     )
@@ -209,7 +211,15 @@ def test_bakeoff_estimators_metadata_contract():
     assert set(active_table["paradigm"]) <= set(PARADIGMS)
     assert set(active_table["tsml_family"]) <= set(TSML_FAMILIES)
 
+    assert len(CANONICAL_ESTIMATORS) + len(VARIANT_ESTIMATORS) == len(BAKEOFF_ESTIMATORS)
+    assert set(CANONICAL_ESTIMATORS).isdisjoint(VARIANT_ESTIMATORS)
+    canonical_bases = [estimator_info(name)["base_method"] for name in CANONICAL_ESTIMATORS]
+    assert len(canonical_bases) == len(set(canonical_bases)) == 72
+    assert set(active_table["base_method"]) == set(canonical_bases)
+
     for base_fm in ("CBraMod", "LaBraM"):
+        assert estimator_info(base_fm)["is_canonical"]
         assert not estimator_info(base_fm)["is_ablation"]
         assert estimator_info(f"{base_fm}-random")["is_ablation"]
+        assert not estimator_info(f"{base_fm}-random")["is_canonical"]
         assert estimator_info(base_fm)["base_method"] == estimator_info(f"{base_fm}-random")["base_method"]

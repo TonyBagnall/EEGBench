@@ -21,6 +21,8 @@ __all__ = [
     "ESTIMATORS",
     "ESTIMATOR_METADATA",
     "BAKEOFF_ESTIMATORS",
+    "CANONICAL_ESTIMATORS",
+    "VARIANT_ESTIMATORS",
     "FAMILIES",
     "PARADIGMS",
     "TSML_FAMILIES",
@@ -66,17 +68,42 @@ TSML_FAMILIES = {
     "Tabular": "Flattened-channel standard tabular classifiers",
 }
 
+# Non-canonical preprocessing, tree-count, or ablation variants among the 90 columns
+# (leaving 72 canonical distinct classifiers in CANONICAL_ESTIMATORS).
+_NON_CANONICAL_BAKEOFF: frozenset[str] = frozenset(
+    {
+        "HC2-noTDE-500-pc",
+        "DrCIF",
+        "CBraMod-random",
+        "LaBraM-random",
+        "CSP+LDA",
+        "CSP+LDA-BP140",
+        "CSP+LDA-BP830",
+        "CSP+SVM",
+        "CSP+SVM-BP140",
+        "CSP+SVM-BP830",
+        "XDAWN",
+        "RiemannianMDM",
+        "RiemannianMDM-OAS",
+        "RiemannianMDM-OAS-BP140",
+        "RiemannianMDM-OAS-BP830",
+        "RiemannianKNN",
+        "RiemannianKNN-OAS",
+        "RiemannianKNN-OAS-BP830",
+    }
+)
+
 # Tuple schema:
 #   (paradigm, tsml_family, legacy_family, base_method, library, is_ablation, in_bakeoff, description)
 _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
-    # --- General TSML (13 active + 5 legacy paper entries) ---
+    # --- General TSML (11 distinct classifiers; 13 configurations + 5 legacy paper entries) ---
     "HC2-500-pc": (
         "TSML", "Hybrid", "TSML", "HC2", "aeon", False, True,
         "HIVE-COTE v2.0 (500-tree DrCIF, per-channel hybrid configuration)",
     ),
     "HC2-noTDE-500-pc": (
-        "TSML", "Hybrid", "TSML", "HC2", "aeon", False, True,
-        "HIVE-COTE v2.0 without TDE (Arsenal + DrCIF-500 + STC)",
+        "TSML", "Hybrid", "TSML", "HC2", "aeon", True, True,
+        "HIVE-COTE v2.0 without TDE ablation (Arsenal + DrCIF-500 + STC)",
     ),
     "Arsenal": (
         "TSML", "ConvolutionBased", "TSML", "Arsenal", "aeon", False, True,
@@ -309,11 +336,11 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "MOABB standard Common Spatial Patterns + SVM pipeline",
     ),
     "DE-LR": (
-        "EEG-Classical", "FeatureBased", "EEG", "DifferentialEntropy", "aeon-neuro", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "DE+LR", "aeon-neuro", False, True,
         "Canonical sub-band Differential Entropy spectral features + Logistic Regression",
     ),
     "DE-SVM": (
-        "EEG-Classical", "FeatureBased", "EEG", "DifferentialEntropy", "aeon-neuro", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "DE+SVM", "aeon-neuro", False, True,
         "Canonical sub-band Differential Entropy spectral features + RBF SVM",
     ),
     "DLCSP-shLDA-MOABB": (
@@ -325,11 +352,11 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "Filter-Bank Common Spatial Patterns + mutual-information selection + SVM",
     ),
     "LogVar-LDA-MOABB": (
-        "EEG-Classical", "FeatureBased", "EEG", "LogVariance", "aeon-neuro (MOABB)", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "LogVar+LDA", "aeon-neuro (MOABB)", False, True,
         "Per-channel log-variance features + shrinkage LDA",
     ),
     "LogVar-SVM-MOABB": (
-        "EEG-Classical", "FeatureBased", "EEG", "LogVariance", "aeon-neuro (MOABB)", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "LogVar+SVM", "aeon-neuro (MOABB)", False, True,
         "Per-channel log-variance features + SVM",
     ),
     "TRCSP-LDA-MOABB": (
@@ -337,31 +364,31 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "Tikhonov-Regularised Common Spatial Patterns + LDA (binary tasks)",
     ),
     "TSEN-MOABB": (
-        "EEG-Classical", "FeatureBased", "EEG", "TangentSpace", "aeon-neuro (MOABB)", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "TSEN-MOABB", "aeon-neuro (MOABB)", False, True,
         "Riemannian covariance tangent-space projection + ElasticNet logistic regression",
     ),
     "TSLR-MOABB": (
-        "EEG-Classical", "FeatureBased", "EEG", "TangentSpace", "aeon-neuro (MOABB)", False, True,
-        "Riemannian covariance tangent-space projection + L2 Logistic Regression",
+        "EEG-Classical", "FeatureBased", "EEG", "TSLR-MOABB", "aeon-neuro (MOABB)", False, True,
+        "MOABB Riemannian covariance tangent-space projection + L2 Logistic Regression",
     ),
     "TSLR-NB": (
-        "EEG-Classical", "FeatureBased", "EEG", "TangentSpace", "aeon-neuro (PyRiemann)", False, True,
-        "OAS-regularised SPD tangent-space projection + Logistic Regression",
+        "EEG-Classical", "FeatureBased", "EEG", "TSLR-NB", "aeon-neuro (NeuralBench)", False, True,
+        "NeuralBench CovTsLR baseline (OAS covariance + tangent space + LogisticRegressionCV)",
     ),
     "TSSVM-MOABB": (
-        "EEG-Classical", "FeatureBased", "EEG", "TangentSpace", "aeon-neuro (MOABB)", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "TSSVM-MOABB", "aeon-neuro (MOABB)", False, True,
         "Riemannian covariance tangent-space projection + linear SVM",
     ),
     "XDAWN": (
-        "EEG-Classical", "FeatureBased", "EEG", "xDAWN", "aeon-neuro (MNE + sklearn)", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "xDAWN+LDA", "aeon-neuro (MNE + sklearn)", False, True,
         "xDAWN evoked-potential spatial filtering + vectorised LDA",
     ),
     "xDAWN-LDA-MOABB": (
-        "EEG-Classical", "FeatureBased", "EEG", "xDAWN", "aeon-neuro (MOABB)", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "xDAWN+LDA", "aeon-neuro (MOABB)", False, True,
         "MOABB xDAWN spatial filtering + shrinkage LDA",
     ),
     "XdawnCov-TS-SVM-MOABB": (
-        "EEG-Classical", "FeatureBased", "EEG", "xDAWNCov", "aeon-neuro (MOABB)", False, True,
+        "EEG-Classical", "FeatureBased", "EEG", "xDAWNCov+TS-SVM", "aeon-neuro (MOABB)", False, True,
         "xDAWN template-augmented block covariance + tangent-space SVM",
     ),
 
@@ -419,7 +446,7 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "6-40 Hz pass + Task-Related Component Analysis spatial filter correlation",
     ),
     "XdawnCov-MDM-MOABB": (
-        "EEG-Classical", "DistanceBased", "EEG", "xDAWNCov", "aeon-neuro (MOABB)", False, True,
+        "EEG-Classical", "DistanceBased", "EEG", "xDAWNCov+MDM", "aeon-neuro (MOABB)", False, True,
         "xDAWN template-augmented block covariance + Riemannian MDM",
     ),
 
@@ -494,6 +521,7 @@ ESTIMATOR_METADATA: dict[str, dict[str, object]] = {
         "base_method": base,
         "library": lib,
         "is_ablation": is_abl,
+        "is_canonical": bool(in_bo and name not in _NON_CANONICAL_BAKEOFF),
         "in_bakeoff": in_bo,
         "description": desc,
     }
@@ -506,9 +534,25 @@ ESTIMATORS: dict[str, tuple[str, str, str]] = {
     for name, (_, _, leg_fam, _, lib, _, _, desc) in _REGISTRY.items()
 }
 
-#: The 90 classifiers evaluated in the extended scalp EEG benchmark.
+#: All 90 classifier configurations stored in the wide result CSVs.
 BAKEOFF_ESTIMATORS: list[str] = sorted(
     (name for name, meta in ESTIMATOR_METADATA.items() if meta["in_bakeoff"]),
+    key=str.lower,
+)
+
+#: The 72 distinct canonical classifiers ranked on the primary leaderboard.
+CANONICAL_ESTIMATORS: list[str] = sorted(
+    (name for name, meta in ESTIMATOR_METADATA.items() if meta["is_canonical"]),
+    key=str.lower,
+)
+
+#: The 18 preprocessing, tree-count, and random-weight ablation variants.
+VARIANT_ESTIMATORS: list[str] = sorted(
+    (
+        name
+        for name, meta in ESTIMATOR_METADATA.items()
+        if meta["in_bakeoff"] and not meta["is_canonical"]
+    ),
     key=str.lower,
 )
 
@@ -540,6 +584,7 @@ def estimator_info(name: str) -> dict[str, object]:
             "base_method": "Default",
             "library": "tsml-eval",
             "is_ablation": False,
+            "is_canonical": False,
             "in_bakeoff": False,
             "description": "Constant majority-class test floor",
         }
@@ -551,6 +596,7 @@ def estimator_info(name: str) -> dict[str, object]:
         "base_method": name,
         "library": "custom",
         "is_ablation": name.endswith("-random"),
+        "is_canonical": not name.endswith("-random"),
         "in_bakeoff": False,
         "description": name,
     }
@@ -570,13 +616,18 @@ def estimator_table(active_only: bool = False) -> pd.DataFrame:
 
 def estimator_markdown(active_only: bool = True) -> str:
     """Return the estimator metadata as a Markdown table, for the documentation."""
-    header = ["Estimator", "Paradigm", "tsml-eval Family", "Library", "Description"]
+    header = ["Estimator", "Role", "Paradigm", "tsml-eval Family", "Library", "Description"]
     rows = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)]
     names = BAKEOFF_ESTIMATORS if active_only else list(ESTIMATOR_METADATA)
     for name in names:
         meta = ESTIMATOR_METADATA[name]
+        role = (
+            "Primary (72)"
+            if meta["is_canonical"]
+            else ("Ablation / Control" if meta["is_ablation"] else "Preprocessing Variant")
+        )
         rows.append(
-            f"| `{name}` | {meta['paradigm_label']} | {meta['tsml_family']} "
+            f"| `{name}` | {role} | {meta['paradigm_label']} | {meta['tsml_family']} "
             f"| {meta['library']} | {meta['description']} |"
         )
     return "\n".join(rows)

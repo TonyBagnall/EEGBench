@@ -5,11 +5,12 @@ visual design inspired by modern ML benchmark suites (such as ``eeg.fm``):
 
 - ``leaderboard.html`` (and ``index.html``): algorithm leaderboard across all
   76 scalp EEG problems and split by problem type (BCI, Motor Imagery, ERP,
-  VEP, Speech, Clinical, Cognitive), with paradigm filter pills, coverage-block
-  controls, architecture deduplication, and critical difference diagrams.
-- ``matrix.html``: interactive 76-problem by 90-algorithm heatmap score matrix
-  grouped by problem type and algorithm paradigm, with metric switching,
-  row-normalised or baseline-gain shading, and per-cell multi-metric tooltips.
+  VEP, Speech, Clinical, Cognitive), ranking the 72 distinct canonical
+  classifiers by default with an option to include all 90 configurations.
+- ``matrix.html``: interactive 76-problem by 72-classifier (or 90-configuration)
+  heatmap score matrix grouped by problem type and algorithm paradigm, with
+  metric switching, row-normalised or baseline-gain shading, and per-cell
+  multi-metric tooltips.
 - ``datasets.html``: interactive problem explorer showing test-majority floor,
   median, ceiling, winning algorithm, gain over baseline, and completion count.
 """
@@ -47,6 +48,7 @@ def compute_league_table(
     min_coverage_ratio: float = 0.8,
     mode: str = "common_block",
     exclude: tuple[str, ...] = ("Default",),
+    canonical_only: bool = False,
 ) -> tuple[pd.DataFrame, list[str]]:
     """Compute an algorithm league table on ``datasets``.
 
@@ -70,14 +72,19 @@ def compute_league_table(
           and normalising ranks to ``[1, M]``.
     exclude : tuple of str, default=("Default",)
         Estimator columns to exclude from the competitive league.
+    canonical_only : bool, default=False
+        When True, restrict the league to the 72 canonical distinct classifiers
+        (excluding non-canonical preprocessing, tree-count, and random-weight
+        ablation variants).
 
     Returns
     -------
     table : pd.DataFrame
         Ranked summary table with columns ``position``, ``estimator``,
         ``paradigm``, ``paradigm_label``, ``tsml_family``, ``base_method``,
-        ``is_ablation``, ``coverage``, ``scope_problems``, ``common_problems``,
-        ``mean_rank``, ``wins``, ``top5``, and one column per available metric.
+        ``is_ablation``, ``is_canonical``, ``coverage``, ``scope_problems``,
+        ``common_problems``, ``mean_rank``, ``wins``, ``top5``, and one column
+        per available metric.
     common : list of str
         Problems in the shared evaluation block (all scoped problems with at
         least one score when ``mode="available"``).
@@ -87,7 +94,11 @@ def compute_league_table(
 
     excluded = set(exclude)
     primary = frames[primary_metric].reindex(datasets)
-    keep_cols = [c for c in primary.columns if c not in excluded]
+    keep_cols = [
+        c
+        for c in primary.columns
+        if c not in excluded and (not canonical_only or bool(estimator_info(c)["is_canonical"]))
+    ]
     primary = primary[keep_cols]
 
     n_scope = len(datasets)
@@ -163,6 +174,7 @@ def compute_league_table(
             "base_method": info["base_method"],
             "library": info["library"],
             "is_ablation": bool(info["is_ablation"]),
+            "is_canonical": bool(info["is_canonical"]),
             "description": info["description"],
             "coverage": int(coverage[est]),
             "scope_problems": n_scope,
@@ -189,10 +201,15 @@ def study_leaderboard_markdown(
     frames: dict[str, pd.DataFrame],
     top_n: int = 15,
     min_coverage_ratio: float = 0.8,
+    canonical_only: bool = True,
 ) -> str:
     """Build the concise Overall + By-Problem-Type Markdown summary for README.md."""
     overall, common_all = compute_league_table(
-        neuroverse_76, frames, primary_metric="balacc", min_coverage_ratio=min_coverage_ratio
+        neuroverse_76,
+        frames,
+        primary_metric="balacc",
+        min_coverage_ratio=min_coverage_ratio,
+        canonical_only=canonical_only,
     )
     if overall.empty:
         return "No common-block results available."
@@ -254,17 +271,23 @@ def study_leaderboard_markdown(
             f"| {auroc_txt} | {ll_txt} | {int(row['wins'])} |"
         )
 
+    total_pool = sum(
+        1
+        for c in frames["balacc"].columns
+        if c != "Default" and (not canonical_only or bool(estimator_info(c)["is_canonical"]))
+    )
+    pool_noun = "distinct classifiers" if canonical_only else "configurations"
     min_cov_all = math.ceil(min_coverage_ratio * len(neuroverse_76))
     lines.extend(
         [
             "",
-            f"*{len(overall)} of 90 algorithms meet &ge;80% coverage ({min_cov_all}/76 problems), "
+            f"*{len(overall)} of {total_pool} {pool_noun} meet &ge;80% coverage ({min_cov_all}/76 problems), "
             f"evaluated on their {len(common_all)} shared completed problems (resample 0, ordered by "
             "mean balanced-accuracy rank).*",
             "",
             "#### Leaderboard by Problem Type",
             "",
-            "| Problem Type | Problems (Common) | #1 Overall | #2 Overall | #3 Overall | Best EEG-Specific Algorithm |",
+            "| Problem Type | Problems (Common) | #1 Overall | #2 Overall | #3 Overall | Best EEG-Specific Classifier |",
             "|---|---:|---|---|---|---|",
         ]
     )
@@ -272,7 +295,11 @@ def study_leaderboard_markdown(
     for tab_key, tab_label in PROBLEM_TYPE_TABS.items():
         probs = by_type(tab_key)
         tbl, com = compute_league_table(
-            probs, frames, primary_metric="balacc", min_coverage_ratio=min_coverage_ratio
+            probs,
+            frames,
+            primary_metric="balacc",
+            min_coverage_ratio=min_coverage_ratio,
+            canonical_only=canonical_only,
         )
         if tbl.empty:
             continue
@@ -301,22 +328,27 @@ def full_domain_tables_markdown(
     frames: dict[str, pd.DataFrame],
     top_n: int = 15,
     min_coverage_ratio: float = 0.8,
+    canonical_only: bool = True,
 ) -> str:
     """Build per-domain Top-N Markdown tables for ``docs/leaderboard.md``."""
     blocks: list[str] = []
     for tab_key, tab_label in PROBLEM_TYPE_TABS.items():
         probs = by_type(tab_key)
         tbl, com = compute_league_table(
-            probs, frames, primary_metric="balacc", min_coverage_ratio=min_coverage_ratio
+            probs,
+            frames,
+            primary_metric="balacc",
+            min_coverage_ratio=min_coverage_ratio,
+            canonical_only=canonical_only,
         )
         if tbl.empty:
             continue
         min_cov = math.ceil(min_coverage_ratio * len(probs))
         blocks.extend(
             [
-                f"### {tab_label} ({len(probs)} problems; {len(com)} common; {len(tbl)} algorithms &ge;{min_cov}/{len(probs)})",
+                f"### {tab_label} ({len(probs)} problems; {len(com)} common; {len(tbl)} classifiers &ge;{min_cov}/{len(probs)})",
                 "",
-                "| # | Algorithm | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |",
+                "| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |",
                 "|---:|---|---|---:|---:|---:|---:|---:|---:|",
             ]
         )
@@ -374,6 +406,7 @@ def _build_payload(
                 "base_method": info["base_method"],
                 "library": info["library"],
                 "is_ablation": bool(info["is_ablation"]),
+                "is_canonical": bool(info["is_canonical"]),
                 "description": info["description"],
             }
         )
@@ -408,7 +441,13 @@ def _build_payload(
         probs = by_type(tab_key)
         tabs_meta.append({"key": tab_key, "label": tab_label, "datasets": probs})
         if cd_png_fn is not None:
-            tbl, com = compute_league_table(probs, frames, primary_metric="balacc", min_coverage_ratio=0.8)
+            tbl, com = compute_league_table(
+                probs,
+                frames,
+                primary_metric="balacc",
+                min_coverage_ratio=0.8,
+                canonical_only=True,
+            )
             if not tbl.empty and len(com) >= 2:
                 top_ests = list(tbl["estimator"].head(cd_top_k))
                 cd_scores = frames["balacc"].loc[com, top_ests]
@@ -992,7 +1031,7 @@ def _topbar_html(active_page: str) -> str:
         '<span class="brand-mark">NV</span>'
         '<span>Neuroverse</span>'
         '</a>'
-        '<span class="brand-tag">76 Scalp EEG Problems &middot; 90 Algorithms</span>'
+        '<span class="brand-tag">76 Scalp EEG Problems &middot; 72 Classifiers</span>'
         "</div>"
         f'<nav class="nav-links">{nav}'
         '<button type="button" class="theme-btn" id="themeToggle" title="Switch colour theme">Theme</button>'
@@ -1083,7 +1122,7 @@ def write_interactive_leaderboard(
 <main class="container">
   <section class="hero">
     <h1>EEG Classification Algorithm Leaderboard</h1>
-    <p>Systematic comparison of 90 general time-series, classical Riemannian/spatial-filtering, supervised EEG neural, and pretrained EEG foundation algorithms across 76 scalp EEG classification problems (fixed train/test resample 0).</p>
+    <p>Systematic comparison of 72 distinct classification algorithms (90 total configurations including band-pass and random-weight controls) across 76 scalp EEG classification problems (fixed train/test resample 0).</p>
   </section>
 
   <div class="tab-strip" id="tabStrip" role="tablist"></div>
@@ -1104,11 +1143,10 @@ def write_interactive_leaderboard(
         <option value="block80" selected>Common Block (&ge;80% coverage)</option>
         <option value="block90">Common Block (&ge;90% coverage)</option>
         <option value="block100">Complete Only (100% coverage)</option>
-        <option value="available">All Available (All 90 &middot; normalised rank)</option>
+        <option value="available">All Available (No coverage gate &middot; normalised rank)</option>
       </select>
-      <label class="chk"><input type="checkbox" id="hideAblation"> Hide <code>-random</code> controls</label>
-      <label class="chk"><input type="checkbox" id="dedupBase"> Best per base architecture</label>
-      <input type="search" class="ctrl" id="searchInput" placeholder="Search algorithm or library...">
+      <label class="chk"><input type="checkbox" id="includeVariants"> Include 18 variants &amp; controls (all 90 configs)</label>
+      <input type="search" class="ctrl" id="searchInput" placeholder="Search classifier or library...">
       <button type="button" class="action-btn" id="exportLbCsv">Export CSV</button>
     </div>
   </div>
@@ -1161,8 +1199,7 @@ def write_interactive_leaderboard(
     paradigm: "ALL",
     family: "ALL",
     mode: "block80",
-    hideAblation: false,
-    dedupBase: false,
+    includeVariants: false,
     search: "",
     sortBy: "mean_rank",
     sortDir: "asc"
@@ -1235,11 +1272,8 @@ def write_interactive_leaderboard(
   var modeSel = document.getElementById("modeSelect");
   modeSel.addEventListener("change", function() {{ state.mode = modeSel.value; render(); }});
 
-  document.getElementById("hideAblation").addEventListener("change", function(e) {{
-    state.hideAblation = e.target.checked; render();
-  }});
-  document.getElementById("dedupBase").addEventListener("change", function(e) {{
-    state.dedupBase = e.target.checked; render();
+  document.getElementById("includeVariants").addEventListener("change", function(e) {{
+    state.includeVariants = e.target.checked; render();
   }});
   document.getElementById("searchInput").addEventListener("input", function(e) {{
     state.search = e.target.value.trim().toLowerCase(); render();
@@ -1282,7 +1316,7 @@ def write_interactive_leaderboard(
     return {{ ranks: ranks, count: present.length, maxVal: present.length ? present[0].v : null }};
   }}
 
-  function computeLeague(tabObj) {{
+  function computeLeague(tabObj, includeAll) {{
     var dIdxs = tabObj.datasets.map(function(n) {{ return dsIndex[n]; }});
     var nScope = dIdxs.length;
     var nEst = DATA.estimators.length;
@@ -1303,10 +1337,13 @@ def write_interactive_leaderboard(
     var minCov = isAvail ? 1 : Math.ceil(ratio * nScope);
 
     var panel = [];
+    var nPool = 0;
     for (var j2 = 0; j2 < nEst; j2++) {{
+      if (!includeAll && !DATA.estimators[j2].is_canonical) continue;
+      nPool++;
       if (cov[j2] >= minCov) panel.push(j2);
     }}
-    if (!panel.length) return {{ rows: [], byName: {{}}, nScope: nScope, nCommon: 0, minCov: minCov, nAdmitted: 0 }};
+    if (!panel.length) return {{ rows: [], byName: {{}}, nScope: nScope, nCommon: 0, minCov: minCov, nAdmitted: 0, nPool: nPool }};
 
     var evalRows = [];
     for (var r2 = 0; r2 < dIdxs.length; r2++) {{
@@ -1325,7 +1362,7 @@ def write_interactive_leaderboard(
         if (all) evalRows.push(di);
       }}
     }}
-    if (!evalRows.length) return {{ rows: [], byName: {{}}, nScope: nScope, nCommon: 0, minCov: minCov, nAdmitted: panel.length }};
+    if (!evalRows.length) return {{ rows: [], byName: {{}}, nScope: nScope, nCommon: 0, minCov: minCov, nAdmitted: panel.length, nPool: nPool }};
 
     var mPanel = panel.length;
     var sumRank = new Array(mPanel).fill(0);
@@ -1399,7 +1436,8 @@ def write_interactive_leaderboard(
       nScope: nScope,
       nCommon: evalRows.length,
       minCov: minCov,
-      nAdmitted: mPanel
+      nAdmitted: mPanel,
+      nPool: nPool
     }};
   }}
 
@@ -1436,8 +1474,9 @@ def write_interactive_leaderboard(
 
     var domBars = '<h3 style="margin:0 0 0.4rem;font-size:0.95rem">Rank &amp; Balanced Accuracy by Problem Type</h3>' +
       '<div class="dom-bar-grid">';
+    var modalIncAll = state.includeVariants || !meta.is_canonical;
     DATA.tabs.forEach(function(t) {{
-      var lg = computeLeague(t);
+      var lg = computeLeague(t, modalIncAll);
       var rec = lg.byName[meta.name];
       if (rec) {{
         var pct = Math.max(4, Math.min(100, Math.round(100.0 * (rec.balacc || 0))));
@@ -1470,6 +1509,7 @@ def write_interactive_leaderboard(
       var rowBa = DATA.scores.balacc[ri];
       var cnt = 0, better = 0;
       for (var k = 0; k < rowBa.length; k++) {{
+        if (!modalIncAll && !DATA.estimators[k].is_canonical) continue;
         if (rowBa[k] !== null) {{
           cnt++;
           if (rowBa[k] > ba + 1e-12) better++;
@@ -1517,13 +1557,13 @@ def write_interactive_leaderboard(
 
   function render() {{
     var tabObj = tabByKey[state.tab] || DATA.tabs[0];
-    var league = computeLeague(tabObj);
+    var league = computeLeague(tabObj, state.includeVariants);
     var allRows = league.rows;
 
     var domLeagues = {{}};
     if (state.view === "domains") {{
       DOMAIN_COLS.forEach(function(dk) {{
-        if (tabByKey[dk]) domLeagues[dk] = computeLeague(tabByKey[dk]);
+        if (tabByKey[dk]) domLeagues[dk] = computeLeague(tabByKey[dk], state.includeVariants);
       }});
       allRows.forEach(function(r) {{
         DOMAIN_COLS.forEach(function(dk) {{
@@ -1544,10 +1584,11 @@ def write_interactive_leaderboard(
       return r.meta.paradigm === "EEG-FM" && !r.meta.is_ablation;
     }})[0] || null;
 
+    var poolLabel = state.includeVariants ? "configurations" : "distinct classifiers";
     var kpiHtml = "";
     kpiHtml += '<div class="kpi-card"><div class="kpi-label">Evaluation Scope</div>' +
       '<div class="kpi-value">' + league.nScope + ' Problems <span class="brand-tag">' + league.nCommon + ' shared</span></div>' +
-      '<div class="kpi-sub">' + league.nAdmitted + ' of ' + DATA.estimators.length + ' algorithms admitted (min ' + league.minCov + '/' + league.nScope + ')</div></div>';
+      '<div class="kpi-sub">' + league.nAdmitted + ' of ' + league.nPool + ' ' + poolLabel + ' admitted (min ' + league.minCov + '/' + league.nScope + ')</div></div>';
 
     if (leader) {{
       kpiHtml += '<div class="kpi-card"><div class="kpi-label">#1 Overall on ' + esc(tabObj.label) + '</div>' +
@@ -1583,23 +1624,12 @@ def write_interactive_leaderboard(
     var filtered = allRows.filter(function(r) {{
       if (state.paradigm !== "ALL" && r.meta.paradigm !== state.paradigm) return false;
       if (state.family !== "ALL" && r.meta.tsml_family !== state.family) return false;
-      if (state.hideAblation && r.meta.is_ablation) return false;
       if (state.search) {{
         var hay = (r.name + " " + r.meta.paradigm_label + " " + r.meta.tsml_family + " " + r.meta.library + " " + r.meta.description).toLowerCase();
         if (hay.indexOf(state.search) === -1) return false;
       }}
       return true;
     }});
-
-    if (state.dedupBase) {{
-      var seenBase = {{}};
-      filtered = filtered.filter(function(r) {{
-        var key = r.meta.base_method;
-        if (seenBase[key]) return false;
-        seenBase[key] = true;
-        return true;
-      }});
-    }}
 
     // Best values among visible rows for highlighting
     var best = {{ mean_rank: Infinity, balacc: -Infinity, accuracy: -Infinity, auroc: -Infinity, logloss: Infinity }};
@@ -1659,7 +1689,7 @@ def write_interactive_leaderboard(
       filtered.forEach(function(r, idx) {{
         var dispPos = idx + 1;
         var rkBadge = dispPos <= 3 ? '<span class="rank-pill rank-' + dispPos + '">' + dispPos + "</span>" : String(dispPos);
-        var globalHint = (state.paradigm !== "ALL" || state.family !== "ALL" || state.dedupBase || state.search)
+        var globalHint = (state.paradigm !== "ALL" || state.family !== "ALL" || state.search)
           ? ' <span class="alg-sub">(#' + r.leagueRank + " overall)</span>" : "";
         var pctCov = Math.round((100.0 * r.coverage) / Math.max(1, r.scope));
 
@@ -1778,8 +1808,8 @@ def write_interactive_leaderboard(
     var cdNote = document.getElementById("cdNote");
     if (cdObj && cdObj.png) {{
       cdCont.innerHTML = '<img class="cd-img" alt="Critical difference diagram for ' + esc(tabObj.label) + '" src="data:image/png;base64,' + cdObj.png + '">';
-      cdNote.textContent = "Top " + cdObj.n_estimators + " admitted algorithms on " + tabObj.label + " over their " + cdObj.n_common +
-        " shared problems (balanced accuracy, pairwise Wilcoxon signed-rank tests with Holm correction, alpha=" + cdObj.alpha + "). Connected bars indicate cliques that are not statistically distinguishable.";
+      cdNote.textContent = "Top " + cdObj.n_estimators + " admitted distinct classifiers on " + tabObj.label + " over their " + cdObj.n_common +
+        " shared problems (72-classifier canonical pool, balanced accuracy, pairwise Wilcoxon signed-rank tests with Holm correction, alpha=" + cdObj.alpha + "). Connected bars indicate cliques that are not statistically distinguishable.";
     }} else {{
       cdCont.innerHTML = '<p class="note">No critical difference diagram rendered for this subset.</p>';
       cdNote.textContent = "";
@@ -1921,7 +1951,7 @@ td.cell-win {{
 <main class="container">
   <section class="hero">
     <h1>Overall Performance Score Matrix</h1>
-    <p>Problem-by-algorithm score heatmap across all 76 scalp EEG tasks and 90 classifiers. Hover over any cell to inspect all four metrics, within-problem rank, and gain over the constant majority-class floor.</p>
+    <p>Problem-by-classifier score heatmap across all 76 scalp EEG tasks and 72 distinct classifiers (90 total configurations). Hover over any cell to inspect all four metrics, within-problem rank, and gain over the constant majority-class floor.</p>
   </section>
 
   <div class="tab-strip" id="matrixTabStrip"></div>
@@ -1938,13 +1968,13 @@ td.cell-win {{
       </label>
       <label><strong>Columns:</strong>
         <select class="ctrl" id="colScopeSelect">
-          <option value="top35" selected>Top 35 on Selected Tab</option>
-          <option value="dedup">Best per Base Architecture</option>
-          <option value="all90">All 90 Algorithms</option>
-          <option value="TSML">General TSML Only (13)</option>
-          <option value="EEG-Classical">EEG Classical Only (37)</option>
+          <option value="top35" selected>Top 35 Distinct on Selected Tab</option>
+          <option value="canonical72">All 72 Distinct Classifiers</option>
+          <option value="all90">All 90 Configurations (incl. variants)</option>
+          <option value="TSML">General TSML Only (11)</option>
+          <option value="EEG-Classical">EEG Classical Only (23)</option>
           <option value="EEG-DL">EEG Supervised DL Only (32)</option>
-          <option value="EEG-FM">EEG Foundation Only (4)</option>
+          <option value="EEG-FM">EEG Foundation Only (2)</option>
           <option value="Tabular">Tabular Only (4)</option>
         </select>
       </label>
@@ -2091,18 +2121,13 @@ td.cell-win {{
 
     var cols = allCols;
     if (state.colScope === "top35") {{
-      cols = allCols.filter(function(c) {{ return colCov[c] >= Math.ceil(0.6 * Math.max(1, rowIdxs.length)); }}).slice(0, 35);
-      if (!cols.length) cols = allCols.slice(0, 35);
-    }} else if (state.colScope === "dedup") {{
-      var seen = {{}};
-      cols = allCols.filter(function(c) {{
-        var bm = DATA.estimators[c].base_method;
-        if (seen[bm]) return false;
-        seen[bm] = true;
-        return true;
-      }});
+      var canonCols = allCols.filter(function(c) {{ return DATA.estimators[c].is_canonical; }});
+      cols = canonCols.filter(function(c) {{ return colCov[c] >= Math.ceil(0.6 * Math.max(1, rowIdxs.length)); }}).slice(0, 35);
+      if (!cols.length) cols = canonCols.slice(0, 35);
+    }} else if (state.colScope === "canonical72") {{
+      cols = allCols.filter(function(c) {{ return DATA.estimators[c].is_canonical; }});
     }} else if (state.colScope !== "all90") {{
-      cols = allCols.filter(function(c) {{ return DATA.estimators[c].paradigm === state.colScope; }});
+      cols = allCols.filter(function(c) {{ return DATA.estimators[c].is_canonical && DATA.estimators[c].paradigm === state.colScope; }});
     }}
 
     var parOrder = {{ "TSML": 1, "EEG-FM": 2, "EEG-DL": 3, "EEG-Classical": 4, "Tabular": 5 }};
@@ -2284,7 +2309,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
 <main class="container">
   <section class="hero">
     <h1>EEG Problem Explorer (76 Scalp EEG Benchmark Tasks)</h1>
-    <p>Turns the benchmark question around: for each classification problem, inspect the majority-class Default floor, the median and ceiling across all 90 algorithms, which paradigm wins, and how much signal was found beyond chance.</p>
+    <p>Turns the benchmark question around: for each classification problem, inspect the majority-class Default floor, the median and ceiling across the 72 distinct classifiers (or all 90 configurations), which paradigm wins, and how much signal was found beyond chance.</p>
   </section>
 
   <div class="tab-strip" id="dsTabStrip"></div>
@@ -2308,6 +2333,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
           <option value="sat">Near ceiling (&ge; 99%)</option>
         </select>
       </label>
+      <label class="chk"><input type="checkbox" id="dsIncludeVariants"> Include 18 variants (all 90 configs)</label>
     </div>
     <div class="control-group">
       <input type="search" class="ctrl" id="dsSearch" placeholder="Search problem or winner...">
@@ -2341,7 +2367,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
       </table>
     </div>
   </div>
-  <p class="note">Click any problem row to inspect all completed algorithms ranked on that task. Amber rows mark problems where the best of 90 algorithms gains &le;5 percentage points over the constant Default floor; green rows mark problems reaching &ge;99%.</p>
+  <p class="note">Click any problem row to inspect all completed classifiers ranked on that task. Amber rows mark problems where the best classifier gains &le;5 percentage points over the constant Default floor; green rows mark problems reaching &ge;99%.</p>
 </main>
 <div class="modal-backdrop" id="dsModal">
   <div class="modal-card">
@@ -2363,6 +2389,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
     tab: "All",
     metric: "balacc",
     signal: "ALL",
+    includeVariants: false,
     search: "",
     sortBy: "gain",
     sortDir: "asc"
@@ -2388,6 +2415,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
 
   document.getElementById("dsMetricSelect").addEventListener("change", function(e) {{ state.metric = e.target.value; render(); }});
   document.getElementById("signalSelect").addEventListener("change", function(e) {{ state.signal = e.target.value; render(); }});
+  document.getElementById("dsIncludeVariants").addEventListener("change", function(e) {{ state.includeVariants = e.target.checked; render(); }});
   document.getElementById("dsSearch").addEventListener("input", function(e) {{ state.search = e.target.value.trim().toLowerCase(); render(); }});
   document.getElementById("exportDsCsv").addEventListener("click", function() {{
     if (window.eegDownloadCsv && lastDsCsv.rows.length) {{
@@ -2441,6 +2469,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
 
     var entries = [];
     for (var ci = 0; ci < DATA.estimators.length; ci++) {{
+      if (!state.includeVariants && !DATA.estimators[ci].is_canonical) continue;
       var ba = DATA.scores.balacc[ri][ci];
       if (ba === null) continue;
       entries.push({{
@@ -2490,11 +2519,17 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
     var floors = DATA.default_floor[state.metric];
     var isPct = state.metric !== "auroc";
 
+    var poolTotal = 0;
+    for (var p0 = 0; p0 < DATA.estimators.length; p0++) {{
+      if (state.includeVariants || DATA.estimators[p0].is_canonical) poolTotal++;
+    }}
+
     var rows = tabObj.datasets.map(function(name) {{
       var ri = dsMap[name];
       var d = DATA.datasets[ri];
       var vals = [], best = -Infinity, worst = Infinity, winIdx = -1;
       for (var c = 0; c < DATA.estimators.length; c++) {{
+        if (!state.includeVariants && !DATA.estimators[c].is_canonical) continue;
         var v = mat[ri][c];
         if (v !== null) {{
           vals.push(v);
@@ -2535,7 +2570,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
     var parSummary = Object.keys(parWins).map(function(k) {{ return k + ": " + parWins[k]; }}).join(" &middot; ");
 
     document.getElementById("dsKpiGrid").innerHTML =
-      '<div class="kpi-card"><div class="kpi-label">Problems in Scope</div><div class="kpi-value">' + rows.length + '</div><div class="kpi-sub">Up to ' + DATA.estimators.length + ' classifiers evaluated per problem</div></div>' +
+      '<div class="kpi-card"><div class="kpi-label">Problems in Scope</div><div class="kpi-value">' + rows.length + '</div><div class="kpi-sub">Up to ' + poolTotal + (state.includeVariants ? ' configurations' : ' distinct classifiers') + ' evaluated per problem</div></div>' +
       '<div class="kpi-card"><div class="kpi-label">Winning Paradigm Breakdown</div><div class="kpi-value" style="font-size:0.95rem">' + (parSummary || "&mdash;") + '</div><div class="kpi-sub">Count of problem ceilings held by each paradigm</div></div>' +
       '<div class="kpi-card"><div class="kpi-label">Low-Signal Tasks (&le;+5%)</div><div class="kpi-value">' + lowSig + '</div><div class="kpi-sub">Shaded amber &mdash; hardest open EEG problems</div></div>' +
       '<div class="kpi-card"><div class="kpi-label">Near-Ceiling Tasks (&ge;99%)</div><div class="kpi-value">' + satCnt + '</div><div class="kpi-sub">Shaded green &mdash; saturated benchmarks</div></div>';

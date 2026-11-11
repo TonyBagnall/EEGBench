@@ -367,6 +367,50 @@ def test_compute_league_table_common_block_vs_available_mode():
     assert specialist["wins"] == 2
 
 
+def test_compute_league_table_canonical_only_excludes_variants():
+    """Canonical-only mode removes non-canonical variants before computing common problems and ranks."""
+    from neuroverse.experiments.tables import compute_league_table
+
+    problems = ["p1", "p2", "p3"]
+    canonical_models = ["HC2-500-pc", "EEGNeX-NB"]
+    variant_model = "HC2-noTDE-500-pc"
+    frames = {
+        "balacc": pd.DataFrame(
+            {
+                "HC2-500-pc": [0.85, 0.85, 0.85],
+                variant_model: [0.84, 0.84, np.nan],
+                "EEGNeX-NB": [0.75, 0.75, 0.75],
+            },
+            index=problems,
+        )
+    }
+
+    all_tbl, all_common = compute_league_table(
+        problems,
+        frames,
+        primary_metric="balacc",
+        min_coverage_ratio=0.60,
+        mode="common_block",
+        canonical_only=False,
+    )
+    assert all_common == problems[:2]
+    assert set(all_tbl["estimator"]) == {*canonical_models, variant_model}
+    assert all_tbl.set_index("estimator").loc["EEGNeX-NB", "mean_rank"] == pytest.approx(3.0)
+
+    canon_tbl, canon_common = compute_league_table(
+        problems,
+        frames,
+        primary_metric="balacc",
+        min_coverage_ratio=0.60,
+        mode="common_block",
+        canonical_only=True,
+    )
+    assert canon_common == problems
+    assert list(canon_tbl["estimator"]) == canonical_models
+    assert canon_tbl["is_canonical"].all()
+    assert canon_tbl.set_index("estimator").loc["EEGNeX-NB", "mean_rank"] == pytest.approx(2.0)
+
+
 def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
     """The interactive dashboard suite writes self-contained HTML pages with valid embedded payloads."""
     import json
@@ -378,7 +422,7 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
     from neuroverse.experiments.tables import build_benchmark_site
 
     sample_problems = by_type("Speech") + by_type("VEP")[:2]
-    sample_estimators = ["HC2-500-pc", "EEGNeX-NB", "DE-LR"]
+    sample_estimators = ["HC2-500-pc", "HC2-noTDE-500-pc", "EEGNeX-NB", "DE-LR"]
     rng = np.random.default_rng(42)
 
     snap_dir = tmp_path / "snap"
@@ -409,6 +453,9 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
         assert match is not None
         payload = json.loads(match.group(1))
         assert [e["name"] for e in payload["estimators"]] == sorted(sample_estimators)
+        by_name = {e["name"]: e for e in payload["estimators"]}
+        assert by_name["HC2-500-pc"]["is_canonical"] is True
+        assert by_name["HC2-noTDE-500-pc"]["is_canonical"] is False
         assert len(payload["datasets"]) == len(neuroverse_76)
         assert [t["key"] for t in payload["tabs"]] == list(PROBLEM_TYPE_TABS)
         assert len(payload["scores"]["balacc"]) == len(neuroverse_76)
@@ -425,9 +472,13 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
 
     lb_html = paths["leaderboard"].read_text(encoding="utf-8")
     assert 'id="viewSelect"' in lb_html
+    assert 'id="includeVariants"' in lb_html
     assert 'id="algModal"' in lb_html
     assert 'id="exportLbCsv"' in lb_html
-    assert 'id="exportMatrixCsv"' in paths["matrix"].read_text(encoding="utf-8")
+    matrix_html = paths["matrix"].read_text(encoding="utf-8")
+    assert 'id="exportMatrixCsv"' in matrix_html
+    assert 'value="canonical72"' in matrix_html
     ds_html = paths["datasets"].read_text(encoding="utf-8")
+    assert 'id="dsIncludeVariants"' in ds_html
     assert 'id="dsModal"' in ds_html
     assert 'id="exportDsCsv"' in ds_html

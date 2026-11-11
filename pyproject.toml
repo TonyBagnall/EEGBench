@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "eegbench"
+name = "neuroverse"
 authors = [
     {name = "aeon developers", email = "contact@aeon-toolkit.org"},
 ]
@@ -11,14 +11,17 @@ maintainers = [
     {name = "aeon developers", email = "contact@aeon-toolkit.org"},
 ]
 version = "0.0.1"
-description = "A leaderboard for EEG classification, part of the Multiverse archive."
+description = "Neuroverse: benchmark archive and leaderboards for EEG and neural time series classification."
 readme = "README.md"
 keywords = [
     "aeon-toolkit",
+    "neuroverse",
     "machine-learning",
     "time-series",
     "time-series-classification",
     "eeg",
+    "neuroscience",
+    "bci",
     "benchmark",
 ]
 classifiers = [
@@ -56,10 +59,10 @@ experiments = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["eegbench*"]
+include = ["neuroverse*"]
 
 [project.urls]
-Homepage = "https://github.com/TonyBagnall/EEGBench"
-Repository = "https://github.com/TonyBagnall/EEGBench"
-Issues = "https://github.com/TonyBagnall/EEGBench/issues"
+Homepage = "https://github.com/TonyBagnall/Neuroverse"
+Repository = "https://github.com/TonyBagnall/Neuroverse"
+Issues = "https://github.com/TonyBagnall/Neuroverse/issues"
 Multiverse = "https://github.com/aeon-toolkit/multiverse"

@@ -1,0 +1,24 @@
+[
+  {
+    "dataset": "rozado",
+    "subject_range": "1-15",
+    "name": "userdata1.rar",
+    "datafile_id": 2531738,
+    "url": "https://dataverse.harvard.edu/api/access/datafile/2531738",
+    "bytes": 802015617,
+    "checksum": null,
+    "etag": "6fefc9ec3858cd9dc7f786bf4145b21b-12",
+    "last_modified": "Sun, 15 Feb 2026 20:40:20 GMT"
+  },
+  {
+    "dataset": "rozado",
+    "subject_range": "16-30",
+    "name": "userdata2.rar",
+    "datafile_id": 2531739,
+    "url": "https://dataverse.harvard.edu/api/access/datafile/2531739",
+    "bytes": 842723510,
+    "checksum": null,
+    "etag": "a2620c19c4914ae2a14f4e1debb425ad-13",
+    "last_modified": "Sun, 15 Feb 2026 20:42:38 GMT"
+  }
+]

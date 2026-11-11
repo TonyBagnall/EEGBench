@@ -34,13 +34,13 @@ ten participants, one documented session each, 60 recordings and 300 trials.
 The original data licence is CC BY 4.0. The report distinguishes source-file
 fields from documented channel mapping and protocol-inferred epoch times.
 
-This page traces the original 30 EEGBench problems to their recording collections,
+This page traces the original 30 Neuroverse problems to their recording collections,
 source names and publications, and links the provenance reports for local additions.
 Original benchmark dimensions and extraction details are taken from
 Sections 2.1-2.3 and Table 1 of Rushbrooke, Sami, Middlehurst and Bagnall (2026),
 [Time Series Machine Learning for Classifying Electroencephalograms](https://data.mlr.press/assets/pdf/v03-8.pdf)
 (the root paper, `v03-8.pdf`), and checked against
-[`eegbench/datasets.py`](../eegbench/datasets.py). External sources were checked on
+[`neuroverse/datasets.py`](../neuroverse/datasets.py). External sources were checked on
 3 November 2026. This is primarily a source audit; subsequent verification of
 selected local files and their corrections is explicitly identified below and
 in [Local data corrections](local-data-corrections.md).
@@ -50,7 +50,9 @@ below, including their relationship to datasets already present on the local dri
 Further [BCI IV 2a, ISRUC-Sleep and FACED local preparations](openeegbench-local-preparations.md)
 have pinned source revisions, task descriptions and channel/label recovery notes.
 [NBackAudioCondition](nback-location.md) adds Christoph Tremmel's joint N-back/audio
-task, with owner-confirmed participant blocks and further source details to follow.
+task, with owner-confirmed participant blocks and a recording sampling frequency
+of 200 Hz (confirmed 9 November 2026); its 600 samples span 3 seconds. Further
+source details remain to follow.
 [VisualSubjects](moabb-preparations.md) is the BI2014a visual P300 task, with original
 Zenodo licence evidence, pinned loader snapshots and the source F5/F6 channel names.
 [FlickerAttention](kalunga-preparation.md) is Kalunga2016 / SSVEP-exoskeleton,
@@ -959,3 +961,125 @@ removals or exact duplicate cases; full readback/metadata/aeon checks passed.
 Same laboratory/hardware as Batista2022 does not prove shared recordings; its
 future admission must compare native identities/dates/waveforms.
 [Full provenance, memberships and recovery](imagined-hands-embodiment-preparation.md).
+
+
+## ImaginedHandsHaptics (Batista2022)
+
+TRAIN `(3083,32,2495)`, TEST `(1034,32,2495)`; two classes, 500 Hz.
+
+Left/right-hand imagination with abstract, motor-observation, VR and haptic
+feedback, pooled as one problem. Twenty original participants, one native
+session each, 99 imagery recordings. Executed-movement ME controls excluded.
+Keep actual source cues: 4,127 cues become 4,117 cases after ten unusable
+timing/discontinuity trials are excluded. The common safe crop is 2,495 samples
+at 500 Hz. Native 32 EEG names/order and explicit microvolt calibration retained;
+float32 digital samples calibrated in float64, no added DSP. Auxiliary labels
+vary without changing EEG order; generic roles and missing geometry stay unknown.
+Native main/pilot IDs remain distinct. Whole-subject 15/5-person split balances
+pilot/main cohorts. No exact recording or cue-prefix matches with
+ImaginedHandsEmbodiment; this does not establish cross-study participant identity.
+Original [Zenodo 7664069 v1](https://doi.org/10.5281/zenodo.7664069), CC BY 4.0;
+Batista et al. (2022), *Physiological Signals During Motor Imagery Brain-Computer
+Interface Training Using Virtual Reality and Haptics*. MOABB alias Batista2022;
+declared NEMAR view nm000318 is not another independent dataset.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+
+
+## ImaginedAnkleRest (PoloHortiguela2025)
+
+TRAIN `(264,28,1000)`, TEST `(132,28,1000)`; two classes, 250 Hz.
+
+Imagined dominant-ankle dorsal/plantar flexion versus relaxation, six people,
+one original S1 visit each. STATIC/MOTION exoskeleton conditions are pooled,
+not counted as separate visits or problems. Original 132 repetition files each
+supply two relaxation windows and one imagery window: first four seconds of
+each native labelled phase, 396 cases. Initial settling/audio/return phases
+excluded. Native 28 EEG labels/order, 250 Hz, raw float64 numbers and configured
+2D layout retained; four EOG and three inertial channels excluded. Microvolt
+interpretation inferred; explicit physical units, reference/ground and coordinate
+units/frame were not recovered. No added DSP or supplied processed blocks used.
+Whole-subject release B01–B04 TRAIN, B05–B06 TEST. Release B06 internally identifies
+B07; preserve both IDs with the verified one-to-one mapping.
+Original [Zenodo 14672334 v1](https://doi.org/10.5281/zenodo.14672334), CC BY 4.0;
+Polo-Hortiguela et al. (2025), *EEG Signal Dataset During Dorsiflexion and Plantar
+Flexion Movements*. MOABB alias PoloHortiguela2025, declared NEMAR view nm000302.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+
+
+## ImaginedHandsFeedback (Leeuwis2021)
+
+TRAIN `(6560,16,1250)`, TEST `(2240,16,1250)`; two classes, 250 Hz.
+
+Left/right-hand imagination by 55 novice BCI users, one visit and four runs
+per person: calibration plus three feedback runs, 8,800 cases. Original
+non-contiguous subject IDs 7–67 and native 16 EEG column order retained. Locate
+actual zero time at epoch index 749 and keep 1,250 samples, 0–4.996 seconds,
+at 250 Hz. Native decimal values parsed as round-trip float64 and unchanged;
+microvolt interpretation inferred. Original report/paper documents right-earlobe
+reference and AFz ground; individual positions and continuous offsets unknown.
+Paper filtering protocol retained separately from uncertain exact CSV filtering
+history; no added DSP. Whole-subject first 41 numeric native IDs TRAIN, remaining
+14 TEST, pooling original calibration/feedback phases. Individual questionnaire
+metadata mapped by ppnr: 55 rows, 36 Female/19 Male; the report's 57-person totals
+are inconsistent. Irregular Subject40 filenames and pinned file IDs preserved.
+Original [DataverseNL 10.34894/Z7ZVOD v1.0](https://doi.org/10.34894/Z7ZVOD),
+version ID 3733, CC BY 4.0; Leeuwis, Paas and Alimardani (2021), *Psychological
+and Cognitive Factors in Motor Imagery Brain Computer Interfaces*.
+Related [Frontiers paper](https://doi.org/10.3389/fnhum.2021.634748).
+MOABB alias Leeuwis2021, declared NEMAR view nm000327.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+## Daly2020 / OpenNeuro ds002720: reviewed cross-subject duplicate
+
+On 9 November 2026, original `sub-09/eeg/sub-09_task-run10_eeg.edf` and
+`sub-15/eeg/sub-15_task-run10_eeg.edf` were confirmed to identify the same
+Git-annex object and have identical complete-file SHA256, with identical event
+tables. Native headers do not establish the true participant. The derived
+conversion excludes both ambiguous run-10 copies, retaining other eligible runs
+of both subjects, and re-audits all retained cases. Original sources are kept.
+This prevents copied recordings entering TRAIN under09 and TEST under15.
+See [investigation and reporting route](daly-duplication-investigation.md),
+[machine-readable evidence](daly-cross-subject-duplicate-audit.json) and
+[ready-to-paste issue draft](daly-duplication-issue-draft.md). The user reported the issue to OpenNeuro on 9 November 2026. Corrected full conversion passed: 1,698 TRAIN / 643 TEST, 18 subjects, 19 EEG channels, 20,000 samples at 1,000 Hz; no duplicate retained cases or shared subjects.
+
+
+## Further motor imagery source identities
+### ImaginedHandsOnline
+
+Original/source aliases: **Pan2025**. [10.7910/DVN/GH74ZG](https://doi.org/10.7910/DVN/GH74ZG); Pan(2025), Cross-Session Motor Imagery EEG dataset; related Pan et al.(2023), DOI10.1088/1741-2552/ad0a01. Data grant: CC0-1.0. Revision: Harvard Dataverse 10.7910/DVN/GH74ZG; publisher DataCite metadata version 1.0; immutable numeric datafile IDs and recorded content hashes (dataset-version API unavailable). 10 native participant IDs; 28 x 1000, 250 Hz, 2 classes, 2123/1519 TRAIN/TEST. Original session1 and session2 first30 trials TRAIN, remaining session2 trials TEST; intentional shared participants. Native numbers cast to float64; presumed microvolts according to pinned loader, physical unit not embedded. No added filtering, resampling, demeaning, baseline or reference. Native epoch/crop identity retained; original continuous offsets unavailable. Match original source file IDs/hashes and native case indices using [pan25 source lock](pan25-to-30-source-lock.json); repository aliases do not establish different recordings. Both complete Pan releases passed the [native waveform comparison](pan-full-native-identity-audit.json); participant identity across studies remains unestablished.
+
+### ImaginedHandsCrossSession
+
+Original/source aliases: **Pan2023**. [10.7910/DVN/251NOW](https://doi.org/10.7910/DVN/251NOW); Pan et al.(2023), DOI10.1088/1741-2552/ad0a01. Data grant: CC0-1.0. Revision: Harvard Dataverse 10.7910/DVN/251NOW; publisher DataCite metadata version 1.3; immutable numeric datafile IDs and recorded content hashes (dataset-version API unavailable). 14 native participant IDs; 28 x 1000, 250 Hz, 2 classes, 2400/960 TRAIN/TEST. Whole-subject original01-10 TRAIN,11-14 TEST. Native numbers cast to float64; presumed microvolts according to pinned loader, physical unit not embedded. No added filtering, resampling, demeaning, baseline or reference. Native epoch/crop identity retained; original continuous offsets unavailable. Match original source file IDs/hashes and native case indices using [pan23 source lock](pan23-to-30-source-lock.json); repository aliases do not establish different recordings. Both complete Pan releases passed the [native waveform comparison](pan-full-native-identity-audit.json); participant identity across studies remains unestablished.
+
+### ImaginedHandPupils
+
+Original/source aliases: **Rozado2015**. [10.7910/DVN/28932](https://doi.org/10.7910/DVN/28932); Rozado, Duenser and Gruen (2015), DOI10.1371/journal.pone.0121262. Data grant: CC0-1.0. Revision: Harvard Dataverse 10.7910/DVN/28932; publisher DataCite metadata version 2.2; immutable numeric datafile IDs and recorded content hashes (dataset-version API unavailable). 30 native participant IDs; 32 x 3072, 512 Hz, 2 classes, 1150/400 TRAIN/TEST. Whole-subject1-11 and16-26 TRAIN;12-15 and27-30 TEST. Explicit native XDF EEG microvolts cast to float64; select32 EEG by native type/order, exclude trigger/EX/AUX. Six seconds at nominal512Hz per cue. Raw common-host timestamps retained; no clock correction, interpolation, filter or reference change. Known noisy subjects retained with flags. Match original source file IDs/hashes and native case indices using [rozado source lock](rozado-to-30-source-lock.json); repository aliases do not establish different recordings.
+
+### ImaginedHandsPhysiology
+
+Original/source aliases: **Cho2017**. [10.5524/100295](https://doi.org/10.5524/100295); Cho, Ahn, Ahn, Kwon and Jun (2017), DOI10.1093/gigascience/gix034. Data grant: CC0-1.0. Revision: GigaDB10.5524/100295 release2017-05-05; exact publisher object MD5/size pins. 52 native participant IDs; 64 x 1536, 512 Hz, 2 classes, 7880/2640 TRAIN/TEST. Whole-subject01-39 TRAIN,40-52 TEST. Native class-array values cast to float64, presumed microvolts; actual imagery_event onsets define3-second crops. Original trial_sequence values order cases across classes. No mean removal, synthetic gaps or extra DSP. Native coordinates retained; no anatomical names embedded. Match original source file IDs/hashes and native case indices using [cho source lock](cho-to-30-source-lock.json); repository aliases do not establish different recordings.
+
+### ImaginedHandMusicTempo
+
+Original/source aliases: **Daly2020**. [10.18112/openneuro.ds002720.v1.0.1](https://doi.org/10.18112/openneuro.ds002720.v1.0.1); Daly et al., tempo-based brain-computer music interface data, OpenNeuro ds002720 v1.0.1, with original2014/2018 references in README. Data grant: CC-BY-4.0. Revision: OpenNeuro ds002720 v1.0.1; Git commit f704b13bed4383af66b6aef93faa18aeb336c0ca, original annex MD5/SHA256 identities verified then SHA256 recorded. 18 native participant IDs; 19 x 20000, 1000 Hz, 2 classes, 1698/643 TRAIN/TEST. Whole-subject01-13 TRAIN,14-18 TEST; all native labelled non-calibration runs retained. Original calibrated EDF volts multiplied by1e6 in float64; native BIDS event onsets define20-second cases. Both byte-identical09/15run10 copies excluded because true participant attribution is unresolved; all other unique complete runs retained and strictly audited for duplicates. No extra DSP. Original README CC BY4.0 and dataset_description CC0 discrepancy retained, conservative attribution terms. Match original source file IDs/hashes and native case indices using [daly source lock](daly-to-30-source-lock.json); repository aliases do not establish different recordings.
+
+### AlzheimersAuditory: EEGDash diagnostic addition
+
+Original source: [10.18112/openneuro.ds005048.v1.0.1](https://openneuro.org/datasets/ds005048/versions/1.0.1); aliases Lahijanian2024 / OpenNeuro ds005048 / EEGDash on005048, EEGDash `on005048`. Data licence CC0-1.0. Lahijanian et al.(2024), DOI10.1038/s41598-024-63727-z. Source revision: OpenNeuro ds005048 v1.0.1, Git 165a4d407983e5d7d42441ecc007caf6c98d3fad. Participant diagnosis classification during original40Hz auditory stimulation; Normal/MCI/AD, mild+moderate AD merged, unknown-group participants excluded. All complete4second windows within40second Stimulus events, rest excluded. Native250Hz float32 FDT numbers cast to float64; inferred microvolt format convention, no extra DSP. Distributed data already preprocessed; native history/reference/geometry and BIDS differences retained. See [clinical plan](eegdash-diagnosis-plan.md) and the source/manifest hashes in the prepared folder.
+
+### ParkinsonsRestIowa: EEGDash diagnostic addition
+
+Original source: [10.18112/openneuro.ds004584.v1.0.0](https://openneuro.org/datasets/ds004584/versions/1.0.0); aliases Singh et al./Iowa resting eyes-open / OpenNeuro ds004584, EEGDash `on004584`. Data licence CC0-1.0. Singh et al., DOI10.1101/2022.07.26.22278079. Source revision: OpenNeuro ds004584 v1.0.0, Git 261510fd9780d738a77fee52b906b3d56b69b74e. PD/control diagnostic groups from original participant GROUP; full source Rest recordings,4second windows at500Hz, no added DSP. Exact named sensor intersection across149source layouts; Resp and nonshared electrodes excluded explicitly. Native float32 FDT values castfloat64, interpreted as microvolts by EEGLAB convention; BIDS unit/type fields n/a. Source cohort related to existing Iowa interval-timing tasks, distinct rest recordings, not an independent participant study. See [clinical plan](eegdash-diagnosis-plan.md) and the source/manifest hashes in the prepared folder.
+
+### ParkinsonsRestUCSD: EEGDash diagnostic addition
+
+Original source: [10.18112/openneuro.ds002778.v1.0.5](https://openneuro.org/datasets/ds002778/versions/1.0.5); aliases UCSD / OpenNeuro ds002778 / EEGDash on002778, EEGDash `on002778`. Data licence CC0-1.0. Jackson et al.2019;10.1523/ENEURO.0151-19.2019; also Swann2015 and George2013 as requested in source README. Source revision: OpenNeuro ds002778 v1.0.5, Git 2890cbd8da62179735aae536a520008154630dd6. Clinically diagnosed PD OFF medication versus controls. Complete non-overlapping4s rest windows, native512Hz,32named scalp channels before flat review. ON medication sessions excluded to keep one acquisition condition and avoid mixing raw with2processed substitutions. Float64 calibrated microvolts; no new DSP. Original README explicitly discourages diagnostic ML on this31person cohort because of small test-group size and clinical heterogeneity; requests pre-publication author contact. User explicitly authorised inclusion9November2026. Benchmark preparation is not evidence of clinical diagnostic validity. See [clinical plan](eegdash-diagnosis-plan.md) and the source/manifest hashes in the prepared folder.

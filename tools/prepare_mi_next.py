@@ -407,7 +407,9 @@ def finish_sidecars(result,key):
                'polo':['polo-release-native-file-audit.json','polo-native-pilot-inspection.json'],'leeuwis':[]}[key]
         docs += [n for n in extra if (ROOT/'docs'/n).is_file()]
     return finish(result,m,docs,spec['conversion_files'],dict(label_mapping=spec['labels'],split_definition=m['split_definition'],original_source_url=m['original_source_url'],unit_evidence=m['unit_evidence'],licence_url='https://creativecommons.org/licenses/by/4.0/',
-        conversion_details=m['archive_transformations'],case_order=m['case_order'],excluded_case_count=m['excluded_case_count']))
+        conversion_details=m['archive_transformations'],case_order=m['case_order'],excluded_case_count=m['excluded_case_count']),
+        readme=f'# {name}\n\n{spec["source"]}. TRAIN {result["train_cases"]} cases, TEST {result["test_cases"]} cases; {result["channels"]} EEG channels x {result["timepoints"]} samples, {result["frequency"]} Hz, two classes. Float64 arrays, native EEG order.\n\nUnit evidence: {m["unit_evidence"]}.\n\nSplit: {m["split_definition"]}\n\nNo archived validation partition or added filtering/resampling/reference/baseline. Read IDs as strings. Case TSV rows exactly follow .ts cases; original/encoded labels, source file/sample bounds and available subject/session/run IDs retained. Demographics, auxiliary signals and online error summaries are metadata, not EEG classification features. See channels.tsv, metadata JSON, full validation and source_metadata/mi-next-three-preparation.md for channel order, provenance, exclusions and missing/inferred fields.\n',
+        attribution=f'Original data: {m["original_dataset_title"]}; {spec["paper"]}. Dataset DOI {spec["doi"]}. Original CC BY4.0 https://creativecommons.org/licenses/by/4.0/.\nChanges: EEG selection in native order, documented source-event/phase crops, class encoding, whole-subject partition and float64 .ts/metadata export; no added DSP. {m["unit_evidence"]}. See metadata for exact source exclusions and missing information.\n')
 
 
 if __name__=='__main__':

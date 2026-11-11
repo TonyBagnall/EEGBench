@@ -1,0 +1,460 @@
+{
+  "dataset": "Cho2017",
+  "licence": "CC0-1.0",
+  "source_record_id": 100295,
+  "source_revision": "GigaDB10.5524/100295 release2017-05-05; exact publisher object MD5/size pins",
+  "moabb_revision": "bed9f0fa1b9c4d3f71c7f2ddb22e4e44383211b5",
+  "pilot": false,
+  "files": [
+    {
+      "name": "Questionnaire_results_of_52_subjects.xlsx",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/Questionnaire_results_of_52_subjects.xlsx",
+      "bytes": 27344,
+      "checksum": "md5:215b8f76138a2226293d81540d6afd1d",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "7654af26db75fe758e43a8b152d73b38d4bc3b4f321c2770122c0ea31a86ff9d"
+    },
+    {
+      "name": "mat_data/s01.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s01.mat",
+      "bytes": 203446256,
+      "checksum": "md5:cc95115198cc860ac0479552fe20f9cc",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "57f2f10056b3c240adc78324872597d9b06b282df537a7763e98467275efe6db"
+    },
+    {
+      "name": "mat_data/s02.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s02.mat",
+      "bytes": 205356726,
+      "checksum": "md5:b64160501bda1a59ef762866581c48b4",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "1ad1d82d9e409d85d520837377d88a89c086a4f526dba0ce0fe588b6e6e3659e"
+    },
+    {
+      "name": "mat_data/s03.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s03.mat",
+      "bytes": 206547925,
+      "checksum": "md5:c3aa515932ba7bfc1817e8d86b9720bc",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "f2b4e386c501add1bfd5b43767f2d684a7c1fa29f811d3a1876d4e5861377ebc"
+    },
+    {
+      "name": "mat_data/s04.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s04.mat",
+      "bytes": 200456673,
+      "checksum": "md5:c1ff3f8cde905d65a47483bf2532b0c4",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "9c4e682deb3d60f9b5f3e77d0b369046674a5ecc0db440975c1ca516fd501840"
+    },
+    {
+      "name": "mat_data/s05.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s05.mat",
+      "bytes": 204209809,
+      "checksum": "md5:3666f713ed81b65121720cb1a1e7c870",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "5d25609b80f2d61c7a0698d9443b236dd369e77b41a15355643b85d97c97d902"
+    },
+    {
+      "name": "mat_data/s06.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s06.mat",
+      "bytes": 201737794,
+      "checksum": "md5:b59ba8e2e59db9712b5f9d2a85caa9b9",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "74375f26572b73b6d6caf51705ef355d978e46796ac5d91517a36ab1a0c02e8c"
+    },
+    {
+      "name": "mat_data/s07.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s07.mat",
+      "bytes": 233546637,
+      "checksum": "s3-multipart-md5-5242880:0a0c0075b9fc2a6c7357cd2bac8f9397-45",
+      "checksum_evidence": "Original multipart ETag; require actual MD5-of-part-MD5s using5MiB parts and exact part count to match, not a plain file MD5. If this hypothesis does not match downloaded content, stop for review.",
+      "sha256": "59300489a42f04ad304c5f3e74a5984bd1127f473eac4d754ea46679c5b5c8dc"
+    },
+    {
+      "name": "mat_data/s08.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s08.mat",
+      "bytes": 202618405,
+      "checksum": "md5:56b03da5294cfd5867c0ff9415e24b82",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "be4b73dd6c6d41d9005011f5298e51f4be709c2f5e6d1d0722215df19c7df882"
+    },
+    {
+      "name": "mat_data/s09.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s09.mat",
+      "bytes": 234672043,
+      "checksum": "s3-multipart-md5-5242880:b6bf77ce8eb411b3920301295faa5508-45",
+      "checksum_evidence": "Original multipart ETag; require actual MD5-of-part-MD5s using5MiB parts and exact part count to match, not a plain file MD5. If this hypothesis does not match downloaded content, stop for review.",
+      "sha256": "fff2e17497211bb70f0050564353108098513398c0836add8e84d85585f9b541"
+    },
+    {
+      "name": "mat_data/s10.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s10.mat",
+      "bytes": 202678732,
+      "checksum": "md5:6ef6e3839b1b19cb0e8693ffd7643487",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "1d9638cad324fb12ada1313679c35a54a991fc80939c6502a8bf3102fb137ee8"
+    },
+    {
+      "name": "mat_data/s11.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s11.mat",
+      "bytes": 203651167,
+      "checksum": "md5:81d49d30173bb3c1904803ce6e0dd5ac",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "afb8a7e00531149f54af6b597ee171143f60fd114cdd6853bb2193aa747c2091"
+    },
+    {
+      "name": "mat_data/s12.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s12.mat",
+      "bytes": 208557544,
+      "checksum": "md5:e421d039fe8374ac726adff33a83c613",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "b14c885be9999c108287cdfc6c46bc0fe1b364c971b3c1ddd4d2c645fb1809e7"
+    },
+    {
+      "name": "mat_data/s13.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s13.mat",
+      "bytes": 199330843,
+      "checksum": "md5:030f2896e74b198c5dfaaf88b97dd614",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "4c9806b3051ccb9ce4ffb19a80cce510d9424d2cf3dc81da2e6969dc2cdd6481"
+    },
+    {
+      "name": "mat_data/s14.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s14.mat",
+      "bytes": 203565516,
+      "checksum": "md5:af0f6274db2f7ae7be54e6edb2bcf720",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "d80df4caafa163a62ef9c9533ef5baded9fb6a8aa7ae7ab6ecdb70bf45f05c83"
+    },
+    {
+      "name": "mat_data/s15.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s15.mat",
+      "bytes": 203290650,
+      "checksum": "md5:1c1283d488cba9211d3764b03742f730",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "95011e9b668784c8dad3c45bb6105232190848db6100eafe53d4ddff55cb35d7"
+    },
+    {
+      "name": "mat_data/s16.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s16.mat",
+      "bytes": 204250575,
+      "checksum": "md5:c6daf88ee323d79ba54595793abe0db0",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "d3280d213c723e8623e8364edfb24104ed6dcd035a20f3e1f86c9510b0d947b0"
+    },
+    {
+      "name": "mat_data/s17.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s17.mat",
+      "bytes": 205150610,
+      "checksum": "md5:e8fd3ed31dbe92518f88033255880fe1",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "8b55f5ce72b983e52617e866fabdf45446376701d9e819c439715b7aba9e055a"
+    },
+    {
+      "name": "mat_data/s18.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s18.mat",
+      "bytes": 201912526,
+      "checksum": "md5:f284b7f6c6ac2421180c567f21cf3699",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "c875a04e589afef69388702fa293012d35237abbff5240c2ce37488184fc607c"
+    },
+    {
+      "name": "mat_data/s19.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s19.mat",
+      "bytes": 207257547,
+      "checksum": "md5:3bf930d2cce459dd46f778eac790f9fb",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "cbb9fdf4c063d0dac3e83f6089242f56562775bfe0d952dfc93ba08d7861f658"
+    },
+    {
+      "name": "mat_data/s20.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s20.mat",
+      "bytes": 202043554,
+      "checksum": "md5:211e07e735f7a2ad4b12c9f91b3aa7f8",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "5b91cf6de405b8a23e9c01e70b8955fdf15c6334c18d6335e93d94715a64f64d"
+    },
+    {
+      "name": "mat_data/s21.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s21.mat",
+      "bytes": 202697521,
+      "checksum": "md5:3bf30d273e4ae7370e35ada72e36ba78",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "2c95224bddff358a89cba617bf9eb74a261b8b853790f4ce9c75c5473ced8a18"
+    },
+    {
+      "name": "mat_data/s22.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s22.mat",
+      "bytes": 203579859,
+      "checksum": "md5:851b242485617bfc3cd14ac5738ffaf5",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "0eac5d10dc674ee5bbf6d35e96e0a44a2d6056ad4a1d3a0a22ff80a2e7027fcf"
+    },
+    {
+      "name": "mat_data/s23.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s23.mat",
+      "bytes": 205256611,
+      "checksum": "md5:e1b7fa4f2f0b02d223328c2122f3a9bc",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "c4a01839bc60d44eff43675492c3056c1338d0202f2cb6c72d37ecaaa95c81b0"
+    },
+    {
+      "name": "mat_data/s24.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s24.mat",
+      "bytes": 202913409,
+      "checksum": "md5:de3f6cf56a00a78668fd0cf2d90f0509",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "b28db34626242be4975e19bea742e486d8fd0c4f9eaefd3878077745816f4d35"
+    },
+    {
+      "name": "mat_data/s25.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s25.mat",
+      "bytes": 205061623,
+      "checksum": "md5:001cc7f13895ef38f3204d54a56977f2",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "8b7baa831b699fc95527f2a7eb87e920374e87052acb87556790e0277e993a3d"
+    },
+    {
+      "name": "mat_data/s26.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s26.mat",
+      "bytes": 203011452,
+      "checksum": "md5:0436698ccb9c63182b662b461ddc0ceb",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "479472ff4574d2b54a6653ce129db2f8e36ec5500ece321b2b113d5ce58e0723"
+    },
+    {
+      "name": "mat_data/s27.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s27.mat",
+      "bytes": 204789998,
+      "checksum": "md5:9b703630400947d28a3a886d7a7c7d38",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "2e0d2c30ff6df46cb07c5b8563e1012d0d924261b0d062c49be33d7a1cb9a7dc"
+    },
+    {
+      "name": "mat_data/s28.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s28.mat",
+      "bytes": 205554539,
+      "checksum": "md5:2bdaa56f381ab35b9413da02888926f0",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "b6c51b130fb2bb349e614fcab23655948c6658fdf782199041cbb03ff7a36dbd"
+    },
+    {
+      "name": "mat_data/s29.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s29.mat",
+      "bytes": 202928099,
+      "checksum": "md5:d5afea28dbdd7230bb90270d8dc75bad",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "bcadd645f161acae0f5b45bfc3f724d6b6e25ed9c9978d3e339a74908bc13f73"
+    },
+    {
+      "name": "mat_data/s30.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s30.mat",
+      "bytes": 204129671,
+      "checksum": "md5:d9d50c6c7b815f1e5f19c1d578c833a3",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "29d0d8714bb8e59cc9c3718ff84542536f34703eb17f536e7400d39abf5561f8"
+    },
+    {
+      "name": "mat_data/s31.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s31.mat",
+      "bytes": 207323724,
+      "checksum": "md5:8f944ccae28cdbb1249f9153c2e3bb2e",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "e03f3343b410ddff2584d95e5af0aad8039ceeecbded59f2fcc1e94a91a9e30a"
+    },
+    {
+      "name": "mat_data/s32.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s32.mat",
+      "bytes": 206235816,
+      "checksum": "md5:fae678ee711683e49dca38dac066e368",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "79217e2938b36fe29ef040ae34ffe3628ee8f557563771d3601b3c2253ee0ea7"
+    },
+    {
+      "name": "mat_data/s33.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s33.mat",
+      "bytes": 205696384,
+      "checksum": "md5:8fab7ab343a71c6f5e0e39bec4b33cd3",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "fc0ae6795a14bdf112e07812929570ad1bc140718d71e3605e2c99588ccf5d2d"
+    },
+    {
+      "name": "mat_data/s34.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s34.mat",
+      "bytes": 203249088,
+      "checksum": "md5:639044cbe834c6d89bc5650e4e6ef4bb",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "8fd506677c43ffdbe7f3cbbb5ed22b9426ab3eb1275595202d88c508df6e240a"
+    },
+    {
+      "name": "mat_data/s35.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s35.mat",
+      "bytes": 201382139,
+      "checksum": "md5:d7aa63ebc8009b23f1a4ef1d5626f36a",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "656951a3620d0ba432e24273d191fff428735e092833491599ca302e9bfcb51d"
+    },
+    {
+      "name": "mat_data/s36.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s36.mat",
+      "bytes": 202238390,
+      "checksum": "md5:b3c501a5bd363b7ec24c45a6a88fef2d",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "201e2aa49eb2dad84a4738668e0a02db9abebf57376251040c1aa9cf4efcd413"
+    },
+    {
+      "name": "mat_data/s37.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s37.mat",
+      "bytes": 205542398,
+      "checksum": "md5:9eb3638e283b2f5bd7041d644f4fe27b",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "82badb54e53e3895f72681d9cf581613573e0675c8cd9a0f578913ef18d846e3"
+    },
+    {
+      "name": "mat_data/s38.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s38.mat",
+      "bytes": 204908512,
+      "checksum": "md5:a4364c42012716d87642feb6a21dc47d",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "2f95a38d9f50492781dd57c0638122f3fb0794b1361f220475bc20700bf75a12"
+    },
+    {
+      "name": "mat_data/s39.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s39.mat",
+      "bytes": 206867819,
+      "checksum": "md5:eb2a3a86c5e9b77f4e7e27de28dc246b",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "26c8a180de81d2671984efb7a9a3655a78e292a289b97a8083b8cc180244ed15"
+    },
+    {
+      "name": "mat_data/s40.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s40.mat",
+      "bytes": 200137624,
+      "checksum": "md5:51357d352d147c5687529927ab034a4c",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "94b8d9c933011543251d2075e4575b01c6534ab1fb43ee1406b7fb53f3200d11"
+    },
+    {
+      "name": "mat_data/s41.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s41.mat",
+      "bytes": 203184362,
+      "checksum": "md5:e114af881801e73075fb3afc9e4e1792",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "88d058863f7d1942cb24a32230d39c663f8902057a0e9aaa6063d36e5fc81fdc"
+    },
+    {
+      "name": "mat_data/s42.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s42.mat",
+      "bytes": 201632098,
+      "checksum": "md5:6b527ce866f9161e9d6c2a54fc2735bc",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "fe60fdfc6120d9716510b8a5a056c4bf0bf9b77782eed806a3ccf7a50bc040e5"
+    },
+    {
+      "name": "mat_data/s43.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s43.mat",
+      "bytes": 205312190,
+      "checksum": "md5:ae59aac3168c259a531d6952eaa71f34",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "7d4d7f93acf84569669ff2655364e0ddf7018d68e7d8b5e2060f0ec479507ea0"
+    },
+    {
+      "name": "mat_data/s44.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s44.mat",
+      "bytes": 208780878,
+      "checksum": "md5:701b05772835c04b6bc252bc67f95a20",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "b0433df98a59f5c354743d97e5ffea422cb9bfa69cf025f828d4e038872d3c7d"
+    },
+    {
+      "name": "mat_data/s45.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s45.mat",
+      "bytes": 208130079,
+      "checksum": "md5:a807dfe025468debabe22f48ec94746d",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "1d679a6daba9a60160eb080abe7532bab49f78f6ebe7bc79f817512d6b9f855b"
+    },
+    {
+      "name": "mat_data/s46.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s46.mat",
+      "bytes": 237147858,
+      "checksum": "s3-multipart-md5-5242880:e14429f8bc44c52d0ae5a88ac831a586-46",
+      "checksum_evidence": "Original multipart ETag; require actual MD5-of-part-MD5s using5MiB parts and exact part count to match, not a plain file MD5. If this hypothesis does not match downloaded content, stop for review.",
+      "sha256": "be33aa595d7a32cf7666758f102f52fd4d71f150a70f7529c7bb86c3c09ea0a8"
+    },
+    {
+      "name": "mat_data/s47.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s47.mat",
+      "bytes": 201698159,
+      "checksum": "md5:b6d231d7a53a5a53d0feffa1c228e462",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "e5d5161a85b645839ec3c23b5ef8e334f423aab132cd6b938d96eccd73ed5137"
+    },
+    {
+      "name": "mat_data/s48.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s48.mat",
+      "bytes": 205771783,
+      "checksum": "md5:2694027e9a232164bda41be2d7c855fd",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "ad01fd29a2f358204b0f528e78dbb909d35ad4304b3fa222dff90e759941a287"
+    },
+    {
+      "name": "mat_data/s49.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s49.mat",
+      "bytes": 203273886,
+      "checksum": "md5:49237f8cfae7f86aa339efad3df4f784",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "a1e24e633b20ea4ed3eba5d93f9cf51b8cf24a340ec72b78d7000da5afaf957b"
+    },
+    {
+      "name": "mat_data/s50.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s50.mat",
+      "bytes": 205228049,
+      "checksum": "md5:0044c799b85a60272143c44c1e7bde8a",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "b5df79bb64eb585ff01eb77cc176c9a02964c564dd40a4eeec7764b510950d40"
+    },
+    {
+      "name": "mat_data/s51.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s51.mat",
+      "bytes": 199549446,
+      "checksum": "md5:d7b908cf34002423735af0a5b1dcddd6",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "0c09887cc122d4a0c043d2304af1537a293fe86562b4296ec0e75f5bf2e95fbb"
+    },
+    {
+      "name": "mat_data/s52.mat",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/mat_data/s52.mat",
+      "bytes": 206541841,
+      "checksum": "md5:8dadad17413d6f92b4dce398905f608a",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "94840189e02d45ccca5d340bde6ca7f3e4c726acaf9749f6b9c6053ecb147f50"
+    },
+    {
+      "name": "readme.txt",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/readme.txt",
+      "bytes": 2237,
+      "checksum": "md5:71ec096f5d01d793cca5d9e791ddcda9",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "5f0a2627b2be544ce62a4a066bba9874e664153703b866c91490f027ab798c66"
+    },
+    {
+      "name": "readme_100295.txt",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/readme_100295.txt",
+      "bytes": 3300,
+      "checksum": "md5:63c21c09aa8c454f098c739707be1727",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "b49a150fef7d7dde84fef4d3051168611764e3c37e76d8f99ed3a0609def628f"
+    },
+    {
+      "name": "trial_sequence.zip",
+      "url": "https://s3.ap-northeast-1.wasabisys.com/gigadb-datasets/live/pub/10.5524/100001_101000/100295/trial_sequence.zip",
+      "bytes": 41909,
+      "checksum": "md5:9c2b00ad94946d8fe5b46620159d0fe7",
+      "checksum_evidence": "Publisher-hosted object ETag, verified against actual downloaded MD5",
+      "sha256": "39e32843f92dc43d9178d06711ba6587b17126a3890ff63f473cada5c02020d2"
+    }
+  ],
+  "licence_evidence": "Publisher DataCite rightsList plus original readme_100295 data grant",
+  "limitations": null
+}

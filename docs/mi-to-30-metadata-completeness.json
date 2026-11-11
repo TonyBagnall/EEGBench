@@ -1,0 +1,67 @@
+{
+  "pan25": {
+    "evidence": {
+      "direct": "Native signal arrays, labels/events and source IDs; per-recording headers/tables include actual sensor names/types where present. Anatomical labels absent for Pan2023/Cho, explicitly flagged.",
+      "secondary": "Pinned MOABB task/label and unit interpretation, Pan2023 anatomical mapping not native",
+      "assigned": "Encoded class strings, archive memberships where no source test phase; original epoch ordinal"
+    },
+    "missing_or_inconsistent": [
+      "Original continuous offsets and absolute original trial IDs unavailable",
+      "Units not explicitly embedded; native numerical scale unchanged",
+      "Individual demographic mapping and visit dates not recovered"
+    ]
+  },
+  "pan23": {
+    "evidence": {
+      "direct": "Native signal arrays, labels/events and source IDs; per-recording headers/tables include actual sensor names/types where present. Anatomical labels absent for Pan2023/Cho, explicitly flagged.",
+      "secondary": "Pinned MOABB task/label and unit interpretation, Pan2023 anatomical mapping not native",
+      "assigned": "Encoded class strings, archive memberships where no source test phase; original epoch ordinal"
+    },
+    "missing_or_inconsistent": [
+      "Original continuous offsets and absolute original trial IDs unavailable",
+      "Units not explicitly embedded; native numerical scale unchanged",
+      "Individual demographic mapping and visit dates not recovered",
+      "No native anatomical names: secondary mapping retained separately, no anatomical order asserted",
+      "Publisher description mentions trial_info not present in native MAT and an upper filter cutoff above released Nyquist; preserve discrepancies"
+    ]
+  },
+  "rozado": {
+    "evidence": {
+      "direct": "Native signal arrays, labels/events and source IDs; per-recording headers/tables include actual sensor names/types where present. Anatomical labels absent for Pan2023/Cho, explicitly flagged.",
+      "secondary": "Pinned MOABB task/label and unit interpretation, Pan2023 anatomical mapping not native",
+      "assigned": "Encoded class strings, archive memberships where no source test phase; original epoch ordinal"
+    },
+    "missing_or_inconsistent": [
+      "No individual measured montage recovered",
+      "Original benchmark partitions absent: archive defines whole-subject split",
+      "Absolute original trial identifiers unavailable; native event ordinal retained"
+    ]
+  },
+  "cho": {
+    "evidence": {
+      "direct": "Native signal arrays, labels/events and source IDs; per-recording headers/tables include actual sensor names/types where present. Anatomical labels absent for Pan2023/Cho, explicitly flagged.",
+      "secondary": "Pinned MOABB task/label and unit interpretation, Pan2023 anatomical mapping not native",
+      "assigned": "Encoded class strings, archive memberships where no source test phase; original epoch ordinal"
+    },
+    "missing_or_inconsistent": [
+      "No original anatomical names in MAT; preserve numbered source columns and measured coordinates, do not invent montage labels",
+      "Native class arrays separate left/right trials; original sequence values retained, continuous clock units/run membership not established",
+      "Microvolt interpretation from source loader, no explicit native units field"
+    ]
+  },
+  "daly": {
+    "evidence": {
+      "direct": "Native signal arrays, labels/events and source IDs; per-recording headers/tables include actual sensor names/types where present. Anatomical labels absent for Pan2023/Cho, explicitly flagged.",
+      "secondary": "Pinned MOABB task/label and unit interpretation, Pan2023 anatomical mapping not native",
+      "assigned": "Encoded class strings, archive memberships where no source test phase; original epoch ordinal"
+    },
+    "missing_or_inconsistent": [
+      "No individual measured montage recovered",
+      "Original benchmark partitions absent: archive defines whole-subject split",
+      "Absolute original trial identifiers unavailable; native event ordinal retained",
+      "Source README19 participants versus18 released IDs",
+      "Some final labelled events extend beyond native EDF end; incomplete windows excluded explicitly",
+      "Original09/15run10 EDF and event tables are identical; true owner unknown, both ambiguous recordings excluded; other native run10 retained when unique"
+    ]
+  }
+}

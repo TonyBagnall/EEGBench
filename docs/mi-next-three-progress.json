@@ -3,7 +3,7 @@
   "registered_before": 74,
   "selected_before": 70,
   "motor_imagery_before": 22,
-  "stage": "Leeuwis and Polo fully validated; Batista full4117case export complete and TRAIN exact readback passed, TEST/final checks running",
+  "stage": "Complete: all three fully validated, registered, documented; final sidecar manifests verified",
   "datasets": {
     "batista": {
       "source": "Batista2022",
@@ -48,7 +48,7 @@
       "aeon_passed": true
     }
   },
-  "tests": "88passed",
+  "tests": "93 passed",
   "orchestrator": ".openeegbench/mi-next/cohort-orchestrator.json",
   "native_batista_audit": {
     "recordings": 99,
@@ -63,5 +63,11 @@
     "batista": ".openeegbench/mi-next/batista-full.json",
     "polo": ".openeegbench/mi-next/polo-full.json",
     "leeuwis": ".openeegbench/mi-next/leeuwis-full.json"
-  }
+  },
+  "registered": 77,
+  "selected": 73,
+  "motor_imagery": 25,
+  "report": "docs/mi-next-three-preparation.md",
+  "summary": "docs/mi-next-three-summary.json",
+  "all_final_manifest_artifacts_verified": true
 }

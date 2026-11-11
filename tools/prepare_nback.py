@@ -20,6 +20,8 @@ import numpy as np
 
 NAME = "NBackAudioCondition"
 LABELS = [10 * audio + nback for audio in range(4) for nback in range(3)]
+SAMPLING_FREQUENCY_HZ = 200
+FREQUENCY_EVIDENCE = "Recording sampling frequency confirmed as 200 Hz by the archive owner on 9 November 2026; not embedded in the supplied signal text."
 
 
 @dataclass(frozen=True)
@@ -267,8 +269,9 @@ def prepare(source, output, layout=Layout(), smoke=True):
                         participant_identity_evidence="Archive owner confirmed contiguous 720-row subject blocks and exclusions on 4 November 2026; original source IDs unavailable.",
                         channels=layout.channels, channel_names=[None] * layout.channels, sensors=sensors,
                         channel_order_consistent="All cases have the same source array-axis layout; anatomical identity/order cannot be independently verified.",
-                        channel_reference=None, montage=None, sampling_frequency_hz=None, original_sampling_frequency_hz=None,
-                        timepoints=layout.timepoints, samples_per_case=layout.timepoints, window_seconds=None,
+                        channel_reference=None, montage=None, sampling_frequency_hz=SAMPLING_FREQUENCY_HZ, original_sampling_frequency_hz=SAMPLING_FREQUENCY_HZ,
+                        sampling_frequency_evidence=FREQUENCY_EVIDENCE,
+                        timepoints=layout.timepoints, samples_per_case=layout.timepoints, window_seconds=layout.timepoints / SAMPLING_FREQUENCY_HZ,
                         overlap=None, units=None, axis_order=["case", "channel", "time"],
                         shapes={s.lower(): reports[s]["shape"] for s in hashes},
                         classes=12, class_values=LABELS,
@@ -280,10 +283,10 @@ def prepare(source, output, layout=Layout(), smoke=True):
                         original_partition="Source text is unpartitioned; TRAIN/TEST assigned locally.",
                         case_metadata=dict(file=f"{NAME}_rows.tsv", ordering="TRAIN then TEST; zero-based row within split; read identifiers as strings"),
                         related_preparations="NBack, NBackR and noise subsets use the same source collection; not independent recording collections.",
-                        missing_metadata=["original sensor names and verified sensor types", "sampling frequency", "sessions", "recording/run IDs", "original trial IDs", "recording sample/time bounds", "units", "audio descriptions", "montage/reference", "original preprocessing", "publication/source URL/DOI", "data licence"])
+                        missing_metadata=["original sensor names and verified sensor types", "sessions", "recording/run IDs", "original trial IDs", "recording sample/time bounds", "units", "audio descriptions", "montage/reference", "original preprocessing", "publication/source URL/DOI", "data licence"])
         dump(stage / f"{NAME}_metadata.json", metadata)
         dump(stage / f"{NAME}_validation.json", validation)
-        dump(stage / "metadata-completeness.json", dict(available=["confirmed participant blocks", "local source row/trial index", "joint and component labels", "array dimensions/order", "fixed split"], missing=metadata["missing_metadata"]))
+        dump(stage / "metadata-completeness.json", dict(available=["confirmed participant blocks", "local source row/trial index", "joint and component labels", "array dimensions/order", "fixed split", "owner-confirmed sampling frequency (200 Hz)", "window duration derived from sample count and frequency"], missing=metadata["missing_metadata"]))
         (stage / "channels.txt").write_text("Original sensor names are unknown. The source's channel array order is preserved; see sensors in metadata JSON.\n", encoding="utf-8")
         with (stage / "channels.tsv").open("w", encoding="utf-8", newline="") as file:
             file.write("array_index\tname\ttype\ttype_evidence\n")
@@ -298,7 +301,8 @@ def prepare(source, output, layout=Layout(), smoke=True):
             "Use the TRAIN/TEST .ts files and corresponding cases_train.tsv / cases_test.tsv; "
             "the combined rows TSV is TRAIN then TEST. Row numbers are zero-based within each split. "
             "Source-row and within-subject indices are local indices, not recovered acquisition trial IDs.\n\n"
-            "Sensor names, sampling frequency, sessions and original recording bounds are unknown. "
+            f"Sampling frequency is 200 Hz, confirmed by the archive owner; {layout.timepoints} samples span {layout.timepoints / SAMPLING_FREQUENCY_HZ:g} seconds. No resampling was applied. "
+            "Sensor names, sessions and original recording bounds are unknown. "
             "Channel indices do not imply anatomical identities. The licence is pending; this local "
             "preparation does not establish redistribution permission. See metadata and validation JSON.\n",
             encoding="utf-8")
@@ -308,6 +312,7 @@ def prepare(source, output, layout=Layout(), smoke=True):
         manifest = dict(name=NAME, status=validation["quality_status"], source=dict(path=str(source),
                         bytes=source.stat().st_size, sha256=source_hash.hexdigest(), attribution="Christoph Tremmel", revision="SHA-256 of supplied local source", urls=[], licence=None),
                         conversion=dict(script="conversion_code/prepare_nback.py", signal_processing="none",
+                                        sampling_frequency_hz=SAMPLING_FREQUENCY_HZ, sampling_frequency_evidence=FREQUENCY_EVIDENCE,
                                         labels="original combined code = 10 * audio + nback", order="source order within split"),
                         split=dict(unit="participant", train=metadata["train_participant_ids"], test=metadata["test_participant_ids"], excluded=metadata["excluded_participant_ids"], validation="none"),
                         artifacts={p.relative_to(stage).as_posix(): dict(bytes=p.stat().st_size, sha256=digest(p)) for p in stage.rglob("*") if p.is_file()})

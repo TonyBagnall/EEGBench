@@ -1,0 +1,14 @@
+{
+  "data": {
+    "dataset": {
+      "id": "ds002720",
+      "name": "BCItempo",
+      "comments": []
+    }
+  },
+  "extensions": {
+    "openneuro": {
+      "version": "5.12.0"
+    }
+  }
+}

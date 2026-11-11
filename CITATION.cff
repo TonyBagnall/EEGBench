@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use EEGBench or the EEG classification archive, please cite the paper below."
-title: "EEGBench: a leaderboard for EEG classification"
+message: "If you use Neuroverse or the EEG classification archive, please cite the paper below."
+title: "Neuroverse: a benchmark and leaderboard for neural time series classification"
 type: software
 authors:
   - given-names: "Aiden"
@@ -13,11 +13,11 @@ authors:
     family-names: "Bagnall"
 year: 2026
 license: "BSD-3-Clause"
-repository-code: "https://github.com/TonyBagnall/EEGBench"
+repository-code: "https://github.com/TonyBagnall/Neuroverse"
 references:
   - type: article
     title: "The Multiverse of Time Series Machine Learning: an Archive for Multivariate Time Series Classification"
-    notes: "EEGBench is part of the Multiverse archive."
+    notes: "Neuroverse follows the Multiverse archive conventions."
     authors:
       - given-names: "Matthew"
         family-names: "Middlehurst"

@@ -1,0 +1,215 @@
+"""Tests for the archive lists and metadata."""
+
+import pytest
+
+from neuroverse.datasets import (
+    DOMAINS,
+    by_domain,
+    local_only,
+    metadata,
+    neuroverse,
+    neuroverse_open,
+    neuroverse_paper,
+    restricted,
+)
+from neuroverse.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
+
+
+def test_archive_lists():
+    """All 85 problems, with published and local subsets explicitly identified."""
+    assert len(neuroverse) == len(set(neuroverse)) == 85
+    assert neuroverse == sorted(neuroverse)
+    assert len(neuroverse_paper) == 30 and len(local_only) == 55
+    assert set(neuroverse_paper).isdisjoint(local_only)
+    assert len(neuroverse_open) == 28
+    assert set(neuroverse) - set(neuroverse_open) == set(restricted) | set(local_only)
+    assert {'ImaginedHandFeetTongue', 'ClinicalSleepStages', 'VideoEmotions', 'ImaginedLeftRightHand', 'ImaginedRightHandFeet'} <= set(neuroverse)
+    assert not {'BCIIV2a', 'ISRUCSleep', 'FACED', 'Weibo2014', 'AlexMI'} & set(neuroverse)
+
+
+def test_domains_partition_the_archive():
+    """Every dataset is in exactly one domain."""
+    split = [name for domain in DOMAINS for name in by_domain(domain)]
+    assert sorted(split) == sorted(neuroverse)
+    assert "FibroUEA" in by_domain("Med")
+    assert "FibroUEA" not in by_domain("Med", open_only=True)
+    with pytest.raises(ValueError):
+        by_domain("Sleep")
+
+
+def test_metadata():
+    """The table describes the current local versions, including corrections."""
+    frame = metadata()
+    assert frame.loc["ImaginedRightHandFeetRest", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [1,24,150,40,250]
+    assert frame.loc["ImaginedLeftRightHandRest", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [1,24,480,240,250]
+    assert frame.loc["ImaginedHandFootActions", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [60,11,2727,930,125]
+    assert frame.loc["ImaginedHandGestures", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [11,17,382,143,500]
+    assert frame.loc["ImaginedArmTasks", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [12,17,3240,1080,1000]
+    assert frame.loc['SymbolAttention', ["subjects","channels","train_size","test_size","frequency"]].tolist() == [19,8,521259,175180,256]
+    assert frame.loc['ArmCoordination', ["subjects","channels","train_size","test_size","frequency"]].tolist() == [8,64,1498,505,500]
+    assert frame.loc["WalkingTargets", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [15,42,3600,900,100]
+    assert frame.loc['ObsessiveCompulsiveSymptoms', ['subjects','channels','train_size','test_size','frequency']].tolist() == [35,52,7754,2660,500]
+    assert frame.loc['ParkinsonsPedalling', ['subjects','channels','train_size','test_size','frequency']].tolist() == [39,63,2123,842,500]
+    assert frame.loc['ParkinsonsRest', ['subjects','channels','train_size','test_size','frequency']].tolist() == [55,63,1216,420,500]
+    assert frame.loc['ImaginedHandsStroke', 'channels'] == 29
+    assert frame.loc['ImaginedHandsStroke', 'classes'] == 2
+    assert frame.loc['ImaginedHandsStroke', 'subjects'] == 46
+    assert frame.loc['ImaginedHandsStroke', 'train_size'] == 1400
+    assert frame.loc['ImaginedHandsStroke', 'test_size'] == 440
+    assert frame.loc['ImaginedHandsStroke', 'frequency'] == 500
+    assert frame.loc['RestingEyeState', 'channels'] == 16
+    assert frame.loc['RestingEyeState', 'classes'] == 2
+    assert frame.loc['RestingEyeState', 'subjects'] == 19
+    assert frame.loc['RestingEyeState', 'train_size'] == 140
+    assert frame.loc['RestingEyeState', 'test_size'] == 50
+    assert frame.loc['GameTargets', 'channels'] == 8
+    assert frame.loc['GameTargets', 'classes'] == 2
+    assert frame.loc['GameTargets', 'subjects'] == 22
+    assert frame.loc['GameTargets', 'train_size'] == 20400
+    assert frame.loc['GameTargets', 'test_size'] == 6000
+    assert frame.loc['CodedFlickerTargets', 'channels'] == 28
+    assert frame.loc['CodedFlickerTargets', 'classes'] == 4
+    assert frame.loc['CodedFlickerTargets', 'subjects'] == 12
+    assert frame.loc['CodedFlickerTargets', 'train_size'] == 2160
+    assert frame.loc['CodedFlickerTargets', 'test_size'] == 720
+    assert frame.loc['ImaginedHandTraining', 'channels'] == 22
+    assert frame.loc['ImaginedHandTraining', 'classes'] == 2
+    assert frame.loc['ImaginedHandTraining', 'subjects'] == 18
+    assert frame.loc['ImaginedHandTraining', 'train_size'] == 5568
+    assert frame.loc['ImaginedHandTraining', 'test_size'] == 1588
+    assert list(frame.index) == neuroverse
+    assert frame.loc["Alzheimers", "length"] == 15000
+    assert frame.loc['FingerMovements', 'length'] == 50
+    assert frame.loc['FingerMovements', 'frequency'] == 100
+    assert frame.loc["SitStand", "classes"] == 4
+    assert frame["open"].sum() == 28
+    assert frame.loc['VideoEmotions', 'classes'] == 8
+    assert frame.loc['VideoEmotions', 'channels'] == 25
+    assert frame.loc['MatchWords', 'channels'] == 156
+    assert frame.loc['FlickerSymbols', 'channels'] == 64
+    assert frame.loc['FlickerSymbols', 'classes'] == 40
+    assert frame.loc['FlickerSymbols', 'train_size'] == 6240
+    assert frame.loc['FlickerSymbols', 'test_size'] == 2160
+    assert frame.loc['FlickerTargets', 'classes'] == 12
+    assert frame.loc['ImaginedGripForce', 'channels'] == 14
+    assert frame.loc['ImaginedGripForce', 'classes'] == 3
+    assert frame.loc['ImaginedGripForce', 'subjects'] == 10
+    assert frame.loc['ImaginedGripForce', 'train_size'] == 240
+    assert frame.loc['ImaginedGripForce', 'test_size'] == 60
+    assert frame.loc['ImaginedHandSides', 'channels'] == 3
+    assert frame.loc['ImaginedHandsFeet', 'channels'] == 13
+    assert frame.loc['ImaginedHandsFeet', 'train_size'] == 1365
+    assert frame.loc['SpellerFlashes', 'train_size'] == 12600
+    assert frame.loc['ALSAttention', 'test_size'] == 19200
+    assert frame.loc['WirelessFlicker', 'classes'] == 5
+    assert frame.loc['WirelessFlicker', 'channels'] == 14
+    assert frame.loc['WirelessFlicker', 'length'] == 640
+    assert frame.loc['ClinicalSleepStages', 'train_size'] == 64889
+    assert frame.loc['ImaginedLeftRightHand', 'channels'] == 60
+    assert frame.loc['ImaginedLeftRightHand', 'availability'] == 'local'
+    assert frame.loc['NBackAudioCondition', 'classes'] == 12
+    assert frame.loc['NBackAudioCondition', 'subjects'] == 23
+    assert frame.loc['NBackAudioCondition', 'train_size'] == 11520
+    assert frame.loc['NBackAudioCondition', 'test_size'] == 5040
+    assert frame.loc['NBackAudioCondition', 'availability'] == 'local'
+    assert frame.loc['NBackAudioCondition', 'frequency'] == 200
+    assert frame.loc['VisualSubjects', 'classes'] == 2
+    assert frame.loc['VisualSubjects', 'channels'] == 16
+    assert frame.loc['VisualSubjects', 'subjects'] == 64
+    assert frame.loc['VisualSubjects', 'length'] == 512
+    assert frame.loc['VisualSubjects', 'train_size'] == 42189
+    assert frame.loc['VisualSubjects', 'test_size'] == 18826
+    assert frame.loc['VisualSubjects', 'availability'] == 'local'
+    assert frame.loc['FlickerAttention', 'classes'] == 4
+    assert frame.loc['FlickerAttention', 'subjects'] == 12
+    assert frame.loc['FlickerAttention', 'train_size'] == 576
+    assert frame.loc['FlickerAttention', 'test_size'] == 352
+    assert frame.loc['WordRelatedness', 'channels'] == 30
+    assert frame.loc['WordRelatedness', 'subjects'] == 40
+    assert frame.loc['WordRelatedness', 'train_size'] == 3600
+    assert frame.loc['WordRelatedness', 'test_size'] == 1200
+    assert frame.loc['WordRelatedness', 'frequency'] == 1024
+    assert frame.loc['CodedSymbols', 'classes'] == 20
+    assert frame.loc['CodedSymbols', 'channels'] == 8
+    assert frame.loc['CodedSymbols', 'subjects'] == 30
+    assert frame.loc['CodedSymbols', 'length'] == 16128
+    assert frame.loc['CodedSymbols', 'train_size'] == 2200
+    assert frame.loc['CodedSymbols', 'test_size'] == 800
+    assert frame.loc['CodedSymbols', 'frequency'] == 512
+    for name in ['ArmMovements', 'ImaginedArmMovements']:
+        assert frame.loc[name, 'classes'] == 7
+        assert frame.loc[name, 'channels'] == 61
+        assert frame.loc[name, 'length'] == 1536
+        assert frame.loc[name, 'subjects'] == 15
+        assert frame.loc[name, 'train_size'] == 4620
+        assert frame.loc[name, 'test_size'] == 1680
+        assert frame.loc[name, 'frequency'] == 512
+
+
+def test_estimators():
+    """Every estimator has a known family, and the paper's eight are listed."""
+    assert {family for family, _, _ in ESTIMATORS.values()} <= set(FAMILIES)
+    assert set(PAPER_ESTIMATORS) <= set(ESTIMATORS)
+
+
+def test_fractional_sampling_frequency_is_preserved(monkeypatch):
+    """Native rates such as 62.5 Hz must not be rounded to integer Hz."""
+    import neuroverse.datasets as datasets
+    monkeypatch.setattr(datasets, '_TABLE', datasets._TABLE + [('FractionalRateExample', 2, 2, 32, 2, 4, 2, 62.5, 'Psy')])
+    assert datasets.metadata().loc['FractionalRateExample', 'frequency'] == 62.5
+    markdown = datasets.metadata_markdown()
+    assert '| 62.5 |' in markdown
+    assert '| 500.0 |' not in markdown
+
+
+def test_study_76_taxonomy_partitions_selected_problems():
+    """The 76-problem scalp EEG taxonomy partitions families and BCI sub-types cleanly."""
+    from neuroverse.datasets import (
+        BCI_TYPES,
+        PROBLEM_FAMILIES,
+        by_type,
+        excluded_archive,
+        neuroverse_76,
+    )
+
+    assert by_type("All") == neuroverse_76
+    assert set(neuroverse_76).isdisjoint(excluded_archive)
+    assert sorted(neuroverse_76 + excluded_archive) == neuroverse
+
+    family_parts = [by_type(fam) for fam in PROBLEM_FAMILIES]
+    for idx, left in enumerate(family_parts):
+        for right in family_parts[idx + 1 :]:
+            assert set(left).isdisjoint(right)
+    assert sorted(name for part in family_parts for name in part) == neuroverse_76
+
+    bci_parts = [by_type(sub) for sub in BCI_TYPES]
+    for idx, left in enumerate(bci_parts):
+        for right in bci_parts[idx + 1 :]:
+            assert set(left).isdisjoint(right)
+    assert sorted(name for part in bci_parts for name in part) == by_type("BCI")
+
+    frame = metadata()
+    assert set(frame.index[frame["problem_type"] == "Excluded"]) == set(excluded_archive)
+    with pytest.raises(ValueError, match="problem_type"):
+        by_type("UnknownType")
+
+
+def test_bakeoff_estimators_metadata_contract():
+    """Every active bake-off estimator maps to a valid paradigm and tsml-eval family."""
+    from neuroverse.estimators import (
+        BAKEOFF_ESTIMATORS,
+        PARADIGMS,
+        TSML_FAMILIES,
+        estimator_info,
+        estimator_table,
+    )
+
+    active_table = estimator_table(active_only=True)
+    assert sorted(active_table.index, key=str.lower) == BAKEOFF_ESTIMATORS
+    assert set(active_table["paradigm"]) <= set(PARADIGMS)
+    assert set(active_table["tsml_family"]) <= set(TSML_FAMILIES)
+
+    for base_fm in ("CBraMod", "LaBraM"):
+        assert not estimator_info(base_fm)["is_ablation"]
+        assert estimator_info(f"{base_fm}-random")["is_ablation"]
+        assert estimator_info(base_fm)["base_method"] == estimator_info(f"{base_fm}-random")["base_method"]

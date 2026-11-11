@@ -1,0 +1,62 @@
+[
+  {
+    "dataset": "ImaginedHandsOnline",
+    "train_cases": 2123,
+    "test_cases": 1519,
+    "subjects": 10,
+    "channels": 28,
+    "timepoints": 1000,
+    "classes": 2,
+    "frequency": 250,
+    "size_GB": 1.893195794,
+    "licence": "CC0-1.0"
+  },
+  {
+    "dataset": "ImaginedHandsCrossSession",
+    "train_cases": 2400,
+    "test_cases": 960,
+    "subjects": 14,
+    "channels": 28,
+    "timepoints": 1000,
+    "classes": 2,
+    "frequency": 250,
+    "size_GB": 1.779937199,
+    "licence": "CC0-1.0"
+  },
+  {
+    "dataset": "ImaginedHandPupils",
+    "train_cases": 1150,
+    "test_cases": 400,
+    "subjects": 30,
+    "channels": 32,
+    "timepoints": 3072,
+    "classes": 2,
+    "frequency": 512,
+    "size_GB": 2.537878361,
+    "licence": "CC0-1.0"
+  },
+  {
+    "dataset": "ImaginedHandsPhysiology",
+    "train_cases": 7880,
+    "test_cases": 2640,
+    "subjects": 52,
+    "channels": 64,
+    "timepoints": 1536,
+    "classes": 2,
+    "frequency": 512,
+    "size_GB": 10.694455046,
+    "licence": "CC0-1.0"
+  },
+  {
+    "dataset": "ImaginedHandMusicTempo",
+    "train_cases": 1698,
+    "test_cases": 643,
+    "subjects": 18,
+    "channels": 19,
+    "timepoints": 20000,
+    "classes": 2,
+    "frequency": 1000,
+    "size_GB": 16.815761441,
+    "licence": "CC-BY-4.0"
+  }
+]

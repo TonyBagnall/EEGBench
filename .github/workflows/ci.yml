@@ -31,13 +31,13 @@ jobs:
       # people to, so a syntax error in one is a user-facing break.
       - name: Compile every module
         run: |
-          python -m compileall -q eegbench tools/openeegbench
+          python -m compileall -q neuroverse tools/openeegbench
 
       - name: Run tests
         run: |
-          python -m pytest eegbench tools/openeegbench -v
+          python -m pytest neuroverse tools/openeegbench -v
 
       # The checked-in results must still build the pages the README links to.
       - name: Build the leaderboards
         run: |
-          python -m eegbench.experiments.tables
+          python -m neuroverse.experiments.tables

@@ -1,6 +1,6 @@
 # MOABB dataset review for EEGBench
 
-**Latest completion8November2026:** ImaginedHandsRobot, ImaginedGrasps and ImaginedHandsEmbodiment (Vagaja2023) are fully validated and registered:74registered/70selected,22MI including one ECoG. [Results and metadata](docs/mi-completion-batch.md). Eight further MI problems needed for30; Batista2022 is next, not downloaded here. Earlier batch/survey snapshots below are historical.
+**Latest completion 8 November 2026:** ImaginedHandsHaptics, ImaginedAnkleRest and ImaginedHandsFeedback are fully validated and registered: 77 registered / 73 selected, 25 MI including one ECoG. [Results and metadata](docs/mi-next-three-preparation.md). Five further MI problems are needed for 30. Earlier batch/survey snapshots below are historical.
 
 **MI target of30:** [the current19-to30 roadmap](docs/motor-imagery-road-to-30.md)
 identifies two existing unfinished additions plus nine further candidate

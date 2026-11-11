@@ -144,8 +144,8 @@ def main():
     parser.add_argument('--resume',action='store_true')
     parser.add_argument('--summary-name',default='summary.json')
     args=parser.parse_args()
-    from eegbench.datasets import eegbench
-    names=args.datasets or eegbench
+    from neuroverse.datasets import neuroverse
+    names=args.datasets or neuroverse
     if args.output.resolve().is_relative_to(args.root.resolve()):raise ValueError('Audit output must be separate from the dataset archive')
     args.output.mkdir(parents=True,exist_ok=True)
     jobs=[];completed=[]

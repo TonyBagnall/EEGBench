@@ -7,7 +7,7 @@ classification problems (patients vs controls, or between diagnoses), compiled
 > **Handoff note for the agent working in this repository.** This is a list
 > of candidate problems, not prepared datasets. Nothing here has been
 > downloaded or converted. Before preparing any of them:
-> - check this table against `dataset-provenance.md` and `additional-datasets.md`;
+> - check this table against [current provenance](dataset-provenance.md) and [prepared datasets](datasets.md);
 > - define the classes from the original paper;
 > - run the usual source lock, metadata completeness and signal scale audits.
 >
@@ -53,7 +53,7 @@ studied, who it excluded, and how it handled medication and sessions.
 | on003490 | Parkinson's | 50 (PD 25, CTL 25) | Rest, plus a 3-stimulus oddball | 67 / 500 | Paper to find (Cavanagh lab) | PD recorded ON and OFF medication in two sessions, so the contrast needs choosing (OFF vs control is usual). |
 | on003944 | First-episode psychosis | 82 (Psychosis 50, Control 32) | Rest, 5 min | 64 / 1000 | Paper to find | Includes 10 subjects from on003947. Phenotype folder has BPRS and other scales. |
 | on003947 | First-episode psychosis | 61 (Psychosis 31, Control 30) | Rest | 64 / 1000 | Paper to find | Second sample. Drop the 10 subjects shared with on003944, or merge the two. |
-| nm000114 | Depression (MDD) | 64 IDs (MDD 34, HS 30, by ID prefix) | Rest EC and EO, auditory P300 | 19–22 / 256 | [Mumtaz et al. 2016, BSPC 10.1016/j.bspc.2016.07.006](https://doi.org/10.1016/j.bspc.2016.07.006) | **In EEGBench**, via OpenEEGBench's `mdd_mumtaz2016` (`dataset-provenance.md`). The README says 34 participants (19 HC, 15 MDD), which contradicts the 64 IDs. NeuralBench uses 64. The duplicate windows across healthy-control IDs reported in `issues/mdd-duplicate-windows.md` may be related. |
+| nm000114 | Depression (MDD) | 64 IDs (MDD 34, HS 30, by ID prefix) | Rest EC and EO, auditory P300 | 19–22 / 256 | [Mumtaz et al. 2016, BSPC 10.1016/j.bspc.2016.07.006](https://doi.org/10.1016/j.bspc.2016.07.006) | **Excluded from current EEGBench**: OpenEEGBench's `mdd_mumtaz2016` conversion was removed after cross-subject copied waveforms were found; do not reinstate from this historical survey. See [provenance](dataset-provenance.md). The README says 34 participants (19 HC, 15 MDD), which contradicts the 64 IDs. NeuralBench uses 64. The duplicate windows across healthy-control IDs reported in `issues/mdd-duplicate-windows.md` may be related. |
 | on004595 | Hazardous drinking (AUD) | 53 (AUD 27, CTRL 26) | 3-armed bandit with alcohol cues | 66 / 500 | Campbell et al. (Cavanagh lab), DOI to find | on005907 is a re-release of the same data. Task-based. |
 | on003522 | Mild TBI | 96 (codes 0: 44, 1: 27, 2: 25) | 3-stimulus auditory oddball, plus rest | 64–65 / 500 | [Neuropsychologia 10.1016/j.neuropsychologia.2019.107125](https://doi.org/10.1016/j.neuropsychologia.2019.107125) | Control, sub-acute mTBI and chronic TBI; the code-to-group mapping needs confirming. Longitudinal with heavy attrition, so use session 1. |
 | on005114 | Mild TBI | 91 (codes 0: 57, 1: 34) | DPX cognitive control task | 64–65 / 500 | [Brain Imaging Behav. 10.1007/s11682-019-00171-y](https://doi.org/10.1007/s11682-019-00171-y) | Same cohort as on003522 and on003523. |

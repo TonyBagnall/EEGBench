@@ -1,10 +1,10 @@
 {
   "updated": "2026-11-08",
-  "current_mi_problems": 22,
-  "current_scalp_eeg_mi_problems": 21,
+  "current_mi_problems": 25,
+  "current_scalp_eeg_mi_problems": 24,
   "target_by_existing_count": 30,
-  "additional_needed": 8,
-  "scope": "Live assimilation: both former pending problems and Vagaja fully validated and registered",
+  "additional_needed": 5,
+  "scope": "Six latest MI additions fully converted and registered; latest Batista/Polo/Leeuwis batch complete",
   "existing_pipeline": [
     {
       "source": "Farabbi2020",
@@ -32,7 +32,7 @@
       "reported_subjects": "20",
       "declared_licence": "CC-BY-4.0",
       "original_source_url": "https://zenodo.org/records/7664069",
-      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+      "status": "Complete and registered as ImaginedHandsHaptics"
     },
     {
       "source": "PoloHortiguela2025",
@@ -40,7 +40,7 @@
       "reported_subjects": "6",
       "declared_licence": "CC-BY-4.0",
       "original_source_url": "https://doi.org/10.5281/zenodo.14672334",
-      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+      "status": "Complete and registered as ImaginedAnkleRest"
     },
     {
       "source": "Leeuwis2021",
@@ -48,7 +48,7 @@
       "reported_subjects": "55",
       "declared_licence": "CC-BY-4.0",
       "original_source_url": "https://doi.org/10.34894/Z7ZVOD",
-      "status": "Candidate; original-file/native-sensor/licence/duplicate/split/size checks before admission"
+      "status": "Complete and registered as ImaginedHandsFeedback"
     },
     {
       "source": "Pan2023",
@@ -105,5 +105,5 @@
     "Exclude imagined speech and executed movements"
   ],
   "roadmap": "docs/motor-imagery-road-to-30.md",
-  "next_candidate": "Batista2022"
+  "next_candidate": "Pan2023/Pan2025/Rozado2015/Cho2017/Daly2020, pending original access/licence/identity checks"
 }

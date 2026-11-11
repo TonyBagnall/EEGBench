@@ -26,7 +26,9 @@ def test_export_joint_labels_and_metadata(tmp_path):
     folder = tmp_path / "output" / NAME
     assert metadata["shapes"] == {"train": [12, 2, 3], "test": [12, 2, 3]}
     assert metadata["channel_names"] == [None, None]
-    assert metadata["sampling_frequency_hz"] is None
+    assert metadata["sampling_frequency_hz"] == 200
+    assert metadata["original_sampling_frequency_hz"] == 200
+    assert metadata["window_seconds"] == 3 / 200
     assert metadata["sessions"] is None
     assert validation["cross_split_duplicate_signal_hashes"] == 0
     for split, subject, start in [("train", "1", 0), ("test", "3", 24)]:

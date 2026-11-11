@@ -1,0 +1,688 @@
+{
+  "as_of": "2026-11-10",
+  "selection": "eeg.txt",
+  "selected_problems": 76,
+  "registered_problems": 85,
+  "registered_not_selected": [
+    "Blink",
+    "ButtonPress",
+    "EpilepticSeizures",
+    "FaceDetection",
+    "HandMovementDirection",
+    "MatchWords",
+    "MindReading",
+    "MotorImagery",
+    "Sleep"
+  ],
+  "count_unit": "Classification problems, not independent studies, cohorts or source recordings",
+  "primary_categories_mutually_exclusive": true,
+  "counts": [
+    {
+      "category": "Clinical and physiological states",
+      "all_selected": 17,
+      "scalp_eeg": 17
+    },
+    {
+      "category": "Brain-computer interfaces",
+      "all_selected": 50,
+      "scalp_eeg": 50
+    },
+    {
+      "category": "Cognitive and affective states",
+      "all_selected": 6,
+      "scalp_eeg": 6
+    },
+    {
+      "category": "Behaviour and activity",
+      "all_selected": 3,
+      "scalp_eeg": 3
+    },
+    {
+      "category": "Individual differences",
+      "all_selected": 0,
+      "scalp_eeg": 0
+    }
+  ],
+  "modalities": {
+    "scalp EEG": 76,
+    "MEG": 0,
+    "ECoG": 0
+  },
+  "rows": [
+    {
+      "problem": "ALSAttention",
+      "category": "Brain-computer interfaces",
+      "subclass": "ERP / P300 target detection",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Attended versus unattended flashes in ALS participants; not ALS diagnosis."
+    },
+    {
+      "problem": "Alzheimers",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "AlzheimersAuditory",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ArmCoordination",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor execution",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ArmMovements",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor execution",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ChildhoodSeizures",
+      "category": "Clinical and physiological states",
+      "subclass": "Seizure detection",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ClinicalSleepStages",
+      "category": "Clinical and physiological states",
+      "subclass": "Sleep staging",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "CodedFlickerTargets",
+      "category": "Brain-computer interfaces",
+      "subclass": "Code-modulated VEP",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "CodedSymbols",
+      "category": "Brain-computer interfaces",
+      "subclass": "Code-modulated VEP",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "CovidSurvivors",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "COVID-survivor versus close-contact cohort membership; not current disease diagnosis."
+    },
+    {
+      "problem": "EyesOpenShut",
+      "category": "Clinical and physiological states",
+      "subclass": "Physiological eye state",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "FeedbackButton",
+      "category": "Behaviour and activity",
+      "subclass": "Movement intention",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Press/no-press target in prompt-period windows ending before press; original acquisition provenance unresolved."
+    },
+    {
+      "problem": "FeetHands",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor execution",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "FibroLiverpool",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "FibroUEA",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "FingerMovements",
+      "category": "Behaviour and activity",
+      "subclass": "Movement intention",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "FlickerAttention",
+      "category": "Brain-computer interfaces",
+      "subclass": "SSVEP",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "FlickerSymbols",
+      "category": "Brain-computer interfaces",
+      "subclass": "SSVEP",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "FlickerTargets",
+      "category": "Brain-computer interfaces",
+      "subclass": "SSVEP",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "GameTargets",
+      "category": "Brain-computer interfaces",
+      "subclass": "ERP / P300 target detection",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedAnkleRest",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedArmMovements",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedArmTasks",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedCommands",
+      "category": "Brain-computer interfaces",
+      "subclass": "Imagined speech",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedFeetHands",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedGrasps",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedGripForce",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandFeetTongue",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandFootActions",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandGestures",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandMusicTempo",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandPupils",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandSides",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandTraining",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsCrossSession",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsEmbodiment",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsFeedback",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsFeet",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsHaptics",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsOnline",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsPhysiology",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsRobot",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedHandsStroke",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedLeftRightHand",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedLeftRightHandRest",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedOpenCloseFist",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedRightHandFeet",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ImaginedRightHandFeetRest",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "InnerSpeech",
+      "category": "Brain-computer interfaces",
+      "subclass": "Imagined speech",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "LongIntervalTask",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "PD versus control in interval timing; diagnosis target, not timing-task identity."
+    },
+    {
+      "problem": "LowCost",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "MatchingPennies",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor execution",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Executed hand raising while imagining the opposite hand; primary assignment motor execution, secondary motor imagery."
+    },
+    {
+      "problem": "MentalArithmetic",
+      "category": "Cognitive and affective states",
+      "subclass": "Workload / joint task condition",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "NBackAudioCondition",
+      "category": "Cognitive and affective states",
+      "subclass": "Workload / joint task condition",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Joint3 N-back levels x4 audio codes; not a pure workload contrast."
+    },
+    {
+      "problem": "ObsessiveCompulsiveSymptoms",
+      "category": "Clinical and physiological states",
+      "subclass": "Symptom screening (not diagnosis)",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "OCI-threshold symptom grouping in students; not clinical OCD diagnosis."
+    },
+    {
+      "problem": "OpenCloseFist",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor execution",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ParkinsonsPedalling",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "PD versus control during pedalling; diagnosis target, not activity classification."
+    },
+    {
+      "problem": "ParkinsonsRest",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ParkinsonsRestIowa",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ParkinsonsRestUCSD",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "PhotoStimulation",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "PronouncedSpeech",
+      "category": "Behaviour and activity",
+      "subclass": "Overt speech",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "RestingEyeState",
+      "category": "Clinical and physiological states",
+      "subclass": "Physiological eye state",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "SelfRegulationSCP1",
+      "category": "Brain-computer interfaces",
+      "subclass": "Slow cortical potential self-regulation",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "SelfRegulationSCP2",
+      "category": "Brain-computer interfaces",
+      "subclass": "Slow cortical potential self-regulation",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "ShortIntervalTask",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "PD versus control in interval timing; diagnosis target, not timing-task identity."
+    },
+    {
+      "problem": "SitStand",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Mixed imagined transitions and seated/standing idle classes; included in the existing30 MI tally."
+    },
+    {
+      "problem": "SongFamiliarity",
+      "category": "Cognitive and affective states",
+      "subclass": "Memory / recognition performance",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Correct versus incorrect song identification, not simply familiar versus unfamiliar."
+    },
+    {
+      "problem": "SpellerFlashes",
+      "category": "Brain-computer interfaces",
+      "subclass": "ERP / P300 target detection",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "SymbolAttention",
+      "category": "Brain-computer interfaces",
+      "subclass": "ERP / P300 target detection",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "VideoEmotions",
+      "category": "Cognitive and affective states",
+      "subclass": "Emotion",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "VisualSpeech",
+      "category": "Cognitive and affective states",
+      "subclass": "Visual imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Visualised circle direction, not spoken or imagined speech."
+    },
+    {
+      "problem": "VisualSubjects",
+      "category": "Brain-computer interfaces",
+      "subclass": "ERP / P300 target detection",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "WalkingTargets",
+      "category": "Brain-computer interfaces",
+      "subclass": "ERP / P300 target detection",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "WirelessFlicker",
+      "category": "Brain-computer interfaces",
+      "subclass": "SSVEP",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": ""
+    },
+    {
+      "problem": "WordRelatedness",
+      "category": "Cognitive and affective states",
+      "subclass": "Semantic processing",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "ERP/N400 semantic task; ERP is also a cross-cutting response/paradigm tag."
+    }
+  ],
+  "study_exclusions": [
+    {
+      "problem": "FaceDetection",
+      "modality": "MEG",
+      "reason": "User excludes MEG and ECoG from this scalp EEG study,10November2026; archive entry and data retained"
+    },
+    {
+      "problem": "HandMovementDirection",
+      "modality": "MEG",
+      "reason": "User excludes MEG and ECoG from this scalp EEG study,10November2026; archive entry and data retained"
+    },
+    {
+      "problem": "MatchWords",
+      "modality": "MEG",
+      "reason": "User excludes MEG and ECoG from this scalp EEG study,10November2026; archive entry and data retained"
+    },
+    {
+      "problem": "MindReading",
+      "modality": "MEG",
+      "reason": "User excludes MEG and ECoG from this scalp EEG study,10November2026; archive entry and data retained"
+    },
+    {
+      "problem": "MotorImagery",
+      "modality": "ECoG",
+      "reason": "User excludes MEG and ECoG from this scalp EEG study,10November2026; archive entry and data retained"
+    }
+  ]
+}

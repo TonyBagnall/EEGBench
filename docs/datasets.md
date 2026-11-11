@@ -25,93 +25,104 @@ collection includes the documented [local corrections](local-data-corrections.md
 The archive is a sub-collection of the
 [Multiverse](https://github.com/aeon-toolkit/multiverse) archive for multivariate time
 series classification, and some of these datasets are also in its benchmark subset,
-Multiverse-core. The local collection now contains 74 prepared
+Multiverse-core. The local collection now contains 85 prepared
 classification problems, including the additional preparations described below.
-The selected problem list in `eeg.txt` contains 70 problems. It excludes Blink,
-ButtonPress, Sleep and EpilepticSeizures; their registry entries and local files
-are retained.
+The selected scalp EEG study list in `eeg.txt` contains 76 problems. It excludes
+Blink, ButtonPress, Sleep and EpilepticSeizures, plus FaceDetection,
+HandMovementDirection, MatchWords and MindReading (MEG), and MotorImagery (ECoG).
+Their registry entries and local files are retained. See the
+[study taxonomy and counts](problem-taxonomy.md).
 
 ## Archive datasets
 
 <!-- DATASETS:START -->
-
-| Dataset | Domain | Channels | Length | Classes | Subjects | Train | Test | Hz | Availability |
-|---|---|---|---|---|---|---|---|---|---|
-| ALSAttention | BCI | 8 | 256 | 2 | 8 | 14400 | 19200 | 256 | local |
-| Alzheimers | Med | 19 | 15000 | 3 | 88 | 45 | 43 | 500 | aeon/Zenodo |
-| ArmCoordination | BCI | 64 | 1500 | 2 | 8 | 1498 | 505 | 500 | local |
-| ArmMovements | BCI | 61 | 1536 | 7 | 15 | 4620 | 1680 | 512 | local |
-| Blink | BCI | 4 | 510 | 2 | &mdash; | 500 | 450 | 255 | aeon/Zenodo |
-| ButtonPress | BCI | 32 | 1000 | 2 | 1 | 120 | 120 | 1000 | aeon/Zenodo |
-| ChildhoodSeizures | Med | 17 | 2000 | 2 | 22 | 34045 | 2140 | 200 | local |
-| ClinicalSleepStages | Med | 6 | 6000 | 5 | 82 | 64889 | 8803 | 200 | local |
-| CodedFlickerTargets | BCI | 28 | 1100 | 4 | 12 | 2160 | 720 | 500 | local |
-| CodedSymbols | BCI | 8 | 16128 | 20 | 30 | 2200 | 800 | 512 | local |
-| CovidSurvivors | Med | 19 | 400 | 2 | 172 | 25319 | 11216 | 200 | local |
-| EpilepticSeizures | Med | 1 | 178 | 2 | &mdash; | 80 | 11420 | 178 | aeon/Zenodo |
-| EyesOpenShut | BCI | 14 | 128 | 2 | &mdash; | 56 | 42 | 128 | aeon/Zenodo |
-| FaceDetection | Psy | 144 | 62 | 2 | &mdash; | 5890 | 3524 | 250 | aeon/Zenodo |
-| FeedbackButton | Psy | 61 | 450 | 2 | 57 | 1700 | 1150 | 500 | aeon/Zenodo |
-| FeetHands | BCI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
-| FibroLiverpool | Med | 64 | 15360 | 2 | 36 | 15 | 21 | 512 | restricted |
-| FibroUEA | Med | 64 | 15000 | 2 | 41 | 17 | 23 | 500 | restricted |
-| FingerMovements | BCI | 28 | 50 | 2 | &mdash; | 316 | 100 | 100 | aeon/Zenodo |
-| FlickerAttention | BCI | 8 | 512 | 4 | 12 | 576 | 352 | 256 | local |
-| FlickerSymbols | BCI | 64 | 1500 | 40 | 35 | 6240 | 2160 | 250 | local |
-| FlickerTargets | BCI | 8 | 1114 | 12 | 10 | 1440 | 360 | 256 | local |
-| GameTargets | BCI | 8 | 225 | 2 | 22 | 20400 | 6000 | 250 | local |
-| HandMovementDirection | BCI | 10 | 400 | 4 | &mdash; | 160 | 74 | 400 | aeon/Zenodo |
-| ImaginedArmMovements | BCI | 61 | 1536 | 7 | 15 | 4620 | 1680 | 512 | local |
-| ImaginedArmTasks | BCI | 17 | 3960 | 10 | 12 | 3240 | 1080 | 1000 | local |
-| ImaginedCommands | BCI | 64 | 600 | 5 | 15 | 5250 | 750 | 200 | local |
-| ImaginedFeetHands | BCI | 64 | 640 | 2 | 105 | 2835 | 1935 | 160 | aeon/Zenodo |
-| ImaginedGrasps | BCI | 60 | 1000 | 3 | 15 | 4500 | 2250 | 250 | local |
-| ImaginedGripForce | BCI | 14 | 640 | 3 | 10 | 240 | 60 | 128 | local |
-| ImaginedHandFeetTongue | BCI | 22 | 800 | 4 | 9 | 3456 | 1728 | 200 | local |
-| ImaginedHandFootActions | BCI | 11 | 500 | 8 | 60 | 2727 | 930 | 125 | local |
-| ImaginedHandGestures | BCI | 17 | 3000 | 4 | 11 | 382 | 143 | 500 | local |
-| ImaginedHandSides | BCI | 3 | 1125 | 2 | 9 | 3680 | 2840 | 250 | local |
-| ImaginedHandTraining | BCI | 22 | 2560 | 2 | 18 | 5568 | 1588 | 512 | local |
-| ImaginedHandsEmbodiment | BCI | 32 | 4997 | 2 | 26 | 798 | 240 | 500 | local |
-| ImaginedHandsFeet | BCI | 13 | 1250 | 3 | 4 | 1365 | 435 | 250 | local |
-| ImaginedHandsRobot | BCI | 32 | 1000 | 2 | 12 | 2880 | 2880 | 250 | local |
-| ImaginedHandsStroke | BCI | 29 | 2000 | 2 | 46 | 1400 | 440 | 500 | local |
-| ImaginedLeftRightHand | BCI | 60 | 800 | 2 | 10 | 1260 | 320 | 200 | local |
-| ImaginedLeftRightHandRest | BCI | 24 | 750 | 3 | 1 | 480 | 240 | 250 | local |
-| ImaginedOpenCloseFist | BCI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
-| ImaginedRightHandFeet | BCI | 16 | 1536 | 2 | 8 | 240 | 80 | 512 | local |
-| ImaginedRightHandFeetRest | BCI | 24 | 750 | 3 | 1 | 150 | 40 | 250 | local |
-| InnerSpeech | BCI | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
-| LongIntervalTask | Med | 63 | 4750 | 2 | 139 | 1660 | 1120 | 500 | aeon/Zenodo |
-| LowCost | BCI | 15 | 375 | 2 | 10 | 600 | 600 | 125 | aeon/Zenodo |
-| MatchWords | Psy | 156 | 1500 | 2 | &mdash; | 360 | 360 | 1000 | local |
-| MatchingPennies | Psy | 10 | 10000 | 2 | 7 | 700 | 700 | 5000 | aeon/Zenodo |
-| MentalArithmetic | BCI | 19 | 1000 | 2 | 36 | 1515 | 192 | 200 | local |
-| MindReading | BCI | 204 | 200 | 5 | &mdash; | 727 | 653 | 200 | aeon/Zenodo |
-| MotorImagery | BCI | 64 | 3000 | 2 | &mdash; | 278 | 100 | 1000 | aeon/Zenodo |
-| NBackAudioCondition | Psy | 16 | 600 | 12 | 23 | 11520 | 5040 | &mdash; | local |
-| ObsessiveCompulsiveSymptoms | Med | 52 | 2000 | 2 | 35 | 7754 | 2660 | 500 | local |
-| OpenCloseFist | BCI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
-| ParkinsonsPedalling | Med | 63 | 2000 | 2 | 39 | 2123 | 842 | 500 | local |
-| ParkinsonsRest | Med | 63 | 2000 | 2 | 55 | 1216 | 420 | 500 | local |
-| PhotoStimulation | Med | 19 | 9000 | 3 | 73 | 37 | 36 | 500 | aeon/Zenodo |
-| PronouncedSpeech | BCI | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
-| RestingEyeState | BCI | 16 | 5120 | 2 | 19 | 140 | 50 | 512 | local |
-| SelfRegulationSCP1 | BCI | 6 | 896 | 2 | &mdash; | 268 | 293 | 256 | aeon/Zenodo |
-| SelfRegulationSCP2 | BCI | 7 | 1152 | 2 | &mdash; | 200 | 180 | 256 | aeon/Zenodo |
-| ShortIntervalTask | Med | 63 | 2750 | 2 | 139 | 1660 | 1120 | 500 | aeon/Zenodo |
-| SitStand | BCI | 17 | 1250 | 4 | 32 | 3200 | 3200 | 250 | aeon/Zenodo |
-| Sleep | Psy | 1 | 178 | 5 | 82 | 2394 | 1205 | 100 | aeon/Zenodo |
-| SongFamiliarity | Psy | 32 | 3000 | 2 | 29 | 700 | 750 | 1000 | aeon/Zenodo |
-| SpellerFlashes | BCI | 8 | 205 | 2 | 10 | 12600 | 12600 | 256 | local |
-| SymbolAttention | BCI | 8 | 256 | 2 | 19 | 521259 | 175180 | 256 | local |
-| VideoEmotions | Psy | 25 | 2000 | 8 | 123 | 15629 | 3588 | 200 | local |
-| VisualSpeech | BCI | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
-| VisualSubjects | BCI | 16 | 512 | 2 | 64 | 42189 | 18826 | 512 | local |
-| WalkingTargets | BCI | 42 | 100 | 2 | 15 | 3600 | 900 | 100 | local |
-| WirelessFlicker | BCI | 14 | 640 | 5 | 11 | 1000 | 375 | 128 | local |
-| WordRelatedness | Psy | 30 | 1024 | 2 | 40 | 3600 | 1200 | 1024 | local |
-
+| Dataset | Domain | Study type | Channels | Length | Classes | Subjects | Train | Test | Hz | Availability |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ALSAttention | BCI | ERP | 8 | 256 | 2 | 8 | 14400 | 19200 | 256 | local |
+| Alzheimers | Med | Clinical | 19 | 15000 | 3 | 88 | 45 | 43 | 500 | aeon/Zenodo |
+| AlzheimersAuditory | Med | Clinical | 19 | 1000 | 3 | 33 | 2020 | 1000 | 250 | local |
+| ArmCoordination | BCI | MI | 64 | 1500 | 2 | 8 | 1498 | 505 | 500 | local |
+| ArmMovements | BCI | MI | 61 | 1536 | 7 | 15 | 4620 | 1680 | 512 | local |
+| Blink | BCI | &mdash; | 4 | 510 | 2 | &mdash; | 500 | 450 | 255 | aeon/Zenodo |
+| ButtonPress | BCI | &mdash; | 32 | 1000 | 2 | 1 | 120 | 120 | 1000 | aeon/Zenodo |
+| ChildhoodSeizures | Med | Clinical | 17 | 2000 | 2 | 22 | 34045 | 2140 | 200 | local |
+| ClinicalSleepStages | Med | Clinical | 6 | 6000 | 5 | 82 | 64889 | 8803 | 200 | local |
+| CodedFlickerTargets | BCI | VEP | 28 | 1100 | 4 | 12 | 2160 | 720 | 500 | local |
+| CodedSymbols | BCI | VEP | 8 | 16128 | 20 | 30 | 2200 | 800 | 512 | local |
+| CovidSurvivors | Med | Clinical | 19 | 400 | 2 | 172 | 25319 | 11216 | 200 | local |
+| EpilepticSeizures | Med | &mdash; | 1 | 178 | 2 | &mdash; | 80 | 11420 | 178 | aeon/Zenodo |
+| EyesOpenShut | BCI | Cognitive | 14 | 128 | 2 | &mdash; | 56 | 42 | 128 | aeon/Zenodo |
+| FaceDetection | Psy | &mdash; | 144 | 62 | 2 | &mdash; | 5890 | 3524 | 250 | aeon/Zenodo |
+| FeedbackButton | Psy | Cognitive | 61 | 450 | 2 | 57 | 1700 | 1150 | 500 | aeon/Zenodo |
+| FeetHands | BCI | MI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
+| FibroLiverpool | Med | Clinical | 64 | 15360 | 2 | 36 | 15 | 21 | 512 | restricted |
+| FibroUEA | Med | Clinical | 64 | 15000 | 2 | 41 | 17 | 23 | 500 | restricted |
+| FingerMovements | BCI | MI | 28 | 50 | 2 | &mdash; | 316 | 100 | 100 | aeon/Zenodo |
+| FlickerAttention | BCI | VEP | 8 | 512 | 4 | 12 | 576 | 352 | 256 | local |
+| FlickerSymbols | BCI | VEP | 64 | 1500 | 40 | 35 | 6240 | 2160 | 250 | local |
+| FlickerTargets | BCI | VEP | 8 | 1114 | 12 | 10 | 1440 | 360 | 256 | local |
+| GameTargets | BCI | ERP | 8 | 225 | 2 | 22 | 20400 | 6000 | 250 | local |
+| HandMovementDirection | BCI | &mdash; | 10 | 400 | 4 | &mdash; | 160 | 74 | 400 | aeon/Zenodo |
+| ImaginedAnkleRest | BCI | MI | 28 | 1000 | 2 | 6 | 264 | 132 | 250 | local |
+| ImaginedArmMovements | BCI | MI | 61 | 1536 | 7 | 15 | 4620 | 1680 | 512 | local |
+| ImaginedArmTasks | BCI | MI | 17 | 3960 | 10 | 12 | 3240 | 1080 | 1000 | local |
+| ImaginedCommands | BCI | Speech | 64 | 600 | 5 | 15 | 5250 | 750 | 200 | local |
+| ImaginedFeetHands | BCI | MI | 64 | 640 | 2 | 105 | 2835 | 1935 | 160 | aeon/Zenodo |
+| ImaginedGrasps | BCI | MI | 60 | 1000 | 3 | 15 | 4500 | 2250 | 250 | local |
+| ImaginedGripForce | BCI | MI | 14 | 640 | 3 | 10 | 240 | 60 | 128 | local |
+| ImaginedHandFeetTongue | BCI | MI | 22 | 800 | 4 | 9 | 3456 | 1728 | 200 | local |
+| ImaginedHandFootActions | BCI | MI | 11 | 500 | 8 | 60 | 2727 | 930 | 125 | local |
+| ImaginedHandGestures | BCI | MI | 17 | 3000 | 4 | 11 | 382 | 143 | 500 | local |
+| ImaginedHandMusicTempo | BCI | MI | 19 | 20000 | 2 | 18 | 1698 | 643 | 1000 | local |
+| ImaginedHandPupils | BCI | MI | 32 | 3072 | 2 | 30 | 1150 | 400 | 512 | local |
+| ImaginedHandSides | BCI | MI | 3 | 1125 | 2 | 9 | 3680 | 2840 | 250 | local |
+| ImaginedHandTraining | BCI | MI | 22 | 2560 | 2 | 18 | 5568 | 1588 | 512 | local |
+| ImaginedHandsCrossSession | BCI | MI | 28 | 1000 | 2 | 14 | 2400 | 960 | 250 | local |
+| ImaginedHandsEmbodiment | BCI | MI | 32 | 4997 | 2 | 26 | 798 | 240 | 500 | local |
+| ImaginedHandsFeedback | BCI | MI | 16 | 1250 | 2 | 55 | 6560 | 2240 | 250 | local |
+| ImaginedHandsFeet | BCI | MI | 13 | 1250 | 3 | 4 | 1365 | 435 | 250 | local |
+| ImaginedHandsHaptics | BCI | MI | 32 | 2495 | 2 | 20 | 3083 | 1034 | 500 | local |
+| ImaginedHandsOnline | BCI | MI | 28 | 1000 | 2 | 10 | 2123 | 1519 | 250 | local |
+| ImaginedHandsPhysiology | BCI | MI | 64 | 1536 | 2 | 52 | 7880 | 2640 | 512 | local |
+| ImaginedHandsRobot | BCI | MI | 32 | 1000 | 2 | 12 | 2880 | 2880 | 250 | local |
+| ImaginedHandsStroke | BCI | MI | 29 | 2000 | 2 | 46 | 1400 | 440 | 500 | local |
+| ImaginedLeftRightHand | BCI | MI | 60 | 800 | 2 | 10 | 1260 | 320 | 200 | local |
+| ImaginedLeftRightHandRest | BCI | MI | 24 | 750 | 3 | 1 | 480 | 240 | 250 | local |
+| ImaginedOpenCloseFist | BCI | MI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
+| ImaginedRightHandFeet | BCI | MI | 16 | 1536 | 2 | 8 | 240 | 80 | 512 | local |
+| ImaginedRightHandFeetRest | BCI | MI | 24 | 750 | 3 | 1 | 150 | 40 | 250 | local |
+| InnerSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
+| LongIntervalTask | Med | Clinical | 63 | 4750 | 2 | 139 | 1660 | 1120 | 500 | aeon/Zenodo |
+| LowCost | BCI | MI | 15 | 375 | 2 | 10 | 600 | 600 | 125 | aeon/Zenodo |
+| MatchWords | Psy | &mdash; | 156 | 1500 | 2 | &mdash; | 360 | 360 | 1000 | local |
+| MatchingPennies | Psy | MI | 10 | 10000 | 2 | 7 | 700 | 700 | 5000 | aeon/Zenodo |
+| MentalArithmetic | BCI | Cognitive | 19 | 1000 | 2 | 36 | 1515 | 192 | 200 | local |
+| MindReading | BCI | &mdash; | 204 | 200 | 5 | &mdash; | 727 | 653 | 200 | aeon/Zenodo |
+| MotorImagery | BCI | &mdash; | 64 | 3000 | 2 | &mdash; | 278 | 100 | 1000 | aeon/Zenodo |
+| NBackAudioCondition | Psy | Cognitive | 16 | 600 | 12 | 23 | 11520 | 5040 | 200 | local |
+| ObsessiveCompulsiveSymptoms | Med | Clinical | 52 | 2000 | 2 | 35 | 7754 | 2660 | 500 | local |
+| OpenCloseFist | BCI | MI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
+| ParkinsonsPedalling | Med | Clinical | 63 | 2000 | 2 | 39 | 2123 | 842 | 500 | local |
+| ParkinsonsRest | Med | Clinical | 63 | 2000 | 2 | 55 | 1216 | 420 | 500 | local |
+| ParkinsonsRestIowa | Med | Clinical | 60 | 2000 | 2 | 149 | 4598 | 1306 | 500 | local |
+| ParkinsonsRestUCSD | Med | Clinical | 32 | 2048 | 2 | 31 | 1126 | 380 | 512 | local |
+| PhotoStimulation | Med | Clinical | 19 | 9000 | 3 | 73 | 37 | 36 | 500 | aeon/Zenodo |
+| PronouncedSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
+| RestingEyeState | BCI | Cognitive | 16 | 5120 | 2 | 19 | 140 | 50 | 512 | local |
+| SelfRegulationSCP1 | BCI | ERP | 6 | 896 | 2 | &mdash; | 268 | 293 | 256 | aeon/Zenodo |
+| SelfRegulationSCP2 | BCI | ERP | 7 | 1152 | 2 | &mdash; | 200 | 180 | 256 | aeon/Zenodo |
+| ShortIntervalTask | Med | Clinical | 63 | 2750 | 2 | 139 | 1660 | 1120 | 500 | aeon/Zenodo |
+| SitStand | BCI | MI | 17 | 1250 | 4 | 32 | 3200 | 3200 | 250 | aeon/Zenodo |
+| Sleep | Psy | &mdash; | 1 | 178 | 5 | 82 | 2394 | 1205 | 100 | aeon/Zenodo |
+| SongFamiliarity | Psy | Cognitive | 32 | 3000 | 2 | 29 | 700 | 750 | 1000 | aeon/Zenodo |
+| SpellerFlashes | BCI | ERP | 8 | 205 | 2 | 10 | 12600 | 12600 | 256 | local |
+| SymbolAttention | BCI | ERP | 8 | 256 | 2 | 19 | 521259 | 175180 | 256 | local |
+| VideoEmotions | Psy | Cognitive | 25 | 2000 | 8 | 123 | 15629 | 3588 | 200 | local |
+| VisualSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
+| VisualSubjects | BCI | ERP | 16 | 512 | 2 | 64 | 42189 | 18826 | 512 | local |
+| WalkingTargets | BCI | ERP | 42 | 100 | 2 | 15 | 3600 | 900 | 100 | local |
+| WirelessFlicker | BCI | VEP | 14 | 640 | 5 | 11 | 1000 | 375 | 128 | local |
+| WordRelatedness | Psy | Cognitive | 30 | 1024 | 2 | 40 | 3600 | 1200 | 1024 | local |
 <!-- DATASETS:END -->
 
 ### SymbolAttention
@@ -140,7 +151,7 @@ Domain is medical (Med), brain-computer interface (BCI) or psychology (Psy). Sub
 blank where the local participant count is not established. FaceDetection,
 HandMovementDirection, MindReading and MatchWords are MEG. Availability distinguishes
 automatic aeon/Zenodo downloads, local preparations and restricted access. The table
-is written from `eegbench.datasets.metadata()` when the leaderboards are rebuilt.
+is written from `neuroverse.datasets.metadata()` when the leaderboards are rebuilt.
 Sampling frequency is blank where it has not been supplied.
 
 ## Additional local preparations
@@ -377,13 +388,14 @@ The source has 25 participants with 720 trials each. Participants 10 and 16 are
 excluded, retaining 23; the archive owner confirmed the subject blocks and
 exclusions. The existing NBack subject split is preserved: 16 people / 11,520 cases
 for training, seven / 5,040 for test, with 960 / 420 per joint class. Each case has
-16 channels and 600 timepoints. Signal values, channel-axis order and source order
+16 channels and 600 timepoints at 200 Hz (3 seconds), confirmed by the archive
+owner on 9 November 2026. Signal values, channel-axis order and source order
 within partitions are preserved, with no filtering or resampling added.
 
 The folder is `D:/Data/EEG/NBackAudioCondition/`, with ordered case tables,
 component labels, source row indices, participant strings, provenance, validation
 and a hashed manifest. Older NBack, NBackR and noise-subset preparations use the
-same collection. Sensor names, frequency, sessions, original recording boundaries,
+same collection. Sensor names, sessions, original recording boundaries,
 publication and data licence are pending. Channel indices are not anatomical
 names. See [NBack provenance](nback-location.md).
 
@@ -514,22 +526,32 @@ all aliases and template positions are preserved. See the
 ## Lists
 
 ```python
-from eegbench.datasets import eegbench, eegbench_paper, eegbench_open, local_only, by_domain, metadata
+from neuroverse.datasets import (
+    by_domain,
+    by_type,
+    local_only,
+    metadata,
+    neuroverse,
+    neuroverse_76,
+    neuroverse_open,
+    neuroverse_paper,
+)
 
-len(eegbench)        # 60, the full registry
-len(eegbench_paper)  # 30, the original paper subset
-len(local_only)      # 24, prepared additions without automatic aeon downloads
-len(eegbench_open)   # 28, the ones anyone can download
-by_domain("Med")     # all registered medical problems
-metadata()           # the table above as a DataFrame
+len(neuroverse)        # 85, the full archive registry
+len(neuroverse_76)     # 76, the selected scalp EEG benchmark study
+len(neuroverse_paper)  # 30, the original Rushbrooke et al. (2026) subset
+len(local_only)        # 55, prepared additions without automatic aeon downloads
+len(neuroverse_open)   # 28, open Zenodo downloads (aeon's 'eeg2026')
+by_type("MI")          # 35 motor imagery problems in neuroverse_76
+by_domain("Med")       # all registered medical problems
+metadata()             # the table above as a DataFrame
 ```
 
-`eegbench_open` is the 28-problem automatic-download subset, matching aeon's
-`eeg2026`. `local_only` contains thirty additional preparations to load from local
+`neuroverse_open` is the 28-problem automatic-download subset, matching aeon's
+`eeg2026`. `local_only` contains 55 additional preparations to load from local
 `.ts` files. FibroLiverpool and FibroUEA require research access through Tony
-Bagnall. `eegbench_paper` identifies the original 30; the default registry and
-batch experiment list include all 60. Existing results cover the datasets on
-which each estimator has actually been evaluated.
+Bagnall. `neuroverse_paper` identifies the original 30; `neuroverse_76` defines the
+76 scalp EEG problems evaluated on the active leaderboard.
 
 ## Downloading and loading
 
@@ -710,3 +732,145 @@ removals or exact duplicate cases; full readback/metadata/aeon checks passed.
 Same laboratory/hardware as Batista2022 does not prove shared recordings; its
 future admission must compare native identities/dates/waveforms.
 [Full provenance, memberships and recovery](imagined-hands-embodiment-preparation.md).
+
+
+### ImaginedHandsHaptics (Batista2022)
+
+TRAIN `(3083,32,2495)`, TEST `(1034,32,2495)`; two classes, 500 Hz.
+
+Left/right-hand imagination with abstract, motor-observation, VR and haptic
+feedback, pooled as one problem. Twenty original participants, one native
+session each, 99 imagery recordings. Executed-movement ME controls excluded.
+Keep actual source cues: 4,127 cues become 4,117 cases after ten unusable
+timing/discontinuity trials are excluded. The common safe crop is 2,495 samples
+at 500 Hz. Native 32 EEG names/order and explicit microvolt calibration retained;
+float32 digital samples calibrated in float64, no added DSP. Auxiliary labels
+vary without changing EEG order; generic roles and missing geometry stay unknown.
+Native main/pilot IDs remain distinct. Whole-subject 15/5-person split balances
+pilot/main cohorts. No exact recording or cue-prefix matches with
+ImaginedHandsEmbodiment; this does not establish cross-study participant identity.
+Original [Zenodo 7664069 v1](https://doi.org/10.5281/zenodo.7664069), CC BY 4.0;
+Batista et al. (2022), *Physiological Signals During Motor Imagery Brain-Computer
+Interface Training Using Virtual Reality and Haptics*. MOABB alias Batista2022;
+declared NEMAR view nm000318 is not another independent dataset.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+
+
+### ImaginedAnkleRest (PoloHortiguela2025)
+
+TRAIN `(264,28,1000)`, TEST `(132,28,1000)`; two classes, 250 Hz.
+
+Imagined dominant-ankle dorsal/plantar flexion versus relaxation, six people,
+one original S1 visit each. STATIC/MOTION exoskeleton conditions are pooled,
+not counted as separate visits or problems. Original 132 repetition files each
+supply two relaxation windows and one imagery window: first four seconds of
+each native labelled phase, 396 cases. Initial settling/audio/return phases
+excluded. Native 28 EEG labels/order, 250 Hz, raw float64 numbers and configured
+2D layout retained; four EOG and three inertial channels excluded. Microvolt
+interpretation inferred; explicit physical units, reference/ground and coordinate
+units/frame were not recovered. No added DSP or supplied processed blocks used.
+Whole-subject release B01–B04 TRAIN, B05–B06 TEST. Release B06 internally identifies
+B07; preserve both IDs with the verified one-to-one mapping.
+Original [Zenodo 14672334 v1](https://doi.org/10.5281/zenodo.14672334), CC BY 4.0;
+Polo-Hortiguela et al. (2025), *EEG Signal Dataset During Dorsiflexion and Plantar
+Flexion Movements*. MOABB alias PoloHortiguela2025, declared NEMAR view nm000302.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+
+
+### ImaginedHandsFeedback (Leeuwis2021)
+
+TRAIN `(6560,16,1250)`, TEST `(2240,16,1250)`; two classes, 250 Hz.
+
+Left/right-hand imagination by 55 novice BCI users, one visit and four runs
+per person: calibration plus three feedback runs, 8,800 cases. Original
+non-contiguous subject IDs 7–67 and native 16 EEG column order retained. Locate
+actual zero time at epoch index 749 and keep 1,250 samples, 0–4.996 seconds,
+at 250 Hz. Native decimal values parsed as round-trip float64 and unchanged;
+microvolt interpretation inferred. Original report/paper documents right-earlobe
+reference and AFz ground; individual positions and continuous offsets unknown.
+Paper filtering protocol retained separately from uncertain exact CSV filtering
+history; no added DSP. Whole-subject first 41 numeric native IDs TRAIN, remaining
+14 TEST, pooling original calibration/feedback phases. Individual questionnaire
+metadata mapped by ppnr: 55 rows, 36 Female/19 Male; the report's 57-person totals
+are inconsistent. Irregular Subject40 filenames and pinned file IDs preserved.
+Original [DataverseNL 10.34894/Z7ZVOD v1.0](https://doi.org/10.34894/Z7ZVOD),
+version ID 3733, CC BY 4.0; Leeuwis, Paas and Alimardani (2021), *Psychological
+and Cognitive Factors in Motor Imagery Brain Computer Interfaces*.
+Related [Frontiers paper](https://doi.org/10.3389/fnhum.2021.634748).
+MOABB alias Leeuwis2021, declared NEMAR view nm000327.
+
+No EEG sensors removed or exact duplicate cases found; full readback, metadata,
+sensor-order and aeon compatibility checks passed.
+[Complete recovery, source pins and metadata limitations](mi-next-three-preparation.md).
+
+## Further motor imagery preparations
+
+### ImaginedHandsOnline (Pan2025)
+
+10 participants; 2123 training and 1519 test cases, 28 channels x 1000 samples at 250 Hz. Classes: imagined_left_hand, imagined_right_hand.
+
+Original session1 and session2 first30 trials TRAIN, remaining session2 trials TEST; intentional shared participants. No separate validation archive. Native numbers cast to float64; presumed microvolts according to pinned loader, physical unit not embedded. No added filtering, resampling, demeaning, baseline or reference. Native epoch/crop identity retained; original continuous offsets unavailable.
+
+Original source [10.7910/DVN/GH74ZG](https://doi.org/10.7910/DVN/GH74ZG), CC0-1.0. Directly recovered native ordered channel labels. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandsOnline`. Native and documented/inferred metadata are distinguished. See [pan25 source lock](pan25-to-30-source-lock.json) and [conversion result](pan25-to-30-conversion-result.json).
+
+### ImaginedHandsCrossSession (Pan2023)
+
+14 participants; 2400 training and 960 test cases, 28 channels x 1000 samples at 250 Hz. Classes: imagined_left_hand, imagined_right_hand.
+
+Whole-subject original01-10 TRAIN,11-14 TEST. No separate validation archive. Native numbers cast to float64; presumed microvolts according to pinned loader, physical unit not embedded. No added filtering, resampling, demeaning, baseline or reference. Native epoch/crop identity retained; original continuous offsets unavailable.
+
+Original source [10.7910/DVN/251NOW](https://doi.org/10.7910/DVN/251NOW), CC0-1.0. Unverified anatomical identities: opaque original column IDs. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandsCrossSession`. Native and documented/inferred metadata are distinguished. See [pan23 source lock](pan23-to-30-source-lock.json) and [conversion result](pan23-to-30-conversion-result.json).
+
+### ImaginedHandPupils (Rozado2015)
+
+30 participants; 1150 training and 400 test cases, 32 channels x 3072 samples at 512 Hz. Classes: imagined_left_hand_grasp, rest.
+
+Whole-subject1-11 and16-26 TRAIN;12-15 and27-30 TEST. No separate validation archive. Explicit native XDF EEG microvolts cast to float64; select32 EEG by native type/order, exclude trigger/EX/AUX. Six seconds at nominal512Hz per cue. Raw common-host timestamps retained; no clock correction, interpolation, filter or reference change. Known noisy subjects retained with flags.
+
+Original source [10.7910/DVN/28932](https://doi.org/10.7910/DVN/28932), CC0-1.0. Directly recovered native ordered channel labels. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandPupils`. Native and documented/inferred metadata are distinguished. See [rozado source lock](rozado-to-30-source-lock.json) and [conversion result](rozado-to-30-conversion-result.json).
+
+### ImaginedHandsPhysiology (Cho2017)
+
+52 participants; 7880 training and 2640 test cases, 64 channels x 1536 samples at 512 Hz. Classes: imagined_left_hand, imagined_right_hand.
+
+Whole-subject01-39 TRAIN,40-52 TEST. No separate validation archive. Native class-array values cast to float64, presumed microvolts; actual imagery_event onsets define3-second crops. Original trial_sequence values order cases across classes. No mean removal, synthetic gaps or extra DSP. Native coordinates retained; no anatomical names embedded.
+
+Original source [10.5524/100295](https://doi.org/10.5524/100295), CC0-1.0. Opaque original EEG column identifiers; native anatomical names absent. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandsPhysiology`. Native and documented/inferred metadata are distinguished. See [cho source lock](cho-to-30-source-lock.json) and [conversion result](cho-to-30-conversion-result.json).
+
+### ImaginedHandMusicTempo (Daly2020)
+
+18 participants; 1698 training and 643 test cases, 19 channels x 20000 samples at 1000 Hz. Classes: lower_alpha_imagined_right_hand_squeezing, raise_alpha_relaxation.
+
+Whole-subject01-13 TRAIN,14-18 TEST; all native labelled non-calibration runs retained. No separate validation archive. Original calibrated EDF volts multiplied by1e6 in float64; native BIDS event onsets define20-second cases. Both byte-identical09/15run10 copies excluded because true participant attribution is unresolved; all other unique complete runs retained and strictly audited for duplicates. No extra DSP. Original README CC BY4.0 and dataset_description CC0 discrepancy retained, conservative attribution terms.
+
+Original source [10.18112/openneuro.ds002720.v1.0.1](https://doi.org/10.18112/openneuro.ds002720.v1.0.1), CC-BY-4.0. Directly recovered native ordered channel labels. Array-aligned case tables, sensor information, source receipts and all quality exclusions accompany `D:/Data/EEG/ImaginedHandMusicTempo`. Native and documented/inferred metadata are distinguished. See [daly source lock](daly-to-30-source-lock.json) and [conversion result](daly-to-30-conversion-result.json).
+
+### AlzheimersAuditory
+
+Lahijanian2024 / OpenNeuro ds005048 / EEGDash on005048. 33 participants; 2020/1000 TRAIN/TEST cases, 19 channels x 1000 samples at 250 Hz. Classes: normal, mild_cognitive_impairment, alzheimers_disease.
+
+Participant diagnosis classification during original40Hz auditory stimulation; Normal/MCI/AD, mild+moderate AD merged, unknown-group participants excluded. All complete4second windows within40second Stimulus events, rest excluded. Native250Hz float32 FDT numbers cast to float64; inferred microvolt format convention, no extra DSP. Distributed data already preprocessed; native history/reference/geometry and BIDS differences retained.
+
+Fixed whole-subject within each diagnosis: sorted original IDs, floor0.75*n TRAIN, remainder TEST; known group membership only. Actual memberships saved; no validation archive. Native sensor/history metadata, case-aligned tables, exclusions and validation accompany D:/Data/EEG/AlzheimersAuditory. See [clinical assimilation plan](eegdash-diagnosis-plan.md).
+
+### ParkinsonsRestIowa
+
+Singh et al./Iowa resting eyes-open / OpenNeuro ds004584. 149 participants; 4598/1306 TRAIN/TEST cases, 60 channels x 2000 samples at 500 Hz. Classes: control, parkinsons_disease.
+
+PD/control diagnostic groups from original participant GROUP; full source Rest recordings,4second windows at500Hz, no added DSP. Exact named sensor intersection across149source layouts; Resp and nonshared electrodes excluded explicitly. Native float32 FDT values castfloat64, interpreted as microvolts by EEGLAB convention; BIDS unit/type fields n/a. Source cohort related to existing Iowa interval-timing tasks, distinct rest recordings, not an independent participant study.
+
+Fixed whole-subject within original GROUP: sorted string IDs, floor0.75*n TRAIN, remainder TEST.149subjects, explicit memberships saved; no validation archive Native sensor/history metadata, case-aligned tables, exclusions and validation accompany D:/Data/EEG/ParkinsonsRestIowa. See [clinical assimilation plan](eegdash-diagnosis-plan.md).
+
+### ParkinsonsRestUCSD
+
+UCSD / OpenNeuro ds002778 / EEGDash on002778. 31 participants; 1126/380 TRAIN/TEST cases, 32 channels x 2048 samples at 512 Hz. Classes: healthy_control, parkinsons_disease_off_medication.
+
+Clinically diagnosed PD OFF medication versus controls. Complete non-overlapping4s rest windows, native512Hz,32named scalp channels before flat review. ON medication sessions excluded to keep one acquisition condition and avoid mixing raw with2processed substitutions. Float64 calibrated microvolts; no new DSP. Original README explicitly discourages diagnostic ML on this31person cohort because of small test-group size and clinical heterogeneity; requests pre-publication author contact. User explicitly authorised inclusion9November2026. Benchmark preparation is not evidence of clinical diagnostic validity.
+
+Within hc and pd groups: sorted original string IDs, floor0.75*n TRAIN, remainder TEST; all windows of each participant together, no validation export Native sensor/history metadata, case-aligned tables, exclusions and validation accompany D:/Data/EEG/ParkinsonsRestUCSD. See [clinical assimilation plan](eegdash-diagnosis-plan.md).

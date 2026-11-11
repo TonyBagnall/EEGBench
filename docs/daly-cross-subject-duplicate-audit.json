@@ -1,0 +1,48 @@
+{
+  "status": "investigated_exclude_both_ambiguous_recordings",
+  "evidence": "Full source receipt recorded byte-identical original EDF files under different participant IDs, independently caught by native case preflight",
+  "original_files": [
+    {
+      "name": "sub-09/eeg/sub-09_task-run10_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002720/sub-09/eeg/sub-09_task-run10_eeg.edf",
+      "bytes": 15015120,
+      "checksum": "md5:649d09cd77643965d3feddb2b1f0ded1",
+      "git_annex_pointer": "../../.git/annex/objects/zM/WJ/MD5E-s15015120--649d09cd77643965d3feddb2b1f0ded1.edf/MD5E-s15015120--649d09cd77643965d3feddb2b1f0ded1.edf",
+      "git_blob_sha1": "81d48bced97a32eccbdcf9518e31bdbf8e7ff5d6",
+      "sha256": "a25412b552cfff794a32d052c5d5b3b00a2cdcae24574db603ff05dc26845312"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-run10_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002720/sub-15/eeg/sub-15_task-run10_eeg.edf",
+      "bytes": 15015120,
+      "checksum": "md5:649d09cd77643965d3feddb2b1f0ded1",
+      "git_annex_pointer": "../../.git/annex/objects/zM/WJ/MD5E-s15015120--649d09cd77643965d3feddb2b1f0ded1.edf/MD5E-s15015120--649d09cd77643965d3feddb2b1f0ded1.edf",
+      "git_blob_sha1": "81d48bced97a32eccbdcf9518e31bdbf8e7ff5d6",
+      "sha256": "a25412b552cfff794a32d052c5d5b3b00a2cdcae24574db603ff05dc26845312"
+    }
+  ],
+  "sha256_identical": true,
+  "action": "User authorised removal after investigation: exclude both09/15run10 copies from derived cases, retain other recordings and originals; full retained-case audit remains mandatory",
+  "source_cache_observation": "D:/Data/EEGSources/Daly2020 absent at9Nov status check; receipt/file pins retained in repo",
+  "independent_work": "Cho full source complete, conversion resumed separately; full Pan23/Pan25/Rozado outputs validated",
+  "owner_attribution": "Unresolved; identical native headers have patient X X X X X",
+  "original_event_tables_identical": true,
+  "events_per_recording": 18,
+  "complete_events_per_recording": 17,
+  "excluded_complete_case_occurrences": 34,
+  "excluded_incomplete_events": 2,
+  "existing_openneuro_comments": 0,
+  "existing_specific_issue_found": false,
+  "investigation": "docs/daly-duplication-investigation.md",
+  "issue_draft": "docs/daly-duplication-issue-draft.md",
+  "report_destination": "https://openneuro.org/datasets/ds002720/versions/1.0.1",
+  "github_mirror_issues_enabled": false,
+  "upstream_report": {
+    "status": "reported_by_user",
+    "platform": "OpenNeuro dataset comments",
+    "dataset": "ds002720",
+    "reported_date": "2026-11-09",
+    "evidence": "User confirmed posting to OpenNeuro in this conversation",
+    "url": null
+  }
+}

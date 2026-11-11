@@ -1,32 +1,15 @@
 {
-  "updated": "2026-11-08",
-  "registered": 74,
-  "selected": 70,
+  "updated": "2026-11-09",
+  "registered": 82,
+  "selected": 78,
   "completed_latest": [
-    "ImaginedHandsRobot",
-    "ImaginedGrasps",
-    "ImaginedHandsEmbodiment"
+    "ImaginedHandsOnline",
+    "ImaginedHandsCrossSession",
+    "ImaginedHandPupils",
+    "ImaginedHandsPhysiology",
+    "ImaginedHandMusicTempo"
   ],
-  "in_progress": {
-    "ImaginedHandsHaptics": {
-      "source": "Batista2022",
-      "stage": "Full conversion running after tested pre-export correction; native99recordings/4127cues/4117eligible cases audit complete",
-      "worker_directory": ".openeegbench/mi-next",
-      "progress": "docs/mi-next-three-progress.json"
-    },
-    "ImaginedAnkleRest": {
-      "source": "PoloHortiguela2025",
-      "stage": "Full conversion and validation complete on D; repository registration pending batch completion",
-      "worker_directory": ".openeegbench/mi-next",
-      "progress": "docs/mi-next-three-progress.json"
-    },
-    "ImaginedHandsFeedback": {
-      "source": "Leeuwis2021",
-      "stage": "Full conversion and validation complete on D; repository registration pending batch completion",
-      "worker_directory": ".openeegbench/mi-next",
-      "progress": "docs/mi-next-three-progress.json"
-    }
-  },
+  "in_progress": {},
   "deferred": {
     "VisualCategories": {
       "source": "Kaneshiro2015",
@@ -42,7 +25,11 @@
   "no_uploads": true,
   "original_30_results_unchanged": true,
   "flags": {
-    "ImaginedArmTasks": "Anatomical channel names/order correspondence unknown; only native source-column ordinals preserved, no guessed montage"
+    "ImaginedArmTasks": "Anatomical channel names/order correspondence unknown; only native source-column ordinals preserved, no guessed montage",
+    "ImaginedAnkleRest": "Physical unit inferred microvolts, unchanged native numeric scale; native/release participant aliases retained",
+    "ImaginedHandsFeedback": "Physical unit inferred microvolts, exact supplied CSV filtering history not explicit",
+    "ImaginedHandsCrossSession": "Anatomical names absent from native MAT; opaque original column identifiers and source positions/mapping evidence retained, no invented labels",
+    "ImaginedHandsPhysiology": "Anatomical names absent from native MAT; opaque original column identifiers and source positions/mapping evidence retained, no invented labels"
   },
   "d_drive_access": "Resumed by user; temporary batch checksum-verified and restored to D",
   "preparation_root": "D:/Data/EEG",
@@ -60,11 +47,39 @@
     "transfer_report": "docs/c-temp-to-d-transfer.json",
     "temporary_copies_removed": true
   },
-  "motor_imagery_problems": 22,
-  "scalp_eeg_motor_imagery_problems": 21,
-  "completion_report": "docs/mi-completion-batch.md",
-  "next_candidate": {
-    "source": "Batista2022",
-    "stage": "Current authorised three-dataset batch in progress"
+  "motor_imagery_problems": 30,
+  "scalp_eeg_motor_imagery_problems": 29,
+  "completion_report": "docs/mi-to-30-preparation.md",
+  "next_candidate": null,
+  "latest_batch": {
+    "problems": [
+      "ImaginedHandsOnline",
+      "ImaginedHandsCrossSession",
+      "ImaginedHandPupils",
+      "ImaginedHandsPhysiology",
+      "ImaginedHandMusicTempo"
+    ],
+    "locations": {
+      "ImaginedHandsOnline": "D:\\Data\\EEG\\ImaginedHandsOnline",
+      "ImaginedHandsCrossSession": "D:\\Data\\EEG\\ImaginedHandsCrossSession",
+      "ImaginedHandPupils": "D:\\Data\\EEG\\ImaginedHandPupils",
+      "ImaginedHandsPhysiology": "D:\\Data\\EEG\\ImaginedHandsPhysiology",
+      "ImaginedHandMusicTempo": "D:\\Data\\EEG\\ImaginedHandMusicTempo"
+    },
+    "report": "docs/mi-to-30-progress.json",
+    "manifest_artifacts_verified": true,
+    "tests": "106 passed"
+  },
+  "active_batch_report": "docs/mi-to-30-progress.json",
+  "prepared_motor_imagery_problems": 30,
+  "upstream_reports": {
+    "Daly2020": {
+      "status": "reported_by_user",
+      "platform": "OpenNeuro dataset comments",
+      "dataset": "ds002720",
+      "reported_date": "2026-11-09",
+      "evidence": "User confirmed posting to OpenNeuro in this conversation",
+      "url": null
+    }
   }
 }

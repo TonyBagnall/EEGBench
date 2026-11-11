@@ -7,7 +7,7 @@ from pathlib import Path
 
 import numpy as np
 
-from eegbench.datasets import eegbench,metadata
+from neuroverse.datasets import metadata,neuroverse
 from tools.audit_signal_scale import THRESHOLD,dump,masks,quantiles
 
 
@@ -17,7 +17,7 @@ def summarize(root=Path('.openeegbench/signal-audit'),output=Path('docs')):
     documented_volts={'CodedSymbols','CovidSurvivors','ImaginedLeftRightHand','ImaginedRightHandFeet'}
     meg={'FaceDetection','HandMovementDirection','MindReading','MatchWords'}
     expected=metadata()
-    for name in eegbench:
+    for name in neuroverse:
         folder=root/name;summary=json.loads((folder/'summary.json').read_text())
         flags_by_split={};all_std=[];all_max=[];all_relative=[];counter={};parts={}
         for split in ['TRAIN','TEST']:

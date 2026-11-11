@@ -1,0 +1,29 @@
+{
+  "dataset": "NBackAudioCondition",
+  "sampling_frequency_hz": 200,
+  "original_sampling_frequency_hz": 200,
+  "timepoints": 600,
+  "window_seconds": 3,
+  "evidence": "Recording sampling frequency confirmed as 200 Hz by the archive owner on 9 November 2026; not embedded in the supplied signal text.",
+  "archive": "D:\\Data\\EEG\\NBackAudioCondition",
+  "signal_artifacts_verified_unchanged": {
+    "NBackAudioCondition_TRAIN.ts": {
+      "bytes": 634923776,
+      "sha256": "ebd48c7b1ba7c8b3b993773b6ff28f339cd45f274cd3809416f8502ad43ef9ba"
+    },
+    "NBackAudioCondition_TEST.ts": {
+      "bytes": 281010660,
+      "sha256": "c2551b1adedfc34d13605881079006e8a22554a7d5ad2dd1862d80aa12c8314a"
+    }
+  },
+  "sidecars_refreshed": true,
+  "tsml_eval_notification": {
+    "status": "delivered_to_existing_tsml_eval_task",
+    "thread_id": "01a15e8f-1a61-7400-8e08-28dc4e5630ae",
+    "recipient_workspace": "C:/Code/tsml-eval",
+    "requested_update": "Sampling-rate CSV, generated dataset_info and stale unknown-frequency skip comments",
+    "github_issue": "Not created: connector lacks issue-write permission; direct agent notification delivered instead",
+    "acknowledged": true,
+    "response": "Recipient acknowledged correction and is updating sampling-rate metadata and stale exclusions locally"
+  }
+}

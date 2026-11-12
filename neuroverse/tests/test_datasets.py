@@ -16,8 +16,8 @@ from neuroverse.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
 
 
 def test_archive_lists():
-    """All 86 problems, with published and local subsets explicitly identified."""
-    n_total = 86
+    """All 91 problems, with published and local subsets explicitly identified."""
+    n_total = 91
     n_paper = 30
     n_local = n_total - n_paper
     n_open = 28
@@ -27,7 +27,19 @@ def test_archive_lists():
     assert set(neuroverse_paper).isdisjoint(local_only)
     assert len(neuroverse_open) == n_open
     assert set(neuroverse) - set(neuroverse_open) == set(restricted) | set(local_only)
-    assert {'ImaginedFingers', 'ImaginedHandFeetTongue', 'ClinicalSleepStages', 'VideoEmotions', 'ImaginedLeftRightHand', 'ImaginedRightHandFeet'} <= set(neuroverse)
+    assert {
+        'ImaginedFingers',
+        'MigraineRest',
+        'ParkinsonsWalking',
+        'PsychosisRestFirst',
+        'PsychosisRestSecond',
+        'TBIAuditoryOddball',
+        'ImaginedHandFeetTongue',
+        'ClinicalSleepStages',
+        'VideoEmotions',
+        'ImaginedLeftRightHand',
+        'ImaginedRightHandFeet',
+    } <= set(neuroverse)
     assert not {'BCIIV2a', 'ISRUCSleep', 'FACED', 'Weibo2014', 'AlexMI'} & set(neuroverse)
 
 
@@ -44,6 +56,11 @@ def test_domains_partition_the_archive():
 def test_metadata():
     """The table describes the current local versions, including corrections."""
     frame = metadata()
+    assert frame.loc["MigraineRest", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [33, 128, 2, 2048, 1920, 750, 512]
+    assert frame.loc["ParkinsonsWalking", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [133, 53, 2, 1000, 6493, 2100, 250]
+    assert frame.loc["PsychosisRestFirst", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [82, 61, 2, 4000, 4657, 1601, 1000]
+    assert frame.loc["PsychosisRestSecond", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [61, 61, 2, 4000, 3472, 1239, 1000]
+    assert frame.loc["TBIAuditoryOddball", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [87, 61, 3, 500, 4848, 1748, 500]
     assert frame.loc["ImaginedFingers", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [20, 60, 5, 3072, 4481, 1500, 512]
     assert frame.loc["ImaginedRightHandFeetRest", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [1,24,150,40,250]
     assert frame.loc["ImaginedLeftRightHandRest", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [1,24,480,240,250]
@@ -168,7 +185,7 @@ def test_fractional_sampling_frequency_is_preserved(monkeypatch):
 
 
 def test_study_taxonomy_partitions_selected_problems():
-    """The 77-problem scalp EEG taxonomy partitions families and separates 30 MI from 6 ME."""
+    """The 82-problem scalp EEG taxonomy partitions families (30 MI, 20 Clinical, 8 Cognitive)."""
     from neuroverse.datasets import (
         BCI_TYPES,
         PROBLEM_FAMILIES,
@@ -176,11 +193,14 @@ def test_study_taxonomy_partitions_selected_problems():
         excluded_archive,
         neuroverse_76,
         neuroverse_77,
+        neuroverse_82,
         neuroverse_study,
     )
 
-    n_selected = 77
+    n_selected = 82
     n_mi = 30
+    n_clinical = 20
+    n_cognitive = 8
     expected_me = [
         "ArmCoordination",
         "ArmMovements",
@@ -191,9 +211,18 @@ def test_study_taxonomy_partitions_selected_problems():
     ]
 
     assert len(neuroverse_study) == n_selected
-    assert neuroverse_77 == neuroverse_76 == neuroverse_study
+    assert neuroverse_82 == neuroverse_77 == neuroverse_76 == neuroverse_study
     assert by_type("All") == neuroverse_study
     assert len(by_type("MI")) == n_mi
+    assert len(by_type("Clinical")) == n_clinical
+    assert len(by_type("Cognitive")) == n_cognitive
+    assert {
+        "MigraineRest",
+        "ParkinsonsWalking",
+        "PsychosisRestFirst",
+        "PsychosisRestSecond",
+        "TBIAuditoryOddball",
+    } <= set(by_type("Clinical"))
     assert "ImaginedFingers" in by_type("MI")
     assert by_type("ME") == expected_me
     assert set(by_type("MI")).isdisjoint(by_type("ME"))

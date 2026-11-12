@@ -53,6 +53,7 @@ LongIntervalTask,Clinical,
 LowCost,BCI,MI
 MatchingPennies,BCI,ME
 MentalArithmetic,Cognitive,
+MigraineRest,Clinical,
 NBackAudioCondition,Cognitive,
 ObsessiveCompulsiveSymptoms,Clinical,
 OpenCloseFist,BCI,ME
@@ -60,8 +61,11 @@ ParkinsonsPedalling,Clinical,
 ParkinsonsRest,Clinical,
 ParkinsonsRestIowa,Clinical,
 ParkinsonsRestUCSD,Clinical,
+ParkinsonsWalking,Clinical,
 PhotoStimulation,Clinical,
 PronouncedSpeech,BCI,Speech
+PsychosisRestFirst,Clinical,
+PsychosisRestSecond,Clinical,
 RestingEyeState,Cognitive,
 SelfRegulationSCP1,BCI,ERP
 SelfRegulationSCP2,BCI,ERP
@@ -70,6 +74,7 @@ SitStand,BCI,MI
 SongFamiliarity,Cognitive,
 SpellerFlashes,BCI,ERP
 SymbolAttention,BCI,ERP
+TBIAuditoryOddball,Clinical,
 VideoEmotions,Cognitive,
 VisualSpeech,BCI,Speech
 VisualSubjects,BCI,ERP

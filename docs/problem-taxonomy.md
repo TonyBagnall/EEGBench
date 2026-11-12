@@ -2,24 +2,26 @@
 
 Snapshot 12 November 2026, based on current `eeg.txt` and documented prediction targets. One primary category/subclass per selected problem. These assignments do not overwrite the existing Med/BCI/Psy domains or source sidecars. They are proposed editorial groupings, not newly verified acquisition facts.
 
-**77 selected scalp EEG problems; 86 registered archive problems.** The study excludes FaceDetection, HandMovementDirection, MatchWords and MindReading (MEG), plus MotorImagery (ECoG), as confirmed by the user 10 November 2026. Blink, ButtonPress, EpilepticSeizures and Sleep remain excluded for the existing reasons. All registry entries and local files are retained. Planned downloads/pilots are not counted; problems may share studies or source recordings.
+**82 selected scalp EEG problems; 91 registered archive problems.** The study excludes FaceDetection, HandMovementDirection, MatchWords and MindReading (MEG), plus MotorImagery (ECoG), as confirmed by the user 10 November 2026. Blink, ButtonPress, EpilepticSeizures and Sleep remain excluded for the existing reasons. All registry entries and local files are retained. Planned downloads/pilots are not counted; problems may share studies or source recordings.
 
 | Category | Selected scalp EEG problems |
 |---|---:|
-| Clinical and physiological states | 17 |
+| Clinical and physiological states | 22 |
 | Brain-computer interfaces | 51 |
 | Cognitive and affective states | 6 |
 | Behaviour and activity | 3 |
 | Individual differences | 0 |
-| **Total** | **77** |
+| **Total** | **82** |
 
-The study now has **30 strict scalp-EEG motor imagery** problems (`by_type("MI")`, adding `ImaginedFingers` / `Damm2026` to replace the excluded ECoG problem `MotorImagery`), separated cleanly from the **6 executed / movement-intention motor tasks** (`by_type("ME")`: `ArmCoordination`, `ArmMovements`, `FeetHands`, `FingerMovements`, `MatchingPennies`, `OpenCloseFist`).
+*(Note: in `neuroverse.datasets.STUDY_TAXONOMY`, the two physiological eye-state tasks `EyesOpenShut` and `RestingEyeState` sit in `Cognitive` (`8` total) while the `20` clinical disorder, seizure, sleep, and symptom-screening tasks form `by_type("Clinical")` (`20` total), alongside `by_type("BCI")` (`54` total: `30` `MI`, `6` `ME`, `8` `ERP`, `6` `VEP`, `4` `Speech`).)*
+
+The study has **30 strict scalp-EEG motor imagery** problems (`by_type("MI")`, adding `ImaginedFingers` / `Damm2026` to replace the excluded ECoG problem `MotorImagery`), **20 clinical scalp-EEG** problems (`by_type("Clinical")`, adding `MigraineRest`, `ParkinsonsWalking`, `PsychosisRestFirst`, `PsychosisRestSecond`, and `TBIAuditoryOddball`), and **6 executed / movement-intention motor tasks** (`by_type("ME")`: `ArmCoordination`, `ArmMovements`, `FeetHands`, `FingerMovements`, `MatchingPennies`, `OpenCloseFist`).
 
 ## Subclasses and complete assignment
 
 | Category | Subclass | Problems | Names |
 |---|---|---:|---|
-| Clinical and physiological states | Medical diagnosis / clinical cohort | 12 | Alzheimers, AlzheimersAuditory, CovidSurvivors, FibroLiverpool, FibroUEA, LongIntervalTask, ParkinsonsPedalling, ParkinsonsRest, ParkinsonsRestIowa, ParkinsonsRestUCSD, PhotoStimulation, ShortIntervalTask |
+| Clinical and physiological states | Medical diagnosis / clinical cohort | 17 | Alzheimers, AlzheimersAuditory, CovidSurvivors, FibroLiverpool, FibroUEA, LongIntervalTask, MigraineRest, ParkinsonsPedalling, ParkinsonsRest, ParkinsonsRestIowa, ParkinsonsRestUCSD, ParkinsonsWalking, PhotoStimulation, PsychosisRestFirst, PsychosisRestSecond, ShortIntervalTask, TBIAuditoryOddball |
 | Clinical and physiological states | Seizure detection | 1 | ChildhoodSeizures |
 | Clinical and physiological states | Sleep staging | 1 | ClinicalSleepStages |
 | Clinical and physiological states | Physiological eye state | 2 | EyesOpenShut, RestingEyeState |
@@ -60,6 +62,10 @@ The previous P300 review missed existing GameTargets (BrainForm/RomaniBF2025ERP)
 - **FeedbackButton:** Press/no-press target in prompt-period windows ending before press; original acquisition provenance unresolved.
 - **ALSAttention:** Attended versus unattended flashes in ALS participants; not ALS diagnosis.
 - **ParkinsonsPedalling:** PD versus control during pedalling; diagnosis target, not activity classification.
+- **ParkinsonsWalking:** PD versus control during active treadmill walking; diagnosis target, not gait activity classification.
+- **PsychosisRestFirst / PsychosisRestSecond:** Disjoint first-episode psychosis versus healthy control cohorts at eyes-open rest (`ds003944` and `ds003947`).
+- **TBIAuditoryOddball:** 3-class TBI diagnosis (control, sub-acute mild TBI, chronic TBI) during Session 1 auditory oddball deviant tones (`ds003522`); diagnosis target, not stimulus-type classification.
+- **MigraineRest:** Unmedicated interictal migraineurs versus age- and gender-matched controls during central-cross fixation (`Chamanzar2020`).
 - **LongIntervalTask:** PD versus control in interval timing; diagnosis target, not timing-task identity.
 - **ShortIntervalTask:** PD versus control in interval timing; diagnosis target, not timing-task identity.
 

@@ -9,7 +9,7 @@ the [Signal scale and flat-channel audit](signal-scale-audit.md).
 Applied signal and metadata corrections are documented in
 [Local data corrections](local-data-corrections.md).
 
-The registry includes 41 additions to the original published benchmark.
+The registry includes 61 additions to the original published benchmark.
 OpenEEGBench sources are prepared using the
 [standalone import tools](openeegbench-import.md).
 The [additional dataset descriptions](additional-datasets.md) document MentalArithmetic,
@@ -25,10 +25,10 @@ collection includes the documented [local corrections](local-data-corrections.md
 The archive is a sub-collection of the
 [Multiverse](https://github.com/aeon-toolkit/multiverse) archive for multivariate time
 series classification, and some of these datasets are also in its benchmark subset,
-Multiverse-core. The local collection now contains 86 prepared
+Multiverse-core. The local collection now contains 91 prepared
 classification problems, including the additional preparations described below.
-The selected scalp EEG study list in `eeg.txt` contains 77 problems (including
-30 strict scalp-EEG Motor Imagery tasks in `MI`, separated from the 6 executed
+The selected scalp EEG study list in `eeg.txt` contains 82 problems (including
+30 strict scalp-EEG Motor Imagery tasks in `MI`, 20 `Clinical` tasks, and 6 executed
 and pre-movement tasks in `ME`). It excludes
 Blink, ButtonPress, Sleep and EpilepticSeizures, plus FaceDetection,
 HandMovementDirection, MatchWords and MindReading (MEG), and MotorImagery (ECoG).
@@ -101,6 +101,7 @@ Their registry entries and local files are retained. See the
 | MatchWords | Psy | &mdash; | 156 | 1500 | 2 | &mdash; | 360 | 360 | 1000 | local |
 | MatchingPennies | Psy | ME | 10 | 10000 | 2 | 7 | 700 | 700 | 5000 | aeon/Zenodo |
 | MentalArithmetic | BCI | Cognitive | 19 | 1000 | 2 | 36 | 1515 | 192 | 200 | local |
+| MigraineRest | Med | Clinical | 128 | 2048 | 2 | 33 | 1920 | 750 | 512 | local |
 | MindReading | BCI | &mdash; | 204 | 200 | 5 | &mdash; | 727 | 653 | 200 | aeon/Zenodo |
 | MotorImagery | BCI | &mdash; | 64 | 3000 | 2 | &mdash; | 278 | 100 | 1000 | aeon/Zenodo |
 | NBackAudioCondition | Psy | Cognitive | 16 | 600 | 12 | 23 | 11520 | 5040 | 200 | local |
@@ -110,8 +111,11 @@ Their registry entries and local files are retained. See the
 | ParkinsonsRest | Med | Clinical | 63 | 2000 | 2 | 55 | 1216 | 420 | 500 | local |
 | ParkinsonsRestIowa | Med | Clinical | 60 | 2000 | 2 | 149 | 4598 | 1306 | 500 | local |
 | ParkinsonsRestUCSD | Med | Clinical | 32 | 2048 | 2 | 31 | 1126 | 380 | 512 | local |
+| ParkinsonsWalking | Med | Clinical | 53 | 1000 | 2 | 133 | 6493 | 2100 | 250 | local |
 | PhotoStimulation | Med | Clinical | 19 | 9000 | 3 | 73 | 37 | 36 | 500 | aeon/Zenodo |
 | PronouncedSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
+| PsychosisRestFirst | Med | Clinical | 61 | 4000 | 2 | 82 | 4657 | 1601 | 1000 | local |
+| PsychosisRestSecond | Med | Clinical | 61 | 4000 | 2 | 61 | 3472 | 1239 | 1000 | local |
 | RestingEyeState | BCI | Cognitive | 16 | 5120 | 2 | 19 | 140 | 50 | 512 | local |
 | SelfRegulationSCP1 | BCI | ERP | 6 | 896 | 2 | &mdash; | 268 | 293 | 256 | aeon/Zenodo |
 | SelfRegulationSCP2 | BCI | ERP | 7 | 1152 | 2 | &mdash; | 200 | 180 | 256 | aeon/Zenodo |
@@ -121,6 +125,7 @@ Their registry entries and local files are retained. See the
 | SongFamiliarity | Psy | Cognitive | 32 | 3000 | 2 | 29 | 700 | 750 | 1000 | aeon/Zenodo |
 | SpellerFlashes | BCI | ERP | 8 | 205 | 2 | 10 | 12600 | 12600 | 256 | local |
 | SymbolAttention | BCI | ERP | 8 | 256 | 2 | 19 | 521259 | 175180 | 256 | local |
+| TBIAuditoryOddball | Med | Clinical | 61 | 500 | 3 | 87 | 4848 | 1748 | 500 | local |
 | VideoEmotions | Psy | Cognitive | 25 | 2000 | 8 | 123 | 15629 | 3588 | 200 | local |
 | VisualSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
 | VisualSubjects | BCI | ERP | 16 | 512 | 2 | 64 | 42189 | 18826 | 512 | local |
@@ -886,3 +891,43 @@ Within hc and pd groups: sorted original string IDs, floor0.75*n TRAIN, remainde
 Fixed whole-subject 75/25 split (`01-09,11,12,14,17,18,19` TRAIN; `10,13,15,16,20` TEST), stratified simultaneously across `sourcedata/counterbalancing_log.json` and `_eeg.json` block-order assignments, handedness (`1` left-handed participant in each partition), and gender, with `sub-18`'s single early-terminated run (`task-random_run-01`, 56 complete cues + 1 incomplete 2,858-sample final cue excluded) placed in TRAIN so TEST has 1,500 exact balanced trials (300 per finger). All four runs per participant (two random-order, two sequential-order) are combined. Of the 62 native scalp EEG channels (`10-05` montage, g.tec GmbH, Linked Mastoids reference; `Ref1`, `Ref2` and `Marker` excluded), `FT8` (9 flat trials) and `TP8` (80 flat trials) were removed globally under the flat-sensor policy (`std <= 1e-7 uV`), leaving 60 channels in native header order; calibrated EDF volts are multiplied by `1e6` in `float64` with no filtering, resampling, demeaning or rereferencing. Every 6-second cue block (`3..7` -> `1..5`) is cross-verified 100% sample-for-sample between the embedded EDF `Marker` channel and BIDS `_events.tsv` (whose `onset` column was divided by `512` twice in `ds008446` v1.0.1).
 
 Original source [OpenNeuro ds008446 v1.0.1](https://doi.org/10.18112/openneuro.ds008446.v1.0.1), CC0-1.0. Array-aligned case tables, sensor sidecars, source receipts and full numeric validation accompany `D:/Data/EEG/ImaginedFingers`. See [source lock](damm2026-source-lock.json), [conversion result](damm2026-conversion-result.json) and [scalp MI candidate queue](scalp-mi-candidates.md).
+
+### PsychosisRestFirst
+
+Salisbury, Curtis and Coffman (2022) / OpenNeuro `ds003944` v1.0.1. 82 participants; 4657 training and 1601 test cases, 61 channels x 4000 samples at 1000 Hz. Classes: `healthy_control`, `first_episode_psychosis`.
+
+Participant diagnosis classification from resting-state scalp EEG (`sub-1448`..`sub-2223`; 31 healthy controls and 51 first-episode schizophrenia-spectrum psychosis patients). Fixed whole-subject 75/25 split within each diagnostic group (`61` TRAIN / `21` TEST). The 61 scalp EEG channels (`type == "EEG"` in native header order; `VEOG`, `HEOG`, `ECG` and `StimTrak` excluded) are converted from calibrated BrainVision microvolts in `float64` across non-overlapping 4-second windows inside continuous non-zero segments, with no added filtering, resampling, demeaning or rereferencing and zero sensors removed under the flat-sensor policy (`std <= 1e-7 uV`).
+
+Original source [OpenNeuro ds003944 v1.0.1](https://doi.org/10.18112/openneuro.ds003944.v1.0.1), CC0-1.0. Zero shared participant IDs and zero shared case hashes with `PsychosisRestSecond` ([cross-cohort audit](psychosis-cross-cohort-identity-audit.json)). Array-aligned case tables, sensor sidecars and validation accompany `D:/Data/EEG/PsychosisRestFirst`. See [source lock](ds003944-diagnosis-source-lock.json) and [conversion result](ds003944-diagnosis-conversion-result.json).
+
+### PsychosisRestSecond
+
+Salisbury, Curtis and Coffman (2022) / OpenNeuro `ds003947` v1.0.1. 61 participants; 3472 training and 1239 test cases, 61 channels x 4000 samples at 1000 Hz. Classes: `healthy_control`, `first_episode_psychosis`.
+
+Independent second cohort (`sub-2235A`..`sub-2581A`; 30 healthy controls and 31 first-episode psychosis patients), disjoint from `PsychosisRestFirst`. Fixed whole-subject 75/25 split within each diagnostic group (`45` TRAIN / `16` TEST). Identical 61-channel scalp EEG selection and non-overlapping 4-second windowing at native 1000 Hz in calibrated `float64` microvolts, with zero flat sensors removed and no extra DSP.
+
+Original source [OpenNeuro ds003947 v1.0.1](https://doi.org/10.18112/openneuro.ds003947.v1.0.1), CC0-1.0. Array-aligned case tables, sensor sidecars and validation accompany `D:/Data/EEG/PsychosisRestSecond`. See [source lock](ds003947-diagnosis-source-lock.json), [conversion result](ds003947-diagnosis-conversion-result.json) and [cross-cohort audit](psychosis-cross-cohort-identity-audit.json).
+
+### ParkinsonsWalking
+
+Katzir et al. (2025) / OpenNeuro `ds007526` v1.0.2. 133 participants; 6493 training and 2100 test cases, 53 channels x 1000 samples at 250 Hz. Classes: `healthy_control`, `parkinsons_disease`.
+
+Overground baseline walking (`ses-01`, `task-walk`, `acq-base`) scalp EEG from older-adult controls (`23` retained after excluding `sub-017` lacking `acq-base`) and Parkinson's disease patients (`110` retained after excluding `16` participants missing `acq-base` or continuous walking segments). Fixed whole-subject 75/25 split within each diagnostic group (`99` TRAIN / `34` TEST). Non-overlapping 4-second windows inside walking intervals (excluding turn/stand segments and `bad` BIDS events) at native 250 Hz in `float64` microvolts. From the 60 native scalp EEG channels (`EOG1`–`EOG4` and flat `VREF` excluded), 7 channels (`C3`, `P1`, `P9`, `PO3`, `TP8`, `FC4`, `FC6`) exhibited `std <= 1e-7 uV` in one or more retained windows and were removed globally under the archive flat-sensor rule, yielding 53 channels.
+
+Original source [OpenNeuro ds007526 v1.0.2](https://doi.org/10.18112/openneuro.ds007526.v1.0.2), CC0-1.0. Array-aligned case tables, sensor sidecars and validation accompany `D:/Data/EEG/ParkinsonsWalking`. See [source lock](ds007526-diagnosis-source-lock.json) and [conversion result](ds007526-diagnosis-conversion-result.json).
+
+### TBIAuditoryOddball
+
+Cavanagh et al. (2019) / OpenNeuro `ds003522` v1.1.0. 87 participants; 4848 training and 1748 test cases, 61 channels x 500 samples at 500 Hz. Classes: `control`, `subacute_mtbi`, `chronic_tbi`.
+
+Three-class traumatic brain injury diagnosis (`25` healthy controls, `40` sub-acute mTBI, `22` chronic TBI) during a 3-stimulus auditory oddball paradigm (`ses-01`, `task-AuditoryOddball`), verified strictly disjoint (`0` shared `URSI` or `Original_ID`) from `ParkinsonsRest`. Nine of 96 BIDS participants were excluded on documented clinical/recording integrity grounds (`sub-004` sub-threshold GCS, `sub-033` truncated `.eeg`, `sub-053` missing `ses-01` EEG, and 6 participants with zero stimulus trigger markers). Fixed whole-subject 75/25 split within each diagnostic group (`64` TRAIN / `23` TEST). Non-overlapping 1.0-second (`[0, 500)` sample) post-stimulus epochs locked to target (`S200`) and novel (`S202`) auditory oddball cues across the shared 61-channel BrainVision scalp EEG intersection (`VEOG` and `EKG` excluded; `CPz` online reference), calibrated to `float64` microvolts with zero flat sensors removed.
+
+Original source [OpenNeuro ds003522 v1.1.0](https://doi.org/10.18112/openneuro.ds003522.v1.1.0), CC0-1.0. Array-aligned case tables, sensor sidecars and validation accompany `D:/Data/EEG/TBIAuditoryOddball`. See [source lock](ds003522-diagnosis-source-lock.json) and [conversion result](ds003522-diagnosis-conversion-result.json).
+
+### MigraineRest
+
+Chamanzar et al. (2020, 2021) / CMU KiltHub Figshare `12636731` v1. 33 participants; 1920 training and 750 test cases, 128 channels x 2048 samples at 512 Hz. Classes: `healthy_control`, `migraine_interictal`.
+
+High-density BioSemi ActiveTwo (`A1`–`D32`) resting-state scalp EEG comparing healthy controls (`18` retained) and interictal unmedicated migraine patients (`15` retained; `M5` and `M7` taking daily topiramate prophylaxis excluded per study protocol, and 3 control IDs absent from the upstream archive noted). Fixed whole-subject 75/25 split within each diagnostic group (`24` TRAIN / `9` TEST). Non-overlapping 4-second (`2048`-sample) windows extracted inside `254` (`eyes_closed`) and `255` (`eyes_open`) BioSemi `Status` trigger blocks, excluding the initial 0.5-second transition after each marker (`EXG1`–`EXG8` and `Status` excluded), calibrated from 24-bit BDF integers to `float64` microvolts with zero flat sensors removed and no added DSP.
+
+Original source [Figshare 12636731 v1](https://doi.org/10.1184/R1/12636731.v1), CC-BY-4.0. Array-aligned case tables, sensor sidecars and validation accompany `D:/Data/EEG/MigraineRest`. See [source lock](chamanzar2020-source-lock.json) and [conversion result](chamanzar2020-conversion-result.json).

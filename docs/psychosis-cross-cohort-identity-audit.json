@@ -1,0 +1,20 @@
+{
+  "cohorts": {
+    "PsychosisRestFirst": {
+      "source": "OpenNeuro ds003944 v1.0.1",
+      "subjects": 82,
+      "subject_id_range": ["1448", "2223"],
+      "unique_case_hashes": 6258
+    },
+    "PsychosisRestSecond": {
+      "source": "OpenNeuro ds003947 v1.0.1",
+      "subjects": 61,
+      "subject_id_range": ["2235A", "2581A"],
+      "unique_case_hashes": 4711
+    }
+  },
+  "shared_participant_ids": [],
+  "PsychosisRestFirst_unique_case_hashes": 6258,
+  "PsychosisRestSecond_unique_case_hashes": 4711,
+  "cross_cohort_shared_case_hashes": 0
+}

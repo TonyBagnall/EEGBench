@@ -1,8 +1,8 @@
 {
   "as_of": "2026-11-12",
   "selection": "eeg.txt",
-  "selected_problems": 77,
-  "registered_problems": 86,
+  "selected_problems": 82,
+  "registered_problems": 91,
   "registered_not_selected": [
     "Blink",
     "ButtonPress",
@@ -19,8 +19,8 @@
   "counts": [
     {
       "category": "Clinical and physiological states",
-      "all_selected": 17,
-      "scalp_eeg": 17
+      "all_selected": 22,
+      "scalp_eeg": 22
     },
     {
       "category": "Brain-computer interfaces",
@@ -44,7 +44,7 @@
     }
   ],
   "modalities": {
-    "scalp EEG": 77,
+    "scalp EEG": 82,
     "MEG": 0,
     "ECoG": 0
   },
@@ -482,6 +482,14 @@
       "notes": ""
     },
     {
+      "problem": "MigraineRest",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Unmedicated interictal migraineurs versus age- and gender-matched controls during central-cross fixation."
+    },
+    {
       "problem": "NBackAudioCondition",
       "category": "Cognitive and affective states",
       "subclass": "Workload / joint task condition",
@@ -538,6 +546,14 @@
       "notes": ""
     },
     {
+      "problem": "ParkinsonsWalking",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "PD versus healthy control during active treadmill walking; diagnosis target, not gait activity classification."
+    },
+    {
       "problem": "PhotoStimulation",
       "category": "Clinical and physiological states",
       "subclass": "Medical diagnosis / clinical cohort",
@@ -552,6 +568,22 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
+    },
+    {
+      "problem": "PsychosisRestFirst",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "First-episode psychosis versus healthy control at eyes-open rest (first acquisition cohort)."
+    },
+    {
+      "problem": "PsychosisRestSecond",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "First-episode psychosis versus healthy control at eyes-open rest (second disjoint acquisition cohort)."
     },
     {
       "problem": "RestingEyeState",
@@ -616,6 +648,14 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
+    },
+    {
+      "problem": "TBIAuditoryOddball",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "3-class TBI diagnosis (control, sub-acute mild TBI, chronic TBI) on Session 1 deviant auditory oddball epochs."
     },
     {
       "problem": "VideoEmotions",

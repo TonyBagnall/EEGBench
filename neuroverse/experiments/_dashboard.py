@@ -4,11 +4,11 @@ Generates three self-contained pages sharing a common navigation bar and
 visual design inspired by modern ML benchmark suites (such as ``eeg.fm``):
 
 - ``leaderboard.html`` (and ``index.html``): algorithm leaderboard across all
-  77 scalp EEG problems and split by problem type (BCI, Motor Imagery, Motor
+  82 scalp EEG problems and split by problem type (BCI, Motor Imagery, Motor
   Execution, ERP, VEP, Speech, Clinical, Cognitive), ranking the 72 distinct
   canonical classifiers by default with an option to include all 90
   configurations.
-- ``matrix.html``: interactive 77-problem by 72-classifier (or 90-configuration)
+- ``matrix.html``: interactive 82-problem by 72-classifier (or 90-configuration)
   heatmap score matrix grouped by problem type and algorithm paradigm, with
   metric switching, row-normalised or baseline-gain shading, and per-cell
   multi-metric tooltips.
@@ -106,11 +106,15 @@ def compute_league_table(
     if n_scope == 0 or primary.empty:
         return pd.DataFrame(), []
 
+    n_eval = int(primary.notna().any(axis=1).sum())
+    if n_eval == 0:
+        return pd.DataFrame(), []
+
     coverage = primary.notna().sum(axis=0)
     lower_better = primary_metric in LOWER_IS_BETTER
 
     if mode == "common_block":
-        min_cov = math.ceil(min_coverage_ratio * n_scope) if min_coverage_ratio > 0 else 1
+        min_cov = math.ceil(min_coverage_ratio * n_eval) if min_coverage_ratio > 0 else 1
         panel = [c for c in keep_cols if int(coverage[c]) >= min_cov]
         if not panel:
             return pd.DataFrame(), []
@@ -273,17 +277,24 @@ def study_leaderboard_markdown(
             f"| {auroc_txt} | {ll_txt} | {int(row['wins'])} |"
         )
 
-    total_pool = sum(
-        1
+    eval_cols = [
+        c
         for c in frames["balacc"].columns
         if c != "Default" and (not canonical_only or bool(estimator_info(c)["is_canonical"]))
-    )
+    ]
+    total_pool = len(eval_cols)
     pool_noun = "distinct classifiers" if canonical_only else "configurations"
-    min_cov_all = math.ceil(min_coverage_ratio * n_study)
+    n_eval_all = int(frames["balacc"].reindex(neuroverse_study)[eval_cols].notna().any(axis=1).sum())
+    min_cov_all = math.ceil(min_coverage_ratio * n_eval_all) if n_eval_all > 0 else 1
+    cov_scope_txt = (
+        f"{min_cov_all}/{n_eval_all} evaluated problems, {n_study} in study"
+        if n_eval_all < n_study
+        else f"{min_cov_all}/{n_study} problems"
+    )
     lines.extend(
         [
             "",
-            f"*{len(overall)} of {total_pool} {pool_noun} meet &ge;80% coverage ({min_cov_all}/{n_study} problems), "
+            f"*{len(overall)} of {total_pool} {pool_noun} meet &ge;80% coverage ({cov_scope_txt}), "
             f"evaluated on their {len(common_all)} shared completed problems (resample 0, ordered by "
             "mean balanced-accuracy rank).*",
             "",
@@ -333,6 +344,11 @@ def full_domain_tables_markdown(
     canonical_only: bool = True,
 ) -> str:
     """Build per-domain Top-N Markdown tables for ``docs/leaderboard.md``."""
+    eval_cols = [
+        c
+        for c in frames["balacc"].columns
+        if c != "Default" and (not canonical_only or bool(estimator_info(c)["is_canonical"]))
+    ]
     blocks: list[str] = []
     for tab_key, tab_label in PROBLEM_TYPE_TABS.items():
         probs = by_type(tab_key)
@@ -345,10 +361,16 @@ def full_domain_tables_markdown(
         )
         if tbl.empty:
             continue
-        min_cov = math.ceil(min_coverage_ratio * len(probs))
+        n_eval = int(frames["balacc"].reindex(probs)[eval_cols].notna().any(axis=1).sum())
+        min_cov = math.ceil(min_coverage_ratio * n_eval) if n_eval > 0 else 1
+        cov_gate_txt = (
+            f"{min_cov}/{n_eval} evaluated"
+            if n_eval < len(probs)
+            else f"{min_cov}/{len(probs)}"
+        )
         blocks.extend(
             [
-                f"### {tab_label} ({len(probs)} problems; {len(com)} common; {len(tbl)} classifiers &ge;{min_cov}/{len(probs)})",
+                f"### {tab_label} ({len(probs)} problems; {len(com)} common; {len(tbl)} classifiers &ge;{cov_gate_txt})",
                 "",
                 "| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |",
                 "|---:|---|---|---:|---:|---:|---:|---:|---:|",
@@ -1334,9 +1356,19 @@ def write_interactive_leaderboard(
       }}
     }}
 
+    var nEval = 0;
+    for (var re = 0; re < dIdxs.length; re++) {{
+      var hasScore = false;
+      for (var je = 0; je < nEst; je++) {{
+        if (!includeAll && !DATA.estimators[je].is_canonical) continue;
+        if (bal[dIdxs[re]][je] !== null) {{ hasScore = true; break; }}
+      }}
+      if (hasScore) nEval++;
+    }}
+
     var isAvail = state.mode === "available";
     var ratio = state.mode === "block100" ? 1.0 : (state.mode === "block90" ? 0.9 : 0.8);
-    var minCov = isAvail ? 1 : Math.ceil(ratio * nScope);
+    var minCov = isAvail ? 1 : (nEval > 0 ? Math.ceil(ratio * nEval) : 1);
 
     var panel = [];
     var nPool = 0;
@@ -1345,7 +1377,7 @@ def write_interactive_leaderboard(
       nPool++;
       if (cov[j2] >= minCov) panel.push(j2);
     }}
-    if (!panel.length) return {{ rows: [], byName: {{}}, nScope: nScope, nCommon: 0, minCov: minCov, nAdmitted: 0, nPool: nPool }};
+    if (!panel.length) return {{ rows: [], byName: {{}}, nScope: nScope, nEval: nEval, nCommon: 0, minCov: minCov, nAdmitted: 0, nPool: nPool }};
 
     var evalRows = [];
     for (var r2 = 0; r2 < dIdxs.length; r2++) {{
@@ -1364,7 +1396,7 @@ def write_interactive_leaderboard(
         if (all) evalRows.push(di);
       }}
     }}
-    if (!evalRows.length) return {{ rows: [], byName: {{}}, nScope: nScope, nCommon: 0, minCov: minCov, nAdmitted: panel.length, nPool: nPool }};
+    if (!evalRows.length) return {{ rows: [], byName: {{}}, nScope: nScope, nEval: nEval, nCommon: 0, minCov: minCov, nAdmitted: panel.length, nPool: nPool }};
 
     var mPanel = panel.length;
     var sumRank = new Array(mPanel).fill(0);
@@ -1436,6 +1468,7 @@ def write_interactive_leaderboard(
       rows: rows,
       byName: byName,
       nScope: nScope,
+      nEval: nEval,
       nCommon: evalRows.length,
       minCov: minCov,
       nAdmitted: mPanel,
@@ -1587,10 +1620,12 @@ def write_interactive_leaderboard(
     }})[0] || null;
 
     var poolLabel = state.includeVariants ? "configurations" : "distinct classifiers";
+    var evalTag = league.nEval < league.nScope ? (league.nEval + " evaluated &middot; " + league.nCommon + " shared") : (league.nCommon + " shared");
+    var gateDenom = league.nEval < league.nScope ? (league.nEval + " evaluated") : String(league.nScope);
     var kpiHtml = "";
     kpiHtml += '<div class="kpi-card"><div class="kpi-label">Evaluation Scope</div>' +
-      '<div class="kpi-value">' + league.nScope + ' Problems <span class="brand-tag">' + league.nCommon + ' shared</span></div>' +
-      '<div class="kpi-sub">' + league.nAdmitted + ' of ' + league.nPool + ' ' + poolLabel + ' admitted (min ' + league.minCov + '/' + league.nScope + ')</div></div>';
+      '<div class="kpi-value">' + league.nScope + ' Problems <span class="brand-tag">' + evalTag + '</span></div>' +
+      '<div class="kpi-sub">' + league.nAdmitted + ' of ' + league.nPool + ' ' + poolLabel + ' admitted (min ' + league.minCov + '/' + gateDenom + ')</div></div>';
 
     if (leader) {{
       kpiHtml += '<div class="kpi-card"><div class="kpi-label">#1 Overall on ' + esc(tabObj.label) + '</div>' +
@@ -2124,7 +2159,13 @@ td.cell-win {{
     var cols = allCols;
     if (state.colScope === "top35") {{
       var canonCols = allCols.filter(function(c) {{ return DATA.estimators[c].is_canonical; }});
-      cols = canonCols.filter(function(c) {{ return colCov[c] >= Math.ceil(0.6 * Math.max(1, rowIdxs.length)); }}).slice(0, 35);
+      var evalRowCnt = rowIdxs.filter(function(ri) {{
+        for (var jc = 0; jc < canonCols.length; jc++) {{
+          if (mat[ri][canonCols[jc]] !== null) return true;
+        }}
+        return false;
+      }}).length;
+      cols = canonCols.filter(function(c) {{ return colCov[c] >= Math.ceil(0.6 * Math.max(1, evalRowCnt)); }}).slice(0, 35);
       if (!cols.length) cols = canonCols.slice(0, 35);
     }} else if (state.colScope === "canonical72") {{
       cols = allCols.filter(function(c) {{ return DATA.estimators[c].is_canonical; }});

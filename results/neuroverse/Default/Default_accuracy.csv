@@ -53,6 +53,7 @@ LongIntervalTask,0.678571
 LowCost,0.500000
 MatchingPennies,0.502857
 MentalArithmetic,0.750000
+MigraineRest,0.600000
 NBackAudioCondition,0.083333
 ObsessiveCompulsiveSymptoms,0.665414
 OpenCloseFist,0.500529
@@ -60,8 +61,11 @@ ParkinsonsPedalling,0.652019
 ParkinsonsRest,0.500000
 ParkinsonsRestIowa,0.657734
 ParkinsonsRestUCSD,0.507895
+ParkinsonsWalking,0.828571
 PhotoStimulation,0.416667
 PronouncedSpeech,0.260000
+PsychosisRestFirst,0.618364
+PsychosisRestSecond,0.505246
 RestingEyeState,0.500000
 SelfRegulationSCP1,0.501706
 SelfRegulationSCP2,0.500000
@@ -70,6 +74,7 @@ SitStand,0.250000
 SongFamiliarity,0.518667
 SpellerFlashes,0.892857
 SymbolAttention,0.841905
+TBIAuditoryOddball,0.434783
 VideoEmotions,0.166667
 VisualSpeech,0.260000
 VisualSubjects,0.833316

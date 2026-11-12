@@ -2,7 +2,7 @@
 
 Two result layouts are supported across the repository:
 
-1. **Wide summary layout** (default in ``results/neuroverse`` for the 77-problem,
+1. **Wide summary layout** (default in ``results/neuroverse`` for the 82-problem,
    72-classifier study, storing all 90 evaluated configurations)::
 
        results/neuroverse/accuracy.csv

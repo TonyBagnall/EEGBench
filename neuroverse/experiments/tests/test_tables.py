@@ -411,6 +411,39 @@ def test_compute_league_table_canonical_only_excludes_variants():
     assert canon_tbl.set_index("estimator").loc["EEGNeX-NB", "mean_rank"] == pytest.approx(2.0)
 
 
+def test_compute_league_table_unevaluated_datasets_do_not_inflate_coverage_gate():
+    """Newly registered problems awaiting cluster runs keep common-block rankings intact while reporting full scope."""
+    from neuroverse.experiments.tables import compute_league_table
+
+    evaluated_problems = ["p1", "p2", "p3"]
+    pending_problems = ["p4", "p5"]
+    all_problems = evaluated_problems + pending_problems
+    frames = {
+        "balacc": pd.DataFrame(
+            {
+                "Default": [0.50, 0.50, 0.50, 0.50, 0.50],
+                "Leader": [0.85, 0.80, 0.90, np.nan, np.nan],
+                "RunnerUp": [0.75, 0.70, 0.80, np.nan, np.nan],
+            },
+            index=all_problems,
+        )
+    }
+
+    tbl, common = compute_league_table(
+        all_problems,
+        frames,
+        primary_metric="balacc",
+        min_coverage_ratio=0.80,
+        mode="common_block",
+    )
+    assert common == evaluated_problems
+    assert list(tbl["estimator"]) == ["Leader", "RunnerUp"]
+    assert (tbl["coverage"] == len(evaluated_problems)).all()
+    assert (tbl["scope_problems"] == len(all_problems)).all()
+    assert (tbl["common_problems"] == len(evaluated_problems)).all()
+    assert tbl.set_index("estimator").loc["Leader", "mean_rank"] == pytest.approx(1.0)
+
+
 def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
     """The interactive dashboard suite writes self-contained HTML pages with valid embedded payloads."""
     import json

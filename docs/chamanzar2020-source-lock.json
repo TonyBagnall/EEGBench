@@ -1,0 +1,455 @@
+{
+  "dataset": "Chamanzar2020",
+  "source_record_id": "figshare:12636731",
+  "source_revision": "KiltHub CMU / Figshare 12636731 v1 (DOI 10.1184/R1/12636731)",
+  "licence": "CC-BY-4.0",
+  "licence_evidence": "Figshare API article 12636731 license=\"CC BY 4.0\" (https://creativecommons.org/licenses/by/4.0/)",
+  "pilot": false,
+  "files": [
+    {
+      "name": "figshare-article-12636731.json",
+      "url": "https://api.figshare.com/v2/articles/12636731",
+      "bytes": 23129,
+      "sha256": "a0bd5abab240f9c3e01c8995fbddf6d038b3515bd80d4d873cb518e89a2089d8"
+    },
+    {
+      "name": "README.txt",
+      "url": "https://ndownloader.figshare.com/files/23891231",
+      "bytes": 7889,
+      "md5": "e30ae8471a04fc2164d698f9d2235d13",
+      "sha256": "3c197decc5a9a5a5dd5e2c9d58658a328cd0c9691c81cac71b29cc51d986f65d"
+    },
+    {
+      "name": "Migraine_Control_Demographics.xlsx",
+      "url": "https://ndownloader.figshare.com/files/23888066",
+      "bytes": 10074,
+      "md5": "cb0f6fb66c11109af9f7d0fd391d89be",
+      "sha256": "b80260a65e0caa952498081444bea686d533e3f8a259b2650c89b3257e83be20"
+    },
+    {
+      "name": "EEG experiment protocol_Migraine_Brain_KiltHub_vF.pdf",
+      "url": "https://ndownloader.figshare.com/files/23891132",
+      "bytes": 118218,
+      "md5": "408011eeb0b094711e3f5fdba6b37fc5",
+      "sha256": "b7bfda7498d27a95368c300976a4e25c1c7afb4baf8e01588108400b0864e5e9"
+    },
+    {
+      "name": "EEG_Stimuli.zip",
+      "url": "https://ndownloader.figshare.com/files/23891135",
+      "bytes": 10926,
+      "md5": "15a0349722f74b5b4c40d2328df170ef",
+      "sha256": "7a3239e8b51336f6bf51bccfa5101efac224feb378b01b0f6dcb63a3b8f3190e"
+    },
+    {
+      "name": "resting_bdf/C1_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841368",
+      "bytes": 89395456,
+      "sha256": "5b4057318763d1fae25c3596caba3005352f7b0fd15b12f315aad6b650e0de0f",
+      "source_zip_name": "C1.zip",
+      "source_zip_bytes": 286806852,
+      "source_zip_md5": "5c0c34dfa46d5f3515119ca901c63423",
+      "source_zip_sha256": "64d100eb7980c9b2a0e55c1a65731e2c6b46436d7a9286b1561e076ec92250b8",
+      "zip_member": "C1/C1_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C3_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841371",
+      "bytes": 88731904,
+      "sha256": "81ede532a4ab002e439e98c0e76e5baeda7ed2955f2298117703541131a62093",
+      "source_zip_name": "C3.zip",
+      "source_zip_bytes": 308834123,
+      "source_zip_md5": "87d5228e790902af686dfef9a5f67edc",
+      "source_zip_sha256": "e5eaad16420aeba8474336da19fdab1874f79fe0bf260e1c3f72983bbb473890",
+      "zip_member": "C3/C3_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C4_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23836955",
+      "bytes": 93597952,
+      "sha256": "8de27184c42d66750bf6c4e85895e68dbc3f88442505da99890aeefef8409970",
+      "source_zip_name": "C4.zip",
+      "source_zip_bytes": 308453053,
+      "source_zip_md5": "8656884d9938ba44009183d16d5583eb",
+      "source_zip_sha256": "a30f1ee15d29b5c6e7005ebae8e4c34ca6c8348eb376817c218cdae284524ba2",
+      "zip_member": "C4/C4_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C5_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23836973",
+      "bytes": 86520064,
+      "sha256": "bc9a57dd599aa758d64f2d7c219f2d17e9ed422048a012d31de2a0dbda399dae",
+      "source_zip_name": "C5.zip",
+      "source_zip_bytes": 277618679,
+      "source_zip_md5": "f8e01df81d5122f968104c430dc2dc83",
+      "source_zip_sha256": "615065f7b62354fcf31c7bbcbeab1c55c8453acaf5020e712934d08c09990058",
+      "zip_member": "C5/C5_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C7_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837000",
+      "bytes": 121909504,
+      "sha256": "81a4b0cd1424c3c70e910ef8bcd074971e038d39ca10442fdfb3fe884f306504",
+      "source_zip_name": "C7.zip",
+      "source_zip_bytes": 346266638,
+      "source_zip_md5": "673f2d2007de3cdb9628e6e2a0c01e99",
+      "source_zip_sha256": "2f195e28a6265812d9c481fae3944c0efe6c3adad05ed881c85d044d8aff0ae2",
+      "zip_member": "C7/C7_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C8_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837027",
+      "bytes": 89616640,
+      "sha256": "1ab2a5b6e2fee39796af4f7365e8856c2555d7f99934c118f058a39330698ba2",
+      "source_zip_name": "C8.zip",
+      "source_zip_bytes": 302730690,
+      "source_zip_md5": "8204e7b4fe39cc386188f31115e0fd59",
+      "source_zip_sha256": "8d6e65ce968014cbe76e550363afaa585736b7269b0add2006ec7151e8045cc6",
+      "zip_member": "C8/C8_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C9_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837012",
+      "bytes": 91828480,
+      "sha256": "9c0da1872e79295ae27792a7c3cbb0492497e4047d530e993658fcb446d7eb39",
+      "source_zip_name": "C9.zip",
+      "source_zip_bytes": 297569581,
+      "source_zip_md5": "782be72d859937b545d315bdaf1e58df",
+      "source_zip_sha256": "5857d71ef90961dcf830c0a58130fb6f105ecde13cc3aff2bfa3640ed067fd55",
+      "zip_member": "C9/C9_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C10_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837054",
+      "bytes": 89395456,
+      "sha256": "f0a61304a9ca4c31c0c7ad71a620fc4fc275f6c5608eecaaf099233659e4ba5a",
+      "source_zip_name": "C10.zip",
+      "source_zip_bytes": 305566734,
+      "source_zip_md5": "aa9c6f43095e84c744e3733868733aee",
+      "source_zip_sha256": "492a75d92e4ef1f61c289b5a70741153b29f74cbe12c7cd26b2d38c6a28b1e14",
+      "zip_member": "C10/C10_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C11_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837117",
+      "bytes": 86520064,
+      "sha256": "f299c38e6c3c38885888967b6798e8d23847a15519ea2452dad4914fd0dc00f7",
+      "source_zip_name": "C11.zip",
+      "source_zip_bytes": 294549308,
+      "source_zip_md5": "a33532a73741c7de14d1685b0d650200",
+      "source_zip_sha256": "84d98f22db42a296208be9da1e7235d171cba1e6ed758ef7e661ca0ebfeabefe",
+      "zip_member": "C11/C11_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C13_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841377",
+      "bytes": 86298880,
+      "sha256": "322ea00f02dd5066008de6764f587c7603da2a6da50432fcbd47f8dde5740d8c",
+      "source_zip_name": "C13.zip",
+      "source_zip_bytes": 300859043,
+      "source_zip_md5": "d114fafc23eb24d242593947bd8a5eae",
+      "source_zip_sha256": "9c494f3576a0e8c6b14b46253a52ee0599025baa1b2df8226749f25e777288fa",
+      "zip_member": "C13/C13_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C14_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837135",
+      "bytes": 87404800,
+      "sha256": "1856d54b73ddd9aad3df7f9829e265828717218cbe78c9f68c81e8964b7b92d7",
+      "source_zip_name": "C14.zip",
+      "source_zip_bytes": 301483322,
+      "source_zip_md5": "61c8d2aba1eecb33bc9cad450f8fc1b9",
+      "source_zip_sha256": "d27135b879c94a8a31e73056cfc19e5f6296c3d457851061513bbea4f4cb7202",
+      "zip_member": "C14/C14_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C15_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837171",
+      "bytes": 86962432,
+      "sha256": "6035d3502330a0360cd61ae1165179acefc9efc743a8de821772890e85f8f9c8",
+      "source_zip_name": "C15.zip",
+      "source_zip_bytes": 297341938,
+      "source_zip_md5": "75449175eae895158f80edbb0af3dd0b",
+      "source_zip_sha256": "88e2aedd7532b08edc142da61bfdb0c3fdcec5296ca238c41f59e48af32d91f1",
+      "zip_member": "C15/C15_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C16_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837204",
+      "bytes": 87625984,
+      "sha256": "5a09bea970d2024c8d3005e880a3e0f3e76f563918825b788f6ea20eb22e658b",
+      "source_zip_name": "C16.zip",
+      "source_zip_bytes": 291786422,
+      "source_zip_md5": "05e61d0a269b840f8efc3ca6545d6e4b",
+      "source_zip_sha256": "c1a6cfbe93ef60f3be558dfb9fe3bd5143a4dbf7f491df73edb4378fc0a715e3",
+      "zip_member": "C16/C16_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C17_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841407",
+      "bytes": 84529408,
+      "sha256": "85954167dbba942214294452d1b504f8d36bbd95010d88fc261b8ee10769ce07",
+      "source_zip_name": "C17.zip",
+      "source_zip_bytes": 284304446,
+      "source_zip_md5": "c7bfc22d5fd0d494c01cf846aca4406c",
+      "source_zip_sha256": "2bacd338d2420d5e38f2f23a534e88885e77e54f4b57d5bcadbfb33c4f89deaf",
+      "zip_member": "C17/C17_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C18_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841410",
+      "bytes": 88953088,
+      "sha256": "6755a9d1824130b484584a3bcb9e18ff7435960135d280d4796d4858af77de0b",
+      "source_zip_name": "C18.zip",
+      "source_zip_bytes": 307952631,
+      "source_zip_md5": "1bd5d17ec22486e713d3d58421862c14",
+      "source_zip_sha256": "b8e91771333dacc2969c4e1872bc48656b50415f9357356bb80d71a8361974b9",
+      "zip_member": "C18/C18_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C19_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841419",
+      "bytes": 91828480,
+      "sha256": "801fb914de3a076ae5ebc66475cbaf70b69e9d8abcd8205cf55fc1d7a1d86ad3",
+      "source_zip_name": "C19.zip",
+      "source_zip_bytes": 312703727,
+      "source_zip_md5": "b5b6f3630beda7acca70067f3696aeb7",
+      "source_zip_sha256": "5d882d172276562edbe8a49d113289129a97c760cef07f2917b0f405710b89b3",
+      "zip_member": "C19/C19_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C20_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837228",
+      "bytes": 87847168,
+      "sha256": "f1826c9870c5d4b74e2ad41dda57340fa74685834487b520105839dea18f64df",
+      "source_zip_name": "C20.zip",
+      "source_zip_bytes": 298759382,
+      "source_zip_md5": "7beb8e87d59149e7c5e688be1deffff9",
+      "source_zip_sha256": "2005e097515c66380513ccc4cde4b3ddd001d78cf98c3f4712de5be2155d9a4a",
+      "zip_member": "C20/C20_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/C21_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23837264",
+      "bytes": 86741248,
+      "sha256": "8cbe09ac8762136483ad5df2b6032cd79f236d4ad5daa021b366304904352fdf",
+      "source_zip_name": "C21.zip",
+      "source_zip_bytes": 278030787,
+      "source_zip_md5": "b3b2011e5facd7966df906cae9c9109b",
+      "source_zip_sha256": "dcbbab781ada59f5a3a4e72df8b4289ca5c7221aa357db704339b83bcf76f49b",
+      "zip_member": "C21/C21_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M1_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23842511",
+      "bytes": 176099584,
+      "sha256": "a8286b62fc8ddf2dd8fd89883842dc1917e37f4dc49301cc7370c03b3c7ffe4d",
+      "source_zip_name": "M1_1.zip",
+      "source_zip_bytes": 371083536,
+      "source_zip_md5": "4d1ae3a5420cc3d42d495330362301c9",
+      "source_zip_sha256": "303a90ae20093b5319a977a1ededab1e308dd9f3a888fa0cd6405ee6f06d15d7",
+      "zip_member": "M1_1/M1resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M3_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23858387",
+      "bytes": 90501376,
+      "sha256": "ae73246a666f944059d32e13898d37dce2f1edbe60ef42b3e8812add69f2c030",
+      "source_zip_name": "M3_2.zip",
+      "source_zip_bytes": 319280890,
+      "source_zip_md5": "382f28c94bf624658776302779b56315",
+      "source_zip_sha256": "58b5be998715617a37c0cf59e4c428b858eead74224cdfd4ab41c8963336bc62",
+      "zip_member": "M3_2/M3Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M4_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841926",
+      "bytes": 88289536,
+      "sha256": "7ee06e1eacf0d51bf5d147b37716d6f8f26f3c285ba9896e17c6d389da221ddf",
+      "source_zip_name": "M4_1.zip",
+      "source_zip_bytes": 271939004,
+      "source_zip_md5": "8680bcf3bec4967efc2e3d853bb31d05",
+      "source_zip_sha256": "e5da968c31dfb25270bb68dd39eeddd7a062c2c080872f6f860b307567dd2469",
+      "zip_member": "M4_1/M4_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M5_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841728",
+      "bytes": 93155584,
+      "sha256": "0f7310bc210114bf2344e1473c89047507f2b312406e26258381ae85c74fe9f0",
+      "source_zip_name": "M5_1.zip",
+      "source_zip_bytes": 304099000,
+      "source_zip_md5": "79f6b78d783800b59e9b1c1cc796b2e8",
+      "source_zip_sha256": "c900011f90c8f0ada85c010377a3032b9daba1bd19848b0cc23c8e99b2f6da33",
+      "zip_member": "M5_1/M5_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M7_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23842616",
+      "bytes": 92713216,
+      "sha256": "1acfa44d44fc1738ad198e6495c7d0ef9401a6c606204e24dd720ee5b49971a9",
+      "source_zip_name": "M7_1.zip",
+      "source_zip_bytes": 293561989,
+      "source_zip_md5": "78edd22eeaa31f6e55ff8de6787cf16d",
+      "source_zip_sha256": "4d22dcc89d1d793dd2b98caa5cec9d51a2a0d50437c17c6e58a6525d554eb9c5",
+      "zip_member": "M7_1/M7_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M8_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23842592",
+      "bytes": 85635328,
+      "sha256": "a7f8788d101b4ce6b564cbb8d0dfbadd611bf9f57a7d35448973a98505fd727c",
+      "source_zip_name": "M8_2.zip",
+      "source_zip_bytes": 313888507,
+      "source_zip_md5": "392196e1f8c9a83bebc88b4e17cef464",
+      "source_zip_sha256": "d18af317ed58c9974363a0f57fecdf95b96911d55961bb1b2375b998c0318b93",
+      "zip_member": "M8_2/M8_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M9_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23842571",
+      "bytes": 93819136,
+      "sha256": "f3d3033f56a1d2923e0f6681c5bb8c2ac13b6589a59dd0717a23a6b81e1bb75c",
+      "source_zip_name": "M9_2.zip",
+      "source_zip_bytes": 322055840,
+      "source_zip_md5": "a2e419866b44a21031740d42064d103a",
+      "source_zip_sha256": "989b5de214c388ce39f6c6e7a02d871da72bbc3b1762894de66aab6a7838d8d6",
+      "zip_member": "M9_2/M9_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M10_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23841782",
+      "bytes": 87625984,
+      "sha256": "7a3d82efffdb8472d079dc4c61cb1719c21c7ad367dad432039180743fdad0ae",
+      "source_zip_name": "M10_1.zip",
+      "source_zip_bytes": 328478367,
+      "source_zip_md5": "d480c7dafda8b61bc38a33bff5d3a18f",
+      "source_zip_sha256": "726190cded17da51f434f663166a99049732afc3b4768898d3c159eab983bbfc",
+      "zip_member": "M10_1/M10_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M11_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23858372",
+      "bytes": 88068352,
+      "sha256": "78067e7f5a47ddb0eaa8837329b8cbff6375e0f01f37410913de6d743efc3ed7",
+      "source_zip_name": "M11_1.zip",
+      "source_zip_bytes": 294244461,
+      "source_zip_md5": "f6f4dc68b5dde83e1413281fcc1e877f",
+      "source_zip_sha256": "25b92f2b2067bd8b94a74bdf5a8c0e2dbfcb1b31a6772de459b39cb1b8eec61c",
+      "zip_member": "M11_1/M11_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M12_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23858375",
+      "bytes": 87183616,
+      "sha256": "6dc0220aad675e1bfdcee2cfc1d257cf01db1bec12a8470b3ef7144705596d13",
+      "source_zip_name": "M12_2.zip",
+      "source_zip_bytes": 301732950,
+      "source_zip_md5": "7a1cf7133bd587ff2c625e46f0612028",
+      "source_zip_sha256": "26a2dec9ea4d034f8c85e4d4ea48bd794aa3baaa1fbd528b73ed3fa42158bbeb",
+      "zip_member": "M12_2/M12_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M13_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23858273",
+      "bytes": 86520064,
+      "sha256": "55a6884889f1f5238ad673956ae8c607a3d2aa660068f45c84fd1a9ea1727072",
+      "source_zip_name": "M13_2.zip",
+      "source_zip_bytes": 183666595,
+      "source_zip_md5": "43337103df9b578fbd52e295d622a461",
+      "source_zip_sha256": "e7f5f787a79f30b5299e8532c95eb949810d82b897a66457550c934a72f5d0f2",
+      "zip_member": "M13_2/M13_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M14_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23858381",
+      "bytes": 89395456,
+      "sha256": "667ca2adf2ce80119ad0041c9f3f2affdb5d443bd17d49e6f62dd5cf9d7e37f1",
+      "source_zip_name": "M14_1.zip",
+      "source_zip_bytes": 317782813,
+      "source_zip_md5": "d0c7ba49d2759b5dea108d591f99c12f",
+      "source_zip_sha256": "8a4cde2a885459f6f4ed9b328690ef800500f5c42a7c4ebf36d41e43fb4654e0",
+      "zip_member": "M14_1/M14_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M15_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23858384",
+      "bytes": 135622912,
+      "sha256": "c4c225c3692a555caa42e4b6de594ae0e5be4c7f54ba4f3ddcadf919393ab5d5",
+      "source_zip_name": "M15_2.zip",
+      "source_zip_bytes": 347521543,
+      "source_zip_md5": "fb2a7337ecc82892e6e3ce82d1ec7d25",
+      "source_zip_sha256": "b5dd49b114b8f7ec5b03a217a0e71b1eaeac5bddbef580518ee45404bf0c5a95",
+      "zip_member": "M15_2/P15_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M16_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23842418",
+      "bytes": 86962432,
+      "sha256": "f59e0c6f8eeb8e347748b2f90d6d49ab7819e56a6b62a8cf547b1305232939a5",
+      "source_zip_name": "M16_1.zip",
+      "source_zip_bytes": 298654335,
+      "source_zip_md5": "a6aa07a47486dfa53db56f9ebc956865",
+      "source_zip_sha256": "4e7d8ad8987bdf1f47ce8efcecda619f036340a34eb842f48953914c90fc21c6",
+      "zip_member": "M16_1/M16_Resting.bdf"
+    },
+    {
+      "name": "resting_bdf/M17_resting.bdf",
+      "url": "https://ndownloader.figshare.com/files/23842433",
+      "bytes": 92934400,
+      "sha256": "070a9faed3305ce1f5440061443f6fd53d566c35304e9c83da07bf7b7b71da1a",
+      "source_zip_name": "M17_1.zip",
+      "source_zip_bytes": 322601157,
+      "source_zip_md5": "2456e22334c8e2af29069b568e161b73",
+      "source_zip_sha256": "ce627794c223ee901f29cd5c93589e6f315b880a83f92fca80041a23f41175e5",
+      "zip_member": "M17_1/M17_Resting.bdf"
+    }
+  ],
+  "excluded_participants": [
+    {
+      "participant_id": "C2",
+      "zip_file": "C2.zip",
+      "reason": "Unmatched surplus control subject omitted from Migraine_Control_Demographics.xlsx (README.txt line 90)"
+    },
+    {
+      "participant_id": "C6",
+      "zip_file": "C6.zip",
+      "reason": "Unmatched surplus control subject omitted from Migraine_Control_Demographics.xlsx (README.txt line 90)"
+    },
+    {
+      "participant_id": "C12",
+      "zip_file": "C12.zip",
+      "reason": "Unmatched surplus control subject omitted from Migraine_Control_Demographics.xlsx (README.txt line 90)"
+    },
+    {
+      "participant_id": "M2",
+      "zip_file": "M2_1.zip",
+      "age": "23",
+      "gender": "Female",
+      "aura": "Yes",
+      "medication_before_session": "Yes",
+      "reason": "Excluded per authors (README.txt line 90): took medication before the recording session"
+    },
+    {
+      "participant_id": "M6",
+      "zip_file": "M6_1.zip",
+      "age": "54",
+      "gender": "Female",
+      "aura": "Yes",
+      "medication_before_session": "Yes",
+      "reason": "Excluded per authors (README.txt line 90): took medication before the recording session"
+    },
+    {
+      "participant_id": "M18",
+      "zip_file": "M18_1.zip",
+      "age": "30",
+      "gender": "Female",
+      "aura": "Yes",
+      "medication_before_session": "Yes",
+      "reason": "Excluded per authors (README.txt line 90): took medication before the recording session"
+    }
+  ],
+  "source_urls": [
+    "https://doi.org/10.1184/R1/12636731",
+    "https://api.figshare.com/v2/articles/12636731"
+  ]
+}

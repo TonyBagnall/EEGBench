@@ -1,7 +1,7 @@
 """The Neuroverse classification archive: dataset lists and metadata.
 
 The archive includes the 30 problems published by Rushbrooke et al. (2026)
-and 56 additional local preparations. Use the supplied fixed train/test splits;
+and 61 additional local preparations. Use the supplied fixed train/test splits;
 some protocols intentionally share subjects and some older identity mappings
 remain incomplete. See docs/dataset-provenance.md for dataset-specific evidence.
 
@@ -22,6 +22,7 @@ does.
 __all__ = [
     "neuroverse",
     "neuroverse_study",
+    "neuroverse_82",
     "neuroverse_77",
     "neuroverse_76",
     "neuroverse_open",
@@ -49,7 +50,7 @@ DOMAINS = {
     "Psy": "Psychology",
 }
 
-#: Top-level problem families for the 77-problem scalp EEG study.
+#: Top-level problem families for the 82-problem scalp EEG study.
 PROBLEM_FAMILIES = {
     "BCI": "Brain-computer interface",
     "Clinical": "Clinical and physiological",
@@ -212,6 +213,14 @@ _TABLE += [('ParkinsonsRestUCSD', 32, 2, 2048, 31, 1126, 380, 512, 'Med')]
 
 _TABLE += [('ImaginedFingers', 60, 5, 3072, 20, 4481, 1500, 512, 'BCI')]
 
+_TABLE += [
+    ("MigraineRest", 128, 2, 2048, 33, 1920, 750, 512, "Med"),
+    ("ParkinsonsWalking", 53, 2, 1000, 133, 6493, 2100, 250, "Med"),
+    ("PsychosisRestFirst", 61, 2, 4000, 82, 4657, 1601, 1000, "Med"),
+    ("PsychosisRestSecond", 61, 2, 4000, 61, 3472, 1239, 1000, "Med"),
+    ("TBIAuditoryOddball", 61, 3, 500, 87, 4848, 1748, 500, "Med"),
+]
+
 _TABLE.sort(key=lambda row: row[0])
 
 #: Prepared locally; not registered for aeon's automatic archive downloads.
@@ -221,18 +230,19 @@ local_only = [row[0] for row in _TABLE if row[0] not in neuroverse_paper]
 #: loaded through aeon. Results for them are still reported.
 restricted = ["FibroLiverpool", "FibroUEA"]
 
-#: All 86 prepared classification problems used by this repository.
+#: All 91 prepared classification problems used by this repository.
 neuroverse = [row[0] for row in _TABLE]
 
 #: The 28 problems anyone can download, the same list as aeon's ``eeg2026``.
 neuroverse_open = [name for name in neuroverse_paper if name not in restricted]
 
-#: Problem-type assignment ``(family, bci_type)`` for the 77 selected scalp EEG
+#: Problem-type assignment ``(family, bci_type)`` for the 82 selected scalp EEG
 #: classification problems. Strict scalp-EEG motor imagery (``MI``) has 30
-#: problems, while the 6 executed/movement-intention motor tasks sit in ``ME``.
-#: MEG (FaceDetection, HandMovementDirection, MatchWords, MindReading), ECoG
-#: (MotorImagery), and the four older excluded problems (Blink, ButtonPress,
-#: EpilepticSeizures, Sleep) remain in the 86-item archive registry above.
+#: problems, ``Clinical`` has 20 problems, and the 6 executed/movement-intention
+#: motor tasks sit in ``ME``. MEG (FaceDetection, HandMovementDirection,
+#: MatchWords, MindReading), ECoG (MotorImagery), and the four older excluded
+#: problems (Blink, ButtonPress, EpilepticSeizures, Sleep) remain in the
+#: 91-item archive registry above.
 STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "ALSAttention": ("BCI", "ERP"),
     "Alzheimers": ("Clinical", ""),
@@ -288,6 +298,7 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "LowCost": ("BCI", "MI"),
     "MatchingPennies": ("BCI", "ME"),
     "MentalArithmetic": ("Cognitive", ""),
+    "MigraineRest": ("Clinical", ""),
     "NBackAudioCondition": ("Cognitive", ""),
     "ObsessiveCompulsiveSymptoms": ("Clinical", ""),
     "OpenCloseFist": ("BCI", "ME"),
@@ -295,8 +306,11 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "ParkinsonsRest": ("Clinical", ""),
     "ParkinsonsRestIowa": ("Clinical", ""),
     "ParkinsonsRestUCSD": ("Clinical", ""),
+    "ParkinsonsWalking": ("Clinical", ""),
     "PhotoStimulation": ("Clinical", ""),
     "PronouncedSpeech": ("BCI", "Speech"),
+    "PsychosisRestFirst": ("Clinical", ""),
+    "PsychosisRestSecond": ("Clinical", ""),
     "RestingEyeState": ("Cognitive", ""),
     "SelfRegulationSCP1": ("BCI", "ERP"),
     "SelfRegulationSCP2": ("BCI", "ERP"),
@@ -305,6 +319,7 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "SongFamiliarity": ("Cognitive", ""),
     "SpellerFlashes": ("BCI", "ERP"),
     "SymbolAttention": ("BCI", "ERP"),
+    "TBIAuditoryOddball": ("Clinical", ""),
     "VideoEmotions": ("Cognitive", ""),
     "VisualSpeech": ("BCI", "Speech"),
     "VisualSubjects": ("BCI", "ERP"),
@@ -313,12 +328,13 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "WordRelatedness": ("Cognitive", ""),
 }
 
-#: The 77 selected scalp EEG classification problems in the extended benchmark.
+#: The 82 selected scalp EEG classification problems in the extended benchmark.
 neuroverse_study = sorted(STUDY_TAXONOMY)
-neuroverse_77 = neuroverse_study
+neuroverse_82 = neuroverse_study
+neuroverse_77 = neuroverse_study  # backwards-compatible alias
 neuroverse_76 = neuroverse_study  # backwards-compatible alias
 
-#: Registered archive problems excluded from the 77-problem scalp EEG study.
+#: Registered archive problems excluded from the 82-problem scalp EEG study.
 excluded_archive = [name for name in neuroverse if name not in STUDY_TAXONOMY]
 
 
@@ -329,7 +345,7 @@ def metadata() -> pd.DataFrame:
     -------
     pd.DataFrame
         Indexed by dataset name, with the columns of Table 1, availability
-        flags, and the 77-problem study taxonomy (``family``, ``bci_type``,
+        flags, and the 82-problem study taxonomy (``family``, ``bci_type``,
         ``problem_type``, ``study_selected``).
     """
     frame = pd.DataFrame(_TABLE, columns=_COLUMNS).set_index("dataset")
@@ -378,12 +394,12 @@ def by_domain(domain: str, open_only: bool = False) -> list[str]:
 
 
 def by_type(problem_type: str = "All") -> list[str]:
-    """Return datasets from the 77-problem scalp EEG study by problem type.
+    """Return datasets from the 82-problem scalp EEG study by problem type.
 
     Parameters
     ----------
     problem_type : str, default="All"
-        One of ``"All"`` (77), a top-level family (``"BCI"``, ``"Clinical"``,
+        One of ``"All"`` (82), a top-level family (``"BCI"``, ``"Clinical"``,
         ``"Cognitive"``), or a BCI sub-type (``"MI"``, ``"ME"``, ``"ERP"``,
         ``"VEP"``, ``"Speech"``).
 

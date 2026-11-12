@@ -1,14 +1,14 @@
 """The Neuroverse classification archive: dataset lists and metadata.
 
 The archive includes the 30 problems published by Rushbrooke et al. (2026)
-and 55 additional local preparations. Use the supplied fixed train/test splits;
+and 56 additional local preparations. Use the supplied fixed train/test splits;
 some protocols intentionally share subjects and some older identity mappings
 remain incomplete. See docs/dataset-provenance.md for dataset-specific evidence.
 
 The lists here are plain lists of dataset names, so they can be passed directly
 to the experiment and leaderboard code::
 
-    from neuroverse.datasets import neuroverse_76, by_type
+    from neuroverse.datasets import neuroverse_study, by_type
 
     leaderboard(datasets=by_type("MI"), estimators=["HC2-500-pc", "MRHydra"])
 
@@ -21,6 +21,8 @@ does.
 
 __all__ = [
     "neuroverse",
+    "neuroverse_study",
+    "neuroverse_77",
     "neuroverse_76",
     "neuroverse_open",
     "neuroverse_paper",
@@ -47,7 +49,7 @@ DOMAINS = {
     "Psy": "Psychology",
 }
 
-#: Top-level problem families for the 76-problem scalp EEG study.
+#: Top-level problem families for the 77-problem scalp EEG study.
 PROBLEM_FAMILIES = {
     "BCI": "Brain-computer interface",
     "Clinical": "Clinical and physiological",
@@ -56,7 +58,8 @@ PROBLEM_FAMILIES = {
 
 #: Sub-paradigms within the BCI family.
 BCI_TYPES = {
-    "MI": "Motor imagery and execution",
+    "MI": "Motor imagery",
+    "ME": "Motor execution and movement intention",
     "ERP": "Event-related potentials (P300 / SCP)",
     "VEP": "Visual evoked potentials (SSVEP / c-VEP)",
     "Speech": "Decoded and imagined speech",
@@ -67,6 +70,7 @@ PROBLEM_TYPE_TABS = {
     "All": "All Scalp EEG",
     "BCI": "BCI (All)",
     "MI": "Motor Imagery",
+    "ME": "Motor Execution",
     "ERP": "ERP / P300",
     "VEP": "VEP / SSVEP",
     "Speech": "Speech BCI",
@@ -206,6 +210,8 @@ _TABLE += [('ParkinsonsRestIowa', 60, 2, 2000, 149, 4598, 1306, 500, 'Med')]
 
 _TABLE += [('ParkinsonsRestUCSD', 32, 2, 2048, 31, 1126, 380, 512, 'Med')]
 
+_TABLE += [('ImaginedFingers', 60, 5, 3072, 20, 4481, 1500, 512, 'BCI')]
+
 _TABLE.sort(key=lambda row: row[0])
 
 #: Prepared locally; not registered for aeon's automatic archive downloads.
@@ -215,23 +221,24 @@ local_only = [row[0] for row in _TABLE if row[0] not in neuroverse_paper]
 #: loaded through aeon. Results for them are still reported.
 restricted = ["FibroLiverpool", "FibroUEA"]
 
-#: All 85 prepared classification problems used by this repository.
+#: All 86 prepared classification problems used by this repository.
 neuroverse = [row[0] for row in _TABLE]
 
 #: The 28 problems anyone can download, the same list as aeon's ``eeg2026``.
 neuroverse_open = [name for name in neuroverse_paper if name not in restricted]
 
-#: Problem-type assignment ``(family, bci_type)`` for the 76 selected scalp EEG
-#: classification problems. MEG (FaceDetection, HandMovementDirection,
-#: MatchWords, MindReading), ECoG (MotorImagery), and the four older excluded
-#: problems (Blink, ButtonPress, EpilepticSeizures, Sleep) remain in the 85-item
-#: archive registry above but are outside this study.
+#: Problem-type assignment ``(family, bci_type)`` for the 77 selected scalp EEG
+#: classification problems. Strict scalp-EEG motor imagery (``MI``) has 30
+#: problems, while the 6 executed/movement-intention motor tasks sit in ``ME``.
+#: MEG (FaceDetection, HandMovementDirection, MatchWords, MindReading), ECoG
+#: (MotorImagery), and the four older excluded problems (Blink, ButtonPress,
+#: EpilepticSeizures, Sleep) remain in the 86-item archive registry above.
 STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "ALSAttention": ("BCI", "ERP"),
     "Alzheimers": ("Clinical", ""),
     "AlzheimersAuditory": ("Clinical", ""),
-    "ArmCoordination": ("BCI", "MI"),
-    "ArmMovements": ("BCI", "MI"),
+    "ArmCoordination": ("BCI", "ME"),
+    "ArmMovements": ("BCI", "ME"),
     "ChildhoodSeizures": ("Clinical", ""),
     "ClinicalSleepStages": ("Clinical", ""),
     "CodedFlickerTargets": ("BCI", "VEP"),
@@ -239,10 +246,10 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "CovidSurvivors": ("Clinical", ""),
     "EyesOpenShut": ("Cognitive", ""),
     "FeedbackButton": ("Cognitive", ""),
-    "FeetHands": ("BCI", "MI"),
+    "FeetHands": ("BCI", "ME"),
     "FibroLiverpool": ("Clinical", ""),
     "FibroUEA": ("Clinical", ""),
-    "FingerMovements": ("BCI", "MI"),
+    "FingerMovements": ("BCI", "ME"),
     "FlickerAttention": ("BCI", "VEP"),
     "FlickerSymbols": ("BCI", "VEP"),
     "FlickerTargets": ("BCI", "VEP"),
@@ -252,6 +259,7 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "ImaginedArmTasks": ("BCI", "MI"),
     "ImaginedCommands": ("BCI", "Speech"),
     "ImaginedFeetHands": ("BCI", "MI"),
+    "ImaginedFingers": ("BCI", "MI"),
     "ImaginedGrasps": ("BCI", "MI"),
     "ImaginedGripForce": ("BCI", "MI"),
     "ImaginedHandFeetTongue": ("BCI", "MI"),
@@ -278,11 +286,11 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "InnerSpeech": ("BCI", "Speech"),
     "LongIntervalTask": ("Clinical", ""),
     "LowCost": ("BCI", "MI"),
-    "MatchingPennies": ("BCI", "MI"),
+    "MatchingPennies": ("BCI", "ME"),
     "MentalArithmetic": ("Cognitive", ""),
     "NBackAudioCondition": ("Cognitive", ""),
     "ObsessiveCompulsiveSymptoms": ("Clinical", ""),
-    "OpenCloseFist": ("BCI", "MI"),
+    "OpenCloseFist": ("BCI", "ME"),
     "ParkinsonsPedalling": ("Clinical", ""),
     "ParkinsonsRest": ("Clinical", ""),
     "ParkinsonsRestIowa": ("Clinical", ""),
@@ -305,10 +313,12 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "WordRelatedness": ("Cognitive", ""),
 }
 
-#: The 76 selected scalp EEG classification problems in the extended benchmark.
-neuroverse_76 = sorted(STUDY_TAXONOMY)
+#: The 77 selected scalp EEG classification problems in the extended benchmark.
+neuroverse_study = sorted(STUDY_TAXONOMY)
+neuroverse_77 = neuroverse_study
+neuroverse_76 = neuroverse_study  # backwards-compatible alias
 
-#: Registered archive problems excluded from the 76-problem scalp EEG study.
+#: Registered archive problems excluded from the 77-problem scalp EEG study.
 excluded_archive = [name for name in neuroverse if name not in STUDY_TAXONOMY]
 
 
@@ -319,8 +329,8 @@ def metadata() -> pd.DataFrame:
     -------
     pd.DataFrame
         Indexed by dataset name, with the columns of Table 1, availability
-        flags, and the 76-problem study taxonomy (``family``, ``bci_type``,
-        ``problem_type``, ``study_76``).
+        flags, and the 77-problem study taxonomy (``family``, ``bci_type``,
+        ``problem_type``, ``study_selected``).
     """
     frame = pd.DataFrame(_TABLE, columns=_COLUMNS).set_index("dataset")
     frame["subjects"] = frame["subjects"].astype("Int64")
@@ -332,7 +342,8 @@ def metadata() -> pd.DataFrame:
         "local" if n in local_only else "restricted" if n in restricted else "aeon/Zenodo"
         for n in frame.index
     ]
-    frame["study_76"] = frame.index.isin(STUDY_TAXONOMY)
+    frame["study_selected"] = frame.index.isin(STUDY_TAXONOMY)
+    frame["study_76"] = frame["study_selected"]
     frame["family"] = [STUDY_TAXONOMY.get(n, ("", ""))[0] for n in frame.index]
     frame["bci_type"] = [STUDY_TAXONOMY.get(n, ("", ""))[1] for n in frame.index]
     frame["problem_type"] = [
@@ -367,14 +378,14 @@ def by_domain(domain: str, open_only: bool = False) -> list[str]:
 
 
 def by_type(problem_type: str = "All") -> list[str]:
-    """Return datasets from the 76-problem scalp EEG study by problem type.
+    """Return datasets from the 77-problem scalp EEG study by problem type.
 
     Parameters
     ----------
     problem_type : str, default="All"
-        One of ``"All"`` (76), a top-level family (``"BCI"``, ``"Clinical"``,
-        ``"Cognitive"``), or a BCI sub-type (``"MI"``, ``"ERP"``, ``"VEP"``,
-        ``"Speech"``).
+        One of ``"All"`` (77), a top-level family (``"BCI"``, ``"Clinical"``,
+        ``"Cognitive"``), or a BCI sub-type (``"MI"``, ``"ME"``, ``"ERP"``,
+        ``"VEP"``, ``"Speech"``).
 
     Returns
     -------
@@ -382,14 +393,14 @@ def by_type(problem_type: str = "All") -> list[str]:
         Dataset names in alphabetical order.
     """
     if problem_type == "All":
-        return list(neuroverse_76)
+        return list(neuroverse_study)
     if problem_type in PROBLEM_FAMILIES:
         return [
-            name for name in neuroverse_76 if STUDY_TAXONOMY[name][0] == problem_type
+            name for name in neuroverse_study if STUDY_TAXONOMY[name][0] == problem_type
         ]
     if problem_type in BCI_TYPES:
         return [
-            name for name in neuroverse_76 if STUDY_TAXONOMY[name][1] == problem_type
+            name for name in neuroverse_study if STUDY_TAXONOMY[name][1] == problem_type
         ]
     valid = ", ".join(PROBLEM_TYPE_TABS)
     raise ValueError(f"problem_type must be one of {valid}, not {problem_type!r}")
@@ -423,6 +434,6 @@ def metadata_markdown() -> str:
 
 # Backwards-compatible aliases for scripts written before the Neuroverse rename.
 eegbench = neuroverse
-eegbench_76 = neuroverse_76
+eegbench_76 = neuroverse_study
 eegbench_open = neuroverse_open
 eegbench_paper = neuroverse_paper

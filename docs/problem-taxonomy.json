@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-11-10",
+  "as_of": "2026-11-12",
   "selection": "eeg.txt",
-  "selected_problems": 76,
-  "registered_problems": 85,
+  "selected_problems": 77,
+  "registered_problems": 86,
   "registered_not_selected": [
     "Blink",
     "ButtonPress",
@@ -24,8 +24,8 @@
     },
     {
       "category": "Brain-computer interfaces",
-      "all_selected": 50,
-      "scalp_eeg": 50
+      "all_selected": 51,
+      "scalp_eeg": 51
     },
     {
       "category": "Cognitive and affective states",
@@ -44,7 +44,7 @@
     }
   ],
   "modalities": {
-    "scalp EEG": 76,
+    "scalp EEG": 77,
     "MEG": 0,
     "ECoG": 0
   },
@@ -248,6 +248,14 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
+    },
+    {
+      "problem": "ImaginedFingers",
+      "category": "Brain-computer interfaces",
+      "subclass": "Motor imagery",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "5-finger right-hand motor imagery (Damm2026 / OpenNeuro ds008446 v1.0.1); brings strict scalp-EEG MI to 30 problems."
     },
     {
       "problem": "ImaginedGrasps",

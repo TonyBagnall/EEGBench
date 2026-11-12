@@ -2,7 +2,7 @@
 
 Two result layouts are supported across the repository:
 
-1. **Wide summary layout** (default in ``results/neuroverse`` for the 76-problem,
+1. **Wide summary layout** (default in ``results/neuroverse`` for the 77-problem,
    72-classifier study, storing all 90 evaluated configurations)::
 
        results/neuroverse/accuracy.csv
@@ -47,7 +47,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from neuroverse.datasets import STUDY_TAXONOMY, metadata, neuroverse, neuroverse_76
+from neuroverse.datasets import STUDY_TAXONOMY, metadata, neuroverse, neuroverse_study
 
 # metric name used in the file name -> attribute on a tsml-eval results object
 metrics = {
@@ -186,7 +186,7 @@ def export_wide_snapshot(
         Target directory for ``accuracy.csv``, ``balacc.csv``, ``logloss.csv``,
         ``auroc.csv``, ``classifiers.csv``, and ``datasets.csv``.
     datasets : list of str or None
-        Problems to export. Defaults to :data:`neuroverse.datasets.neuroverse_76`.
+        Problems to export. Defaults to :data:`neuroverse.datasets.neuroverse_study`.
     skip_estimators : collection of str
         Superseded estimator directory names to ignore.
     keep_hybrid : collection of str
@@ -203,7 +203,7 @@ def export_wide_snapshot(
     """
     raw_root = Path(raw_results_dir)
     out = Path(output_dir)
-    selected = list(neuroverse_76 if datasets is None else datasets)
+    selected = list(neuroverse_study if datasets is None else datasets)
     selected_set = set(selected)
     skip_set = set(skip_estimators)
     hybrid_set = set(keep_hybrid)
@@ -271,7 +271,7 @@ def compute_default_from_predictions(
 ) -> list[str]:
     """Compute the constant test-majority ``Default`` baseline from prediction files."""
     raw_root = Path(raw_results_dir)
-    selected = list(neuroverse_76 if datasets is None else datasets)
+    selected = list(neuroverse_study if datasets is None else datasets)
     expected_test = metadata()["test_size"].to_dict()
 
     default_scores: dict[str, list[float]] = {m: [] for m in WIDE_METRICS}

@@ -484,7 +484,7 @@ def _describe_datasets(datasets) -> str | None:
     from neuroverse import datasets as archive
 
     requested = sorted(dict.fromkeys(datasets))
-    for name in ["neuroverse", "neuroverse_76", "neuroverse_open"]:
+    for name in ["neuroverse", "neuroverse_study", "neuroverse_open"]:
         if requested == sorted(getattr(archive, name)):
             return f"sorted({name})"
     for domain in archive.DOMAINS:
@@ -506,7 +506,7 @@ def _snippet_html(
     imports = ["from neuroverse.experiments.tables import leaderboard"]
     if datasets_expr is None:
         datasets_expr = f"[...]  # {n_datasets} datasets"
-    for name in ["neuroverse_open", "neuroverse_76", "neuroverse", "by_domain"]:
+    for name in ["neuroverse_open", "neuroverse_study", "neuroverse", "by_domain"]:
         if name in datasets_expr:
             imports.insert(0, f"from neuroverse.datasets import {name}")
             break
@@ -682,7 +682,7 @@ def leaderboard(
     Parameters
     ----------
     datasets : list of str
-        Datasets to consider, for example ``neuroverse.datasets.neuroverse_76``.
+        Datasets to consider, for example ``neuroverse.datasets.neuroverse_study``.
     estimators : list of str
         Estimator names, matching their results directories.
     metrics : list of str or None

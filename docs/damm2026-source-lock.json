@@ -1,0 +1,2257 @@
+{
+  "dataset": "ImaginedFingers",
+  "source_dataset": "Damm2026",
+  "openneuro_id": "ds008446",
+  "version": "1.0.1",
+  "git_commit": "8d8448e2dcd731b251f2f3c85b98cce5847cb000",
+  "snapshot_tarball_sha256": "effc6d86ab88af41eb9dfb44643a4efbaa85073cd1eaaa43495666e60c90df4a",
+  "doi": "10.18112/openneuro.ds008446.v1.0.1",
+  "licence": "CC0-1.0",
+  "moabb_reference_commit": "bed9f0fa1b9c4d3f71c7f2ddb22e4e44383211b5",
+  "moabb_loader": "moabb/datasets/damm2026.py",
+  "retained_file_count": 346,
+  "retained_bytes": 5756302493,
+  "excluded_non_bids_sourcedata": {
+    "files": 86,
+    "bytes": 27146513207,
+    "reason": "Redundant 27.15 GB Raw CSV Dataset and Visual Stimuli images outside BIDS sub-* EDF recordings; counterbalancing_log.json is retained."
+  },
+  "files": [
+    {
+      "name": "CHANGES",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/CHANGES",
+      "bytes": 144,
+      "publisher_checksum": "sha256:88c037ee5a0bbd4b6920268c44a06cc88a851acfd7dc3eed3b7bc2d9257fc517"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/README.md",
+      "bytes": 1256,
+      "publisher_checksum": "sha256:2621d510b6c57b3e55941d1c6b7839c0c2bae3826a60827d7f6a0b30867a1a74"
+    },
+    {
+      "name": "dataset_description.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/dataset_description.json",
+      "bytes": 652,
+      "publisher_checksum": "sha256:81f0b938d4297375b269824f2137b9d1753b4407886e54c5fdbf44c5fa6288ef"
+    },
+    {
+      "name": "participants.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/participants.json",
+      "bytes": 444,
+      "publisher_checksum": "sha256:77876331cf538b743f46f37f04eaaeac38528afa01ae12ab04f5fd3db82d73ea"
+    },
+    {
+      "name": "participants.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/participants.tsv",
+      "bytes": 317,
+      "publisher_checksum": "sha256:fcc66373fb37c9d3f79215278b4b1635d709566aa41ccfb990175fbb6b7c8d04"
+    },
+    {
+      "name": "sourcedata/counterbalancing_log.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sourcedata/counterbalancing_log.json",
+      "bytes": 2303,
+      "publisher_checksum": "sha256:3fc5da0d370ff57288ebd14a960c539f376ab9b3292f840d1ea47a15957e1a1a"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/eeg/sub-01_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-01/eeg/sub-01_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:81a47a3c61ecba5d7efa4ed993b4c3aa31375cb329f89d6bac732fb846e8b295",
+      "annex_key": "SHA256E-s60985856--81a47a3c61ecba5d7efa4ed993b4c3aa31375cb329f89d6bac732fb846e8b295.edf"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/eeg/sub-01_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:266cbc61847cf95fc6107a4fb4d9107a43056150824d185a0bd9472865b52939"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-01/eeg/sub-01_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:336c6c7963d975667765d3cbc87077f89ea7471a585aa46f70d99bbc3649e2ce",
+      "annex_key": "SHA256E-s11179696--336c6c7963d975667765d3cbc87077f89ea7471a585aa46f70d99bbc3649e2ce.tsv"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/eeg/sub-01_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-01/eeg/sub-01_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:f7381d49a6fb12eb3e517efeb814a7566900fb451c6e5c2f27780093e4fc8754",
+      "annex_key": "SHA256E-s60985856--f7381d49a6fb12eb3e517efeb814a7566900fb451c6e5c2f27780093e4fc8754.edf"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/eeg/sub-01_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:443bde7fcb8900515c787140e19d4dbf5cf06223b7f9b26350b30466b3bf449e"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-01/eeg/sub-01_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:e03c194190c22c322a40c7b4ee1cf2d7c94ac52b584dc28474355fa6408d1959",
+      "annex_key": "SHA256E-s11179696--e03c194190c22c322a40c7b4ee1cf2d7c94ac52b584dc28474355fa6408d1959.tsv"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/eeg/sub-01_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-01/eeg/sub-01_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:e2fdc64b2e2b83dbb6eef5ae83d05a0a407a1b8b69d08efc4136d5dc7e5f1853",
+      "annex_key": "SHA256E-s60985856--e2fdc64b2e2b83dbb6eef5ae83d05a0a407a1b8b69d08efc4136d5dc7e5f1853.edf"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/eeg/sub-01_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:2810067e48af931fee5b2ed82ad047fe6e7b59c01601f4de0be24592ed4ad9ab"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-01/eeg/sub-01_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/eeg/sub-01_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-01/eeg/sub-01_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:56b64c122d9d50873603e98b013ebd0ab7a366a931f01a7f8ace4130b7885c75",
+      "annex_key": "SHA256E-s60985856--56b64c122d9d50873603e98b013ebd0ab7a366a931f01a7f8ace4130b7885c75.edf"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/eeg/sub-01_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:42f30dbbd3a2e927eb8af351f1499066d4d6cc76869e1ddc36716200b21cd96d"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-01/eeg/sub-01_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-01/sub-01_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-01/sub-01_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:cc95d8cecd04d18ce44f722113bc4299b9b32323277120952956b5ae63e367a9"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/eeg/sub-02_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-02/eeg/sub-02_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:8f51d5b250e3ef7bda618203c59317daff877a4c73e91513c979f1d90e90e706",
+      "annex_key": "SHA256E-s60985856--8f51d5b250e3ef7bda618203c59317daff877a4c73e91513c979f1d90e90e706.edf"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/eeg/sub-02_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:488b584ff8de4e74f239ca77a16f2ffac68f98095ea297753c63e239adade92c"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-02/eeg/sub-02_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:66003bf96e0dc422cc655c2fac2d3f5f753370000bfd2bbf8b86541733424282",
+      "annex_key": "SHA256E-s11179696--66003bf96e0dc422cc655c2fac2d3f5f753370000bfd2bbf8b86541733424282.tsv"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/eeg/sub-02_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-02/eeg/sub-02_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:e4a7b33c3d5ef746c853636084ce5a40c8ada3332b3edd3a13c0c6af2b077149",
+      "annex_key": "SHA256E-s60985856--e4a7b33c3d5ef746c853636084ce5a40c8ada3332b3edd3a13c0c6af2b077149.edf"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/eeg/sub-02_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:795ffbe1010838e79697a13d249df4a85fb8c0baa7797417f2281b05788bc877"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-02/eeg/sub-02_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:8db590448b5e73f1a1f36f8d927b452fba72fe80d3aaa2a3cd0cddadf3ba56c7",
+      "annex_key": "SHA256E-s11179696--8db590448b5e73f1a1f36f8d927b452fba72fe80d3aaa2a3cd0cddadf3ba56c7.tsv"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/eeg/sub-02_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-02/eeg/sub-02_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:fa2931d68a2666807aa3b2fb625be50f807c98f8df19a547e0d36615aad107a0",
+      "annex_key": "SHA256E-s60985856--fa2931d68a2666807aa3b2fb625be50f807c98f8df19a547e0d36615aad107a0.edf"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/eeg/sub-02_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:4c9fa32bedcc2cc334e0b46be3c0617b5b9ac43d7b7f12293e2d0a4cf77f91cb"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-02/eeg/sub-02_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/eeg/sub-02_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-02/eeg/sub-02_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:08987b79a0bfe5dd5a9abef5888b21e800f8a72a99726cb2770e0aa510d271e4",
+      "annex_key": "SHA256E-s60985856--08987b79a0bfe5dd5a9abef5888b21e800f8a72a99726cb2770e0aa510d271e4.edf"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/eeg/sub-02_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:42927ab2cabd149f579f472a9d35bc9832bf33e8a78576c880fe15dd9a3930d0"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-02/eeg/sub-02_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-02/sub-02_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-02/sub-02_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:a2877012ac1d20fb060b6be97fcc28fb61b36df63473e63fa55d0da08fed7d42"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/eeg/sub-03_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-03/eeg/sub-03_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:baaff27b08789e039ddf594440a84690f40eaa2ebf89e8afaa89b91fdca015c7",
+      "annex_key": "SHA256E-s60985856--baaff27b08789e039ddf594440a84690f40eaa2ebf89e8afaa89b91fdca015c7.edf"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/eeg/sub-03_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:801d10c4f2ad970d6435c350bfb32f296d24287e54b860c06036cb792c4f1f79"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-03/eeg/sub-03_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:9674d8913eddf31c3a3c804ff86e778e5875f48ea5a6a5764da399f6efb1cf76",
+      "annex_key": "SHA256E-s11179696--9674d8913eddf31c3a3c804ff86e778e5875f48ea5a6a5764da399f6efb1cf76.tsv"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/eeg/sub-03_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-03/eeg/sub-03_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:32f3441154dee681d963bab2bd838b7d000802b15db9541bf1620d4da8143cb0",
+      "annex_key": "SHA256E-s60985856--32f3441154dee681d963bab2bd838b7d000802b15db9541bf1620d4da8143cb0.edf"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/eeg/sub-03_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:5e948a34ad657fda87e072c05dbdd568ac84a38a154f6e81bda0d8de6882e7ea"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-03/eeg/sub-03_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:2ea97b0f58ba79eaa93a27fea9cacc1ac8f1ff845b6d16e4161e4fd34b7c5982",
+      "annex_key": "SHA256E-s11179696--2ea97b0f58ba79eaa93a27fea9cacc1ac8f1ff845b6d16e4161e4fd34b7c5982.tsv"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/eeg/sub-03_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-03/eeg/sub-03_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:d8e71939fb437e8cdbde4e7286e8d2e481c7010bd398debd7e1143c73ba2ea28",
+      "annex_key": "SHA256E-s60985856--d8e71939fb437e8cdbde4e7286e8d2e481c7010bd398debd7e1143c73ba2ea28.edf"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/eeg/sub-03_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:5f72f2db541aea76db49dcdc2c50715ca396a116cee10c446a15db3408377f35"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-03/eeg/sub-03_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/eeg/sub-03_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-03/eeg/sub-03_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:464852436fc9b6aa075d5830d85206909ae8db88cca0acc00d57dd818f70d5cf",
+      "annex_key": "SHA256E-s60985856--464852436fc9b6aa075d5830d85206909ae8db88cca0acc00d57dd818f70d5cf.edf"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/eeg/sub-03_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:ae1a2fbea742b2d49f4ba57587eb2f3920fce3c97ea86e3e44c1f9d8f0c7ae8e"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-03/eeg/sub-03_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-03/sub-03_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-03/sub-03_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:51ca3f36d832b6038537f6cd9e58eaedcf60949da47de5e1dfbc6d27f378bdd5"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/eeg/sub-04_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-04/eeg/sub-04_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:b2dd9fe40bff28fc19b33f4e00414609e118155ad8f8a4914ce0733a740e07c8",
+      "annex_key": "SHA256E-s60985856--b2dd9fe40bff28fc19b33f4e00414609e118155ad8f8a4914ce0733a740e07c8.edf"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/eeg/sub-04_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:2b1686f36cf20046f56e4653d6afb8111c935c74659723496aff7da0778f4e94"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-04/eeg/sub-04_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:d3cdc063fad73fedda398d1c20d88597e8479fe4061d8b2e56449b92fcad6b41",
+      "annex_key": "SHA256E-s11179696--d3cdc063fad73fedda398d1c20d88597e8479fe4061d8b2e56449b92fcad6b41.tsv"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/eeg/sub-04_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-04/eeg/sub-04_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:8197cf023f41440c42a706ee270e1a73cb9ccce366c20c876dc94452026d4ff6",
+      "annex_key": "SHA256E-s60985856--8197cf023f41440c42a706ee270e1a73cb9ccce366c20c876dc94452026d4ff6.edf"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/eeg/sub-04_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:f67b72a17cd73f1d71c890d7da4146ea6650506f4c26632233d0d145e4ed0e99"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-04/eeg/sub-04_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:4fa84621974433866793b6b05c2d612e29a4609e8a7564533266d507272312e8",
+      "annex_key": "SHA256E-s11179696--4fa84621974433866793b6b05c2d612e29a4609e8a7564533266d507272312e8.tsv"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/eeg/sub-04_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-04/eeg/sub-04_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:4a96e52544fcea7f484d70bedc5840645b2ea5a6acad2bc4594947470277ed4a",
+      "annex_key": "SHA256E-s60985856--4a96e52544fcea7f484d70bedc5840645b2ea5a6acad2bc4594947470277ed4a.edf"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/eeg/sub-04_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:c122bbcc2973d7cc2b204d310dce6e352861a1d22ce9c39334270ee37320fcba"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-04/eeg/sub-04_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/eeg/sub-04_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-04/eeg/sub-04_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:767d0f7c2e74d7521cee8d10ec8bd4343605f9daacf8600610ef5f204235f9de",
+      "annex_key": "SHA256E-s60985856--767d0f7c2e74d7521cee8d10ec8bd4343605f9daacf8600610ef5f204235f9de.edf"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/eeg/sub-04_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:dc47cb3b04096ed3c443c3c7a92c85818e3d3e424ab4fe4c4a6cc30b2019f0f6"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-04/eeg/sub-04_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-04/sub-04_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-04/sub-04_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:5509fd3c1335b7478b61c1ce885af4a02648a8e507c2e4468cb99fa8775d4e82"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/eeg/sub-05_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-05/eeg/sub-05_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:3f1e6e30fec2c22fd33932dc10ce329c556bf3a3686a8cf7e8da20b91202b4a3",
+      "annex_key": "SHA256E-s60985856--3f1e6e30fec2c22fd33932dc10ce329c556bf3a3686a8cf7e8da20b91202b4a3.edf"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/eeg/sub-05_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:367fcd2858fe5ca2db3c3a55bf042ab3443ce1159e212416c8220f8fa5c37bf1"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-05/eeg/sub-05_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:beac123ed35d71455bd2170132c9a9a8d57662fab355ff1399dcabde4d11da0b",
+      "annex_key": "SHA256E-s11179696--beac123ed35d71455bd2170132c9a9a8d57662fab355ff1399dcabde4d11da0b.tsv"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/eeg/sub-05_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-05/eeg/sub-05_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:9c5c04ba3fbd04b91e3cef98239f4f682501b7de3fa6cd15a9dda49f6d12809b",
+      "annex_key": "SHA256E-s60985856--9c5c04ba3fbd04b91e3cef98239f4f682501b7de3fa6cd15a9dda49f6d12809b.edf"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/eeg/sub-05_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:ab98c455000a997951c3f3a90be2ae692a164cc74142e1bc319bc6736ae2c975"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-05/eeg/sub-05_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:4c6c7a5db99e579c3bc1779a9c884e6a9686c5730f22fa8daaa66414174203fb",
+      "annex_key": "SHA256E-s11179696--4c6c7a5db99e579c3bc1779a9c884e6a9686c5730f22fa8daaa66414174203fb.tsv"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/eeg/sub-05_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-05/eeg/sub-05_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:bcf14dcfd6965630f45035370830c42c12938c939a4001d5e4563b5e8aa53449",
+      "annex_key": "SHA256E-s60985856--bcf14dcfd6965630f45035370830c42c12938c939a4001d5e4563b5e8aa53449.edf"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/eeg/sub-05_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:8dea5705219fd254fa4783c77f7b6c557567e668ed6e6a18bf2e84ce1e1058a5"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-05/eeg/sub-05_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/eeg/sub-05_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-05/eeg/sub-05_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:47bbd266f8aa544d801e82bc85fdad14ba47d2ea1e3a1bda28f3c2206522a728",
+      "annex_key": "SHA256E-s60985856--47bbd266f8aa544d801e82bc85fdad14ba47d2ea1e3a1bda28f3c2206522a728.edf"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/eeg/sub-05_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:4e83d9b5c2643d6afe24a421eb3f975264b6a59d110b6de419358c8da12d02fc"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-05/eeg/sub-05_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-05/sub-05_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-05/sub-05_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:905d2c3928320ade90daa2092b53249d12774054a9d28b65362b6cd5c8a21cf5"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/eeg/sub-06_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-06/eeg/sub-06_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:6ecdcb4396060acd0980ea3822f33bf2c2daa1c7f1ce1cbfb6b9bb500d3f2ffc",
+      "annex_key": "SHA256E-s60985856--6ecdcb4396060acd0980ea3822f33bf2c2daa1c7f1ce1cbfb6b9bb500d3f2ffc.edf"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/eeg/sub-06_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:b8dccd28c5dd52070f02c44b0c04ac9e906e1ff958ad470a103b4b0fa2e176be"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-06/eeg/sub-06_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:693f049007e072e42f74b27430f4eb4bac9587c4db8ff3754792596f5099888f",
+      "annex_key": "SHA256E-s11179696--693f049007e072e42f74b27430f4eb4bac9587c4db8ff3754792596f5099888f.tsv"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/eeg/sub-06_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-06/eeg/sub-06_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:9bef79c48b705e83535464e787e7921a6247161007353b44c0069d10cb47ebb2",
+      "annex_key": "SHA256E-s60985856--9bef79c48b705e83535464e787e7921a6247161007353b44c0069d10cb47ebb2.edf"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/eeg/sub-06_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:15f13406bd2f7f42c43f92fbeb81d16003dc34310ccefbe8f23a424e435f46dd"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-06/eeg/sub-06_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:d175f32b898378e334fbb870ca6097e83fd7d95e0279d9b4d5b8abb7b840f0cc",
+      "annex_key": "SHA256E-s11179696--d175f32b898378e334fbb870ca6097e83fd7d95e0279d9b4d5b8abb7b840f0cc.tsv"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/eeg/sub-06_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-06/eeg/sub-06_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:e7fbf2ccc60857349f174c873a58e8ec628f221b2f28a461d021e408dbfd3d14",
+      "annex_key": "SHA256E-s60985856--e7fbf2ccc60857349f174c873a58e8ec628f221b2f28a461d021e408dbfd3d14.edf"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/eeg/sub-06_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:9eeec421ad01ce0245523185acfbcc8d68eb2838e90411872221a837df887734"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-06/eeg/sub-06_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/eeg/sub-06_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-06/eeg/sub-06_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:4d6a9940a38f6af9af296bc4ad4a255ec86353da1ab37d0d20eba200658e89cd",
+      "annex_key": "SHA256E-s60985856--4d6a9940a38f6af9af296bc4ad4a255ec86353da1ab37d0d20eba200658e89cd.edf"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/eeg/sub-06_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:b9fe918f93180e25721133d5915526d13dd916c3b147d41bec51945092e9594e"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-06/eeg/sub-06_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-06/sub-06_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-06/sub-06_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:fa9103a41bbab24ac6c448dedd45b4366dd314e532245ff643471f93f46d9cdb"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/eeg/sub-07_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-07/eeg/sub-07_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:ceaf60147e1647beefb282b3832848613f2b7ed3e789f21c08a9d9ced09fd091",
+      "annex_key": "SHA256E-s60985856--ceaf60147e1647beefb282b3832848613f2b7ed3e789f21c08a9d9ced09fd091.edf"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/eeg/sub-07_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:e9826ec1e4683ea10cf1fab83fbab988c73f9028ffa126b04f36bdfbee197381"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-07/eeg/sub-07_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:c021e214e656cb333b7e9f3ddb346a04c466de39f085288c2a22f09e1aa96008",
+      "annex_key": "SHA256E-s11179696--c021e214e656cb333b7e9f3ddb346a04c466de39f085288c2a22f09e1aa96008.tsv"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/eeg/sub-07_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-07/eeg/sub-07_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:2144b72f318d029628ade3cf1d7912be8210fe339df6449dd0d99ad0edf86e4c",
+      "annex_key": "SHA256E-s60985856--2144b72f318d029628ade3cf1d7912be8210fe339df6449dd0d99ad0edf86e4c.edf"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/eeg/sub-07_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:81218c71b4629577c3a5099ad31f4fea3b83e1cb04d57c614dfedb6d094eca1a"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-07/eeg/sub-07_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:b935ae0225fe3faf5c0468da5a58e962d79bf994f9009ec3fbe0c964de84d8c6",
+      "annex_key": "SHA256E-s11179696--b935ae0225fe3faf5c0468da5a58e962d79bf994f9009ec3fbe0c964de84d8c6.tsv"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/eeg/sub-07_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-07/eeg/sub-07_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:8cd44d6edc3ef72ffa308a74060d2870ecf9bdc7c42e98ba4345fc7f0f79233c",
+      "annex_key": "SHA256E-s60985856--8cd44d6edc3ef72ffa308a74060d2870ecf9bdc7c42e98ba4345fc7f0f79233c.edf"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/eeg/sub-07_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:c18026181dddb00d1740b8cd5ba769ef139a4cdc6652e13f52be91aedaf3fb0b"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-07/eeg/sub-07_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/eeg/sub-07_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-07/eeg/sub-07_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:788b20106b909616b9d656c87ddce98e09475287c480ec94d3e04f5bf0b6ae7a",
+      "annex_key": "SHA256E-s60985856--788b20106b909616b9d656c87ddce98e09475287c480ec94d3e04f5bf0b6ae7a.edf"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/eeg/sub-07_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:99dafbdbef8a25c83b25a7197839fc587c2afa52de2e072a55a46b3c8500d877"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-07/eeg/sub-07_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-07/sub-07_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-07/sub-07_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:5f0b7294489786224d701c0dcee3d8bb8b4085babd7414dae3145bcd5ac38a6a"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/eeg/sub-08_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-08/eeg/sub-08_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:040542def52bdd38141b19b036e51203f77e4bb91cffdb2d242aff2b3526a4f3",
+      "annex_key": "SHA256E-s60985856--040542def52bdd38141b19b036e51203f77e4bb91cffdb2d242aff2b3526a4f3.edf"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/eeg/sub-08_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:6082187e97e95f6b3bf924d0c53bc29e343f1b3b6b55581c19675a151b3cb832"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-08/eeg/sub-08_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:fc10f1cadffb7087c1450c9e9ebb64181fd3b1a2b49e0812295fedfc7859c265",
+      "annex_key": "SHA256E-s11179696--fc10f1cadffb7087c1450c9e9ebb64181fd3b1a2b49e0812295fedfc7859c265.tsv"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/eeg/sub-08_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-08/eeg/sub-08_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:7dc0eafa36bf0653264c2ed18c0d4413cd05f2cd4346acf8b076801f0af072dc",
+      "annex_key": "SHA256E-s60985856--7dc0eafa36bf0653264c2ed18c0d4413cd05f2cd4346acf8b076801f0af072dc.edf"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/eeg/sub-08_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:8868896a5581fbbf68805bd9d6493539f9be6ccc0cf06ff2b7a097bfe3da8bab"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-08/eeg/sub-08_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:4e2b9a169c9240d4e7bd3dab5e05255cbd02e987de3eed041aac41a8349440a1",
+      "annex_key": "SHA256E-s11179696--4e2b9a169c9240d4e7bd3dab5e05255cbd02e987de3eed041aac41a8349440a1.tsv"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/eeg/sub-08_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-08/eeg/sub-08_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:8d573ab4dad1fa1a90d8c7a3d340f559072f590eb4e4b6f2ce0850d750151a3c",
+      "annex_key": "SHA256E-s60985856--8d573ab4dad1fa1a90d8c7a3d340f559072f590eb4e4b6f2ce0850d750151a3c.edf"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/eeg/sub-08_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:28994e78670d4c81501ac3693064a85a1c5821a198d012aa9805e96778f7e36f"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-08/eeg/sub-08_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/eeg/sub-08_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-08/eeg/sub-08_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:d91eead8ae3fa017c8d6825a04224d650bb0427278222685fbad23891b3d0739",
+      "annex_key": "SHA256E-s60985856--d91eead8ae3fa017c8d6825a04224d650bb0427278222685fbad23891b3d0739.edf"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/eeg/sub-08_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:22a8970c1cd81ed8460f546f3c425882fc5fef3a591d7c46b4cf5a9cde7cb526"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-08/eeg/sub-08_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-08/sub-08_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-08/sub-08_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:adb43e97d62dc8d0ad8e2dd4b93f504537c5b3994937fe0b2273507ead3f1021"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/eeg/sub-09_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-09/eeg/sub-09_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:118e9aad388ca9783d7fef62f63200af2fa8254b1f8ed6aacb536ff2befee313",
+      "annex_key": "SHA256E-s60985856--118e9aad388ca9783d7fef62f63200af2fa8254b1f8ed6aacb536ff2befee313.edf"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/eeg/sub-09_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:36ce489c751b77d12608a9d37c778f682134b4359401bbc781478245cfebed64"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-09/eeg/sub-09_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:e050a1f480064e808861808cbbe1b49e8293cccd29d07c1234849952a289f4c9",
+      "annex_key": "SHA256E-s11179696--e050a1f480064e808861808cbbe1b49e8293cccd29d07c1234849952a289f4c9.tsv"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/eeg/sub-09_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-09/eeg/sub-09_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:c6ef022219fc38532e163abf22584e6c5f6661530570dbb97ae60e5978d2ad00",
+      "annex_key": "SHA256E-s60985856--c6ef022219fc38532e163abf22584e6c5f6661530570dbb97ae60e5978d2ad00.edf"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/eeg/sub-09_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:62b630ad177d06621dfcfcdb3b8843c2013af13ed52fe27a1d3c1c14f09ed0e3"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-09/eeg/sub-09_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:4d01197a0d6cb20c890197a02213a489e2e10562647dc79c68ef66b5aa51c037",
+      "annex_key": "SHA256E-s11179696--4d01197a0d6cb20c890197a02213a489e2e10562647dc79c68ef66b5aa51c037.tsv"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/eeg/sub-09_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-09/eeg/sub-09_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:8872158db2d4100070c009bb04fa52e4ff09b930290188b4cf7b65504874be6c",
+      "annex_key": "SHA256E-s60985856--8872158db2d4100070c009bb04fa52e4ff09b930290188b4cf7b65504874be6c.edf"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/eeg/sub-09_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:030d90577458f33b11ea80a672b7ef26aaa01538ad8e9c945c0f0c0ac5ab22d1"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-09/eeg/sub-09_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/eeg/sub-09_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-09/eeg/sub-09_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:0372549c256256a2fd7352eed0d03139e5f88e0fc9a82f6bc57aa5917584f781",
+      "annex_key": "SHA256E-s60985856--0372549c256256a2fd7352eed0d03139e5f88e0fc9a82f6bc57aa5917584f781.edf"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/eeg/sub-09_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:912d4c718631cb02437d0c88af0215a219c4b432b2fd7c2e2a02da857993bfc9"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-09/eeg/sub-09_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-09/sub-09_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-09/sub-09_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:a9d1d72c032280fb7954ed32504ebd2392f596ab1b4d15d4438fe50cd9828863"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/eeg/sub-10_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-10/eeg/sub-10_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:71f801e7e94a1c580ee291a0228508b098ce3045a9ac4352db8f69842bb3fac7",
+      "annex_key": "SHA256E-s60985856--71f801e7e94a1c580ee291a0228508b098ce3045a9ac4352db8f69842bb3fac7.edf"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/eeg/sub-10_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:7e1dd68993162ac796a443dc2037021451fe3ea7ccdd8cf241fcddb148e5607c"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-10/eeg/sub-10_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:a8d7fdb7c30a76a05efa416aa16ce442c73b45f53f3f3ff3d01e6d9fcce2647b",
+      "annex_key": "SHA256E-s11179696--a8d7fdb7c30a76a05efa416aa16ce442c73b45f53f3f3ff3d01e6d9fcce2647b.tsv"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/eeg/sub-10_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-10/eeg/sub-10_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:a4fc63dff99c0835ad57de468a971ef468293fef111632a39f3ba08249ae016d",
+      "annex_key": "SHA256E-s60985856--a4fc63dff99c0835ad57de468a971ef468293fef111632a39f3ba08249ae016d.edf"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/eeg/sub-10_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:e6ca430357ba7c8d5ce9701c946ed404dcee7fb65ae108661103e7dcc2e38fe2"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-10/eeg/sub-10_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:1727c3797a617672a56cf754a70110f01b373509b12ce581f58aaf848624c77e",
+      "annex_key": "SHA256E-s11179696--1727c3797a617672a56cf754a70110f01b373509b12ce581f58aaf848624c77e.tsv"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/eeg/sub-10_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-10/eeg/sub-10_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:8868425d47dce120b7839bf94cf5f021a0ced9260d3269faed3b68e59d314558",
+      "annex_key": "SHA256E-s60985856--8868425d47dce120b7839bf94cf5f021a0ced9260d3269faed3b68e59d314558.edf"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/eeg/sub-10_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:5bb8d1431a43e0ca93ce23a55ea6bd41a4d4e4247af2cfd1063bd85727d35a3e"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-10/eeg/sub-10_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/eeg/sub-10_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-10/eeg/sub-10_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:327b98f8142e50ad193e745fe2208f55cd01fe37e57205e4d01d7ec0434fc85b",
+      "annex_key": "SHA256E-s60985856--327b98f8142e50ad193e745fe2208f55cd01fe37e57205e4d01d7ec0434fc85b.edf"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/eeg/sub-10_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:e593609084e50a8e91323ef64eb4b8bb4fd50467d3916774045920ddfc799c56"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-10/eeg/sub-10_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-10/sub-10_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-10/sub-10_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:8b888881abe2d25455dbcd59f6b0a6fd7c1d34bd0506eed467d94b729810c6d3"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/eeg/sub-11_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-11/eeg/sub-11_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:591e4ce5eba43ff48428db9968b6fbd6fbbc3f914eb3b7ff759bb195a1c10557",
+      "annex_key": "SHA256E-s60985856--591e4ce5eba43ff48428db9968b6fbd6fbbc3f914eb3b7ff759bb195a1c10557.edf"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/eeg/sub-11_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:29f0d4aa0dff593bbe72cb1fa5951caa1b527281faff0a78ad2a97fe5a19c5df"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-11/eeg/sub-11_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:8a82890893b4d4fdc4d262530e6b3520c36c3352ae06ecdfed066587bd9c0988",
+      "annex_key": "SHA256E-s11179696--8a82890893b4d4fdc4d262530e6b3520c36c3352ae06ecdfed066587bd9c0988.tsv"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/eeg/sub-11_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-11/eeg/sub-11_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:12128cc99757c7d3a01aa12352ee5a8955f3a83088a22064443fedd6c873bcdc",
+      "annex_key": "SHA256E-s60985856--12128cc99757c7d3a01aa12352ee5a8955f3a83088a22064443fedd6c873bcdc.edf"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/eeg/sub-11_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:8366aeb043ca63fe5a633ca65c4581928602d8220fabda61a8e0970042d8b80f"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-11/eeg/sub-11_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:9663f2c97a201a7d569ad07db6acee27889f4f94d929b19438baa2a8ffd927ab",
+      "annex_key": "SHA256E-s11179696--9663f2c97a201a7d569ad07db6acee27889f4f94d929b19438baa2a8ffd927ab.tsv"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/eeg/sub-11_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-11/eeg/sub-11_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:ff6da128013ffede4bb5635d7f3b50b3f415be68ad358e532392489dae4e4c36",
+      "annex_key": "SHA256E-s60985856--ff6da128013ffede4bb5635d7f3b50b3f415be68ad358e532392489dae4e4c36.edf"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/eeg/sub-11_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:990e1c3ed716236446c21d08f104c2e534c096528a9e3be7f58739029f6329f8"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-11/eeg/sub-11_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/eeg/sub-11_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-11/eeg/sub-11_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:d42fa9434f8127ec5858569cf2ea41c8da1fd80e33d783565f7371bf1da464b1",
+      "annex_key": "SHA256E-s60985856--d42fa9434f8127ec5858569cf2ea41c8da1fd80e33d783565f7371bf1da464b1.edf"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/eeg/sub-11_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:fcbbfcb91b28326d303cdfc782739554ce9de2c14dac0f29524b62458af3463c"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-11/eeg/sub-11_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-11/sub-11_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-11/sub-11_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:beb69cbd5c58cedf1fec5348224ffc587bb300639f0bc0f1c010c276bc5850ec"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/eeg/sub-12_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-12/eeg/sub-12_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:ad258acec56dbe2bdfe6a6a7ebd56f184e263b67e6dd924c0a70925e73200d9c",
+      "annex_key": "SHA256E-s60985856--ad258acec56dbe2bdfe6a6a7ebd56f184e263b67e6dd924c0a70925e73200d9c.edf"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/eeg/sub-12_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:960be714a655ef7a22d9a701f4c9565de10e2b62d2deb461597afe039ecdc8ed"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-12/eeg/sub-12_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:8ef92aa3bffb921b07b6c151a40f7851bc4b56bb29ab7f06592bfc5de69d41c4",
+      "annex_key": "SHA256E-s11179696--8ef92aa3bffb921b07b6c151a40f7851bc4b56bb29ab7f06592bfc5de69d41c4.tsv"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/eeg/sub-12_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-12/eeg/sub-12_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:0f6a1a691180e1ba6bddf8ca6b2422f1e7aa173f81d9f7efd8180d3fe8220889",
+      "annex_key": "SHA256E-s60985856--0f6a1a691180e1ba6bddf8ca6b2422f1e7aa173f81d9f7efd8180d3fe8220889.edf"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/eeg/sub-12_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:229e83de883d6de78e1480338ac235be502057ff90f43b1ab17e49a69a4c2c68"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-12/eeg/sub-12_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:34d50b766e2f29897a32fd6ed764cea28a0200de83a9776802be789ce9c66f67",
+      "annex_key": "SHA256E-s11179696--34d50b766e2f29897a32fd6ed764cea28a0200de83a9776802be789ce9c66f67.tsv"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/eeg/sub-12_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-12/eeg/sub-12_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:3ed39b7270bbb3639f6756619e5c2cc8527de3e7be1f20cddecb2871e1447230",
+      "annex_key": "SHA256E-s60985856--3ed39b7270bbb3639f6756619e5c2cc8527de3e7be1f20cddecb2871e1447230.edf"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/eeg/sub-12_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:c3024b7e93b8a2a095e38ca013c1129ca593d026ed0b79c7afe07a691b5c6d85"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-12/eeg/sub-12_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/eeg/sub-12_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-12/eeg/sub-12_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:dde8d90d5312ef79cc89eff12b0332adece24a05dd20f34a99314ac5d0a76d01",
+      "annex_key": "SHA256E-s60985856--dde8d90d5312ef79cc89eff12b0332adece24a05dd20f34a99314ac5d0a76d01.edf"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/eeg/sub-12_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:de02f65e9a729ff5826d092406d673abec209ae8a66503774db6a64ef2320ba7"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-12/eeg/sub-12_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-12/sub-12_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-12/sub-12_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:507c15d475221a4bd4c0e7dd19a8c21c289c3d85dfb7db8c0675b518922eaaa7"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/eeg/sub-13_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-13/eeg/sub-13_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:24075a2102c1775e53eeb2611d3f2fbd3edaaf678a28d999ab24b37be2d208ce",
+      "annex_key": "SHA256E-s60985856--24075a2102c1775e53eeb2611d3f2fbd3edaaf678a28d999ab24b37be2d208ce.edf"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/eeg/sub-13_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:9dea08bf259f8c2c629019deadc4b829499d79aa6113b269034ba6baacf22c21"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-13/eeg/sub-13_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:de538441260352022f5f9b96eada318a1c98b3963cf6766a22489145ebf6eaf9",
+      "annex_key": "SHA256E-s11179696--de538441260352022f5f9b96eada318a1c98b3963cf6766a22489145ebf6eaf9.tsv"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/eeg/sub-13_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-13/eeg/sub-13_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:dd39fcb245a1f72484829148cf2beb3b2b0e7fbaabc3cb61112f85854996dbb2",
+      "annex_key": "SHA256E-s60985856--dd39fcb245a1f72484829148cf2beb3b2b0e7fbaabc3cb61112f85854996dbb2.edf"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/eeg/sub-13_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:3ce432dc33937412e2e5e4a800830396d60c8ed2347cae7ab721b38d0df7ee1d"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-13/eeg/sub-13_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:da49ceaeba7a0097aa0b1aeb75f1dee450b4dbc0a1e693df46c201a6fb0af8e9",
+      "annex_key": "SHA256E-s11179696--da49ceaeba7a0097aa0b1aeb75f1dee450b4dbc0a1e693df46c201a6fb0af8e9.tsv"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/eeg/sub-13_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-13/eeg/sub-13_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:3cf6dd89b363ae397bd6dd9e979d52994bb1bb9ee6fd7f41630d2822436bb84c",
+      "annex_key": "SHA256E-s60985856--3cf6dd89b363ae397bd6dd9e979d52994bb1bb9ee6fd7f41630d2822436bb84c.edf"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/eeg/sub-13_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:bb2516bf75ccd3f0f4a63f02ec7e92b959ca6cc9238b49b03d1698181653bffe"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-13/eeg/sub-13_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/eeg/sub-13_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-13/eeg/sub-13_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:45104f4be9454ad1ddea9adb655174c16a8cdec7f2ad286aacfad2e25853c18f",
+      "annex_key": "SHA256E-s60985856--45104f4be9454ad1ddea9adb655174c16a8cdec7f2ad286aacfad2e25853c18f.edf"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/eeg/sub-13_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:a9172a65ac7c2a355a20cf6970706a9ff51620f7a8475e1ee494fb373f5f0c7c"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-13/eeg/sub-13_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-13/sub-13_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-13/sub-13_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:3eea20c542b03b4db18fc5f83be06d4ec73cc65aae5e3432af2216c94f5c9407"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/eeg/sub-14_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-14/eeg/sub-14_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:0c6c7ba60334ab9795acae117718d8974f47cde21166d61eaf7c61df4addd353",
+      "annex_key": "SHA256E-s60985856--0c6c7ba60334ab9795acae117718d8974f47cde21166d61eaf7c61df4addd353.edf"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/eeg/sub-14_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:bfe87b4203b047397111c86020f7f4a3e3c5988537c066072e2b98d5e112a148"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-14/eeg/sub-14_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:6d3377642fa4551aa1aa09fee83b2f7c7c24224fda2f4bfe89fce1d9d066a690",
+      "annex_key": "SHA256E-s11179696--6d3377642fa4551aa1aa09fee83b2f7c7c24224fda2f4bfe89fce1d9d066a690.tsv"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/eeg/sub-14_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-14/eeg/sub-14_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:9ea2a322d46cba3bef001e0b65dc505aaa178181aab23a2e0364f35d7a11631b",
+      "annex_key": "SHA256E-s60985856--9ea2a322d46cba3bef001e0b65dc505aaa178181aab23a2e0364f35d7a11631b.edf"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/eeg/sub-14_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:0acdd79a3f43ff504e3372ec0e6ceedd04b61bdcdb53bb30e4a50fa973599690"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-14/eeg/sub-14_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:9b9cb2c57e896b7402d66c1801125d176dfd9d9268fba58e04be6a35697a03fd",
+      "annex_key": "SHA256E-s11179696--9b9cb2c57e896b7402d66c1801125d176dfd9d9268fba58e04be6a35697a03fd.tsv"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/eeg/sub-14_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-14/eeg/sub-14_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:64de345c6d2bb3ffb371ab2c931daf1a321ca2aa84474923982cf3e8c29aa21d",
+      "annex_key": "SHA256E-s60985856--64de345c6d2bb3ffb371ab2c931daf1a321ca2aa84474923982cf3e8c29aa21d.edf"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/eeg/sub-14_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:37b64a91a99e866e0e7752cf8faae9f1647d325f6f543a49721531860f1becda"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-14/eeg/sub-14_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/eeg/sub-14_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-14/eeg/sub-14_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:af67728e8842c8e36fdc084b360beab878528973939893245112f8690662afd0",
+      "annex_key": "SHA256E-s60985856--af67728e8842c8e36fdc084b360beab878528973939893245112f8690662afd0.edf"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/eeg/sub-14_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:591415c45f1f678c8ce1f788c50608e2c1d8d618189f37d06431b8b76ac385f3"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-14/eeg/sub-14_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-14/sub-14_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-14/sub-14_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:852c2a0f8f5a6cecc502195055fa57e8d794d3391c5e115e09f88222459c8ec2"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/eeg/sub-15_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-15/eeg/sub-15_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:e4411641bcfa573e213884a9ec0f3c73fb1a640b92892a95498be568225e7c54",
+      "annex_key": "SHA256E-s60985856--e4411641bcfa573e213884a9ec0f3c73fb1a640b92892a95498be568225e7c54.edf"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/eeg/sub-15_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:6eb20ef2fb13d72cf9aa39579ba052760e4ec9d48c59c67b25218b5635efbf4c"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-15/eeg/sub-15_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:8cb9dde664ceb72626cec23a7caf3427a7a228b01b0c18ae731ff8c888aa5343",
+      "annex_key": "SHA256E-s11179696--8cb9dde664ceb72626cec23a7caf3427a7a228b01b0c18ae731ff8c888aa5343.tsv"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/eeg/sub-15_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-15/eeg/sub-15_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:3cd2c08d839fd006541c04975f92430d28dcfbbe51d894a2cbc588e858eaad59",
+      "annex_key": "SHA256E-s60985856--3cd2c08d839fd006541c04975f92430d28dcfbbe51d894a2cbc588e858eaad59.edf"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/eeg/sub-15_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:084398c4bc0cbca6876d1084f20d84c9ae458d00d397f2cb91bd2b53538a940c"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-15/eeg/sub-15_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:5ef3e7ce497404dc4e41ed84f5d3aa69ba23cb69f0bf70dd337c86ecbda5f19d",
+      "annex_key": "SHA256E-s11179696--5ef3e7ce497404dc4e41ed84f5d3aa69ba23cb69f0bf70dd337c86ecbda5f19d.tsv"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/eeg/sub-15_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-15/eeg/sub-15_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:c9b7348bf9ed07ac695926ae32692d5fba670b335fa4ddadd7f6843078b42bb9",
+      "annex_key": "SHA256E-s60985856--c9b7348bf9ed07ac695926ae32692d5fba670b335fa4ddadd7f6843078b42bb9.edf"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/eeg/sub-15_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:977718fb629641e3b01f29235c807bf14a46c276f027c8862e4eecbea513d434"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-15/eeg/sub-15_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/eeg/sub-15_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-15/eeg/sub-15_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:60cbd83a9834037772c2aa3318db7bf67370c364daa852599ecabbe2b1a33ccd",
+      "annex_key": "SHA256E-s60985856--60cbd83a9834037772c2aa3318db7bf67370c364daa852599ecabbe2b1a33ccd.edf"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/eeg/sub-15_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:61b8ffd58ddee6ea59ad73d6c8bee997890c0003b96e741e5e65c7a450f82969"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-15/eeg/sub-15_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-15/sub-15_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-15/sub-15_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:0f5921fb8de1f5eda8b78d636fc767429fd6a2907bad3cc55774fe5b559a199a"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/eeg/sub-16_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-16/eeg/sub-16_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:2629abe37733e2593cd45bea6b70595a02dad03d0105a2091e696a6594fa7f76",
+      "annex_key": "SHA256E-s60985856--2629abe37733e2593cd45bea6b70595a02dad03d0105a2091e696a6594fa7f76.edf"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/eeg/sub-16_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:86128ee688ead408f1b5836292ecd354bde0dde9ef8c02efa167b7299357c748"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-16/eeg/sub-16_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:d2a5a8a5e3271d67cb84b93239abc145bbcefa7e3fd21a28837236dd1cd1aab2",
+      "annex_key": "SHA256E-s11179696--d2a5a8a5e3271d67cb84b93239abc145bbcefa7e3fd21a28837236dd1cd1aab2.tsv"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/eeg/sub-16_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-16/eeg/sub-16_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:e2d04ac2fcb868dbcbdd1ecdc531a6996c26ddcd74d76c19b809a5842592d4ea",
+      "annex_key": "SHA256E-s60985856--e2d04ac2fcb868dbcbdd1ecdc531a6996c26ddcd74d76c19b809a5842592d4ea.edf"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/eeg/sub-16_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:b73c7feba30d2f8bb49cefa651afca702b504b1926e5330ff26f52ebaf52b3bd"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-16/eeg/sub-16_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:ec5ce379c64fc540ea0bc44b515e165bd43f009788126bac19765b78388efc25",
+      "annex_key": "SHA256E-s11179696--ec5ce379c64fc540ea0bc44b515e165bd43f009788126bac19765b78388efc25.tsv"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/eeg/sub-16_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-16/eeg/sub-16_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:3a122e8bb23b8f9ba32bc90d3d914225b79ea41574e02cff3db53ea244088c0b",
+      "annex_key": "SHA256E-s60985856--3a122e8bb23b8f9ba32bc90d3d914225b79ea41574e02cff3db53ea244088c0b.edf"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/eeg/sub-16_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:d3114045fff17f9aeae08eb1e58f63db93a2f416319e34585d0fbf161b0be409"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-16/eeg/sub-16_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/eeg/sub-16_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-16/eeg/sub-16_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:c47409e52f383828af8967a84f4aefad3ac1b8343df5cfbee44d1faf0ddecd38",
+      "annex_key": "SHA256E-s60985856--c47409e52f383828af8967a84f4aefad3ac1b8343df5cfbee44d1faf0ddecd38.edf"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/eeg/sub-16_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:cdf9b17faf44c9043ab280965fe14cb7ea3010906eb2a6c6469088b2e43e451b"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-16/eeg/sub-16_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-16/sub-16_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-16/sub-16_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:2da9d62869074a3b4ca7fb585b3d4dff5a21ac2619214c4b8020016a11a119ac"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/eeg/sub-17_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-17/eeg/sub-17_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:a1f8aeb7b011d2dec4dec53b622871a0765544548fb36b18e9473cea12abf65c",
+      "annex_key": "SHA256E-s60985856--a1f8aeb7b011d2dec4dec53b622871a0765544548fb36b18e9473cea12abf65c.edf"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/eeg/sub-17_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:6a8673e3392d3f527a7c35d21025b2aaddee18a6bc21372450d9b19f54186fc6"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-17/eeg/sub-17_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:80c1e35003a8cf0394897f7af311482d8d37da4aa00adca05c5ac560e441f4bb",
+      "annex_key": "SHA256E-s11179696--80c1e35003a8cf0394897f7af311482d8d37da4aa00adca05c5ac560e441f4bb.tsv"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/eeg/sub-17_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-17/eeg/sub-17_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:fb8d29e926fb56b23cb915764203796274460b57c4138fac0fdca6f9a4098f83",
+      "annex_key": "SHA256E-s60985856--fb8d29e926fb56b23cb915764203796274460b57c4138fac0fdca6f9a4098f83.edf"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/eeg/sub-17_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:3aa4bb5a1e1d1e61f14d7403f3093dbfcf95139b55c8288aff352ab9c31daa44"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-17/eeg/sub-17_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:fcd5d6e534880abede541a795fb31632bab62293ab8f3ff2a9bf0e1af4682146",
+      "annex_key": "SHA256E-s11179696--fcd5d6e534880abede541a795fb31632bab62293ab8f3ff2a9bf0e1af4682146.tsv"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/eeg/sub-17_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-17/eeg/sub-17_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:8f76b7ee04e13b4c558494d55b6f0e1d373f1affd1c078f772e3826e7995ddd9",
+      "annex_key": "SHA256E-s60985856--8f76b7ee04e13b4c558494d55b6f0e1d373f1affd1c078f772e3826e7995ddd9.edf"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/eeg/sub-17_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:97853dfaaf138ad72febb7564f4ef652fa624d964a21b3621aacb0407cb9c1ac"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-17/eeg/sub-17_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/eeg/sub-17_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-17/eeg/sub-17_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:2f71a0ab7e0e29509386fc14a1dee78f5b02645e0a28012c16ad6923cc71eefd",
+      "annex_key": "SHA256E-s60985856--2f71a0ab7e0e29509386fc14a1dee78f5b02645e0a28012c16ad6923cc71eefd.edf"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/eeg/sub-17_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:90c1d11a4902e15610e05f08ae24256ff5df2592b7df66e6a14c64d011fa6c47"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-17/eeg/sub-17_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-17/sub-17_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-17/sub-17_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:6da9301c98ae55856c9185e65a054c9d0b353d088f8fa73bbaafe5c57105b560"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/eeg/sub-18_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-18/eeg/sub-18_task-random_run-01_eeg.edf",
+      "bytes": 46209536,
+      "publisher_checksum": "sha256:70f6fee7770ce5d713872861398dfc7ddd838a912808ec9546f3c91e650da470",
+      "annex_key": "SHA256E-s46209536--70f6fee7770ce5d713872861398dfc7ddd838a912808ec9546f3c91e650da470.edf"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/eeg/sub-18_task-random_run-01_eeg.json",
+      "bytes": 4796,
+      "publisher_checksum": "sha256:fe0df4bcd1d715f5aa8fe3c6af8f0a6216196fb8d0bda84253f51332c8110b5a"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-18/eeg/sub-18_task-random_run-01_events.tsv",
+      "bytes": 8446452,
+      "publisher_checksum": "sha256:75f9a4bee4e2aa55555b9ac8cd2f2d875cad983a171cfc4233c540029c624978",
+      "annex_key": "SHA256E-s8446452--75f9a4bee4e2aa55555b9ac8cd2f2d875cad983a171cfc4233c540029c624978.tsv"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/eeg/sub-18_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-18/eeg/sub-18_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:d2a8ad2f9f518a22ec72e38610c52ebb79bf9d56470c0ff66de4e4208d7a0091",
+      "annex_key": "SHA256E-s60985856--d2a8ad2f9f518a22ec72e38610c52ebb79bf9d56470c0ff66de4e4208d7a0091.edf"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/eeg/sub-18_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:115c0fa15035fa89722032489557c54e3e929e4b1837e7e737a333f2dabd091a"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-18/eeg/sub-18_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:bf8519129e4d655e896ee10509cd00bab5b7b6b6c7a6e7a30924ae10ed853a28",
+      "annex_key": "SHA256E-s11179696--bf8519129e4d655e896ee10509cd00bab5b7b6b6c7a6e7a30924ae10ed853a28.tsv"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/eeg/sub-18_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-18/eeg/sub-18_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:a60a24bc41b76f349a144c9ab105385e4fd115adab1b174619e5669d19f549e8",
+      "annex_key": "SHA256E-s60985856--a60a24bc41b76f349a144c9ab105385e4fd115adab1b174619e5669d19f549e8.edf"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/eeg/sub-18_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:deed245fb02fe0bcf2245354b312037edfba37e1de2f7bbb04acf7f363726a78"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-18/eeg/sub-18_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/eeg/sub-18_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-18/eeg/sub-18_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:3c6a61af8b3b7eb23934625a1d7e7ec3a53dea8fb09477269615a8479d74902f",
+      "annex_key": "SHA256E-s60985856--3c6a61af8b3b7eb23934625a1d7e7ec3a53dea8fb09477269615a8479d74902f.edf"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/eeg/sub-18_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:645fa60d4978f71219ff7d69f4c55fdd16a526412d70a563317b275b350547f0"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-18/eeg/sub-18_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-18/sub-18_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-18/sub-18_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:0b0247dafa81ab9f994d165bd56b716f4f95a2ce70ce89b3ef08997a6f03c953"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/eeg/sub-19_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-19/eeg/sub-19_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:05ff6bed794c5f6010b9afcf6bf424a15f16e8c1a382ce4e0cc2837df452445e",
+      "annex_key": "SHA256E-s60985856--05ff6bed794c5f6010b9afcf6bf424a15f16e8c1a382ce4e0cc2837df452445e.edf"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/eeg/sub-19_task-random_run-01_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:47c93713df01d1084fd721207d612119c74f82baa55c660f91b89254e1ab4f45"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-19/eeg/sub-19_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:91fc9cfdfdbb3599f56e3a1d9f305e12061a85040e21de011d1a63ca3adc828c",
+      "annex_key": "SHA256E-s11179696--91fc9cfdfdbb3599f56e3a1d9f305e12061a85040e21de011d1a63ca3adc828c.tsv"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/eeg/sub-19_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-19/eeg/sub-19_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:92a4e834f2dbd869ee9b3e9be6cbbab6a44e95115e589c0d2b46acc8c724ead8",
+      "annex_key": "SHA256E-s60985856--92a4e834f2dbd869ee9b3e9be6cbbab6a44e95115e589c0d2b46acc8c724ead8.edf"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/eeg/sub-19_task-random_run-02_eeg.json",
+      "bytes": 4794,
+      "publisher_checksum": "sha256:7c29e0b7d72337ffd2ed6397f19cb3040a061fb9fc16b26eaa164128bbae6fd4"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-19/eeg/sub-19_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:3e6b7e973a6b7dfb07598db1ed1ee95b55a7924b988be059205eafb546cf62c9",
+      "annex_key": "SHA256E-s11179696--3e6b7e973a6b7dfb07598db1ed1ee95b55a7924b988be059205eafb546cf62c9.tsv"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/eeg/sub-19_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-19/eeg/sub-19_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:a0c641f386dedd2849b69d82848293f4104a22b5a59e1f12ac1db1ce8bb24f35",
+      "annex_key": "SHA256E-s60985856--a0c641f386dedd2849b69d82848293f4104a22b5a59e1f12ac1db1ce8bb24f35.edf"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/eeg/sub-19_task-sequential_run-01_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:1f936d160cf93d36775af9cd053a17275d8ee9001d6487a7d919f1e860be2f5d"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-19/eeg/sub-19_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/eeg/sub-19_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-19/eeg/sub-19_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:d199cfda35f8a3433df5a208176eb387cb4db1ff64b6b7e0f921e26503885809",
+      "annex_key": "SHA256E-s60985856--d199cfda35f8a3433df5a208176eb387cb4db1ff64b6b7e0f921e26503885809.edf"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/eeg/sub-19_task-sequential_run-02_eeg.json",
+      "bytes": 4807,
+      "publisher_checksum": "sha256:f63a99642ce6eced8987710cf7e4f8d3f4f29d2c13429f29d184955d4125a621"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-19/eeg/sub-19_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-19/sub-19_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-19/sub-19_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:6a33f8098b0ce90a41d0111b4c72275a6dbaf81ddcda1a5d13e2c863d117777a"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-random_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/eeg/sub-20_task-random_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-random_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-20/eeg/sub-20_task-random_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:7f144716e4c9e136c7a2e1546e52a591ee867e8294ab5574611f94589c1df9cf",
+      "annex_key": "SHA256E-s60985856--7f144716e4c9e136c7a2e1546e52a591ee867e8294ab5574611f94589c1df9cf.edf"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-random_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/eeg/sub-20_task-random_run-01_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:4742cda1663efa129b3e13f1ad2997a288f776324a05810441a77d5695508656"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-random_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-20/eeg/sub-20_task-random_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:b68e318fafed227aa77bb054f2c3f2b7c892981105a504dbab88c50ecf225bbe",
+      "annex_key": "SHA256E-s11179696--b68e318fafed227aa77bb054f2c3f2b7c892981105a504dbab88c50ecf225bbe.tsv"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-random_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/eeg/sub-20_task-random_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-random_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-20/eeg/sub-20_task-random_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:43590bf0c9db6c0608ad137cfa68a399b8dc2cfa63e8cc1b978c94c6d84c6b1b",
+      "annex_key": "SHA256E-s60985856--43590bf0c9db6c0608ad137cfa68a399b8dc2cfa63e8cc1b978c94c6d84c6b1b.edf"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-random_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/eeg/sub-20_task-random_run-02_eeg.json",
+      "bytes": 4795,
+      "publisher_checksum": "sha256:998fb07fffeda0be22deba3fe293f3ffbbb428a0ffed837c8edc04057c542367"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-random_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-20/eeg/sub-20_task-random_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:055f0992f718faf2ace7ba508afbb5d6bd9576dcb6527468bd96f5b9cde70c50",
+      "annex_key": "SHA256E-s11179696--055f0992f718faf2ace7ba508afbb5d6bd9576dcb6527468bd96f5b9cde70c50.tsv"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sequential_run-01_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/eeg/sub-20_task-sequential_run-01_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sequential_run-01_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-20/eeg/sub-20_task-sequential_run-01_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:2825d6a00ded2b68f89c56af0418ef351b7abf2082140a4dcba1b5e95e148f2d",
+      "annex_key": "SHA256E-s60985856--2825d6a00ded2b68f89c56af0418ef351b7abf2082140a4dcba1b5e95e148f2d.edf"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sequential_run-01_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/eeg/sub-20_task-sequential_run-01_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:04fd752b0d8ab84226c3ce9144a9c1054764aab2f9aab0bc7bf43c4c7aad1ff8"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sequential_run-01_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-20/eeg/sub-20_task-sequential_run-01_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sequential_run-02_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/eeg/sub-20_task-sequential_run-02_channels.tsv",
+      "bytes": 2177,
+      "publisher_checksum": "sha256:f17ffcafe491bbccfaa0bc0477797f21abdaa39d918d41040da912a45376c03f"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sequential_run-02_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-20/eeg/sub-20_task-sequential_run-02_eeg.edf",
+      "bytes": 60985856,
+      "publisher_checksum": "sha256:22deecfa5a7ea6becd156086c241ae9e26da7c5e3be61ebd2997bbfc8f0aec31",
+      "annex_key": "SHA256E-s60985856--22deecfa5a7ea6becd156086c241ae9e26da7c5e3be61ebd2997bbfc8f0aec31.edf"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sequential_run-02_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/eeg/sub-20_task-sequential_run-02_eeg.json",
+      "bytes": 4806,
+      "publisher_checksum": "sha256:f0f9190b6607ba0a9782196483f94276e103879ac35174b9cfcfbd85322e07a4"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sequential_run-02_events.tsv",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds008446/sub-20/eeg/sub-20_task-sequential_run-02_events.tsv",
+      "bytes": 11179696,
+      "publisher_checksum": "sha256:51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1",
+      "annex_key": "SHA256E-s11179696--51a289b059de599400dd36919590d2b15a8d09679e6aa599811b1de099aea7e1.tsv"
+    },
+    {
+      "name": "sub-20/sub-20_scans.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds008446/8d8448e2dcd731b251f2f3c85b98cce5847cb000/sub-20/sub-20_scans.tsv",
+      "bytes": 229,
+      "publisher_checksum": "sha256:29062092fdf8c8062c932f0722f7d7d31516eaaa2a6fde108fb03d51d0b71fea"
+    }
+  ]
+}

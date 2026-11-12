@@ -4,10 +4,11 @@ Generates three self-contained pages sharing a common navigation bar and
 visual design inspired by modern ML benchmark suites (such as ``eeg.fm``):
 
 - ``leaderboard.html`` (and ``index.html``): algorithm leaderboard across all
-  76 scalp EEG problems and split by problem type (BCI, Motor Imagery, ERP,
-  VEP, Speech, Clinical, Cognitive), ranking the 72 distinct canonical
-  classifiers by default with an option to include all 90 configurations.
-- ``matrix.html``: interactive 76-problem by 72-classifier (or 90-configuration)
+  77 scalp EEG problems and split by problem type (BCI, Motor Imagery, Motor
+  Execution, ERP, VEP, Speech, Clinical, Cognitive), ranking the 72 distinct
+  canonical classifiers by default with an option to include all 90
+  configurations.
+- ``matrix.html``: interactive 77-problem by 72-classifier (or 90-configuration)
   heatmap score matrix grouped by problem type and algorithm paradigm, with
   metric switching, row-normalised or baseline-gain shading, and per-cell
   multi-metric tooltips.
@@ -31,7 +32,7 @@ from neuroverse.datasets import (
     STUDY_TAXONOMY,
     by_type,
     metadata as dataset_metadata,
-    neuroverse_76,
+    neuroverse_study,
 )
 from neuroverse.estimators import PARADIGMS, TSML_FAMILIES, estimator_info
 
@@ -204,8 +205,9 @@ def study_leaderboard_markdown(
     canonical_only: bool = True,
 ) -> str:
     """Build the concise Overall + By-Problem-Type Markdown summary for README.md."""
+    n_study = len(neuroverse_study)
     overall, common_all = compute_league_table(
-        neuroverse_76,
+        neuroverse_study,
         frames,
         primary_metric="balacc",
         min_coverage_ratio=min_coverage_ratio,
@@ -228,7 +230,7 @@ def study_leaderboard_markdown(
     shown = pd.concat([top_slice, pd.DataFrame(extras)], ignore_index=True) if extras else top_slice
 
     lines = [
-        "#### Overall Performance Leaderboard (76 Scalp EEG Problems)",
+        f"#### Overall Performance Leaderboard ({n_study} Scalp EEG Problems)",
         "",
         "| # | Algorithm | Paradigm | Cov. | Mean Rank | Balanced Acc | Accuracy | AUROC | Log Loss &darr; | Wins |",
         "|---:|---|---|---:|---:|---:|---:|---:|---:|---:|",
@@ -277,11 +279,11 @@ def study_leaderboard_markdown(
         if c != "Default" and (not canonical_only or bool(estimator_info(c)["is_canonical"]))
     )
     pool_noun = "distinct classifiers" if canonical_only else "configurations"
-    min_cov_all = math.ceil(min_coverage_ratio * len(neuroverse_76))
+    min_cov_all = math.ceil(min_coverage_ratio * n_study)
     lines.extend(
         [
             "",
-            f"*{len(overall)} of {total_pool} {pool_noun} meet &ge;80% coverage ({min_cov_all}/76 problems), "
+            f"*{len(overall)} of {total_pool} {pool_noun} meet &ge;80% coverage ({min_cov_all}/{n_study} problems), "
             f"evaluated on their {len(common_all)} shared completed problems (resample 0, ordered by "
             "mean balanced-accuracy rank).*",
             "",
@@ -369,11 +371,11 @@ def _build_payload(
     cd_top_k: int = 10,
 ) -> dict[str, object]:
     """Assemble compact JSON payload shared by the interactive HTML pages."""
-    meta_df = dataset_metadata().reindex(neuroverse_76)
+    meta_df = dataset_metadata().reindex(neuroverse_study)
     estimators = [c for c in frames["balacc"].columns if c != "Default"]
 
     datasets_info = []
-    for ds in neuroverse_76:
+    for ds in neuroverse_study:
         fam, bci = STUDY_TAXONOMY[ds]
         row = meta_df.loc[ds]
         datasets_info.append(
@@ -413,8 +415,8 @@ def _build_payload(
 
     def serialise_matrix(metric: str, decimals: int = 5) -> list[list[float | None]]:
         if metric not in frames:
-            return [[None] * len(estimators) for _ in neuroverse_76]
-        mat = frames[metric].reindex(index=neuroverse_76, columns=estimators).to_numpy(dtype=float)
+            return [[None] * len(estimators) for _ in neuroverse_study]
+        mat = frames[metric].reindex(index=neuroverse_study, columns=estimators).to_numpy(dtype=float)
         out: list[list[float | None]] = []
         for r in range(mat.shape[0]):
             out.append(
@@ -428,12 +430,12 @@ def _build_payload(
     default_floor: dict[str, list[float | None]] = {}
     for m in PRIMARY_METRICS:
         if m in frames and "Default" in frames[m].columns:
-            ser = frames[m].reindex(neuroverse_76)["Default"].to_numpy(dtype=float)
+            ser = frames[m].reindex(neuroverse_study)["Default"].to_numpy(dtype=float)
             default_floor[m] = [
                 None if not np.isfinite(v) else round(float(v), 5) for v in ser
             ]
         else:
-            default_floor[m] = [None] * len(neuroverse_76)
+            default_floor[m] = [None] * len(neuroverse_study)
 
     tabs_meta = []
     cd_images: dict[str, dict[str, object]] = {}
@@ -1031,7 +1033,7 @@ def _topbar_html(active_page: str) -> str:
         '<span class="brand-mark">NV</span>'
         '<span>Neuroverse</span>'
         '</a>'
-        '<span class="brand-tag">76 Scalp EEG Problems &middot; 72 Classifiers</span>'
+        f'<span class="brand-tag">{len(neuroverse_study)} Scalp EEG Problems &middot; 72 Classifiers</span>'
         "</div>"
         f'<nav class="nav-links">{nav}'
         '<button type="button" class="theme-btn" id="themeToggle" title="Switch colour theme">Theme</button>'
@@ -1122,7 +1124,7 @@ def write_interactive_leaderboard(
 <main class="container">
   <section class="hero">
     <h1>EEG Classification Algorithm Leaderboard</h1>
-    <p>Systematic comparison of 72 distinct classification algorithms (90 total configurations including band-pass and random-weight controls) across 76 scalp EEG classification problems (fixed train/test resample 0).</p>
+    <p>Systematic comparison of 72 distinct classification algorithms (90 total configurations including band-pass and random-weight controls) across {len(payload["datasets"])} scalp EEG classification problems (fixed train/test resample 0).</p>
   </section>
 
   <div class="tab-strip" id="tabStrip" role="tablist"></div>
@@ -1191,7 +1193,7 @@ def write_interactive_leaderboard(
   DATA.datasets.forEach(function(d, idx) {{ dsIndex[d.name] = idx; }});
   var tabByKey = {{}};
   DATA.tabs.forEach(function(t) {{ tabByKey[t.key] = t; }});
-  var DOMAIN_COLS = ["MI", "ERP", "VEP", "Speech", "Clinical", "Cognitive"];
+  var DOMAIN_COLS = ["MI", "ME", "ERP", "VEP", "Speech", "Clinical", "Cognitive"];
 
   var state = {{
     tab: "All",
@@ -1607,7 +1609,7 @@ def write_interactive_leaderboard(
     }} else {{
       kpiHtml += '<div class="kpi-card"><div class="kpi-label">EEG Foundation Coverage</div>' +
         '<div class="kpi-value">Switch to All Available</div>' +
-        '<div class="kpi-sub">LaBraM covers 57/76 problems (10-20 channel metadata required)</div></div>';
+        '<div class="kpi-sub">LaBraM covers 57/' + DATA.datasets.length + ' problems (10-20 channel metadata required)</div></div>';
     }}
     document.getElementById("kpiGrid").innerHTML = kpiHtml;
 
@@ -1830,7 +1832,7 @@ def write_interactive_leaderboard(
 
 
 def write_score_matrix_page(payload: dict[str, object], output_path: Path) -> Path:
-    """Write ``matrix.html`` (interactive 76 x 90 score heatmap)."""
+    """Write ``matrix.html`` (interactive problem-by-classifier score heatmap)."""
     data_json = json.dumps(payload, separators=(",", ":")).replace("</", "<\\/")
     html = f"""<!doctype html>
 <html lang="en">
@@ -1951,7 +1953,7 @@ td.cell-win {{
 <main class="container">
   <section class="hero">
     <h1>Overall Performance Score Matrix</h1>
-    <p>Problem-by-classifier score heatmap across all 76 scalp EEG tasks and 72 distinct classifiers (90 total configurations). Hover over any cell to inspect all four metrics, within-problem rank, and gain over the constant majority-class floor.</p>
+    <p>Problem-by-classifier score heatmap across all {len(payload["datasets"])} scalp EEG tasks and 72 distinct classifiers (90 total configurations). Hover over any cell to inspect all four metrics, within-problem rank, and gain over the constant majority-class floor.</p>
   </section>
 
   <div class="tab-strip" id="matrixTabStrip"></div>
@@ -2080,7 +2082,7 @@ td.cell-win {{
     }});
 
     // Sort rows by type then name for clean visual blocks
-    var typeOrder = {{ "MI": 1, "ERP": 2, "VEP": 3, "Speech": 4, "Clinical": 5, "Cognitive": 6 }};
+    var typeOrder = {{ "MI": 1, "ME": 2, "ERP": 3, "VEP": 4, "Speech": 5, "Clinical": 6, "Cognitive": 7 }};
     rowIdxs.sort(function(a, b) {{
       var da = DATA.datasets[a], db = DATA.datasets[b];
       var ta = typeOrder[da.type] || 9, tb = typeOrder[db.type] || 9;
@@ -2308,7 +2310,7 @@ tr.row-saturated td {{ background: rgba(16, 185, 129, 0.09); }}
 {_topbar_html("datasets")}
 <main class="container">
   <section class="hero">
-    <h1>EEG Problem Explorer (76 Scalp EEG Benchmark Tasks)</h1>
+    <h1>EEG Problem Explorer ({len(payload["datasets"])} Scalp EEG Benchmark Tasks)</h1>
     <p>Turns the benchmark question around: for each classification problem, inspect the majority-class Default floor, the median and ceiling across the 72 distinct classifiers (or all 90 configurations), which paradigm wins, and how much signal was found beyond chance.</p>
   </section>
 

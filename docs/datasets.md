@@ -25,13 +25,16 @@ collection includes the documented [local corrections](local-data-corrections.md
 The archive is a sub-collection of the
 [Multiverse](https://github.com/aeon-toolkit/multiverse) archive for multivariate time
 series classification, and some of these datasets are also in its benchmark subset,
-Multiverse-core. The local collection now contains 85 prepared
+Multiverse-core. The local collection now contains 86 prepared
 classification problems, including the additional preparations described below.
-The selected scalp EEG study list in `eeg.txt` contains 76 problems. It excludes
+The selected scalp EEG study list in `eeg.txt` contains 77 problems (including
+30 strict scalp-EEG Motor Imagery tasks in `MI`, separated from the 6 executed
+and pre-movement tasks in `ME`). It excludes
 Blink, ButtonPress, Sleep and EpilepticSeizures, plus FaceDetection,
 HandMovementDirection, MatchWords and MindReading (MEG), and MotorImagery (ECoG).
 Their registry entries and local files are retained. See the
-[study taxonomy and counts](problem-taxonomy.md).
+[study taxonomy and counts](problem-taxonomy.md) and the
+[scalp-EEG MI candidate queue](scalp-mi-candidates.md).
 
 ## Archive datasets
 
@@ -41,8 +44,8 @@ Their registry entries and local files are retained. See the
 | ALSAttention | BCI | ERP | 8 | 256 | 2 | 8 | 14400 | 19200 | 256 | local |
 | Alzheimers | Med | Clinical | 19 | 15000 | 3 | 88 | 45 | 43 | 500 | aeon/Zenodo |
 | AlzheimersAuditory | Med | Clinical | 19 | 1000 | 3 | 33 | 2020 | 1000 | 250 | local |
-| ArmCoordination | BCI | MI | 64 | 1500 | 2 | 8 | 1498 | 505 | 500 | local |
-| ArmMovements | BCI | MI | 61 | 1536 | 7 | 15 | 4620 | 1680 | 512 | local |
+| ArmCoordination | BCI | ME | 64 | 1500 | 2 | 8 | 1498 | 505 | 500 | local |
+| ArmMovements | BCI | ME | 61 | 1536 | 7 | 15 | 4620 | 1680 | 512 | local |
 | Blink | BCI | &mdash; | 4 | 510 | 2 | &mdash; | 500 | 450 | 255 | aeon/Zenodo |
 | ButtonPress | BCI | &mdash; | 32 | 1000 | 2 | 1 | 120 | 120 | 1000 | aeon/Zenodo |
 | ChildhoodSeizures | Med | Clinical | 17 | 2000 | 2 | 22 | 34045 | 2140 | 200 | local |
@@ -54,10 +57,10 @@ Their registry entries and local files are retained. See the
 | EyesOpenShut | BCI | Cognitive | 14 | 128 | 2 | &mdash; | 56 | 42 | 128 | aeon/Zenodo |
 | FaceDetection | Psy | &mdash; | 144 | 62 | 2 | &mdash; | 5890 | 3524 | 250 | aeon/Zenodo |
 | FeedbackButton | Psy | Cognitive | 61 | 450 | 2 | 57 | 1700 | 1150 | 500 | aeon/Zenodo |
-| FeetHands | BCI | MI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
+| FeetHands | BCI | ME | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
 | FibroLiverpool | Med | Clinical | 64 | 15360 | 2 | 36 | 15 | 21 | 512 | restricted |
 | FibroUEA | Med | Clinical | 64 | 15000 | 2 | 41 | 17 | 23 | 500 | restricted |
-| FingerMovements | BCI | MI | 28 | 50 | 2 | &mdash; | 316 | 100 | 100 | aeon/Zenodo |
+| FingerMovements | BCI | ME | 28 | 50 | 2 | &mdash; | 316 | 100 | 100 | aeon/Zenodo |
 | FlickerAttention | BCI | VEP | 8 | 512 | 4 | 12 | 576 | 352 | 256 | local |
 | FlickerSymbols | BCI | VEP | 64 | 1500 | 40 | 35 | 6240 | 2160 | 250 | local |
 | FlickerTargets | BCI | VEP | 8 | 1114 | 12 | 10 | 1440 | 360 | 256 | local |
@@ -68,6 +71,7 @@ Their registry entries and local files are retained. See the
 | ImaginedArmTasks | BCI | MI | 17 | 3960 | 10 | 12 | 3240 | 1080 | 1000 | local |
 | ImaginedCommands | BCI | Speech | 64 | 600 | 5 | 15 | 5250 | 750 | 200 | local |
 | ImaginedFeetHands | BCI | MI | 64 | 640 | 2 | 105 | 2835 | 1935 | 160 | aeon/Zenodo |
+| ImaginedFingers | BCI | MI | 60 | 3072 | 5 | 20 | 4481 | 1500 | 512 | local |
 | ImaginedGrasps | BCI | MI | 60 | 1000 | 3 | 15 | 4500 | 2250 | 250 | local |
 | ImaginedGripForce | BCI | MI | 14 | 640 | 3 | 10 | 240 | 60 | 128 | local |
 | ImaginedHandFeetTongue | BCI | MI | 22 | 800 | 4 | 9 | 3456 | 1728 | 200 | local |
@@ -95,13 +99,13 @@ Their registry entries and local files are retained. See the
 | LongIntervalTask | Med | Clinical | 63 | 4750 | 2 | 139 | 1660 | 1120 | 500 | aeon/Zenodo |
 | LowCost | BCI | MI | 15 | 375 | 2 | 10 | 600 | 600 | 125 | aeon/Zenodo |
 | MatchWords | Psy | &mdash; | 156 | 1500 | 2 | &mdash; | 360 | 360 | 1000 | local |
-| MatchingPennies | Psy | MI | 10 | 10000 | 2 | 7 | 700 | 700 | 5000 | aeon/Zenodo |
+| MatchingPennies | Psy | ME | 10 | 10000 | 2 | 7 | 700 | 700 | 5000 | aeon/Zenodo |
 | MentalArithmetic | BCI | Cognitive | 19 | 1000 | 2 | 36 | 1515 | 192 | 200 | local |
 | MindReading | BCI | &mdash; | 204 | 200 | 5 | &mdash; | 727 | 653 | 200 | aeon/Zenodo |
 | MotorImagery | BCI | &mdash; | 64 | 3000 | 2 | &mdash; | 278 | 100 | 1000 | aeon/Zenodo |
 | NBackAudioCondition | Psy | Cognitive | 16 | 600 | 12 | 23 | 11520 | 5040 | 200 | local |
 | ObsessiveCompulsiveSymptoms | Med | Clinical | 52 | 2000 | 2 | 35 | 7754 | 2660 | 500 | local |
-| OpenCloseFist | BCI | MI | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
+| OpenCloseFist | BCI | ME | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
 | ParkinsonsPedalling | Med | Clinical | 63 | 2000 | 2 | 39 | 2123 | 842 | 500 | local |
 | ParkinsonsRest | Med | Clinical | 63 | 2000 | 2 | 55 | 1216 | 420 | 500 | local |
 | ParkinsonsRestIowa | Med | Clinical | 60 | 2000 | 2 | 149 | 4598 | 1306 | 500 | local |
@@ -874,3 +878,11 @@ UCSD / OpenNeuro ds002778 / EEGDash on002778. 31 participants; 1126/380 TRAIN/TE
 Clinically diagnosed PD OFF medication versus controls. Complete non-overlapping4s rest windows, native512Hz,32named scalp channels before flat review. ON medication sessions excluded to keep one acquisition condition and avoid mixing raw with2processed substitutions. Float64 calibrated microvolts; no new DSP. Original README explicitly discourages diagnostic ML on this31person cohort because of small test-group size and clinical heterogeneity; requests pre-publication author contact. User explicitly authorised inclusion9November2026. Benchmark preparation is not evidence of clinical diagnostic validity.
 
 Within hc and pd groups: sorted original string IDs, floor0.75*n TRAIN, remainder TEST; all windows of each participant together, no validation export Native sensor/history metadata, case-aligned tables, exclusions and validation accompany D:/Data/EEG/ParkinsonsRestUCSD. See [clinical assimilation plan](eegdash-diagnosis-plan.md).
+
+### ImaginedFingers (Damm2026)
+
+20 participants; 4481 training and 1500 test cases, 60 channels x 3072 samples at 512 Hz. Classes: `imagined_thumb`, `imagined_index_finger`, `imagined_middle_finger`, `imagined_ring_finger`, `imagined_pinky_finger`.
+
+Fixed whole-subject 75/25 split (`01-09,11,12,14,17,18,19` TRAIN; `10,13,15,16,20` TEST), stratified simultaneously across `sourcedata/counterbalancing_log.json` and `_eeg.json` block-order assignments, handedness (`1` left-handed participant in each partition), and gender, with `sub-18`'s single early-terminated run (`task-random_run-01`, 56 complete cues + 1 incomplete 2,858-sample final cue excluded) placed in TRAIN so TEST has 1,500 exact balanced trials (300 per finger). All four runs per participant (two random-order, two sequential-order) are combined. Of the 62 native scalp EEG channels (`10-05` montage, g.tec GmbH, Linked Mastoids reference; `Ref1`, `Ref2` and `Marker` excluded), `FT8` (9 flat trials) and `TP8` (80 flat trials) were removed globally under the flat-sensor policy (`std <= 1e-7 uV`), leaving 60 channels in native header order; calibrated EDF volts are multiplied by `1e6` in `float64` with no filtering, resampling, demeaning or rereferencing. Every 6-second cue block (`3..7` -> `1..5`) is cross-verified 100% sample-for-sample between the embedded EDF `Marker` channel and BIDS `_events.tsv` (whose `onset` column was divided by `512` twice in `ds008446` v1.0.1).
+
+Original source [OpenNeuro ds008446 v1.0.1](https://doi.org/10.18112/openneuro.ds008446.v1.0.1), CC0-1.0. Array-aligned case tables, sensor sidecars, source receipts and full numeric validation accompany `D:/Data/EEG/ImaginedFingers`. See [source lock](damm2026-source-lock.json), [conversion result](damm2026-conversion-result.json) and [scalp MI candidate queue](scalp-mi-candidates.md).

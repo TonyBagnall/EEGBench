@@ -2,8 +2,8 @@ dataset,family,bci_type
 ALSAttention,BCI,ERP
 Alzheimers,Clinical,
 AlzheimersAuditory,Clinical,
-ArmCoordination,BCI,MI
-ArmMovements,BCI,MI
+ArmCoordination,BCI,ME
+ArmMovements,BCI,ME
 ChildhoodSeizures,Clinical,
 ClinicalSleepStages,Clinical,
 CodedFlickerTargets,BCI,VEP
@@ -11,10 +11,10 @@ CodedSymbols,BCI,VEP
 CovidSurvivors,Clinical,
 EyesOpenShut,Cognitive,
 FeedbackButton,Cognitive,
-FeetHands,BCI,MI
+FeetHands,BCI,ME
 FibroLiverpool,Clinical,
 FibroUEA,Clinical,
-FingerMovements,BCI,MI
+FingerMovements,BCI,ME
 FlickerAttention,BCI,VEP
 FlickerSymbols,BCI,VEP
 FlickerTargets,BCI,VEP
@@ -24,6 +24,7 @@ ImaginedArmMovements,BCI,MI
 ImaginedArmTasks,BCI,MI
 ImaginedCommands,BCI,Speech
 ImaginedFeetHands,BCI,MI
+ImaginedFingers,BCI,MI
 ImaginedGrasps,BCI,MI
 ImaginedGripForce,BCI,MI
 ImaginedHandFeetTongue,BCI,MI
@@ -50,11 +51,11 @@ ImaginedRightHandFeetRest,BCI,MI
 InnerSpeech,BCI,Speech
 LongIntervalTask,Clinical,
 LowCost,BCI,MI
-MatchingPennies,BCI,MI
+MatchingPennies,BCI,ME
 MentalArithmetic,Cognitive,
 NBackAudioCondition,Cognitive,
 ObsessiveCompulsiveSymptoms,Clinical,
-OpenCloseFist,BCI,MI
+OpenCloseFist,BCI,ME
 ParkinsonsPedalling,Clinical,
 ParkinsonsRest,Clinical,
 ParkinsonsRestIowa,Clinical,

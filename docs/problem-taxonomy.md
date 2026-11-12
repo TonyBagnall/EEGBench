@@ -1,19 +1,19 @@
 # Proposed problem taxonomy
 
-Snapshot10November2026, based on current `eeg.txt` and documented prediction targets. One primary category/subclass per selected problem. These assignments do not overwrite the existing Med/BCI/Psy domains or source sidecars. They are proposed editorial groupings, not newly verified acquisition facts.
+Snapshot 12 November 2026, based on current `eeg.txt` and documented prediction targets. One primary category/subclass per selected problem. These assignments do not overwrite the existing Med/BCI/Psy domains or source sidecars. They are proposed editorial groupings, not newly verified acquisition facts.
 
-**76 selected scalp EEG problems; 85 registered archive problems.** The study excludes FaceDetection, HandMovementDirection, MatchWords and MindReading (MEG), plus MotorImagery (ECoG), as confirmed by the user10November2026. Blink, ButtonPress, EpilepticSeizures and Sleep remain excluded for the existing reasons. All registry entries and local files are retained. Planned downloads/pilots are not counted; problems may share studies or source recordings.
+**77 selected scalp EEG problems; 86 registered archive problems.** The study excludes FaceDetection, HandMovementDirection, MatchWords and MindReading (MEG), plus MotorImagery (ECoG), as confirmed by the user 10 November 2026. Blink, ButtonPress, EpilepticSeizures and Sleep remain excluded for the existing reasons. All registry entries and local files are retained. Planned downloads/pilots are not counted; problems may share studies or source recordings.
 
 | Category | Selected scalp EEG problems |
 |---|---:|
 | Clinical and physiological states | 17 |
-| Brain-computer interfaces | 50 |
+| Brain-computer interfaces | 51 |
 | Cognitive and affective states | 6 |
 | Behaviour and activity | 3 |
 | Individual differences | 0 |
-| **Total** | **76** |
+| **Total** | **77** |
 
-The study now has **29 motor imagery** problems; the historical archive tally30 included the excluded ECoG problem MotorImagery.
+The study now has **30 strict scalp-EEG motor imagery** problems (`by_type("MI")`, adding `ImaginedFingers` / `Damm2026` to replace the excluded ECoG problem `MotorImagery`), separated cleanly from the **6 executed / movement-intention motor tasks** (`by_type("ME")`: `ArmCoordination`, `ArmMovements`, `FeetHands`, `FingerMovements`, `MatchingPennies`, `OpenCloseFist`).
 
 ## Subclasses and complete assignment
 
@@ -28,7 +28,7 @@ The study now has **29 motor imagery** problems; the historical archive tally30 
 | Brain-computer interfaces | Motor execution | 5 | ArmCoordination, ArmMovements, FeetHands, MatchingPennies, OpenCloseFist |
 | Brain-computer interfaces | Code-modulated VEP | 2 | CodedFlickerTargets, CodedSymbols |
 | Brain-computer interfaces | SSVEP | 4 | FlickerAttention, FlickerSymbols, FlickerTargets, WirelessFlicker |
-| Brain-computer interfaces | Motor imagery | 29 | ImaginedAnkleRest, ImaginedArmMovements, ImaginedArmTasks, ImaginedFeetHands, ImaginedGrasps, ImaginedGripForce, ImaginedHandFeetTongue, ImaginedHandFootActions, ImaginedHandGestures, ImaginedHandMusicTempo, ImaginedHandPupils, ImaginedHandSides, ImaginedHandTraining, ImaginedHandsCrossSession, ImaginedHandsEmbodiment, ImaginedHandsFeedback, ImaginedHandsFeet, ImaginedHandsHaptics, ImaginedHandsOnline, ImaginedHandsPhysiology, ImaginedHandsRobot, ImaginedHandsStroke, ImaginedLeftRightHand, ImaginedLeftRightHandRest, ImaginedOpenCloseFist, ImaginedRightHandFeet, ImaginedRightHandFeetRest, LowCost, SitStand |
+| Brain-computer interfaces | Motor imagery | 30 | ImaginedAnkleRest, ImaginedArmMovements, ImaginedArmTasks, ImaginedFeetHands, ImaginedFingers, ImaginedGrasps, ImaginedGripForce, ImaginedHandFeetTongue, ImaginedHandFootActions, ImaginedHandGestures, ImaginedHandMusicTempo, ImaginedHandPupils, ImaginedHandSides, ImaginedHandTraining, ImaginedHandsCrossSession, ImaginedHandsEmbodiment, ImaginedHandsFeedback, ImaginedHandsFeet, ImaginedHandsHaptics, ImaginedHandsOnline, ImaginedHandsPhysiology, ImaginedHandsRobot, ImaginedHandsStroke, ImaginedLeftRightHand, ImaginedLeftRightHandRest, ImaginedOpenCloseFist, ImaginedRightHandFeet, ImaginedRightHandFeetRest, LowCost, SitStand |
 | Brain-computer interfaces | Imagined speech | 2 | ImaginedCommands, InnerSpeech |
 | Brain-computer interfaces | Slow cortical potential self-regulation | 2 | SelfRegulationSCP1, SelfRegulationSCP2 |
 | Cognitive and affective states | Workload / joint task condition | 2 | MentalArithmetic, NBackAudioCondition |

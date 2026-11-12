@@ -23,6 +23,7 @@ ImaginedArmMovements
 ImaginedArmTasks
 ImaginedCommands
 ImaginedFeetHands
+ImaginedFingers
 ImaginedGrasps
 ImaginedGripForce
 ImaginedHandFeetTongue

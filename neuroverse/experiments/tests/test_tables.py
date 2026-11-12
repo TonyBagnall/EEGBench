@@ -418,7 +418,7 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
     import shutil
     import subprocess
 
-    from neuroverse.datasets import PROBLEM_TYPE_TABS, by_type, neuroverse_76
+    from neuroverse.datasets import PROBLEM_TYPE_TABS, by_type, neuroverse_study
     from neuroverse.experiments.tables import build_benchmark_site
 
     sample_problems = by_type("Speech") + by_type("VEP")[:2]
@@ -456,9 +456,9 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
         by_name = {e["name"]: e for e in payload["estimators"]}
         assert by_name["HC2-500-pc"]["is_canonical"] is True
         assert by_name["HC2-noTDE-500-pc"]["is_canonical"] is False
-        assert len(payload["datasets"]) == len(neuroverse_76)
+        assert len(payload["datasets"]) == len(neuroverse_study)
         assert [t["key"] for t in payload["tabs"]] == list(PROBLEM_TYPE_TABS)
-        assert len(payload["scores"]["balacc"]) == len(neuroverse_76)
+        assert len(payload["scores"]["balacc"]) == len(neuroverse_study)
         assert len(payload["scores"]["balacc"][0]) == len(sample_estimators)
         if node_bin is not None:
             js_blocks = re.findall(r"<script>(.*?)</script>", html, re.DOTALL)

@@ -46,7 +46,7 @@ Neuroverse stores metadata and benchmark scores only—never classifier code:
 `neuroverse.experiments.tables` transparently reads two layouts:
 
 1. **Wide summary CSVs** (active benchmark in `results/neuroverse/`):
-   - `accuracy.csv`, `balacc.csv`, `auroc.csv`, `logloss.csv` (`76` dataset rows &times; `90` configuration columns covering **72 distinct classifiers** plus **18 preprocessing/ablation variants**)
+   - `accuracy.csv`, `balacc.csv`, `auroc.csv`, `logloss.csv` (`77` dataset rows &times; `90` configuration columns covering **72 distinct classifiers** plus **18 preprocessing/ablation variants**)
    - `datasets.csv` (`dataset,family,bci_type`) and `classifiers.csv` (`classifier,family`)
    - `Default/Default_<metric>.csv` for the constant test-majority floor
 2. **Multiverse per-estimator CSVs** (archived 2026 paper results in `results/neuroverse_paper_2026/` and `aeon-toolkit/multiverse`):

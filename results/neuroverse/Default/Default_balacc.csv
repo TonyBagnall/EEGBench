@@ -24,6 +24,7 @@ ImaginedArmMovements,0.142857
 ImaginedArmTasks,0.100000
 ImaginedCommands,0.200000
 ImaginedFeetHands,0.500000
+ImaginedFingers,0.200000
 ImaginedGrasps,0.333333
 ImaginedGripForce,0.333333
 ImaginedHandFeetTongue,0.250000

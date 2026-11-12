@@ -16,14 +16,18 @@ from neuroverse.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
 
 
 def test_archive_lists():
-    """All 85 problems, with published and local subsets explicitly identified."""
-    assert len(neuroverse) == len(set(neuroverse)) == 85
+    """All 86 problems, with published and local subsets explicitly identified."""
+    n_total = 86
+    n_paper = 30
+    n_local = n_total - n_paper
+    n_open = 28
+    assert len(neuroverse) == len(set(neuroverse)) == n_total
     assert neuroverse == sorted(neuroverse)
-    assert len(neuroverse_paper) == 30 and len(local_only) == 55
+    assert len(neuroverse_paper) == n_paper and len(local_only) == n_local
     assert set(neuroverse_paper).isdisjoint(local_only)
-    assert len(neuroverse_open) == 28
+    assert len(neuroverse_open) == n_open
     assert set(neuroverse) - set(neuroverse_open) == set(restricted) | set(local_only)
-    assert {'ImaginedHandFeetTongue', 'ClinicalSleepStages', 'VideoEmotions', 'ImaginedLeftRightHand', 'ImaginedRightHandFeet'} <= set(neuroverse)
+    assert {'ImaginedFingers', 'ImaginedHandFeetTongue', 'ClinicalSleepStages', 'VideoEmotions', 'ImaginedLeftRightHand', 'ImaginedRightHandFeet'} <= set(neuroverse)
     assert not {'BCIIV2a', 'ISRUCSleep', 'FACED', 'Weibo2014', 'AlexMI'} & set(neuroverse)
 
 
@@ -40,6 +44,7 @@ def test_domains_partition_the_archive():
 def test_metadata():
     """The table describes the current local versions, including corrections."""
     frame = metadata()
+    assert frame.loc["ImaginedFingers", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [20, 60, 5, 3072, 4481, 1500, 512]
     assert frame.loc["ImaginedRightHandFeetRest", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [1,24,150,40,250]
     assert frame.loc["ImaginedLeftRightHandRest", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [1,24,480,240,250]
     assert frame.loc["ImaginedHandFootActions", ["subjects","channels","train_size","test_size","frequency"]].tolist() == [60,11,2727,930,125]
@@ -162,25 +167,44 @@ def test_fractional_sampling_frequency_is_preserved(monkeypatch):
     assert '| 500.0 |' not in markdown
 
 
-def test_study_76_taxonomy_partitions_selected_problems():
-    """The 76-problem scalp EEG taxonomy partitions families and BCI sub-types cleanly."""
+def test_study_taxonomy_partitions_selected_problems():
+    """The 77-problem scalp EEG taxonomy partitions families and separates 30 MI from 6 ME."""
     from neuroverse.datasets import (
         BCI_TYPES,
         PROBLEM_FAMILIES,
         by_type,
         excluded_archive,
         neuroverse_76,
+        neuroverse_77,
+        neuroverse_study,
     )
 
-    assert by_type("All") == neuroverse_76
-    assert set(neuroverse_76).isdisjoint(excluded_archive)
-    assert sorted(neuroverse_76 + excluded_archive) == neuroverse
+    n_selected = 77
+    n_mi = 30
+    expected_me = [
+        "ArmCoordination",
+        "ArmMovements",
+        "FeetHands",
+        "FingerMovements",
+        "MatchingPennies",
+        "OpenCloseFist",
+    ]
+
+    assert len(neuroverse_study) == n_selected
+    assert neuroverse_77 == neuroverse_76 == neuroverse_study
+    assert by_type("All") == neuroverse_study
+    assert len(by_type("MI")) == n_mi
+    assert "ImaginedFingers" in by_type("MI")
+    assert by_type("ME") == expected_me
+    assert set(by_type("MI")).isdisjoint(by_type("ME"))
+    assert set(neuroverse_study).isdisjoint(excluded_archive)
+    assert sorted(neuroverse_study + excluded_archive) == neuroverse
 
     family_parts = [by_type(fam) for fam in PROBLEM_FAMILIES]
     for idx, left in enumerate(family_parts):
         for right in family_parts[idx + 1 :]:
             assert set(left).isdisjoint(right)
-    assert sorted(name for part in family_parts for name in part) == neuroverse_76
+    assert sorted(name for part in family_parts for name in part) == neuroverse_study
 
     bci_parts = [by_type(sub) for sub in BCI_TYPES]
     for idx, left in enumerate(bci_parts):
